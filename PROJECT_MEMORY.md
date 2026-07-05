@@ -21,9 +21,19 @@ Dieses Dokument sammelt den dauerhaften Kontext, damit wir das Projekt ueber vie
 - Das Projekt wird ueber GitHub aufgebaut.
 - Das Repository soll privat sein.
 - Der Repository-Name lautet `Energiemanagement`.
+- GitHub soll die Referenz und das Backup fuer ioBroker-Skripte sein.
+- Der Code im ioBroker-System ist die Live-Version und wird aus dem Repository heraus angelegt, geaendert und optimiert.
+
+## Zielumgebung
+
+- ioBroker laeuft in Docker auf einer Synology.
+- Relevanter Arbeitsbereich: JavaScript-Skripte im ioBroker JavaScript Script Editor.
+- Gewuenschte Operationen: Skripte anlegen, aendern, loeschen und synchronisieren.
 
 ## Offene Klaerungen
 
-- Welche Art von Energiemanagement soll abgebildet werden?
-- Soll zuerst eine Web-App, API, Datenpipeline, Automatisierung oder ein anderes System entstehen?
 - Welche Energiequellen, Verbraucher, Sensoren, Datenformate oder Schnittstellen sind relevant?
+- Wie ist ioBroker im Netzwerk erreichbar?
+- Welche Authentifizierung ist fuer ioBroker Admin/API aktiv?
+- Ist der ioBroker JavaScript-Adapter installiert und aktiv?
+- Welche Methode soll fuer Deployments verwendet werden: ioBroker CLI im Container, Admin/API, Dateisystem-Mount oder ein Sync-Skript?
