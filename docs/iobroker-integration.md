@@ -20,16 +20,19 @@ Repository -> Pruefung -> Deployment -> ioBroker JavaScript Adapter
 - Loeschoperationen nur mit expliziter Bestaetigung.
 - Vor groesseren Aenderungen Live-Skripte aus ioBroker sichern.
 
-## Moegliche Zugriffsmethoden
+## Gewaehlte Zugriffsmethode
 
-### Option A: ioBroker CLI im Docker-Container
+### SSH auf Synology plus ioBroker CLI im Docker-Container
 
-Wenn Codex per SSH auf die Synology oder direkt in den Container zugreifen darf, koennen Skripte ueber die ioBroker-CLI verwaltet werden.
+Codex greift per SSH auf die Synology zu und fuehrt ioBroker-Befehle anschliessend im Docker-Container aus.
 
 Vorteile:
 
 - Nahe am ioBroker-System.
 - Gut fuer Backup, Restore und Adapter-Checks.
+- Keine Abhaengigkeit von einer zusaetzlichen Admin/API-Konfiguration.
+- Geeignet, um vorhandene Skripte zuerst aus dem Live-System zu sichern.
+- Docker- und Adapterzustand koennen vor einem Deployment geprueft werden.
 
 Offene Punkte:
 
@@ -37,39 +40,42 @@ Offene Punkte:
 - Containername oder Docker-Compose-Service.
 - Verfuegbare ioBroker-CLI-Befehle im Container.
 
-### Option B: ioBroker Admin/API
+## Projektstruktur fuer Skripte
 
-Wenn ioBroker Admin erreichbar ist und eine passende API bereitsteht, koennen Skripte ueber HTTP verwaltet werden.
+```text
+iobroker/
+  scripts/          Repository-Version der ioBroker-JavaScript-Skripte
+  backups/          lokale Live-Backups, nicht fuer Git gedacht
+  README.md         Hinweise zum Skript-Workflow
+```
 
-Vorteile:
+## Geplanter Workflow
 
-- Kein direkter SSH-Zugriff noetig.
-- Gut automatisierbar.
+1. Live-Skripte aus ioBroker lesen und lokal sichern.
+2. Relevante Skripte nach `iobroker/scripts/` importieren.
+3. Aenderungen im Repository bearbeiten und committen.
+4. Vor dem Deployment aktuellen Live-Stand erneut sichern.
+5. Skript nach ioBroker uebertragen.
+6. ioBroker JavaScript-Adapter oder betroffenes Skript pruefen.
+7. Ergebnis und naechste Optimierung dokumentieren.
 
-Offene Punkte:
+## Lokale Konfiguration
 
-- URL und Port.
-- Authentifizierung.
-- Aktivierte Adapter und API-Endpunkte.
+Verbindungsdaten werden lokal gehalten, zum Beispiel in `.env.local`, und bleiben durch `.gitignore` ausserhalb des Repositories.
 
-### Option C: Dateisystem- oder Volume-Sync
+Beispielwerte:
 
-Wenn die Skripte in einem Docker-Volume oder gemounteten Pfad liegen, koennen sie ueber Dateien synchronisiert werden.
-
-Vorteile:
-
-- Git-nahe Arbeitsweise.
-- Einfache Backups.
-
-Offene Punkte:
-
-- Pfadstruktur im Container/Volume.
-- Ob ioBroker Dateiaenderungen live erkennt oder ein Adapter-Neustart noetig ist.
+```text
+SYNOLOGY_HOST=192.168.1.10
+SYNOLOGY_SSH_USER=admin
+IOBROKER_CONTAINER=iobroker
+```
 
 ## Naechster sicherer Schritt
 
-1. Verbindungsmethode festlegen.
-2. Nur lesend pruefen, ob ioBroker erreichbar ist.
-3. Vorhandene Skripte sichern und ins Repository importieren.
-4. Ein kleines Testskript aus dem Repository nach ioBroker deployen.
-5. Danach den normalen Workflow fuer Anlegen, Aendern und Loeschen definieren.
+1. SSH-Verbindung zur Synology testen.
+2. Docker-Container fuer ioBroker identifizieren.
+3. Nur lesend pruefen, ob ioBroker erreichbar ist.
+4. Vorhandene Skripte sichern und ins Repository importieren.
+5. Ein kleines Testskript aus dem Repository nach ioBroker deployen.
+6. Danach den normalen Workflow fuer Anlegen, Aendern und Loeschen automatisieren.
