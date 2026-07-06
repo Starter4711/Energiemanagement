@@ -64,6 +64,23 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 - Pack 4 / Slave 3: `alias.0.Gobel_Slave3`, Modbus-Adresse 4
 - Je Pack stehen unter anderem SOC, Strom, Spannung, Temperatur, MOSFET-Temperatur, Balancing und Zellspannungsdifferenz zur Verfuegung
 
+### Victron BAT / Halle
+
+- Alias-Bereich: `alias.0.MP-BAT`
+- Cerbo-/MQTT-Quelle: `mqtt.2`, Kennung `c0619ab4bea6`
+- VEBus-Geraeteinstanz: `276`
+- DC-Werte: `DC-Power`, `DC-Current`, `DC-Voltage`
+- AC-Verbrauch je Phase: `BAT_Consumption_L1`, `BAT_Consumption_L2`, `BAT_Consumption_L3`
+- Aktives SOC-Limit: `BAT_ActiveSocLimit`
+
+### Victron ESS / Haus
+
+- Alias-Bereich: `alias.0.MP-ESS`
+- Cerbo-/MQTT-Quelle: `mqtt.1`, Kennung `c0619ab336ed`
+- VEBus-Geraeteinstanz: `276`
+- DC-Werte: `DC-Power`, `DC-Current`, `DC-Voltage`
+- AC-Verbrauch je Phase: `ESS_Consumption_L1`, `ESS_Consumption_L2`, `ESS_Consumption_L3`
+
 ## Verbraucher
 
 ### Wallboxen
