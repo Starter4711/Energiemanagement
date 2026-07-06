@@ -11,6 +11,8 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 - 10 kW Fronius
 - 4,7 kW SMA
 - Victron 3P Anlage (ESS)
+- Fronius 10 kW Leistung: `alias.0.Fronius.AC-Power_10kW`
+- Fronius 10 kW MQTT-Quelle: `mqtt.1.N.c0619ab336ed.pvinverter.23.Ac.Power`
 - Netzzaehler: `EM24 New Grid`
 - Vorzeichenbehaftete Netzleistung: `alias.0.EM24 New Grid.Power`
 - MQTT-Quelle: `mqtt.1.N.c0619ab336ed.grid.43.Ac.Power`
@@ -20,6 +22,8 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 
 - 27 kW Fronius
 - Victron 3P Anlage (BAT)
+- Fronius 27 kW Leistung: `alias.0.Fronius.AC-Power`
+- Fronius 27 kW MQTT-Quelle: `mqtt.2.N.c0619ab4bea6.pvinverter.20.Ac.Power`
 - Netzzaehler: `EM24 Hall Grid`
 - Vorzeichenbehaftete Netzleistung: `alias.0.EM24 Hall Grid.Power`
 - MQTT-Quelle: `mqtt.2.N.c0619ab4bea6.grid.41.Ac.Power`
