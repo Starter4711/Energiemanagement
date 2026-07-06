@@ -225,6 +225,19 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 
 ## Code-Regeln fuer ioBroker JavaScript
 
+### Ressourcenschonung
+
+- Ressourcenschonung hat bei jedem neuen Skript Vorrang
+- Messwerte nur so oft lesen, wie es die fachlich notwendige Reaktionszeit erfordert
+- Ereignissteuerung verwenden, wenn sie weniger Last als zyklisches Polling erzeugt
+- Langsame Diagnosewerte in groesseren Intervallen zusammenfassen
+- Daten nicht unnoetig in eigene Datenpunkte duplizieren; stattdessen berechnete Ergebnisse und Alarme speichern
+- Nur bei tatsaechlicher Wertveraenderung schreiben
+- Wiederholte identische Warnungen unterdruecken, damit keine Logflut entsteht
+- Gemeinsame Messwerte zentral berechnen und von mehreren Modulen wiederverwenden
+- Timer, Abonnements und Datenpunkte auf das notwendige Minimum begrenzen
+- Rohobjekte duerfen fuer die BMS-/HELTEC-Zelldiagnose direkt gelesen werden, weil 128 einzelne Zell-Aliase unnoetige Objekt- und Pflegekosten erzeugen wuerden
+
 1. Ausschliesslich native ioBroker-Skriptfunktionen verwenden:
    - `on()`
    - `getState()`

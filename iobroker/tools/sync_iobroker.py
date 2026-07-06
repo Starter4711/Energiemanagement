@@ -67,8 +67,15 @@ def iobroker(host: str, ssh_key: Path, container: str, command: str, stdin_text:
 
 def iobroker_set_json(host: str, ssh_key: Path, container: str, object_id: str, payload: dict) -> str:
     compact = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-    command = f"iobroker object set {shlex.quote(object_id)} {shlex.quote(compact)}"
-    return iobroker(host, ssh_key, container, command)
+    node_script = (
+        'const fs=require("fs"),cp=require("child_process");'
+        'const payload=fs.readFileSync(0,"utf8");'
+        'const result=cp.spawnSync("/usr/bin/iobroker",'
+        '["object","extend",process.argv[1],payload],{stdio:"inherit"});'
+        'process.exit(result.status === null ? 1 : result.status);'
+    )
+    command = f"node -e {shlex.quote(node_script)} {shlex.quote(object_id)}"
+    return iobroker(host, ssh_key, container, command, stdin_text=compact)
 
 
 def write_json(path: Path, payload: dict) -> None:
@@ -281,12 +288,7 @@ def deploy_script(host: str, ssh_key: Path, container: str, script_path: Path) -
     object_id, payload = build_object_payload(script_path)
     ensure_parent_channels(host, ssh_key, container, object_id)
     backup_path = backup_live_object(host, ssh_key, container, object_id)
-    iobroker(
-        host,
-        ssh_key,
-        container,
-        f"iobroker object set {shlex.quote(object_id)} {shlex.quote(json.dumps(payload, ensure_ascii=False, separators=(',', ':')))}",
-    )
+    iobroker_set_json(host, ssh_key, container, object_id, payload)
     object_path = object_file_for_id(object_id)
     write_json(object_path, payload)
     upsert_manifest_entry(object_id, payload, script_path)
