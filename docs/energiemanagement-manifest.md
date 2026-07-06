@@ -155,6 +155,10 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 
 ## Restriktionen
 
+- Der Hausanschluss ist vor dem Zaehler dreiphasig mit jeweils 40 A abgesichert
+- Keine einzelne Hausanschlussphase darf 40 A ueberschreiten; der hoechste Phasenstrom ist massgeblich
+- Verifizierte Rohdatenquellen sind `mqtt.1.N.c0619ab336ed.grid.43.Ac.L1.Current`, `L2.Current` und `L3.Current`
+- Unter `alias.0.EM24 New Grid` fehlen derzeit die drei Phasenstrom-Aliase; sie muessen vor Aktivierung des Schutzmoduls angelegt werden
 - Am Zaehlpunkt Halle sind maximal 15 kW Netzbezug erlaubt
 - Am Zaehlpunkt Halle sind maximal 27 kW Netzeinspeisung erlaubt
 - Mit der festgelegten Vorzeichenkonvention muss `alias.0.EM24 Hall Grid.Power` zwischen `-27000 W` und `+15000 W` bleiben
