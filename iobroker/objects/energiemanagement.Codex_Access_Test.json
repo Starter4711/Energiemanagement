@@ -1,5 +1,5 @@
 {
-  "_id": "script.js.common.Codex_Access_Test",
+  "_id": "script.js.energiemanagement.Codex_Access_Test",
   "common": {
     "enabled": false,
     "engine": "system.adapter.javascript.0",

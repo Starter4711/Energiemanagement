@@ -1,6 +1,6 @@
 {
   "count": 66,
-  "exportedAt": "2026-07-06T10:54:21.101330+00:00",
+  "exportedAt": "2026-07-06T11:00:56.684472+00:00",
   "objects": [
     {
       "enabled": null,
@@ -67,17 +67,8 @@
       "engineType": "Blockly",
       "id": "script.js.common.Bewässerung",
       "name": "Bewässerung",
-      "objectFile": "iobroker/objects/common.Bew_sserung.json",
-      "scriptFile": "iobroker/scripts/common/Bew_sserung.js",
-      "type": "script"
-    },
-    {
-      "enabled": false,
-      "engineType": "Javascript/js",
-      "id": "script.js.common.Codex_Access_Test",
-      "name": "Codex_Access_Test",
-      "objectFile": "iobroker/objects/common.Codex_Access_Test.json",
-      "scriptFile": "iobroker/scripts/common/Codex_Access_Test.js",
+      "objectFile": "iobroker/objects/common.Bewässerung.json",
+      "scriptFile": "iobroker/scripts/common/Bewässerung.js",
       "type": "script"
     },
     {
@@ -472,8 +463,8 @@
       "engineType": "Blockly",
       "id": "script.js.common.go-E_V3_Überschuss",
       "name": "go-E_V3_Überschuss",
-      "objectFile": "iobroker/objects/common.go-E_V3__berschuss.json",
-      "scriptFile": "iobroker/scripts/common/go-E_V3__berschuss.js",
+      "objectFile": "iobroker/objects/common.go-E_V3_Überschuss.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_Überschuss.js",
       "type": "script"
     },
     {
@@ -481,8 +472,8 @@
       "engineType": "Blockly",
       "id": "script.js.common.go-E_V3_Überwachung",
       "name": "go-E_V3_Überwachung",
-      "objectFile": "iobroker/objects/common.go-E_V3__berwachung.json",
-      "scriptFile": "iobroker/scripts/common/go-E_V3__berwachung.js",
+      "objectFile": "iobroker/objects/common.go-E_V3_Überwachung.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_Überwachung.js",
       "type": "script"
     },
     {
@@ -598,8 +589,8 @@
       "engineType": "Blockly",
       "id": "script.js.common.go-E_V4_Überwachung",
       "name": "go-E_V4_Überwachung",
-      "objectFile": "iobroker/objects/common.go-E_V4__berwachung.json",
-      "scriptFile": "iobroker/scripts/common/go-E_V4__berwachung.js",
+      "objectFile": "iobroker/objects/common.go-E_V4_Überwachung.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_Überwachung.js",
       "type": "script"
     },
     {
@@ -609,6 +600,15 @@
       "name": "go-E_WB-Halle_Ladungen",
       "objectFile": "iobroker/objects/common.go-E_WB-Halle_Ladungen.json",
       "scriptFile": "iobroker/scripts/common/go-E_WB-Halle_Ladungen.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Codex_Access_Test",
+      "name": "Codex_Access_Test",
+      "objectFile": "iobroker/objects/energiemanagement.Codex_Access_Test.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Codex_Access_Test.js",
       "type": "script"
     },
     {

@@ -1,4 +1,4 @@
-// ioBroker object: script.js.common.Codex_Access_Test
+// ioBroker object: script.js.energiemanagement.Codex_Access_Test
 // name: Codex_Access_Test
 // engineType: Javascript/js
 // enabled: False

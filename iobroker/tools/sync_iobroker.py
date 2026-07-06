@@ -17,6 +17,8 @@ OBJECT_DIR = IOBROKER_DIR / "objects"
 SCRIPT_DIR = IOBROKER_DIR / "scripts"
 BACKUP_DIR = IOBROKER_DIR / "backups"
 MANIFEST = IOBROKER_DIR / "manifest.json"
+ENERGY_DIR = SCRIPT_DIR / "energiemanagement"
+MANAGED_OBJECT_PREFIX = "script.js.energiemanagement."
 
 DEFAULT_HOST = os.environ.get("SYNOLOGY_HOST", "192.168.0.20")
 DEFAULT_SSH_USER = os.environ.get("SYNOLOGY_SSH_USER", "Richard")
@@ -81,7 +83,8 @@ def safe_part(value: str) -> str:
     value = value.replace("script.js.", "")
     value = value.replace("script.js", "_root")
     value = value.replace("/", "_")
-    return re.sub(r"[^A-Za-z0-9._ -]+", "_", value).strip(" .") or "unnamed"
+    value = re.sub(r"[\x00-\x1f<>:\"\\|?*]+", "_", value)
+    return value.strip(" .") or "unnamed"
 
 
 def object_file_for_id(object_id: str) -> Path:
@@ -168,6 +171,14 @@ def script_path_to_object_id(script_path: Path) -> str:
     return "script.js." + ".".join(parts)
 
 
+def ensure_managed_object_id(object_id: str) -> None:
+    if not object_id.startswith(MANAGED_OBJECT_PREFIX):
+        raise SystemExit(
+            "Refusing to modify an existing non-Energiemanagement script. "
+            "Use set-enabled for existing scripts or create new scripts under iobroker/scripts/energiemanagement/."
+        )
+
+
 def manifest_lookup_by_script(script_rel_path: str) -> Optional[dict]:
     manifest = read_manifest()
     for item in manifest["objects"]:
@@ -249,6 +260,7 @@ def build_object_payload(script_path: Path) -> tuple[str, dict]:
             "native": {},
         }
 
+    ensure_managed_object_id(object_id)
     obj["_id"] = object_id
     obj["type"] = "script"
     obj.setdefault("common", {})
@@ -282,9 +294,17 @@ def deploy_script(host: str, ssh_key: Path, container: str, script_path: Path) -
 
 
 def delete_script(host: str, ssh_key: Path, container: str, object_id: str) -> Optional[Path]:
+    ensure_managed_object_id(object_id)
     backup_path = backup_live_object(host, ssh_key, container, object_id)
     iobroker(host, ssh_key, container, f"iobroker object del {shlex.quote(object_id)}")
     remove_manifest_entry(object_id)
+    return backup_path
+
+
+def set_enabled(host: str, ssh_key: Path, container: str, object_id: str, enabled: bool) -> Optional[Path]:
+    backup_path = backup_live_object(host, ssh_key, container, object_id)
+    value = "true" if enabled else "false"
+    iobroker(host, ssh_key, container, f"iobroker object set {shlex.quote(object_id)} common.enabled={value}")
     return backup_path
 
 
@@ -317,6 +337,15 @@ def command_backup(args: argparse.Namespace) -> int:
     return 0
 
 
+def command_set_enabled(args: argparse.Namespace) -> int:
+    enabled = args.enabled.lower() == "true"
+    backup_path = set_enabled(args.host, args.ssh_key, args.container, args.object_id, enabled)
+    print(f"Set {args.object_id} enabled={enabled}")
+    if backup_path:
+        print(f"Backup saved to {backup_path.relative_to(ROOT)}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Sync ioBroker scripts between repository and live system")
     parser.add_argument("--host", default=f"{DEFAULT_SSH_USER}@{DEFAULT_HOST}")
@@ -336,6 +365,11 @@ def build_parser() -> argparse.ArgumentParser:
     delete_parser = subparsers.add_parser("delete", help="Delete one live script object after saving a backup")
     delete_parser.add_argument("object_id", help="Full ioBroker object id")
     delete_parser.set_defaults(func=command_delete)
+
+    enabled_parser = subparsers.add_parser("set-enabled", help="Enable or disable an existing live script object")
+    enabled_parser.add_argument("object_id", help="Full ioBroker object id")
+    enabled_parser.add_argument("enabled", choices=["true", "false"], help="Target enabled state")
+    enabled_parser.set_defaults(func=command_set_enabled)
 
     return parser
 

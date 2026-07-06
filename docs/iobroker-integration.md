@@ -19,6 +19,9 @@ Repository -> Pruefung -> Deployment -> ioBroker JavaScript Adapter
 - Live-Aenderungen erst nach einem Lesetest und einem kleinen Testskript durchfuehren.
 - Loeschoperationen nur mit expliziter Bestaetigung.
 - Vor groesseren Aenderungen Live-Skripte aus ioBroker sichern.
+- Bestehende ioBroker-Skripte werden nicht inhaltlich veraendert.
+- Vorhandene Skripte duerfen nur aktiviert oder deaktiviert werden, wenn das betrieblich noetig ist.
+- Neue Energiemanagement-Logik entsteht in eigenen Skripten unter `script.js.energiemanagement.*`.
 
 ## Gewaehlte Zugriffsmethode
 
@@ -53,7 +56,7 @@ iobroker/
 
 1. Live-Skripte aus ioBroker lesen und lokal sichern.
 2. Relevante Skripte nach `iobroker/scripts/` importieren.
-3. Aenderungen im Repository bearbeiten und committen.
+3. Neue Energiemanagement-Skripte im Repository unter `iobroker/scripts/energiemanagement/` bearbeiten und committen.
 4. Vor dem Deployment aktuellen Live-Stand erneut sichern.
 5. Skript nach ioBroker uebertragen.
 6. ioBroker JavaScript-Adapter oder betroffenes Skript pruefen.

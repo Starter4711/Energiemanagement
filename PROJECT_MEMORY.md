@@ -28,9 +28,11 @@ Dieses Dokument sammelt den dauerhaften Kontext, damit wir das Projekt ueber vie
 
 - ioBroker laeuft in Docker auf einer Synology.
 - Relevanter Arbeitsbereich: JavaScript-Skripte im ioBroker JavaScript Script Editor.
-- Gewuenschte Operationen: Skripte anlegen, aendern, loeschen und synchronisieren.
+- Gewuenschte Operationen: neue Energiemanagement-Skripte anlegen, aendern und synchronisieren.
 - Gewaehlte Zugriffsmethode: SSH auf die Synology, danach `docker exec` in den ioBroker-Container.
 - Deployment-Grundsatz: Repository-Dateien sind Referenz; vor Live-Aenderungen wird der aktuelle ioBroker-Stand gesichert.
+- Bestehende ioBroker-Skripte werden inhaltlich nicht veraendert; sie duerfen nur bei Bedarf aktiviert oder deaktiviert werden.
+- Neues Energiemanagement wird in eigenen Skripten unter `script.js.energiemanagement.*` aufgebaut.
 
 ## Offene Klaerungen
 
