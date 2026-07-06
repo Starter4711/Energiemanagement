@@ -9,7 +9,7 @@ const ROOT = '0_userdata.0.Energiemanagement';
 
 const states = [
     [`${ROOT}.Config.Zaehlpunkt_Haus_Leistung_ID`, '', 'string', 'state'],
-    [`${ROOT}.Config.Zaehlpunkt_Halle_Leistung_ID`, '', 'string', 'state'],
+    [`${ROOT}.Config.Zaehlpunkt_Halle_Leistung_ID`, 'alias.0.EM24 Hall Grid.Power', 'string', 'state'],
     [`${ROOT}.Config.Zaehlpunkt_Alte_Wohnung_Leistung_ID`, '', 'string', 'state'],
     [`${ROOT}.Config.Vorzeichen_Netzbezug`, 1, 'number', 'value'],
     [`${ROOT}.Config.Aktualisierung_Sekunden`, 10, 'number', 'value'],

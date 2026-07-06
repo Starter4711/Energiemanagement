@@ -16,6 +16,9 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 
 - 27 kW Fronius
 - Victron 3P Anlage (BAT)
+- Netzzaehler: `EM24 Hall Grid`
+- Vorzeichenbehaftete Netzleistung: `alias.0.EM24 Hall Grid.Power`
+- Vorzeichenkonvention: positive Werte sind Netzbezug, negative Werte sind Einspeisung
 
 ### Zaehpunkt 3: Alte Wohnung
 
