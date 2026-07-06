@@ -111,10 +111,13 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 - Morgens sollen Wallbox 1 und 2 auf 1-phasig stehen
 - Wallbox 1 und 2 sollen bei angestecktem Fahrzeug aktiviert werden koennen
 - Bei Netzbezug darf die Ladung gestoppt werden
-- Verifizierte Adapter-Steuerobjekte fuer Wallbox 1 und 2 sind `allow_charging`, `ampere`, `phaseSwitchMode`, `phaseSwitchModeEnabled` und der Fahrzeugstatus `car`
+- Verifizierte Adapter-Steuerobjekte fuer Wallbox 1 und 2 sind `allow_charging`, `amperePV`, `phaseSwitchMode`, `phaseSwitchModeEnabled` und der Fahrzeugstatus `car`
 - Vor Verwendung werden fuer diese Steuerobjekte eigene `alias.0`-Objekte benoetigt; direkte `go-e.x`-Objekte werden im Energiemanagement nicht verwendet
+- Verbindliche Ladestromvorgabe ist ausschliesslich `amperePV`; `ampere` darf fuer die Ansteuerung nicht verwendet werden
+- Bei Wallbox 1 entspricht der spaetere Ladestrom-Alias `go-e.0.amperePV`, bei Wallbox 2 `go-e.1.amperePV`
 - `allow_charging`: `0` = aus, `1` = freigegeben
 - `phaseSwitchMode`: `0` = Automatik, `1` = erzwungen 1-phasig, `2` = erzwungen 3-phasig
+- Referenz fuer die bewaehrte Ansteuerung sind die bestehenden Common-Skripte der Familie `go-E_V4`, insbesondere `go-E_V4_Charger_Neu`, `go-E_V4_Phasen`, `go-E_V4_Limits` und `go-E_V4_Verriegelung`
 
 ### Pooltechnik an Zaehlpunkt Halle
 
