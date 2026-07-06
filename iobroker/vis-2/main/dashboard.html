@@ -1,0 +1,83 @@
+<div class="em-dashboard">
+  <header class="em-header">
+    <div>
+      <div class="em-kicker">LIVE</div>
+      <h1>Energiemanagement</h1>
+      <p>Haus · Halle · Wohnung</p>
+    </div>
+    <div class="em-soc">
+      <span>Batterie</span>
+      <strong>{alias.0.Gobel.SOC}%</strong>
+    </div>
+  </header>
+
+  <section>
+    <h2>Netz</h2>
+    <div class="em-grid em-grid-3">
+      <article class="em-card">
+        <span>Haus</span>
+        <strong>{alias.0.EM24 New Grid.Power}</strong>
+        <small>W · + Bezug / − Einspeisung</small>
+      </article>
+      <article class="em-card">
+        <span>Halle</span>
+        <strong>{alias.0.EM24 Hall Grid.Power}</strong>
+        <small>W · Grenze −27 / +15 kW</small>
+      </article>
+      <article class="em-card">
+        <span>Wohnung</span>
+        <strong>{alias.0.EM24 Old Grid.Power Old Grid}</strong>
+        <small>W · Zählpunkt 3</small>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>PV aktuell</h2>
+    <div class="em-grid em-grid-2">
+      <article class="em-card em-accent-green"><span>Fronius Halle · 27 kW</span><strong>{alias.0.Fronius.AC-Power}</strong><small>W</small></article>
+      <article class="em-card em-accent-yellow"><span>Fronius Haus · 10 kW</span><strong>{alias.0.Fronius.AC-Power_10kW}</strong><small>W</small></article>
+      <article class="em-card em-accent-blue"><span>SMA Haus · 4,7 kW</span><strong>{alias.0.SMA.Power}</strong><small>W</small></article>
+      <article class="em-card em-accent-red"><span>SolarEdge Wohnung · 17 kW</span><strong>{alias.0.SE.Power}</strong><small>W</small></article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Batterie</h2>
+    <div class="em-battery">
+      <div><span>Leistung</span><strong>{alias.0.Gobel.Power} W</strong></div>
+      <div><span>Spannung</span><strong>{alias.0.Gobel.Voltage} V</strong></div>
+      <div><span>Strom</span><strong>{alias.0.Gobel.Current} A</strong></div>
+      <div><span>RS450</span><strong>{alias.0.MPPT RS450/100.P String1} + {alias.0.MPPT RS450/100.P String2} W</strong></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="em-section-head">
+      <h2>Zellüberwachung</h2>
+      <span>Alarmgrenze 50 mV</span>
+    </div>
+    <div class="em-packs">
+      <article class="em-pack">
+        <div class="em-pack-title"><strong>Pack 1</strong><span>SOC {alias.0.Gobel_Master.SOC}%</span></div>
+        <div class="em-pack-values"><div><span>Spreizung</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Differenz_mV} mV</b></div><div><span>BMS ↔ HELTEC</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Max_Differenz_mV} mV</b></div></div>
+        <small>Zellalarm: {0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Alarm} · Vergleich: {0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Alarm}</small>
+      </article>
+      <article class="em-pack">
+        <div class="em-pack-title"><strong>Pack 2</strong><span>SOC {alias.0.Gobel_Slave1.SOC}%</span></div>
+        <div class="em-pack-values"><div><span>Spreizung</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Differenz_mV} mV</b></div><div><span>BMS ↔ HELTEC</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Max_Differenz_mV} mV</b></div></div>
+        <small>Zellalarm: {0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Alarm} · Vergleich: {0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Alarm}</small>
+      </article>
+      <article class="em-pack">
+        <div class="em-pack-title"><strong>Pack 3</strong><span>SOC {alias.0.Gobel_Slave2.SOC}%</span></div>
+        <div class="em-pack-values"><div><span>Spreizung</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Differenz_mV} mV</b></div><div><span>BMS ↔ HELTEC</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Max_Differenz_mV} mV</b></div></div>
+        <small>Zellalarm: {0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Alarm} · Vergleich: {0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Alarm}</small>
+      </article>
+      <article class="em-pack">
+        <div class="em-pack-title"><strong>Pack 4</strong><span>SOC {alias.0.Gobel_Slave3.SOC}%</span></div>
+        <div class="em-pack-values"><div><span>Spreizung</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Differenz_mV} mV</b></div><div><span>BMS ↔ HELTEC</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Max_Differenz_mV} mV</b></div></div>
+        <small>Zellalarm: {0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Alarm} · Vergleich: {0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Alarm}</small>
+      </article>
+    </div>
+  </section>
+</div>
