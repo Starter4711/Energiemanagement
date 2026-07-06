@@ -50,14 +50,16 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 - Energie kann ueber die DC-Seite zwischen den Anlagen durchgeschleust werden
 - Maximalleistungen muessen beruecksichtigt werden
 
-### Gobel Gesamtbatterie
+### Gesamtbatterie und SmartShunt
 
 - Gesamtwerte liegen unter `alias.0.Gobel`
-- Victron-/MQTT-Quelle: Haus-Cerbo `mqtt.1`, Batterieinstanz `512`
-- SOC: `alias.0.Gobel.SOC`
-- Spannung: `alias.0.Gobel.Voltage`
+- Auf der gemeinsamen DC-Seite ist ein Victron SmartShunt 1000 A verbaut
+- SmartShunt-/MQTT-Quelle: Haus-Cerbo `mqtt.1`, Batterieinstanz `279`
+- Fuehrender Gesamt-SOC: `alias.0.Gobel.Soc SmartShunt`
+- Fuehrende DC-Spannung: `alias.0.Gobel.Voltage_SmartShunt`
 - Strom: `alias.0.Gobel.Current`
 - Leistung: `alias.0.Gobel.Power`
+- Der Gobel-SOC `alias.0.Gobel.SOC` ist nicht korrekt und darf nicht fuer Regelung, Schutzgrenzen oder die Gesamtanzeige verwendet werden
 - Weitere BMS-Grenzwerte: `Gobel MaxChargeCurrent`, `Gobel MaxChargeVoltage` und `Gobel MaxDischargeCurrent`
 
 ### Gobel Einzelpacks
@@ -68,7 +70,7 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 - Pack 3 / Slave 2: `alias.0.Gobel_Slave2`, Modbus-Adresse 3
 - Pack 4 / Slave 3: `alias.0.Gobel_Slave3`, Modbus-Adresse 4
 - Je Pack stehen unter anderem SOC, Strom, Spannung, Temperatur, MOSFET-Temperatur, Balancing und Zellspannungsdifferenz zur Verfuegung
-- Victron-/MQTT-Batteriewerte unter `alias.0.Gobel` sind Gesamtwerte; die Pace-BMS-Werte unter den vier Pack-Aliasbereichen sind die Quelle fuer Einzelpack- und Zelldiagnose
+- Die Pace-BMS-Werte unter den vier Pack-Aliasbereichen sind ausschliesslich die Quelle fuer Einzelpack- und Zelldiagnose; deren SOC-Werte sind keine fuehrende Gesamtgroesse
 - Die HELTEC-Balancer uebermitteln ihre Werte ueber `mqtt.0.HELTEC_1` bis `mqtt.0.HELTEC_4`
 - Die bestehende Zuordnung ist `HELTEC_1` = Pack 1 bis `HELTEC_4` = Pack 4
 - Jeder HELTEC-Baum enthaelt 16 Zellspannungen unter `cell_1.voltage` bis `cell_16.voltage`
