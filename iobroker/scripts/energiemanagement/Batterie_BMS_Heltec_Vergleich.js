@@ -1,7 +1,7 @@
 // ioBroker object: script.js.energiemanagement.Batterie_BMS_Heltec_Vergleich
 // name: Batterie_BMS_Heltec_Vergleich
 // engineType: Javascript/js
-// enabled: False
+// enabled: True
 
 'use strict';
 
@@ -53,32 +53,54 @@ function readFreshNumber(id, maxAgeMs) {
     return { value, ts: state.ts };
 }
 
+function readHeltecPack(pack, maxAgeMs) {
+    const state = getState(`mqtt.0.HELTEC_${pack}.data`);
+    if (!state || typeof state.val !== 'string' || Date.now() - state.ts > maxAgeMs) return null;
+
+    try {
+        const payload = JSON.parse(state.val);
+        if (!payload || !Array.isArray(payload.cells) || payload.cells.length !== CELLS) return null;
+
+        const cells = Array(CELLS).fill(null);
+        for (const item of payload.cells) {
+            const cell = Number(item && item.cell);
+            const voltage = Number(item && item.voltage);
+            if (cell >= 1 && cell <= CELLS && Number.isFinite(voltage) && voltage > 0) {
+                cells[cell - 1] = voltage;
+            }
+        }
+        return cells.every(value => value !== null) ? { cells, ts: state.ts } : null;
+    } catch (error) {
+        return null;
+    }
+}
+
 function updatePack(pack, alarmLimitMv, maxAgeMs) {
     const base = `${ROOT}.Pack${pack}.BMS_Heltec_Vergleich`;
     const alarmCells = [];
     let validCells = 0;
     let maxDiffMv = 0;
     let latestSourceTs = 0;
+    const heltecPack = readHeltecPack(pack, maxAgeMs);
 
     for (let cell = 1; cell <= CELLS; cell++) {
         const register = 40015 + cell;
         const paceId = `modbus.1.holdingRegisters.${pack}.${register}_Cell_Voltage_${cell}`;
-        const heltecId = `mqtt.0.HELTEC_${pack}.cell_${cell}.voltage`;
         const paceState = readFreshNumber(paceId, maxAgeMs);
-        const heltecState = readFreshNumber(heltecId, maxAgeMs);
+        const heltecV = heltecPack && heltecPack.cells[cell - 1];
         const cellBase = `${base}.Zelle${cell}`;
 
-        if (paceState === null || heltecState === null) {
+        if (paceState === null || heltecV === null) {
             writeChanged(`${cellBase}.Alarm`, true);
             alarmCells.push(cell);
             continue;
         }
 
         const paceV = paceState.value / 1000;
-        const diffMv = Math.abs(paceV - heltecState.value) * 1000;
+        const diffMv = Math.abs(paceV - heltecV) * 1000;
         const alarm = diffMv > alarmLimitMv;
         validCells++;
-        latestSourceTs = Math.max(latestSourceTs, paceState.ts, heltecState.ts);
+        latestSourceTs = Math.max(latestSourceTs, paceState.ts, heltecPack.ts);
         maxDiffMv = Math.max(maxDiffMv, diffMv);
         if (alarm) alarmCells.push(cell);
 

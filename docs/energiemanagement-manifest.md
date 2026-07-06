@@ -78,11 +78,12 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 ### Bestehende Gobel-Common-Skripte
 
 - Die Skripte unter `script.js.common.Gobel...` dienen der Zellspannungspruefung und bleiben inhaltlich unveraendert
-- `Gobel_VDIFF` ist aktiv und berechnet je Pack Zellspannungsdifferenz, Mittelwert, Trend und Alarm aus den Pace-BMS-Modbusdaten
-- `Gobel_Vergleich_BMS_Heltec` ist aktiv und vergleicht Pace-BMS- mit HELTEC-Zellspannungen; der bekannte Adressfehler fuer Pack 2 bis 4 ist in `docs/bekannte-probleme.md` festgehalten
+- `Gobel_VDIFF` ist deaktiviert und wurde durch `script.js.energiemanagement.Batterie_Zellspannungen` ersetzt
+- `Gobel_Vergleich_BMS_Heltec` ist deaktiviert und wurde durch `script.js.energiemanagement.Batterie_BMS_Heltec_Vergleich` ersetzt
+- Die neuen Skripte sind aktiv und wurden mit allen vier Packs erfolgreich live geprueft
 - `Gobel_Zellspannungen` ist deaktiviert und erzeugt bei Aktivierung JSON-Listen der 16 Modbus-Zellspannungen je Pack
 - `Gobel_einzelne_Zellspannungen` ist deaktiviert und erzeugt bei Aktivierung einzelne MQTT-Zellwerte
-- Das neue Energiemanagement verwendet die vorhandenen Pruef- und Alarmwerte als Eingang und baut keine konkurrierende Zellueberwachung auf
+- Die alten Skriptinhalte bleiben als Referenz und Backup unveraendert erhalten
 
 ### Victron BAT / Halle
 

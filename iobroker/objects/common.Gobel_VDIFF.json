@@ -7,7 +7,7 @@
   },
   "common": {
     "debug": false,
-    "enabled": true,
+    "enabled": false,
     "engine": "system.adapter.javascript.0",
     "engineType": "Javascript/js",
     "expert": true,

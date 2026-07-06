@@ -1,7 +1,7 @@
 // ioBroker object: script.js.energiemanagement.Batterie_Zellspannungen
 // name: Batterie_Zellspannungen
 // engineType: Javascript/js
-// enabled: False
+// enabled: True
 
 'use strict';
 

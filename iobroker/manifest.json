@@ -1,6 +1,6 @@
 {
-  "count": 66,
-  "exportedAt": "2026-07-06T11:00:56.684472+00:00",
+  "count": 69,
+  "exportedAt": "2026-07-06T17:59:21.094026+00:00",
   "objects": [
     {
       "enabled": null,
@@ -90,7 +90,7 @@
       "type": "script"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "engineType": "Javascript/js",
       "id": "script.js.common.Gobel_VDIFF",
       "name": "Gobel VDIFF",
@@ -99,7 +99,7 @@
       "type": "script"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "engineType": "Javascript/js",
       "id": "script.js.common.Gobel_Vergleich_BMS_Heltec",
       "name": "Gobel_Vergleich_BMS_Heltec",
@@ -603,12 +603,39 @@
       "type": "script"
     },
     {
+      "enabled": true,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Batterie_BMS_Heltec_Vergleich",
+      "name": "Batterie_BMS_Heltec_Vergleich",
+      "objectFile": "iobroker/objects/energiemanagement.Batterie_BMS_Heltec_Vergleich.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Batterie_BMS_Heltec_Vergleich.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Batterie_Zellspannungen",
+      "name": "Batterie_Zellspannungen",
+      "objectFile": "iobroker/objects/energiemanagement.Batterie_Zellspannungen.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Batterie_Zellspannungen.js",
+      "type": "script"
+    },
+    {
       "enabled": false,
       "engineType": "Javascript/js",
       "id": "script.js.energiemanagement.Codex_Access_Test",
       "name": "Codex_Access_Test",
       "objectFile": "iobroker/objects/energiemanagement.Codex_Access_Test.json",
       "scriptFile": "iobroker/scripts/energiemanagement/Codex_Access_Test.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Config",
+      "name": "Config",
+      "objectFile": "iobroker/objects/energiemanagement.Config.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Config.js",
       "type": "script"
     },
     {

@@ -78,6 +78,30 @@ def iobroker_set_json(host: str, ssh_key: Path, container: str, object_id: str, 
     return iobroker(host, ssh_key, container, command, stdin_text=compact)
 
 
+def iobroker_set_property_json(
+    host: str,
+    ssh_key: Path,
+    container: str,
+    object_id: str,
+    property_name: str,
+    value,
+) -> str:
+    encoded_value = json.dumps(value, ensure_ascii=False, separators=(",", ":"))
+    node_script = (
+        'const fs=require("fs"),cp=require("child_process");'
+        'const value=fs.readFileSync(0,"utf8");'
+        'const property=process.argv[2]+"="+value;'
+        'const result=cp.spawnSync("/usr/bin/iobroker",'
+        '["object","set",process.argv[1],property],{stdio:"inherit"});'
+        'process.exit(result.status === null ? 1 : result.status);'
+    )
+    command = (
+        f"node -e {shlex.quote(node_script)} "
+        f"{shlex.quote(object_id)} {shlex.quote(property_name)}"
+    )
+    return iobroker(host, ssh_key, container, command, stdin_text=encoded_value)
+
+
 def write_json(path: Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
@@ -288,7 +312,10 @@ def deploy_script(host: str, ssh_key: Path, container: str, script_path: Path) -
     object_id, payload = build_object_payload(script_path)
     ensure_parent_channels(host, ssh_key, container, object_id)
     backup_path = backup_live_object(host, ssh_key, container, object_id)
-    iobroker_set_json(host, ssh_key, container, object_id, payload)
+    metadata_payload = json.loads(json.dumps(payload, ensure_ascii=False))
+    source = metadata_payload["common"].pop("source")
+    iobroker_set_json(host, ssh_key, container, object_id, metadata_payload)
+    iobroker_set_property_json(host, ssh_key, container, object_id, "common.source", source)
     object_path = object_file_for_id(object_id)
     write_json(object_path, payload)
     upsert_manifest_entry(object_id, payload, script_path)

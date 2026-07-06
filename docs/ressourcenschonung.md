@@ -17,6 +17,7 @@ Ressourcenschonung ist eine verbindliche Architekturregel fuer alle neuen Energi
 
 - Pace-Zellspreizung wird alle 15 Sekunden berechnet.
 - Pace-/HELTEC-Vergleich wird alle 30 Sekunden berechnet.
+- Je HELTEC-Pack wird nur das vorhandene `data`-JSON gelesen und einmal geparst, statt 16 einzelne MQTT-Zellobjekte abzufragen.
 - Die 128 vorhandenen Rohspannungen werden nicht dupliziert.
 - Gespeichert werden nur Min/Max, Spreizung, Trend, Gueltigkeit, Alarme und Zellabweichungen.
 - Quellzeitstempel werden uebernommen; es wird kein kuenstlicher Aktualisierungszeitstempel pro Zyklus geschrieben.
