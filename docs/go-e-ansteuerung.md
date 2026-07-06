@@ -23,8 +23,10 @@
 - Der bestehende V4-Code verwendet den go-E-Parameter `psm`.
 - `psm=1` erzwingt 1-phasigen Betrieb.
 - `psm=2` erzwingt 3-phasigen Betrieb.
-- Der bestehende Code sendet den Wert sowohl ueber die lokale go-E-HTTP-API als auch ueber ein MQTT-Kommando.
-- Im neuen Energiemanagement wird der konkrete Befehl hinter einem geprueften, schreibbaren `alias.0`-Aktor gekapselt.
+- Die Phasenumschaltung erfolgt ausschliesslich ueber die lokale go-E-HTTP-API; der fruehere MQTT-Steuerweg ist veraltet und wird nicht verwendet.
+- Wallbox 1 / V3: `http://192.168.11.20/api/set?psm=1` beziehungsweise `psm=2`.
+- Wallbox 2 / V4: `http://192.168.11.21/api/set?psm=1` beziehungsweise `psm=2`.
+- Der neue ioBroker-Code verwendet dafuer die native Funktion `httpGet` mit Timeout und Fehlerpruefung.
 - Nach der Umschaltung wird `amperePV` auf den Mindeststrom des neuen Phasenmodus gesetzt.
 - Die tatsaechlich aktiven Phasen werden ueber `phases` kontrolliert; der Sollbefehl allein gilt nicht als erfolgreiche Umschaltung.
 

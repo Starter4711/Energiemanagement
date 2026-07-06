@@ -113,12 +113,15 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 - Morgens sollen Wallbox 1 und 2 auf 1-phasig stehen
 - Wallbox 1 und 2 sollen bei angestecktem Fahrzeug aktiviert werden koennen
 - Bei Netzbezug darf die Ladung gestoppt werden
-- Verifizierte Adapter-Steuerobjekte fuer Wallbox 1 und 2 sind `allow_charging`, `amperePV`, `phaseSwitchMode`, `phaseSwitchModeEnabled` und der Fahrzeugstatus `car`
+- Verifizierte Adapterobjekte fuer Wallbox 1 und 2 sind `allow_charging`, `amperePV`, `phases` und der Fahrzeugstatus `car`
 - Vor Verwendung werden fuer diese Steuerobjekte eigene `alias.0`-Objekte benoetigt; direkte `go-e.x`-Objekte werden im Energiemanagement nicht verwendet
 - Verbindliche Ladestromvorgabe ist ausschliesslich `amperePV`; `ampere` darf fuer die Ansteuerung nicht verwendet werden
 - Bei Wallbox 1 entspricht der spaetere Ladestrom-Alias `go-e.0.amperePV`, bei Wallbox 2 `go-e.1.amperePV`
 - `allow_charging`: `0` = aus, `1` = freigegeben
-- `phaseSwitchMode`: `0` = Automatik, `1` = erzwungen 1-phasig, `2` = erzwungen 3-phasig
+- Phasenumschaltung ausschliesslich per lokaler HTTP-API: `psm=1` fuer 1-phasig und `psm=2` fuer 3-phasig
+- HTTP-Basis Wallbox 1 / V3: `http://192.168.11.20`
+- HTTP-Basis Wallbox 2 / V4: `http://192.168.11.21`
+- MQTT darf fuer die Phasenumschaltung nicht verwendet werden; dieser Steuerweg ist veraltet
 - Referenz fuer die bewaehrte Ansteuerung sind die bestehenden Common-Skripte der Familie `go-E_V4`, insbesondere `go-E_V4_Charger_Neu`, `go-E_V4_Phasen`, `go-E_V4_Limits` und `go-E_V4_Verriegelung`
 
 ### Pooltechnik an Zaehlpunkt Halle
@@ -201,6 +204,7 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
    - `subscribe()`
    - `schedule()`
    - `log()`
+   - `httpGet()` fuer die lokale Phasenumschaltung der go-E-Wallboxen
 2. Keine externen Bibliotheken oder Node.js-Webserver-Module verwenden, ausser explizit angefordert
 3. Modernen ECMAScript-6+-Code schreiben
 4. Fuer asynchrone Operationen `async/await` statt verschachtelter Callbacks verwenden
