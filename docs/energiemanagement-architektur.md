@@ -22,7 +22,7 @@ Bestehende Skripte bleiben unveraendert. Neues Energiemanagement wird modular in
 ### Batterie und Victron
 
 - `script.js.energiemanagement.Batterie_Strategie`
-- `script.js.energiemanagement.Batterie_Pack_Überwachung`
+- `script.js.energiemanagement.Batterie_Pack_Status` zur Zusammenfassung der vorhandenen Gobel-Pruefergebnisse
 - `script.js.energiemanagement.Victron_ESS_Setpoint`
 - `script.js.energiemanagement.Victron_BAT_Setpoint`
 - `script.js.energiemanagement.RS450_Strategie`

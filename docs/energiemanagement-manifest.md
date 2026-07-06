@@ -73,7 +73,16 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 - Die bestehende Zuordnung ist `HELTEC_1` = Pack 1 bis `HELTEC_4` = Pack 4
 - Jeder HELTEC-Baum enthaelt 16 Zellspannungen unter `cell_1.voltage` bis `cell_16.voltage`
 - Zusaetzlich stehen `delta_voltage`, `total_voltage`, `temperature` und `balancing` zur Verfuegung
-- Die neue Pack-Ueberwachung vergleicht je Pack die Pace-BMS-Modbuswerte mit den HELTEC-MQTT-Werten
+- Der bestehende BMS-/HELTEC-Vergleich soll je Pack die Pace-BMS-Modbuswerte mit den HELTEC-MQTT-Werten vergleichen
+
+### Bestehende Gobel-Common-Skripte
+
+- Die Skripte unter `script.js.common.Gobel...` dienen der Zellspannungspruefung und bleiben inhaltlich unveraendert
+- `Gobel_VDIFF` ist aktiv und berechnet je Pack Zellspannungsdifferenz, Mittelwert, Trend und Alarm aus den Pace-BMS-Modbusdaten
+- `Gobel_Vergleich_BMS_Heltec` ist aktiv und vergleicht Pace-BMS- mit HELTEC-Zellspannungen; der bekannte Adressfehler fuer Pack 2 bis 4 ist in `docs/bekannte-probleme.md` festgehalten
+- `Gobel_Zellspannungen` ist deaktiviert und erzeugt bei Aktivierung JSON-Listen der 16 Modbus-Zellspannungen je Pack
+- `Gobel_einzelne_Zellspannungen` ist deaktiviert und erzeugt bei Aktivierung einzelne MQTT-Zellwerte
+- Das neue Energiemanagement verwendet die vorhandenen Pruef- und Alarmwerte als Eingang und baut keine konkurrierende Zellueberwachung auf
 
 ### Victron BAT / Halle
 
