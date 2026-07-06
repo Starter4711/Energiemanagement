@@ -32,6 +32,8 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 ### Zaehpunkt 3: Alte Wohnung
 
 - 17 kW Solaredge
+- SolarEdge-Leistung: `alias.0.SE.Power`
+- SolarEdge-MQTT-Quelle: `mqtt.3.N.b827eb7fd855.pvinverter.22.Ac.Power`
 - Netzzaehler: `EM24 Old Grid`
 - Vorzeichenbehaftete Netzleistung: `alias.0.EM24 Old Grid.Power Old Grid`
 - MQTT-Quelle: `mqtt.3.N.b827eb7fd855.grid.40.Ac.Power`
