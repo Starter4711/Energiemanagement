@@ -156,6 +156,8 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 ## Restriktionen
 
 - Am Zaehlpunkt Halle sind maximal 15 kW Netzbezug erlaubt
+- Am Zaehlpunkt Halle sind maximal 27 kW Netzeinspeisung erlaubt
+- Mit der festgelegten Vorzeichenkonvention muss `alias.0.EM24 Hall Grid.Power` zwischen `-27000 W` und `+15000 W` bleiben
 - Wallboxen und Pool werden ueber eine gemeinsame, 100 m lange und mit 40 A abgesicherte Leitung versorgt
 - Der gemeinsame Hallenabgang wird durch `alias.0.EM24 Hall 40A` gemessen
 - Strom L1: `alias.0.EM24 Hall 40A.L1_A`

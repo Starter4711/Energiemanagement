@@ -40,7 +40,7 @@ Bestehende Skripte bleiben unveraendert. Neues Energiemanagement wird modular in
 
 ### Schutz und Grenzen
 
-- `script.js.energiemanagement.Limits_Halle_15kW`
+- `script.js.energiemanagement.Limits_Halle_Netz`
 - `script.js.energiemanagement.Limits_Hallenabgang_40A`
 - `script.js.energiemanagement.Min_SOC_Schutz`
 - `script.js.energiemanagement.FailSafe`
@@ -51,7 +51,7 @@ Bestehende Skripte bleiben unveraendert. Neues Energiemanagement wird modular in
 2. `Debug`
 3. `Bilanz_Zaehlpunkte`
 4. `Bilanz_Saldierung`
-5. `Limits_Halle_15kW`
+5. `Limits_Halle_Netz`
 6. `Limits_Hallenabgang_40A`
 7. `Wallbox_Phasenlogik`
 8. `Batterie_Strategie`

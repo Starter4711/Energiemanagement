@@ -54,6 +54,7 @@ const states = [
     [`${ROOT}.Config.Hallenabgang_40A_L3_Strom_ID`, 'alias.0.EM24 Hall 40A.L3_A', 'string', 'state'],
     [`${ROOT}.Config.Hallenabgang_40A_Leistung_ID`, 'alias.0.EM24 Hall 40A.Power Hall 40A', 'string', 'state'],
     [`${ROOT}.Config.Hallenabgang_Max_Strom_A`, 40, 'number', 'value'],
+    [`${ROOT}.Config.Halle_Max_Netzeinspeisung_W`, 27000, 'number', 'value'],
     [`${ROOT}.Config.Vorzeichen_Netzbezug`, 1, 'number', 'value'],
     [`${ROOT}.Config.Aktualisierung_Sekunden`, 10, 'number', 'value'],
     [`${ROOT}.Config.Halle_Max_Netzbezug_W`, 15000, 'number', 'value'],
