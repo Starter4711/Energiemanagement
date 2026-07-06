@@ -69,6 +69,11 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 - Pack 4 / Slave 3: `alias.0.Gobel_Slave3`, Modbus-Adresse 4
 - Je Pack stehen unter anderem SOC, Strom, Spannung, Temperatur, MOSFET-Temperatur, Balancing und Zellspannungsdifferenz zur Verfuegung
 - Victron-/MQTT-Batteriewerte unter `alias.0.Gobel` sind Gesamtwerte; die Pace-BMS-Werte unter den vier Pack-Aliasbereichen sind die Quelle fuer Einzelpack- und Zelldiagnose
+- Die HELTEC-Balancer uebermitteln ihre Werte ueber `mqtt.0.HELTEC_1` bis `mqtt.0.HELTEC_4`
+- Die bestehende Zuordnung ist `HELTEC_1` = Pack 1 bis `HELTEC_4` = Pack 4
+- Jeder HELTEC-Baum enthaelt 16 Zellspannungen unter `cell_1.voltage` bis `cell_16.voltage`
+- Zusaetzlich stehen `delta_voltage`, `total_voltage`, `temperature` und `balancing` zur Verfuegung
+- Die neue Pack-Ueberwachung vergleicht je Pack die Pace-BMS-Modbuswerte mit den HELTEC-MQTT-Werten
 
 ### Victron BAT / Halle
 
