@@ -81,6 +81,18 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 - DC-Werte: `DC-Power`, `DC-Current`, `DC-Voltage`
 - AC-Verbrauch je Phase: `ESS_Consumption_L1`, `ESS_Consumption_L2`, `ESS_Consumption_L3`
 
+### Victron RS450/100 DC-Solarlader
+
+- Alias-Bereich: `alias.0.MPPT RS450/100`
+- Direkt mit der gemeinsamen Batterie verbunden; die Leistung ist keinem einzelnen AC-Zaehlpunkt zuzuordnen
+- Cerbo-/MQTT-Quelle: `mqtt.1`, Kennung `c0619ab336ed`
+- Solar-Charger-Geraeteinstanz: `0`
+- DC-Strom: `alias.0.MPPT RS450/100.DC-Current`
+- DC-Spannung: `alias.0.MPPT RS450/100.DC-Voltage`
+- PV-Leistung String 1: `alias.0.MPPT RS450/100.P String1`
+- PV-Leistung String 2: `alias.0.MPPT RS450/100.P String2`
+- Gesamt-PV-Leistung des RS450 wird aus String 1 plus String 2 berechnet
+
 ## Verbraucher
 
 ### Wallboxen
