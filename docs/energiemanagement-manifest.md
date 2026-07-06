@@ -156,6 +156,15 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 ## Restriktionen
 
 - Am Zaehlpunkt Halle sind maximal 15 kW Netzbezug erlaubt
+- Wallboxen und Pool werden ueber eine gemeinsame, 100 m lange und mit 40 A abgesicherte Leitung versorgt
+- Der gemeinsame Hallenabgang wird durch `alias.0.EM24 Hall 40A` gemessen
+- Strom L1: `alias.0.EM24 Hall 40A.L1_A`
+- Strom L2: `alias.0.EM24 Hall 40A.L2_A`
+- Strom L3: `alias.0.EM24 Hall 40A.L3_A`
+- Gesamtleistung: `alias.0.EM24 Hall 40A.Power Hall 40A`
+- MQTT-Quelle: `mqtt.3.N.b827eb7fd855.grid.42`
+- Keine einzelne Phase darf 40 A ueberschreiten; fuer die Schutzentscheidung ist der hoechste Phasenstrom massgeblich
+- Saemtliche Verbraucher auf der Leitung muessen gemeinsam bilanziert werden, einschliesslich der nicht regelbaren Wallbox 3
 - Wallbox 3 darf nicht geregelt werden
 - Bestehende ioBroker-Skripte werden nicht inhaltlich veraendert
 - Jede Steuerfunktion soll in einem eigenen JavaScript-Skript umgesetzt werden

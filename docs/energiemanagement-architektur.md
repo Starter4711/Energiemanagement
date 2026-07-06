@@ -41,6 +41,7 @@ Bestehende Skripte bleiben unveraendert. Neues Energiemanagement wird modular in
 ### Schutz und Grenzen
 
 - `script.js.energiemanagement.Limits_Halle_15kW`
+- `script.js.energiemanagement.Limits_Hallenabgang_40A`
 - `script.js.energiemanagement.Min_SOC_Schutz`
 - `script.js.energiemanagement.FailSafe`
 
@@ -51,11 +52,12 @@ Bestehende Skripte bleiben unveraendert. Neues Energiemanagement wird modular in
 3. `Bilanz_Zaehlpunkte`
 4. `Bilanz_Saldierung`
 5. `Limits_Halle_15kW`
-6. `Wallbox_Phasenlogik`
-7. `Batterie_Strategie`
-8. `Victron_ESS_Setpoint`
-9. `Victron_BAT_Setpoint`
-10. `Pool_Lastabwurf`
+6. `Limits_Hallenabgang_40A`
+7. `Wallbox_Phasenlogik`
+8. `Batterie_Strategie`
+9. `Victron_ESS_Setpoint`
+10. `Victron_BAT_Setpoint`
+11. `Pool_Lastabwurf`
 
 ## Was ich als Naechstes bauen sollte
 
