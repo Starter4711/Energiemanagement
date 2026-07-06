@@ -1,0 +1,23 @@
+{
+  "_id": "script.js.common.Gobel_VDIFF",
+  "acl": {
+    "object": 1636,
+    "owner": "system.user.admin",
+    "ownerGroup": "system.group.administrator"
+  },
+  "common": {
+    "debug": false,
+    "enabled": true,
+    "engine": "system.adapter.javascript.0",
+    "engineType": "Javascript/js",
+    "expert": true,
+    "name": "Gobel VDIFF",
+    "source": "/*********************************************************\n * BMS Zellspannungsüberwachung – FINAL + stabiler Trend\n *********************************************************/\n\nconst PACKS = [1,2,3,4];\nconst CELLS = 16;\nconst BASE = 'javascript.0.BMS';\n\nconst DIFF_LIMIT_MV    = 50;     // Alarm-Schwelle\nconst CALC_INTERVAL_MS = 5000;   // max. 1 Berechnung / 5s\n\n// Trend-Parameter (neu)\nconst TREND_DELTA_MV = 3;   // Empfindlichkeit\nconst AVG_WINDOW     = 5;   // Glättung\n\nlet cache    = {1:[],2:[],3:[],4:[]};\nlet diffHist = {1:[],2:[],3:[],4:[]};\nlet timer    = {1:null,2:null,3:null,4:null};\n\n/* ---------- States anlegen ---------- */\nfunction ensure(id, init, common) {\n    if (!existsState(id)) createState(id, init, common);\n}\n\nPACKS.forEach(p=>{\n    cache[p] = Array(CELLS).fill(null);\n\n    ensure(`${BASE}.Pack${p}.Min_V`,0,{type:'number',unit:'V'});\n    ensure(`${BASE}.Pack${p}.Max_V`,0,{type:'number',unit:'V'});\n    ensure(`${BASE}.Pack${p}.Diff_mV`,0,{type:'number',unit:'mV'});\n    ensure(`${BASE}.Pack${p}.Diff_Avg`,0,{type:'number',unit:'mV'});\n    ensure(`${BASE}.Pack${p}.Diff_Alarm`,false,{type:'boolean'});\n\n    // Trend\n    ensure(`${BASE}.Pack${p}.Trend`,0,{type:'number',role:'value.direction'});\n    ensure(`${BASE}.Pack${p}.Trend_Str`,'→',{type:'string'});\n    ensure(`${BASE}.Pack${p}.Trend_Color`,'gray',{type:'string'});\n});\n\n/* ---------- Trigger (nur Cache füllen) ---------- */\nconst trigger = /modbus\\.1\\.holdingRegisters\\.(1|2|3|4)\\.400(1[6-9]|2[0-9]|30|31)_Cell_Voltage_(\\d+)/;\n\non({id: trigger, change:'ne'}, obj=>{\n    const m = obj.id.match(trigger);\n    const p = Number(m[1]);\n    const c = Number(m[3]);\n\n    cache[p][c-1] = obj.state.val;\n\n    if (!timer[p]) {\n        timer[p] = setTimeout(()=>{\n            timer[p] = null;\n            calc(p);\n        }, CALC_INTERVAL_MS);\n    }\n});\n\n/* ---------- Berechnung ---------- */\nfunction calc(p) {\n    const arr = cache[p];\n\n    // Mindestens 80% der Werte müssen da sein\n    const valid = arr.filter(v => v !== null);\n    if (valid.length < CELLS * 0.8) return;\n\n    // Min / Max\n    let min = Infinity, max = -Infinity;\n    for (const v of valid) {\n        if (v < min) min = v;\n        if (v > max) max = v;\n    }\n\n    const diff = max - min;\n\n    /* ---------- Verlauf speichern ---------- */\n    diffHist[p].push(diff);\n    if (diffHist[p].length > AVG_WINDOW) diffHist[p].shift();\n\n    /* ---------- Durchschnitt (Glättung) ---------- */\n    const avg = diffHist[p].reduce((a,b)=>a+b,0) / diffHist[p].length;\n\n    /* ---------- Trend (reaktiv) ---------- */\n    let trend = 0;\n\n    if (diffHist[p].length >= 2) {\n        const last = diffHist[p][diffHist[p].length - 1];\n        const prev = diffHist[p][diffHist[p].length - 2];\n        const delta = last - prev;\n\n        if (delta > TREND_DELTA_MV) trend = 1;\n        else if (delta < -TREND_DELTA_MV) trend = -1;\n    }\n\n    /* ---------- Farbe + Pfeil ---------- */\n    let color = 'gray';\n    let arrow = '→';\n\n    if (trend === 1) {\n        color = 'red';\n        arrow = '↑';\n    } else if (trend === -1) {\n        color = 'green';\n        arrow = '↓';\n    } else {\n        color = 'yellow';\n        arrow = '→';\n    }\n\n    /* ---------- Ausgabe ---------- */\n    setStateChanged(`${BASE}.Pack${p}.Min_V`,  Math.round(min)/1000, true);\n    setStateChanged(`${BASE}.Pack${p}.Max_V`,  Math.round(max)/1000, true);\n    setStateChanged(`${BASE}.Pack${p}.Diff_mV`, Math.round(diff), true);\n    setStateChanged(`${BASE}.Pack${p}.Diff_Avg`, Math.round(avg), true);\n    setStateChanged(`${BASE}.Pack${p}.Diff_Alarm`, diff > DIFF_LIMIT_MV, true);\n\n    setStateChanged(`${BASE}.Pack${p}.Trend`, trend, true);\n    setStateChanged(`${BASE}.Pack${p}.Trend_Str`, arrow, true);\n    setStateChanged(`${BASE}.Pack${p}.Trend_Color`, color, true);\n\n    // Debug (optional)\n    // log(`Pack ${p} diff=${diff} avg=${avg.toFixed(1)} trend=${trend}`);\n}",
+    "verbose": false
+  },
+  "from": "system.adapter.admin.0",
+  "native": {},
+  "ts": 1775496321856,
+  "type": "script",
+  "user": "system.user.admin"
+}

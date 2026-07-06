@@ -1,0 +1,27 @@
+{
+  "_id": "script.js",
+  "acl": {
+    "object": 1636,
+    "owner": "system.user.admin",
+    "ownerGroup": "system.group.administrator"
+  },
+  "common": {
+    "name": {
+      "de": "JavaScript",
+      "en": "JavaScript",
+      "es": "JavaScript",
+      "fr": "JavaScript",
+      "it": "JavaScript",
+      "nl": "JavaScrift",
+      "pl": "JavaScript",
+      "pt": "JavaScript",
+      "ru": "JavaScript",
+      "uk": "Про нас",
+      "zh-cn": "瓦 兰"
+    }
+  },
+  "from": "system.host.iobroker-iobroker-1-1-1-1.cli",
+  "native": {},
+  "ts": 1781423409465,
+  "type": "device"
+}

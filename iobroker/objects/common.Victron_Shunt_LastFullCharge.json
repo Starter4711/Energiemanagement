@@ -1,0 +1,23 @@
+{
+  "_id": "script.js.common.Victron_Shunt_LastFullCharge",
+  "acl": {
+    "object": 1636,
+    "owner": "system.user.admin",
+    "ownerGroup": "system.group.administrator"
+  },
+  "common": {
+    "debug": false,
+    "enabled": true,
+    "engine": "system.adapter.javascript.0",
+    "engineType": "Javascript/js",
+    "expert": true,
+    "name": "Victron_Shunt_LastFullCharge",
+    "source": "const SOURCE = 'mqtt.1.N.c0619ab336ed.battery.279.History.TimeSinceLastFullCharge';\nconst TARGET = 'javascript.0.Gobel.TimeSinceLastFullChargeFormatted';\n\n// State anlegen\nif (!existsState(TARGET)) {\n    createState(TARGET, '', {\n        name: 'Zeit seit letzter Vollladung',\n        type: 'string',\n        role: 'text',\n        read: true,\n        write: false\n    });\n}\n\n// Umrechnung\nfunction formatDuration(seconds) {\n    seconds = Number(seconds) || 0;\n\n    const weeks = Math.floor(seconds / (7 * 24 * 3600));\n    seconds %= (7 * 24 * 3600);\n\n    const days = Math.floor(seconds / (24 * 3600));\n    seconds %= (24 * 3600);\n\n    const hours = Math.floor(seconds / 3600);\n    seconds %= 3600;\n\n    const minutes = Math.floor(seconds / 60);\n\n    return `${weeks}W ${days}T ${hours}h ${minutes}m`;\n}\n\n// Wert sauber extrahieren\nfunction getSeconds(raw) {\n    if (!raw) return 0;\n\n    // Fall 1: Objekt\n    if (typeof raw === 'object' && raw.value !== undefined) {\n        return raw.value;\n    }\n\n    // Fall 2: JSON String\n    if (typeof raw === 'string') {\n        try {\n            const parsed = JSON.parse(raw);\n            return parsed.value || 0;\n        } catch {\n            return Number(raw) || 0;\n        }\n    }\n\n    // Fall 3: normale Zahl\n    return Number(raw) || 0;\n}\n\n// Update\nfunction update() {\n    const state = getState(SOURCE);\n    if (!state) return;\n\n    const seconds = getSeconds(state.val);\n\n    // log(`RAW: ${JSON.stringify(state.val)} → Sekunden: ${seconds}`);\n\n    const formatted = formatDuration(seconds);\n    setState(TARGET, formatted, true);\n}\n\n// Trigger + Start\non({ id: SOURCE, change: 'any' }, update);\nupdate();",
+    "verbose": false
+  },
+  "from": "system.adapter.admin.0",
+  "native": {},
+  "ts": 1775538544938,
+  "type": "script",
+  "user": "system.user.admin"
+}

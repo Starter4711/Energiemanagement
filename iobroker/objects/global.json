@@ -1,0 +1,27 @@
+{
+  "_id": "script.js.global",
+  "acl": {
+    "object": 1636,
+    "owner": "system.user.admin",
+    "ownerGroup": "system.group.administrator"
+  },
+  "common": {
+    "name": {
+      "de": "Globale Skripte (global)",
+      "en": "Global scripts (global)",
+      "es": "Guiones globales (global)",
+      "fr": "Scénarios mondiaux (global)",
+      "it": "Scrittori globali (global)",
+      "nl": "Global scripts (global)",
+      "pl": "Globalny scenariusz (global)",
+      "pt": "Scripts globais (global)",
+      "ru": "Глобальные скрипты (global)",
+      "uk": "Глобальні сценарії (global)",
+      "zh-cn": "全球说明 (global)"
+    }
+  },
+  "from": "system.host.iobroker-iobroker-1-1-1-1.cli",
+  "native": {},
+  "ts": 1781423409467,
+  "type": "channel"
+}

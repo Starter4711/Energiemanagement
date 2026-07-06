@@ -1,0 +1,23 @@
+{
+  "_id": "script.js.common.Gobel_Zellspannungen",
+  "acl": {
+    "object": 1636,
+    "owner": "system.user.admin",
+    "ownerGroup": "system.group.administrator"
+  },
+  "common": {
+    "debug": false,
+    "enabled": false,
+    "engine": "system.adapter.javascript.0",
+    "engineType": "Javascript/js",
+    "expert": true,
+    "name": "Gobel_Zellspannungen",
+    "source": "// Konfiguration\nconst numDevices = 4;\nconst numCells = 16;\nconst startRegister = 40016;\nconst UPDATE_INTERVAL_MS = 60000;  // Genau 1x pro Minute (60s)\n\n// 1. INITIALISIERUNG & DATENPUNKT-ERZEUGUNG IN MQTT.2 (Läuft nur 1x beim Start)\nfor (let d = 1; d <= numDevices; d++) {\n    const mqttTopic = `mqtt.2.Gobel.Gobel_${d}_All_Voltages`;\n    \n    // extendObject erzwingt das Anlegen/Aktualisieren im fremden Adapter-Verzeichnis\n    extendObject(mqttTopic, {\n        type: 'state',\n        common: {\n            name: `Gobel ${d} Alle 16 Zellspannungen als JSON-Liste`,\n            type: 'string',\n            role: 'json',\n            read: true,\n            write: true,\n            def: '{\"value\":[]}'\n        },\n        native: {}\n    }, function(err) {\n        if (!err) {\n            log(`Datenpunkt ${mqttTopic} wurde erfolgreich angelegt/überprüft.`, 'info');\n        } else {\n            log(`Fehler beim Anlegen von ${mqttTopic}: ${err}`, 'error');\n        }\n    });\n}\n\n// 2. DER MINUTEN-TAKT (Sorgt für die exakte Ausführung alle 60 Sekunden)\nsetInterval(function() {\n    log(\"Starte minütliches Gobel-BMS Update...\", \"info\");\n    for (let d = 1; d <= numDevices; d++) {\n        buildAndPublishJson(d);\n    }\n}, UPDATE_INTERVAL_MS);\n\n// 3. VERARBEITUNG & SENDEN\nfunction buildAndPublishJson(deviceId) {\n    const currentVoltages = [];\n    const baseId = `modbus.1.holdingRegisters.${deviceId}.`;\n\n    // 16 Werte aus dem Modbus-RAM-Cache lesen\n    for (let i = 0; i < numCells; i++) {\n        const stateId = `${baseId}${startRegister + i}_Cell_Voltage_${i + 1}`; \n        const state = getState(stateId);\n        \n        if (state && state.val !== undefined && state.val !== null) {\n            currentVoltages.push(state.val);\n        } else {\n            currentVoltages.push(0); \n        }\n    }\n\n    const jsonPayload = JSON.stringify({ value: currentVoltages });\n    const mqttTopic = `mqtt.2.Gobel.Gobel_${deviceId}_All_Voltages`;\n\n    // ack=false triggert den MQTT-Adapter aktiv zum Senden\n    setState(mqttTopic, jsonPayload, false);\n    log(`Device ${deviceId} an MQTT-Adapter übergeben: ${jsonPayload}`, \"info\");\n}\n\n// Sofort-Start nach 3 Sekunden beim Speichern\nsetTimeout(function() {\n    log(\"Initialer Skriptstart: Erster Durchlauf...\", \"info\");\n    for (let d = 1; d <= numDevices; d++) {\n        buildAndPublishJson(d);\n    }\n}, 3000);",
+    "verbose": false
+  },
+  "from": "system.adapter.admin.0",
+  "native": {},
+  "ts": 1782208053241,
+  "type": "script",
+  "user": "system.user.admin"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "script.js.common",
+  "acl": {
+    "object": 1636,
+    "owner": "system.user.admin",
+    "ownerGroup": "system.group.administrator"
+  },
+  "common": {
+    "name": {
+      "de": "Allgemeine Skripte (common)",
+      "en": "Common scripts (common)",
+      "es": "Scripts comunes (common)",
+      "fr": "Scénarios communs (common)",
+      "it": "Scrittori comuni (common)",
+      "nl": "Common scripts (common)",
+      "pl": "Common script (common)",
+      "pt": "Scripts comuns (common)",
+      "ru": "Общие скрипты (common)",
+      "uk": "Загальні сценарії (common)",
+      "zh-cn": "共同说明 (common)"
+    }
+  },
+  "from": "system.host.iobroker-iobroker-1-1-1-1.cli",
+  "native": {},
+  "ts": 1781423409466,
+  "type": "channel"
+}

@@ -1,0 +1,23 @@
+{
+  "_id": "script.js.common.go-E_WB-Halle_Ladungen",
+  "acl": {
+    "object": 1636,
+    "owner": "system.user.admin",
+    "ownerGroup": "system.group.administrator"
+  },
+  "common": {
+    "debug": false,
+    "enabled": true,
+    "engine": "system.adapter.javascript.0",
+    "engineType": "Javascript/js",
+    "expert": true,
+    "name": "go-E_WB-Halle_Ladungen",
+    "source": "/*******************************************************\n * go-e Charger – Ladesessions Logger (FINAL++)\n * ✔ lesbare Zeit\n * ✔ stabile Erkennung über Ladeleistung\n *******************************************************/\n\nconst ROOT = 'javascript.0.goE.sessions';\nconst ENERGY_STATE = 'go-e.2.loaded_energy_kwh';\nconst POWER_STATE = 'go-e.2.energy.power';\n\n// Schwellwert ab wann \"Laden aktiv\"\nconst POWER_THRESHOLD = 100; // Watt\n\nlet sessionActive = false;\nlet startEnergy = 0;\nlet startTime = 0;\n\n// Session-ID persistent\ncreateState(`${ROOT}.lastSessionId`, 0, { type: 'number' });\n\n// --- nächste Session-ID ---\nfunction getNextSessionId() {\n    let id = getState(`${ROOT}.lastSessionId`).val || 0;\n    id++;\n    setState(`${ROOT}.lastSessionId`, id, true);\n    return 'session_' + id.toString().padStart(3, '0');\n}\n\n// --- Start ---\nfunction startSession() {\n    startEnergy = getState(ENERGY_STATE).val;\n    startTime = Date.now();\n    sessionActive = true;\n\n    log('🔌 Ladesession gestartet');\n}\n\n// --- Ende ---\nfunction endSession() {\n    const endEnergy = getState(ENERGY_STATE).val;\n    const endTime = Date.now();\n\n    const energy = Math.max(0, endEnergy - startEnergy);\n    const duration = Math.round((endTime - startTime) / 60000);\n\n    const id = getNextSessionId();\n    const path = `${ROOT}.${id}`;\n\n    // lesbare Zeiten\n    const startReadable = new Date(startTime).toLocaleString();\n    const endReadable = new Date(endTime).toLocaleString();\n\n    createState(`${path}.startTime`, startTime, { type: 'number', role: 'value.time' });\n    createState(`${path}.startTime_readable`, startReadable, { type: 'string' });\n\n    createState(`${path}.endTime`, endTime, { type: 'number', role: 'value.time' });\n    createState(`${path}.endTime_readable`, endReadable, { type: 'string' });\n\n    createState(`${path}.energy_kWh`, energy, { type: 'number', role: 'value.energy', unit: 'kWh' });\n    createState(`${path}.duration_min`, duration, { type: 'number', role: 'value', unit: 'min' });\n\n    log(`✅ Session gespeichert: ${id} | ${energy.toFixed(2)} kWh | ${duration} min`);\n\n    sessionActive = false;\n}\n\n// --- Trigger über Leistung ---\non({ id: POWER_STATE, change: 'ne' }, (obj) => {\n\n    const power = obj.state.val;\n\n    // START: Leistung steigt über Schwellwert\n    if (power > POWER_THRESHOLD && !sessionActive) {\n        startSession();\n    }\n\n    // STOP: Leistung fällt unter Schwellwert\n    if (power <= POWER_THRESHOLD && sessionActive) {\n        endSession();\n    }\n});",
+    "verbose": false
+  },
+  "from": "system.adapter.admin.0",
+  "native": {},
+  "ts": 1775465217037,
+  "type": "script",
+  "user": "system.user.admin"
+}

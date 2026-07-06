@@ -1,0 +1,23 @@
+{
+  "_id": "script.js.common.Gobel_einzelne_Zellspannungen",
+  "acl": {
+    "object": 1636,
+    "owner": "system.user.admin",
+    "ownerGroup": "system.group.administrator"
+  },
+  "common": {
+    "debug": false,
+    "enabled": false,
+    "engine": "system.adapter.javascript.0",
+    "engineType": "Javascript/js",
+    "expert": true,
+    "name": "Gobel_einzelne_Zellspannungen",
+    "source": "// --- KONFIGURATION ---\nconst targetFolder = \"mqtt.1.Gobel\";    // Zielpfad geändert auf Gobel\nconst batteryCount = 4;                 // Anzahl deiner Gobel-Batterien (1 bis 4)\nconst cellsPerBattery = 16;             // 16 Zellen pro Batterie\n\n// Funktion zum Erstellen der Datenpunkte via korrektem 'setObject'\nfunction createMqttStates() {\n    for (let b = 1; b <= batteryCount; b++) {\n        for (let c = 1; c <= cellsPerBattery; c++) {\n            let stateId = `${targetFolder}.Gobel_${b}_Cell_${c}`;\n            \n            setObject(stateId, {\n                type: 'state',\n                common: {\n                    name: `Gobel ${b} Zelle ${c} Spannung (JSON)`,\n                    type: 'string',\n                    role: 'text',\n                    read: true,\n                    write: true\n                },\n                native: {}\n            });\n        }\n    }\n}\n\n// Hauptfunktion zum Synchronisieren der Werte\nfunction syncIndividualVoltages() {\n    for (let b = 1; b <= batteryCount; b++) {\n        for (let c = 1; c <= cellsPerBattery; c++) {\n            let address = 40015 + c; // 40016 für Zelle 1\n            let sourceId = `modbus.1.holdingRegisters.${b}.${address}_Cell_Voltage_${c}`;\n\n            if (existsState(sourceId)) {\n                let val = getState(sourceId).val;\n\n                // Konvertierung von mV in V\n                if (val > 100) val = val / 1000; \n                val = Math.round(val * 1000) / 1000; // Auf 3 Nachkommastellen runden\n\n                // Erstellt das JSON-Format: {\"value\":3.232}\n                let jsonPayload = JSON.stringify({ value: val });\n                setState(`${targetFolder}.Gobel_${b}_Cell_${c}`, jsonPayload, true);\n            }\n        }\n    }\n}\n\n// 1. Datenpunkte sofort beim Skriptstart anlegen lassen\ncreateMqttStates();\n\n// 2. Werte alle 5 Sekunden aktualisieren\nschedule(\"*/5 * * * * *\", syncIndividualVoltages);\n\n// 3. Nachlauf von 1 Sekunde beim Start für den ersten Durchlauf\nsetTimeout(syncIndividualVoltages, 1000);",
+    "verbose": false
+  },
+  "from": "system.adapter.admin.0",
+  "native": {},
+  "ts": 1782104514096,
+  "type": "script",
+  "user": "system.user.admin"
+}
