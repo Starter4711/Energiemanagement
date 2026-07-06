@@ -97,12 +97,22 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 
 ### Wallboxen
 
-- Wallbox 1: 11 kW, regelbar, 1-phasig und 3-phasig umschaltbar waehrend der Ladung
-- Wallbox 2: 22 kW, regelbar, 1-phasig und 3-phasig umschaltbar waehrend der Ladung
-- Wallbox 3: 11 kW, nicht regelbar, darf nicht veraendert werden
+- Wallbox 1 / V3: 11 kW, `go-e.0`, Seriennummer `069113`
+- Leistung Wallbox 1: `alias.0.go-E.powerV3` in kW
+- Wallbox 1 ist regelbar und waehrend der Ladung zwischen 1- und 3-phasig umschaltbar
+- Wallbox 2 / V4: 22 kW, `go-e.1`, Seriennummer `219846`
+- Leistung Wallbox 2: `alias.0.go-E.powerV4` in kW
+- Wallbox 2 ist regelbar und waehrend der Ladung zwischen 1- und 3-phasig umschaltbar
+- Wallbox 3 / Halle: 11 kW, `go-e.2`, Seriennummer `220022`
+- Leistung Wallbox 3: `alias.0.go-E.go-E-V4-Halle` in kW
+- Wallbox 3 ist nicht regelbar und darf nicht veraendert werden
 - Morgens sollen Wallbox 1 und 2 auf 1-phasig stehen
 - Wallbox 1 und 2 sollen bei angestecktem Fahrzeug aktiviert werden koennen
 - Bei Netzbezug darf die Ladung gestoppt werden
+- Verifizierte Adapter-Steuerobjekte fuer Wallbox 1 und 2 sind `allow_charging`, `ampere`, `phaseSwitchMode`, `phaseSwitchModeEnabled` und der Fahrzeugstatus `car`
+- Vor Verwendung werden fuer diese Steuerobjekte eigene `alias.0`-Objekte benoetigt; direkte `go-e.x`-Objekte werden im Energiemanagement nicht verwendet
+- `allow_charging`: `0` = aus, `1` = freigegeben
+- `phaseSwitchMode`: `0` = Automatik, `1` = erzwungen 1-phasig, `2` = erzwungen 3-phasig
 
 ### Pooltechnik an Zaehlpunkt Halle
 
