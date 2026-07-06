@@ -46,6 +46,24 @@ Jegliche erzeugte PV-Energie soll moeglichst vollstaendig selbst verbraucht werd
 - Energie kann ueber die DC-Seite zwischen den Anlagen durchgeschleust werden
 - Maximalleistungen muessen beruecksichtigt werden
 
+### Gobel Gesamtbatterie
+
+- Gesamtwerte liegen unter `alias.0.Gobel`
+- Victron-/MQTT-Quelle: Haus-Cerbo `mqtt.1`, Batterieinstanz `512`
+- SOC: `alias.0.Gobel.SOC`
+- Spannung: `alias.0.Gobel.Voltage`
+- Strom: `alias.0.Gobel.Current`
+- Leistung: `alias.0.Gobel.Power`
+- Weitere BMS-Grenzwerte: `Gobel MaxChargeCurrent`, `Gobel MaxChargeVoltage` und `Gobel MaxDischargeCurrent`
+
+### Gobel Einzelpacks
+
+- Pack 1 / Master: `alias.0.Gobel_Master`, Modbus-Adresse 1
+- Pack 2 / Slave 1: `alias.0.Gobel_Slave1`, Modbus-Adresse 2
+- Pack 3 / Slave 2: `alias.0.Gobel_Slave2`, Modbus-Adresse 3
+- Pack 4 / Slave 3: `alias.0.Gobel_Slave3`, Modbus-Adresse 4
+- Je Pack stehen unter anderem SOC, Strom, Spannung, Temperatur, MOSFET-Temperatur, Balancing und Zellspannungsdifferenz zur Verfuegung
+
 ## Verbraucher
 
 ### Wallboxen
