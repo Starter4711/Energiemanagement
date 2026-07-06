@@ -12,6 +12,7 @@ const states = [
     [`${ROOT}.Config.Zaehlpunkt_Halle_Leistung_ID`, 'alias.0.EM24 Hall Grid.Power', 'string', 'state'],
     [`${ROOT}.Config.Zaehlpunkt_Alte_Wohnung_Leistung_ID`, 'alias.0.EM24 Old Grid.Power Old Grid', 'string', 'state'],
     [`${ROOT}.Config.PV_Fronius_Haus_10kW_Leistung_ID`, 'alias.0.Fronius.AC-Power_10kW', 'string', 'state'],
+    [`${ROOT}.Config.PV_SMA_Haus_4_7kW_Leistung_ID`, 'alias.0.SMA.Power', 'string', 'state'],
     [`${ROOT}.Config.PV_Fronius_Halle_27kW_Leistung_ID`, 'alias.0.Fronius.AC-Power', 'string', 'state'],
     [`${ROOT}.Config.PV_SolarEdge_Alte_Wohnung_Leistung_ID`, 'alias.0.SE.Power', 'string', 'state'],
     [`${ROOT}.Config.Batterie_Gesamt_SOC_ID`, 'alias.0.Gobel.SOC', 'string', 'state'],
