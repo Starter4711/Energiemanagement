@@ -1,0 +1,12 @@
+{
+  "_id": "script.js.common.Codex_Access_Test",
+  "common": {
+    "enabled": false,
+    "engine": "system.adapter.javascript.0",
+    "engineType": "Javascript/js",
+    "name": "Codex_Access_Test",
+    "source": "log('Codex_Access_Test deployed from GitHub repository', 'info');"
+  },
+  "native": {},
+  "type": "script"
+}

@@ -1,6 +1,6 @@
 {
-  "count": 65,
-  "exportedAt": "2026-07-06T10:38:37.243033+00:00",
+  "count": 66,
+  "exportedAt": "2026-07-06T10:54:21.101330+00:00",
   "objects": [
     {
       "enabled": null,
@@ -69,6 +69,15 @@
       "name": "Bewässerung",
       "objectFile": "iobroker/objects/common.Bew_sserung.json",
       "scriptFile": "iobroker/scripts/common/Bew_sserung.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.common.Codex_Access_Test",
+      "name": "Codex_Access_Test",
+      "objectFile": "iobroker/objects/common.Codex_Access_Test.json",
+      "scriptFile": "iobroker/scripts/common/Codex_Access_Test.js",
       "type": "script"
     },
     {

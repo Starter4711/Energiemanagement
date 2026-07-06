@@ -4,6 +4,8 @@
 # Local workspace
 work/
 outputs/
+iobroker/backups/*
+!iobroker/backups/.gitkeep
 
 # Environment
 .env
