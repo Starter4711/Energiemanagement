@@ -29,6 +29,9 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 - `coding_rules.md`: verbindliche Arbeits-, Architektur- und Deployment-Regeln
 - `control_hierarchy.md`: Prioritaet von Hardware, Cerbo, ioBroker, MQTT, Node-RED und VIS2
 - `decisions.md`: gesicherte Entscheidungen und Entscheidungstagebuch
+- `engineering_process.md`: verbindlicher Standardablauf fuer Aenderungen
+- `backup_and_rollback.md`: Backup- und Rollback-Grundsaetze
+- `changelog_policy.md`: Regelwerk fuer `CHANGELOG.md` und Dokumentationshistorie
 - `design_principles.md`: uebergeordnete Architekturprinzipien und Schutzregeln
 - `docker.md`: Docker- und Deployment-Rahmen mit Host-, Container- und Backup-Hinweisen
 - `energy_strategy.md`: Energie- und Batteriestrategie, Ladephilosophie und Schutzbezug
@@ -39,6 +42,7 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 - `mqtt.md`: MQTT-Rolle, Instanzen, Topic-Familien und bekannte Nutzungen
 - `open_questions.md`: gesammelte ungeklaerte Punkte und noch fehlende Dokumentation
 - `roadmap.md`: naechste Dokumentations- und Analyse-Schritte
+- `script_logging_policy.md`: Logging-Grundsaetze fuer neue produktive Skripte
 - `software.md`: verwendete Technologien, sichtbare Softwarestruktur und Integrationen
 - `victron.md`: kompakte Victron-Grundlage mit Skriptfamilien und Leitregeln
 - `victron_venus_structure.md`: Victron-, Cerbo- und Venus-Topologie mit Gateway-Rolle
@@ -51,6 +55,9 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 - Coding- und Arbeitsregeln: `coding_rules.md`
 - Offene Fragen: `open_questions.md`
 - Entscheidungen: `decisions.md`
+- Engineering-Prozess: `engineering_process.md`
+- Backup und Rollback: `backup_and_rollback.md`
+- Changelog-Regeln: `changelog_policy.md`
 - Hardware-Referenz: `hardware.md`
 - Hardware-Topologie und Zaehlpunkte: `hardware_topology.md`
 - Batteriearchitektur: `battery_architecture.md`
@@ -64,6 +71,7 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 - Software-Stack: `software.md`
 - Entwicklungs- und Stilprinzipien: `design_principles.md`
 - Roadmap und naechste Schritte: `roadmap.md`
+- Logging-Regeln fuer neue Skripte: `script_logging_policy.md`
 
 ## Rollenabgrenzung
 

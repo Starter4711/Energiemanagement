@@ -46,8 +46,11 @@
 
 ## Betrieb / Rollback
 
-- Umfang und Aufbewahrungsregel fuer vorhandene Backups ist `Unklar`.
-- Formale Betriebsanleitung fuer Notfall / Rollback ist `Unklar`.
+- Konkrete Logfile-Pfade sind `Unklar`.
+- Log-Rotation und Aufbewahrung sind `Unklar`.
+- Einheitliche Logging-Hilfsfunktion fuer neue Skripte ist `Unklar`.
+- Genaue Backup-Aufbewahrungsdauer ist `Unklar`.
+- Formaler Rollback-Testprozess ist `Unklar`.
 
 ## Dokumentation / Repository
 

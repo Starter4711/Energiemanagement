@@ -12,6 +12,11 @@ Diese Datei ist der verbindliche Einstieg fuer zukuenftige Codex-Tasks in diesem
 4. Danach die fuer den Task relevanten Dateien unter `knowledge/` lesen, insbesondere die dort als fuehrend markierten Themen- und Detaildateien.
 5. Bei Skript-, Aktivierungs- oder ioBroker-Bestandsfragen zusaetzlich `iobroker/manifest.json` als Referenz pruefen.
 6. Erst dann Code, Objekte, VIS-2 oder Deployment-Werkzeuge oeffnen oder aendern.
+7. Vor jeder Aenderung `knowledge/engineering_process.md` pruefen.
+8. Vor live-nahen Aenderungen `knowledge/backup_and_rollback.md` pruefen.
+9. Bei neuen oder geaenderten Skripten `knowledge/script_logging_policy.md` pruefen.
+10. Relevante Aenderungen muessen `CHANGELOG.md` aktualisieren.
+11. Architektur-Review durch ChatGPT ist das Gate vor fachlicher Freigabe.
 
 Mindestens diese Wissensdateien sind vor inhaltlichen Aenderungen zu pruefen:
 

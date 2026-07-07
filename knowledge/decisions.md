@@ -8,6 +8,10 @@
 - Bestehende Common-Skripte sollen grundsaetzlich nicht inhaltlich veraendert werden.
 - Backups vor Live-Aenderungen sind Teil des vorgesehenen Workflows.
 - Ressourcenschonung ist eine verbindliche Architekturregel.
+- Der Engineering-Prozess mit Review-Gate ist verbindlich eingefuehrt.
+- Backup und Rollback sind vor Live-Aenderungen verpflichtend.
+- `CHANGELOG.md` ist als laufende Aenderungshistorie eingefuehrt.
+- Zuschaltbare Logebene ist Standardanforderung fuer neue produktive Skripte.
 
 ## Betriebsentscheidungen
 
@@ -214,6 +218,50 @@ Zukuenftige gesicherte Entscheidungen sollen in diesem Format dokumentiert werde
 - Betroffene Dateien/Pfade: `knowledge/system_architecture.md`, `knowledge/README.md`, `docs/project_analysis.md`
 - Auswirkungen: Die Seite dient als Einstieg fuer Diagramm, Hauptfluesse und Regelungshierarchie.
 - Offene Punkte: Unklar, ob spaeter weitere subsystembezogene Uebersichten noetig werden.
+
+## 2026-07-07 - Engineering-Prozess mit Review-Gate eingefuehrt
+
+- Status: beschlossen
+- Bereich: Dokumentation
+- Kontext: Fuehrende Arbeitsablaeufe waren in mehreren Regeln verteilt, aber nicht als einzelner Prozess festgehalten.
+- Entscheidung: Der Engineering-Prozess mit Architektur-Review-Gate wird als verbindlicher Standard dokumentiert.
+- Begruendung: Aenderungen sollen erst nach geprueftem Ist-Zustand, Backup-Pruefung und Architektur-Review fachlich freigegeben werden.
+- Betroffene Dateien/Pfade: `knowledge/engineering_process.md`, `AGENTS.md`, `knowledge/README.md`
+- Auswirkungen: Relevante Aenderungen muessen diesen Ablauf aktiv beachten.
+- Offene Punkte: Unklar, ob spaeter noch ein formalisiertes Review-Template benoetigt wird.
+
+## 2026-07-07 - Backup und Rollback als Pflicht vor Live-Aenderungen bestaetigt
+
+- Status: beschlossen
+- Bereich: Deployment
+- Kontext: Vor Live-Aenderungen bestand bereits eine Backup-Erwartung, aber noch keine explizite Baseline-Datei.
+- Entscheidung: Backup und Rollback werden vor Live-Aenderungen als Pflicht festgehalten.
+- Begruendung: Ein rueckholbarer Zustand ist fuer produktive Smart-Home- und Energiemanagement-Aenderungen erforderlich.
+- Betroffene Dateien/Pfade: `knowledge/backup_and_rollback.md`, `AGENTS.md`, `knowledge/README.md`
+- Auswirkungen: Live-nahe Aenderungen duerfen nur mit beschriebenem Rueckweg geplant werden.
+- Offene Punkte: Unklar, wie die Aufbewahrung und der Rollback-Testprozess genau standardisiert werden.
+
+## 2026-07-07 - CHANGELOG.md als laufende Aenderungshistorie eingefuehrt
+
+- Status: beschlossen
+- Bereich: Dokumentation
+- Kontext: Relevante Aenderungen sollten nachvollziehbar und mit Datum dokumentiert werden.
+- Entscheidung: `CHANGELOG.md` wird als laufende Aenderungshistorie gefuehrt.
+- Begruendung: Dokumentations-, Deployment- und Engineering-Arbeit sollen chronologisch nachvollziehbar bleiben.
+- Betroffene Dateien/Pfade: `CHANGELOG.md`, `knowledge/changelog_policy.md`
+- Auswirkungen: Relevante Aenderungen muessen das Changelog mitpflegen.
+- Offene Punkte: Unklar, ob zusaetzlich eine strengere Release- oder Versionslogik benoetigt wird.
+
+## 2026-07-07 - Zuschaltbare Logebene fuer neue produktive Skripte
+
+- Status: beschlossen
+- Bereich: Architektur
+- Kontext: Produktive Skripte sollen ressourcenschonend arbeiten und Logging nicht ueberfrachten.
+- Entscheidung: Neue produktive Skripte muessen eine zuschaltbare Logebene unterstuetzen.
+- Begruendung: Minimales Standard-Logging, kontrollierbares Debugging und begrenztes Logwachstum sind fuer den Betrieb wichtig.
+- Betroffene Dateien/Pfade: `knowledge/script_logging_policy.md`, `knowledge/coding_rules.md`
+- Auswirkungen: Neue Skripte muessen Logging bewusst und konfigurierbar auslegen.
+- Offene Punkte: Unklar, wie eine gemeinsame Logging-Hilfsfunktion fuer neue ioBroker-JavaScript-Skripte genau aussehen soll.
 
 ## Unklar
 
