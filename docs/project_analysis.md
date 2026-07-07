@@ -6,6 +6,9 @@ Das Repository dokumentiert und versioniert ein privates Smart-Home- und Energie
 
 Eine strukturierte Komponentenuebersicht ist zusaetzlich in [docs/system_components.md](/Users/richardnussdorfer/Documents/Codex/2026-07-05/ist-es-m-glich-mit-dir/docs/system_components.md) dokumentiert.
 Die Knowledge Base startet in [knowledge/README.md](/Users/richardnussdorfer/Documents/Codex/2026-07-05/ist-es-m-glich-mit-dir/knowledge/README.md).
+Die Dokumentations-Governance ist in [knowledge/documentation_governance.md](/Users/richardnussdorfer/Documents/Codex/2026-07-05/ist-es-m-glich-mit-dir/knowledge/documentation_governance.md) festgehalten.
+Die zentrale Architekturuebersicht liegt in [knowledge/system_architecture.md](/Users/richardnussdorfer/Documents/Codex/2026-07-05/ist-es-m-glich-mit-dir/knowledge/system_architecture.md).
+Die Referenz fuer den exportierten ioBroker-Skriptbestand ist [knowledge/iobroker_manifest_reference.md](/Users/richardnussdorfer/Documents/Codex/2026-07-05/ist-es-m-glich-mit-dir/knowledge/iobroker_manifest_reference.md).
 Weitere vertiefende Architektur- und Strategiedokumente liegen unter `knowledge/`, insbesondere zu Hardware-Topologie, Batteriearchitektur, Victron-/Venus-Struktur, Regelungshierarchie, Energiestrategie und Design Principles.
 
 Der fachliche Schwerpunkt liegt auf:

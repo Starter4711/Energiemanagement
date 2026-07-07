@@ -9,8 +9,9 @@ Diese Datei ist der verbindliche Einstieg fuer zukuenftige Codex-Tasks in diesem
 1. Immer zuerst `AGENTS.md` lesen.
 2. Danach `knowledge/README.md` als Einstieg in die Knowledge Base lesen.
 3. Danach `docs/project_analysis.md` lesen.
-4. Danach die fuer den Task relevanten Dateien unter `knowledge/` lesen.
-5. Erst dann Code, Objekte, VIS-2 oder Deployment-Werkzeuge oeffnen oder aendern.
+4. Danach die fuer den Task relevanten Dateien unter `knowledge/` lesen, insbesondere die dort als fuehrend markierten Themen- und Detaildateien.
+5. Bei Skript-, Aktivierungs- oder ioBroker-Bestandsfragen zusaetzlich `iobroker/manifest.json` als Referenz pruefen.
+6. Erst dann Code, Objekte, VIS-2 oder Deployment-Werkzeuge oeffnen oder aendern.
 
 Mindestens diese Wissensdateien sind vor inhaltlichen Aenderungen zu pruefen:
 
@@ -62,6 +63,7 @@ Je nach Thema zusaetzlich:
 
 - `docs/`: Projektwissen, Analysen, Fach- und Betriebsdokumentation
 - `knowledge/`: dauerhafte AI-Knowledge-Base fuer neue Codex-Sitzungen
+- `iobroker/manifest.json`: Referenz fuer den exportierten ioBroker-Skriptbestand
 - `iobroker/scripts/common/`: exportierter Altbestand, ueberwiegend Blockly
 - `iobroker/scripts/energiemanagement/`: neuer modularer JavaScript-Code
 - `iobroker/objects/`: exportierte ioBroker-Objekte

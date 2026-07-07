@@ -171,6 +171,50 @@ Zukuenftige gesicherte Entscheidungen sollen in diesem Format dokumentiert werde
 - Offene Punkte: Unklar, ob weitere Sekundaerquellen fuer Plausibilisierung dokumentiert werden sollen.
 ```
 
+## 2026-07-07 - Trennung von docs/ und knowledge/
+
+- Status: beschlossen
+- Bereich: Dokumentation
+- Kontext: Die bestehenden Dokumente mischen Analyse, Detailwissen und dauerhafte Engineering-Festlegungen teilweise in einer Ebene.
+- Entscheidung: `docs/` und `knowledge/` erhalten getrennte Rollen.
+- Begruendung: Analyse, Fachdetails und historische Projektdokumentation sollen von verdichtetem, dauerhaftem Engineering-Wissen getrennt bleiben.
+- Betroffene Dateien/Pfade: `knowledge/documentation_governance.md`, `knowledge/README.md`, `docs/project_analysis.md`
+- Auswirkungen: Zukuenftige Dokumentation soll Inhalte nur dort pflegen, wo die jeweilige Rolle fuehrend ist.
+- Offene Punkte: Unklar, ob einzelne bestehende Dokumente spaeter noch inhaltlich umsortiert werden sollen.
+
+## 2026-07-07 - PROJECT_MEMORY.md ist historisch
+
+- Status: beschlossen
+- Bereich: Dokumentation
+- Kontext: `PROJECT_MEMORY.md` enthaelt zwar Projektgedaechtnis, ist aber keine aktuelle Engineering-Leitquelle.
+- Entscheidung: `PROJECT_MEMORY.md` wird als historisches Projektgedaechtnis behandelt.
+- Begruendung: Fuehrende Architektur- und Engineering-Wahrheit soll in `AGENTS.md`, `knowledge/README.md` und `knowledge/` liegen.
+- Betroffene Dateien/Pfade: `PROJECT_MEMORY.md`, `knowledge/documentation_governance.md`
+- Auswirkungen: Neue Entscheidungen und aktuelle Festlegungen sollen nicht mehr primaer in `PROJECT_MEMORY.md` gepflegt werden.
+- Offene Punkte: Unklar, ob aeltere Eintraege spaeter in Fuehrungsdokumente uebertragen werden sollen.
+
+## 2026-07-07 - iobroker/manifest.json als Exportreferenz
+
+- Status: beschlossen
+- Bereich: ioBroker
+- Kontext: Der Repository-Stand enthaelt einen exportierten ioBroker-Skriptbestand mit Objekt- und Skriptdateien.
+- Entscheidung: `iobroker/manifest.json` ist technische Referenz fuer den exportierten Skriptbestand.
+- Begruendung: Aktivierungsstatus, Engine-Typ und die Zuordnung von Objektdatei zu Skriptdatei sollen zentral nachvollziehbar bleiben.
+- Betroffene Dateien/Pfade: `iobroker/manifest.json`, `knowledge/iobroker_manifest_reference.md`, `AGENTS.md`
+- Auswirkungen: Skript-, Aktivierungs- und Bestandsfragen sollen gegen das Manifest geprueft werden.
+- Offene Punkte: Unklar, ob kuenftig weitere Exportformate als Referenz dokumentiert werden sollen.
+
+## 2026-07-07 - system_architecture.md als Architekturuebersicht
+
+- Status: beschlossen
+- Bereich: Dokumentation
+- Kontext: Die Architektur war ueber mehrere Dateien verteilt, aber nicht in einer kompakten Uebersichtsseite gebuendelt.
+- Entscheidung: `knowledge/system_architecture.md` wird als zentrale Architekturuebersicht eingefuehrt.
+- Begruendung: Neue Sitzungen sollen das Gesamtsystem schnell erfassen koennen, ohne die Detaildokumente zu ersetzen.
+- Betroffene Dateien/Pfade: `knowledge/system_architecture.md`, `knowledge/README.md`, `docs/project_analysis.md`
+- Auswirkungen: Die Seite dient als Einstieg fuer Diagramm, Hauptfluesse und Regelungshierarchie.
+- Offene Punkte: Unklar, ob spaeter weitere subsystembezogene Uebersichten noetig werden.
+
 ## Unklar
 
 - Eine vollstaendige ADR-Struktur oder nummerierte Entscheidungsserie ist im Repository nicht vorhanden.

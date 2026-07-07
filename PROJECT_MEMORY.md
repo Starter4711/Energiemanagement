@@ -1,5 +1,8 @@
 # Project Memory
 
+Diese Datei ist historisches Projektgedaechtnis.
+Fuer aktuelle Architektur- und Engineering-Wahrheit sind `AGENTS.md`, `knowledge/README.md` und `knowledge/` massgeblich.
+
 ## Projekt
 
 Name: Energiemanagement
