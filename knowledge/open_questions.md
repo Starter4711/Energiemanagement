@@ -16,6 +16,9 @@
 - Vollstaendige Inventarliste aller produktiven Endgeraete ausserhalb der im Repository referenzierten Geraete ist `Unklar`.
 - Zeitliche Priorisierung der Roadmap ausserhalb der dokumentierten Liste ist `Unklar`.
 - Weitere nicht dokumentierte Team-, Stil- oder Betriebsregeln ausserhalb der vorhandenen Analyse sind `Unklar`.
+- Konkrete operative Umschaltkriterien zwischen Sommer- und Winterstrategie sind `Unklar`, soweit sie nicht an anderer Stelle bereits formell dokumentiert sind.
+- Detaillierte Eskalationslogik bei Kommunikationsausfall zwischen BMS, Heltec, Raspberry Pi, MQTT und ioBroker ist `Unklar`.
+- Welche konkreten Node-RED-Flows auf den Cerbos produktiv im Detail aktiv sind, ist `Unklar`.
 
 ## Laut Projektanalyse fehlende Dokumentation
 
@@ -37,6 +40,9 @@
 - Migrationsmatrix Altbestand -> neues Energiemanagement
 - Aktor-Schreibpfade
 - Rollback-Prozess
+- Notabschaltungsszenarien der Batterie
+- Dokumentierte Kommunikationsausfall-Reaktionen
+- Prognoselogik fuer Wetter, PV und MPPT-Tagesertrag
 
 ## Arbeitsregel fuer neue Unklarheiten
 

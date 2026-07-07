@@ -4,6 +4,8 @@
 
 Diese Datei beschreibt die technische Komponentenlandschaft des Smart-Home- und Energiemanagement-Projekts auf Basis der im Repository dokumentierten Informationen. Sie dient als zentrale Uebersicht ueber Systembereiche, Schnittstellen, Datenpfade, Risiken und offene Punkte.
 
+Vertiefende Fachsichten liegen ergaenzend unter `knowledge/`, insbesondere in `hardware_topology.md`, `battery_architecture.md`, `victron_venus_structure.md`, `control_hierarchy.md`, `energy_strategy.md` und `design_principles.md`.
+
 ## 1. ioBroker auf Synology Docker
 
 ### Zweck

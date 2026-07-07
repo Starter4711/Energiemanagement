@@ -31,6 +31,94 @@
 - Auswirkungen: Zukuenftige Dokumentationsarbeit zu Systembereichen soll diese Komponentenuebersicht mitberuecksichtigen und bei relevanten Aenderungen aktualisieren.
 - Offene Punkte: Unklar, ob kuenftig weitere systemspezifische Teiluebersichten unter `docs/` oder `knowledge/` ergaenzt werden sollen.
 
+## 2026-07-07 - Drei-Zaehlpunkt-System als fachliche Grundlage
+
+- Status: beschlossen
+- Bereich: Architektur
+- Kontext: Die Gesamtanlage besteht aus Wohnung / altem Haus, Haus / neuem Haus und Halle als getrennten Netzanschluessen beziehungsweise Zaehlpunkten.
+- Entscheidung: Das Energiemanagement wird auf einem Drei-Zaehlpunkt-System mit bilanzieller Gesamtsicht aufgebaut.
+- Begruendung: Einspeisung und Bezug werden rechnerisch ueber die Zaehlpunkte gegengerechnet und im Energiegemeinschaftsmodell gemeinsam betrachtet.
+- Betroffene Dateien/Pfade: `knowledge/hardware_topology.md`, `knowledge/energy_strategy.md`
+- Auswirkungen: Strategien, Bilanzen und Ueberschusslogik muessen die gekoppelten Zaehlpunkte gemeinsam bewerten.
+- Offene Punkte: Unklar, ob weitere formale Abrechnungsregeln ausserhalb der OeMAG-Verrechnung dokumentiert werden sollen.
+
+## 2026-07-07 - Zwei Victron-Systeme mit gemeinsamer DC-Batterie
+
+- Status: beschlossen
+- Bereich: Architektur
+- Kontext: Haus und Halle verwenden getrennte Cerbo-/MultiPlus-Systeme, teilen sich jedoch eine gemeinsame DC-Batterieanlage.
+- Entscheidung: Cerbo ESS und Cerbo BAT werden als zwei Victron-Systeme mit gemeinsamer DC-Batteriearchitektur dokumentiert und betrachtet.
+- Begruendung: Diese Kopplung praegt Schutzlogik, Bilanzierung, Ladeverhalten und Gesamtstrategie.
+- Betroffene Dateien/Pfade: `knowledge/battery_architecture.md`, `knowledge/victron_venus_structure.md`, `knowledge/hardware_topology.md`
+- Auswirkungen: Aenderungen an einem Victron-Teilbereich muessen die gemeinsame Batteriearchitektur mitberuecksichtigen.
+- Offene Punkte: Unklar, ob kuenftig weitere entkoppelnde oder priorisierende Zwischenlogiken dokumentiert werden.
+
+## 2026-07-07 - SmartShunt als fuehrende Gesamtquelle
+
+- Status: beschlossen
+- Bereich: Datenquelle
+- Kontext: Mehrere Quellen liefern Batterie- und SOC-bezogene Informationen.
+- Entscheidung: SmartShunt ist fuehrende Quelle fuer Gesamt-SOC, DC-Spannung und Batteriestrom.
+- Begruendung: Die Gesamtbatteriesicht soll nicht auf dem nicht fuehrenden Gobel-SOC basieren.
+- Betroffene Dateien/Pfade: `knowledge/battery_architecture.md`, `knowledge/victron_venus_structure.md`, `knowledge/design_principles.md`
+- Auswirkungen: Neue Regelungslogik darf fuer die Gesamtsteuerung keine andere Hauptquelle an Stelle des SmartShunt setzen.
+- Offene Punkte: Unklar, welche Plausibilisierungs- oder Sekundaerquellen zusaetzlich dauerhaft dokumentiert werden sollen.
+
+## 2026-07-07 - Gobel-Pace als fuehrende Batterieschutzinstanz
+
+- Status: beschlossen
+- Bereich: Sicherheit
+- Kontext: Die Batterie benoetigt eine klare Trennung zwischen Gesamtmessung, Diagnose und Schutz.
+- Entscheidung: Gobel / Pace BMS ist fuehrende Schutzinstanz der Batterie.
+- Begruendung: Schutzfunktionen muessen auf der dafuer vorgesehenen BMS-Ebene verankert bleiben.
+- Betroffene Dateien/Pfade: `knowledge/battery_architecture.md`, `knowledge/design_principles.md`
+- Auswirkungen: Optimierungs- und Diagnoseebenen duerfen Batterieschutzlogik nicht ersetzen.
+- Offene Punkte: Notabschaltungsszenarien sind noch zu definieren.
+
+## 2026-07-07 - Node-RED als MQTT- und D-Bus-Bruecke
+
+- Status: beschlossen
+- Bereich: Architektur
+- Kontext: Node-RED laeuft auf den Cerbos im Venus OS Large Image und verarbeitet von ioBroker kommende Werte weiter.
+- Entscheidung: Node-RED wird als Kommunikationsbruecke dokumentiert, nicht als fuehrende Entscheidungsinstanz.
+- Begruendung: Die Fuehrungslogik bleibt bei Cerbo fuer Echtzeit und bei ioBroker fuer Strategie.
+- Betroffene Dateien/Pfade: `knowledge/control_hierarchy.md`, `knowledge/victron_venus_structure.md`, `knowledge/design_principles.md`
+- Auswirkungen: Zukuenftige Architekturarbeit darf Node-RED nicht stillschweigend zur Hauptregelinstanz aufwerten.
+- Offene Punkte: Unklar, welche konkreten Flows produktiv im Detail aktiv sind.
+
+## 2026-07-07 - Batterie als primaeres Schutz- und Optimierungsziel
+
+- Status: beschlossen
+- Bereich: Architektur
+- Kontext: Das System versorgt verschiedene Verbraucher und Erzeuger, die Batterie ist jedoch die kritischste gemeinsame Ressource.
+- Entscheidung: Die Batterie ist primaeres Schutz- und Optimierungsziel der Gesamtstrategie.
+- Begruendung: Versorgungssicherheit, Schonung und Ersatzstromfaehigkeit haben Vorrang vor aggressiver Verbrauchs- oder Einspeiseoptimierung.
+- Betroffene Dateien/Pfade: `knowledge/energy_strategy.md`, `knowledge/design_principles.md`, `knowledge/battery_architecture.md`
+- Auswirkungen: Wallbox-, Pool- und Ueberschusslogiken muessen sich an Batteriezustand und Schutzprinzipien orientieren.
+- Offene Punkte: Unklar, welche feingranularen Prioritaetsregeln kuenftig je Verbrauchergruppe gelten sollen.
+
+## 2026-07-07 - MPPT RS 450 als strategische DC-PV- und Schwarzstartquelle
+
+- Status: beschlossen
+- Bereich: Hardware
+- Kontext: Der MPPT RS 450 ist direkt am Lynx und damit am gemeinsamen DC-System angebunden.
+- Entscheidung: Der MPPT RS 450 wird als strategische DC-PV- und Schwarzstartquelle behandelt.
+- Begruendung: Er ist wichtig fuer schonende DC-seitige Ladung und fuer Schwarzstartfaehigkeit bei leerer Batterie und PV-Produktion.
+- Betroffene Dateien/Pfade: `knowledge/victron_venus_structure.md`, `knowledge/energy_strategy.md`
+- Auswirkungen: Aenderungen duerfen seine Rolle fuer Schwarzstart und DC-seitige Batterieladung nicht verschlechtern.
+- Offene Punkte: Unklar, wie kuenftige Prognosemodelle den MPPT-Tagesertrag konkret beruecksichtigen werden.
+
+## 2026-07-07 - Keine gezielte Batterieentladung ins Netz
+
+- Status: beschlossen
+- Bereich: Datenquelle
+- Kontext: Die Batterie dient primär Versorgungssicherheit, Schonung und lokaler Optimierung.
+- Entscheidung: Es darf keine gezielte Batterieentladung ins Netz geben.
+- Begruendung: Die Batterie ist nicht als primaeres Einspeiseasset gedacht, sondern als Schutz- und Versorgungsressource.
+- Betroffene Dateien/Pfade: `knowledge/energy_strategy.md`, `knowledge/design_principles.md`
+- Auswirkungen: Strategien und Sollwerte duerfen keine aktive Netzentladung der Batterie als Optimierungsziel vorsehen.
+- Offene Punkte: Unklar, welche dokumentierten Ausnahmen fuer Sonder- oder Testfaelle gegebenenfalls spaeter definiert werden.
+
 ## Entscheidungstagebuch-Format
 
 Zukuenftige gesicherte Entscheidungen sollen in diesem Format dokumentiert werden:
