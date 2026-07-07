@@ -11,7 +11,7 @@ project = {
     "___settings": {
         "folders": [],
         "openedViews": ["Main"],
-        "ts": "energiemanagement-mobile-v1",
+        "ts": "energiemanagement-responsive-v2",
     },
     "Main": {
         "name": "Energiemanagement",
@@ -30,7 +30,7 @@ project = {
                     "bindings": [],
                     "html": HTML,
                     "refreshInterval": "0",
-                    "name": "Energiemanagement Mobile Dashboard",
+                    "name": "Energiemanagement Responsive Dashboard",
                 },
                 "style": {
                     "left": "0px",

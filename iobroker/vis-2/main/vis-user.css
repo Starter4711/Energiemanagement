@@ -9,6 +9,13 @@ html, body, #root {
   background: #101416;
 }
 
+.visview_Main .vis-view-column,
+.visview_Main #w000001,
+.visview_Main #w000001 .vis-widget-body {
+  width: 100% !important;
+  max-width: none !important;
+}
+
 .em-dashboard {
   box-sizing: border-box;
   width: 100%;
@@ -69,5 +76,34 @@ h2 { margin: 0 0 10px; font-size: 15px; font-weight: 750; letter-spacing: 0; }
   .em-dashboard { max-width: 900px; margin: 0 auto; padding: 26px 24px 56px; }
   .em-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .em-grid-3 .em-card:first-child { grid-column: auto; }
+  .em-packs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1000px) {
+  .em-dashboard {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    align-content: start;
+    gap: 18px 20px;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px 24px 36px;
+  }
+
+  .em-header { grid-column: 1 / -1; padding: 4px 2px 16px; }
+  .em-header h1 { font-size: 28px; }
+  .em-soc { min-width: 126px; }
+  .em-soc strong { font-size: 25px; }
+  .em-dashboard section { padding-top: 0; }
+  .em-net { grid-column: 1 / span 5; }
+  .em-battery-section { grid-column: 6 / -1; }
+  .em-pv { grid-column: 1 / span 5; }
+  .em-cells { grid-column: 6 / -1; }
+  .em-card { min-height: 98px; }
+  .em-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .em-battery { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .em-battery > div { border-bottom: 0; border-right: 1px solid #30383b; }
+  .em-battery > div:nth-child(odd) { border-right: 1px solid #30383b; }
+  .em-battery > div:last-child { border-right: 0; }
   .em-packs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
