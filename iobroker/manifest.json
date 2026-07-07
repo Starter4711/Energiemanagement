@@ -1,6 +1,6 @@
 {
-  "count": 69,
-  "exportedAt": "2026-07-06T18:26:54.453493+00:00",
+  "count": 70,
+  "exportedAt": "2026-07-07T01:56:54.888147+00:00",
   "objects": [
     {
       "enabled": null,
@@ -636,6 +636,15 @@
       "name": "Config",
       "objectFile": "iobroker/objects/energiemanagement.Config.json",
       "scriptFile": "iobroker/scripts/energiemanagement/Config.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Pool_VIS2_Zeitplaene",
+      "name": "Pool_VIS2_Zeitplaene",
+      "objectFile": "iobroker/objects/energiemanagement.Pool_VIS2_Zeitplaene.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Pool_VIS2_Zeitplaene.js",
       "type": "script"
     },
     {

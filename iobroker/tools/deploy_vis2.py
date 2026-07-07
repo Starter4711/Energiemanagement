@@ -12,6 +12,7 @@ DEFAULT_HOST = "Richard@192.168.0.20"
 DEFAULT_CONTAINER = "iobroker-iobroker-1-1-1-1"
 DEFAULT_KEY = ROOT / "work" / "secrets" / "synology_iobroker_key"
 VIS_META = "vis-2.0"
+VIS_BACKUP_DIR = "/opt/iobroker/iobroker-data/files/vis-2.0/backups"
 
 
 def ssh(key: Path, host: str, command: str, input_text: str = None) -> None:
@@ -58,6 +59,8 @@ def main() -> int:
     backup = f"{VIS_META}/backups/main-{timestamp}.json"
     temporary_backup = "/tmp/codex-vis2-backup.json"
 
+    ssh(args.ssh_key, args.host, docker_command(args.container, ["mkdir", "-p", VIS_BACKUP_DIR]))
+    ssh(args.ssh_key, args.host, docker_command(args.container, ["chown", "-R", "iobroker:iobroker", VIS_BACKUP_DIR]))
     ssh(args.ssh_key, args.host, docker_command(args.container, ["iobroker", "file", "read", current, temporary_backup]))
     ssh(args.ssh_key, args.host, docker_command(args.container, ["iobroker", "file", "write", temporary_backup, backup]))
     ssh(args.ssh_key, args.host, docker_command(args.container, ["rm", temporary_backup]))

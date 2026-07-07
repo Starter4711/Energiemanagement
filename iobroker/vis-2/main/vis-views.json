@@ -3,9 +3,11 @@
     "folders": [],
     "openedViews": [
       "Main",
-      "Batterie"
+      "Batterie",
+      "Pool",
+      "Pool_Bedienung"
     ],
-    "ts": "energiemanagement-navigation-v3"
+    "ts": "energiemanagement-pool-v4"
   },
   "Main": {
     "name": "Energiemanagement",
@@ -22,7 +24,7 @@
         "tpl": "tplHtml",
         "data": {
           "bindings": [],
-          "html": "<div class=\"em-dashboard\">\n  <header class=\"em-header\">\n    <div>\n      <div class=\"em-kicker\">LIVE</div>\n      <h1>Energiemanagement</h1>\n      <p>Haus · Halle · Wohnung</p>\n    </div>\n    <div class=\"em-soc\">\n      <span>SmartShunt</span>\n      <strong>{alias.0.Gobel.Soc SmartShunt}%</strong>\n    </div>\n  </header>\n\n  <section class=\"em-net\">\n    <h2>Netz</h2>\n    <div class=\"em-grid em-grid-3\">\n      <article class=\"em-card\">\n        <span>Haus</span>\n        <strong>{alias.0.EM24 New Grid.Power}</strong>\n        <small>W · + Bezug / − Einspeisung</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Halle</span>\n        <strong>{alias.0.EM24 Hall Grid.Power}</strong>\n        <small>W · Grenze −27 / +15 kW</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Wohnung</span>\n        <strong>{alias.0.EM24 Old Grid.Power Old Grid}</strong>\n        <small>W · Zählpunkt 3</small>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"em-pv\">\n    <h2>PV aktuell</h2>\n    <div class=\"em-grid em-grid-2\">\n      <article class=\"em-card em-accent-green\"><span>Fronius Halle · 27 kW</span><strong>{alias.0.Fronius.AC-Power}</strong><small>W</small></article>\n      <article class=\"em-card em-accent-yellow\"><span>Fronius Haus · 10 kW</span><strong>{alias.0.Fronius.AC-Power_10kW}</strong><small>W</small></article>\n      <article class=\"em-card em-accent-blue\"><span>SMA Haus · 4,7 kW</span><strong>{alias.0.SMA.Power}</strong><small>W</small></article>\n      <article class=\"em-card em-accent-red\"><span>SolarEdge Wohnung · 17 kW</span><strong>{alias.0.SE.Power}</strong><small>W</small></article>\n    </div>\n  </section>\n\n  <section class=\"em-battery-section\">\n    <h2>Batterie</h2>\n    <a class=\"em-detail-link\" href=\"#Batterie\" aria-label=\"Batteriedetails öffnen\">\n      <div class=\"em-battery\">\n        <div><span>Leistung</span><strong>{alias.0.Gobel.Power} W</strong></div>\n        <div><span>Spannung · SmartShunt</span><strong>{alias.0.Gobel.Voltage_SmartShunt} V</strong></div>\n        <div><span>Strom</span><strong>{alias.0.Gobel.Current} A</strong></div>\n        <div><span>RS450</span><strong>{alias.0.MPPT RS450/100.P String1} + {alias.0.MPPT RS450/100.P String2} W</strong></div>\n      </div>\n      <div class=\"em-detail-label\"><span>Details und Zellüberwachung</span><b aria-hidden=\"true\">›</b></div>\n    </a>\n  </section>\n</div>\n",
+          "html": "<div class=\"em-dashboard\">\n  <header class=\"em-header\">\n    <div>\n      <div class=\"em-kicker\">LIVE</div>\n      <h1>Energiemanagement</h1>\n      <p>Haus · Halle · Wohnung</p>\n    </div>\n    <div class=\"em-soc\">\n      <span>SmartShunt</span>\n      <strong>{alias.0.Gobel.Soc SmartShunt}%</strong>\n    </div>\n  </header>\n\n  <section class=\"em-net\">\n    <h2>Netz</h2>\n    <div class=\"em-grid em-grid-3\">\n      <article class=\"em-card\">\n        <span>Haus</span>\n        <strong>{alias.0.EM24 New Grid.Power}</strong>\n        <small>W · + Bezug / − Einspeisung</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Halle</span>\n        <strong>{alias.0.EM24 Hall Grid.Power}</strong>\n        <small>W · Grenze −27 / +15 kW</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Wohnung</span>\n        <strong>{alias.0.EM24 Old Grid.Power Old Grid}</strong>\n        <small>W · Zählpunkt 3</small>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"em-pv\">\n    <h2>PV aktuell</h2>\n    <div class=\"em-grid em-grid-2\">\n      <article class=\"em-card em-accent-green\"><span>Fronius Halle · 27 kW</span><strong>{alias.0.Fronius.AC-Power}</strong><small>W</small></article>\n      <article class=\"em-card em-accent-yellow\"><span>Fronius Haus · 10 kW</span><strong>{alias.0.Fronius.AC-Power_10kW}</strong><small>W</small></article>\n      <article class=\"em-card em-accent-blue\"><span>SMA Haus · 4,7 kW</span><strong>{alias.0.SMA.Power}</strong><small>W</small></article>\n      <article class=\"em-card em-accent-red\"><span>SolarEdge Wohnung · 17 kW</span><strong>{alias.0.SE.Power}</strong><small>W</small></article>\n    </div>\n  </section>\n\n  <section class=\"em-battery-section\">\n    <h2>Batterie</h2>\n    <a class=\"em-detail-link\" href=\"#Batterie\" aria-label=\"Batteriedetails öffnen\">\n      <div class=\"em-battery\">\n        <div><span>Leistung</span><strong>{alias.0.Gobel.Power} W</strong></div>\n        <div><span>Spannung · SmartShunt</span><strong>{alias.0.Gobel.Voltage_SmartShunt} V</strong></div>\n        <div><span>Strom</span><strong>{alias.0.Gobel.Current} A</strong></div>\n        <div><span>RS450</span><strong>{alias.0.MPPT RS450/100.P String1} + {alias.0.MPPT RS450/100.P String2} W</strong></div>\n      </div>\n      <div class=\"em-detail-label\"><span>Details und Zellüberwachung</span><b aria-hidden=\"true\">›</b></div>\n    </a>\n  </section>\n\n  <section class=\"em-pool-summary\">\n    <h2>Pool</h2>\n    <a class=\"em-detail-link em-pool-tile\" href=\"#Pool\" aria-label=\"Poolsteuerung öffnen\">\n      <div class=\"em-pool-main-temp\"><span>Pooltemperatur · Rücklauf</span><strong>{javascript.0.Pool.RL} °C</strong><small>Vorlauf {javascript.0.Pool.VL} °C</small></div>\n      <div class=\"em-pool-main-io\">\n        <span class=\"em-dot\" data-state=\"{s7.0.Inputs.0.I1}\">H2O</span>\n        <span class=\"em-dot\" data-state=\"{s7.0.Outputs.0.Q1}\">Pumpe</span>\n        <span class=\"em-dot\" data-state=\"{s7.0.Outputs.0.Q2}\">Salz/pH</span>\n        <span class=\"em-dot\" data-state=\"{s7.0.Outputs.0.Q3}\">Füllen</span>\n        <span class=\"em-dot\" data-state=\"{s7.0.Outputs.0.Q4}\">Wärmepumpe</span>\n      </div>\n      <b class=\"em-tile-arrow\" aria-hidden=\"true\">›</b>\n    </a>\n  </section>\n</div>\n",
           "refreshInterval": "0",
           "name": "Energiemanagement Responsive Dashboard"
         },
@@ -65,6 +67,137 @@
           "position": "relative"
         },
         "widgetSet": "basic"
+      }
+    },
+    "activeWidgets": {}
+  },
+  "Pool": {
+    "name": "Pool",
+    "settings": {
+      "style": {
+        "background-color": "#101416",
+        "width": "100%",
+        "height": "1900px",
+        "overflow-x": "hidden"
+      }
+    },
+    "widgets": {
+      "w000001": {
+        "tpl": "tplHtml",
+        "data": {
+          "bindings": [],
+          "html": "<div class=\"em-dashboard em-pool-page\">\n  <header class=\"em-header em-detail-header\">\n    <a class=\"em-back\" href=\"#Main\" aria-label=\"Zur Übersicht\">‹</a>\n    <div>\n      <div class=\"em-kicker\">POOL</div>\n      <h1>Poolsteuerung</h1>\n      <p>Siemens LOGO · S7</p>\n    </div>\n    <div class=\"em-soc em-pool-temp\">\n      <span>Pool · Rücklauf</span>\n      <strong>{javascript.0.Pool.RL} °C</strong>\n    </div>\n  </header>\n\n  <section>\n    <div class=\"em-pool-temps\">\n      <article><span>Pooltemperatur</span><strong>{javascript.0.Pool.RL} °C</strong><small>Rücklauf · führender Wert</small></article>\n      <article><span>Vorlauf</span><strong>{javascript.0.Pool.VL} °C</strong><small>Indikator Wärmepumpenbetrieb</small></article>\n      <article class=\"em-state\" data-state=\"{s7.0.info.connection}\"><span>LOGO Verbindung</span><strong>{s7.0.info.connection}</strong></article>\n      <article class=\"em-state\" data-state=\"{s7.0.DBs.DB1.V0_0}\"><span>Betriebsart</span><strong>Winter: {s7.0.DBs.DB1.V0_0}</strong></article>\n    </div>\n  </section>\n\n  <section>\n    <h2>Ein- und Ausgänge</h2>\n    <div class=\"em-io-grid\">\n      <div class=\"em-state\" data-state=\"{s7.0.Inputs.0.I1}\"><span>Eingang · H2O Sensor</span><b>{s7.0.Inputs.0.I1}</b></div>\n      <div class=\"em-state\" data-state=\"{s7.0.Outputs.0.Q1}\"><span>Q1 · Pumpe</span><b>{s7.0.Outputs.0.Q1}</b></div>\n      <div class=\"em-state\" data-state=\"{s7.0.Outputs.0.Q2}\"><span>Q2 · Salz / pH</span><b>{s7.0.Outputs.0.Q2}</b></div>\n      <div class=\"em-state\" data-state=\"{s7.0.Outputs.0.Q3}\"><span>Q3 · Füllen</span><b>{s7.0.Outputs.0.Q3}</b></div>\n      <div class=\"em-state\" data-state=\"{s7.0.Outputs.0.Q4}\"><span>Q4 · Wärmepumpe</span><b>{s7.0.Outputs.0.Q4}</b></div>\n    </div>\n  </section>\n\n  <section>\n    <div class=\"em-section-head\"><h2>Betrieb</h2><a class=\"em-text-link\" href=\"#Pool_Bedienung\">Bedienung ›</a></div>\n    <div class=\"em-control-grid\">\n      <div class=\"em-state\" data-state=\"{s7.0.DBs.DB1.V0_0}\"><span>Winterbetrieb</span><b>{s7.0.DBs.DB1.V0_0}</b></div>\n      <div class=\"em-state\" data-state=\"{s7.0.DBs.DB1.V100_0}\"><span>Zeitsteuerung</span><b>{s7.0.DBs.DB1.V100_0}</b></div>\n      <div class=\"em-state\" data-state=\"{s7.0.DBs.DB1.V1_4}\"><span>Pool füllen</span><b>{s7.0.DBs.DB1.V1_4}</b></div>\n    </div>\n  </section>\n\n  <section>\n    <div class=\"em-section-head\"><h2>Winter-Mindestlaufzeiten</h2><span>täglich</span></div>\n    <div class=\"em-schedules\">\n      <div class=\"em-schedule\"><span>Fenster 1</span><strong>{javascript.0.PoolVIS2.Zeitplan1.Start}–{javascript.0.PoolVIS2.Zeitplan1.Ende}</strong><b>Aktiv: {time-switch.0.onoff.4.enabled}</b></div>\n      <div class=\"em-schedule\"><span>Fenster 2</span><strong>{javascript.0.PoolVIS2.Zeitplan2.Start}–{javascript.0.PoolVIS2.Zeitplan2.Ende}</strong><b>Aktiv: {time-switch.0.onoff.5.enabled}</b></div>\n      <div class=\"em-state\" data-state=\"{javascript.0.PoolSteuerung.Freigabe}\"><span>Freigabe aktuell</span><b>{javascript.0.PoolSteuerung.Freigabe}</b></div>\n    </div>\n  </section>\n\n  <section>\n    <div class=\"em-section-head\"><h2>Wartung · Handbetrieb</h2><a class=\"em-text-link\" href=\"#Pool_Bedienung\">Bedienung ›</a></div>\n    <div class=\"em-control-grid em-maintenance\">\n      <div class=\"em-state\" data-state=\"{s7.0.DBs.DB1.V1_0}\"><span>Pumpe</span><b>{s7.0.DBs.DB1.V1_0}</b></div>\n      <div class=\"em-state\" data-state=\"{s7.0.DBs.DB1.V1_1}\"><span>Salz / pH</span><b>{s7.0.DBs.DB1.V1_1}</b></div>\n      <div class=\"em-state\" data-state=\"{s7.0.DBs.DB1.V1_2}\"><span>H2O</span><b>{s7.0.DBs.DB1.V1_2}</b></div>\n      <div class=\"em-state\" data-state=\"{s7.0.DBs.DB1.V1_3}\"><span>Wärmepumpe</span><b>{s7.0.DBs.DB1.V1_3}</b></div>\n    </div>\n  </section>\n\n  <section>\n    <h2>Temperaturverlauf</h2>\n    <iframe class=\"em-pool-chart\" src=\"http://192.168.0.20:3010/d/adfibmq8ewkxsf/pool?orgId=1&amp;refresh=10s&amp;theme=dark&amp;kiosk\" title=\"Pool Temperaturverlauf\"></iframe>\n  </section>\n</div>\n",
+          "refreshInterval": "0",
+          "name": "Pool Responsive Dashboard"
+        },
+        "style": {
+          "left": "0px",
+          "top": "0px",
+          "width": "100%",
+          "height": "1900px",
+          "position": "relative"
+        },
+        "widgetSet": "basic"
+      }
+    },
+    "activeWidgets": {}
+  },
+  "Pool_Bedienung": {
+    "name": "Pool Bedienung",
+    "settings": {
+      "style": {
+        "background-color": "#101416",
+        "width": "100%",
+        "height": "1450px",
+        "overflow-x": "hidden"
+      }
+    },
+    "widgets": {
+      "w000001": {
+        "tpl": "tplHtml",
+        "data": {
+          "bindings": [],
+          "html": "<div class=\"em-control-header\">\n  <a class=\"em-back\" href=\"#Pool\" aria-label=\"Zur Poolübersicht\">‹</a>\n  <div><div class=\"em-kicker\">POOL</div><h1>Bedienung</h1><p>Winterzeiten und Wartung</p></div>\n</div>\n",
+          "refreshInterval": "0",
+          "name": "Pool Bedienung Responsive Dashboard"
+        },
+        "style": {
+          "left": "0px",
+          "top": "0px",
+          "width": "100%",
+          "height": "100px",
+          "position": "relative"
+        },
+        "widgetSet": "basic"
+      },
+      "w000002": {
+        "tpl": "tplMaterial2Switches",
+        "data": {
+          "noCard": false,
+          "widgetTitle": "Pool",
+          "count": 13,
+          "type": "lines",
+          "allSwitch": false,
+          "oid1": "s7.0.DBs.DB1.V0_0",
+          "type1": "switch",
+          "title1": "Winterbetrieb",
+          "noIcon1": true,
+          "oid2": "s7.0.DBs.DB1.V100_0",
+          "type2": "switch",
+          "title2": "Zeitsteuerung aktiv",
+          "noIcon2": true,
+          "oid3": "s7.0.DBs.DB1.V1_4",
+          "type3": "switch",
+          "title3": "Pool füllen",
+          "noIcon3": true,
+          "oid4": "javascript.0.PoolVIS2.Zeitplan1.Start",
+          "type4": "input",
+          "title4": "Zeitfenster 1 Start (HH:MM)",
+          "noIcon4": true,
+          "oid5": "javascript.0.PoolVIS2.Zeitplan1.Ende",
+          "type5": "input",
+          "title5": "Zeitfenster 1 Ende (HH:MM)",
+          "noIcon5": true,
+          "oid6": "time-switch.0.onoff.4.enabled",
+          "type6": "switch",
+          "title6": "Zeitfenster 1 aktiv",
+          "noIcon6": true,
+          "oid7": "javascript.0.PoolVIS2.Zeitplan2.Start",
+          "type7": "input",
+          "title7": "Zeitfenster 2 Start (HH:MM)",
+          "noIcon7": true,
+          "oid8": "javascript.0.PoolVIS2.Zeitplan2.Ende",
+          "type8": "input",
+          "title8": "Zeitfenster 2 Ende (HH:MM)",
+          "noIcon8": true,
+          "oid9": "time-switch.0.onoff.5.enabled",
+          "type9": "switch",
+          "title9": "Zeitfenster 2 aktiv",
+          "noIcon9": true,
+          "oid10": "s7.0.DBs.DB1.V1_0",
+          "type10": "switch",
+          "title10": "Wartung: Pumpe Hand",
+          "noIcon10": true,
+          "oid11": "s7.0.DBs.DB1.V1_1",
+          "type11": "switch",
+          "title11": "Wartung: Salz / pH Hand",
+          "noIcon11": true,
+          "oid12": "s7.0.DBs.DB1.V1_2",
+          "type12": "switch",
+          "title12": "Wartung: H2O Hand",
+          "noIcon12": true,
+          "oid13": "s7.0.DBs.DB1.V1_3",
+          "type13": "switch",
+          "title13": "Wartung: Wärmepumpe Hand",
+          "noIcon13": true
+        },
+        "style": {
+          "left": "14px",
+          "top": "110px",
+          "width": "calc(100% - 28px)",
+          "height": "1180px"
+        },
+        "widgetSet": "vis-2-widgets-material"
       }
     },
     "activeWidgets": {}

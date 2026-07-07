@@ -54,4 +54,19 @@
       <div class="em-detail-label"><span>Details und Zellüberwachung</span><b aria-hidden="true">›</b></div>
     </a>
   </section>
+
+  <section class="em-pool-summary">
+    <h2>Pool</h2>
+    <a class="em-detail-link em-pool-tile" href="#Pool" aria-label="Poolsteuerung öffnen">
+      <div class="em-pool-main-temp"><span>Pooltemperatur · Rücklauf</span><strong>{javascript.0.Pool.RL} °C</strong><small>Vorlauf {javascript.0.Pool.VL} °C</small></div>
+      <div class="em-pool-main-io">
+        <span class="em-dot" data-state="{s7.0.Inputs.0.I1}">H2O</span>
+        <span class="em-dot" data-state="{s7.0.Outputs.0.Q1}">Pumpe</span>
+        <span class="em-dot" data-state="{s7.0.Outputs.0.Q2}">Salz/pH</span>
+        <span class="em-dot" data-state="{s7.0.Outputs.0.Q3}">Füllen</span>
+        <span class="em-dot" data-state="{s7.0.Outputs.0.Q4}">Wärmepumpe</span>
+      </div>
+      <b class="em-tile-arrow" aria-hidden="true">›</b>
+    </a>
+  </section>
 </div>
