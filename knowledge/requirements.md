@@ -1,7 +1,11 @@
 # Requirements
 
-Diese Datei ist die zentrale fachliche Anforderungsquelle fuer das Energiemanagement.
-Sie leitet Anforderungen aus den bestehenden Design Principles, der Energiestrategie, der Regelungshierarchie und dem Engineering-Prozess ab.
+Diese Datei ist die zentrale fachliche Anforderungsquelle fuer das
+Energiemanagement.
+
+Sie leitet Anforderungen aus den bestehenden Design Principles, der
+Energiestrategie, der Regelungshierarchie und dem Engineering-Prozess ab.
+
 Wenn ein Punkt nicht sicher belegt ist, ist er als `Unklar` markiert.
 
 ## REQ-BAT-PRIMARY-ASSET

@@ -19,6 +19,7 @@
 
 Aus der Projektanalyse abgeleitete verbindliche Regeln:
 
+
 - Ressourcenschonung hat Vorrang.
 - Reaktionszeit passend zur Funktion waehlen.
 - Daten nicht unnoetig duplizieren.
