@@ -26,7 +26,7 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 - `project.md`: kompakter Projektueberblick, Fachschwerpunkte und Grundstruktur
 - `architecture.md`: Gesamtarchitektur, Hauptbereiche und grobe Daten- und Steuerpfade
 - `battery_architecture.md`: gemeinsame Batteriearchitektur, Rollen und Risiken
-- `coding_rules.md`: verbindliche Arbeits-, Architektur- und Deployment-Regeln
+- `coding_rules.md`: verbindliche Arbeits-, Architektur-, Deployment- und Zahlenformat-Regeln
 - `control_hierarchy.md`: Prioritaet von Hardware, Cerbo, ioBroker, MQTT, Node-RED und VIS2
 - `decisions.md`: gesicherte Entscheidungen und Entscheidungstagebuch
 - `engineering_process.md`: verbindlicher Standardablauf fuer Aenderungen
@@ -47,6 +47,13 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 - `victron.md`: kompakte Victron-Grundlage mit Skriptfamilien und Leitregeln
 - `victron_venus_structure.md`: Victron-, Cerbo- und Venus-Topologie mit Gateway-Rolle
 - `requirements.md`: zentrale fachliche Requirements mit sprechenden IDs und Struktur
+
+## Dokumentationsstandard
+
+- Fachtexte und Requirements verwenden Deutsch mit oesterreichischem Zahlenformat.
+- Tausendertrennzeichen ist der Punkt.
+- Dezimaltrennzeichen ist der Beistrich.
+- Einheitenbeispiele: `1.000 W`, `5,76 kWp`, `15,0 kWh`, `53,2 V`, `100,5 A`.
 
 ## Fuehrende Datei je Thema
 

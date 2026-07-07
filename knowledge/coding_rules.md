@@ -62,6 +62,19 @@ Aus der Projektanalyse abgeleitete verbindliche Regeln:
 - `knowledge/decisions.md` dokumentiert gesicherte Entscheidungen und deren Begruendung.
 - `docs/project_analysis.md` bleibt die technische Primaerquelle, solange keine belastbarere projektspezifische Quelle vorliegt.
 
+## Zahlen- und Einheitenformat
+
+- Dokumentation und fachliche Texte verwenden Deutsch oesterreichischer Prägung.
+- Tausendertrennzeichen ist der Punkt.
+- Dezimaltrennzeichen ist der Beistrich.
+- Zahlen mit Einheiten werden mit geschuetztem oder normalem Leerzeichen zwischen Zahl und Einheit geschrieben.
+- Beispiele:
+  - `1.000 W`
+  - `5,76 kWp`
+  - `15,0 kWh`
+  - `53,2 V`
+  - `100,5 A`
+
 ## Unklar
 
 - Weitere nicht dokumentierte Team- oder Stilregeln ausserhalb der vorhandenen Analyse sind `Unklar`.
