@@ -2,9 +2,10 @@
   "___settings": {
     "folders": [],
     "openedViews": [
-      "Main"
+      "Main",
+      "Batterie"
     ],
-    "ts": "energiemanagement-responsive-v2"
+    "ts": "energiemanagement-navigation-v3"
   },
   "Main": {
     "name": "Energiemanagement",
@@ -12,7 +13,7 @@
       "style": {
         "background-color": "#101416",
         "width": "100%",
-        "height": "1600px",
+        "height": "1100px",
         "overflow-x": "hidden"
       }
     },
@@ -21,7 +22,7 @@
         "tpl": "tplHtml",
         "data": {
           "bindings": [],
-          "html": "<div class=\"em-dashboard\">\n  <header class=\"em-header\">\n    <div>\n      <div class=\"em-kicker\">LIVE</div>\n      <h1>Energiemanagement</h1>\n      <p>Haus · Halle · Wohnung</p>\n    </div>\n    <div class=\"em-soc\">\n      <span>SmartShunt</span>\n      <strong>{alias.0.Gobel.Soc SmartShunt}%</strong>\n    </div>\n  </header>\n\n  <section class=\"em-net\">\n    <h2>Netz</h2>\n    <div class=\"em-grid em-grid-3\">\n      <article class=\"em-card\">\n        <span>Haus</span>\n        <strong>{alias.0.EM24 New Grid.Power}</strong>\n        <small>W · + Bezug / − Einspeisung</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Halle</span>\n        <strong>{alias.0.EM24 Hall Grid.Power}</strong>\n        <small>W · Grenze −27 / +15 kW</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Wohnung</span>\n        <strong>{alias.0.EM24 Old Grid.Power Old Grid}</strong>\n        <small>W · Zählpunkt 3</small>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"em-pv\">\n    <h2>PV aktuell</h2>\n    <div class=\"em-grid em-grid-2\">\n      <article class=\"em-card em-accent-green\"><span>Fronius Halle · 27 kW</span><strong>{alias.0.Fronius.AC-Power}</strong><small>W</small></article>\n      <article class=\"em-card em-accent-yellow\"><span>Fronius Haus · 10 kW</span><strong>{alias.0.Fronius.AC-Power_10kW}</strong><small>W</small></article>\n      <article class=\"em-card em-accent-blue\"><span>SMA Haus · 4,7 kW</span><strong>{alias.0.SMA.Power}</strong><small>W</small></article>\n      <article class=\"em-card em-accent-red\"><span>SolarEdge Wohnung · 17 kW</span><strong>{alias.0.SE.Power}</strong><small>W</small></article>\n    </div>\n  </section>\n\n  <section class=\"em-battery-section\">\n    <h2>Batterie</h2>\n    <div class=\"em-battery\">\n      <div><span>Leistung</span><strong>{alias.0.Gobel.Power} W</strong></div>\n      <div><span>Spannung · SmartShunt</span><strong>{alias.0.Gobel.Voltage_SmartShunt} V</strong></div>\n      <div><span>Strom</span><strong>{alias.0.Gobel.Current} A</strong></div>\n      <div><span>RS450</span><strong>{alias.0.MPPT RS450/100.P String1} + {alias.0.MPPT RS450/100.P String2} W</strong></div>\n    </div>\n  </section>\n\n  <section class=\"em-cells\">\n    <div class=\"em-section-head\">\n      <h2>Zellüberwachung</h2>\n      <span>Alarmgrenze 50 mV</span>\n    </div>\n    <div class=\"em-packs\">\n      <article class=\"em-pack\">\n        <div class=\"em-pack-title\"><strong>Pack 1</strong><span>SOC {alias.0.Gobel_Master.SOC}%</span></div>\n        <div class=\"em-pack-values\"><div><span>Spreizung</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Differenz_mV} mV</b></div><div><span>BMS ↔ HELTEC</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Max_Differenz_mV} mV</b></div></div>\n        <small>Zellalarm: {0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Alarm} · Vergleich: {0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Alarm}</small>\n      </article>\n      <article class=\"em-pack\">\n        <div class=\"em-pack-title\"><strong>Pack 2</strong><span>SOC {alias.0.Gobel_Slave1.SOC}%</span></div>\n        <div class=\"em-pack-values\"><div><span>Spreizung</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Differenz_mV} mV</b></div><div><span>BMS ↔ HELTEC</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Max_Differenz_mV} mV</b></div></div>\n        <small>Zellalarm: {0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Alarm} · Vergleich: {0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Alarm}</small>\n      </article>\n      <article class=\"em-pack\">\n        <div class=\"em-pack-title\"><strong>Pack 3</strong><span>SOC {alias.0.Gobel_Slave2.SOC}%</span></div>\n        <div class=\"em-pack-values\"><div><span>Spreizung</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Differenz_mV} mV</b></div><div><span>BMS ↔ HELTEC</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Max_Differenz_mV} mV</b></div></div>\n        <small>Zellalarm: {0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Alarm} · Vergleich: {0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Alarm}</small>\n      </article>\n      <article class=\"em-pack\">\n        <div class=\"em-pack-title\"><strong>Pack 4</strong><span>SOC {alias.0.Gobel_Slave3.SOC}%</span></div>\n        <div class=\"em-pack-values\"><div><span>Spreizung</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Differenz_mV} mV</b></div><div><span>BMS ↔ HELTEC</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Max_Differenz_mV} mV</b></div></div>\n        <small>Zellalarm: {0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Alarm} · Vergleich: {0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Alarm}</small>\n      </article>\n    </div>\n  </section>\n</div>\n",
+          "html": "<div class=\"em-dashboard\">\n  <header class=\"em-header\">\n    <div>\n      <div class=\"em-kicker\">LIVE</div>\n      <h1>Energiemanagement</h1>\n      <p>Haus · Halle · Wohnung</p>\n    </div>\n    <div class=\"em-soc\">\n      <span>SmartShunt</span>\n      <strong>{alias.0.Gobel.Soc SmartShunt}%</strong>\n    </div>\n  </header>\n\n  <section class=\"em-net\">\n    <h2>Netz</h2>\n    <div class=\"em-grid em-grid-3\">\n      <article class=\"em-card\">\n        <span>Haus</span>\n        <strong>{alias.0.EM24 New Grid.Power}</strong>\n        <small>W · + Bezug / − Einspeisung</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Halle</span>\n        <strong>{alias.0.EM24 Hall Grid.Power}</strong>\n        <small>W · Grenze −27 / +15 kW</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Wohnung</span>\n        <strong>{alias.0.EM24 Old Grid.Power Old Grid}</strong>\n        <small>W · Zählpunkt 3</small>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"em-pv\">\n    <h2>PV aktuell</h2>\n    <div class=\"em-grid em-grid-2\">\n      <article class=\"em-card em-accent-green\"><span>Fronius Halle · 27 kW</span><strong>{alias.0.Fronius.AC-Power}</strong><small>W</small></article>\n      <article class=\"em-card em-accent-yellow\"><span>Fronius Haus · 10 kW</span><strong>{alias.0.Fronius.AC-Power_10kW}</strong><small>W</small></article>\n      <article class=\"em-card em-accent-blue\"><span>SMA Haus · 4,7 kW</span><strong>{alias.0.SMA.Power}</strong><small>W</small></article>\n      <article class=\"em-card em-accent-red\"><span>SolarEdge Wohnung · 17 kW</span><strong>{alias.0.SE.Power}</strong><small>W</small></article>\n    </div>\n  </section>\n\n  <section class=\"em-battery-section\">\n    <h2>Batterie</h2>\n    <a class=\"em-detail-link\" href=\"#Batterie\" aria-label=\"Batteriedetails öffnen\">\n      <div class=\"em-battery\">\n        <div><span>Leistung</span><strong>{alias.0.Gobel.Power} W</strong></div>\n        <div><span>Spannung · SmartShunt</span><strong>{alias.0.Gobel.Voltage_SmartShunt} V</strong></div>\n        <div><span>Strom</span><strong>{alias.0.Gobel.Current} A</strong></div>\n        <div><span>RS450</span><strong>{alias.0.MPPT RS450/100.P String1} + {alias.0.MPPT RS450/100.P String2} W</strong></div>\n      </div>\n      <div class=\"em-detail-label\"><span>Details und Zellüberwachung</span><b aria-hidden=\"true\">›</b></div>\n    </a>\n  </section>\n</div>\n",
           "refreshInterval": "0",
           "name": "Energiemanagement Responsive Dashboard"
         },
@@ -29,7 +30,38 @@
           "left": "0px",
           "top": "0px",
           "width": "100%",
-          "height": "1600px",
+          "height": "1100px",
+          "position": "relative"
+        },
+        "widgetSet": "basic"
+      }
+    },
+    "activeWidgets": {}
+  },
+  "Batterie": {
+    "name": "Batterie",
+    "settings": {
+      "style": {
+        "background-color": "#101416",
+        "width": "100%",
+        "height": "1200px",
+        "overflow-x": "hidden"
+      }
+    },
+    "widgets": {
+      "w000001": {
+        "tpl": "tplHtml",
+        "data": {
+          "bindings": [],
+          "html": "<div class=\"em-dashboard em-battery-page\">\n  <header class=\"em-header em-detail-header\">\n    <a class=\"em-back\" href=\"#Main\" aria-label=\"Zur Übersicht\">‹</a>\n    <div>\n      <div class=\"em-kicker\">BATTERIE</div>\n      <h1>Zellüberwachung</h1>\n      <p>SmartShunt · Pace BMS · HELTEC</p>\n    </div>\n    <div class=\"em-soc\">\n      <span>SmartShunt</span>\n      <strong>{alias.0.Gobel.Soc SmartShunt}%</strong>\n    </div>\n  </header>\n\n  <section class=\"em-battery-section\">\n    <h2>DC-System</h2>\n    <div class=\"em-battery\">\n      <div><span>Leistung</span><strong>{alias.0.Gobel.Power} W</strong></div>\n      <div><span>Spannung · SmartShunt</span><strong>{alias.0.Gobel.Voltage_SmartShunt} V</strong></div>\n      <div><span>Strom</span><strong>{alias.0.Gobel.Current} A</strong></div>\n      <div><span>RS450</span><strong>{alias.0.MPPT RS450/100.P String1} + {alias.0.MPPT RS450/100.P String2} W</strong></div>\n    </div>\n  </section>\n\n  <section class=\"em-cells\">\n    <div class=\"em-section-head\">\n      <h2>Packs und Zellen</h2>\n      <span>Alarmgrenze 50 mV</span>\n    </div>\n    <div class=\"em-packs\">\n      <article class=\"em-pack\">\n        <div class=\"em-pack-title\"><strong>Pack 1</strong><span>SOC {alias.0.Gobel_Master.SOC}%</span></div>\n        <div class=\"em-pack-values\"><div><span>Spreizung</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Differenz_mV} mV</b></div><div><span>BMS ↔ HELTEC</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Max_Differenz_mV} mV</b></div></div>\n        <small>Zellalarm: {0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Alarm} · Vergleich: {0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Alarm}</small>\n      </article>\n      <article class=\"em-pack\">\n        <div class=\"em-pack-title\"><strong>Pack 2</strong><span>SOC {alias.0.Gobel_Slave1.SOC}%</span></div>\n        <div class=\"em-pack-values\"><div><span>Spreizung</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Differenz_mV} mV</b></div><div><span>BMS ↔ HELTEC</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Max_Differenz_mV} mV</b></div></div>\n        <small>Zellalarm: {0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Alarm} · Vergleich: {0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Alarm}</small>\n      </article>\n      <article class=\"em-pack\">\n        <div class=\"em-pack-title\"><strong>Pack 3</strong><span>SOC {alias.0.Gobel_Slave2.SOC}%</span></div>\n        <div class=\"em-pack-values\"><div><span>Spreizung</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Differenz_mV} mV</b></div><div><span>BMS ↔ HELTEC</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Max_Differenz_mV} mV</b></div></div>\n        <small>Zellalarm: {0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Alarm} · Vergleich: {0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Alarm}</small>\n      </article>\n      <article class=\"em-pack\">\n        <div class=\"em-pack-title\"><strong>Pack 4</strong><span>SOC {alias.0.Gobel_Slave3.SOC}%</span></div>\n        <div class=\"em-pack-values\"><div><span>Spreizung</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Differenz_mV} mV</b></div><div><span>BMS ↔ HELTEC</span><b>{0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Max_Differenz_mV} mV</b></div></div>\n        <small>Zellalarm: {0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Alarm} · Vergleich: {0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Alarm}</small>\n      </article>\n    </div>\n  </section>\n</div>\n",
+          "refreshInterval": "0",
+          "name": "Batterie Responsive Dashboard"
+        },
+        "style": {
+          "left": "0px",
+          "top": "0px",
+          "width": "100%",
+          "height": "1200px",
           "position": "relative"
         },
         "widgetSet": "basic"
