@@ -18,6 +18,7 @@
 - Vollstaendige Abhaengigkeitenkarte zwischen allen Common-Skripten ist `Unklar`.
 - Beschreibung der Abhaengigkeiten zwischen einzelnen Common-Skripten ist `Unklar`.
 - Klare Trennung zwischen Altbestand, Referenzbestand und produktivem Zielzustand ist `Unklar`.
+- Ob die Skripte `script.js.energiemanagement.Bilanz_Zaehlpunkte` und `script.js.energiemanagement.Debug` absichtlich nur im Repository existieren, ist `Unklar`.
 
 ## MQTT / Datenpunkte
 

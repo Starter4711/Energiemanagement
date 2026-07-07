@@ -2,7 +2,7 @@
 
 ## Zeitpunkt des Abgleichs
 
-- 2026-07-07T01:56:54.888147+00:00 laut `iobroker/manifest.json`
+- Frischer Live-Export am 2026-07-07T17:54:47.083662+00:00 laut aktualisiertem `iobroker/manifest.json`
 - Lokale Auswertung im Kontext `Europe/Vienna` am 2026-07-07
 
 ## Verwendeter ioBroker-Container
@@ -17,8 +17,8 @@
 
 ## Bestandszahlen
 
-- Skripte live gesamt im Export: `67`
-- Skripte im Repository im Geltungsbereich `script.js.common.*` und `script.js.energiemanagement.*`: `65`
+- Skripte live gesamt im frischen Export: `65`
+- Skripte im Repository im Geltungsbereich `script.js.common.*` und `script.js.energiemanagement.*`: `67`
 - Zusätzliche Repository-Skripte ausserhalb des geforderten Geltungsbereichs: `2` (`script.js.Keep_Alive`, `script.js.Skript_1`)
 
 ## Aktive common-Skripte
@@ -100,24 +100,24 @@
 
 ## Erkannte Unterschiede Live vs Repository
 
-- Für alle 65 Skripte im Geltungsbereich `script.js.common.*` und `script.js.energiemanagement.*` wurden im Export und im Repository keine Abweichungen bei `enabled`, `engineType`, `scriptFile` oder `objectFile` festgestellt.
-- Es wurden keine fehlenden Skripte im Repository innerhalb dieses Geltungsbereichs festgestellt.
+- Für alle 65 Skripte im frischen Export wurden im Repository keine Abweichungen bei `enabled`, `engineType`, `scriptFile` oder `objectFile` festgestellt.
+- Im Repository liegen zwei Skripte im geforderten Geltungsbereich, die im frischen Live-Export nicht vorhanden sind: `script.js.energiemanagement.Bilanz_Zaehlpunkte` und `script.js.energiemanagement.Debug`.
 - Im Repository existieren zusätzlich die Skripte `script.js.Keep_Alive` und `script.js.Skript_1`; diese liegen ausserhalb des explizit geforderten Vergleichsbereichs.
 - Keine ioBroker-Objekte wurden im Rahmen dieses Abgleichs geändert.
 
 ## Risiken
 
-- Der Abgleich basiert auf dem exportierten Live-Stand in `iobroker/manifest.json`; ein aktueller Live-Neuabzug wurde in diesem Arbeitsgang nicht durchgeführt.
+- Der Abgleich basiert auf einem frischen Live-Export aus dem ioBroker-Container; zwischen Export und Dokumentation kann sich der Live-Stand theoretisch bereits wieder geändert haben.
 - Die Vollständigkeit der Live-Umgebung ausserhalb des exportierten Skriptbestands bleibt `Unklar`.
 - Für die nicht zum Vergleichsbereich gehoerenden Skripte `script.js.Keep_Alive` und `script.js.Skript_1` liegt hier keine explizite Live-GitHub-Gegenueberstellung vor.
 
 ## Empfohlene naechste Schritte
 
-1. Falls ein frischer Live-Abzug gewünscht ist, den ioBroker-Export erneut erzeugen und gegen diesen Stand vergleichen.
+1. Pruefen, ob `script.js.energiemanagement.Bilanz_Zaehlpunkte` und `script.js.energiemanagement.Debug` bewusst nur im Repository liegen oder ob der Live-Stand sie noch aufnehmen soll.
 2. Die beiden ausserhalb des Vergleichsbereichs liegenden Skripte getrennt dokumentieren, falls sie fuer den Betriebsabgleich relevant sind.
-3. Bei kuenftigen Aenderungen an produktiven Skripten den bisherigen Live-Export als Rueckfallebene behalten.
+3. Bei kuenftigen Aenderungen an produktiven Skripten den frischen Live-Export als Rueckfallebene behalten.
 
 ## Unklar
 
-- Ob zwischen Exportzeitpunkt und heutigem Kontrollzeitpunkt im Live-System noch Aenderungen passiert sind, ist `Unklar`.
+- Ob die zwei nur im Repository vorhandenen Energiemanagement-Skripte absichtlich nicht live existieren, ist `Unklar`.
 - Ob `script.js.Keep_Alive` und `script.js.Skript_1` bewusst ausserhalb des Vergleichsbereichs gehalten werden sollen, ist `Unklar`.
