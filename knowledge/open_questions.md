@@ -13,8 +13,9 @@
 
 - Vollstaendige Liste aller produktiven ioBroker-Adapter inklusive Versionen ist `Unklar`.
 - Vollstaendige Uebersicht aller aktiven ioBroker-Adapter ist `Unklar`.
-- Ob `vis.0` als VIS1 noch produktiv genutzt wird, ist `Unklar`.
 - Ob fuer VIS1 ein eigener Repository-Pfad unter `iobroker/vis-1/` oder einem anderen dokumentierten Ort existieren soll, ist `Unklar`.
+- Ob VIS1 absichtlich ohne separate `vis-user.css` betrieben wird, ist `Unklar`.
+- Welche VIS1-Views zuerst nach VIS2 migriert werden sollen, ist `Unklar`.
 - Welche Common-Skripte im Live-System exakt aktiv sein sollen, ist nicht vollstaendig dokumentiert.
 - Welche Common-Skripte im Live-System tatsaechlich aktiviert sind, ist aus dem Repository allein nicht vollstaendig ableitbar.
 - Vollstaendige Abhaengigkeitenkarte zwischen allen Common-Skripten ist `Unklar`.

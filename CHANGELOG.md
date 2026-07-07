@@ -5,11 +5,12 @@
   - `docs/vis_live_sync_report.md` fuer den Live-Abgleich von VIS1 und VIS2 ergaenzt
   - Live-Backups von VIS1 und VIS2 unter `iobroker/backups/20260707T180000Z/` abgelegt
 - Changed
-  - VIS1 und VIS2 im Live-System lesend geprueft, ohne produktive Views oder ioBroker-Objekte zu veraendern
-  - `knowledge/open_questions.md` um offene Punkte zu VIS1 erweitert
+  - VIS1 als aktuell produktive Visualisierung und VIS2 als Ziel-Visualisierung dokumentiert
+  - `docs/vis_live_sync_report.md` auf den geklaerten Produktivstatus von VIS1 und die Zielrolle von VIS2 aktualisiert
+  - `knowledge/open_questions.md` um weiterhin offene VIS1-Fragen bereinigt und praezisiert
 - Notes
   - VIS2 stimmt mit dem Repository-Stand unter `iobroker/vis-2/main/` ueberein
-  - Fuer VIS1 liegt im Repository kein direkt vergleichbarer Projektstand vor
+  - VIS1 ist die produktive Alt-Visualisierung und bleibt vor VIS-Arbeiten zu sichern
 
 ## 2026-07-07
 - Added

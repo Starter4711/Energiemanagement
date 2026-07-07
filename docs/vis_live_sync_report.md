@@ -76,18 +76,21 @@
 
 ## Produktive VIS-Version
 
-- VIS2 ist als produktiver Kandidat sichtbar, weil ein aktiviertes `vis-2.0`-Objekt und ein gepflegtes Repository-Projekt unter `iobroker/vis-2/` vorhanden sind.
-- Ob VIS1 zusaetzlich noch produktiv genutzt wird, ist `Unklar`.
+- VIS1 ist die alte und aktuell produktive Visualisierung.
+- VIS2 ist die neue Ziel-Visualisierung.
+- VIS2 ist Entwicklungsziel, aber nicht als allein produktive Visualisierung zu behandeln.
+- VIS1 darf nicht veraendert werden.
+- VIS1 muss vor jeder VIS-Arbeit gesichert werden.
+- Die Migration von VIS1 nach VIS2 erfolgt schrittweise und nicht per Big Bang.
 
 ## Risiken
 
-- VIS1 bleibt ohne Repository-Gegenstand nur als Live-Bestand dokumentiert; damit ist der historische Abgleich eingeschraenkt.
+- VIS1 bleibt als produktive Alt-Visualisierung zu sichern und nur lesend zu behandeln.
 - Der Export ist eine Momentaufnahme; Live-Inhalte koennen sich nach dem Export jederzeit aendern.
 - Fuer VIS1 wurde kein `vis-user.css`-Dateistand gefunden, daher ist unklar, ob dort eine separate Stilpflege verwendet wird.
 
 ## Offene Punkte
 
-- Ob VIS1 produktiv weiter genutzt wird, ist `Unklar`.
 - Ob fuer VIS1 ein Repository-Pfad existieren sollte, ist `Unklar`.
 - Ob VIS1 absichtlich ohne separat exportierte `vis-user.css` betrieben wird, ist `Unklar`.
 
