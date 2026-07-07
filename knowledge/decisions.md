@@ -20,6 +20,17 @@
 - Der Gobel-SOC ist nicht fuehrend fuer Gesamtregelung.
 - Neues Energiemanagement soll Altlogik schrittweise ersetzen, nicht ungeordnet ueberschreiben.
 
+## 2026-07-07 - Komponentenuebersicht als zentrale Systemdokumentation
+
+- Status: beschlossen
+- Bereich: Dokumentation
+- Kontext: Die technische Projektanalyse beschreibt viele Systemteile, aber keine eigenstaendige zentrale Komponentenuebersicht je Systembereich.
+- Entscheidung: `docs/system_components.md` wird als zentrale Komponentenuebersicht fuer die dokumentierten bzw. geplanten Systembereiche eingefuehrt.
+- Begruendung: Die Komponentenlandschaft soll fuer neue Codex-Tasks und kuenftige Pflegefaelle schneller erfassbar sein, ohne bestehende technische Entscheidungen zu aendern.
+- Betroffene Dateien/Pfade: `docs/system_components.md`, `docs/project_analysis.md`
+- Auswirkungen: Zukuenftige Dokumentationsarbeit zu Systembereichen soll diese Komponentenuebersicht mitberuecksichtigen und bei relevanten Aenderungen aktualisieren.
+- Offene Punkte: Unklar, ob kuenftig weitere systemspezifische Teiluebersichten unter `docs/` oder `knowledge/` ergaenzt werden sollen.
+
 ## Entscheidungstagebuch-Format
 
 Zukuenftige gesicherte Entscheidungen sollen in diesem Format dokumentiert werden:

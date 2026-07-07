@@ -4,6 +4,8 @@
 
 Das Repository dokumentiert und versioniert ein privates Smart-Home- und Energiemanagement-Projekt mit Fokus auf ioBroker als Laufzeitumgebung. GitHub ist laut vorhandener Dokumentation die Referenz, Historie und Backup-Ebene, waehrend ioBroker das Live-System ist.
 
+Eine strukturierte Komponentenuebersicht ist zusaetzlich in [docs/system_components.md](/Users/richardnussdorfer/Documents/Codex/2026-07-05/ist-es-m-glich-mit-dir/docs/system_components.md) dokumentiert.
+
 Der fachliche Schwerpunkt liegt auf:
 
 - Energiemanagement ueber drei Zaehlpunkte
