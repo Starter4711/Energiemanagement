@@ -22,6 +22,10 @@
 - Beschreibung der Abhaengigkeiten zwischen einzelnen Common-Skripten ist `Unklar`.
 - Klare Trennung zwischen Altbestand, Referenzbestand und produktivem Zielzustand ist `Unklar`.
 - Ob die Skripte `script.js.energiemanagement.Bilanz_Zaehlpunkte` und `script.js.energiemanagement.Debug` absichtlich nur im Repository existieren, ist `Unklar`.
+- Die exakte fachliche Rolle von `script.js.common.Grid-PV` und `script.js.common.Grid-PVHalle` ist nur aus dem Namen ableitbar und nicht separat dokumentiert.
+- Die exakte fachliche Rolle von `script.js.common.Sonne`, `script.js.common.Sonnenstand` und `script.js.common.Wolken-PV_*` ist nur teilweise belegt.
+- Die Abgrenzung zwischen `script.js.common.Pool`, `script.js.common.Pool_Steuerung` und `script.js.energiemanagement.Pool_VIS2_Zeitplaene` ist nicht vollstaendig dokumentiert.
+- Die genaue Zielrolle der go-e-V3- und go-e-V4-Skripte im neuen Energiemanagement ist noch nicht konsolidiert.
 
 ## MQTT / Datenpunkte
 

@@ -2,6 +2,14 @@
 
 ## 2026-07-07
 - Added
+  - `docs/migration_matrix.md` als Migrationsmatrix vom ioBroker-common-Altbestand zum modularen Energiemanagement ergaenzt
+- Changed
+  - `knowledge/open_questions.md` um unklare Skriptrollen und Abgrenzungen erweitert
+- Notes
+  - Die Matrix fasst alle Skripte aus `iobroker/manifest.json` zusammen und markiert produktive Schreibpfade sowie bereits ersetzte Gobel-Skripte
+
+## 2026-07-07
+- Added
   - `docs/vis_live_sync_report.md` fuer den Live-Abgleich von VIS1 und VIS2 ergaenzt
   - Live-Backups von VIS1 und VIS2 unter `iobroker/backups/20260707T180000Z/` abgelegt
 - Changed
