@@ -2,6 +2,17 @@
 
 ## 2026-07-07
 - Added
+  - `docs/vis_live_sync_report.md` fuer den Live-Abgleich von VIS1 und VIS2 ergaenzt
+  - Live-Backups von VIS1 und VIS2 unter `iobroker/backups/20260707T180000Z/` abgelegt
+- Changed
+  - VIS1 und VIS2 im Live-System lesend geprueft, ohne produktive Views oder ioBroker-Objekte zu veraendern
+  - `knowledge/open_questions.md` um offene Punkte zu VIS1 erweitert
+- Notes
+  - VIS2 stimmt mit dem Repository-Stand unter `iobroker/vis-2/main/` ueberein
+  - Fuer VIS1 liegt im Repository kein direkt vergleichbarer Projektstand vor
+
+## 2026-07-07
+- Added
   - Frischer Live-Export aus dem ioBroker-Container gezogen und `iobroker/manifest.json` aktualisiert
 - Changed
   - `docs/iobroker_live_sync_report.md` auf den frischen Live-Export umgestellt
