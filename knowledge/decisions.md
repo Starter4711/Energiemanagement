@@ -53,6 +53,17 @@
 - Auswirkungen: Aenderungen an einem Victron-Teilbereich muessen die gemeinsame Batteriearchitektur mitberuecksichtigen.
 - Offene Punkte: Unklar, ob kuenftig weitere entkoppelnde oder priorisierende Zwischenlogiken dokumentiert werden.
 
+## 2026-07-07 - Knowledge Base README als zentrale Navigation
+
+- Status: beschlossen
+- Bereich: Dokumentation
+- Kontext: Die Knowledge Base enthielt mehrere thematisch ueberlappende Detaildateien ohne zentrale Startseite.
+- Entscheidung: `knowledge/README.md` wird als zentrale Navigationsseite der Knowledge Base eingefuehrt.
+- Begruendung: Neue Codex-Sitzungen sollen schneller zu den fuehrenden Dokumenten und den ergaenzenden Detailseiten finden.
+- Betroffene Dateien/Pfade: `knowledge/README.md`, `AGENTS.md`, `docs/project_analysis.md`
+- Auswirkungen: Kuenftige Wissensarbeit soll zuerst ueber die README in die Knowledge Base einsteigen und dann die fuehrenden Fachdateien heranziehen.
+- Offene Punkte: Unklar, ob weitere thematische Einstiegsseiten unter `docs/` oder `knowledge/` spaeter sinnvoll sind.
+
 ## 2026-07-07 - SmartShunt als fuehrende Gesamtquelle
 
 - Status: beschlossen

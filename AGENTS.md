@@ -7,9 +7,10 @@ Diese Datei ist der verbindliche Einstieg fuer zukuenftige Codex-Tasks in diesem
 ## Pflichtablauf fuer jeden neuen Task
 
 1. Immer zuerst `AGENTS.md` lesen.
-2. Danach `docs/project_analysis.md` lesen.
-3. Danach die fuer den Task relevanten Dateien unter `knowledge/` lesen.
-4. Erst dann Code, Objekte, VIS-2 oder Deployment-Werkzeuge oeffnen oder aendern.
+2. Danach `knowledge/README.md` als Einstieg in die Knowledge Base lesen.
+3. Danach `docs/project_analysis.md` lesen.
+4. Danach die fuer den Task relevanten Dateien unter `knowledge/` lesen.
+5. Erst dann Code, Objekte, VIS-2 oder Deployment-Werkzeuge oeffnen oder aendern.
 
 Mindestens diese Wissensdateien sind vor inhaltlichen Aenderungen zu pruefen:
 
