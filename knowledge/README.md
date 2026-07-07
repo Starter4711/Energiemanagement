@@ -46,6 +46,7 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 - `software.md`: verwendete Technologien, sichtbare Softwarestruktur und Integrationen
 - `victron.md`: kompakte Victron-Grundlage mit Skriptfamilien und Leitregeln
 - `victron_venus_structure.md`: Victron-, Cerbo- und Venus-Topologie mit Gateway-Rolle
+- `requirements.md`: zentrale fachliche Requirements mit sprechenden IDs und Struktur
 
 ## Fuehrende Datei je Thema
 
@@ -63,6 +64,7 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 - Batteriearchitektur: `battery_architecture.md`
 - Regelungshierarchie: `control_hierarchy.md`
 - Energiestrategie: `energy_strategy.md`
+- Requirements: `requirements.md`
 - Docker und Deployment: `docker.md`
 - ioBroker-Rolle und Struktur: `iobroker.md`
 - MQTT-Struktur: `mqtt.md`
@@ -77,6 +79,7 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 
 - `docs/` enthaelt Analyse, Fachdetails, Betriebsdokumente und historische oder ausfuehrliche Projektdokumentation.
 - `knowledge/` enthaelt verdichtetes, dauerhaftes Engineering-Wissen fuer Architektur, Codex und zukunftige Entscheidungen.
+- `knowledge/requirements.md` ist die zentrale fachliche Anforderungsdatei. Neue Features und relevante Aenderungen sollen darauf verweisen.
 - `PROJECT_MEMORY.md` ist historisches Projektgedaechtnis und keine fuehrende Quelle mehr.
 
 ## Arbeitsregel

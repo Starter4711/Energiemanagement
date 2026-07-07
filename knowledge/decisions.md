@@ -258,10 +258,22 @@ Zukuenftige gesicherte Entscheidungen sollen in diesem Format dokumentiert werde
 - Bereich: Architektur
 - Kontext: Produktive Skripte sollen ressourcenschonend arbeiten und Logging nicht ueberfrachten.
 - Entscheidung: Neue produktive Skripte muessen eine zuschaltbare Logebene unterstuetzen.
+
 - Begruendung: Minimales Standard-Logging, kontrollierbares Debugging und begrenztes Logwachstum sind fuer den Betrieb wichtig.
 - Betroffene Dateien/Pfade: `knowledge/script_logging_policy.md`, `knowledge/coding_rules.md`
 - Auswirkungen: Neue Skripte muessen Logging bewusst und konfigurierbar auslegen.
 - Offene Punkte: Unklar, wie eine gemeinsame Logging-Hilfsfunktion fuer neue ioBroker-JavaScript-Skripte genau aussehen soll.
+
+## 2026-07-07 - Sprechende Requirement-IDs als Projektstandard
+
+- Status: beschlossen
+- Bereich: Dokumentation
+- Kontext: Fachliche Anforderungen wurden bislang nicht als zentrale, strukturierte Requirements-Datei mit sprechenden IDs gefuehrt.
+- Entscheidung: Sprechende Requirement-IDs werden als Projektstandard eingefuehrt und in `knowledge/requirements.md` zentral gepflegt.
+- Begruendung: Anforderungen sollen fuer Menschen ohne Nachschlagetabelle direkt lesbar, referenzierbar und in Features oder Aenderungen eindeutig verknuepfbar sein.
+- Betroffene Dateien/Pfade: `knowledge/requirements.md`, `knowledge/README.md`, `CHANGELOG.md`
+- Auswirkungen: Zukuenftige Anforderungen, Features und relevante Aenderungen sollen auf die passenden Requirement-IDs verweisen.
+- Offene Punkte: Unklar, ob weitere Namenskonventionen fuer Unteranforderungen oder Abhaengigkeiten spaeter noetig werden.
 
 ## Unklar
 
