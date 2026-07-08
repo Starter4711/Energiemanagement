@@ -2,6 +2,8 @@
 
 ## 2026-07-08
 - Changed
+  - `iobroker/scripts/energiemanagement/Battery_Health_V1.js` auf dem aktuellen Remote-Stand verifiziert: mehrzeilig, `use strict` auf eigener Zeile, Objekt und Manifest vorhanden
+- Changed
   - `iobroker/scripts/energiemanagement/Battery_Health_V1.js` technisch neu umbrochen, ohne die Health-Logik zu aendern
 - Changed
   - `iobroker/objects/energiemanagement.Battery_Health_V1.json` und `iobroker/manifest.json` um `script.js.energiemanagement.Battery_Health_V1` ergaenzt
