@@ -2,6 +2,10 @@
 
 ## 2026-07-08
 - Changed
+  - `iobroker/vis-2/main/battery.html` und `iobroker/vis-2/main/vis-views.json` gegen die dokumentierte Battery-VIS2-Health-Ansicht verifiziert: Health-Bereich vorhanden, nur EOS-Health-States verwendet, keine Buttons oder Eingaben im Batterie-Block
+
+## 2026-07-08
+- Changed
   - `docs/battery_vis2_readonly_v1_spec.md` um den read-only Health-Anzeigebereich fuer Battery VIS2 Read-Only V1 ergaenzt
   - `docs/vis2_source_of_truth.md` um die Einordnung von Health als Battery-View bei reinen EOS-Health-States ergaenzt
   - `knowledge/project_brain.md` um die explizite Battery-VIS2-Sicht auf Health ergaenzt
