@@ -3,6 +3,7 @@
 ## 2026-07-08
 - Added
   - `docs/iobroker_deployment_v1.md` als praktische Import- und Deployment-Anleitung fuer den ioBroker ergaenzt
+  - `tools/iobroker/deploy_repository_to_iobroker.sh` als defensives ioBroker-Deployment-Script mit Dry-Run und `--apply` ergaenzt
   - `tools/iobroker/list_repository_assets.sh` als read-only Inventarscript fuer Repository-Artefakte ergaenzt
   - `tools/iobroker/verify_iobroker_import.sh` als read-only Pruefscript fuer den ioBroker-Import ergaenzt
 - Changed

@@ -128,6 +128,7 @@ Status:
 - Grid ist aktiv angebunden; PV, House und Wallbox bleiben aktuell `UNKNOWN` bzw. `null`, bis freigegebene EOS-interne Quellen dafuer dokumentiert sind.
 - Der Repository-Stand allein erzeugt keine sichtbaren ioBroker-Objekte; fuer Sichtbarkeit ist ein Import- oder Deployment-Schritt erforderlich.
 - `docs/iobroker_deployment_v1.md` dokumentiert den manuellen Importweg und die Sichtpruefung im ioBroker.
+- `tools/iobroker/deploy_repository_to_iobroker.sh` fuehrt den lesenden Dry-Run und den optionalen `--apply`-Import fuer Repository-Artefakte aus.
 - `tools/iobroker/list_repository_assets.sh` und `tools/iobroker/verify_iobroker_import.sh` sind die read-only Hilfsscripte fuer Inventar und Importkontrolle.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.

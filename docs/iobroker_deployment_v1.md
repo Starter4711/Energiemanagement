@@ -77,6 +77,39 @@ Praktisch heisst das:
 2. Danach die zugehoerigen Skripte anlegen oder synchronisieren.
 3. Anschliessend die Sichtbarkeit und den Aktivierungszustand pruefen.
 
+### Automatisiertes Deployment-Script
+
+Das Repository enthaelt ein defensives Deployment-Script:
+
+- `tools/iobroker/deploy_repository_to_iobroker.sh`
+
+Verwendung:
+
+```bash
+# nur anzeigen, was passieren wuerde
+tools/iobroker/deploy_repository_to_iobroker.sh
+
+# echte Aenderungen ausfuehren
+tools/iobroker/deploy_repository_to_iobroker.sh --apply
+```
+
+Das Script:
+
+- liest `iobroker/manifest.json`
+- importiert bzw. aktualisiert die dort referenzierten Objektdateien
+- schreibt die Skriptinhalte aus `iobroker/scripts/...` in die zugehoerigen Script-Objekte
+- ruft danach `verify_iobroker_import.sh` auf
+- bricht mit klarer Meldung ab, wenn die ioBroker-CLI fehlt
+- faehrt im Dry-Run ohne Aenderung fort
+
+### Kontrollhilfe vor dem Deployment
+
+Vor einem Import kann das Inventarscript ausgefuehrt werden:
+
+```bash
+tools/iobroker/list_repository_assets.sh
+```
+
 ### Zielbild fuer die sichtbaren Skripte
 
 - `script.js.energiemanagement.Battery_Supervisor_V1`
