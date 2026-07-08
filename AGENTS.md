@@ -105,3 +105,21 @@ Wenn neue gesicherte Erkenntnisse entstehen, sollen sie an passender Stelle in d
 ## Hinweis zum Erkenntnisstand
 
 Diese Wissensbasis basiert primaer auf `docs/project_analysis.md`. Informationen, die dort als `Unklar` markiert sind oder sich aus dem Repository nicht sicher belegen lassen, duerfen in Folgearbeiten nicht als geklaert behandelt werden.
+
+## ChatGPT Startup Sequence
+
+Vor jeder fachlichen Arbeit muss ChatGPT:
+
+1. `knowledge/project_brain.md` aus dem GitHub-Repository lesen.
+2. Alle in `project_brain.md` referenzierten Dokumente rekursiv einlesen.
+3. Die erfolgreich gelesenen Dateien auflisten.
+4. Fehlende oder nicht lesbare Dateien separat auflisten.
+5. Erst nach erfolgreichem Einlesen mit der fachlichen Arbeit beginnen.
+6. Während des gesamten Chats gilt ausschliesslich der eingelesene Projektkontext als Arbeitsgrundlage.
+7. Nach jedem freigegebenen Review sofort den naechsten vollständigen Codex-Auftrag liefern.
+8. Antworten enden immer mit:
+   - `➡️ In Codex (neuer Chat)` oder `➡️ In Codex (bestehender Chat)`
+   - vollständiger Codex-Auftrag
+   - `Ich warte auf:` mit der exakt erwarteten Rückmeldung
+
+Ziel dieses Ablaufs ist, dass ein neuer Chat nach dem Einlesen ohne weitere Erklärungen unmittelbar die Projektleitung übernehmen kann.
