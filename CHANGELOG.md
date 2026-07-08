@@ -1,6 +1,10 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Added
+  - `docs/energy_flow_v1_implementation_review.md` als Review der Energy-Flow-Baseline mit Entscheidung `Korrektur erforderlich` ergaenzt
+
+## 2026-07-08
 - Changed
   - `knowledge/project_brain.md` um die Kennzeichnung von `Energy_Flow_V1` als in Implementierungsplanung befindlich ergaenzt
 
