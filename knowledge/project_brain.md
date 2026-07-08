@@ -117,14 +117,15 @@ Status:
 - Der Supervisor ist eine aufbereitende, nicht-aktorische Sicht auf Batterie und Kommunikation.
 - `Battery_Supervisor_V1` ist als freigegebene Communication-Baseline dokumentiert.
 - `Battery_Health_V1` ist der separate, nicht-aktorische Health-Baustein auf Basis der EOS-Battery-States.
-- `Energy_Flow_V1` ist als erster produktiver EOS-Baustein fuer die Energiefluss-Ebene implementiert und befindet sich in Phase 2 weiterhin in Umsetzung bzw. Review, nicht freigegeben.
+- `Energy_Flow_V1` ist als erster produktiver EOS-Baustein fuer die Energiefluss-Ebene implementiert und Phase 2 ist freigegeben.
 - `Battery VIS2 Read-Only V1` ist als implementierter, weiterhin read-only VIS2-Baustein dokumentiert.
 - `Battery VIS2 Read-Only V1 State-Mapping` ist dokumentiert und dient als Grundlage fuer die VIS2-Ansicht.
 - Die freigegebene Battery VIS2 Read-Only V1-Ansicht zeigt Summary, Communication, Warnings, Health, SmartShunt und Pack-States und bleibt ohne eigene Fachlogik.
 - `battery.html` ist die fuehrende Pflegequelle fuer die Battery-VIS2-Ansicht; `vis-views.json` ist das generierte Exportartefakt.
 - `Battery V1 Release Status` dokumentiert den freigegebenen Stand der Batteriekomponenten und den naechsten fachlichen Freigabeschritt.
-- `Energy Flow V1` ist als erster produktiver EOS-Baustein implementiert und Phase 2 befindet sich noch in Umsetzung bzw. Review, nicht freigegeben.
+- `Energy Flow V1` ist als erster produktiver EOS-Baustein implementiert und Phase 2 ist freigegeben.
 - `Energy Flow V1` nutzt fuer Grid die dokumentierte EOS-interne Bilanzsicht und bleibt von Rohpfaden getrennt.
+- Grid ist aktiv angebunden; PV, House und Wallbox bleiben aktuell `UNKNOWN` bzw. `null`, bis freigegebene EOS-interne Quellen dafuer dokumentiert sind.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
 - Das Modul-Set ist bewusst klein gehalten, um neue Logik nicht in verstreuten Einzeldateien zu verlieren.
@@ -299,7 +300,7 @@ Charakter des Repositories:
 
 ## 6. Aktueller Entwicklungsstand
 
-Aktuell liegt der Fokus auf der Batterie als abgeschlossenem EOS-Teil und auf dem implementierten Energy Flow V1, dessen Phase 2 in Umsetzung bzw. Review ist und noch nicht freigegeben wurde.
+Aktuell liegt der Fokus auf der Batterie als abgeschlossenem EOS-Teil und auf dem implementierten Energy Flow V1, dessen Phase 2 freigegeben ist.
 Weitere fachlich freigegebene Schritte sind in der aktuellen Dokumentation nicht abschliessend benannt.
 
 Bekannte Lage:
@@ -312,7 +313,7 @@ Bekannte Lage:
 - Die Batteriedaten werden unter `0_userdata.0.EOS.Battery.*` als aufbereitete Fachsicht bereitgestellt.
 - `Battery_Health_V1` ist als separater, nicht-aktorischer Health-Baustein Teil des freigegebenen Batterie-Umfangs.
 - `Energy_Flow_V1` ist als erste produktive EOS-Schicht fuer konsolidierte Energiefluesse implementiert.
-- `Energy_Flow_V1` befindet sich in Phase 2 in Umsetzung bzw. Review und bleibt read-only.
+- `Energy_Flow_V1` befindet sich in Phase 2 und bleibt read-only.
 - `Battery VIS2 Read-Only V1` ist implementiert und bleibt weiterhin read-only.
 - Health, Empfehlungen, Analytics, Historian, Trigger, Timer und VIS gehoeren nicht in diesen Entwicklungsstand, wenn sie nicht ausdruecklich beauftragt sind.
 - Der freigegebene Battery-V1-Stand umfasst Supervisor, Health und die read-only Battery-VIS2-Ansicht als abgeschlossenen Batterieumfang.
@@ -322,12 +323,12 @@ Bekannte Lage:
 - `Battery_Supervisor_V1` soll Batterie- und Kommunikationszustand verdichten, nicht aktorisch steuern.
 - Die langfristige Entwicklungsrichtung ist der Aufbau weiterer EOS-Module auf derselben State- und Doku-Grundlage.
 - VIS2 soll spaeter moeglichst nur verdichtete EOS-States anzeigen.
-- Der letzte freigegebene Commit ist `f809eac`.
+- Der letzte freigegebene Commit ist `273b4f13e51b88237c58d7247326eb34cc0b2c89`.
 - Die neue VIS2-Batterieansicht ist implementiert und bleibt read-only.
 - Das State-Mapping fuer Battery VIS2 Read-Only V1 ist dokumentiert und die Visualisierung selbst bleibt read-only.
 - Aenderungen an der Battery-VIS2-Ansicht werden in `battery.html` begonnen und danach nach `vis-views.json` exportiert.
 - Health gehoert zur Battery-VIS2-Ansicht, wenn ausschliesslich `0_userdata.0.EOS.Battery.Health.*` verwendet wird.
-- `Energy Flow V1` ist als erster produktiver EOS-Baustein implementiert; Phase 2 ist noch nicht freigegeben und bleibt read-only.
+- `Energy Flow V1` ist als erster produktiver EOS-Baustein implementiert; Phase 2 ist freigegeben und bleibt read-only.
 
 Offene oder nicht sicher belegte Punkte bleiben `Unklar`, insbesondere dort, wo die Dokumentation bewusst nicht den Produktionsstand vollstaendig inventarisiert.
 
@@ -343,9 +344,9 @@ Roadmap:
 
 Letzter freigegebener Commit:
 
-- `f809eac`
+- `273b4f13e51b88237c58d7247326eb34cc0b2c89`
 
-Energy Flow V1 Phase 2 befindet sich in Umsetzung bzw. Review und ist noch nicht freigegeben.
+Energy Flow V1 Phase 2 ist freigegeben.
 
 ## 8. Naechster Entwicklungsschritt
 
@@ -391,9 +392,9 @@ Die Umsetzung bleibt weiterhin auf die freigegebenen EOS-Battery-States beschrae
 - `Battery V1 Release Status` dokumentiert den freigegebenen Gesamtstatus der Batterieebene.
 - `Battery V1` ist als abgeschlossen dokumentiert.
 - `Energy_Flow_V1` ist als erste produktive EOS-Schicht implementiert.
-- `Energy_Flow_V1` befindet sich in Phase 2 in Umsetzung bzw. Review und ist noch nicht freigegeben.
+- `Energy_Flow_V1` befindet sich in Phase 2 und ist freigegeben.
 - `e2f538f` und `7cb51af` sind die freigegebenen Energy-Flow-Spezifikationsstaende.
-- `f809eac` implementiert die erste produktive Energy-Flow-Baseline und ist der letzte freigegebene Commit; Phase 2 ist noch nicht freigegeben.
+- `273b4f13e51b88237c58d7247326eb34cc0b2c89` implementiert die freigegebene Phase-2-Erweiterung von Energy Flow V1 und ist der letzte freigegebene Commit.
 - Gobel-SOC ist nicht als fuehrende Gesamtgroesse zu verwenden.
 - Aktorische Schreibpfade sind besonders kritisch.
 - MQTT-Steuerpfade, go-e-Pfade und S7-Pfade gelten als live-nah und sensibel.

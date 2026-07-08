@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 - Changed
+  - `knowledge/project_brain.md` auf den freigegebenen Commit `273b4f13e51b88237c58d7247326eb34cc0b2c89` und den freigegebenen Phase-2-Stand von Energy Flow V1 aktualisiert
+  - `knowledge/project_brain.md` um die aktuelle Domänenlage von Grid, PV, House und Wallbox im Energy-Flow-Kontext ergaenzt
+
+## 2026-07-08
+- Changed
   - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` fuer nicht belegte Phase-2-Domänen auf `null`/`UNKNOWN` statt Null-Defaults angepasst
   - `knowledge/project_brain.md` auf den nicht freigegebenen Phase-2-Review-Status von Energy Flow V1 korrigiert
 
