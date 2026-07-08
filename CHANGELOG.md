@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 - Changed
+  - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` fuer nicht belegte Phase-2-Domänen auf `null`/`UNKNOWN` statt Null-Defaults angepasst
+  - `knowledge/project_brain.md` auf den nicht freigegebenen Phase-2-Review-Status von Energy Flow V1 korrigiert
+
+## 2026-07-08
+- Changed
   - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` um die Phase-2-Anbindung der EOS-internen Grid-Bilanzsicht erweitert; Grid wird nun aus der verdichteten Bilanzsicht gelesen, die Energy-Flow-Sicht bleibt read-only
   - `knowledge/project_brain.md` um den dauerhaft erweiterten Phase-2-Stand von Energy Flow V1 aktualisiert
 

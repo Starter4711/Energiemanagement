@@ -277,16 +277,16 @@ function updateGroup(name, payload) {
     const status = payload.status || 'UNKNOWN';
     writeChanged(`${ROOT}.${name}.Status`, status);
     if (Object.prototype.hasOwnProperty.call(payload, 'power')) {
-        writeChanged(`${ROOT}.${name}.Power`, isKnownNumber(payload.power) ? payload.power : CONFIG.defaults.number);
+        writeChanged(`${ROOT}.${name}.Power`, isKnownNumber(payload.power) ? payload.power : null);
     }
     if (Object.prototype.hasOwnProperty.call(payload, 'import')) {
-        writeChanged(`${ROOT}.${name}.Import`, isKnownNumber(payload.import) ? payload.import : CONFIG.defaults.number);
+        writeChanged(`${ROOT}.${name}.Import`, isKnownNumber(payload.import) ? payload.import : null);
     }
     if (Object.prototype.hasOwnProperty.call(payload, 'export')) {
-        writeChanged(`${ROOT}.${name}.Export`, isKnownNumber(payload.export) ? payload.export : CONFIG.defaults.number);
+        writeChanged(`${ROOT}.${name}.Export`, isKnownNumber(payload.export) ? payload.export : null);
     }
     if (Object.prototype.hasOwnProperty.call(payload, 'soc')) {
-        writeChanged(`${ROOT}.${name}.SOC`, isKnownNumber(payload.soc) ? payload.soc : CONFIG.defaults.number);
+        writeChanged(`${ROOT}.${name}.SOC`, isKnownNumber(payload.soc) ? payload.soc : null);
     }
 }
 
@@ -419,7 +419,7 @@ function refresh() {
         isKnownNumber(batteryPower) ? batteryPower : null,
     ].filter(value => value !== null);
 
-    const powerBalance = knownPowerValues.length > 0 ? knownPowerValues.reduce((sum, value) => sum + value, 0) : CONFIG.defaults.number;
+    const powerBalance = knownPowerValues.length > 0 ? knownPowerValues.reduce((sum, value) => sum + value, 0) : null;
 
     writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([gridStatus, batterySummaryStatus]));
     writeChanged(`${ROOT}.Summary.PowerBalance`, powerBalance);
