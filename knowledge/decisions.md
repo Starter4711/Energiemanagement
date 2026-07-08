@@ -13,6 +13,17 @@
 - `CHANGELOG.md` ist als laufende Aenderungshistorie eingefuehrt.
 - Zuschaltbare Logebene ist Standardanforderung fuer neue produktive Skripte.
 
+## 2026-07-08 - EOS-State-Modell fuer Battery Supervisor V1 festgelegt
+
+- Status: beschlossen
+- Bereich: Architektur
+- Kontext: Fuer Battery Supervisor V1 wird eine stabile, dokumentierte EOS-State-Struktur unter `0_userdata.0.EOS.Battery.*` benoetigt.
+- Entscheidung: Das finale State-Modell wird in `docs/battery_supervisor_v1_state_model.md` als stabile API beschrieben.
+- Begruendung: VIS2 und nachgelagerte Auswertungen sollen ausschliesslich auf aufbereiteten EOS-States arbeiten und keine Rohquellen zusammenfuehren muessen.
+- Betroffene Dateien/Pfade: `docs/battery_supervisor_v1_state_model.md`, `knowledge/requirements.md`, `knowledge/decisions.md`, `CHANGELOG.md`
+- Auswirkungen: Bestehende States werden nach Veröffentlichung nicht umbenannt; neue Versionen duerfen nur neue States ergaenzen.
+- Offene Punkte: Unklar, welche spaeteren V2- und V3-Erweiterungen nach demselben Schema folgen werden.
+
 ## 2026-07-08 - Battery Supervisor V1 als erster EOS-Baustein
 
 - Status: beschlossen
