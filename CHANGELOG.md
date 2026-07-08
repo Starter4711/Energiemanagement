@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Added
+  - `docs/battery_architecture_review_v1.md` als Architektur- und Integritaetspruefung der EOS-Battery-Kette ergaenzt
 - Changed
   - `iobroker/vis-2/main/vis-views.json` um die Batterie-Main-Kachel auf EOS-Battery-States umgestellt und Rohpfade entfernt
 - Added
