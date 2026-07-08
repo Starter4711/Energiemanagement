@@ -115,8 +115,8 @@ Status:
 - Der Supervisor ist eine aufbereitende, nicht-aktorische Sicht auf Batterie und Kommunikation.
 - `Battery_Supervisor_V1` ist als freigegebene Communication-Baseline dokumentiert.
 - `Battery_Health_V1` ist der separate, nicht-aktorische Health-Baustein auf Basis der EOS-Battery-States.
-- `Battery VIS2 Read-Only V1` ist als naechster spezifizierter, aber noch nicht implementierter Schritt dokumentiert.
-- `Battery VIS2 Read-Only V1 State-Mapping` ist der naechste Dokumentationsschritt.
+- `Battery VIS2 Read-Only V1` ist als spezifizierter und implementierter read-only VIS2-Baustein dokumentiert.
+- `Battery VIS2 Read-Only V1 State-Mapping` ist dokumentiert und dient als Grundlage fuer die VIS2-Ansicht.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
 - Das Modul-Set ist bewusst klein gehalten, um neue Logik nicht in verstreuten Einzeldateien zu verlieren.
@@ -329,14 +329,14 @@ Solange diese Freigabe nicht dokumentiert ist, bleibt der naechste Entwicklungss
 
 ## 8b. Battery VIS2 Read-Only V1
 
-Spezifiziert, aber noch nicht implementiert.
+Die read-only Batterieansicht ist implementiert.
 
-Diese Ansicht darf spaeter nur bestehende EOS-Battery-States lesen und keine Rohquellen, Steuerlogik oder Aktorik verwenden.
+Sie darf ausschliesslich bestehende EOS-Battery-States lesen und keine Rohquellen, Steuerlogik oder Aktorik verwenden.
 
 ## 8c. Battery VIS2 Read-Only V1 State-Mapping
 
-Der naechste Dokumentationsschritt ist das State-Mapping fuer die read-only Batterieansicht.
-Die Umsetzung bleibt bis zur fachlichen Freigabe der naechsten Modulgrenze unimplementiert.
+Das State-Mapping fuer die read-only Batterieansicht ist dokumentiert und dient als Grundlage fuer die VIS2.
+Die Umsetzung bleibt weiterhin auf die freigegebenen EOS-Battery-States beschraenkt.
 
 ## 9. Dauerhafte Architekturentscheidungen
 

@@ -2,6 +2,12 @@
 
 ## 2026-07-08
 - Added
+  - `iobroker/vis-2/main/battery.html` als read-only Batterieansicht fuer die EOS-Battery-States umgesetzt
+- Changed
+  - `iobroker/vis-2/main/vis-user.css` um die responsiven Layoutbausteine fuer die neue Batterieansicht erweitert
+- Changed
+  - `knowledge/project_brain.md` um den implementierten Battery VIS2 Read-Only V1-Stand und das State-Mapping aktualisiert
+- Added
   - `docs/battery_vis2_readonly_v1_state_mapping.md` als minimale State-Mapping-Tabelle fuer Battery VIS2 Read-Only V1 ergaenzt
 - Changed
   - `knowledge/project_brain.md` um den Dokumentationsschritt `Battery VIS2 Read-Only V1 State-Mapping` ergaenzt

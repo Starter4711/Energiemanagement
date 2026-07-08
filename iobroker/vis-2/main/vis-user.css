@@ -45,7 +45,7 @@ html, body, #root {
 .em-header h1 { margin: 5px 0 3px; font-size: 25px; line-height: 1.1; letter-spacing: 0; }
 .em-header p { margin: 0; color: #96a2a6; font-size: 13px; }
 .em-soc { flex: 0 0 auto; min-width: 92px; padding: 10px 12px; border: 1px solid #3d484b; border-radius: 7px; background: #1b2123; }
-.em-soc span, .em-card span, .em-battery span, .em-pack-values span { display: block; color: #98a4a8; font-size: 11px; }
+.em-soc span, .em-card span, .em-battery span, .em-pack-values span, .em-flag span { display: block; color: #98a4a8; font-size: 11px; }
 .em-soc strong { display: block; margin-top: 3px; font-size: 22px; color: #79d69e; }
 
 section { padding-top: 20px; }
@@ -73,6 +73,27 @@ h2 { margin: 0 0 10px; font-size: 15px; font-weight: 750; letter-spacing: 0; }
 .em-detail-link:focus-visible { outline: 2px solid #79d69e; outline-offset: 3px; border-radius: 7px; }
 .em-detail-label { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; color: #aeb8bb; font-size: 12px; }
 .em-detail-label b { color: #79d69e; font-size: 23px; line-height: 1; }
+.em-summary-grid, .em-comm-grid, .em-health-grid, .em-values-grid, .em-flag-grid { display: grid; gap: 8px; }
+.em-summary-grid, .em-comm-grid, .em-health-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.em-values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.em-comm-card strong, .em-health-grid strong, .em-values-grid strong { margin-top: 6px; font-size: 18px; }
+.em-comm-card small, .em-health-grid small { color: #7f8b8f; font-size: 10px; line-height: 1.35; }
+.em-comm-wide, .em-health-wide { grid-column: 1 / -1; }
+.em-flag-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.em-flag {
+  padding: 11px 12px;
+  border: 1px solid #30383b;
+  border-radius: 7px;
+  background: #1a2022;
+  color: #f4f7f8;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.em-flag[data-state="true"] { border-color: #4e8f69; color: #79d69e; background: #17271e; }
+.em-list-value { white-space: pre-wrap; line-height: 1.45; }
+.em-pack-grid { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.em-pack small { display: block; margin-top: 2px; }
+.em-battery-page .em-card { min-height: 0; }
 .em-detail-header { justify-content: flex-start; }
 .em-detail-header .em-soc { margin-left: auto; }
 .em-back { display: grid; flex: 0 0 36px; width: 36px; height: 36px; place-items: center; color: #f4f7f8; font-size: 30px; line-height: 1; text-decoration: none; }
@@ -157,6 +178,10 @@ h2 { margin: 0 0 10px; font-size: 15px; font-weight: 750; letter-spacing: 0; }
   .em-packs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .em-battery-page { display: block; max-width: 1000px; }
   .em-battery-page section { padding-top: 20px; }
+  .em-summary-grid, .em-comm-grid, .em-health-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .em-values-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .em-flag-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .em-pack-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .em-pool-page { display: block; max-width: 1100px; }
   .em-pool-page section { padding-top: 20px; }
   .em-pool-temps { grid-template-columns: repeat(4, minmax(0, 1fr)); }
