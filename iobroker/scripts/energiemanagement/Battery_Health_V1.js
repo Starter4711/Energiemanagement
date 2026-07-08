@@ -212,7 +212,10 @@ function calculateHealth() {
         }
     }
 
-    if (reasons.some(reason => reason.includes('UNKNOWN')) && !reasons.some(reason => reason.includes('OFFLINE') || reason.includes('WARN') || reason.startsWith('MaxVDiff'))) {
+    if (
+        reasons.some(reason => reason.includes('UNKNOWN'))
+        && !reasons.some(reason => reason.includes('OFFLINE') || reason.includes('WARN') || reason.startsWith('MaxVDiff'))
+    ) {
         status = 'UNKNOWN';
         score = Math.min(score, 50);
     }
@@ -238,7 +241,10 @@ function updateBatteryHealth() {
     writeChanged(`${ROOT}.Health.Status`, result.status);
     writeChanged(`${ROOT}.Health.Score`, result.score);
     writeChanged(`${ROOT}.Health.LastUpdate`, formatIso(Date.now()));
-    writeChanged(`${ROOT}.Health.Reasons`, result.reasons.join('; '));
+    writeChanged(
+        `${ROOT}.Health.Reasons`,
+        result.reasons.join('; ')
+    );
 }
 
 try {

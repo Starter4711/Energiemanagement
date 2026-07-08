@@ -2,6 +2,8 @@
 
 ## 2026-07-08
 - Changed
+  - `iobroker/scripts/energiemanagement/Battery_Health_V1.js` technisch neu umbrochen, ohne die Health-Logik zu aendern
+- Changed
   - `iobroker/objects/energiemanagement.Battery_Health_V1.json` und `iobroker/manifest.json` um `script.js.energiemanagement.Battery_Health_V1` ergaenzt
 - Added
   - `iobroker/scripts/energiemanagement/Battery_Health_V1.js` als separaten, nicht-aktorischen EOS-Baustein fuer eine einfache Battery-Health-Sicht ergaenzt
