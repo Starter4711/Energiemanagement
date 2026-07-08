@@ -1,6 +1,10 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Changed
+  - `knowledge/project_brain.md` auf den freigegebenen Battery-Abschluss und die Energy-Flow-Spezifikationsphase nach `e2f538f` aktualisiert
+
+## 2026-07-08
 - Added
   - `docs/energy_flow_v1_spec.md` als Spezifikation fuer EOS Energy Flow V1 ergaenzt
   - `docs/energy_flow_v1_state_model.md` als State-Modell fuer EOS Energy Flow V1 ergaenzt

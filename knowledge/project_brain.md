@@ -266,9 +266,8 @@ Charakter des Repositories:
 
 ## 6. Aktueller Entwicklungsstand
 
-Aktuell liegt der Fokus auf dem EOS-Batteriemodul, insbesondere auf der Beobachtung und Aufbereitung von Batterie- und Kommunikationszustand.
-Der naechste erklaerte Schritt ist eine einfache, nachvollziehbare Health-Sicht als separater EOS-Baustein, ohne Aktorik oder Empfehlungsschicht.
-Die Health-Sicht ist als separater Baustein freigegeben; weitere fachlich freigegebene Schritte sind in der aktuellen Dokumentation nicht eindeutig benannt.
+Aktuell liegt der Fokus auf der Batterie-Freigabe als abgeschlossenem EOS-Teil und auf Energy Flow V1 in der Spezifikationsphase.
+Weitere fachlich freigegebene Schritte sind in der aktuellen Dokumentation nicht abschliessend benannt.
 
 Bekannte Lage:
 
@@ -357,6 +356,8 @@ Die Umsetzung bleibt weiterhin auf die freigegebenen EOS-Battery-States beschrae
 - `Battery_Health_V1` bleibt ein separater, nicht-aktorischer Health-Baustein.
 - `Battery V1 Release Status` dokumentiert den freigegebenen Gesamtstatus der Batterieebene.
 - `Energy Flow V1` befindet sich in der Spezifikationsphase.
+- `Battery V1` ist als abgeschlossen dokumentiert.
+- `Energy Flow V1` ist der aktuell freigegebene naechste Modulschritt.
 - Gobel-SOC ist nicht als fuehrende Gesamtgroesse zu verwenden.
 - Aktorische Schreibpfade sind besonders kritisch.
 - MQTT-Steuerpfade, go-e-Pfade und S7-Pfade gelten als live-nah und sensibel.
