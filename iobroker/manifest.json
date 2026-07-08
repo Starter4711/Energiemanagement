@@ -1,5 +1,5 @@
 {
-  "count": 66,
+  "count": 68,
   "exportedAt": "2026-07-07T17:54:47.083662+00:00",
   "objects": [
     {
@@ -559,6 +559,15 @@
       "enabled": true,
       "objectFile": "iobroker/objects/energiemanagement.Batterie_Zellspannungen.json",
       "scriptFile": "iobroker/scripts/energiemanagement/Batterie_Zellspannungen.js"
+    },
+    {
+      "id": "script.js.energiemanagement.Battery_Supervisor_V1",
+      "name": "Battery_Supervisor_V1",
+      "type": "script",
+      "engineType": "Javascript/js",
+      "enabled": false,
+      "objectFile": "iobroker/objects/energiemanagement.Battery_Supervisor_V1.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js"
     },
     {
       "id": "script.js.energiemanagement.Battery_Health_V1",

@@ -1,6 +1,14 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Added
+  - `iobroker/objects/energiemanagement.Battery_Supervisor_V1.json` als echtes ioBroker-Scriptobjekt fuer `script.js.energiemanagement.Battery_Supervisor_V1` ergaenzt
+- Changed
+  - `iobroker/objects/energiemanagement.Battery_Health_V1.json` und `iobroker/objects/energiemanagement.Energy_Flow_V1.json` auf vollstaendige Scriptobjekte mit `common.source` aktualisiert
+  - `iobroker/manifest.json` um `script.js.energiemanagement.Battery_Supervisor_V1` erweitert
+  - `iobroker/vis-2/main/battery.html` und `iobroker/vis-2/main/vis-views.json` um sichtbare EnergyFlow-Kacheln in der Batterie-Ansicht erweitert
+
+## 2026-07-08
 - Changed
   - `iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js`, `iobroker/scripts/energiemanagement/Battery_Health_V1.js` und `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` um defensive Root-Anlage fuer die EOS-States ergaenzt
   - `iobroker/tools/deploy_vis2.py` auf env-basierte VIS2-Parameter ohne fest verdrahtete Host-, Container- oder Key-Defaults umgestellt
