@@ -115,6 +115,7 @@ Status:
 - Der Supervisor ist eine aufbereitende, nicht-aktorische Sicht auf Batterie und Kommunikation.
 - `Battery_Supervisor_V1` ist als freigegebene Communication-Baseline dokumentiert.
 - `Battery_Health_V1` ist der separate, nicht-aktorische Health-Baustein auf Basis der EOS-Battery-States.
+- `Battery VIS2 Read-Only V1` ist als naechster spezifizierter, aber noch nicht implementierter Schritt dokumentiert.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
 - Das Modul-Set ist bewusst klein gehalten, um neue Logik nicht in verstreuten Einzeldateien zu verlieren.
@@ -273,6 +274,7 @@ Bekannte Lage:
 - Kommunikationsueberwachung ist im Skript angelegt.
 - Die Batteriedaten werden unter `0_userdata.0.EOS.Battery.*` als aufbereitete Fachsicht bereitgestellt.
 - `Battery_Health_V1` ist als separater, nicht-aktorischer Health-V1-Baustein freigegeben.
+- `Battery VIS2 Read-Only V1` ist der naechste spezifizierte, aber noch nicht implementierte Schritt fuer die Batterie-Visualisierung.
 - Health, Empfehlungen, Analytics, Historian, Trigger, Timer und VIS gehoeren nicht in diesen Entwicklungsstand, wenn sie nicht ausdruecklich beauftragt sind.
 - Die Kommunikationsueberwachung arbeitet mit LastUpdate, AgeSeconds und Status je Quelle.
 - Bekannte Quellen sind SmartShunt, Gobel / Pace BMS, Heltec und MQTT.
@@ -281,6 +283,7 @@ Bekannte Lage:
 - Die langfristige Entwicklungsrichtung ist der Aufbau weiterer EOS-Module auf derselben State- und Doku-Grundlage.
 - VIS2 soll spaeter moeglichst nur verdichtete EOS-States anzeigen.
 - Der letzte freigegebene Commit ist `638aa9f82c83cf015c9def452c686ddf254280fb`.
+- Die neue VIS2-Batterieansicht ist derzeit nur spezifiziert, nicht implementiert.
 
 Offene oder nicht sicher belegte Punkte bleiben `Unklar`, insbesondere dort, wo die Dokumentation bewusst nicht den Produktionsstand vollstaendig inventarisiert.
 
@@ -320,6 +323,12 @@ Wenn kein weiterer Auftrag vorliegt, ist der naechste Schritt `Unklar`.
 
 Vor weiterer Implementierung muss die naechste fachlich freigegebene Modulgrenze eindeutig benannt werden.
 Solange diese Freigabe nicht dokumentiert ist, bleibt der naechste Entwicklungsschritt `Unklar`.
+
+## 8b. Battery VIS2 Read-Only V1
+
+Spezifiziert, aber noch nicht implementiert.
+
+Diese Ansicht darf spaeter nur bestehende EOS-Battery-States lesen und keine Rohquellen, Steuerlogik oder Aktorik verwenden.
 
 ## 9. Dauerhafte Architekturentscheidungen
 

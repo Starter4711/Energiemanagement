@@ -1,6 +1,10 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Added
+  - `docs/battery_vis2_readonly_v1_spec.md` als reine Spezifikation fuer eine spaetere read-only Battery-VIS2-Ansicht ergaenzt
+- Changed
+  - `knowledge/project_brain.md` um `Battery VIS2 Read-Only V1` als naechsten spezifizierten, aber noch nicht implementierten Schritt ergaenzt
 - Changed
   - `knowledge/project_brain.md` um den naechsten Klaerungspunkt vor weiterer Implementierung ergaenzt
 - Changed
