@@ -279,7 +279,6 @@ Bekannte Lage:
 - Die Batteriedaten werden unter `0_userdata.0.EOS.Battery.*` als aufbereitete Fachsicht bereitgestellt.
 - `Battery_Health_V1` ist als separater, nicht-aktorischer Health-V1-Baustein freigegeben.
 - `Battery VIS2 Read-Only V1` ist implementiert und bleibt weiterhin read-only.
-- `Battery VIS2 Read-Only V1 State-Mapping` ist der naechste Dokumentationsschritt fuer die Batterie-Visualisierung.
 - Health, Empfehlungen, Analytics, Historian, Trigger, Timer und VIS gehoeren nicht in diesen Entwicklungsstand, wenn sie nicht ausdruecklich beauftragt sind.
 - Der freigegebene Battery-V1-Stand umfasst Supervisor, Health und die read-only Battery-VIS2-Ansicht.
 - Die Kommunikationsueberwachung arbeitet mit LastUpdate, AgeSeconds und Status je Quelle.
@@ -358,6 +357,7 @@ Die Umsetzung bleibt weiterhin auf die freigegebenen EOS-Battery-States beschrae
 - `Energy Flow V1` befindet sich in der Spezifikationsphase.
 - `Battery V1` ist als abgeschlossen dokumentiert.
 - `Energy Flow V1` ist der aktuell freigegebene naechste Modulschritt.
+- `Energy Flow V1` befindet sich in der Spezifikationsphase.
 - Gobel-SOC ist nicht als fuehrende Gesamtgroesse zu verwenden.
 - Aktorische Schreibpfade sind besonders kritisch.
 - MQTT-Steuerpfade, go-e-Pfade und S7-Pfade gelten als live-nah und sensibel.

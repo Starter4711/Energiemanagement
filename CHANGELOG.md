@@ -2,6 +2,10 @@
 
 ## 2026-07-08
 - Changed
+  - `knowledge/project_brain.md` um die veraltete Battery-VIS2-State-Mapping-Nachfolgeaussage bereinigt und Energy Flow V1 als aktuelle Spezifikationsphase bestaetigt
+
+## 2026-07-08
+- Changed
   - `knowledge/project_brain.md` auf den freigegebenen Battery-Abschluss und die Energy-Flow-Spezifikationsphase nach `e2f538f` aktualisiert
 
 ## 2026-07-08
