@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import os
 import shlex
 import subprocess
 from datetime import datetime, timezone
@@ -8,9 +9,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 VIS_DIR = ROOT / "iobroker" / "vis-2" / "main"
-DEFAULT_HOST = "Richard@192.168.0.20"
-DEFAULT_CONTAINER = "iobroker-iobroker-1-1-1-1"
-DEFAULT_KEY = ROOT / "work" / "secrets" / "synology_iobroker_key"
+DEFAULT_HOST = os.environ.get("IOBROKER_VIS2_HOST", "")
+DEFAULT_CONTAINER = os.environ.get("IOBROKER_VIS2_CONTAINER", "")
+DEFAULT_KEY = Path(os.environ["IOBROKER_VIS2_SSH_KEY"]) if os.environ.get("IOBROKER_VIS2_SSH_KEY") else None
 VIS_META = "vis-2.0"
 VIS_BACKUP_DIR = "/opt/iobroker/iobroker-data/files/vis-2.0/backups"
 
@@ -53,6 +54,12 @@ def main() -> int:
     parser.add_argument("--container", default=DEFAULT_CONTAINER)
     parser.add_argument("--ssh-key", type=Path, default=DEFAULT_KEY)
     args = parser.parse_args()
+
+    if not args.host or not args.container or args.ssh_key is None:
+        raise SystemExit(
+            "FEHLER: VIS2-Deployment benötigt --host, --container und --ssh-key oder die Umgebungsvariablen "
+            "IOBROKER_VIS2_HOST, IOBROKER_VIS2_CONTAINER und IOBROKER_VIS2_SSH_KEY."
+        )
 
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     current = f"{VIS_META}/main/vis-views.json"

@@ -68,6 +68,10 @@ if $apply_mode; then
         echo "FEHLER: VIS2-Deployment-Script fehlt: ${vis_deploy}" >&2
         exit 1
     fi
+    if [[ -z "${IOBROKER_VIS2_HOST:-}" || -z "${IOBROKER_VIS2_CONTAINER:-}" || -z "${IOBROKER_VIS2_SSH_KEY:-}" ]]; then
+        echo "FEHLER: VIS2-Deployment benötigt IOBROKER_VIS2_HOST, IOBROKER_VIS2_CONTAINER und IOBROKER_VIS2_SSH_KEY." >&2
+        exit 1
+    fi
     python3 "${vis_deploy}"
     echo "VERIFY"
     "${repo_verify}"

@@ -31,6 +31,25 @@ const PACKS = [1, 2, 3, 4];
 const HELTEC_MAX_CELLS = 16;
 const COMMUNICATION_REFRESH_INTERVAL_MS = 30_000;
 
+function ensureBatteryRootState() {
+    const id = `${ROOT}.Summary.Status`;
+    if (!existsState(id)) {
+        createState(
+            id,
+            CONFIG.defaults.string,
+            {
+                name: 'Status',
+                type: 'string',
+                role: 'text',
+                unit: '',
+                desc: 'Gesamtstatus der Batterie',
+                read: true,
+                write: false,
+            }
+        );
+    }
+}
+
 const STATES = [
     {
         id: `${ROOT}.Summary.Status`,
@@ -697,6 +716,7 @@ function updateBatterySupervisor() {
 }
 
 try {
+    ensureBatteryRootState();
     for (const state of STATES) {
         createBatteryState(state);
     }

@@ -27,6 +27,25 @@ const LEVEL_PRIORITY = {
 
 const PACKS = [1, 2, 3, 4];
 
+function ensureBatteryRootState() {
+    const id = `${ROOT}.Health.Status`;
+    if (!existsState(id)) {
+        createState(
+            id,
+            CONFIG.defaults.string,
+            {
+                name: 'Status',
+                type: 'string',
+                role: 'text',
+                unit: '',
+                desc: 'Einfacher Batteriezustand auf Basis der EOS-Battery-States',
+                read: true,
+                write: false,
+            }
+        );
+    }
+}
+
 const STATES = [
     {
         id: `${ROOT}.Health.Status`,
@@ -248,6 +267,7 @@ function updateBatteryHealth() {
 }
 
 try {
+    ensureBatteryRootState();
     for (const state of STATES) {
         createBatteryState(state);
     }

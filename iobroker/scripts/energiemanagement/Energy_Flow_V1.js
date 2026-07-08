@@ -29,6 +29,37 @@ const LEVEL_PRIORITY = {
 
 const GROUPS = ['Grid', 'PV', 'Battery', 'House', 'Wallbox'];
 
+function ensureEnergyFlowRoots() {
+    const rootStates = [
+        [
+            `${ROOT}.Grid.Status`,
+            'Status der Netzsicht',
+        ],
+        [
+            `${BATTERY_ROOT}.Summary.Status`,
+            'Gesamtstatus der Batterie',
+        ],
+    ];
+
+    for (const [id, desc] of rootStates) {
+        if (!existsState(id)) {
+            createState(
+                id,
+                CONFIG.defaults.string,
+                {
+                    name: 'Status',
+                    type: 'string',
+                    role: 'text',
+                    unit: '',
+                    desc,
+                    read: true,
+                    write: false,
+                }
+            );
+        }
+    }
+}
+
 const STATES = [
     {
         id: `${ROOT}.Grid.Power`,
@@ -427,6 +458,7 @@ function refresh() {
 }
 
 try {
+    ensureEnergyFlowRoots();
     for (const state of STATES) {
         createEnergyState(state);
     }
