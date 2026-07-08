@@ -1,6 +1,12 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Added
+  - `docs/vis2_source_of_truth.md` als Fuehrungsdokument fuer `battery.html` und `vis-views.json` bei Battery VIS2 Read-Only V1 ergaenzt
+- Changed
+  - `knowledge/project_brain.md` um die fuehrende Pflegequelle und das Exportartefakt fuer die Battery-VIS2-Ansicht praezisiert
+
+## 2026-07-08
 - Changed
   - `docs/battery_supervisor_v1_spec.md` auf die freigegebene Communication-Baseline reduziert, ohne Recommendation-Gruppe und mit Settings nur fuer `CommunicationWarningTimeout_s` und `CommunicationOfflineTimeout_s`
   - `docs/battery_vis2_readonly_v1_spec.md` auf den implementierten, weiterhin read-only Status von Battery VIS2 Read-Only V1 und die EOS-Battery-States praezisiert
