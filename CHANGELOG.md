@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Changed
+  - `iobroker/vis-2/main/vis-views.json` um die Batterie-Main-Kachel auf EOS-Battery-States umgestellt und Rohpfade entfernt
 - Added
   - `iobroker/vis-2/main/battery.html` als read-only Batterieansicht fuer die EOS-Battery-States umgesetzt
 - Changed
