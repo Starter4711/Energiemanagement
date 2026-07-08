@@ -8,6 +8,9 @@
     als Architektur-Grundgeruest fuer die EOS-Batteriestruktur unter
     `0_userdata.0.EOS.Battery.*` ergaenzt
 - Changed
+  - `iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js`
+    um die erste Rohdatenaufnahme von SmartShunt, Gobel BMS und Heltec ergaenzt
+- Changed
   - `knowledge/requirements.md` um den Requirements-Eintrag fuer
     Battery Supervisor V1 ergaenzt
   - `knowledge/decisions.md` um den Beschluss fuer Battery Supervisor V1

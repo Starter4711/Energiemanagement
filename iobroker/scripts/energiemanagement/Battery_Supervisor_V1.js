@@ -25,6 +25,9 @@ const LEVEL_PRIORITY = {
     debug: 3,
 };
 
+const PACKS = [1, 2, 3, 4];
+const HELTEC_MAX_CELLS = 16;
+
 const STATES = [
     {
         id: `${ROOT}.Summary.HealthScore`,
@@ -638,14 +641,158 @@ function createBatteryState(definition) {
     );
 }
 
+function getRawState(id) {
+    const state = getState(id);
+    return state && state.val !== undefined ? state : null;
+}
+
+function readNumber(id) {
+    const state = getRawState(id);
+    if (!state) return null;
+    const value = Number(state.val);
+    return Number.isFinite(value) ? value : null;
+}
+
+function readString(id) {
+    const state = getRawState(id);
+    if (!state) return null;
+    if (typeof state.val === 'string') return state.val;
+    return String(state.val);
+}
+
+function writeChanged(id, value) {
+    const current = getState(id);
+    if (!current || current.val !== value) {
+        setState(id, value, true);
+    }
+}
+
+function readSmartShunt() {
+    const soc = readNumber('alias.0.Gobel.Soc SmartShunt');
+    const voltage = readNumber('alias.0.Gobel.Voltage_SmartShunt');
+    const current = readNumber('alias.0.Gobel.Current');
+    const power = readNumber('alias.0.Gobel.Power');
+    const consumedAh = readNumber('alias.0.Gobel.ConsumedAh');
+    const dischargedEnergy = readNumber('alias.0.Gobel.DischargedEnergy');
+    const chargedEnergy = readNumber('alias.0.Gobel.ChargedEnergy');
+    const timeToGo = readNumber('alias.0.Gobel.TimeToGo');
+
+    return {
+        soc,
+        voltage,
+        current,
+        power,
+        consumedAh,
+        dischargedEnergy,
+        chargedEnergy,
+        timeToGo,
+    };
+}
+
+function readHeltecPack(pack) {
+    const state = getRawState(`mqtt.0.HELTEC_${pack}.data`);
+    if (!state || typeof state.val !== 'string') return null;
+
+    try {
+        const payload = JSON.parse(state.val);
+        if (!payload || !Array.isArray(payload.cells) || payload.cells.length === 0) return null;
+
+        const cells = [];
+        for (const item of payload.cells) {
+            const cell = Number(item && item.cell);
+            const voltage = Number(item && item.voltage);
+            if (Number.isFinite(cell) && cell >= 1 && cell <= HELTEC_MAX_CELLS && Number.isFinite(voltage)) {
+                cells.push({ cell, voltage });
+            }
+        }
+
+        if (cells.length === 0) return null;
+        const voltages = cells.map(entry => entry.voltage);
+        const minVoltage = Math.min(...voltages);
+        const maxVoltage = Math.max(...voltages);
+        const voltageSum = voltages.reduce((sum, value) => sum + value, 0);
+
+        return {
+            cells,
+            minVoltage,
+            maxVoltage,
+            voltageSum,
+            vDiff: Math.round((maxVoltage - minVoltage) * 1000),
+        };
+    } catch (error) {
+        return null;
+    }
+}
+
+function readPackCurrent(pack) {
+    return readNumber(`alias.0.Gobel_${pack === 1 ? 'Master' : `Slave${pack - 1}`}.Ampere`);
+}
+
+function readPackTemperature(pack) {
+    return readNumber(`alias.0.Gobel_${pack === 1 ? 'Master' : `Slave${pack - 1}`}.Gobel_${pack === 1 ? 'Master' : `Slave${pack - 1}`}_Tmp`);
+}
+
+function updateBatterySupervisor() {
+    const smartShunt = readSmartShunt();
+
+    if (smartShunt.soc !== null) {
+        writeChanged(`${ROOT}.Summary.SOC`, smartShunt.soc);
+        writeChanged(`${ROOT}.SmartShunt.SOC`, smartShunt.soc);
+    }
+    if (smartShunt.voltage !== null) {
+        writeChanged(`${ROOT}.Summary.Voltage`, smartShunt.voltage);
+        writeChanged(`${ROOT}.SmartShunt.Voltage`, smartShunt.voltage);
+    }
+    if (smartShunt.current !== null) {
+        writeChanged(`${ROOT}.Summary.Current`, smartShunt.current);
+        writeChanged(`${ROOT}.SmartShunt.Current`, smartShunt.current);
+    }
+    if (smartShunt.power !== null) {
+        writeChanged(`${ROOT}.Summary.Power`, smartShunt.power);
+        writeChanged(`${ROOT}.SmartShunt.Power`, smartShunt.power);
+    }
+    if (smartShunt.consumedAh !== null) {
+        writeChanged(`${ROOT}.SmartShunt.ConsumedAh`, smartShunt.consumedAh);
+    }
+    if (smartShunt.dischargedEnergy !== null) {
+        writeChanged(`${ROOT}.SmartShunt.DischargedEnergy`, smartShunt.dischargedEnergy);
+    }
+    if (smartShunt.chargedEnergy !== null) {
+        writeChanged(`${ROOT}.SmartShunt.ChargedEnergy`, smartShunt.chargedEnergy);
+    }
+    if (smartShunt.timeToGo !== null) {
+        writeChanged(`${ROOT}.SmartShunt.TimeToGo`, smartShunt.timeToGo);
+    }
+
+    for (const pack of PACKS) {
+        const heltec = readHeltecPack(pack);
+        const packCurrent = readPackCurrent(pack);
+        const packTemperature = readPackTemperature(pack);
+        const packBase = `${ROOT}.Packs.Pack${pack}`;
+
+        if (heltec) {
+            writeChanged(`${packBase}.Voltage`, Math.round(heltec.voltageSum * 1000) / 1000);
+            writeChanged(`${packBase}.VDiff`, heltec.vDiff);
+        }
+        if (packCurrent !== null) {
+            writeChanged(`${packBase}.Current`, packCurrent);
+        }
+        if (packTemperature !== null) {
+            writeChanged(`${packBase}.TemperatureMax`, packTemperature);
+        }
+    }
+}
+
 try {
     for (const state of STATES) {
         createBatteryState(state);
     }
 
+    updateBatterySupervisor();
+
     emit('info', `Version ${CONFIG.version} geladen.`);
     emit('info', `Erzeugte States: ${STATES.length}.`);
-    emit('info', 'Initialisierung abgeschlossen.');
+    emit('info', 'Rohdatenaufnahme abgeschlossen.');
 } catch (error) {
     log(`Battery_Supervisor_V1 Fehler: ${error.message}`, 'warn');
 }
