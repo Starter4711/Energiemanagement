@@ -1,6 +1,10 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Changed
+  - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` auf die Phase-1-Baseline ohne aktive `Summary.Direction`-Semantik reduziert
+
+## 2026-07-08
 - Added
   - `docs/energy_flow_v1_implementation_review.md` als Review der Energy-Flow-Baseline mit Entscheidung `Korrektur erforderlich` ergaenzt
 

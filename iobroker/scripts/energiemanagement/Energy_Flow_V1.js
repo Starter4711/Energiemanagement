@@ -150,14 +150,6 @@ const STATES = [
         defaultValue: CONFIG.defaults.number,
     },
     {
-        id: `${ROOT}.Summary.Direction`,
-        type: 'string',
-        role: 'text',
-        unit: '',
-        desc: 'Richtung der Gesamtsicht',
-        defaultValue: CONFIG.defaults.string,
-    },
-    {
         id: `${ROOT}.Communication.Status`,
         type: 'string',
         role: 'text',
@@ -351,8 +343,6 @@ function refresh() {
         Wallbox: 'UNKNOWN',
     };
 
-    const hasIncompleteGroups = Object.entries(groupStatuses).some(([, status]) => status !== 'OK');
-
     for (const [group, status] of Object.entries(groupStatuses)) {
         updateCommunication(group, status);
     }
@@ -370,12 +360,9 @@ function refresh() {
     ].filter(value => value !== null);
 
     const powerBalance = knownPowerValues.length > 0 ? knownPowerValues.reduce((sum, value) => sum + value, 0) : CONFIG.defaults.number;
-    const direction = batteryPower === null ? 'UNKNOWN' : batteryPower > 0 ? 'DISCHARGE' : batteryPower < 0 ? 'CHARGE' : 'BALANCED';
-    const summaryStatus = hasIncompleteGroups ? 'UNKNOWN' : batterySummaryStatus;
 
-    writeChanged(`${ROOT}.Summary.Status`, summaryStatus);
+    writeChanged(`${ROOT}.Summary.Status`, batterySummaryStatus);
     writeChanged(`${ROOT}.Summary.PowerBalance`, powerBalance);
-    writeChanged(`${ROOT}.Summary.Direction`, direction);
     writeChanged(`${ROOT}.Communication.Status`, overallCommunication);
     writeChanged(`${ROOT}.Communication.LastUpdate`, new Date().toISOString());
     writeChanged(`${ROOT}.Communication.AgeSeconds`, 0);
