@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Changed
+  - `iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js` auf die Kommunikations-Basissicht reduziert und auf reine Offline-Warnungen fuer SmartShunt, Gobel / Pace BMS, Heltec und MQTT beschraenkt
 - Added
   - `knowledge/project_brain.md` um Bootstrap-Abschluss und Projektleitung erweitert
   - `knowledge/project_brain.md` um Startup Checklist und Rollen erweitert
