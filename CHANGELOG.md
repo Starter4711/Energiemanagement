@@ -2,6 +2,8 @@
 
 ## 2026-07-08
 - Changed
+  - `iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js` gegen die freigegebene Communication-Baseline verifiziert; keine fachlichen Reste ausserhalb der Kommunikationsueberwachung vorhanden
+- Changed
   - `iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js` auf dem freigegebenen Remote-Stand bestaetigt: echte LF-Zeilenumbrueche, 712 Zeilen, keine fachliche Aenderung erforderlich
 - Changed
   - `iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js` technisch repariert, als echtes JavaScript lauffaehig gemacht und mit sparsamem Kommunikations-Refresh versehen
