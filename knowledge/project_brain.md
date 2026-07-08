@@ -6,6 +6,13 @@ EOS steht fuer `Energy Operating System` und bildet die zentrale fachliche Klamm
 
 Ziel ist die robuste, ressourcenschonende und moeglichst klare Aufbereitung von Energie-, Batterie-, Verbrauchs- und Steuerinformationen auf Basis des bestehenden ioBroker-Live-Systems.
 
+EOS existiert, weil die Anlage nicht aus Einzelwerten, sondern aus einem zusammengesetzten Betriebssystem fuer Energie verstanden werden muss:
+
+- drei Zaehlpunkte muessen gemeinsam betrachtet werden,
+- Batterie, Victron, Wallbox, Pool und Visualisierung beeinflussen sich gegenseitig,
+- Schutz, Diagnose und Optimierung muessen getrennt, aber aufeinander bezogen bleiben,
+- neue Logik soll dauerhaft wartbar und nicht nur punktuell funktional sein.
+
 Das Repository dient als Referenz, Historie und Backup. ioBroker ist das Live-System.
 
 Fachliche Kernziele:
@@ -15,6 +22,16 @@ Fachliche Kernziele:
 - Steuerung und Diagnose klar trennen.
 - Neue Logik modular und nachvollziehbar aufbauen.
 - VIS2 als klar lesbare Bedien- und Diagnoseoberflaeche pflegen.
+- Entscheidungen sollen spaeter nachvollziehbar bleiben, auch wenn der alte Chat nicht mehr verfuegbar ist.
+- Fachliche Wahrheit soll im Repository dauerhaft lesbar sein.
+
+Langfristige Vision:
+
+- EOS wird zum konsolidierten, dokumentierten Betriebssystem fuer die Energieanlage.
+- Der Batteriebereich wird ueber eine stabile EOS-State-Ebene beobachtet und bewertet.
+- VIS2 wird zur lesbaren Fachoberflaeche fuer Betreiber und Diagnose.
+- Neue Funktionen entstehen nur dann, wenn sie in die Architektur, die Regeln und die Dokumentation passen.
+- Das System soll auch in Jahren noch durch Lesen des Repositories verstehbar bleiben.
 
 ## 2. Architekturuebersicht
 
@@ -43,6 +60,16 @@ Grundsatz:
 - Unklare technische oder fachliche Punkte werden nicht geraten.
 - GitHub ist die Single Source of Truth fuer den freigegebenen Repository-Stand.
 - Live-Änderungen gehoeren nicht in Vermutungen, sondern nur in dokumentierte und gepruefte Aenderungen.
+- Architektur wird nicht aus Bequemlichkeit vereinfacht, sondern bewusst in Module, Zustandsmodelle und Verantwortlichkeiten zerlegt.
+
+Architekturprinzipien:
+
+- Modularitaet ist Pflicht, weil die Anlage mehrere Betriebsdomänen mit unterschiedlichen Schutz- und Reaktionszeiten hat.
+- Das Supervisor-Konzept sammelt, bewertet und verdichtet Quellen, statt Logik in der Visualisierung oder in unkontrollierten Einzelskripten zu verteilen.
+- EOS-States sind die stabile Fachschnittstelle fuer Folgefunktionen.
+- VIS2 greift ausschliesslich auf EOS-States zu.
+- Visualisierung darf keine Steuerlogik enthalten.
+- Rohquellen bleiben Rohquellen; fachliche Verdichtung gehoert in die EOS-Schicht.
 
 ## 3. Module und Status
 
@@ -87,6 +114,7 @@ Status:
 - Der Supervisor ist eine aufbereitende, nicht-aktorische Sicht auf Batterie und Kommunikation.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
+- Das Modul-Set ist bewusst klein gehalten, um neue Logik nicht in verstreuten Einzeldateien zu verlieren.
 
 ### VIS-2-Module
 
@@ -103,6 +131,8 @@ Status:
 - VIS2 soll keine rohe Quellfragmentierung zeigen, sondern verdichtete, nachvollziehbare Fachzustaende.
 - UI-Werte sollen lesbar, ruhig und fachlich klar sein, nicht maximal bunt oder datenueberladen.
 - VIS2 ist Zieloberflaeche fuer Batterie- und Poolansichten, VIS1 bleibt der produktive Altbestand, solange nicht anders freigegeben.
+- VIS2 ist Anzeige- und Bedienoberflaeche, nicht Regelinstanz.
+- Keine Fachlogik gehoert in die Visualisierung.
 
 ### Tool-Module
 
@@ -127,6 +157,13 @@ Verbindliche Arbeitsregeln:
 - Keine ungefragten Aenderungen an MQTT-Topics, ioBroker-States, Alias-Pfaden, Objekt-IDs oder Adapterinstanzen.
 - Vor jedem Commit `git diff` pruefen.
 - Relevante Aenderungen in `CHANGELOG.md` dokumentieren.
+- GitHub ist die Single Source of Truth und damit der massgebliche Referenzpunkt fuer freigegebene Aenderungen.
+- Jeder Commit wird fachlich reviewt, bevor er als weiterverarbeitet gilt.
+- `knowledge/project_brain.md` wird nach jedem freigegebenen Commit aktualisiert, wenn sich der dauerhafte Projektstand geaendert hat.
+- ChatGPT fuehrt den Entwicklungsprozess, Codex setzt ihn im Repository um.
+- Nach jedem Review muss unmittelbar der naechste passende Codex-Auftrag entstehen, damit der Arbeitsfluss nicht abreisst.
+- Wiederholungen werden vermieden, wenn der notwendige Kontext bereits in der Wissensbasis steht.
+- Rueckfragen sind nur sinnvoll, wenn eine Entscheidung sonst nicht belastbar getroffen werden kann.
 
 Ressourcenschonung:
 
@@ -148,6 +185,8 @@ Supervisor-Philosophie:
 - Er ersetzt keine Hardware-Schutzfunktionen.
 - Er liefert keine Empfehlungen, wenn diese nicht explizit gefordert sind.
 - Er speichert nur die fachlich notwendigen abgeleiteten Stati.
+- Seine Aufgabe ist Verdichtung, nicht Steuerungsersatz.
+- Er soll Zustandswechsel sichtbar machen, ohne das System mit Nebenlogik zu ueberfrachten.
 
 Battery-Supervisor-Konzept:
 
@@ -157,6 +196,17 @@ Battery-Supervisor-Konzept:
 - Gobel / Pace BMS bleibt fuehrend fuer Schutz und Plausibilisierung.
 - Heltec bleibt Diagnoseebene fuer Zellspannungen.
 - Kommunikationszustand, LastUpdate, AgeSeconds und Status werden als eigene EOS-Sicht aufbereitet.
+- Die EOS-Batteriesicht ist die fachliche Wahrheitsschicht fuer Batterie, nicht die Rohdatenebene.
+- Der Supervisor ist bewusst nicht als Aktor aufgebaut, weil Schutz- und Echtzeitfunktionen auf der vorgesehenen Hardware bleiben muessen.
+
+EOS-State-Modell:
+
+- Das EOS-State-Modell ist die stabile interne API fuer nachgelagerte Logik und VIS2.
+- Neue Funktionen sollen auf bestehenden EOS-States aufsetzen statt Rohquellen direkt zu verknuepfen.
+- Zustandsnamen, Rollen und Schreibrechte muessen zur fachlichen Bedeutung passen.
+- Berechnete Fachzustände sind read-only.
+- Konfigurierbare Grenz- und Steuerwerte sind Settings-States.
+- VIS2 liest nur aus dem EOS-State-Modell, nicht aus willkuerlichen Rohquellen.
 
 LiFePO4-Grundlagen:
 
@@ -166,6 +216,19 @@ LiFePO4-Grundlagen:
 - Schutzinstanzen und reale Hardwaregrenzen haben Vorrang vor Optimierungszielen.
 - Batteriedaten werden deshalb immer im Zusammenspiel von SmartShunt, BMS und Diagnoseebenen interpretiert.
 - Zellspannungen allein sind keine hinreichende Gesamtbewertung.
+- LiFePO4 ist im Projekt kein starres System, sondern ein in Betrieb, Temperatur und Ladezustand wechselndes Schutzsystem.
+- Spannung, SOC, Temperatur und BMS-Zustaende beeinflussen gemeinsam die erlaubte Ladeleistung.
+- Starre Grenzwerte ohne Kontext sind fachlich unzureichend.
+- Bewertung muss deshalb kontextabhängig erfolgen und die aktuelle Systemlage beruecksichtigen.
+
+Qualitaetsziele:
+
+- klare technische Antworten statt vager Formulierungen,
+- keine stillschweigende Umdeutung offener Punkte,
+- keine redundante Logik,
+- geringe Komplexitaet im Produktivpfad,
+- nachvollziehbare Doku statt implizitem Wissen,
+- konsistente Begriffe ueber alle Dokumente hinweg.
 
 ## 5. Repository
 
@@ -190,6 +253,7 @@ Charakter des Repositories:
 - Keine vollstaendige Reproduktion des Live-Systems wird im Repository selbst angestrebt.
 - Das Repository ist nicht der Realbetrieb, sondern die referenzierte Entwicklungs- und Wissensbasis.
 - GitHub speichert die freigegebene Wahrheit; lokale Zustandsaenderungen ohne Commit sind kein dokumentierter Projektstand.
+- Das Repository soll den Projektstand so dokumentieren, dass ein neuer Chat ohne Vorwissen weiterarbeiten kann.
 
 ## 6. Aktueller Entwicklungsstand
 
@@ -205,16 +269,28 @@ Bekannte Lage:
 - Health, Empfehlungen, Analytics, Historian, Trigger, Timer und VIS gehoeren nicht in diesen Entwicklungsstand, wenn sie nicht ausdruecklich beauftragt sind.
 - Die Kommunikationsueberwachung arbeitet mit LastUpdate, AgeSeconds und Status je Quelle.
 - Bekannte Quellen sind SmartShunt, Gobel / Pace BMS, Heltec und MQTT.
+- `Battery_Supervisor_V1` ist der erste echte EOS-Baustein fuer die Batterieebene.
+- `Battery_Supervisor_V1` soll Batterie- und Kommunikationszustand verdichten, nicht aktorisch steuern.
+- Die langfristige Entwicklungsrichtung ist der Aufbau weiterer EOS-Module auf derselben State- und Doku-Grundlage.
+- VIS2 soll spaeter moeglichst nur verdichtete EOS-States anzeigen.
 
 Offene oder nicht sicher belegte Punkte bleiben `Unklar`, insbesondere dort, wo die Dokumentation bewusst nicht den Produktionsstand vollstaendig inventarisiert.
+
+Roadmap:
+
+- EOS-Batterieschicht weiter verdichten.
+- Kommunikations- und Statussicht stabil halten.
+- Weitere fachliche Verdichtung nur dann ergaenzen, wenn sie zur Architektur passt und dokumentierbar ist.
+- VIS2-Sichten an EOS-States anbinden, nicht an Rohquellen.
+- Offene Fragen in `knowledge/open_questions.md` und den fachlichen Entscheidungsdokumenten weiter reduzieren.
 
 ## 7. Letzter freigegebener Commit
 
 Letzter freigegebener Commit:
 
-- `47ccbea` `Add project brain knowledge base`
+- `9ac8805` `Expand project brain memory`
 
-Dieser Commit hat die zentrale Wissensbasis eingefuehrt und `AGENTS.md` um die verpflichtende Lesereihenfolge ergaenzt.
+Dieser Commit hat `knowledge/project_brain.md` zum Projektgedaechtnis ausgebaut und die leitungstechnischen Regeln, Rollen und Architekturgrundsaetze verdichtet.
 
 ## 8. Naechster Entwicklungsschritt
 
@@ -228,6 +304,7 @@ Stattdessen gilt:
 - Neue Arbeit startet immer mit `AGENTS.md` und `knowledge/project_brain.md`.
 - Die Roadmap ist dokumentationsgetrieben: offene Fragen zuerst klaeren, dann gezielt in Module oder Doku ueberfuehren.
 - Wenn kein Auftrag vorliegt, bleibt der naechste Entwicklungsschritt offen.
+- Der naechste Entwicklungsschritt ergibt sich aus der dokumentierten Roadmap, nicht aus spontaner Annahme.
 
 Wenn kein weiterer Auftrag vorliegt, ist der naechste Schritt `Unklar`.
 
@@ -250,6 +327,9 @@ Wenn kein weiterer Auftrag vorliegt, ist der naechste Schritt `Unklar`.
 - LiFePO4-Schutz und Batterielebensdauer haben Vorrang vor Ausnutzungsmaximierung.
 - Keine gezielte Batterieentladung ins Netz.
 - Schwarzstartfaehigkeit darf nicht verschlechtert werden.
+- Die Batterie wird als Schutz- und Versorgungsressource behandelt, nicht als Verbrauchsreserve fuer fremde Optimierungsziele.
+- Vor jeder Aenderung sind Backups und Impact auf Live-Pfade mitzudenken.
+- Dokumentation ist Teil der Architektur, nicht Nachtrag.
 
 ## 10. Arbeitsweise zwischen ChatGPT und Codex
 
@@ -263,6 +343,9 @@ Arbeitsaufteilung:
 - GitHub speichert und verteilt den freigegebenen Stand.
 - Die Wissensbasis soll fuer einen neuen Chat den Projektstand ohne Nachfragen rekonstruierbar machen.
 - Reviews sichern, dass Architektur, Regeln und bestehende Entscheidungen nicht stillschweigend aufgeweicht werden.
+- Der Reviewprozess ist kein Formalismus, sondern die Sicherung gegen unbeabsichtigte architektonische Drift.
+- ChatGPT macht die fachliche Einordnung, Codex setzt um, GitHub konserviert.
+- Nach jedem freigegebenen Commit wird der dauerhafte Projektkontext aktualisiert, damit die Wissensbasis mit dem Stand Schritt haelt.
 
 Arbeitsprinzip:
 
@@ -279,5 +362,6 @@ Arbeitsprinzip:
 5. Erst dann die beauftragte Aenderung oder Analyse beginnen.
 6. Bei Batterie-, Victron- oder MQTT-Arbeit zusaetzlich die entsprechenden fachlichen Dokumente heranziehen.
 7. Danach nur den minimal benoetigten, dokumentierten Arbeitsumfang umsetzen.
+8. Nach dem Review den naechsten Codex-Auftrag festziehen, statt den Kontext offen zu lassen.
 
 Wenn Informationen nicht sicher belegt sind, bleibt der Status `Unklar`.
