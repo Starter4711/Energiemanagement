@@ -116,6 +116,7 @@ Status:
 - `Battery_Supervisor_V1` ist als freigegebene Communication-Baseline dokumentiert.
 - `Battery_Health_V1` ist der separate, nicht-aktorische Health-Baustein auf Basis der EOS-Battery-States.
 - `Battery VIS2 Read-Only V1` ist als naechster spezifizierter, aber noch nicht implementierter Schritt dokumentiert.
+- `Battery VIS2 Read-Only V1 State-Mapping` ist der naechste Dokumentationsschritt.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
 - Das Modul-Set ist bewusst klein gehalten, um neue Logik nicht in verstreuten Einzeldateien zu verlieren.
@@ -275,6 +276,7 @@ Bekannte Lage:
 - Die Batteriedaten werden unter `0_userdata.0.EOS.Battery.*` als aufbereitete Fachsicht bereitgestellt.
 - `Battery_Health_V1` ist als separater, nicht-aktorischer Health-V1-Baustein freigegeben.
 - `Battery VIS2 Read-Only V1` ist der naechste spezifizierte, aber noch nicht implementierte Schritt fuer die Batterie-Visualisierung.
+- `Battery VIS2 Read-Only V1 State-Mapping` ist der naechste Dokumentationsschritt fuer die Batterie-Visualisierung.
 - Health, Empfehlungen, Analytics, Historian, Trigger, Timer und VIS gehoeren nicht in diesen Entwicklungsstand, wenn sie nicht ausdruecklich beauftragt sind.
 - Die Kommunikationsueberwachung arbeitet mit LastUpdate, AgeSeconds und Status je Quelle.
 - Bekannte Quellen sind SmartShunt, Gobel / Pace BMS, Heltec und MQTT.
@@ -284,6 +286,7 @@ Bekannte Lage:
 - VIS2 soll spaeter moeglichst nur verdichtete EOS-States anzeigen.
 - Der letzte freigegebene Commit ist `638aa9f82c83cf015c9def452c686ddf254280fb`.
 - Die neue VIS2-Batterieansicht ist derzeit nur spezifiziert, nicht implementiert.
+- Das State-Mapping fuer Battery VIS2 Read-Only V1 ist dokumentiert, aber die Visualisierung selbst bleibt unimplementiert.
 
 Offene oder nicht sicher belegte Punkte bleiben `Unklar`, insbesondere dort, wo die Dokumentation bewusst nicht den Produktionsstand vollstaendig inventarisiert.
 
@@ -329,6 +332,11 @@ Solange diese Freigabe nicht dokumentiert ist, bleibt der naechste Entwicklungss
 Spezifiziert, aber noch nicht implementiert.
 
 Diese Ansicht darf spaeter nur bestehende EOS-Battery-States lesen und keine Rohquellen, Steuerlogik oder Aktorik verwenden.
+
+## 8c. Battery VIS2 Read-Only V1 State-Mapping
+
+Der naechste Dokumentationsschritt ist das State-Mapping fuer die read-only Batterieansicht.
+Die Umsetzung bleibt bis zur fachlichen Freigabe der naechsten Modulgrenze unimplementiert.
 
 ## 9. Dauerhafte Architekturentscheidungen
 
