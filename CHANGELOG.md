@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-08
+- Added
+  - `docs/battery_supervisor_v1_spec.md` als Spezifikation fuer den ersten EOS-Baustein im Batteriebereich ergaenzt
+- Changed
+  - `knowledge/requirements.md` um den Requirements-Eintrag fuer Battery Supervisor V1 ergaenzt
+  - `knowledge/decisions.md` um den Beschluss fuer Battery Supervisor V1 ergaenzt
+- Notes
+  - Die Spezifikation beschreibt nur Beobachtung, Bewertung und aufbereitete EOS-Daten unter `0_userdata.0.EOS.Battery.*`
+
 ## 2026-07-07
 - Added
   - `docs/migration_matrix.md` als Migrationsmatrix vom ioBroker-common-Altbestand zum modularen Energiemanagement ergaenzt

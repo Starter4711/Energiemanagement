@@ -13,6 +13,17 @@
 - `CHANGELOG.md` ist als laufende Aenderungshistorie eingefuehrt.
 - Zuschaltbare Logebene ist Standardanforderung fuer neue produktive Skripte.
 
+## 2026-07-08 - Battery Supervisor V1 als erster EOS-Baustein
+
+- Status: beschlossen
+- Bereich: Architektur
+- Kontext: Fuer den Batteriebereich soll eine erste konsolidierte EOS-Ebene entstehen, die Daten aus SmartShunt, Gobel / Pace BMS, Heltec und bestehenden Batterie-Skripten aufbereitet.
+- Entscheidung: Battery Supervisor V1 wird als erster echter EOS-Baustein fuer den Batteriebereich beschlossen.
+- Begruendung: Die Batterieseite soll auf eine gemeinsame, kontextbasierte und nicht-aktorische Sicht umgestellt werden, ohne Cerbo-Echtzeitregelung oder BMS-Schutz zu ersetzen.
+- Betroffene Dateien/Pfade: `docs/battery_supervisor_v1_spec.md`, `knowledge/requirements.md`, `knowledge/energy_strategy.md`, `knowledge/battery_architecture.md`
+- Auswirkungen: Kuenftige Batterie-Dokumentation und VIS2-Sichten sollen sich auf die EOS-Batteriestruktur unter `0_userdata.0.EOS.Battery.*` beziehen.
+- Offene Punkte: Unklar, welche konkreten einzelnen States in V1 bereits direkt umgesetzt werden und welche erst in spaeteren Versionen folgen.
+
 ## Betriebsentscheidungen
 
 - Deployment erfolgt per SSH und `docker exec` auf die Synology/den ioBroker-Container.

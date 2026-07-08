@@ -8,6 +8,27 @@ Energiestrategie, der Regelungshierarchie und dem Engineering-Prozess ab.
 
 Wenn ein Punkt nicht sicher belegt ist, ist er als `Unklar` markiert.
 
+## REQ-BAT-SUPERVISOR-V1
+
+### Battery Supervisor V1 als erste EOS-Batterieebene
+
+- Beschreibung:
+  Fuer den Batteriebereich wird eine erste EOS-Baustein-Ebene eingefuehrt, die SmartShunt, Gobel / Pace BMS, Heltec und vorhandene Batterie-Skripte zu einer aufbereiteten Gesamtsicht zusammenfasst.
+- Begründung:
+  Die Batteriedaten sollen konsolidiert, kontextbasiert bewertet und fuer VIS2 sowie spaetere Auswertungen einheitlich unter `0_userdata.0.EOS.Battery.*` bereitgestellt werden.
+- Priorität: Hoch
+- Betroffene Komponenten:
+  Batterie-Supervisor
+  VIS2
+  Diagnose
+  Knowledge Base
+- Verknüpfte Design Principles:
+  SmartShunt ist fuehrend fuer Gesamt-SOC
+  Gobel / Pace BMS ist fuehrend fuer Batterieschutz
+  Heltec ist Diagnoseebene fuer Zellspannungen
+  Unklare Zustaende duerfen nicht geraten werden
+- Status: Aktiv
+
 ## REQ-BAT-PRIMARY-ASSET
 
 ### Batterie als primaeres Schutz- und Optimierungsziel
