@@ -2,6 +2,13 @@
 
 ## 2026-07-08
 - Added
+  - `docs/energy_flow_v1_spec.md` als Spezifikation fuer EOS Energy Flow V1 ergaenzt
+  - `docs/energy_flow_v1_state_model.md` als State-Modell fuer EOS Energy Flow V1 ergaenzt
+- Changed
+  - `knowledge/project_brain.md` um die Spezifikationsphase von Energy Flow V1 ergaenzt
+
+## 2026-07-08
+- Added
   - `docs/battery_v1_release_status.md` als kompakten Abschlussstatus fuer Battery V1 ergaenzt
 - Changed
   - `knowledge/project_brain.md` um den freigegebenen Battery-V1-Gesamtstatus ergaenzt
