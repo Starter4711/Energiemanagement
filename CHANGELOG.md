@@ -2,6 +2,10 @@
 
 ## 2026-07-08
 - Added
+  - `tools/iobroker/install_eos_to_iobroker.sh` als Installationspaket fuer Repository-Inhalte und VIS2-Deployment ergaenzt
+
+## 2026-07-08
+- Added
   - `docs/iobroker_deployment_v1.md` als praktische Import- und Deployment-Anleitung fuer den ioBroker ergaenzt
   - `tools/iobroker/deploy_repository_to_iobroker.sh` als defensives ioBroker-Deployment-Script mit Dry-Run und `--apply` ergaenzt
   - `tools/iobroker/list_repository_assets.sh` als read-only Inventarscript fuer Repository-Artefakte ergaenzt
