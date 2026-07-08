@@ -11,6 +11,8 @@ const CONFIG = {
     version: '1.0.0',
     logLevel: 'info',
     debugLevel: 0,
+    communicationWarningTimeoutSeconds: 120,
+    communicationOfflineTimeoutSeconds: 300,
     defaults: {
         string: 'unknown',
         number: 0,
@@ -294,12 +296,60 @@ STATES.push(
         defaultValue: CONFIG.defaults.string,
     },
     {
+        id: `${ROOT}.Communication.SmartShunt.LastUpdate`,
+        type: 'string',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten SmartShunt-Kommunikation',
+        defaultValue: '',
+    },
+    {
+        id: `${ROOT}.Communication.SmartShunt.AgeSeconds`,
+        type: 'number',
+        role: 'value',
+        unit: 's',
+        desc: 'Alter der SmartShunt-Kommunikation in Sekunden',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Communication.SmartShunt.Status`,
+        type: 'string',
+        role: 'text',
+        unit: '',
+        desc: 'Bewerteter Kommunikationsstatus des SmartShunt',
+        defaultValue: 'UNKNOWN',
+    },
+    {
         id: `${ROOT}.Communication.Gobel`,
         type: 'string',
         role: 'text',
         unit: '',
         desc: 'Kommunikationsstatus von Gobel / Pace BMS',
         defaultValue: CONFIG.defaults.string,
+    },
+    {
+        id: `${ROOT}.Communication.Gobel.LastUpdate`,
+        type: 'string',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten Gobel / Pace BMS-Kommunikation',
+        defaultValue: '',
+    },
+    {
+        id: `${ROOT}.Communication.Gobel.AgeSeconds`,
+        type: 'number',
+        role: 'value',
+        unit: 's',
+        desc: 'Alter der Gobel / Pace BMS-Kommunikation in Sekunden',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Communication.Gobel.Status`,
+        type: 'string',
+        role: 'text',
+        unit: '',
+        desc: 'Bewerteter Kommunikationsstatus von Gobel / Pace BMS',
+        defaultValue: 'UNKNOWN',
     },
     {
         id: `${ROOT}.Communication.Heltec`,
@@ -310,12 +360,60 @@ STATES.push(
         defaultValue: CONFIG.defaults.string,
     },
     {
+        id: `${ROOT}.Communication.Heltec.LastUpdate`,
+        type: 'string',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten Heltec-Kommunikation',
+        defaultValue: '',
+    },
+    {
+        id: `${ROOT}.Communication.Heltec.AgeSeconds`,
+        type: 'number',
+        role: 'value',
+        unit: 's',
+        desc: 'Alter der Heltec-Kommunikation in Sekunden',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Communication.Heltec.Status`,
+        type: 'string',
+        role: 'text',
+        unit: '',
+        desc: 'Bewerteter Kommunikationsstatus von Heltec',
+        defaultValue: 'UNKNOWN',
+    },
+    {
         id: `${ROOT}.Communication.MQTT`,
         type: 'string',
         role: 'text',
         unit: '',
         desc: 'Kommunikationsstatus der relevanten MQTT-Strecke',
         defaultValue: CONFIG.defaults.string,
+    },
+    {
+        id: `${ROOT}.Communication.MQTT.LastUpdate`,
+        type: 'string',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten MQTT-Kommunikation',
+        defaultValue: '',
+    },
+    {
+        id: `${ROOT}.Communication.MQTT.AgeSeconds`,
+        type: 'number',
+        role: 'value',
+        unit: 's',
+        desc: 'Alter der MQTT-Kommunikation in Sekunden',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Communication.MQTT.Status`,
+        type: 'string',
+        role: 'text',
+        unit: '',
+        desc: 'Bewerteter Kommunikationsstatus der MQTT-Strecke',
+        defaultValue: 'UNKNOWN',
     },
     {
         id: `${ROOT}.Communication.LastUpdate`,
@@ -586,6 +684,24 @@ STATES.push(
         writable: true,
     },
     {
+        id: `${ROOT}.Settings.CommunicationWarningTimeout_s`,
+        type: 'number',
+        role: 'value',
+        unit: 's',
+        desc: 'Timeout in Sekunden bis zur Warnstufe der Kommunikationsueberwachung',
+        defaultValue: CONFIG.communicationWarningTimeoutSeconds,
+        writable: true,
+    },
+    {
+        id: `${ROOT}.Settings.CommunicationOfflineTimeout_s`,
+        type: 'number',
+        role: 'value',
+        unit: 's',
+        desc: 'Timeout in Sekunden bis zur Offline-Stufe der Kommunikationsueberwachung',
+        defaultValue: CONFIG.communicationOfflineTimeoutSeconds,
+        writable: true,
+    },
+    {
         id: `${ROOT}.Statistics.Today`,
         type: 'number',
         role: 'value',
@@ -665,6 +781,70 @@ function writeChanged(id, value) {
     if (!current || current.val !== value) {
         setState(id, value, true);
     }
+}
+
+function formatIsoFromTimestamp(timestamp) {
+    if (!Number.isFinite(timestamp)) return '';
+    return new Date(timestamp).toISOString();
+}
+
+function readLatestTimestamp(ids) {
+    let latest = null;
+
+    for (const id of ids) {
+        const state = getRawState(id);
+        if (!state) continue;
+        const timestamp = Number(state.ts);
+        if (!Number.isFinite(timestamp)) continue;
+        if (latest === null || timestamp > latest) {
+            latest = timestamp;
+        }
+    }
+
+    return latest;
+}
+
+function getCommunicationStatus(ageSeconds) {
+    if (!Number.isFinite(ageSeconds)) {
+        return 'UNKNOWN';
+    }
+    const warningTimeout = readNumber(`${ROOT}.Settings.CommunicationWarningTimeout_s`) ?? CONFIG.communicationWarningTimeoutSeconds;
+    const offlineTimeout = readNumber(`${ROOT}.Settings.CommunicationOfflineTimeout_s`) ?? CONFIG.communicationOfflineTimeoutSeconds;
+
+    if (ageSeconds <= warningTimeout) {
+        return 'OK';
+    }
+    if (ageSeconds <= offlineTimeout) {
+        return 'WARN';
+    }
+    return 'OFFLINE';
+}
+
+function updateCommunicationSource(prefix, sourceIds) {
+    const latestTimestamp = readLatestTimestamp(sourceIds);
+    const lastUpdate = formatIsoFromTimestamp(latestTimestamp);
+    const ageSeconds = latestTimestamp === null
+        ? null
+        : Math.max(0, Math.floor((Date.now() - latestTimestamp) / 1000));
+    let status = getCommunicationStatus(ageSeconds);
+
+    if (prefix === 'MQTT') {
+        const connectionState = getRawState('mqtt.0.info.connection') || getRawState('mqtt.0.info.connection.state');
+        if (connectionState && connectionState.val === false) {
+            status = 'OFFLINE';
+        }
+    }
+
+    writeChanged(`${ROOT}.Communication.${prefix}.LastUpdate`, lastUpdate);
+    writeChanged(`${ROOT}.Communication.${prefix}.AgeSeconds`, ageSeconds === null ? CONFIG.defaults.number : ageSeconds);
+    writeChanged(`${ROOT}.Communication.${prefix}.Status`, status);
+    writeChanged(`${ROOT}.Communication.${prefix}`, status);
+
+    return {
+        lastUpdate,
+        ageSeconds,
+        status,
+    };
 }
 
 function readSmartShunt() {
@@ -763,6 +943,55 @@ function updateBatterySupervisor() {
     if (smartShunt.timeToGo !== null) {
         writeChanged(`${ROOT}.SmartShunt.TimeToGo`, smartShunt.timeToGo);
     }
+
+    const communicationResults = [
+        updateCommunicationSource('SmartShunt', [
+            'alias.0.Gobel.Soc SmartShunt',
+            'alias.0.Gobel.Voltage_SmartShunt',
+            'alias.0.Gobel.Current',
+            'alias.0.Gobel.Power',
+            'alias.0.Gobel.ConsumedAh',
+            'alias.0.Gobel.DischargedEnergy',
+            'alias.0.Gobel.ChargedEnergy',
+            'alias.0.Gobel.TimeToGo',
+        ]),
+        updateCommunicationSource('Gobel', [
+            'alias.0.Gobel_Master.SOC',
+            'alias.0.Gobel_Slave1.SOC',
+            'alias.0.Gobel_Slave2.SOC',
+            'alias.0.Gobel_Slave3.SOC',
+            'alias.0.Gobel_Master.Ampere',
+            'alias.0.Gobel_Slave1.Ampere',
+            'alias.0.Gobel_Slave2.Ampere',
+            'alias.0.Gobel_Slave3.Ampere',
+            'alias.0.Gobel_Master.Gobel_Master_Tmp',
+            'alias.0.Gobel_Slave1.Gobel_Slave1_Tmp',
+            'alias.0.Gobel_Slave2.Gobel_Slave2_Tmp',
+            'alias.0.Gobel_Slave3.Gobel_Slave3_Tmp',
+        ]),
+        updateCommunicationSource('Heltec', [
+            'mqtt.0.HELTEC_1.data',
+            'mqtt.0.HELTEC_2.data',
+            'mqtt.0.HELTEC_3.data',
+            'mqtt.0.HELTEC_4.data',
+        ]),
+        updateCommunicationSource('MQTT', [
+            'mqtt.0.info.connection',
+            'mqtt.0.info.connection.state',
+        ]),
+    ];
+
+    const latestCommunicationTimestamp = [
+        ...communicationResults
+            .map(result => result.lastUpdate)
+            .filter(Boolean),
+    ].reduce((latest, value) => {
+        const timestamp = Date.parse(value);
+        if (!Number.isFinite(timestamp)) return latest;
+        return latest === null || timestamp > latest ? timestamp : latest;
+    }, null);
+
+    writeChanged(`${ROOT}.Communication.LastUpdate`, formatIsoFromTimestamp(latestCommunicationTimestamp));
 
     for (const pack of PACKS) {
         const heltec = readHeltecPack(pack);

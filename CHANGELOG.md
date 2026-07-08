@@ -9,6 +9,16 @@
     `0_userdata.0.EOS.Battery.*` ergaenzt
 - Changed
   - `iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js`
+    um die Kommunikationsueberwachung fuer SmartShunt, Gobel / Pace BMS,
+    Heltec und MQTT mit LastUpdate, AgeSeconds und Status erweitert
+  - `iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js`
+    um die Settings `CommunicationWarningTimeout_s` und
+    `CommunicationOfflineTimeout_s` erweitert
+  - `iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js`
+    um die Statuswerte `OK`, `WARN`, `OFFLINE` und `UNKNOWN` fuer die
+    Kommunikationsbewertung erweitert
+- Changed
+  - `iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js`
     um die erste Rohdatenaufnahme von SmartShunt, Gobel BMS und Heltec ergaenzt
 - Changed
   - `knowledge/requirements.md` um den Requirements-Eintrag fuer
