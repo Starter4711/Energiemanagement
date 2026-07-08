@@ -121,7 +121,7 @@ Status:
 - `battery.html` ist die fuehrende Pflegequelle fuer die Battery-VIS2-Ansicht; `vis-views.json` ist das generierte Exportartefakt.
 - `Battery V1 Release Status` dokumentiert den freigegebenen Stand der Batteriekomponenten und den naechsten fachlichen Freigabeschritt.
 - `Energy Flow V1` befindet sich in der Spezifikationsphase und soll Energiefluesse konsolidiert als EOS-States bereitstellen.
-- `Energy Flow V1` ist mit den freigegebenen Spezifikationsstaenden `e2f538f` und `7cb51af` dokumentiert.
+- `Energy Flow V1` ist mit den freigegebenen Spezifikationsstaenden `e2f538f` und `7cb51af` dokumentiert; der letzte freigegebene Commit ist `7cb51af`.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
 - Das Modul-Set ist bewusst klein gehalten, um neue Logik nicht in verstreuten Einzeldateien zu verlieren.

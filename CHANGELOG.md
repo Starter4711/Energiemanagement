@@ -2,6 +2,10 @@
 
 ## 2026-07-08
 - Changed
+  - `knowledge/project_brain.md` um die freigegebenen Energy-Flow-Spezifikationsstaende `e2f538f` und `7cb51af` sowie den letzten freigegebenen Commit `7cb51af` praezisiert
+
+## 2026-07-08
+- Changed
   - `knowledge/project_brain.md` um `e2f538f` und `7cb51af` als freigegebene Energy-Flow-Spezifikationsstaende sowie den letzten freigegebenen Commit `7cb51af` aktualisiert
 
 ## 2026-07-08
