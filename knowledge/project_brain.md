@@ -122,8 +122,8 @@ Status:
 - Die freigegebene Battery VIS2 Read-Only V1-Ansicht zeigt Summary, Communication, Warnings, Health, SmartShunt und Pack-States und bleibt ohne eigene Fachlogik.
 - `battery.html` ist die fuehrende Pflegequelle fuer die Battery-VIS2-Ansicht; `vis-views.json` ist das generierte Exportartefakt.
 - `Battery V1 Release Status` dokumentiert den freigegebenen Stand der Batteriekomponenten und den naechsten fachlichen Freigabeschritt.
-- `Energy Flow V1` befindet sich in der Spezifikationsphase und soll Energiefluesse konsolidiert als EOS-States bereitstellen.
-- `Energy Flow V1` ist mit den freigegebenen Spezifikationsstaenden `e2f538f` und `7cb51af` dokumentiert; `e291134` korrigiert den Projektkontext nach dem Start von Energy Flow V1 und ist der letzte freigegebene Commit.
+- `Energy Flow V1` ist als erster produktiver EOS-Baustein implementiert und stellt konsolidierte Energiefluesse als read-only EOS-States bereit.
+- `Energy Flow V1` ist mit den freigegebenen Spezifikationsstaenden `e2f538f` und `7cb51af` dokumentiert; `f809eac` implementiert die erste produktive Energy-Flow-Baseline und ist der letzte freigegebene Commit.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
 - Das Modul-Set ist bewusst klein gehalten, um neue Logik nicht in verstreuten Einzeldateien zu verlieren.
@@ -269,7 +269,7 @@ Charakter des Repositories:
 
 ## 6. Aktueller Entwicklungsstand
 
-Aktuell liegt der Fokus auf der Batterie als abgeschlossenem EOS-Teil und auf Energy Flow V1 in der Spezifikationsphase.
+Aktuell liegt der Fokus auf der Batterie als abgeschlossenem EOS-Teil und auf dem implementierten Energy Flow V1 als erster produktiver EOS-Schicht.
 Weitere fachlich freigegebene Schritte sind in der aktuellen Dokumentation nicht abschliessend benannt.
 
 Bekannte Lage:
@@ -281,6 +281,7 @@ Bekannte Lage:
 - Kommunikationsueberwachung ist im Skript angelegt.
 - Die Batteriedaten werden unter `0_userdata.0.EOS.Battery.*` als aufbereitete Fachsicht bereitgestellt.
 - `Battery_Health_V1` ist als separater, nicht-aktorischer Health-Baustein Teil des freigegebenen Batterie-Umfangs.
+- `Energy_Flow_V1` ist als erste produktive EOS-Schicht fuer konsolidierte Energiefluesse implementiert.
 - `Battery VIS2 Read-Only V1` ist implementiert und bleibt weiterhin read-only.
 - Health, Empfehlungen, Analytics, Historian, Trigger, Timer und VIS gehoeren nicht in diesen Entwicklungsstand, wenn sie nicht ausdruecklich beauftragt sind.
 - Der freigegebene Battery-V1-Stand umfasst Supervisor, Health und die read-only Battery-VIS2-Ansicht als abgeschlossenen Batterieumfang.
@@ -290,7 +291,7 @@ Bekannte Lage:
 - `Battery_Supervisor_V1` soll Batterie- und Kommunikationszustand verdichten, nicht aktorisch steuern.
 - Die langfristige Entwicklungsrichtung ist der Aufbau weiterer EOS-Module auf derselben State- und Doku-Grundlage.
 - VIS2 soll spaeter moeglichst nur verdichtete EOS-States anzeigen.
-- Der letzte freigegebene Commit ist `e291134`.
+- Der letzte freigegebene Commit ist `f809eac`.
 - Die neue VIS2-Batterieansicht ist implementiert und bleibt read-only.
 - Das State-Mapping fuer Battery VIS2 Read-Only V1 ist dokumentiert und die Visualisierung selbst bleibt read-only.
 - Aenderungen an der Battery-VIS2-Ansicht werden in `battery.html` begonnen und danach nach `vis-views.json` exportiert.
@@ -311,9 +312,9 @@ Roadmap:
 
 Letzter freigegebener Commit:
 
-- `e291134` `Fix all stale project brain references`
+- `f809eac` `Implement Energy Flow V1 baseline`
 
-Dieser Commit korrigiert den Projektkontext nach dem Start von Energy Flow V1 und setzt den freigegebenen Stand fuer die weitere Dokumentation fort.
+Dieser Commit implementiert die erste produktive Energy-Flow-Baseline und setzt den freigegebenen Stand fuer die weitere Dokumentation fort.
 
 ## 8. Naechster Entwicklungsschritt
 
@@ -333,8 +334,8 @@ Wenn kein weiterer Auftrag vorliegt, ist der naechste Schritt `Unklar`.
 
 ## 8a. Naechster Klärungspunkt
 
-Vor weiterer Implementierung muss die naechste fachlich freigegebene Modulgrenze eindeutig benannt werden.
-Solange diese Freigabe nicht dokumentiert ist, bleibt der naechste Entwicklungsschritt `Unklar`.
+Vor weiteren fachlichen Erweiterungen muss die naechste freigegebene EOS-Modulgrenze eindeutig benannt werden.
+Solange diese Freigabe nicht dokumentiert ist, bleiben neue Module `Unklar`.
 
 ## 8b. Battery VIS2 Read-Only V1
 
@@ -358,10 +359,9 @@ Die Umsetzung bleibt weiterhin auf die freigegebenen EOS-Battery-States beschrae
 - `Battery_Health_V1` bleibt ein separater, nicht-aktorischer Health-Baustein.
 - `Battery V1 Release Status` dokumentiert den freigegebenen Gesamtstatus der Batterieebene.
 - `Battery V1` ist als abgeschlossen dokumentiert.
-- `Energy Flow V1` ist der aktuell freigegebene naechste Modulschritt.
-- `Energy Flow V1` befindet sich in der Spezifikationsphase.
+- `Energy_Flow_V1` ist als erste produktive EOS-Schicht implementiert.
 - `e2f538f` und `7cb51af` sind die freigegebenen Energy-Flow-Spezifikationsstaende.
-- `e291134` korrigiert den Projektkontext nach dem Start von Energy Flow V1 und ist der letzte freigegebene Commit.
+- `f809eac` implementiert die erste produktive Energy-Flow-Baseline und ist der letzte freigegebene Commit.
 - Gobel-SOC ist nicht als fuehrende Gesamtgroesse zu verwenden.
 - Aktorische Schreibpfade sind besonders kritisch.
 - MQTT-Steuerpfade, go-e-Pfade und S7-Pfade gelten als live-nah und sensibel.
