@@ -2,6 +2,7 @@
 
 ## 2026-07-08
 - Added
+  - `knowledge/project_brain.md` um Startup Checklist und Rollen erweitert
   - `AGENTS.md` um die ChatGPT Startup Sequence ergaenzt
   - `knowledge/project_brain.md` um Startup-Procedure und Projektpflege erweitert
   - `docs/battery_supervisor_v1_spec.md` als Spezifikation fuer den ersten EOS-Baustein im Batteriebereich ergaenzt

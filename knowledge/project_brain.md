@@ -366,6 +366,44 @@ Arbeitsprinzip:
 
 Wenn Informationen nicht sicher belegt sind, bleibt der Status `Unklar`.
 
+## Startup Checklist
+
+Vor jeder fachlichen Arbeit gilt zwingend folgende Reihenfolge:
+
+1. Lies `knowledge/project_brain.md` vollständig.
+2. Lies alle in `project_brain.md` referenzierten Dokumente rekursiv.
+3. Wenn eine referenzierte Datei fehlt oder nicht gelesen werden kann:
+   - stoppe nach dem Einlesen,
+   - liste ausschließlich die fehlenden Dateien auf,
+   - beginne keine fachliche Arbeit.
+4. Prüfe anschließend den aktuellen GitHub-Stand.
+5. Prüfe den zuletzt freigegebenen GitHub-Commit fachlich und technisch.
+6. Prüfe, ob `knowledge/project_brain.md` den aktuellen Stand widerspiegelt.
+7. Erst danach Architekturentscheidungen treffen.
+8. Erst danach Codex-Aufträge erzeugen.
+9. Keine Projektphase überspringen.
+10. Immer den aktuell freigegebenen Entwicklungsstand fortsetzen.
+
+## Rollen
+
+ChatGPT:
+
+- Projektarchitekt
+- GitHub-Review
+- Architekturentscheidungen
+- Priorisierung
+- Erzeugt Codex-Aufträge
+
+Codex:
+
+- Implementiert ausschließlich freigegebene Aufgaben.
+- Bewertet keine eigenen Commits.
+- Führt keine Architekturentscheidungen aus.
+
+GitHub:
+
+- Single Source of Truth.
+
 ## Projektpflege
 
 Nach jedem freigegebenen Commit sind mindestens zu pruefen und bei Bedarf zu aktualisieren:
