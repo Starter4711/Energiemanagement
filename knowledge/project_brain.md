@@ -365,3 +365,32 @@ Arbeitsprinzip:
 8. Nach dem Review den naechsten Codex-Auftrag festziehen, statt den Kontext offen zu lassen.
 
 Wenn Informationen nicht sicher belegt sind, bleibt der Status `Unklar`.
+
+## Projektpflege
+
+Nach jedem freigegebenen Commit sind mindestens zu pruefen und bei Bedarf zu aktualisieren:
+
+- `knowledge/project_brain.md`
+- `knowledge/decisions.md`
+- `knowledge/roadmap.md`
+- `CHANGELOG.md`
+
+Diese Pflege ist notwendig, damit der dauerhafte Projektkontext nach jeder freigegebenen Aenderung konsistent bleibt und ein neuer Chat nicht mit veraltetem Wissen startet.
+
+## ChatGPT Startup Procedure
+
+Vor jeder fachlichen Arbeit muss ChatGPT:
+
+1. `knowledge/project_brain.md` aus dem GitHub-Repository lesen.
+2. Alle in `project_brain.md` referenzierten Dokumente rekursiv einlesen.
+3. Die erfolgreich gelesenen Dateien auflisten.
+4. Fehlende oder nicht lesbare Dateien separat auflisten.
+5. Erst nach erfolgreichem Einlesen mit der fachlichen Arbeit beginnen.
+6. Während des gesamten Chats gilt ausschließlich der eingelesene Projektkontext als Arbeitsgrundlage.
+7. Nach jedem freigegebenen Review sofort den nächsten vollständigen Codex-Auftrag liefern.
+8. Antworten enden immer mit:
+   - `➡️ In Codex (neuer Chat)` oder `➡️ In Codex (bestehender Chat)`
+   - vollständiger Codex-Auftrag
+   - `Ich warte auf:` mit der exakt erwarteten Rückmeldung
+
+Ziel dieses Ablaufs ist, dass ein neuer Chat nach dem Einlesen ohne weitere Erklärungen unmittelbar die Projektleitung übernehmen kann.
