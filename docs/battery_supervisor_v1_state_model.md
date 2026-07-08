@@ -2,7 +2,8 @@
 
 ## Zweck
 
-Dieses Dokument definiert die stabile EOS-State-Struktur fuer Battery Supervisor V1 unter `0_userdata.0.EOS.Battery.*`.
+Dieses Dokument definiert die stabile EOS-State-Struktur fuer Battery Supervisor V1
+unter `0_userdata.0.EOS.Battery.*`.
 Es ist eine reine Spezifikation.
 
 ## Verbindliche Grundsaetze
@@ -15,7 +16,8 @@ Es ist eine reine Spezifikation.
 
 ## Versionsregel
 
-- `Version` beschreibt die fachliche Mindestversion, ab der ein State in V1 verfuegbar sein muss.
+- `Version` beschreibt die fachliche Mindestversion,
+  ab der ein State in V1 verfuegbar sein muss.
 - Alle hier dokumentierten States gehoeren zum stabilen V1-API-Umfang.
 
 ## State-Referenz
@@ -186,5 +188,7 @@ Historienlogik wird in diesem Dokument nicht beschrieben.
 ## Notizen zur Stabilitaet
 
 - Die State-Namen bilden die stabile API fuer V1.
-- Neue fachliche Inhalte werden kuenftig durch neue States ergaenzt, nicht durch Umbenennung bestehender States.
-- Wenn eine Quelle nicht verfuegbar ist, soll der Statuswert das sichtbar machen; fehlende Daten duerfen nicht implizit geraten werden.
+- Neue fachliche Inhalte werden kuenftig durch neue States ergaenzt,
+  nicht durch Umbenennung bestehender States.
+- Wenn eine Quelle nicht verfuegbar ist, soll der Statuswert das sichtbar
+  machen; fehlende Daten duerfen nicht implizit geraten werden.

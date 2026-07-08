@@ -9,8 +9,10 @@
   - `knowledge/decisions.md` um den Beschluss fuer Battery Supervisor V1 ergaenzt
   - `knowledge/decisions.md` um das finale EOS-State-Modell fuer Battery Supervisor V1 ergaenzt
 - Notes
-  - Die Spezifikation beschreibt nur Beobachtung, Bewertung und aufbereitete EOS-Daten unter `0_userdata.0.EOS.Battery.*`
-  - Die State-Spezifikation ist als stabile API dokumentiert und wird nach Veröffentlichung nur um neue States erweitert
+  - Die Spezifikation beschreibt nur Beobachtung, Bewertung und aufbereitete
+    EOS-Daten unter `0_userdata.0.EOS.Battery.*`
+  - Die State-Spezifikation ist als stabile API dokumentiert und wird nach
+    Veröffentlichung nur um neue States erweitert
 
 ## 2026-07-07
 - Added
