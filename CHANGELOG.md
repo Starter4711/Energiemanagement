@@ -10,6 +10,13 @@
   - `knowledge/project_brain.md` um den notwendigen Import-/Deployment-Schritt fuer die Sichtbarkeit im ioBroker ergaenzt
 
 ## 2026-07-08
+- Added
+  - `tools/iobroker/run_iobroker_deployment.sh` als reproduzierbaren Wrapper fuer Inventar, Dry-Run, Apply und Verifikation ergaenzt
+- Changed
+  - `docs/iobroker_deployment_v1.md` um den Codex-gesteuerten Wrapper-Lauf als fuehrenden Einstieg ergaenzt
+  - `knowledge/project_brain.md` um den reproduzierbaren Codex-Wrapper fuer ioBroker-Deployment ergaenzt
+
+## 2026-07-08
 - Changed
   - `knowledge/project_brain.md` auf den freigegebenen Commit `273b4f13e51b88237c58d7247326eb34cc0b2c89` und den freigegebenen Phase-2-Stand von Energy Flow V1 aktualisiert
   - `knowledge/project_brain.md` um die aktuelle Domänenlage von Grid, PV, House und Wallbox im Energy-Flow-Kontext ergaenzt

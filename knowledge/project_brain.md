@@ -130,6 +130,7 @@ Status:
 - `docs/iobroker_deployment_v1.md` dokumentiert den manuellen Importweg und die Sichtpruefung im ioBroker.
 - `tools/iobroker/deploy_repository_to_iobroker.sh` fuehrt den lesenden Dry-Run und den optionalen `--apply`-Import fuer Repository-Artefakte aus.
 - `tools/iobroker/list_repository_assets.sh` und `tools/iobroker/verify_iobroker_import.sh` sind die read-only Hilfsscripte fuer Inventar und Importkontrolle.
+- `tools/iobroker/run_iobroker_deployment.sh` ist der reproduzierbare Codex-Wrapper fuer Inventar, Dry-Run, optionales Apply und Verifikation.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
 - Das Modul-Set ist bewusst klein gehalten, um neue Logik nicht in verstreuten Einzeldateien zu verlieren.

@@ -102,6 +102,30 @@ Das Script:
 - bricht mit klarer Meldung ab, wenn die ioBroker-CLI fehlt
 - faehrt im Dry-Run ohne Aenderung fort
 
+### Codex-gesteuerter Wrapper-Lauf
+
+Der empfohlene Einstieg fuer Codex und reproduzierbare Deployments ist:
+
+- `tools/iobroker/run_iobroker_deployment.sh`
+
+Verwendung:
+
+```bash
+# nur pruefen und anzeigen
+tools/iobroker/run_iobroker_deployment.sh
+
+# echte Aenderungen im ioBroker ausfuehren
+tools/iobroker/run_iobroker_deployment.sh --apply
+```
+
+Dieser Wrapper:
+
+- listet zuerst die Repository-Assets
+- fuehrt danach den Dry-Run des Deployments aus
+- fuehrt bei `--apply` das echte Deployment aus
+- ruft anschliessend die Verifikation auf
+- verhindert, dass der Nutzer die Hilfsscripte einzeln zusammensuchen muss
+
 ### Kontrollhilfe vor dem Deployment
 
 Vor einem Import kann das Inventarscript ausgefuehrt werden:
