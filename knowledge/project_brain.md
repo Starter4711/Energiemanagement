@@ -316,6 +316,11 @@ Stattdessen gilt:
 
 Wenn kein weiterer Auftrag vorliegt, ist der naechste Schritt `Unklar`.
 
+## 8a. Naechster Klärungspunkt
+
+Vor weiterer Implementierung muss die naechste fachlich freigegebene Modulgrenze eindeutig benannt werden.
+Solange diese Freigabe nicht dokumentiert ist, bleibt der naechste Entwicklungsschritt `Unklar`.
+
 ## 9. Dauerhafte Architekturentscheidungen
 
 - GitHub ist Referenz, Historie und Backup.

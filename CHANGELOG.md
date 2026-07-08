@@ -2,6 +2,8 @@
 
 ## 2026-07-08
 - Changed
+  - `knowledge/project_brain.md` um den naechsten Klaerungspunkt vor weiterer Implementierung ergaenzt
+- Changed
   - `knowledge/project_brain.md` auf den freigegebenen Stand nach `638aa9f82c83cf015c9def452c686ddf254280fb` aktualisiert
 - Changed
   - `iobroker/scripts/energiemanagement/Battery_Health_V1.js` auf dem aktuellen Remote-Stand verifiziert: mehrzeilig, `use strict` auf eigener Zeile, Objekt und Manifest vorhanden
