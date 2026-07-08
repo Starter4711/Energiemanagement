@@ -119,6 +119,7 @@ Status:
 - `Battery VIS2 Read-Only V1 State-Mapping` ist dokumentiert und dient als Grundlage fuer die VIS2-Ansicht.
 - Die freigegebene Battery VIS2 Read-Only V1-Ansicht zeigt Summary, Communication, Warnings, Health, SmartShunt und Pack-States und bleibt ohne eigene Fachlogik.
 - `battery.html` ist die fuehrende Pflegequelle fuer die Battery-VIS2-Ansicht; `vis-views.json` ist das generierte Exportartefakt.
+- `Battery V1 Release Status` dokumentiert den freigegebenen Stand der Batteriekomponenten und den naechsten fachlichen Freigabeschritt.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
 - Das Modul-Set ist bewusst klein gehalten, um neue Logik nicht in verstreuten Einzeldateien zu verlieren.
@@ -280,6 +281,7 @@ Bekannte Lage:
 - `Battery VIS2 Read-Only V1` ist implementiert und bleibt weiterhin read-only.
 - `Battery VIS2 Read-Only V1 State-Mapping` ist der naechste Dokumentationsschritt fuer die Batterie-Visualisierung.
 - Health, Empfehlungen, Analytics, Historian, Trigger, Timer und VIS gehoeren nicht in diesen Entwicklungsstand, wenn sie nicht ausdruecklich beauftragt sind.
+- Der freigegebene Battery-V1-Stand umfasst Supervisor, Health und die read-only Battery-VIS2-Ansicht.
 - Die Kommunikationsueberwachung arbeitet mit LastUpdate, AgeSeconds und Status je Quelle.
 - Bekannte Quellen sind SmartShunt, Gobel / Pace BMS, Heltec und MQTT.
 - `Battery_Supervisor_V1` ist der erste echte EOS-Baustein fuer die Batterieebene.
@@ -351,6 +353,7 @@ Die Umsetzung bleibt weiterhin auf die freigegebenen EOS-Battery-States beschrae
 - SmartShunt ist fuehrend fuer Gesamt-SOC und DC-Spannung.
 - `Battery_Supervisor_V1` bleibt die freigegebene Communication-Baseline.
 - `Battery_Health_V1` bleibt ein separater, nicht-aktorischer Health-Baustein.
+- `Battery V1 Release Status` dokumentiert den freigegebenen Gesamtstatus der Batterieebene.
 - Gobel-SOC ist nicht als fuehrende Gesamtgroesse zu verwenden.
 - Aktorische Schreibpfade sind besonders kritisch.
 - MQTT-Steuerpfade, go-e-Pfade und S7-Pfade gelten als live-nah und sensibel.

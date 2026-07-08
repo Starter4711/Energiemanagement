@@ -1,6 +1,12 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Added
+  - `docs/battery_v1_release_status.md` als kompakten Abschlussstatus fuer Battery V1 ergaenzt
+- Changed
+  - `knowledge/project_brain.md` um den freigegebenen Battery-V1-Gesamtstatus ergaenzt
+
+## 2026-07-08
 - Changed
   - `iobroker/vis-2/main/battery.html` und `iobroker/vis-2/main/vis-views.json` gegen die dokumentierte Battery-VIS2-Health-Ansicht verifiziert: Health-Bereich vorhanden, nur EOS-Health-States verwendet, keine Buttons oder Eingaben im Batterie-Block
 
