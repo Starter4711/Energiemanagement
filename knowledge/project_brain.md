@@ -113,6 +113,7 @@ Status:
 - Das neue Energiemanagement ist modular aufgebaut.
 - `Battery_Supervisor_V1` ist der zentrale EOS-Baustein fuer die Batterieebene.
 - Der Supervisor ist eine aufbereitende, nicht-aktorische Sicht auf Batterie und Kommunikation.
+- `Battery_Supervisor_V1` ist als freigegebene Communication-Baseline dokumentiert.
 - `Battery_Health_V1` ist der separate, nicht-aktorische Health-Baustein auf Basis der EOS-Battery-States.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
@@ -261,14 +262,17 @@ Charakter des Repositories:
 
 Aktuell liegt der Fokus auf dem EOS-Batteriemodul, insbesondere auf der Beobachtung und Aufbereitung von Batterie- und Kommunikationszustand.
 Der naechste erklaerte Schritt ist eine einfache, nachvollziehbare Health-Sicht als separater EOS-Baustein, ohne Aktorik oder Empfehlungsschicht.
+Die Health-Sicht ist als separater Baustein freigegeben; weitere fachlich freigegebene Schritte sind in der aktuellen Dokumentation nicht eindeutig benannt.
 
 Bekannte Lage:
 
 - `Battery_Supervisor_V1` bildet die zentrale Batterie- und Kommunikationssicht.
+- `Battery_Supervisor_V1` ist als Communication-Baseline freigegeben.
 - SmartShunt ist die fuehrende Quelle fuer Gesamt-SOC und DC-Spannung.
 - Gobel / Pace BMS und HELTEC liefern Ergaenzungs- und Vergleichsdaten.
 - Kommunikationsueberwachung ist im Skript angelegt.
 - Die Batteriedaten werden unter `0_userdata.0.EOS.Battery.*` als aufbereitete Fachsicht bereitgestellt.
+- `Battery_Health_V1` ist als separater, nicht-aktorischer Health-V1-Baustein freigegeben.
 - Health, Empfehlungen, Analytics, Historian, Trigger, Timer und VIS gehoeren nicht in diesen Entwicklungsstand, wenn sie nicht ausdruecklich beauftragt sind.
 - Die Kommunikationsueberwachung arbeitet mit LastUpdate, AgeSeconds und Status je Quelle.
 - Bekannte Quellen sind SmartShunt, Gobel / Pace BMS, Heltec und MQTT.
@@ -276,6 +280,7 @@ Bekannte Lage:
 - `Battery_Supervisor_V1` soll Batterie- und Kommunikationszustand verdichten, nicht aktorisch steuern.
 - Die langfristige Entwicklungsrichtung ist der Aufbau weiterer EOS-Module auf derselben State- und Doku-Grundlage.
 - VIS2 soll spaeter moeglichst nur verdichtete EOS-States anzeigen.
+- Der letzte freigegebene Commit ist `638aa9f82c83cf015c9def452c686ddf254280fb`.
 
 Offene oder nicht sicher belegte Punkte bleiben `Unklar`, insbesondere dort, wo die Dokumentation bewusst nicht den Produktionsstand vollstaendig inventarisiert.
 
@@ -291,9 +296,9 @@ Roadmap:
 
 Letzter freigegebener Commit:
 
-- `9ac8805` `Expand project brain memory`
+- `638aa9f82c83cf015c9def452c686ddf254280fb` `Verify Battery Health V1 repository state`
 
-Dieser Commit hat `knowledge/project_brain.md` zum Projektgedaechtnis ausgebaut und die leitungstechnischen Regeln, Rollen und Architekturgrundsaetze verdichtet.
+Dieser Commit hat den aktuellen Repository-Stand von `Battery_Health_V1` verifiziert und den freigegebenen Zustand dokumentiert.
 
 ## 8. Naechster Entwicklungsschritt
 
@@ -318,6 +323,8 @@ Wenn kein weiterer Auftrag vorliegt, ist der naechste Schritt `Unklar`.
 - Neue Energiemanagement-Logik gehoert unter `iobroker/scripts/energiemanagement/`.
 - Bestehende Common-Skripte bleiben grundsaetzlich unveraendert.
 - SmartShunt ist fuehrend fuer Gesamt-SOC und DC-Spannung.
+- `Battery_Supervisor_V1` bleibt die freigegebene Communication-Baseline.
+- `Battery_Health_V1` bleibt ein separater, nicht-aktorischer Health-Baustein.
 - Gobel-SOC ist nicht als fuehrende Gesamtgroesse zu verwenden.
 - Aktorische Schreibpfade sind besonders kritisch.
 - MQTT-Steuerpfade, go-e-Pfade und S7-Pfade gelten als live-nah und sensibel.
