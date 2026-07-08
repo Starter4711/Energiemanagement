@@ -106,6 +106,7 @@ Aktuelle Module:
 - `Battery_Supervisor_V1.js`: EOS-Batteriegrundlage mit Kommunikationsueberwachung und aufbereiteter Communication-Baseline.
 - `Battery_Health_V1.js`: einfache EOS-Health-Sicht auf Basis der bestehenden Batterie- und Kommunikations-States.
 - `Energy_Flow_V1.js`: erste produktive EOS-Schicht fuer konsolidierte Energiefluesse und read-only Energy-Flow-States.
+- `Energy_Flow_V1`-Implementierungsplanung: mehrphasige Umsetzungsplanung fuer die weitere Ausarbeitung der Energy-Flow-Baseline.
 - `Pool_VIS2_Zeitplaene.js`: VIS-2-Zeitplan-Synchronisation mit `time-switch.0`.
 - `Codex_Access_Test.js`: Deployment-Test.
 
@@ -117,6 +118,7 @@ Status:
 - `Battery_Supervisor_V1` ist als freigegebene Communication-Baseline dokumentiert.
 - `Battery_Health_V1` ist der separate, nicht-aktorische Health-Baustein auf Basis der EOS-Battery-States.
 - `Energy_Flow_V1` ist als erster produktiver EOS-Baustein fuer die Energiefluss-Ebene implementiert.
+- `Energy_Flow_V1` befindet sich in der Implementierungsplanung.
 - `Battery VIS2 Read-Only V1` ist als implementierter, weiterhin read-only VIS2-Baustein dokumentiert.
 - `Battery VIS2 Read-Only V1 State-Mapping` ist dokumentiert und dient als Grundlage fuer die VIS2-Ansicht.
 - Die freigegebene Battery VIS2 Read-Only V1-Ansicht zeigt Summary, Communication, Warnings, Health, SmartShunt und Pack-States und bleibt ohne eigene Fachlogik.
@@ -298,7 +300,7 @@ Charakter des Repositories:
 
 ## 6. Aktueller Entwicklungsstand
 
-Aktuell liegt der Fokus auf der Batterie als abgeschlossenem EOS-Teil und auf dem implementierten Energy Flow V1 als erster produktiver EOS-Schicht.
+Aktuell liegt der Fokus auf der Batterie als abgeschlossenem EOS-Teil und auf dem implementierten Energy Flow V1 mit zusaetzlicher Implementierungsplanung fuer die weitere Ausarbeitung.
 Weitere fachlich freigegebene Schritte sind in der aktuellen Dokumentation nicht abschliessend benannt.
 
 Bekannte Lage:
@@ -311,6 +313,7 @@ Bekannte Lage:
 - Die Batteriedaten werden unter `0_userdata.0.EOS.Battery.*` als aufbereitete Fachsicht bereitgestellt.
 - `Battery_Health_V1` ist als separater, nicht-aktorischer Health-Baustein Teil des freigegebenen Batterie-Umfangs.
 - `Energy_Flow_V1` ist als erste produktive EOS-Schicht fuer konsolidierte Energiefluesse implementiert.
+- `Energy_Flow_V1` befindet sich in der Implementierungsplanung.
 - `Battery VIS2 Read-Only V1` ist implementiert und bleibt weiterhin read-only.
 - Health, Empfehlungen, Analytics, Historian, Trigger, Timer und VIS gehoeren nicht in diesen Entwicklungsstand, wenn sie nicht ausdruecklich beauftragt sind.
 - Der freigegebene Battery-V1-Stand umfasst Supervisor, Health und die read-only Battery-VIS2-Ansicht als abgeschlossenen Batterieumfang.
@@ -389,6 +392,7 @@ Die Umsetzung bleibt weiterhin auf die freigegebenen EOS-Battery-States beschrae
 - `Battery V1 Release Status` dokumentiert den freigegebenen Gesamtstatus der Batterieebene.
 - `Battery V1` ist als abgeschlossen dokumentiert.
 - `Energy_Flow_V1` ist als erste produktive EOS-Schicht implementiert.
+- `Energy_Flow_V1` befindet sich in der Implementierungsplanung.
 - `e2f538f` und `7cb51af` sind die freigegebenen Energy-Flow-Spezifikationsstaende.
 - `f809eac` implementiert die erste produktive Energy-Flow-Baseline und ist der letzte freigegebene Commit.
 - Gobel-SOC ist nicht als fuehrende Gesamtgroesse zu verwenden.

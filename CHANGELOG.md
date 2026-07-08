@@ -2,6 +2,10 @@
 
 ## 2026-07-08
 - Changed
+  - `knowledge/project_brain.md` um die Kennzeichnung von `Energy_Flow_V1` als in Implementierungsplanung befindlich ergaenzt
+
+## 2026-07-08
+- Changed
   - `knowledge/project_brain.md` um den dauerhaften Entwicklungs- und Reviewprozess samt Vorrang des tatsaechlichen Repositoryinhalts ergaenzt
 
 ## 2026-07-08
