@@ -117,15 +117,14 @@ Status:
 - Der Supervisor ist eine aufbereitende, nicht-aktorische Sicht auf Batterie und Kommunikation.
 - `Battery_Supervisor_V1` ist als freigegebene Communication-Baseline dokumentiert.
 - `Battery_Health_V1` ist der separate, nicht-aktorische Health-Baustein auf Basis der EOS-Battery-States.
-- `Energy_Flow_V1` ist als erster produktiver EOS-Baustein fuer die Energiefluss-Ebene implementiert.
-- `Energy_Flow_V1` befindet sich in der Implementierungsplanung.
+- `Energy_Flow_V1` ist als erster produktiver EOS-Baustein fuer die Energiefluss-Ebene implementiert, in Phase 2 erweitert und nutzt weiterhin ausschliesslich freigegebene EOS- bzw. EOS-intern verdichtete Lesequellen.
 - `Battery VIS2 Read-Only V1` ist als implementierter, weiterhin read-only VIS2-Baustein dokumentiert.
 - `Battery VIS2 Read-Only V1 State-Mapping` ist dokumentiert und dient als Grundlage fuer die VIS2-Ansicht.
 - Die freigegebene Battery VIS2 Read-Only V1-Ansicht zeigt Summary, Communication, Warnings, Health, SmartShunt und Pack-States und bleibt ohne eigene Fachlogik.
 - `battery.html` ist die fuehrende Pflegequelle fuer die Battery-VIS2-Ansicht; `vis-views.json` ist das generierte Exportartefakt.
 - `Battery V1 Release Status` dokumentiert den freigegebenen Stand der Batteriekomponenten und den naechsten fachlichen Freigabeschritt.
-- `Energy Flow V1` ist als erster produktiver EOS-Baustein implementiert und stellt konsolidierte Energiefluesse als read-only EOS-States bereit.
-- `Energy Flow V1` ist mit den freigegebenen Spezifikationsstaenden `e2f538f` und `7cb51af` dokumentiert; `f809eac` implementiert die erste produktive Energy-Flow-Baseline und ist der letzte freigegebene Commit.
+- `Energy Flow V1` ist als erster produktiver EOS-Baustein implementiert, in Phase 2 erweitert und stellt konsolidierte Energiefluesse als read-only EOS-States bereit.
+- `Energy Flow V1` nutzt fuer Grid die dokumentierte EOS-interne Bilanzsicht und bleibt von Rohpfaden getrennt.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
 - Das Modul-Set ist bewusst klein gehalten, um neue Logik nicht in verstreuten Einzeldateien zu verlieren.
@@ -300,7 +299,7 @@ Charakter des Repositories:
 
 ## 6. Aktueller Entwicklungsstand
 
-Aktuell liegt der Fokus auf der Batterie als abgeschlossenem EOS-Teil und auf dem implementierten Energy Flow V1 mit zusaetzlicher Implementierungsplanung fuer die weitere Ausarbeitung.
+Aktuell liegt der Fokus auf der Batterie als abgeschlossenem EOS-Teil und auf dem implementierten, in Phase 2 erweiterten Energy Flow V1.
 Weitere fachlich freigegebene Schritte sind in der aktuellen Dokumentation nicht abschliessend benannt.
 
 Bekannte Lage:
@@ -313,7 +312,7 @@ Bekannte Lage:
 - Die Batteriedaten werden unter `0_userdata.0.EOS.Battery.*` als aufbereitete Fachsicht bereitgestellt.
 - `Battery_Health_V1` ist als separater, nicht-aktorischer Health-Baustein Teil des freigegebenen Batterie-Umfangs.
 - `Energy_Flow_V1` ist als erste produktive EOS-Schicht fuer konsolidierte Energiefluesse implementiert.
-- `Energy_Flow_V1` befindet sich in der Implementierungsplanung.
+- `Energy_Flow_V1` ist in Phase 2 erweitert und bleibt read-only.
 - `Battery VIS2 Read-Only V1` ist implementiert und bleibt weiterhin read-only.
 - Health, Empfehlungen, Analytics, Historian, Trigger, Timer und VIS gehoeren nicht in diesen Entwicklungsstand, wenn sie nicht ausdruecklich beauftragt sind.
 - Der freigegebene Battery-V1-Stand umfasst Supervisor, Health und die read-only Battery-VIS2-Ansicht als abgeschlossenen Batterieumfang.
@@ -344,9 +343,9 @@ Roadmap:
 
 Letzter freigegebener Commit:
 
-- `f809eac` `Implement Energy Flow V1 baseline`
+- `Phase-2-Implementierungsstand von Energy Flow V1`
 
-Dieser Commit implementiert die erste produktive Energy-Flow-Baseline und setzt den freigegebenen Stand fuer die weitere Dokumentation fort.
+Dieser freigegebene Stand erweitert die erste produktive Energy-Flow-Baseline um die Phase-2-Domänenanbindung und setzt den dokumentierten EOS-Stand fort.
 
 ## 8. Naechster Entwicklungsschritt
 

@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 - Changed
+  - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` um die Phase-2-Anbindung der EOS-internen Grid-Bilanzsicht erweitert; Grid wird nun aus der verdichteten Bilanzsicht gelesen, die Energy-Flow-Sicht bleibt read-only
+  - `knowledge/project_brain.md` um den dauerhaft erweiterten Phase-2-Stand von Energy Flow V1 aktualisiert
+
+## 2026-07-08
+- Changed
   - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` auf die Phase-1-Baseline ohne aktive `Summary.Direction`-Semantik reduziert
 
 ## 2026-07-08

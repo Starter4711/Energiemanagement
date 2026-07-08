@@ -7,6 +7,7 @@
 
 const ROOT = '0_userdata.0.EOS.EnergyFlow';
 const BATTERY_ROOT = '0_userdata.0.EOS.Battery';
+const BILANZ_ROOT = '0_userdata.0.Energiemanagement.Bilanz';
 const REFRESH_INTERVAL_MS = 30_000;
 
 const CONFIG = {
@@ -253,6 +254,14 @@ function readBatteryString(suffix) {
     return readString(`${BATTERY_ROOT}.${suffix}`);
 }
 
+function readBilanzNumber(suffix) {
+    return readNumber(`${BILANZ_ROOT}.${suffix}`);
+}
+
+function readBilanzString(suffix) {
+    return readString(`${BILANZ_ROOT}.${suffix}`);
+}
+
 function normalizeStatus(value) {
     if (value === null || value === undefined || value === '') {
         return 'UNKNOWN';
@@ -301,11 +310,56 @@ function buildCommunicationStatus(statuses) {
     return 'UNKNOWN';
 }
 
+function buildCompositeStatus(statuses) {
+    const filtered = statuses
+        .map(normalizeStatus)
+        .filter(status => status !== 'UNKNOWN');
+
+    if (filtered.length === 0) {
+        return 'UNKNOWN';
+    }
+    if (filtered.some(status => status === 'OFFLINE')) {
+        return 'OFFLINE';
+    }
+    if (filtered.some(status => status === 'WARN')) {
+        return 'WARN';
+    }
+    if (filtered.every(status => status === 'OK')) {
+        return 'OK';
+    }
+    return filtered[0] || 'UNKNOWN';
+}
+
+function splitPowerBalance(power) {
+    if (!isKnownNumber(power)) {
+        return { import: null, export: null };
+    }
+
+    if (power >= 0) {
+        return { import: power, export: 0 };
+    }
+
+    return { import: 0, export: Math.abs(power) };
+}
+
 function refresh() {
     const batterySummaryStatus = normalizeStatus(readBatteryString('Summary.Status'));
     const batteryPower = readBatteryNumber('Summary.Power');
     const batterySoc = readBatteryNumber('Summary.SOC');
     const batteryCommunication = normalizeStatus(readBatteryString('Communication.Status'));
+    const gridPower = readBilanzNumber('Summe_W');
+    const gridValidState = getState(`${BILANZ_ROOT}.Gueltig`);
+    const gridValid = Boolean(gridValidState && gridValidState.val === true);
+    const gridError = normalizeStatus(readBilanzString('Fehler'));
+    const gridSplit = splitPowerBalance(gridPower);
+    const gridCommunication = gridValid
+        ? 'OK'
+        : gridError !== 'UNKNOWN' && gridError !== ''
+            ? 'OFFLINE'
+            : isKnownNumber(gridPower)
+                ? 'WARN'
+                : 'UNKNOWN';
+    const gridStatus = gridCommunication;
 
     updateGroup('Battery', {
         status: batterySummaryStatus,
@@ -314,10 +368,10 @@ function refresh() {
     });
 
     updateGroup('Grid', {
-        status: 'UNKNOWN',
-        power: null,
-        import: null,
-        export: null,
+        status: gridStatus,
+        power: gridPower,
+        import: gridSplit.import,
+        export: gridSplit.export,
     });
 
     updateGroup('PV', {
@@ -336,7 +390,7 @@ function refresh() {
     });
 
     const groupStatuses = {
-        Grid: 'UNKNOWN',
+        Grid: gridStatus,
         PV: 'UNKNOWN',
         Battery: batterySummaryStatus,
         House: 'UNKNOWN',
@@ -347,7 +401,12 @@ function refresh() {
         updateCommunication(group, status);
     }
 
+    writeChanged(`${ROOT}.Communication.Grid`, gridCommunication);
+    writeChanged(`${ROOT}.Communication.LastUpdate`, new Date().toISOString());
+    writeChanged(`${ROOT}.Communication.AgeSeconds`, 0);
+
     const overallCommunication = buildCommunicationStatus([
+        gridCommunication,
         normalizeStatus(readBatteryString('Communication.SmartShunt.Status')),
         normalizeStatus(readBatteryString('Communication.Gobel.Status')),
         normalizeStatus(readBatteryString('Communication.Heltec.Status')),
@@ -356,16 +415,15 @@ function refresh() {
     ]);
 
     const knownPowerValues = [
+        isKnownNumber(gridPower) ? gridPower : null,
         isKnownNumber(batteryPower) ? batteryPower : null,
     ].filter(value => value !== null);
 
     const powerBalance = knownPowerValues.length > 0 ? knownPowerValues.reduce((sum, value) => sum + value, 0) : CONFIG.defaults.number;
 
-    writeChanged(`${ROOT}.Summary.Status`, batterySummaryStatus);
+    writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([gridStatus, batterySummaryStatus]));
     writeChanged(`${ROOT}.Summary.PowerBalance`, powerBalance);
     writeChanged(`${ROOT}.Communication.Status`, overallCommunication);
-    writeChanged(`${ROOT}.Communication.LastUpdate`, new Date().toISOString());
-    writeChanged(`${ROOT}.Communication.AgeSeconds`, 0);
 }
 
 try {
