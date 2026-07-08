@@ -1,6 +1,10 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Added
+  - `docs/energy_flow_architecture_review_v1.md` als Architekturreview der Energy-Flow-Spezifikation mit Freigabeempfehlung ergaenzt
+
+## 2026-07-08
 - Changed
   - `knowledge/project_brain.md` vollstaendig von alten Battery-VIS2-, Battery-Health- und Commit-Referenzen bereinigt und auf `e291134` als letzten freigegebenen Commit konsolidiert
 
