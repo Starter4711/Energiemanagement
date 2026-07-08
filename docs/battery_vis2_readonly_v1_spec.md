@@ -43,6 +43,7 @@ Die Ansicht darf die folgenden Bereiche anzeigen:
 - Summary
 - Communication
 - Warnings
+- Health
 - SmartShunt-Grundwerte
 - Pack-Grundwerte
 
@@ -57,6 +58,10 @@ Die Communication zeigt den Kommunikationsstatus je Quelle inklusive der bereits
 ### Warnings
 
 Die Warnings zeigen nur die bereits abgeleiteten EOS-Warnungen.
+
+### Health
+
+Die Health zeigt den separaten read-only Health-Status, den Score, die letzte Bewertung und die Begruendungen.
 
 ### SmartShunt-Grundwerte
 

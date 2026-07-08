@@ -1,6 +1,12 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Changed
+  - `docs/battery_vis2_readonly_v1_spec.md` um den read-only Health-Anzeigebereich fuer Battery VIS2 Read-Only V1 ergaenzt
+  - `docs/vis2_source_of_truth.md` um die Einordnung von Health als Battery-View bei reinen EOS-Health-States ergaenzt
+  - `knowledge/project_brain.md` um die explizite Battery-VIS2-Sicht auf Health ergaenzt
+
+## 2026-07-08
 - Added
   - `docs/battery_vis2_documentation_check_v1.md` als reinen Konsistenzcheck fuer die Battery-VIS2-Dokumentation ergaenzt
 

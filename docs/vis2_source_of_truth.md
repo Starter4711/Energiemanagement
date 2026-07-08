@@ -30,6 +30,7 @@ Die Datei dient als importierbarer Gesamtstand fuer die VIS2-Ansichten, ist aber
 - Neue oder geaenderte Battery-VIS2-Inhalte werden immer in `battery.html` begonnen.
 - Danach wird der Export neu gebaut, damit `vis-views.json` mit dem HTML-Stand uebereinstimmt.
 - Die VIS2-Batterieansicht bleibt dabei read-only und greift nur auf EOS-Battery-States zu.
+- Health gehoert zur Battery-View, sofern es ausschliesslich ueber `0_userdata.0.EOS.Battery.Health.*` gelesen wird.
 
 ## Einordnung
 
