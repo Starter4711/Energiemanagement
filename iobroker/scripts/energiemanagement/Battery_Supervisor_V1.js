@@ -463,6 +463,7 @@ STATES.push(
         unit: '%',
         desc: 'Untere SOC-Grenze fuer Bewertung und Warnlogik',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.MaxSOC`,
@@ -471,6 +472,7 @@ STATES.push(
         unit: '%',
         desc: 'Obere SOC-Grenze fuer Bewertung und Warnlogik',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.MaxChargeCurrent`,
@@ -479,6 +481,7 @@ STATES.push(
         unit: 'A',
         desc: 'Maximal zulaessiger Ladestrom',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.MaxDischargeCurrent`,
@@ -487,6 +490,7 @@ STATES.push(
         unit: 'A',
         desc: 'Maximal zulaessiger Entladestrom',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.WallboxSupportMaxPower`,
@@ -495,6 +499,7 @@ STATES.push(
         unit: 'W',
         desc: 'Maximale Batterieleistung fuer Wallbox-Unterstuetzung',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.WallboxSupportMinSOC`,
@@ -503,6 +508,7 @@ STATES.push(
         unit: '%',
         desc: 'Untere SOC-Grenze fuer Wallbox-Unterstuetzung',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.TargetVoltageSummer`,
@@ -511,6 +517,7 @@ STATES.push(
         unit: 'V',
         desc: 'Zielspannung fuer sommerliche Ladebewertung',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.TargetVoltageWinter`,
@@ -519,6 +526,7 @@ STATES.push(
         unit: 'V',
         desc: 'Zielspannung fuer winterliche Ladebewertung',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.TemperatureWarning`,
@@ -527,6 +535,7 @@ STATES.push(
         unit: '°C',
         desc: 'Temperatur-Warnschwelle',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.TemperatureCritical`,
@@ -535,6 +544,7 @@ STATES.push(
         unit: '°C',
         desc: 'Temperatur-Kritischschwelle',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.VDiffWarningNormal`,
@@ -543,6 +553,7 @@ STATES.push(
         unit: 'mV',
         desc: 'VDiff-Warnschwelle fuer normalen Betrieb',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.VDiffCriticalNormal`,
@@ -551,6 +562,7 @@ STATES.push(
         unit: 'mV',
         desc: 'VDiff-Kritischschwelle fuer normalen Betrieb',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.VDiffWarningBalancing`,
@@ -559,6 +571,7 @@ STATES.push(
         unit: 'mV',
         desc: 'VDiff-Warnschwelle waehrend Balancing',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Settings.VDiffCriticalBalancing`,
@@ -567,6 +580,7 @@ STATES.push(
         unit: 'mV',
         desc: 'VDiff-Kritischschwelle waehrend Balancing',
         defaultValue: CONFIG.defaults.number,
+        writable: true,
     },
     {
         id: `${ROOT}.Statistics.Today`,
@@ -616,7 +630,7 @@ function createBatteryState(definition) {
         unit: definition.unit,
         desc: definition.desc,
         read: true,
-        write: true,
+        write: definition.writable === true,
     });
 }
 
