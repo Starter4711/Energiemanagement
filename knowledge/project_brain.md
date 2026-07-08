@@ -177,6 +177,35 @@ Verbindliche Arbeitsregeln:
 - Wiederholungen werden vermieden, wenn der notwendige Kontext bereits in der Wissensbasis steht.
 - Rueckfragen sind nur sinnvoll, wenn eine Entscheidung sonst nicht belastbar getroffen werden kann.
 
+## 4a. Entwicklungs- und Reviewprozess
+
+### Entwicklungsprozess
+
+1. ChatGPT definiert Architektur, Spezifikation und Abnahmekriterien.
+2. Codex implementiert nicht nur die Aufgabe, sondern fuehrt vor jedem Commit ein verpflichtendes Selbstaudit durch.
+3. Das Selbstaudit umfasst mindestens:
+   - vollstaendige Pruefung gegen `knowledge/project_brain.md`
+   - Pruefung gegen alle referenzierten Spezifikationen
+   - Pruefung gegen den aktuellen Codex-Auftrag
+   - `git diff --check`
+   - Kontrolle auf TODOs, Dummyfunktionen, Platzhalter und unerwuenschte Erweiterungen
+   - Pruefung aller geaenderten Dateien auf Vollstaendigkeit und Konsistenz
+4. Erst nach erfolgreichem Selbstaudit darf committet und gepusht werden.
+5. ChatGPT fuehrt anschliessend einen unabhaengigen Architektur- und Code-Review durch.
+6. Dabei gilt:
+   - jede geaenderte Datei wird vollstaendig gelesen
+   - jede Aenderung wird mit Auftrag, `knowledge/project_brain.md` und den Spezifikationen verglichen
+   - Entscheidungen werden ausschliesslich anhand des tatsaechlichen Inhalts getroffen
+   - Vermutungen oder Interpretationen sind unzulaessig
+7. Erst danach erfolgt die Entscheidung:
+   - Freigeben
+   - Korrektur erforderlich
+
+### Verbindliche Prioritaet
+
+- Repositoryinhalt hat Vorrang vor Commitbeschreibung oder Zusammenfassungen.
+- Architekturentscheidungen werden ausschliesslich anhand des tatsaechlichen Dateiinhalts getroffen.
+
 Ressourcenschonung:
 
 - Nur abgeleitete Werte, Status und Alarme speichern, wenn sinnvoll.

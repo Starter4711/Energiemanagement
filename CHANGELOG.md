@@ -2,6 +2,10 @@
 
 ## 2026-07-08
 - Changed
+  - `knowledge/project_brain.md` um den dauerhaften Entwicklungs- und Reviewprozess samt Vorrang des tatsaechlichen Repositoryinhalts ergaenzt
+
+## 2026-07-08
+- Changed
   - `knowledge/project_brain.md` auf `f809eac` als letzten freigegebenen Commit und auf die implementierte Energy-Flow-Baseline aktualisiert
 
 ## 2026-07-08
