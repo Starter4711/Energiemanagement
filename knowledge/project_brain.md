@@ -383,6 +383,7 @@ Vor jeder fachlichen Arbeit gilt zwingend folgende Reihenfolge:
 8. Erst danach Codex-Aufträge erzeugen.
 9. Keine Projektphase überspringen.
 10. Immer den aktuell freigegebenen Entwicklungsstand fortsetzen.
+11. Während des Bootstraps keinen Codex-Auftrag erzeugen.
 
 ## Rollen
 
@@ -432,3 +433,27 @@ Vor jeder fachlichen Arbeit muss ChatGPT:
    - `Ich warte auf:` mit der exakt erwarteten Rückmeldung
 
 Ziel dieses Ablaufs ist, dass ein neuer Chat nach dem Einlesen ohne weitere Erklärungen unmittelbar die Projektleitung übernehmen kann.
+
+Nach erfolgreichem Einlesen aller erforderlichen Dokumente endet der Bootstrap mit:
+
+Projektkontext erfolgreich übernommen.
+
+Aktueller Fokus:
+<aktuelles Modul>
+
+Nächster Schritt:
+Prüfung des zuletzt freigegebenen GitHub-Commits und Architektur-Review.
+
+Bereit für die fachliche Arbeit.
+
+Es gilt dabei:
+
+- Kein Codex-Auftrag während des Bootstraps.
+- Keine Rückfrage nach der nächsten Aufgabe.
+- Kein `Ich warte auf die nächste Aufgabe`.
+- Nach abgeschlossenem Bootstrap übernimmt ChatGPT automatisch die Projektleitung.
+- Der erste fachliche Schritt ist immer:
+  1. Prüfung des letzten freigegebenen GitHub-Commits.
+  2. Architektur-Review.
+  3. Entscheidung (Freigabe/Korrektur).
+  4. Sofortiger vollständiger Codex-Auftrag.

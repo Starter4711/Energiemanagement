@@ -2,6 +2,7 @@
 
 ## 2026-07-08
 - Added
+  - `knowledge/project_brain.md` um Bootstrap-Abschluss und Projektleitung erweitert
   - `knowledge/project_brain.md` um Startup Checklist und Rollen erweitert
   - `AGENTS.md` um die ChatGPT Startup Sequence ergaenzt
   - `knowledge/project_brain.md` um Startup-Procedure und Projektpflege erweitert
