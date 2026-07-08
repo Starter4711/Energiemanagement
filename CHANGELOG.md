@@ -2,6 +2,13 @@
 
 ## 2026-07-08
 - Added
+  - `iobroker/scripts/energiemanagement/Battery_Morning_View_V1.js` als neue EOS-Morgenblick-Verdichtung fuer die Batterie ergaenzt
+  - `iobroker/objects/energiemanagement.Battery_Morning_View_V1.json` und `iobroker/manifest.json` um das Scriptobjekt fuer `script.js.energiemanagement.Battery_Morning_View_V1` ergaenzt
+- Changed
+  - `iobroker/vis-2/main/battery.html`, `iobroker/vis-2/main/vis-views.json` und `iobroker/vis-2/main/vis-user.css` um die visuelle Morgenblick-Kachel erweitert
+
+## 2026-07-08
+- Added
   - `iobroker/objects/energiemanagement.Battery_Supervisor_V1.json` als echtes ioBroker-Scriptobjekt fuer `script.js.energiemanagement.Battery_Supervisor_V1` ergaenzt
 - Changed
   - `iobroker/objects/energiemanagement.Battery_Health_V1.json` und `iobroker/objects/energiemanagement.Energy_Flow_V1.json` auf vollstaendige Scriptobjekte mit `common.source` aktualisiert

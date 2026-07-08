@@ -12,6 +12,55 @@
     </div>
   </header>
 
+  <section class="em-morning-panel" data-state="{0_userdata.0.EOS.Battery.Morning.Status}">
+    <div class="em-morning-head">
+      <div>
+        <span class="em-morning-kicker">MORGENBLICK</span>
+        <h2>{0_userdata.0.EOS.Battery.Morning.Status}</h2>
+      </div>
+      <div class="em-morning-score">
+        <span>Score</span>
+        <strong>{0_userdata.0.EOS.Battery.Morning.Score}</strong>
+      </div>
+    </div>
+    <div class="em-morning-grid">
+      <article class="em-card">
+        <span>SOC</span>
+        <strong>{0_userdata.0.EOS.Battery.Morning.SOC}%</strong>
+        <small>aktueller Ladezustand</small>
+      </article>
+      <article class="em-card">
+        <span>Power</span>
+        <strong>{0_userdata.0.EOS.Battery.Morning.Power} W</strong>
+        <small>{0_userdata.0.EOS.Battery.Morning.Direction}</small>
+      </article>
+      <article class="em-card">
+        <span>Spannung</span>
+        <strong>{0_userdata.0.EOS.Battery.Morning.Voltage} V</strong>
+        <small>aktuelle Batteriespannung</small>
+      </article>
+      <article class="em-card">
+        <span>Strom</span>
+        <strong>{0_userdata.0.EOS.Battery.Morning.Current} A</strong>
+        <small>aktuelle Batterieleistung</small>
+      </article>
+      <article class="em-card">
+        <span>Health</span>
+        <strong>{0_userdata.0.EOS.Battery.Morning.HealthStatus}</strong>
+        <small>{0_userdata.0.EOS.Battery.Morning.HealthScore}%</small>
+      </article>
+      <article class="em-card">
+        <span>Kommunikation</span>
+        <strong>{0_userdata.0.EOS.Battery.Morning.CommunicationStatus}</strong>
+        <small>Gesamtzustand</small>
+      </article>
+    </div>
+    <div class="em-morning-reasons">
+      <span>Gründe</span>
+      <strong class="em-list-value">{0_userdata.0.EOS.Battery.Morning.Reasons}</strong>
+    </div>
+  </section>
+
   <section class="em-battery-section">
     <h2>Summary</h2>
     <div class="em-summary-grid">

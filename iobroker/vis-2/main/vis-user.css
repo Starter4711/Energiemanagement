@@ -74,6 +74,26 @@ h2 { margin: 0 0 10px; font-size: 15px; font-weight: 750; letter-spacing: 0; }
 .em-detail-label { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; color: #aeb8bb; font-size: 12px; }
 .em-detail-label b { color: #79d69e; font-size: 23px; line-height: 1; }
 .em-summary-grid, .em-comm-grid, .em-health-grid, .em-values-grid, .em-flag-grid { display: grid; gap: 8px; }
+.em-morning-panel { margin-top: 18px; padding: 16px; border: 1px solid #4c5860; border-radius: 12px; background: linear-gradient(180deg, rgba(20, 27, 30, 0.98), rgba(14, 18, 20, 0.98)); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22); }
+.em-morning-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.em-morning-kicker { display: block; color: #79d69e; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; }
+.em-morning-head h2 { margin: 4px 0 0; font-size: 28px; }
+.em-morning-score { min-width: 104px; padding: 10px 12px; border-radius: 10px; background: #182126; border: 1px solid #3f4a4f; text-align: right; }
+.em-morning-score span { display: block; color: #98a4a8; font-size: 11px; }
+.em-morning-score strong { display: block; margin-top: 2px; color: #f4f7f8; font-size: 28px; }
+.em-morning-grid { display: grid; gap: 8px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 14px; }
+.em-morning-grid .em-card { min-height: 88px; }
+.em-morning-reasons { margin-top: 12px; padding: 12px; border-radius: 10px; border: 1px solid #3b4549; background: rgba(17, 22, 24, 0.94); }
+.em-morning-reasons span { display: block; color: #98a4a8; font-size: 11px; margin-bottom: 6px; }
+.em-morning-reasons .em-list-value { display: block; white-space: pre-wrap; line-height: 1.45; font-size: 13px; }
+.em-morning-panel[data-state="OK"] .em-morning-score strong,
+.em-morning-panel[data-state="OK"] .em-morning-kicker { color: #79d69e; }
+.em-morning-panel[data-state="WARN"] .em-morning-score strong,
+.em-morning-panel[data-state="WARN"] .em-morning-kicker { color: #e7c75f; }
+.em-morning-panel[data-state="CRITICAL"] .em-morning-score strong,
+.em-morning-panel[data-state="CRITICAL"] .em-morning-kicker { color: #e37474; }
+.em-morning-panel[data-state="UNKNOWN"] .em-morning-score strong,
+.em-morning-panel[data-state="UNKNOWN"] .em-morning-kicker { color: #98a4a8; }
 .em-summary-grid, .em-comm-grid, .em-health-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .em-values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .em-comm-card strong, .em-health-grid strong, .em-values-grid strong { margin-top: 6px; font-size: 18px; }
@@ -178,6 +198,7 @@ h2 { margin: 0 0 10px; font-size: 15px; font-weight: 750; letter-spacing: 0; }
   .em-packs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .em-battery-page { display: block; max-width: 1000px; }
   .em-battery-page section { padding-top: 20px; }
+  .em-morning-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .em-summary-grid, .em-comm-grid, .em-health-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .em-values-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .em-flag-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }

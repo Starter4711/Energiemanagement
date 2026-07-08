@@ -1,5 +1,5 @@
 {
-  "count": 68,
+  "count": 69,
   "exportedAt": "2026-07-07T17:54:47.083662+00:00",
   "objects": [
     {
@@ -568,6 +568,15 @@
       "enabled": false,
       "objectFile": "iobroker/objects/energiemanagement.Battery_Supervisor_V1.json",
       "scriptFile": "iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js"
+    },
+    {
+      "id": "script.js.energiemanagement.Battery_Morning_View_V1",
+      "name": "Battery_Morning_View_V1",
+      "type": "script",
+      "engineType": "Javascript/js",
+      "enabled": false,
+      "objectFile": "iobroker/objects/energiemanagement.Battery_Morning_View_V1.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Battery_Morning_View_V1.js"
     },
     {
       "id": "script.js.energiemanagement.Battery_Health_V1",
