@@ -29,6 +29,7 @@ const LEVEL_PRIORITY = {
 
 const PACKS = [1, 2, 3, 4];
 const HELTEC_MAX_CELLS = 16;
+const COMMUNICATION_REFRESH_INTERVAL_MS = 30_000;
 
 const STATES = [
     {
@@ -701,6 +702,7 @@ try {
     }
 
     updateBatterySupervisor();
+    setInterval(updateBatterySupervisor, COMMUNICATION_REFRESH_INTERVAL_MS);
 
     emit('info', `Version ${CONFIG.version} geladen.`);
     emit('info', `Erzeugte States: ${STATES.length}.`);
