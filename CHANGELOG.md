@@ -2,6 +2,10 @@
 
 ## 2026-07-08
 - Changed
+  - `knowledge/project_brain.md` um die Beschreibung von `7cb51af` als Korrektur des Projektkontexts nach dem Start von Energy Flow V1 praezisiert
+
+## 2026-07-08
+- Changed
   - `knowledge/project_brain.md` um die freigegebenen Energy-Flow-Spezifikationsstaende `e2f538f` und `7cb51af` sowie den letzten freigegebenen Commit `7cb51af` praezisiert
 
 ## 2026-07-08
