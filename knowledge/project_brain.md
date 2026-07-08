@@ -103,7 +103,7 @@ Aktuelle Module:
 - `Bilanz_Zaehlpunkte.js`: saldierte Netzbilanz.
 - `Batterie_Zellspannungen.js`: Zellspreizung, Trend und Alarm je Pack.
 - `Batterie_BMS_Heltec_Vergleich.js`: BMS-/HELTEC-Vergleich je Pack.
-- `Battery_Supervisor_V1.js`: EOS-Batteriegrundlage mit Kommunikationsueberwachung und aufbereiteter Batterie-Sicht.
+- `Battery_Supervisor_V1.js`: EOS-Batteriegrundlage mit Kommunikationsueberwachung und aufbereiteter Communication-Baseline.
 - `Battery_Health_V1.js`: einfache EOS-Health-Sicht auf Basis der bestehenden Batterie- und Kommunikations-States.
 - `Pool_VIS2_Zeitplaene.js`: VIS-2-Zeitplan-Synchronisation mit `time-switch.0`.
 - `Codex_Access_Test.js`: Deployment-Test.
@@ -115,8 +115,9 @@ Status:
 - Der Supervisor ist eine aufbereitende, nicht-aktorische Sicht auf Batterie und Kommunikation.
 - `Battery_Supervisor_V1` ist als freigegebene Communication-Baseline dokumentiert.
 - `Battery_Health_V1` ist der separate, nicht-aktorische Health-Baustein auf Basis der EOS-Battery-States.
-- `Battery VIS2 Read-Only V1` ist als spezifizierter und implementierter read-only VIS2-Baustein dokumentiert.
+- `Battery VIS2 Read-Only V1` ist als implementierter, weiterhin read-only VIS2-Baustein dokumentiert.
 - `Battery VIS2 Read-Only V1 State-Mapping` ist dokumentiert und dient als Grundlage fuer die VIS2-Ansicht.
+- Die freigegebene Battery VIS2 Read-Only V1-Ansicht zeigt nur EOS-Battery-States und bleibt ohne eigene Fachlogik.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
 - Das Modul-Set ist bewusst klein gehalten, um neue Logik nicht in verstreuten Einzeldateien zu verlieren.
@@ -188,7 +189,7 @@ Supervisor-Philosophie:
 
 - Der Supervisor beobachtet, bewertet und strukturiert.
 - Er ersetzt keine Hardware-Schutzfunktionen.
-- Er liefert keine Empfehlungen, wenn diese nicht explizit gefordert sind.
+- Er liefert die freigegebene Communication-Baseline ohne Recommendation-Gruppe.
 - Er speichert nur die fachlich notwendigen abgeleiteten Stati.
 - Seine Aufgabe ist Verdichtung, nicht Steuerungsersatz.
 - Er soll Zustandswechsel sichtbar machen, ohne das System mit Nebenlogik zu ueberfrachten.
@@ -275,7 +276,7 @@ Bekannte Lage:
 - Kommunikationsueberwachung ist im Skript angelegt.
 - Die Batteriedaten werden unter `0_userdata.0.EOS.Battery.*` als aufbereitete Fachsicht bereitgestellt.
 - `Battery_Health_V1` ist als separater, nicht-aktorischer Health-V1-Baustein freigegeben.
-- `Battery VIS2 Read-Only V1` ist der naechste spezifizierte, aber noch nicht implementierte Schritt fuer die Batterie-Visualisierung.
+- `Battery VIS2 Read-Only V1` ist implementiert und bleibt weiterhin read-only.
 - `Battery VIS2 Read-Only V1 State-Mapping` ist der naechste Dokumentationsschritt fuer die Batterie-Visualisierung.
 - Health, Empfehlungen, Analytics, Historian, Trigger, Timer und VIS gehoeren nicht in diesen Entwicklungsstand, wenn sie nicht ausdruecklich beauftragt sind.
 - Die Kommunikationsueberwachung arbeitet mit LastUpdate, AgeSeconds und Status je Quelle.
@@ -285,8 +286,8 @@ Bekannte Lage:
 - Die langfristige Entwicklungsrichtung ist der Aufbau weiterer EOS-Module auf derselben State- und Doku-Grundlage.
 - VIS2 soll spaeter moeglichst nur verdichtete EOS-States anzeigen.
 - Der letzte freigegebene Commit ist `638aa9f82c83cf015c9def452c686ddf254280fb`.
-- Die neue VIS2-Batterieansicht ist derzeit nur spezifiziert, nicht implementiert.
-- Das State-Mapping fuer Battery VIS2 Read-Only V1 ist dokumentiert, aber die Visualisierung selbst bleibt unimplementiert.
+- Die neue VIS2-Batterieansicht ist implementiert und bleibt read-only.
+- Das State-Mapping fuer Battery VIS2 Read-Only V1 ist dokumentiert und die Visualisierung selbst bleibt read-only.
 
 Offene oder nicht sicher belegte Punkte bleiben `Unklar`, insbesondere dort, wo die Dokumentation bewusst nicht den Produktionsstand vollstaendig inventarisiert.
 

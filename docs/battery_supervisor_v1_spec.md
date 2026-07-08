@@ -3,7 +3,7 @@
 ## Zweck
 
 Battery Supervisor V1 ist der erste echte EOS-Baustein fuer den Batteriebereich.
-Er fasst die fuer den Betrieb relevanten Batterieinformationen zusammen, bewertet sie im Kontext und stellt daraus aufbereitete Zustands-, Warn- und Empfehlungssignale fuer VIS2 und nachgelagerte Auswertungen bereit.
+Er fasst die fuer den Betrieb relevanten Batterieinformationen zusammen und stellt daraus die freigegebene Communication-Baseline fuer VIS2 und nachgelagerte Auswertungen bereit.
 
 V1 ist bewusst als Beobachtungs- und Bewertungsebene definiert.
 Sie schafft eine gemeinsame, konsolidierte Sicht auf Batterie, Packs und Kommunikationszustand, ohne selbst Steuerungsentscheidungen an Victron, Cerbo oder andere Aktoren zu schreiben.
@@ -44,11 +44,9 @@ Die geplante Struktur ist:
 
 - `0_userdata.0.EOS.Battery.Summary.*`
 - `0_userdata.0.EOS.Battery.SmartShunt.*`
-- `0_userdata.0.EOS.Battery.Health.*`
 - `0_userdata.0.EOS.Battery.Packs.*`
 - `0_userdata.0.EOS.Battery.Communication.*`
 - `0_userdata.0.EOS.Battery.Warnings.*`
-- `0_userdata.0.EOS.Battery.Recommendation.*`
 - `0_userdata.0.EOS.Battery.Settings.*`
 
 ## EOS-State-Gruppen
@@ -71,11 +69,6 @@ Die SmartShunt-Gruppe fuehrt die wesentlichen Messwerte der Gesamtbatterie:
 - Batteriespannung
 - Batteriestrom
 - Lade- und Entladesicht
-
-### Health
-
-Die Health-Gruppe beschreibt den fachlichen Gesundheits- und Plausibilitaetszustand.
-Sie soll keine Lebensdaueranalyse ersetzen, sondern nur den aktuellen Bewertungszustand abbilden.
 
 ### Packs
 
@@ -101,63 +94,35 @@ Die Communication-Gruppe dokumentiert die technische Erreichbarkeit und Aktualit
 Die Warnings-Gruppe enthaelt aufbereitete Beobachtungen und Warnungen.
 Unklare oder nur teilweise belastbare Zustaende sollen hier zuerst als Beobachtung erscheinen, nicht sofort als harter Fehler.
 
-### Recommendation
-
-Die Recommendation-Gruppe fasst nicht-aktorische Empfehlungen fuer den weiteren Betrieb zusammen.
-Sie ist bewusst von einer echten Steuerung getrennt und darf keine direkten Schreibpfade ersetzen.
-
 ### Settings
 
-Die Settings-Gruppe dokumentiert die fuer die Bewertung verwendeten Schwellen und Zielwerte.
-So bleibt fuer VIS2 und spaetere Diagnose nachvollziehbar, mit welchen Parametern der Supervisor arbeitet.
+Die Settings-Gruppe dokumentiert ausschliesslich die fuer die Kommunikationsbewertung verwendeten Schwellenwerte.
+So bleibt fuer VIS2 und spaetere Diagnose nachvollziehbar, mit welchen Parametern der Supervisor die Communication-Baseline bildet.
 
 ## Wichtige Settings
 
 Folgende Einstellungen sind fuer V1 relevant:
 
-- `VDiff-Warnung normal`
-- `VDiff-kritisch normal`
-- `VDiff-Warnung Balancing/hoher SOC`
-- `VDiff-kritisch Balancing/hoher SOC`
-- `Temperatur-Warnung`
-- `Temperatur-kritisch`
-- `Min-SOC`
-- `Max-SOC`
-- `MaxChargeCurrent_A`
-- `MaxDischargeCurrent_A`
-- `WallboxSupportMaxPower_W`
-- `WallboxSupportMinSoc_Percent`
-- `TargetVoltageSummer_V` ca. `53,6 V`
-- `TargetVoltageWinter_V` ca. `54,4 V`
+- `CommunicationWarningTimeout_s`
+- `CommunicationOfflineTimeout_s`
 
-Die Settings dienen der Nachvollziehbarkeit und der kontextbezogenen Bewertung.
+Die Settings dienen der Nachvollziehbarkeit und der Kommunikationsbewertung.
 Sie sind keine eigenstaendige Steuerungslogik.
-
-## Bewertungslogik V1
-
-Battery Supervisor V1 bewertet den Kontext, nicht einzelne Werte isoliert.
-
-- VDiff bis ca. `100 mV` kann bei hohem SOC und aktivem Balancing normal sein.
-- Bei niedrigerem SOC ohne Balancing wird dieselbe Abweichung strenger bewertet.
-- Unklare Zustaende sollen als Beobachtung oder Warnung behandelt werden, nicht sofort als Fehler.
-- Die Batterieaufnahme haengt von SOC, Spannung, Temperatur und BMS-Limits ab.
-- Eine nicht erreichte Soll-Ladeleistung ist nicht automatisch ein Fehler.
-
-Die Bewertung orientiert sich damit an Betriebszustand, Quelle und erwartbarem Verhalten der Batterie.
 
 ## VIS2-Nutzung
 
-VIS2 liest spaeter nur aufbereitete EOS-Daten.
+VIS2 liest nur aufbereitete EOS-Daten.
 Die Batterieseite zeigt dabei:
 
 - Status
 - SmartShunt
-- Health
 - Packs
-- wichtige Settings
+- Communication
+- Warnings
+- Communication-Settings
 
 Zellvergleich und Grafana bleiben in Unterseiten und Detailansichten.
-Die Hauptseite soll bewusst kompakt bleiben und nur die wesentlichen Supervisor-Ergebnisse anzeigen.
+Die Hauptseite soll bewusst kompakt bleiben und nur die freigegebene Supervisor-Baseline anzeigen.
 
 ## Abgrenzung zu spaeteren Versionen
 
@@ -165,9 +130,7 @@ V1 ist die erste stabile Beobachtungs- und Bewertungsebene fuer EOS-Batteriedate
 Spaetere Versionen koennen ergaenzen:
 
 - feinere Diagnose
-- differenziertere Empfehlungen
 - strategische Ableitungen
 - eventuell weitere Visualisierungsebenen
 
 Diese Erweiterungen duerfen die hier festgehaltene Abgrenzung von V1 nicht aufweichen.
-

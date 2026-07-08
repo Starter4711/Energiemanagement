@@ -2,7 +2,7 @@
 
 ## Zweck
 
-Battery VIS2 Read-Only V1 beschreibt eine spaetere VIS2-Batterieansicht, die ausschliesslich auf bereits aufbereiteten EOS-States unter `0_userdata.0.EOS.Battery.*` basiert.
+Battery VIS2 Read-Only V1 ist implementiert und beschreibt die read-only VIS2-Batterieansicht, die ausschliesslich auf bereits aufbereiteten EOS-States unter `0_userdata.0.EOS.Battery.*` basiert.
 
 Die Ansicht dient der Anzeige und Diagnose. Sie darf keine Regelinstanz sein und keine Rohquellen direkt zusammenfuehren.
 
@@ -13,6 +13,7 @@ Die Ansicht dient der Anzeige und Diagnose. Sie darf keine Regelinstanz sein und
 3. VIS2 greift niemals direkt auf Modbus, MQTT, Alias-Pfade oder Adapter-Rohpfade zu.
 4. Keine Fachlogik gehoert in die Visualisierung.
 5. Nicht sicher belegte Inhalte bleiben `Unklar`.
+6. Der Implementierungsstand bleibt read-only und wird nicht zur Regelinstanz ausgebaut.
 
 ## Erlaubte Datenquellen
 
@@ -42,7 +43,6 @@ Die Ansicht darf die folgenden Bereiche anzeigen:
 - Summary
 - Communication
 - Warnings
-- Health
 - SmartShunt-Grundwerte
 - Pack-Grundwerte
 
@@ -58,10 +58,6 @@ Die Communication zeigt den Kommunikationsstatus je Quelle inklusive der bereits
 
 Die Warnings zeigen nur die bereits abgeleiteten EOS-Warnungen.
 
-### Health
-
-Die Health zeigt den separaten Health-Status, den Score, die letzte Bewertung und die Begruendungen.
-
 ### SmartShunt-Grundwerte
 
 Die SmartShunt-Grundwerte zeigen die bestehenden EOS-States fuer SOC, Spannung, Strom, Leistung und weitere bereits freigegebene Basiswerte.
@@ -75,7 +71,7 @@ Die Pack-Grundwerte zeigen die bestehenden EOS-States fuer Packspannung, Packstr
 Battery VIS2 Read-Only V1 darf nicht:
 
 - eigene Berechnungen aus Rohquellen ausfuehren
-- Warnungen, Health oder Status selbst neu bewerten
+- Warnungen oder Status selbst neu bewerten
 - Aktorik ausloesen
 - MQTT-, Modbus- oder Alias-Rohdaten direkt lesen
 - separate Steuerlogik enthalten
@@ -85,6 +81,4 @@ Battery VIS2 Read-Only V1 darf nicht:
 
 - Unklar, welche genaue visuelle Gliederung die spaetere Batterieansicht erhalten soll.
 - Unklar, welche States in den Pack-Grundwerten spaeter als Hauptanzeige und welche nur als Detail angezeigt werden.
-- Unklar, ob die Health-Gruppe in der VIS2-Hauptansicht oder nur in einer Detailansicht erscheinen soll.
 - Unklar, ob es fuer Battery VIS2 Read-Only V1 eine eigene Unterseite oder eine Einbindung in eine bestehende VIS2-Struktur geben soll.
-
