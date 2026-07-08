@@ -104,6 +104,7 @@ Aktuelle Module:
 - `Batterie_Zellspannungen.js`: Zellspreizung, Trend und Alarm je Pack.
 - `Batterie_BMS_Heltec_Vergleich.js`: BMS-/HELTEC-Vergleich je Pack.
 - `Battery_Supervisor_V1.js`: EOS-Batteriegrundlage mit Kommunikationsueberwachung und aufbereiteter Batterie-Sicht.
+- `Battery_Health_V1.js`: einfache EOS-Health-Sicht auf Basis der bestehenden Batterie- und Kommunikations-States.
 - `Pool_VIS2_Zeitplaene.js`: VIS-2-Zeitplan-Synchronisation mit `time-switch.0`.
 - `Codex_Access_Test.js`: Deployment-Test.
 
@@ -112,6 +113,7 @@ Status:
 - Das neue Energiemanagement ist modular aufgebaut.
 - `Battery_Supervisor_V1` ist der zentrale EOS-Baustein fuer die Batterieebene.
 - Der Supervisor ist eine aufbereitende, nicht-aktorische Sicht auf Batterie und Kommunikation.
+- `Battery_Health_V1` ist der separate, nicht-aktorische Health-Baustein auf Basis der EOS-Battery-States.
 - Einige kuenftige Modulgrenzen bleiben noch `Unklar`.
 - New-Workflow-Module werden nur dort angelegt, wo die Architektur sie vorsieht.
 - Das Modul-Set ist bewusst klein gehalten, um neue Logik nicht in verstreuten Einzeldateien zu verlieren.
@@ -258,6 +260,7 @@ Charakter des Repositories:
 ## 6. Aktueller Entwicklungsstand
 
 Aktuell liegt der Fokus auf dem EOS-Batteriemodul, insbesondere auf der Beobachtung und Aufbereitung von Batterie- und Kommunikationszustand.
+Der naechste erklaerte Schritt ist eine einfache, nachvollziehbare Health-Sicht als separater EOS-Baustein, ohne Aktorik oder Empfehlungsschicht.
 
 Bekannte Lage:
 

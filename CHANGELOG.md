@@ -1,6 +1,10 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Added
+  - `iobroker/scripts/energiemanagement/Battery_Health_V1.js` als separaten, nicht-aktorischen EOS-Baustein fuer eine einfache Battery-Health-Sicht ergaenzt
+- Changed
+  - `knowledge/project_brain.md` um `Battery_Health_V1` und den naechsten Entwicklungsstand ergaenzt
 - Changed
   - `iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js` gegen die freigegebene Communication-Baseline verifiziert; keine fachlichen Reste ausserhalb der Kommunikationsueberwachung vorhanden
 - Changed
