@@ -808,8 +808,12 @@ function getCommunicationStatus(ageSeconds) {
     if (!Number.isFinite(ageSeconds)) {
         return 'UNKNOWN';
     }
-    const warningTimeout = readNumber(`${ROOT}.Settings.CommunicationWarningTimeout_s`) ?? CONFIG.communicationWarningTimeoutSeconds;
-    const offlineTimeout = readNumber(`${ROOT}.Settings.CommunicationOfflineTimeout_s`) ?? CONFIG.communicationOfflineTimeoutSeconds;
+    const warningTimeout =
+        readNumber(`${ROOT}.Settings.CommunicationWarningTimeout_s`) ??
+        CONFIG.communicationWarningTimeoutSeconds;
+    const offlineTimeout =
+        readNumber(`${ROOT}.Settings.CommunicationOfflineTimeout_s`) ??
+        CONFIG.communicationOfflineTimeoutSeconds;
 
     if (ageSeconds <= warningTimeout) {
         return 'OK';
@@ -829,7 +833,9 @@ function updateCommunicationSource(prefix, sourceIds) {
     let status = getCommunicationStatus(ageSeconds);
 
     if (prefix === 'MQTT') {
-        const connectionState = getRawState('mqtt.0.info.connection') || getRawState('mqtt.0.info.connection.state');
+        const connectionState =
+            getRawState('mqtt.0.info.connection') ||
+            getRawState('mqtt.0.info.connection.state');
         if (connectionState && connectionState.val === false) {
             status = 'OFFLINE';
         }
@@ -981,15 +987,14 @@ function updateBatterySupervisor() {
         ]),
     ];
 
-    const latestCommunicationTimestamp = [
-        ...communicationResults
-            .map(result => result.lastUpdate)
-            .filter(Boolean),
-    ].reduce((latest, value) => {
-        const timestamp = Date.parse(value);
-        if (!Number.isFinite(timestamp)) return latest;
-        return latest === null || timestamp > latest ? timestamp : latest;
-    }, null);
+    const latestCommunicationTimestamp = communicationResults
+        .map(result => result.lastUpdate)
+        .filter(Boolean)
+        .reduce((latest, value) => {
+            const timestamp = Date.parse(value);
+            if (!Number.isFinite(timestamp)) return latest;
+            return latest === null || timestamp > latest ? timestamp : latest;
+        }, null);
 
     writeChanged(`${ROOT}.Communication.LastUpdate`, formatIsoFromTimestamp(latestCommunicationTimestamp));
 
