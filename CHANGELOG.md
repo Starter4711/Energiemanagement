@@ -2,6 +2,13 @@
 
 ## 2026-07-08
 - Added
+  - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` als ersten produktiven, read-only EOS-Baustein fuer konsolidierte Energiefluesse ergaenzt
+  - `iobroker/objects/energiemanagement.Energy_Flow_V1.json` und `iobroker/manifest.json` um `script.js.energiemanagement.Energy_Flow_V1` ergaenzt
+- Changed
+  - `knowledge/project_brain.md` um die Implementierung von `Energy_Flow_V1` als erste produktive EOS-Ebene ergaenzt
+
+## 2026-07-08
+- Added
   - `docs/energy_flow_architecture_review_v1.md` als Architekturreview der Energy-Flow-Spezifikation mit Freigabeempfehlung ergaenzt
 
 ## 2026-07-08

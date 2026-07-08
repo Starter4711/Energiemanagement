@@ -570,6 +570,15 @@
       "scriptFile": "iobroker/scripts/energiemanagement/Battery_Health_V1.js"
     },
     {
+      "id": "script.js.energiemanagement.Energy_Flow_V1",
+      "name": "Energy_Flow_V1",
+      "type": "script",
+      "engineType": "Javascript/js",
+      "enabled": false,
+      "objectFile": "iobroker/objects/energiemanagement.Energy_Flow_V1.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Energy_Flow_V1.js"
+    },
+    {
       "id": "script.js.energiemanagement.Codex_Access_Test",
       "name": "Codex_Access_Test",
       "type": "script",
