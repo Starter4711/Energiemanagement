@@ -2,6 +2,10 @@
 
 ## 2026-07-08
 - Changed
+  - `knowledge/project_brain.md` um `e2f538f` und `7cb51af` als freigegebene Energy-Flow-Spezifikationsstaende sowie den letzten freigegebenen Commit `7cb51af` aktualisiert
+
+## 2026-07-08
+- Changed
   - `knowledge/project_brain.md` um die veraltete Battery-VIS2-State-Mapping-Nachfolgeaussage bereinigt und Energy Flow V1 als aktuelle Spezifikationsphase bestaetigt
 
 ## 2026-07-08
