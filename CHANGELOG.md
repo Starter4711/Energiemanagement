@@ -2,6 +2,10 @@
 
 ## 2026-07-08
 - Changed
+  - `knowledge/project_brain.md` vollstaendig von alten Battery-VIS2-, Battery-Health- und Commit-Referenzen bereinigt und auf `e291134` als letzten freigegebenen Commit konsolidiert
+
+## 2026-07-08
+- Changed
   - `knowledge/project_brain.md` um die Beschreibung von `7cb51af` als Korrektur des Projektkontexts nach dem Start von Energy Flow V1 praezisiert
 
 ## 2026-07-08
