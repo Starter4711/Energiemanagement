@@ -1,6 +1,14 @@
 # CHANGELOG
 
 ## 2026-07-08
+- Added
+  - `docs/iobroker_deployment_v1.md` als praktische Import- und Deployment-Anleitung fuer den ioBroker ergaenzt
+  - `tools/iobroker/list_repository_assets.sh` als read-only Inventarscript fuer Repository-Artefakte ergaenzt
+  - `tools/iobroker/verify_iobroker_import.sh` als read-only Pruefscript fuer den ioBroker-Import ergaenzt
+- Changed
+  - `knowledge/project_brain.md` um den notwendigen Import-/Deployment-Schritt fuer die Sichtbarkeit im ioBroker ergaenzt
+
+## 2026-07-08
 - Changed
   - `knowledge/project_brain.md` auf den freigegebenen Commit `273b4f13e51b88237c58d7247326eb34cc0b2c89` und den freigegebenen Phase-2-Stand von Energy Flow V1 aktualisiert
   - `knowledge/project_brain.md` um die aktuelle Domänenlage von Grid, PV, House und Wallbox im Energy-Flow-Kontext ergaenzt
