@@ -2,6 +2,7 @@
 
 ## 2026-07-08
 - Added
+  - `knowledge/project_brain.md` als zentrale Wissensbasis fuer EOS ergaenzt
   - `docs/battery_supervisor_v1_spec.md` als Spezifikation fuer den ersten EOS-Baustein im Batteriebereich ergaenzt
   - `docs/battery_supervisor_v1_state_model.md` als finale EOS-State-Spezifikation fuer Battery Supervisor V1 ergaenzt
   - `iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js`

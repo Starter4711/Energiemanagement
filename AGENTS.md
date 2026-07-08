@@ -7,16 +7,17 @@ Diese Datei ist der verbindliche Einstieg fuer zukuenftige Codex-Tasks in diesem
 ## Pflichtablauf fuer jeden neuen Task
 
 1. Immer zuerst `AGENTS.md` lesen.
-2. Danach `knowledge/README.md` als Einstieg in die Knowledge Base lesen.
-3. Danach `docs/project_analysis.md` lesen.
-4. Danach die fuer den Task relevanten Dateien unter `knowledge/` lesen, insbesondere die dort als fuehrend markierten Themen- und Detaildateien.
-5. Bei Skript-, Aktivierungs- oder ioBroker-Bestandsfragen zusaetzlich `iobroker/manifest.json` als Referenz pruefen.
-6. Erst dann Code, Objekte, VIS-2 oder Deployment-Werkzeuge oeffnen oder aendern.
-7. Vor jeder Aenderung `knowledge/engineering_process.md` pruefen.
-8. Vor live-nahen Aenderungen `knowledge/backup_and_rollback.md` pruefen.
-9. Bei neuen oder geaenderten Skripten `knowledge/script_logging_policy.md` pruefen.
-10. Relevante Aenderungen muessen `CHANGELOG.md` aktualisieren.
-11. Architektur-Review durch ChatGPT ist das Gate vor fachlicher Freigabe.
+2. Danach `knowledge/project_brain.md` lesen.
+3. Danach `knowledge/README.md` als Einstieg in die Knowledge Base lesen.
+4. Danach `docs/project_analysis.md` lesen.
+5. Danach die fuer den Task relevanten Dateien unter `knowledge/` lesen, insbesondere die dort als fuehrend markierten Themen- und Detaildateien.
+6. Bei Skript-, Aktivierungs- oder ioBroker-Bestandsfragen zusaetzlich `iobroker/manifest.json` als Referenz pruefen.
+7. Erst dann Code, Objekte, VIS-2 oder Deployment-Werkzeuge oeffnen oder aendern.
+8. Vor jeder Aenderung `knowledge/engineering_process.md` pruefen.
+9. Vor live-nahen Aenderungen `knowledge/backup_and_rollback.md` pruefen.
+10. Bei neuen oder geaenderten Skripten `knowledge/script_logging_policy.md` pruefen.
+11. Relevante Aenderungen muessen `CHANGELOG.md` aktualisieren.
+12. Architektur-Review durch ChatGPT ist das Gate vor fachlicher Freigabe.
 
 Mindestens diese Wissensdateien sind vor inhaltlichen Aenderungen zu pruefen:
 
