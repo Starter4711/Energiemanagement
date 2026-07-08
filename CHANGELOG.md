@@ -2,6 +2,10 @@
 
 ## 2026-07-08
 - Added
+  - `docs/battery_vis2_documentation_check_v1.md` als reinen Konsistenzcheck fuer die Battery-VIS2-Dokumentation ergaenzt
+
+## 2026-07-08
+- Added
   - `docs/vis2_source_of_truth.md` als Fuehrungsdokument fuer `battery.html` und `vis-views.json` bei Battery VIS2 Read-Only V1 ergaenzt
 - Changed
   - `knowledge/project_brain.md` um die fuehrende Pflegequelle und das Exportartefakt fuer die Battery-VIS2-Ansicht praezisiert
