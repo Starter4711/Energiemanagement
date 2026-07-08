@@ -623,15 +623,19 @@ function emit(level, message) {
 }
 
 function createBatteryState(definition) {
-    createState(definition.id, definition.defaultValue, {
-        name: definition.id.split('.').pop(),
-        type: definition.type,
-        role: definition.role,
-        unit: definition.unit,
-        desc: definition.desc,
-        read: true,
-        write: definition.writable === true,
-    });
+    createState(
+        definition.id,
+        definition.defaultValue,
+        {
+            name: definition.id.split('.').pop(),
+            type: definition.type,
+            role: definition.role,
+            unit: definition.unit,
+            desc: definition.desc,
+            read: true,
+            write: definition.writable === true,
+        }
+    );
 }
 
 try {
