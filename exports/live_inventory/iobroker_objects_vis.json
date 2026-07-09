@@ -1,0 +1,467 @@
+{
+  "count": 26,
+  "generatedAt": "2026-07-09T16:24:51.777450+00:00",
+  "objects": [
+    {
+      "_id": "vis.0",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator"
+      },
+      "common": {
+        "name": "user files and images for vis",
+        "type": "meta.user"
+      },
+      "native": {},
+      "type": "meta"
+    },
+    {
+      "_id": "vis.0.control",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator"
+      },
+      "common": {
+        "name": "Control vis"
+      },
+      "native": {},
+      "type": "channel"
+    },
+    {
+      "_id": "vis.0.control.command",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "desc": "Writing this variable act as the trigger. Instance and data must be preset before 'command' will be written. 'changedView' will be signalled too",
+        "name": "Command for vis",
+        "states": {
+          "alert": "alert",
+          "changeView": "changeView",
+          "changedView": "changedView",
+          "dialog": "dialog",
+          "playSound": "playSound",
+          "popup": "popup",
+          "refresh": "refresh",
+          "reload": "reload",
+          "tts": "tts"
+        },
+        "type": "string"
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.control.data",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "desc": "Used for: alert, changeView, dialog, popup, playSound, changedView",
+        "name": "Data for control vis",
+        "type": "string"
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.control.instance",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "desc": "Write here browser instance ID to control or 'FFFFFFFF' to control all instances",
+        "name": "Control vis",
+        "type": "string"
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.Log",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.home",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.main",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.total",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.admin",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator"
+      },
+      "common": {
+        "name": "admin",
+        "type": "admin"
+      },
+      "native": {},
+      "type": "meta"
+    },
+    {
+      "_id": "vis.0.datapoints.Log",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.home",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.main",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.total",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.Log",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.home",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.main",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.total",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.Log",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.home",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.main",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.total",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.Log",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.home",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.main",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "vis.0.datapoints.total",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "name": "Datapoints count",
+        "read": true,
+        "role": "state",
+        "type": "number",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    }
+  ],
+  "source": "live /opt/iobroker/iobroker-data/objects.jsonl"
+}

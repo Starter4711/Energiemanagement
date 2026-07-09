@@ -1,0 +1,3337 @@
+{
+  "count": 370,
+  "generatedAt": "2026-07-09T16:24:54.201288+00:00",
+  "source": "live /opt/iobroker/iobroker-data/states.jsonl",
+  "states": [
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.ALIAS.EM24_HallGrid_PV_Ueberschuss",
+      "q": 0,
+      "ts": 1783614275898,
+      "type": "float",
+      "value": 9234.4
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.ALIAS.EM24_HallGrid_Power",
+      "q": 0,
+      "ts": 1783614275898,
+      "type": "float",
+      "value": -9234.4
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.ALIAS.EM24_HomeGrid_PV_Ueberschuss",
+      "q": 0,
+      "ts": 1783614275898,
+      "type": "float",
+      "value": 3059.8
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.ALIAS.EM24_HomeGrid_Power",
+      "q": 0,
+      "ts": 1783614276155,
+      "type": "float",
+      "value": -3080.6
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.ALIAS.HallGrid_PV_Power",
+      "q": 0,
+      "ts": 1783614274162,
+      "type": "int",
+      "value": 10369
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.ALIAS.MP_BAT_DC_Power",
+      "q": 0,
+      "ts": 1783614276911,
+      "type": "int",
+      "value": 51
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.ALIAS.MP_ESS_DC_Power",
+      "q": 0,
+      "ts": 1783614276007,
+      "type": "int",
+      "value": 49
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.ALIAS.SE_Power",
+      "q": 0,
+      "ts": 1783614276317,
+      "type": "int",
+      "value": 5954
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.ALIAS.SMA_Power",
+      "q": 0,
+      "ts": 1783614272178,
+      "type": "int",
+      "value": 620
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Alarm",
+      "q": 0,
+      "ts": 1783613940034,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Alarm_Zellen",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "str",
+      "value": "1,2,3,4,5,6,7,10,12,15"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Daten_Gueltig",
+      "q": 0,
+      "ts": 1783613940034,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Gueltige_Zellen",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Letzte_Aktualisierung",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "str",
+      "value": "2026-07-09T16:24:17.538Z"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Max_Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle1.Alarm",
+      "q": 0,
+      "ts": 1783614060034,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle1.Differenz_mV",
+      "q": 0,
+      "ts": 1783613910028,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle10.Alarm",
+      "q": 0,
+      "ts": 1783613940034,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle10.Differenz_mV",
+      "q": 0,
+      "ts": 1783613910028,
+      "type": "int",
+      "value": 3
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle11.Alarm",
+      "q": 0,
+      "ts": 1783614090030,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle11.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270026,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle12.Alarm",
+      "q": 0,
+      "ts": 1783614180034,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle12.Differenz_mV",
+      "q": 0,
+      "ts": 1783614120032,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle13.Alarm",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle13.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle14.Alarm",
+      "q": 0,
+      "ts": 1783613280031,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle14.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle15.Alarm",
+      "q": 0,
+      "ts": 1783614120032,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle15.Differenz_mV",
+      "q": 0,
+      "ts": 1783614000032,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle16.Alarm",
+      "q": 0,
+      "ts": 1783614120032,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle16.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle2.Alarm",
+      "q": 0,
+      "ts": 1783614030026,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle2.Differenz_mV",
+      "q": 0,
+      "ts": 1783614000031,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle3.Alarm",
+      "q": 0,
+      "ts": 1783614030026,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle3.Differenz_mV",
+      "q": 0,
+      "ts": 1783614000032,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle4.Alarm",
+      "q": 0,
+      "ts": 1783614120032,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle4.Differenz_mV",
+      "q": 0,
+      "ts": 1783613820031,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle5.Alarm",
+      "q": 0,
+      "ts": 1783614030026,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle5.Differenz_mV",
+      "q": 0,
+      "ts": 1783614000032,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle6.Alarm",
+      "q": 0,
+      "ts": 1783614150029,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle6.Differenz_mV",
+      "q": 0,
+      "ts": 1783613910028,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle7.Alarm",
+      "q": 0,
+      "ts": 1783614150029,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle7.Differenz_mV",
+      "q": 0,
+      "ts": 1783614120032,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle8.Alarm",
+      "q": 0,
+      "ts": 1783614270026,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle8.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270026,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle9.Alarm",
+      "q": 0,
+      "ts": 1783606140033,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.BMS_Heltec_Vergleich.Zelle9.Differenz_mV",
+      "q": 0,
+      "ts": 1783614210026,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Alarm",
+      "q": 0,
+      "ts": 1783613925018,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Daten_Gueltig",
+      "q": 0,
+      "ts": 1783613925018,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Differenz_mV",
+      "q": 0,
+      "ts": 1783613745018,
+      "type": "int",
+      "value": 3
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Durchschnitt_mV",
+      "q": 0,
+      "ts": 1783613775018,
+      "type": "int",
+      "value": 3
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Gueltige_Zellen",
+      "q": 0,
+      "ts": 1783614255018,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Letzte_Aktualisierung",
+      "q": 0,
+      "ts": 1783614270025,
+      "type": "str",
+      "value": "2026-07-09T16:24:17.538Z"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Max_V",
+      "q": 0,
+      "ts": 1783613745018,
+      "type": "float",
+      "value": 3.345
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Min_V",
+      "q": 0,
+      "ts": 1783613625018,
+      "type": "float",
+      "value": 3.342
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Trend",
+      "q": 0,
+      "ts": 1783611630026,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack1.Zellspannung.Trend_Text",
+      "q": 0,
+      "ts": 1783611630026,
+      "type": "str",
+      "value": "stabil"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Alarm",
+      "q": 0,
+      "ts": 1783613760033,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Alarm_Zellen",
+      "q": 0,
+      "ts": 1783614210026,
+      "type": "str",
+      "value": "1,3,4,5,6,7,8,9,10,11,13,14,15,16"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Daten_Gueltig",
+      "q": 0,
+      "ts": 1783613760033,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Gueltige_Zellen",
+      "q": 0,
+      "ts": 1783614210026,
+      "type": "int",
+      "value": 2
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Letzte_Aktualisierung",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "str",
+      "value": "2026-07-09T16:24:26.842Z"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Max_Differenz_mV",
+      "q": 0,
+      "ts": 1783614150029,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle1.Alarm",
+      "q": 0,
+      "ts": 1783613760033,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle1.Differenz_mV",
+      "q": 0,
+      "ts": 1783613640036,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle10.Alarm",
+      "q": 0,
+      "ts": 1783613940035,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle10.Differenz_mV",
+      "q": 0,
+      "ts": 1783613850031,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle11.Alarm",
+      "q": 0,
+      "ts": 1783613910029,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle11.Differenz_mV",
+      "q": 0,
+      "ts": 1783613850031,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle12.Alarm",
+      "q": 0,
+      "ts": 1783614120032,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle12.Differenz_mV",
+      "q": 0,
+      "ts": 1783614210026,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle13.Alarm",
+      "q": 0,
+      "ts": 1783613940035,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle13.Differenz_mV",
+      "q": 0,
+      "ts": 1783613790029,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle14.Alarm",
+      "q": 0,
+      "ts": 1783613880030,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle14.Differenz_mV",
+      "q": 0,
+      "ts": 1783613850031,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle15.Alarm",
+      "q": 0,
+      "ts": 1783614030027,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle15.Differenz_mV",
+      "q": 0,
+      "ts": 1783613850031,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle16.Alarm",
+      "q": 0,
+      "ts": 1783614150029,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle16.Differenz_mV",
+      "q": 0,
+      "ts": 1783613850031,
+      "type": "int",
+      "value": 9
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle2.Alarm",
+      "q": 0,
+      "ts": 1783614120032,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle2.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle3.Alarm",
+      "q": 0,
+      "ts": 1783614000032,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle3.Differenz_mV",
+      "q": 0,
+      "ts": 1783613790029,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle4.Alarm",
+      "q": 0,
+      "ts": 1783614150029,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle4.Differenz_mV",
+      "q": 0,
+      "ts": 1783613850031,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle5.Alarm",
+      "q": 0,
+      "ts": 1783614030027,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle5.Differenz_mV",
+      "q": 0,
+      "ts": 1783613850031,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle6.Alarm",
+      "q": 0,
+      "ts": 1783613940035,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle6.Differenz_mV",
+      "q": 0,
+      "ts": 1783613640036,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle7.Alarm",
+      "q": 0,
+      "ts": 1783614090031,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle7.Differenz_mV",
+      "q": 0,
+      "ts": 1783613850031,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle8.Alarm",
+      "q": 0,
+      "ts": 1783614150029,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle8.Differenz_mV",
+      "q": 0,
+      "ts": 1783613790029,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle9.Alarm",
+      "q": 0,
+      "ts": 1783614210026,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.BMS_Heltec_Vergleich.Zelle9.Differenz_mV",
+      "q": 0,
+      "ts": 1783613940035,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Alarm",
+      "q": 0,
+      "ts": 1783613760026,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Daten_Gueltig",
+      "q": 0,
+      "ts": 1783613760026,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Differenz_mV",
+      "q": 0,
+      "ts": 1783613730026,
+      "type": "int",
+      "value": 3
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Durchschnitt_mV",
+      "q": 0,
+      "ts": 1783613655018,
+      "type": "int",
+      "value": 3
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Gueltige_Zellen",
+      "q": 0,
+      "ts": 1783614195018,
+      "type": "int",
+      "value": 2
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Letzte_Aktualisierung",
+      "q": 0,
+      "ts": 1783614195018,
+      "type": "str",
+      "value": "2026-07-09T16:23:10.507Z"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Max_V",
+      "q": 0,
+      "ts": 1783613730026,
+      "type": "float",
+      "value": 3.344
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Min_V",
+      "q": 0,
+      "ts": 1783613505018,
+      "type": "float",
+      "value": 3.341
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Trend",
+      "q": 0,
+      "ts": 1783611690027,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack2.Zellspannung.Trend_Text",
+      "q": 0,
+      "ts": 1783611690027,
+      "type": "str",
+      "value": "stabil"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Alarm",
+      "q": 0,
+      "ts": 1783613910029,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Alarm_Zellen",
+      "q": 0,
+      "ts": 1783614240032,
+      "type": "str",
+      "value": "1,2,3,5,6,7,10,12,13,14,15,16"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Daten_Gueltig",
+      "q": 0,
+      "ts": 1783613910029,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Gueltige_Zellen",
+      "q": 0,
+      "ts": 1783614240032,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Letzte_Aktualisierung",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "str",
+      "value": "2026-07-09T16:24:29.045Z"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Max_Differenz_mV",
+      "q": 0,
+      "ts": 1783614150029,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle1.Alarm",
+      "q": 0,
+      "ts": 1783614030027,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle1.Differenz_mV",
+      "q": 0,
+      "ts": 1783613820032,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle10.Alarm",
+      "q": 0,
+      "ts": 1783613970027,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle10.Differenz_mV",
+      "q": 0,
+      "ts": 1783613940035,
+      "type": "int",
+      "value": 3
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle11.Alarm",
+      "q": 0,
+      "ts": 1783614000032,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle11.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle12.Alarm",
+      "q": 0,
+      "ts": 1783614030027,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle12.Differenz_mV",
+      "q": 0,
+      "ts": 1783613820032,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle13.Alarm",
+      "q": 0,
+      "ts": 1783614180034,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle13.Differenz_mV",
+      "q": 0,
+      "ts": 1783613820032,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle14.Alarm",
+      "q": 0,
+      "ts": 1783613910029,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle14.Differenz_mV",
+      "q": 0,
+      "ts": 1783613820032,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle15.Alarm",
+      "q": 0,
+      "ts": 1783614180034,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle15.Differenz_mV",
+      "q": 0,
+      "ts": 1783613640037,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle16.Alarm",
+      "q": 0,
+      "ts": 1783613970027,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle16.Differenz_mV",
+      "q": 0,
+      "ts": 1783613940035,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle2.Alarm",
+      "q": 0,
+      "ts": 1783614240031,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle2.Differenz_mV",
+      "q": 0,
+      "ts": 1783614090031,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle3.Alarm",
+      "q": 0,
+      "ts": 1783614180034,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle3.Differenz_mV",
+      "q": 0,
+      "ts": 1783613670031,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle4.Alarm",
+      "q": 0,
+      "ts": 1783614090031,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle4.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle5.Alarm",
+      "q": 0,
+      "ts": 1783614240032,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle5.Differenz_mV",
+      "q": 0,
+      "ts": 1783613640037,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle6.Alarm",
+      "q": 0,
+      "ts": 1783614240032,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle6.Differenz_mV",
+      "q": 0,
+      "ts": 1783614090031,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle7.Alarm",
+      "q": 0,
+      "ts": 1783614030027,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle7.Differenz_mV",
+      "q": 0,
+      "ts": 1783613820032,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle8.Alarm",
+      "q": 0,
+      "ts": 1783614120032,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle8.Differenz_mV",
+      "q": 0,
+      "ts": 1783614210026,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle9.Alarm",
+      "q": 0,
+      "ts": 1783605330027,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.BMS_Heltec_Vergleich.Zelle9.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Alarm",
+      "q": 0,
+      "ts": 1783613895017,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Daten_Gueltig",
+      "q": 0,
+      "ts": 1783613895017,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Differenz_mV",
+      "q": 0,
+      "ts": 1783613730026,
+      "type": "int",
+      "value": 2
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Durchschnitt_mV",
+      "q": 0,
+      "ts": 1783613760026,
+      "type": "int",
+      "value": 2
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Gueltige_Zellen",
+      "q": 0,
+      "ts": 1783614240024,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Letzte_Aktualisierung",
+      "q": 0,
+      "ts": 1783614270025,
+      "type": "str",
+      "value": "2026-07-09T16:24:29.045Z"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Max_V",
+      "q": 0,
+      "ts": 1783613730026,
+      "type": "float",
+      "value": 3.343
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Min_V",
+      "q": 0,
+      "ts": 1783613655018,
+      "type": "float",
+      "value": 3.341
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Trend",
+      "q": 0,
+      "ts": 1783611705018,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack3.Zellspannung.Trend_Text",
+      "q": 0,
+      "ts": 1783611705018,
+      "type": "str",
+      "value": "stabil"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Alarm",
+      "q": 0,
+      "ts": 1783613880031,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Alarm_Zellen",
+      "q": 0,
+      "ts": 1783614240032,
+      "type": "str",
+      "value": "1,5,6,8,13,14,15,16"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Daten_Gueltig",
+      "q": 0,
+      "ts": 1783613880031,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Gueltige_Zellen",
+      "q": 0,
+      "ts": 1783614240032,
+      "type": "int",
+      "value": 8
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Letzte_Aktualisierung",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "str",
+      "value": "2026-07-09T16:24:23.590Z"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Max_Differenz_mV",
+      "q": 0,
+      "ts": 1783614090031,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle1.Alarm",
+      "q": 0,
+      "ts": 1783614180034,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle1.Differenz_mV",
+      "q": 0,
+      "ts": 1783613670032,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle10.Alarm",
+      "q": 0,
+      "ts": 1783614120033,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle10.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle11.Alarm",
+      "q": 0,
+      "ts": 1783614060035,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle11.Differenz_mV",
+      "q": 0,
+      "ts": 1783614240032,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle12.Alarm",
+      "q": 0,
+      "ts": 1783614090031,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle12.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle13.Alarm",
+      "q": 0,
+      "ts": 1783613970027,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle13.Differenz_mV",
+      "q": 0,
+      "ts": 1783613880031,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle14.Alarm",
+      "q": 0,
+      "ts": 1783614000033,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle14.Differenz_mV",
+      "q": 0,
+      "ts": 1783613820032,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle15.Alarm",
+      "q": 0,
+      "ts": 1783614240032,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle15.Differenz_mV",
+      "q": 0,
+      "ts": 1783614090031,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle16.Alarm",
+      "q": 0,
+      "ts": 1783613940036,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle16.Differenz_mV",
+      "q": 0,
+      "ts": 1783613760034,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle2.Alarm",
+      "q": 0,
+      "ts": 1783614060035,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle2.Differenz_mV",
+      "q": 0,
+      "ts": 1783614060035,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle3.Alarm",
+      "q": 0,
+      "ts": 1783614060035,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle3.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle4.Alarm",
+      "q": 0,
+      "ts": 1783614060035,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle4.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle5.Alarm",
+      "q": 0,
+      "ts": 1783614240032,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle5.Differenz_mV",
+      "q": 0,
+      "ts": 1783613940035,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle6.Alarm",
+      "q": 0,
+      "ts": 1783614000033,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle6.Differenz_mV",
+      "q": 0,
+      "ts": 1783613880031,
+      "type": "int",
+      "value": 4
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle7.Alarm",
+      "q": 0,
+      "ts": 1783614060035,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle7.Differenz_mV",
+      "q": 0,
+      "ts": 1783614270027,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle8.Alarm",
+      "q": 0,
+      "ts": 1783613880031,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle8.Differenz_mV",
+      "q": 0,
+      "ts": 1783613760034,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle9.Alarm",
+      "q": 0,
+      "ts": 1783605270027,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.BMS_Heltec_Vergleich.Zelle9.Differenz_mV",
+      "q": 0,
+      "ts": 1783614240032,
+      "type": "int",
+      "value": 5
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Alarm",
+      "q": 0,
+      "ts": 1783613865017,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Daten_Gueltig",
+      "q": 0,
+      "ts": 1783613865017,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Differenz_mV",
+      "q": 0,
+      "ts": 1783613550023,
+      "type": "int",
+      "value": 2
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Durchschnitt_mV",
+      "q": 0,
+      "ts": 1783613580027,
+      "type": "int",
+      "value": 2
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Gueltige_Zellen",
+      "q": 0,
+      "ts": 1783614240024,
+      "type": "int",
+      "value": 8
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Letzte_Aktualisierung",
+      "q": 0,
+      "ts": 1783614270025,
+      "type": "str",
+      "value": "2026-07-09T16:24:23.590Z"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Max_V",
+      "q": 0,
+      "ts": 1783613625018,
+      "type": "float",
+      "value": 3.343
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Min_V",
+      "q": 0,
+      "ts": 1783613625018,
+      "type": "float",
+      "value": 3.341
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Trend",
+      "q": 0,
+      "ts": 1783611630026,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Batterie.Pack4.Zellspannung.Trend_Text",
+      "q": 0,
+      "ts": 1783611630026,
+      "type": "str",
+      "value": "stabil"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Aktualisierung_Sekunden",
+      "q": 0,
+      "ts": 1783360468852,
+      "type": "int",
+      "value": 10
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Batterie_BMS_Heltec_Alarm_mV",
+      "q": 0,
+      "ts": 1783360468691,
+      "type": "int",
+      "value": 50
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Batterie_Gesamt_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468661,
+      "type": "str",
+      "value": "alias.0.Gobel.Power"
+    },
+    {
+      "ack": true,
+      "from": null,
+      "id": "0_userdata.0.Energiemanagement.Config.Batterie_Gesamt_SOC_ID",
+      "q": 0,
+      "ts": 1783362448900,
+      "type": "str",
+      "value": "alias.0.Gobel.Soc SmartShunt"
+    },
+    {
+      "ack": true,
+      "from": null,
+      "id": "0_userdata.0.Energiemanagement.Config.Batterie_Gesamt_Spannung_ID",
+      "q": 0,
+      "ts": 1783362452260,
+      "type": "str",
+      "value": "alias.0.Gobel.Voltage_SmartShunt"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Batterie_Gesamt_Strom_ID",
+      "q": 0,
+      "ts": 1783360468657,
+      "type": "str",
+      "value": "alias.0.Gobel.Current"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Batterie_Pack1_SOC_ID",
+      "q": 0,
+      "ts": 1783360468665,
+      "type": "str",
+      "value": "alias.0.Gobel_Master.SOC"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Batterie_Pack2_SOC_ID",
+      "q": 0,
+      "ts": 1783360468668,
+      "type": "str",
+      "value": "alias.0.Gobel_Slave1.SOC"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Batterie_Pack3_SOC_ID",
+      "q": 0,
+      "ts": 1783360468672,
+      "type": "str",
+      "value": "alias.0.Gobel_Slave2.SOC"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Batterie_Pack4_SOC_ID",
+      "q": 0,
+      "ts": 1783360468675,
+      "type": "str",
+      "value": "alias.0.Gobel_Slave3.SOC"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Batterie_Zelldaten_Max_Alter_Sekunden",
+      "q": 0,
+      "ts": 1783360468695,
+      "type": "int",
+      "value": 300
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Batterie_Zellspreizung_Alarm_mV",
+      "q": 0,
+      "ts": 1783360468687,
+      "type": "int",
+      "value": 50
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Halle_Max_Netzbezug_W",
+      "q": 0,
+      "ts": 1783360468856,
+      "type": "int",
+      "value": 15000
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Halle_Max_Netzeinspeisung_W",
+      "q": 0,
+      "ts": 1783360468844,
+      "type": "int",
+      "value": 27000
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Hallenabgang_40A_L1_Strom_ID",
+      "q": 0,
+      "ts": 1783360468815,
+      "type": "str",
+      "value": "alias.0.EM24 Hall 40A.L1_A"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Hallenabgang_40A_L2_Strom_ID",
+      "q": 0,
+      "ts": 1783360468817,
+      "type": "str",
+      "value": "alias.0.EM24 Hall 40A.L2_A"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Hallenabgang_40A_L3_Strom_ID",
+      "q": 0,
+      "ts": 1783360468820,
+      "type": "str",
+      "value": "alias.0.EM24 Hall 40A.L3_A"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Hallenabgang_40A_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468823,
+      "type": "str",
+      "value": "alias.0.EM24 Hall 40A.Power Hall 40A"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Hallenabgang_Max_Strom_A",
+      "q": 0,
+      "ts": 1783360468826,
+      "type": "int",
+      "value": 40
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Hausanschluss_L1_Strom_ID",
+      "q": 0,
+      "ts": 1783360468829,
+      "type": "str",
+      "value": ""
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Hausanschluss_L2_Strom_ID",
+      "q": 0,
+      "ts": 1783360468832,
+      "type": "str",
+      "value": ""
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Hausanschluss_L3_Strom_ID",
+      "q": 0,
+      "ts": 1783360468836,
+      "type": "str",
+      "value": ""
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Hausanschluss_Max_Strom_A",
+      "q": 0,
+      "ts": 1783360468840,
+      "type": "int",
+      "value": 40
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.PV_Fronius_Halle_27kW_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468641,
+      "type": "str",
+      "value": "alias.0.Fronius.AC-Power"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.PV_Fronius_Haus_10kW_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468635,
+      "type": "str",
+      "value": "alias.0.Fronius.AC-Power_10kW"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.PV_SMA_Haus_4_7kW_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468638,
+      "type": "str",
+      "value": "alias.0.SMA.Power"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.PV_SolarEdge_Alte_Wohnung_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468645,
+      "type": "str",
+      "value": "alias.0.SE.Power"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.RS450_DC_Spannung_ID",
+      "q": 0,
+      "ts": 1783360468776,
+      "type": "str",
+      "value": "alias.0.MPPT RS450/100.DC-Voltage"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.RS450_DC_Strom_ID",
+      "q": 0,
+      "ts": 1783360468773,
+      "type": "str",
+      "value": "alias.0.MPPT RS450/100.DC-Current"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.RS450_PV_String1_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468779,
+      "type": "str",
+      "value": "alias.0.MPPT RS450/100.P String1"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.RS450_PV_String2_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468782,
+      "type": "str",
+      "value": "alias.0.MPPT RS450/100.P String2"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_BAT_ActiveSocLimit_ID",
+      "q": 0,
+      "ts": 1783360468742,
+      "type": "str",
+      "value": "alias.0.MP-BAT.BAT_ActiveSocLimit"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_BAT_DC_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468696,
+      "type": "str",
+      "value": "alias.0.MP-BAT.DC-Power"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_BAT_DC_Spannung_ID",
+      "q": 0,
+      "ts": 1783360468739,
+      "type": "str",
+      "value": "alias.0.MP-BAT.DC-Voltage"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_BAT_DC_Strom_ID",
+      "q": 0,
+      "ts": 1783360468736,
+      "type": "str",
+      "value": "alias.0.MP-BAT.DC-Current"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_BAT_Verbrauch_L1_ID",
+      "q": 0,
+      "ts": 1783360468746,
+      "type": "str",
+      "value": "alias.0.MP-BAT.BAT_Consumption_L1"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_BAT_Verbrauch_L2_ID",
+      "q": 0,
+      "ts": 1783360468749,
+      "type": "str",
+      "value": "alias.0.MP-BAT.BAT_Consumption_L2"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_BAT_Verbrauch_L3_ID",
+      "q": 0,
+      "ts": 1783360468752,
+      "type": "str",
+      "value": "alias.0.MP-BAT.BAT_Consumption_L3"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_ESS_DC_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468755,
+      "type": "str",
+      "value": "alias.0.MP-ESS.DC-Power"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_ESS_DC_Spannung_ID",
+      "q": 0,
+      "ts": 1783360468761,
+      "type": "str",
+      "value": "alias.0.MP-ESS.DC-Voltage"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_ESS_DC_Strom_ID",
+      "q": 0,
+      "ts": 1783360468758,
+      "type": "str",
+      "value": "alias.0.MP-ESS.DC-Current"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_ESS_Verbrauch_L1_ID",
+      "q": 0,
+      "ts": 1783360468764,
+      "type": "str",
+      "value": "alias.0.MP-ESS.ESS_Consumption_L1"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_ESS_Verbrauch_L2_ID",
+      "q": 0,
+      "ts": 1783360468767,
+      "type": "str",
+      "value": "alias.0.MP-ESS.ESS_Consumption_L2"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Victron_ESS_Verbrauch_L3_ID",
+      "q": 0,
+      "ts": 1783360468770,
+      "type": "str",
+      "value": "alias.0.MP-ESS.ESS_Consumption_L3"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Vorzeichen_Netzbezug",
+      "q": 0,
+      "ts": 1783360468848,
+      "type": "int",
+      "value": 1
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Wallbox1_HTTP_Basis_URL",
+      "q": 0,
+      "ts": 1783360468801,
+      "type": "str",
+      "value": "http://192.168.11.20"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Wallbox1_Ladefreigabe_ID",
+      "q": 0,
+      "ts": 1783360468795,
+      "type": "str",
+      "value": ""
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Wallbox1_Ladestrom_PV_ID",
+      "q": 0,
+      "ts": 1783360468798,
+      "type": "str",
+      "value": ""
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Wallbox1_V3_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468785,
+      "type": "str",
+      "value": "alias.0.go-E.powerV3"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Wallbox2_HTTP_Basis_URL",
+      "q": 0,
+      "ts": 1783360468811,
+      "type": "str",
+      "value": "http://192.168.11.21"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Wallbox2_Ladefreigabe_ID",
+      "q": 0,
+      "ts": 1783360468804,
+      "type": "str",
+      "value": ""
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Wallbox2_Ladestrom_PV_ID",
+      "q": 0,
+      "ts": 1783360468808,
+      "type": "str",
+      "value": ""
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Wallbox2_V4_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468788,
+      "type": "str",
+      "value": "alias.0.go-E.powerV4"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Wallbox3_Halle_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468792,
+      "type": "str",
+      "value": "alias.0.go-E.go-E-V4-Halle"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Zaehlpunkt_Alte_Wohnung_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468630,
+      "type": "str",
+      "value": "alias.0.EM24 Old Grid.Power Old Grid"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Zaehlpunkt_Halle_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468626,
+      "type": "str",
+      "value": "alias.0.EM24 Hall Grid.Power"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Energiemanagement.Config.Zaehlpunkt_Haus_Leistung_ID",
+      "q": 0,
+      "ts": 1783360468622,
+      "type": "str",
+      "value": "alias.0.EM24 New Grid.Power"
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.ws.0",
+      "id": "0_userdata.0.SmartPlugs.SmarPlug_Debug",
+      "q": 0,
+      "ts": 1681119392611,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.SmartPlugs.SmarPlug_EBike",
+      "q": 0,
+      "ts": 1745132864242,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.SmartPlugs.SmarPlug_HzgBen",
+      "q": 0,
+      "ts": 1727107505590,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.SmartPlugs.SmarPlug_HzgSara",
+      "q": 0,
+      "ts": 1712246379251,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.SmartPlugs.SmartPlugBen_Timeout",
+      "q": 0,
+      "ts": 1729920351002,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.SmartPlugs.SmartPlugSara_Timeout",
+      "q": 0,
+      "ts": 1729920351002,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.SmartPlugs.SmartPlug_EBike_Timeout",
+      "q": 0,
+      "ts": 1749964687015,
+      "type": "int",
+      "value": 275
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.SmartPlugs_BadHzg.SmarPlugBad_Deaktivieren_Intervall",
+      "q": 0,
+      "ts": 1729893660002,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.SmartPlugs_BadHzg.SmarPlugBad_Debug",
+      "q": 0,
+      "ts": 1726576794350,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.SmartPlugs_BadHzg.SmarPlugBad_HzgBad",
+      "q": 0,
+      "ts": 1728534238098,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.ws.0",
+      "id": "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Grad_VIS",
+      "q": 0,
+      "ts": 1681220408485,
+      "type": "int",
+      "value": 23
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timeout",
+      "q": 0,
+      "ts": 1729920350004,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timer_Aktiv",
+      "q": 0,
+      "ts": 1729893660002,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timer_Aktiv_VIS",
+      "q": 0,
+      "ts": 1782066549963,
+      "type": "int",
+      "value": 55
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timer_Inaktiv",
+      "q": 0,
+      "ts": 1729920314005,
+      "type": "int",
+      "value": 445
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timer_Inaktiv_VIS",
+      "q": 0,
+      "ts": 1728222646723,
+      "type": "int",
+      "value": 20
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timer_Start_VIS",
+      "q": 0,
+      "ts": 1728222642455,
+      "type": "int",
+      "value": 40
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.Abendabschaltung",
+      "q": 0,
+      "ts": 1761320674602,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.BAT_Mode",
+      "q": 0,
+      "ts": 1782995763691,
+      "type": "int",
+      "value": 3
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.DebugAktiv",
+      "q": 0,
+      "ts": 1782819000029,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.ESS_Mode",
+      "q": 0,
+      "ts": 1782995763691,
+      "type": "int",
+      "value": 3
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.Grid_Halle_Überwachung",
+      "q": 0,
+      "ts": 1782995763595,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.Grid_Überwachung",
+      "q": 0,
+      "ts": 1782995763591,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.HallGrid_Support",
+      "q": 0,
+      "ts": 1781800409039,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.HallGrid_Verbrauch",
+      "q": 0,
+      "ts": 1783614275903,
+      "type": "float",
+      "value": 1131.3999999999999
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.HomeGrid_PV_Summe",
+      "q": 0,
+      "ts": 1783614276155,
+      "type": "float",
+      "value": 6965.7
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.HomeGrid_Verbrauch",
+      "q": 0,
+      "ts": 1783614276158,
+      "type": "float",
+      "value": 2499.5
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.MP-BAT_max_DC_Current",
+      "q": 0,
+      "ts": 1782707051832,
+      "type": "int",
+      "value": 100
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.MP-ESS_max_DC_Current",
+      "q": 0,
+      "ts": 1782821124936,
+      "type": "int",
+      "value": 100
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.MPPT_RS450_Power",
+      "q": 0,
+      "ts": 1783614274986,
+      "type": "float",
+      "value": 1204.7
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.Max_DCFeedIn_Setpoint",
+      "q": 0,
+      "ts": 1782820972809,
+      "type": "int",
+      "value": 80
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.Max_SOC_Setpoint",
+      "q": 0,
+      "ts": 1783578366053,
+      "type": "int",
+      "value": 50
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.New_Grid_Setpoint",
+      "q": 0,
+      "ts": 1781800308005,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.OldGrid_zu_NewGrid",
+      "q": 0,
+      "ts": 1781800414322,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.Old_Grid_Setpoint",
+      "q": 0,
+      "ts": 1781800407756,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.Old_Grid_Setpoint_minSOC",
+      "q": 0,
+      "ts": 1783271735355,
+      "type": "int",
+      "value": 40
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.SE_auf_Grid_New",
+      "q": 0,
+      "ts": 1781800412572,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.SUMME_Differenz",
+      "q": 0,
+      "ts": 1783614276008,
+      "type": "float",
+      "value": 12294.199999999999
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.SUMME_PV",
+      "q": 0,
+      "ts": 1783614276008,
+      "type": "float",
+      "value": 17180.7
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.SUMME_Verbrauch",
+      "q": 0,
+      "ts": 1783614276008,
+      "type": "float",
+      "value": 4886.500000000002
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.TOP-Balancing",
+      "q": 0,
+      "ts": 1782995763691,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.TOP-DiffV-End",
+      "q": 0,
+      "ts": 1782796979448,
+      "type": "int",
+      "value": 20
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Victron.TOP-maxVoltage",
+      "q": 0,
+      "ts": 1782995763691,
+      "type": "float",
+      "value": 55.2
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Victron.maxPowerChargeGobel",
+      "q": 0,
+      "ts": 1782211246188,
+      "type": "int",
+      "value": 10000
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Werkstatt.Werkstatt_Hzg",
+      "q": 0,
+      "ts": 1775711429246,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.Werkstatt.Werkstatt_Hzg_Tmp",
+      "q": 0,
+      "ts": 1777098865560,
+      "type": "int",
+      "value": 22
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Zoe.IFTTResponse",
+      "q": 0,
+      "ts": 1668843153115,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Zoe.MINLadung",
+      "q": 0,
+      "ts": 1767936532359,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.ws.0",
+      "id": "0_userdata.0.Zoe.MINLadungWert",
+      "q": 0,
+      "ts": 1675338868216,
+      "type": "int",
+      "value": 30
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Zoe.MinCurrent1P",
+      "q": 0,
+      "ts": 1666695454622,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Zoe.MinCurrent3P",
+      "q": 0,
+      "ts": 1666695454624,
+      "type": "int",
+      "value": 8
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.ws.0",
+      "id": "0_userdata.0.Zoe.ZoeGridOffset",
+      "q": 0,
+      "ts": 1680252215124,
+      "type": "int",
+      "value": 1500
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.ws.0",
+      "id": "0_userdata.0.Zoe.ZoeMaxBezug",
+      "q": 0,
+      "ts": 1680000830832,
+      "type": "int",
+      "value": 1000
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.ws.0",
+      "id": "0_userdata.0.Zoe.ZoeMaxCurrent",
+      "q": 0,
+      "ts": 1680517618320,
+      "type": "int",
+      "value": 32
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Zoe.ZoeMinCurrent",
+      "q": 0,
+      "ts": 1680870336024,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.ws.0",
+      "id": "0_userdata.0.Zoe.ZoePVFaktor",
+      "q": 0,
+      "ts": 1669450026145,
+      "type": "int",
+      "value": 1
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.ws.0",
+      "id": "0_userdata.0.Zoe.ZoeProzentLadung",
+      "q": 0,
+      "ts": 1680003962330,
+      "type": "int",
+      "value": 80
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.Zoe.ZoeStateLadung",
+      "q": 0,
+      "ts": 1681299786638,
+      "type": "int",
+      "value": 3
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases.L1_Auto",
+      "q": 0,
+      "ts": 1783614276006,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases.L1_Zuleitung",
+      "q": 0,
+      "ts": 1783614276006,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases.L2_Auto",
+      "q": 0,
+      "ts": 1783614276006,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases.L2_Zuleitung",
+      "q": 0,
+      "ts": 1783614276006,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases.L3_Auto",
+      "q": 0,
+      "ts": 1783614276006,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases.L3_Zuleitung",
+      "q": 0,
+      "ts": 1783614276006,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases.Phasenumschaltung",
+      "q": 0,
+      "ts": 1782457481473,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases.go_E_Zuleitung_Emergency_STOP",
+      "q": 0,
+      "ts": 1782995763780,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases_V4.L1_Auto_V4",
+      "q": 0,
+      "ts": 1783614275012,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases_V4.L1_Zuleitung_V4",
+      "q": 0,
+      "ts": 1783614275012,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases_V4.L2_Auto_V4",
+      "q": 0,
+      "ts": 1783614275012,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases_V4.L2_Zuleitung_V4",
+      "q": 0,
+      "ts": 1783614275012,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases_V4.L3_Auto_V4",
+      "q": 0,
+      "ts": 1783614275012,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases_V4.L3_Zuleitung_V4",
+      "q": 0,
+      "ts": 1783614275012,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases_V4.Phasenumschaltung_V4",
+      "q": 0,
+      "ts": 1782995763869,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e-phases_V4.go_E_Zuleitung_Emergency_STOP_V4",
+      "q": 0,
+      "ts": 1782995763869,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.1P",
+      "q": 0,
+      "ts": 1783602120061,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.3P",
+      "q": 0,
+      "ts": 1783602120112,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.AUTO",
+      "q": 0,
+      "ts": 1783171154570,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.go-e.DebugAktiv",
+      "q": 0,
+      "ts": 1782577207992,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.LADUNG",
+      "q": 0,
+      "ts": 1783171155004,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.go-e.MinLadung",
+      "q": 0,
+      "ts": 1767178455411,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.MinLadungAktiv",
+      "q": 0,
+      "ts": 1782995763779,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.MinLadungProzent",
+      "q": 0,
+      "ts": 1782995763779,
+      "type": "int",
+      "value": 30
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.NOT",
+      "q": 0,
+      "ts": 1783171154608,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.Timeout",
+      "q": 0,
+      "ts": 1783601677004,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.ZIEL",
+      "q": 0,
+      "ts": 1782995763779,
+      "type": "int",
+      "value": 100
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.maxA",
+      "q": 0,
+      "ts": 1782995763779,
+      "type": "int",
+      "value": 16
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.maxBezug",
+      "q": 0,
+      "ts": 1782995763779,
+      "type": "int",
+      "value": 500
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.minA",
+      "q": 0,
+      "ts": 1782995763779,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.minPV",
+      "q": 0,
+      "ts": 1783602120114,
+      "type": "int",
+      "value": 1500
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e.minW",
+      "q": 0,
+      "ts": 1783614276006,
+      "type": "int",
+      "value": 1380
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.1P_V4",
+      "q": 0,
+      "ts": 1783609380056,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.3P_V4",
+      "q": 0,
+      "ts": 1783609380117,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.AUTO_V4",
+      "q": 0,
+      "ts": 1782995763867,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.go-e_V4.DebugAktiv_V4",
+      "q": 0,
+      "ts": 1782066782322,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.LADUNG_V4",
+      "q": 0,
+      "ts": 1783606607008,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.MinLadungAktiv_V4",
+      "q": 0,
+      "ts": 1782995763868,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.MinLadungProzent_V4",
+      "q": 0,
+      "ts": 1782995763869,
+      "type": "int",
+      "value": 30
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.go-e_V4.MinLadung_V4",
+      "q": 0,
+      "ts": 1767971721391,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.go-e_V4.NOT_Ampere_V4",
+      "q": 0,
+      "ts": 1778041277176,
+      "type": "int",
+      "value": 7
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.NOT_V4",
+      "q": 0,
+      "ts": 1782995763868,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.Timeout_V4",
+      "q": 0,
+      "ts": 1782995763868,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.go-e_V4.ZIEL_V4",
+      "q": 0,
+      "ts": 1783597754204,
+      "type": "int",
+      "value": 80
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.kWh_Ende_V4",
+      "q": 0,
+      "ts": 1783606441678,
+      "type": "float",
+      "value": 41.6
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.kWh_Ladung_V4",
+      "q": 0,
+      "ts": 1783606441678,
+      "type": "float",
+      "value": 41.7
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.kWh_Start_V4",
+      "q": 0,
+      "ts": 1783606441678,
+      "type": "NoneType",
+      "value": null
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.go-e_V4.maxA_1P_V4",
+      "q": 0,
+      "ts": 1783529028963,
+      "type": "int",
+      "value": 23
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "0_userdata.0.go-e_V4.maxA_3P_V4",
+      "q": 0,
+      "ts": 1783597764168,
+      "type": "int",
+      "value": 14
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.maxBezug_V4",
+      "q": 0,
+      "ts": 1782995763868,
+      "type": "int",
+      "value": 500
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.minA_1P_V4",
+      "q": 0,
+      "ts": 1782995763868,
+      "type": "int",
+      "value": 6
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.minA_3P_V4",
+      "q": 0,
+      "ts": 1782995763868,
+      "type": "int",
+      "value": 8
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.minPV_V4",
+      "q": 0,
+      "ts": 1783609380124,
+      "type": "int",
+      "value": 1500
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "0_userdata.0.go-e_V4.minW_V4",
+      "q": 0,
+      "ts": 1783614275012,
+      "type": "int",
+      "value": 1380
+    }
+  ]
+}

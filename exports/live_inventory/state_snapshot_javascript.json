@@ -1,0 +1,4192 @@
+{
+  "count": 465,
+  "generatedAt": "2026-07-09T16:24:54.370377+00:00",
+  "source": "live /opt/iobroker/iobroker-data/states.jsonl",
+  "states": [
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack1.Diff_Alarm",
+      "q": 0,
+      "ts": 1782745129974,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack1.Diff_Avg",
+      "q": 0,
+      "ts": 1783360846661,
+      "type": "int",
+      "value": 3
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack1.Diff_mV",
+      "q": 0,
+      "ts": 1783360857852,
+      "type": "int",
+      "value": 2
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack1.Max_V",
+      "q": 0,
+      "ts": 1783360857828,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack1.Min_V",
+      "q": 0,
+      "ts": 1783360841060,
+      "type": "float",
+      "value": 3.328
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack1.Trend",
+      "q": 0,
+      "ts": 1783358279775,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack1.Trend_Color",
+      "q": 0,
+      "ts": 1783358279815,
+      "type": "str",
+      "value": "yellow"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack1.Trend_Str",
+      "q": 0,
+      "ts": 1783358279775,
+      "type": "str",
+      "value": "→"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack2.Diff_Alarm",
+      "q": 0,
+      "ts": 1775138743607,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack2.Diff_Avg",
+      "q": 0,
+      "ts": 1783360818802,
+      "type": "int",
+      "value": 2
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack2.Diff_mV",
+      "q": 0,
+      "ts": 1783360857989,
+      "type": "int",
+      "value": 3
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack2.Max_V",
+      "q": 0,
+      "ts": 1783360801965,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack2.Min_V",
+      "q": 0,
+      "ts": 1783360857989,
+      "type": "float",
+      "value": 3.327
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack2.Trend",
+      "q": 0,
+      "ts": 1783347055093,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack2.Trend_Color",
+      "q": 0,
+      "ts": 1783347055134,
+      "type": "str",
+      "value": "yellow"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack2.Trend_Str",
+      "q": 0,
+      "ts": 1783347055134,
+      "type": "str",
+      "value": "→"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack3.Diff_Alarm",
+      "q": 0,
+      "ts": 1782280565817,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack3.Diff_Avg",
+      "q": 0,
+      "ts": 1783360819008,
+      "type": "int",
+      "value": 3
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack3.Diff_mV",
+      "q": 0,
+      "ts": 1783360858170,
+      "type": "int",
+      "value": 2
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack3.Max_V",
+      "q": 0,
+      "ts": 1783360858170,
+      "type": "float",
+      "value": 3.328
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack3.Min_V",
+      "q": 0,
+      "ts": 1783360830104,
+      "type": "float",
+      "value": 3.326
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack3.Trend",
+      "q": 0,
+      "ts": 1783346702225,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack3.Trend_Color",
+      "q": 0,
+      "ts": 1783346702226,
+      "type": "str",
+      "value": "yellow"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack3.Trend_Str",
+      "q": 0,
+      "ts": 1783346702226,
+      "type": "str",
+      "value": "→"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack4.Diff_Alarm",
+      "q": 0,
+      "ts": 1782279977518,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack4.Diff_Avg",
+      "q": 0,
+      "ts": 1783360718256,
+      "type": "int",
+      "value": 2
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack4.Diff_mV",
+      "q": 0,
+      "ts": 1783360729336,
+      "type": "int",
+      "value": 2
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack4.Max_V",
+      "q": 0,
+      "ts": 1783360858274,
+      "type": "float",
+      "value": 3.329
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack4.Min_V",
+      "q": 0,
+      "ts": 1783360858272,
+      "type": "float",
+      "value": 3.327
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack4.Trend",
+      "q": 0,
+      "ts": 1783346052124,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack4.Trend_Color",
+      "q": 0,
+      "ts": 1783346052124,
+      "type": "str",
+      "value": "yellow"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.BMS.Pack4.Trend_Str",
+      "q": 0,
+      "ts": 1783346052124,
+      "type": "str",
+      "value": "→"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_10_alarm",
+      "q": 0,
+      "ts": 1783360681091,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_10_diff",
+      "q": 0,
+      "ts": 1783360681090,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_10_modbus",
+      "q": 0,
+      "ts": 1783360681009,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_10_mqtt",
+      "q": 0,
+      "ts": 1783360681003,
+      "type": "float",
+      "value": 3.335
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_11_alarm",
+      "q": 0,
+      "ts": 1783360610882,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_11_diff",
+      "q": 0,
+      "ts": 1783360610873,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_11_modbus",
+      "q": 0,
+      "ts": 1783360610862,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_11_mqtt",
+      "q": 0,
+      "ts": 1783360610859,
+      "type": "float",
+      "value": 3.336
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_12_alarm",
+      "q": 0,
+      "ts": 1783360610883,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_12_diff",
+      "q": 0,
+      "ts": 1783360610873,
+      "type": "float",
+      "value": 0.0029999999999996696
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_12_modbus",
+      "q": 0,
+      "ts": 1783360610862,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_12_mqtt",
+      "q": 0,
+      "ts": 1783360610859,
+      "type": "float",
+      "value": 3.336
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_13_alarm",
+      "q": 0,
+      "ts": 1783360610905,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_13_diff",
+      "q": 0,
+      "ts": 1783360610899,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_13_modbus",
+      "q": 0,
+      "ts": 1783360610895,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_13_mqtt",
+      "q": 0,
+      "ts": 1783360610893,
+      "type": "float",
+      "value": 3.336
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_14_alarm",
+      "q": 0,
+      "ts": 1783360610905,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_14_diff",
+      "q": 0,
+      "ts": 1783360610900,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_14_modbus",
+      "q": 0,
+      "ts": 1783360610896,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_14_mqtt",
+      "q": 0,
+      "ts": 1783360610893,
+      "type": "float",
+      "value": 3.336
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_15_alarm",
+      "q": 0,
+      "ts": 1783360610905,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_15_diff",
+      "q": 0,
+      "ts": 1783360610900,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_15_modbus",
+      "q": 0,
+      "ts": 1783360610896,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_15_mqtt",
+      "q": 0,
+      "ts": 1783360610893,
+      "type": "float",
+      "value": 3.336
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_16_alarm",
+      "q": 0,
+      "ts": 1783360610905,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_16_diff",
+      "q": 0,
+      "ts": 1783360610900,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_16_modbus",
+      "q": 0,
+      "ts": 1783360610897,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_16_mqtt",
+      "q": 0,
+      "ts": 1783360610894,
+      "type": "float",
+      "value": 3.335
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_1_alarm",
+      "q": 0,
+      "ts": 1783360829920,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_1_diff",
+      "q": 0,
+      "ts": 1783360829898,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_1_modbus",
+      "q": 0,
+      "ts": 1783360829896,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_1_mqtt",
+      "q": 0,
+      "ts": 1783360829895,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_2_alarm",
+      "q": 0,
+      "ts": 1783360829921,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_2_diff",
+      "q": 0,
+      "ts": 1783360829899,
+      "type": "float",
+      "value": 0.0030000000000001137
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_2_modbus",
+      "q": 0,
+      "ts": 1783360829897,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_2_mqtt",
+      "q": 0,
+      "ts": 1783360829895,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_3_alarm",
+      "q": 0,
+      "ts": 1783360757901,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_3_diff",
+      "q": 0,
+      "ts": 1783360757897,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_3_modbus",
+      "q": 0,
+      "ts": 1783360757892,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_3_mqtt",
+      "q": 0,
+      "ts": 1783360757890,
+      "type": "float",
+      "value": 3.335
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_4_alarm",
+      "q": 0,
+      "ts": 1783360757903,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_4_diff",
+      "q": 0,
+      "ts": 1783360757897,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_4_modbus",
+      "q": 0,
+      "ts": 1783360757893,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_4_mqtt",
+      "q": 0,
+      "ts": 1783360757890,
+      "type": "float",
+      "value": 3.335
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_5_alarm",
+      "q": 0,
+      "ts": 1783360757904,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_5_diff",
+      "q": 0,
+      "ts": 1783360757898,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_5_modbus",
+      "q": 0,
+      "ts": 1783360757894,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_5_mqtt",
+      "q": 0,
+      "ts": 1783360757890,
+      "type": "float",
+      "value": 3.335
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_6_alarm",
+      "q": 0,
+      "ts": 1783360757905,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_6_diff",
+      "q": 0,
+      "ts": 1783360757899,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_6_modbus",
+      "q": 0,
+      "ts": 1783360757894,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_6_mqtt",
+      "q": 0,
+      "ts": 1783360757890,
+      "type": "float",
+      "value": 3.335
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_7_alarm",
+      "q": 0,
+      "ts": 1783360680881,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_7_diff",
+      "q": 0,
+      "ts": 1783360680862,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_7_modbus",
+      "q": 0,
+      "ts": 1783360680855,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_7_mqtt",
+      "q": 0,
+      "ts": 1783360680852,
+      "type": "float",
+      "value": 3.336
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_8_alarm",
+      "q": 0,
+      "ts": 1783360680883,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_8_diff",
+      "q": 0,
+      "ts": 1783360680862,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_8_modbus",
+      "q": 0,
+      "ts": 1783360680855,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_8_mqtt",
+      "q": 0,
+      "ts": 1783360680852,
+      "type": "float",
+      "value": 3.336
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_9_alarm",
+      "q": 0,
+      "ts": 1783360680883,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_9_diff",
+      "q": 0,
+      "ts": 1783360680862,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_9_modbus",
+      "q": 0,
+      "ts": 1783360680855,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.cell_9_mqtt",
+      "q": 0,
+      "ts": 1783360680852,
+      "type": "float",
+      "value": 3.336
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.lastUpdate",
+      "q": 0,
+      "ts": 1783360829973,
+      "type": "str",
+      "value": "2026-07-06T18:00:29.973Z"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_1.packAlarm",
+      "q": 0,
+      "ts": 1783360829972,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_10_alarm",
+      "q": 0,
+      "ts": 1783360838956,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_10_diff",
+      "q": 0,
+      "ts": 1783360838940,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_10_modbus",
+      "q": 0,
+      "ts": 1783360838923,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_10_mqtt",
+      "q": 0,
+      "ts": 1783360838901,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_11_alarm",
+      "q": 0,
+      "ts": 1783360838959,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_11_diff",
+      "q": 0,
+      "ts": 1783360838946,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_11_modbus",
+      "q": 0,
+      "ts": 1783360838923,
+      "type": "float",
+      "value": 3.329
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_11_mqtt",
+      "q": 0,
+      "ts": 1783360838901,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_12_alarm",
+      "q": 0,
+      "ts": 1783360690987,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_12_diff",
+      "q": 0,
+      "ts": 1783360690952,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_12_modbus",
+      "q": 0,
+      "ts": 1783360690936,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_12_mqtt",
+      "q": 0,
+      "ts": 1783360690919,
+      "type": "float",
+      "value": 3.336
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_13_alarm",
+      "q": 0,
+      "ts": 1783360690987,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_13_diff",
+      "q": 0,
+      "ts": 1783360690952,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_13_modbus",
+      "q": 0,
+      "ts": 1783360690936,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_13_mqtt",
+      "q": 0,
+      "ts": 1783360690919,
+      "type": "float",
+      "value": 3.335
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_14_alarm",
+      "q": 0,
+      "ts": 1783360690987,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_14_diff",
+      "q": 0,
+      "ts": 1783360690952,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_14_modbus",
+      "q": 0,
+      "ts": 1783360690936,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_14_mqtt",
+      "q": 0,
+      "ts": 1783360690919,
+      "type": "float",
+      "value": 3.336
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_15_alarm",
+      "q": 0,
+      "ts": 1783360690987,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_15_diff",
+      "q": 0,
+      "ts": 1783360690954,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_15_modbus",
+      "q": 0,
+      "ts": 1783360690936,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_15_mqtt",
+      "q": 0,
+      "ts": 1783360690919,
+      "type": "float",
+      "value": 3.335
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_16_alarm",
+      "q": 0,
+      "ts": 1783360690989,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_16_diff",
+      "q": 0,
+      "ts": 1783360690963,
+      "type": "float",
+      "value": 0.01100000000000012
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_16_modbus",
+      "q": 0,
+      "ts": 1783360690936,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_16_mqtt",
+      "q": 0,
+      "ts": 1783360690920,
+      "type": "float",
+      "value": 3.342
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_1_alarm",
+      "q": 0,
+      "ts": 1783360838946,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_1_diff",
+      "q": 0,
+      "ts": 1783360838923,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_1_modbus",
+      "q": 0,
+      "ts": 1783360838902,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_1_mqtt",
+      "q": 0,
+      "ts": 1783360838892,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_2_alarm",
+      "q": 0,
+      "ts": 1783360838946,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_2_diff",
+      "q": 0,
+      "ts": 1783360838924,
+      "type": "float",
+      "value": 0.0030000000000001137
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_2_modbus",
+      "q": 0,
+      "ts": 1783360838908,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_2_mqtt",
+      "q": 0,
+      "ts": 1783360838892,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_3_alarm",
+      "q": 0,
+      "ts": 1783360838946,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_3_diff",
+      "q": 0,
+      "ts": 1783360838924,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_3_modbus",
+      "q": 0,
+      "ts": 1783360838908,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_3_mqtt",
+      "q": 0,
+      "ts": 1783360838896,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_4_alarm",
+      "q": 0,
+      "ts": 1783360838947,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_4_diff",
+      "q": 0,
+      "ts": 1783360838928,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_4_modbus",
+      "q": 0,
+      "ts": 1783360838910,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_4_mqtt",
+      "q": 0,
+      "ts": 1783360838898,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_5_alarm",
+      "q": 0,
+      "ts": 1783360838947,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_5_diff",
+      "q": 0,
+      "ts": 1783360838930,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_5_modbus",
+      "q": 0,
+      "ts": 1783360838910,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_5_mqtt",
+      "q": 0,
+      "ts": 1783360838898,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_6_alarm",
+      "q": 0,
+      "ts": 1783360838950,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_6_diff",
+      "q": 0,
+      "ts": 1783360838940,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_6_modbus",
+      "q": 0,
+      "ts": 1783360838910,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_6_mqtt",
+      "q": 0,
+      "ts": 1783360838898,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_7_alarm",
+      "q": 0,
+      "ts": 1783360838952,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_7_diff",
+      "q": 0,
+      "ts": 1783360838940,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_7_modbus",
+      "q": 0,
+      "ts": 1783360838913,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_7_mqtt",
+      "q": 0,
+      "ts": 1783360838898,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_8_alarm",
+      "q": 0,
+      "ts": 1783360838956,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_8_diff",
+      "q": 0,
+      "ts": 1783360838940,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_8_modbus",
+      "q": 0,
+      "ts": 1783360838916,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_8_mqtt",
+      "q": 0,
+      "ts": 1783360838899,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_9_alarm",
+      "q": 0,
+      "ts": 1783360838956,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_9_diff",
+      "q": 0,
+      "ts": 1783360838940,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_9_modbus",
+      "q": 0,
+      "ts": 1783360838918,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.cell_9_mqtt",
+      "q": 0,
+      "ts": 1783360838901,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.lastUpdate",
+      "q": 0,
+      "ts": 1783360839097,
+      "type": "str",
+      "value": "2026-07-06T18:00:39.097Z"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_2.packAlarm",
+      "q": 0,
+      "ts": 1783360839092,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_10_alarm",
+      "q": 0,
+      "ts": 1783360847884,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_10_diff",
+      "q": 0,
+      "ts": 1783360847878,
+      "type": "float",
+      "value": 0.0030000000000001137
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_10_modbus",
+      "q": 0,
+      "ts": 1783360847871,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_10_mqtt",
+      "q": 0,
+      "ts": 1783360847862,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_11_alarm",
+      "q": 0,
+      "ts": 1783360847884,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_11_diff",
+      "q": 0,
+      "ts": 1783360847878,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_11_modbus",
+      "q": 0,
+      "ts": 1783360847871,
+      "type": "float",
+      "value": 3.329
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_11_mqtt",
+      "q": 0,
+      "ts": 1783360847862,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_12_alarm",
+      "q": 0,
+      "ts": 1783360847884,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_12_diff",
+      "q": 0,
+      "ts": 1783360847878,
+      "type": "float",
+      "value": 0.002000000000000224
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_12_modbus",
+      "q": 0,
+      "ts": 1783360847872,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_12_mqtt",
+      "q": 0,
+      "ts": 1783360847863,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_13_alarm",
+      "q": 0,
+      "ts": 1783360848097,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_13_diff",
+      "q": 0,
+      "ts": 1783360848096,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_13_modbus",
+      "q": 0,
+      "ts": 1783360848014,
+      "type": "float",
+      "value": 3.328
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_13_mqtt",
+      "q": 0,
+      "ts": 1783360848008,
+      "type": "float",
+      "value": 3.332
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_14_alarm",
+      "q": 0,
+      "ts": 1783360630143,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_14_diff",
+      "q": 0,
+      "ts": 1783360630045,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_14_modbus",
+      "q": 0,
+      "ts": 1783360629993,
+      "type": "float",
+      "value": 3.332
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_14_mqtt",
+      "q": 0,
+      "ts": 1783360629951,
+      "type": "float",
+      "value": 3.336
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_15_alarm",
+      "q": 0,
+      "ts": 1783360630160,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_15_diff",
+      "q": 0,
+      "ts": 1783360630112,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_15_modbus",
+      "q": 0,
+      "ts": 1783360630041,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_15_mqtt",
+      "q": 0,
+      "ts": 1783360629991,
+      "type": "float",
+      "value": 3.335
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_16_alarm",
+      "q": 0,
+      "ts": 1783360630160,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_16_diff",
+      "q": 0,
+      "ts": 1783360630113,
+      "type": "float",
+      "value": 0.0030000000000001137
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_16_modbus",
+      "q": 0,
+      "ts": 1783360630043,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_16_mqtt",
+      "q": 0,
+      "ts": 1783360629991,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_1_alarm",
+      "q": 0,
+      "ts": 1783360847865,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_1_diff",
+      "q": 0,
+      "ts": 1783360847861,
+      "type": "float",
+      "value": 0.0030000000000001137
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_1_modbus",
+      "q": 0,
+      "ts": 1783360847856,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_1_mqtt",
+      "q": 0,
+      "ts": 1783360847853,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_2_alarm",
+      "q": 0,
+      "ts": 1783360847872,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_2_diff",
+      "q": 0,
+      "ts": 1783360847864,
+      "type": "float",
+      "value": 0.002000000000000224
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_2_modbus",
+      "q": 0,
+      "ts": 1783360847861,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_2_mqtt",
+      "q": 0,
+      "ts": 1783360847855,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_3_alarm",
+      "q": 0,
+      "ts": 1783360847878,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_3_diff",
+      "q": 0,
+      "ts": 1783360847872,
+      "type": "float",
+      "value": 0.0019999999999997797
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_3_modbus",
+      "q": 0,
+      "ts": 1783360847863,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_3_mqtt",
+      "q": 0,
+      "ts": 1783360847860,
+      "type": "float",
+      "value": 3.332
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_4_alarm",
+      "q": 0,
+      "ts": 1783360847878,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_4_diff",
+      "q": 0,
+      "ts": 1783360847872,
+      "type": "float",
+      "value": 0.0030000000000001137
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_4_modbus",
+      "q": 0,
+      "ts": 1783360847863,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_4_mqtt",
+      "q": 0,
+      "ts": 1783360847861,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_5_alarm",
+      "q": 0,
+      "ts": 1783360847880,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_5_diff",
+      "q": 0,
+      "ts": 1783360847875,
+      "type": "float",
+      "value": 0.0030000000000001137
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_5_modbus",
+      "q": 0,
+      "ts": 1783360847866,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_5_mqtt",
+      "q": 0,
+      "ts": 1783360847862,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_6_alarm",
+      "q": 0,
+      "ts": 1783360847882,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_6_diff",
+      "q": 0,
+      "ts": 1783360847876,
+      "type": "float",
+      "value": 0.0030000000000001137
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_6_modbus",
+      "q": 0,
+      "ts": 1783360847866,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_6_mqtt",
+      "q": 0,
+      "ts": 1783360847862,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_7_alarm",
+      "q": 0,
+      "ts": 1783360847882,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_7_diff",
+      "q": 0,
+      "ts": 1783360847876,
+      "type": "float",
+      "value": 0.0030000000000001137
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_7_modbus",
+      "q": 0,
+      "ts": 1783360847871,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_7_mqtt",
+      "q": 0,
+      "ts": 1783360847862,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_8_alarm",
+      "q": 0,
+      "ts": 1783360847884,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_8_diff",
+      "q": 0,
+      "ts": 1783360847878,
+      "type": "float",
+      "value": 0.0030000000000001137
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_8_modbus",
+      "q": 0,
+      "ts": 1783360847871,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_8_mqtt",
+      "q": 0,
+      "ts": 1783360847862,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_9_alarm",
+      "q": 0,
+      "ts": 1783360847884,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_9_diff",
+      "q": 0,
+      "ts": 1783360847878,
+      "type": "float",
+      "value": 0.002000000000000224
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_9_modbus",
+      "q": 0,
+      "ts": 1783360847871,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.cell_9_mqtt",
+      "q": 0,
+      "ts": 1783360847862,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.lastUpdate",
+      "q": 0,
+      "ts": 1783360848107,
+      "type": "str",
+      "value": "2026-07-06T18:00:48.107Z"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_3.packAlarm",
+      "q": 0,
+      "ts": 1783360848106,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_10_alarm",
+      "q": 0,
+      "ts": 1783360857950,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_10_diff",
+      "q": 0,
+      "ts": 1783360857928,
+      "type": "float",
+      "value": 0.0019999999999997797
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_10_modbus",
+      "q": 0,
+      "ts": 1783360857915,
+      "type": "float",
+      "value": 3.329
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_10_mqtt",
+      "q": 0,
+      "ts": 1783360857912,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_11_alarm",
+      "q": 0,
+      "ts": 1783360857950,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_11_diff",
+      "q": 0,
+      "ts": 1783360857938,
+      "type": "float",
+      "value": 0.0019999999999997797
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_11_modbus",
+      "q": 0,
+      "ts": 1783360857916,
+      "type": "float",
+      "value": 3.329
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_11_mqtt",
+      "q": 0,
+      "ts": 1783360857912,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_12_alarm",
+      "q": 0,
+      "ts": 1783360857950,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_12_diff",
+      "q": 0,
+      "ts": 1783360857938,
+      "type": "float",
+      "value": 0.0009999999999998899
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_12_modbus",
+      "q": 0,
+      "ts": 1783360857917,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_12_mqtt",
+      "q": 0,
+      "ts": 1783360857912,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_13_alarm",
+      "q": 0,
+      "ts": 1783360857956,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_13_diff",
+      "q": 0,
+      "ts": 1783360857946,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_13_modbus",
+      "q": 0,
+      "ts": 1783360857921,
+      "type": "float",
+      "value": 3.328
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_13_mqtt",
+      "q": 0,
+      "ts": 1783360857912,
+      "type": "float",
+      "value": 3.332
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_14_alarm",
+      "q": 0,
+      "ts": 1783360857957,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_14_diff",
+      "q": 0,
+      "ts": 1783360857946,
+      "type": "float",
+      "value": 0.0029999999999996696
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_14_modbus",
+      "q": 0,
+      "ts": 1783360857921,
+      "type": "float",
+      "value": 3.329
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_14_mqtt",
+      "q": 0,
+      "ts": 1783360857913,
+      "type": "float",
+      "value": 3.332
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_15_alarm",
+      "q": 0,
+      "ts": 1783360639930,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_15_diff",
+      "q": 0,
+      "ts": 1783360639909,
+      "type": "float",
+      "value": 0.004999999999999893
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_15_modbus",
+      "q": 0,
+      "ts": 1783360639898,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_15_mqtt",
+      "q": 0,
+      "ts": 1783360639889,
+      "type": "float",
+      "value": 3.336
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_16_alarm",
+      "q": 0,
+      "ts": 1783360639930,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_16_diff",
+      "q": 0,
+      "ts": 1783360639909,
+      "type": "float",
+      "value": 0.0040000000000000036
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_16_modbus",
+      "q": 0,
+      "ts": 1783360639898,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_16_mqtt",
+      "q": 0,
+      "ts": 1783360639889,
+      "type": "float",
+      "value": 3.335
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_1_alarm",
+      "q": 0,
+      "ts": 1783360857875,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_1_diff",
+      "q": 0,
+      "ts": 1783360857866,
+      "type": "float",
+      "value": 0.0009999999999998899
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_1_modbus",
+      "q": 0,
+      "ts": 1783360857861,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_1_mqtt",
+      "q": 0,
+      "ts": 1783360857852,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_2_alarm",
+      "q": 0,
+      "ts": 1783360857889,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_2_diff",
+      "q": 0,
+      "ts": 1783360857875,
+      "type": "float",
+      "value": 0.0019999999999997797
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_2_modbus",
+      "q": 0,
+      "ts": 1783360857865,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_2_mqtt",
+      "q": 0,
+      "ts": 1783360857860,
+      "type": "float",
+      "value": 3.332
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_3_alarm",
+      "q": 0,
+      "ts": 1783360857893,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_3_diff",
+      "q": 0,
+      "ts": 1783360857882,
+      "type": "float",
+      "value": 0.0019999999999997797
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_3_modbus",
+      "q": 0,
+      "ts": 1783360857867,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_3_mqtt",
+      "q": 0,
+      "ts": 1783360857863,
+      "type": "float",
+      "value": 3.332
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_4_alarm",
+      "q": 0,
+      "ts": 1783360857893,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_4_diff",
+      "q": 0,
+      "ts": 1783360857882,
+      "type": "float",
+      "value": 0.0019999999999997797
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_4_modbus",
+      "q": 0,
+      "ts": 1783360857868,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_4_mqtt",
+      "q": 0,
+      "ts": 1783360857863,
+      "type": "float",
+      "value": 3.332
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_5_alarm",
+      "q": 0,
+      "ts": 1783360857894,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_5_diff",
+      "q": 0,
+      "ts": 1783360857882,
+      "type": "float",
+      "value": 0.0019999999999997797
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_5_modbus",
+      "q": 0,
+      "ts": 1783360857868,
+      "type": "float",
+      "value": 3.329
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_5_mqtt",
+      "q": 0,
+      "ts": 1783360857863,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_6_alarm",
+      "q": 0,
+      "ts": 1783360857894,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_6_diff",
+      "q": 0,
+      "ts": 1783360857883,
+      "type": "float",
+      "value": 0.0019999999999997797
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_6_modbus",
+      "q": 0,
+      "ts": 1783360857868,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_6_mqtt",
+      "q": 0,
+      "ts": 1783360857863,
+      "type": "float",
+      "value": 3.332
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_7_alarm",
+      "q": 0,
+      "ts": 1783360857894,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_7_diff",
+      "q": 0,
+      "ts": 1783360857883,
+      "type": "float",
+      "value": 0.0019999999999997797
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_7_modbus",
+      "q": 0,
+      "ts": 1783360857868,
+      "type": "float",
+      "value": 3.329
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_7_mqtt",
+      "q": 0,
+      "ts": 1783360857863,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_8_alarm",
+      "q": 0,
+      "ts": 1783360857894,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_8_diff",
+      "q": 0,
+      "ts": 1783360857886,
+      "type": "float",
+      "value": 0.0019999999999997797
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_8_modbus",
+      "q": 0,
+      "ts": 1783360857872,
+      "type": "float",
+      "value": 3.329
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_8_mqtt",
+      "q": 0,
+      "ts": 1783360857864,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_9_alarm",
+      "q": 0,
+      "ts": 1783360857898,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_9_diff",
+      "q": 0,
+      "ts": 1783360857888,
+      "type": "float",
+      "value": 0.0019999999999997797
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_9_modbus",
+      "q": 0,
+      "ts": 1783360857873,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.cell_9_mqtt",
+      "q": 0,
+      "ts": 1783360857864,
+      "type": "float",
+      "value": 3.332
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.lastUpdate",
+      "q": 0,
+      "ts": 1783360858007,
+      "type": "str",
+      "value": "2026-07-06T18:00:58.007Z"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.Pack_4.packAlarm",
+      "q": 0,
+      "ts": 1783360857994,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Gobel.TimeSinceLastFullChargeFormatted",
+      "q": 0,
+      "ts": 1783614276421,
+      "type": "str",
+      "value": "1W 2T 6h 18m"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Humidor.Dehumidifier_LowerLimit",
+      "q": 0,
+      "ts": 1710051455985,
+      "type": "str",
+      "value": "62"
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Humidor.Dehumidifier_Timeout",
+      "q": 0,
+      "ts": 1733060953809,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Humidor.Dehumidifier_UpperLimit",
+      "q": 0,
+      "ts": 1710051455989,
+      "type": "str",
+      "value": "69"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Pool.RL",
+      "q": 0,
+      "ts": 1783611173212,
+      "type": "int",
+      "value": 31
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Pool.STOP_Alive_Toggle_Fail",
+      "q": 0,
+      "ts": 1782995763619,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Pool.TimerPumpe",
+      "q": 0,
+      "ts": 1783613377673,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Pool.TimerWB",
+      "q": 0,
+      "ts": 1783613378652,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Pool.VL",
+      "q": 0,
+      "ts": 1783613578883,
+      "type": "int",
+      "value": 31
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Pool.ÜberschussPumpeVorhanden",
+      "q": 0,
+      "ts": 1783614275903,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Pool.ÜberschussWPVorhanden",
+      "q": 0,
+      "ts": 1783614275903,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.time-switch.0",
+      "id": "javascript.0.PoolSteuerung.Freigabe",
+      "q": 0,
+      "ts": 1732957200016,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.PoolVIS2.Zeitplan1.Ende",
+      "q": 0,
+      "ts": 1783389430881,
+      "type": "str",
+      "value": "12:00"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.PoolVIS2.Zeitplan1.Start",
+      "q": 0,
+      "ts": 1783389430881,
+      "type": "str",
+      "value": "10:00"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.PoolVIS2.Zeitplan2.Ende",
+      "q": 0,
+      "ts": 1783389447752,
+      "type": "str",
+      "value": "16:00"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.PoolVIS2.Zeitplan2.Start",
+      "q": 0,
+      "ts": 1783389447752,
+      "type": "str",
+      "value": "14:00"
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Priorität.Prio_aktStromproPhase_Tesla",
+      "q": 0,
+      "ts": 1731939902006,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Priorität.Prio_aktStromproPhase_Zoe",
+      "q": 0,
+      "ts": 1731939902005,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Priorität.Prio_maxTesla",
+      "q": 0,
+      "ts": 1731938787015,
+      "type": "int",
+      "value": 16
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Priorität.Prio_maxZoe",
+      "q": 0,
+      "ts": 1731938787015,
+      "type": "int",
+      "value": 32
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Sonne.Sonnenaufgang",
+      "q": 0,
+      "ts": 1783558800003,
+      "type": "str",
+      "value": "Thu Jul 09 2026 05:14:18 GMT+0200 (Mitteleuropäische Sommerzeit)"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Sonne.Sonnenuntergang",
+      "q": 0,
+      "ts": 1783558800003,
+      "type": "str",
+      "value": "Thu Jul 09 2026 21:05:24 GMT+0200 (Mitteleuropäische Sommerzeit)"
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Sonne.Sonnenzeit",
+      "q": 0,
+      "ts": 1783614240035,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Sonne.Sonnenzeit_1h",
+      "q": 0,
+      "ts": 1783614240035,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Sonne.ZeitSA",
+      "q": 0,
+      "ts": 1783558800003,
+      "type": "str",
+      "value": "05:14"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Sonne.ZeitSU",
+      "q": 0,
+      "ts": 1783558800003,
+      "type": "str",
+      "value": "21:05"
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Sonne.nachSA",
+      "q": 0,
+      "ts": 1783614240035,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Sonne.vorSU",
+      "q": 0,
+      "ts": 1783614240035,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Victron.ChargerV3",
+      "q": 0,
+      "ts": 1783614270023,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Victron.ChargerV4",
+      "q": 0,
+      "ts": 1783614270023,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Victron.Gobel_Master_Power",
+      "q": 0,
+      "ts": 1783614276009,
+      "type": "float",
+      "value": 261.22
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Victron.Gobel_Slave_1_Power",
+      "q": 0,
+      "ts": 1783614276009,
+      "type": "float",
+      "value": 270.61
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Victron.Gobel_Slave_2_Power",
+      "q": 0,
+      "ts": 1783614276009,
+      "type": "float",
+      "value": 325.04
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Victron.Gobel_Slave_3_Power",
+      "q": 0,
+      "ts": 1783614276009,
+      "type": "float",
+      "value": 287.61
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Victron.TOP-StartV",
+      "q": 0,
+      "ts": 1782819000029,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.web.0",
+      "id": "javascript.0.Wolken-PV_Caddy.Wolkenzaehler_PVCaddy_Aktiv",
+      "q": 0,
+      "ts": 1736766092974,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle",
+      "q": 0,
+      "ts": 1783614240003,
+      "type": "int",
+      "value": 10
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle_Aktiv",
+      "q": 0,
+      "ts": 1783548449575,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle_Merker",
+      "q": 0,
+      "ts": 1732468140015,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Wolken-PV_Home.Wolkenzaehler_Home",
+      "q": 0,
+      "ts": 1783614240003,
+      "type": "int",
+      "value": 7
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Wolken-PV_Home.Wolkenzaehler_Home_Aktiv",
+      "q": 0,
+      "ts": 1783575240002,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.Wolken-PV_Home.Wolkenzaehler_Home_PVMerker",
+      "q": 0,
+      "ts": 1783614275013,
+      "type": "float",
+      "value": 6552.7
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.goE.sessions.lastSessionId",
+      "q": 0,
+      "ts": 1781506669864,
+      "type": "int",
+      "value": 0
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_1",
+      "q": 0,
+      "ts": 1782049505017,
+      "type": "float",
+      "value": 3.31
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_10",
+      "q": 0,
+      "ts": 1782049505017,
+      "type": "float",
+      "value": 3.31
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_11",
+      "q": 0,
+      "ts": 1782049505018,
+      "type": "float",
+      "value": 3.311
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_12",
+      "q": 0,
+      "ts": 1782049505018,
+      "type": "float",
+      "value": 3.31
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_13",
+      "q": 0,
+      "ts": 1782049505018,
+      "type": "float",
+      "value": 3.311
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_14",
+      "q": 0,
+      "ts": 1782049505018,
+      "type": "float",
+      "value": 3.311
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_15",
+      "q": 0,
+      "ts": 1782049505018,
+      "type": "float",
+      "value": 3.31
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_16",
+      "q": 0,
+      "ts": 1782049505018,
+      "type": "float",
+      "value": 3.309
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_2",
+      "q": 0,
+      "ts": 1782049505017,
+      "type": "float",
+      "value": 3.309
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_3",
+      "q": 0,
+      "ts": 1782049505017,
+      "type": "float",
+      "value": 3.31
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_4",
+      "q": 0,
+      "ts": 1782049505017,
+      "type": "float",
+      "value": 3.31
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_5",
+      "q": 0,
+      "ts": 1782049505017,
+      "type": "float",
+      "value": 3.31
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_6",
+      "q": 0,
+      "ts": 1782049505017,
+      "type": "float",
+      "value": 3.31
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_7",
+      "q": 0,
+      "ts": 1782049505017,
+      "type": "float",
+      "value": 3.31
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_8",
+      "q": 0,
+      "ts": 1782049505017,
+      "type": "float",
+      "value": 3.31
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_9",
+      "q": 0,
+      "ts": 1782049505017,
+      "type": "float",
+      "value": 3.311
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_1",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_10",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_11",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_12",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_13",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_14",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.334
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_15",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.332
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_16",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.327
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_2",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.329
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_3",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_4",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_5",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.33
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_6",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.332
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_7",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.331
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_8",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_9",
+      "q": 0,
+      "ts": 1782042835016,
+      "type": "float",
+      "value": 3.333
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.2.Gobel.Gobel_1_All_Voltages",
+      "q": 0,
+      "ts": 1782144352361,
+      "type": "str",
+      "value": "{\"value\":[3306,3306,3306,3306,3306,3306,3306,3306,3306,3306,3306,3306,3306,3306,3306,3306]}"
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.2.Gobel.Gobel_2_All_Voltages",
+      "q": 0,
+      "ts": 1782144352361,
+      "type": "str",
+      "value": "{\"value\":[3306,3306,3306,3306,3306,3306,3306,3306,3305,3306,3306,3306,3306,3306,3306,3306]}"
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.2.Gobel.Gobel_3_All_Voltages",
+      "q": 0,
+      "ts": 1782144352362,
+      "type": "str",
+      "value": "{\"value\":[3305,3306,3306,3306,3306,3306,3305,3305,3305,3306,3306,3306,3306,3306,3306,3304]}"
+    },
+    {
+      "ack": false,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.mqtt.2.Gobel.Gobel_4_All_Voltages",
+      "q": 0,
+      "ts": 1782144352362,
+      "type": "str",
+      "value": "{\"value\":[3305,3305,3306,3305,3306,3306,3305,3305,3305,3306,3306,3306,3306,3305,3306,3305]}"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Adapter_Blockly",
+      "q": 0,
+      "ts": 1710442518393,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Bewässerung",
+      "q": 0,
+      "ts": 1782995763558,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.EBikeLader",
+      "q": 0,
+      "ts": 1782995763560,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Garage",
+      "q": 0,
+      "ts": 1782995763560,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Gobel_VDIFF",
+      "q": 0,
+      "ts": 1783360862164,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Gobel_Vergleich_BMS_Heltec",
+      "q": 0,
+      "ts": 1783360869645,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Gobel_Zellspannungen",
+      "q": 0,
+      "ts": 1782995763859,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Gobel_einzelne_Zellspannungen",
+      "q": 0,
+      "ts": 1782995763859,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Grid-PV",
+      "q": 0,
+      "ts": 1782995763560,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Grid-PVHalle",
+      "q": 0,
+      "ts": 1782995763560,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Hallentore",
+      "q": 0,
+      "ts": 1782995763561,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Pool",
+      "q": 0,
+      "ts": 1782995763561,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Pool_Steuerung",
+      "q": 0,
+      "ts": 1782995763561,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Priority_Management",
+      "q": 0,
+      "ts": 1782995763561,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Rasen",
+      "q": 0,
+      "ts": 1782995763561,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.SmartPlug",
+      "q": 0,
+      "ts": 1782995763561,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Smart_BadHzg",
+      "q": 0,
+      "ts": 1782995763561,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Sonne",
+      "q": 0,
+      "ts": 1782995763561,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Sonnenstand",
+      "q": 0,
+      "ts": 1782995763561,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_Alarms",
+      "q": 0,
+      "ts": 1782995763562,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_BAT",
+      "q": 0,
+      "ts": 1782995763562,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_DiffV",
+      "q": 0,
+      "ts": 1782995763562,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_EM24",
+      "q": 0,
+      "ts": 1782995763562,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_ESS",
+      "q": 0,
+      "ts": 1711443437760,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_Hzg",
+      "q": 0,
+      "ts": 1782995763564,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_INIT",
+      "q": 0,
+      "ts": 1782995763564,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_Infos",
+      "q": 0,
+      "ts": 1782995763564,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_Limits",
+      "q": 0,
+      "ts": 1782995763564,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_Mode",
+      "q": 0,
+      "ts": 1782995763637,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_Mqtt",
+      "q": 0,
+      "ts": 1782995763637,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_OldGrid",
+      "q": 0,
+      "ts": 1782995763637,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_Shunt_LastFullCharge",
+      "q": 0,
+      "ts": 1782995763637,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Victron_TOP-Balancing",
+      "q": 0,
+      "ts": 1782995763637,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Werkstatt_Hzg",
+      "q": 0,
+      "ts": 1782995763638,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Wolken-PV_Halle",
+      "q": 0,
+      "ts": 1782995763638,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.Wolken-PV_Home",
+      "q": 0,
+      "ts": 1782995763638,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.ZOE_Debug",
+      "q": 0,
+      "ts": 1729414827947,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.ZOE_Init",
+      "q": 0,
+      "ts": 1729414831593,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.ZOE_Phasen",
+      "q": 0,
+      "ts": 1729414839057,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V3_Charger",
+      "q": 0,
+      "ts": 1782995763638,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V3_Control",
+      "q": 0,
+      "ts": 1782995763638,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V3_Debug",
+      "q": 0,
+      "ts": 1782995763638,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V3_Error",
+      "q": 0,
+      "ts": 1782995763638,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V3_GridOffset",
+      "q": 0,
+      "ts": 1782995763638,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V3_Init",
+      "q": 0,
+      "ts": 1782995763638,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V3_LED",
+      "q": 0,
+      "ts": 1782995763639,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V3_Limits",
+      "q": 0,
+      "ts": 1782995763639,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V3_Phasen",
+      "q": 0,
+      "ts": 1782995763639,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V3_Verriegelung",
+      "q": 0,
+      "ts": 1782995763639,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V3_Überschuss",
+      "q": 0,
+      "ts": 1782995763639,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V3_Überwachung",
+      "q": 0,
+      "ts": 1782995763639,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_Charger_Neu",
+      "q": 0,
+      "ts": 1782995763639,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_Control",
+      "q": 0,
+      "ts": 1782995763639,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_Debug",
+      "q": 0,
+      "ts": 1782995763640,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_Error",
+      "q": 0,
+      "ts": 1782995763640,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_GridOffset",
+      "q": 0,
+      "ts": 1782995763640,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_Halle",
+      "q": 0,
+      "ts": 1782995763640,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_Init",
+      "q": 0,
+      "ts": 1782995763713,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_LED",
+      "q": 0,
+      "ts": 1782995763713,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_Limits",
+      "q": 0,
+      "ts": 1782995763713,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_Phasen",
+      "q": 0,
+      "ts": 1782995763713,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_Verriegelung",
+      "q": 0,
+      "ts": 1782995763714,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_kWh",
+      "q": 0,
+      "ts": 1782995763856,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_V4_Überwachung",
+      "q": 0,
+      "ts": 1782995763856,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.common.go-E_WB-Halle_Ladungen",
+      "q": 0,
+      "ts": 1782995763857,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.energiemanagement.Batterie_BMS_Heltec_Vergleich",
+      "q": 0,
+      "ts": 1783360767641,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.energiemanagement.Batterie_Zellspannungen",
+      "q": 0,
+      "ts": 1783360511560,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.energiemanagement.Config",
+      "q": 0,
+      "ts": 1783362413580,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptEnabled.energiemanagement.Pool_VIS2_Zeitplaene",
+      "q": 0,
+      "ts": 1783389413900,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptProblem.common.Garage",
+      "q": 0,
+      "ts": 1710051454942,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptProblem.common.Gobel_einzelne_Zellspannungen",
+      "q": 0,
+      "ts": 1782104236114,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptProblem.common.Rasen",
+      "q": 0,
+      "ts": 1710051454955,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.scriptProblem.common.Sonnenstand",
+      "q": 0,
+      "ts": 1710051455118,
+      "type": "bool",
+      "value": false
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.dawn",
+      "q": 0,
+      "ts": 1783548001150,
+      "type": "str",
+      "value": "04:33:57"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.dusk",
+      "q": 0,
+      "ts": 1783548001152,
+      "type": "str",
+      "value": "21:45:44"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.goldenHour",
+      "q": 0,
+      "ts": 1783548001160,
+      "type": "str",
+      "value": "20:17:19"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.goldenHourEnd",
+      "q": 0,
+      "ts": 1783548001158,
+      "type": "str",
+      "value": "06:02:23"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.nadir",
+      "q": 0,
+      "ts": 1783548001058,
+      "type": "str",
+      "value": "01:09:51"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.nauticalDawn",
+      "q": 0,
+      "ts": 1783548001153,
+      "type": "str",
+      "value": "03:38:40"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.nauticalDusk",
+      "q": 0,
+      "ts": 1783548001154,
+      "type": "str",
+      "value": "22:41:02"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.night",
+      "q": 0,
+      "ts": 1783548001157,
+      "type": "str",
+      "value": "00:05:05"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.nightEnd",
+      "q": 0,
+      "ts": 1783548001156,
+      "type": "str",
+      "value": "02:14:37"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.solarNoon",
+      "q": 0,
+      "ts": 1783548001002,
+      "type": "str",
+      "value": "13:09:51"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.sunrise",
+      "q": 0,
+      "ts": 1783548001100,
+      "type": "str",
+      "value": "05:14:18"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.sunriseEnd",
+      "q": 0,
+      "ts": 1783548001118,
+      "type": "str",
+      "value": "05:18:13"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.sunset",
+      "q": 0,
+      "ts": 1783548001117,
+      "type": "str",
+      "value": "21:05:24"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.astro.sunsetStart",
+      "q": 0,
+      "ts": 1783548001142,
+      "type": "str",
+      "value": "21:01:28"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.dayTime",
+      "q": 0,
+      "ts": 1783614240001,
+      "type": "str",
+      "value": "18:24"
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.isDayTime",
+      "q": 0,
+      "ts": 1783569597048,
+      "type": "bool",
+      "value": true
+    },
+    {
+      "ack": true,
+      "from": "system.adapter.javascript.0",
+      "id": "javascript.0.variables.isDaylightSaving",
+      "q": 0,
+      "ts": 1774749536705,
+      "type": "bool",
+      "value": true
+    }
+  ]
+}

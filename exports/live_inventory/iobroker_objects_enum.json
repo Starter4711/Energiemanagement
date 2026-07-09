@@ -1,0 +1,85 @@
+{
+  "count": 2,
+  "generatedAt": "2026-07-09T16:24:53.349992+00:00",
+  "objects": [
+    {
+      "_id": "enum.functions",
+      "acl": {
+        "object": 1911,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator"
+      },
+      "common": {
+        "desc": {
+          "de": "Liste der Funktionen",
+          "en": "List of the functions",
+          "es": "Lista de las funciones",
+          "fr": "Liste des fonctions",
+          "it": "Elenco delle funzioni",
+          "nl": "Lijst met functies",
+          "pl": "Lista funkcji",
+          "pt": "Lista das funções",
+          "ru": "Список функций",
+          "zh-cn": "功能列表"
+        },
+        "dontDelete": true,
+        "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCI+DQogICAgPHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNOSAyMWMwIC41NS40NSAxIDEgMWg0Yy41NSAwIDEtLjQ1IDEtMXYtMUg5djF6bTMtMTlDOC4xNCAyIDUgNS4xNCA1IDljMCAyLjM4IDEuMTkgNC40NyAzIDUuNzRWMTdjMCAuNTUuNDUgMSAxIDFoNmMuNTUgMCAxLS40NSAxLTF2LTIuMjZjMS44MS0xLjI3IDMtMy4zNiAzLTUuNzQgMC0zLjg2LTMuMTQtNy03LTd6bTIuODUgMTEuMWwtLjg1LjZWMTZoLTR2LTIuM2wtLjg1LS42QzcuOCAxMi4xNiA3IDEwLjYzIDcgOWMwLTIuNzYgMi4yNC01IDUtNXM1IDIuMjQgNSA1YzAgMS42My0uOCAzLjE2LTIuMTUgNC4xeiIvPg0KPC9zdmc+",
+        "members": [],
+        "name": {
+          "de": "Funktionen",
+          "en": "Functions",
+          "es": "Funciones",
+          "fr": "Les fonctions",
+          "it": "funzioni",
+          "nl": "functies",
+          "pl": "Funkcje",
+          "pt": "Funções",
+          "ru": "функции",
+          "zh-cn": "职能"
+        }
+      },
+      "native": {},
+      "type": "enum"
+    },
+    {
+      "_id": "enum.rooms",
+      "acl": {
+        "object": 1911,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator"
+      },
+      "common": {
+        "desc": {
+          "de": "Liste der Räume",
+          "en": "List of the rooms",
+          "es": "Lista de las habitaciones",
+          "fr": "Liste des chambres",
+          "it": "Elenco delle stanze",
+          "nl": "Lijst met kamers",
+          "pl": "Lista pokoi",
+          "pt": "Lista dos quartos",
+          "ru": "Список комнат",
+          "zh-cn": "房间清单"
+        },
+        "dontDelete": true,
+        "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCI+DQogICAgPHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIgNS42OWw1IDQuNVYxOGgtMnYtNkg5djZIN3YtNy44MWw1LTQuNU0xMiAzTDIgMTJoM3Y4aDZ2LTZoMnY2aDZ2LThoM0wxMiAzeiIvPg0KPC9zdmc+",
+        "members": [],
+        "name": {
+          "de": "Räume",
+          "en": "Rooms",
+          "es": "Habitaciones",
+          "fr": "Pièces",
+          "it": "Camere",
+          "nl": "Kamers",
+          "pl": "Pokoje",
+          "pt": "Quartos",
+          "ru": "Комнаты",
+          "zh-cn": "客房"
+        }
+      },
+      "native": {},
+      "type": "enum"
+    }
+  ],
+  "source": "live /opt/iobroker/iobroker-data/objects.jsonl"
+}

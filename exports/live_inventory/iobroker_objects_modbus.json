@@ -1,0 +1,6355 @@
+{
+  "count": 142,
+  "generatedAt": "2026-07-09T16:24:51.684339+00:00",
+  "objects": [
+    {
+      "_id": "modbus.1",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator"
+      },
+      "common": {
+        "type": "meta"
+      },
+      "native": {},
+      "type": "meta"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator"
+      },
+      "common": {
+        "name": "Holding registers"
+      },
+      "native": {},
+      "type": "channel"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40001_Ampere",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 0,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40002_Volt",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 1,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40003_SOC",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 2,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40004_SOH",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 3,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40005_Remain_Capacity",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 4,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40006_Full_Capacity",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 5,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40007_Designed_Capacity",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 6,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40008_Battery_Cycles_Coutn",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 7,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40010_Warning_Flag",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 9,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40011_Protection_Flag",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 10,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40012_Status/Fault_Flag",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 11,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40013_Balancer_Status",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 12,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40016_Cell_Voltage_1",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "mV",
+        "write": true
+      },
+      "native": {
+        "address": 15,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40017_Cell_Voltage_2",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "mV",
+        "write": true
+      },
+      "native": {
+        "address": 16,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40018_Cell_Voltage_3",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 17,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40019_Cell_Voltage_4",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 18,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40020_Cell_Voltage_5",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 19,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40021_Cell_Voltage_6",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 20,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40022_Cell_Voltage_7",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 21,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40023_Cell_Voltage_8",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 22,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40024_Cell_Voltage_9",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 23,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40025_Cell_Voltage_10",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 24,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40026_Cell_Voltage_11",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 25,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40027_Cell_Voltage_12",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 26,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40028_Cell_Voltage_13",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 27,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40029_Cell_Voltage_14",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 28,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40030_Cell_Voltage_15",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 29,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40031_Cell_Voltage_16",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 30,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40032_Cell_temperature_1",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 31,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40033_Cell_temperature_2",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 32,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40034_Cell_temperature_3",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 33,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40035_Cell_temperature_4",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 34,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40036_MOSFET_temperature",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 35,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.1.40037_Environment_temperature",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 36,
+        "deviceId": 1,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40001_Ampere",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 0,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40002_Volt",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 1,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40003_SOC",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 2,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40004_SOH",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 3,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40005_Remain_Capacity",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 4,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40006_Full_Capacity",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 5,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40007_Designed_Capacity",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 6,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40008_Battery_Cycles_Coutn",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 7,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40010_Warning_Flag",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 9,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40011_Protection_Flag",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 10,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40012_Status/Fault_Flag",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 11,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40013_Balancer_Status",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 12,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40016_Cell_Voltage_1",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "mV",
+        "write": true
+      },
+      "native": {
+        "address": 15,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40017_Cell_Voltage_2",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "mV",
+        "write": true
+      },
+      "native": {
+        "address": 16,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40018_Cell_Voltage_3",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 17,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40019_Cell_Voltage_4",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 18,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40020_Cell_Voltage_5",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 19,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40021_Cell_Voltage_6",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 20,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40022_Cell_Voltage_7",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 21,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40023_Cell_Voltage_8",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 22,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40024_Cell_Voltage_9",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 23,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40025_Cell_Voltage_10",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 24,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40026_Cell_Voltage_11",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 25,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40027_Cell_Voltage_12",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 26,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40028_Cell_Voltage_13",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 27,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40029_Cell_Voltage_14",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 28,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40030_Cell_Voltage_15",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 29,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40031_Cell_Voltage_16",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 30,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40032_Cell_temperature_1",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 31,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40033_Cell_temperature_2",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 32,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40034_Cell_temperature_3",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 33,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40035_Cell_temperature_4",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 34,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40036_MOSFET_temperature",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 35,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.2.40037_Environment_temperature",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 36,
+        "deviceId": 2,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40001_Ampere",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 0,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40002_Volt",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 1,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40003_SOC",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 2,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40004_SOH",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 3,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40005_Remain_Capacity",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 4,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40006_Full_Capacity",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 5,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40007_Designed_Capacity",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 6,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40008_Battery_Cycles_Coutn",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 7,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40010_Warning_Flag",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 9,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40011_Protection_Flag",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 10,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40012_Status/Fault_Flag",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 11,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40013_Balancer_Status",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 12,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40016_Cell_Voltage_1",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "mV",
+        "write": true
+      },
+      "native": {
+        "address": 15,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40017_Cell_Voltage_2",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "mV",
+        "write": true
+      },
+      "native": {
+        "address": 16,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40018_Cell_Voltage_3",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 17,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40019_Cell_Voltage_4",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 18,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40020_Cell_Voltage_5",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 19,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40021_Cell_Voltage_6",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 20,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40022_Cell_Voltage_7",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 21,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40023_Cell_Voltage_8",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 22,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40024_Cell_Voltage_9",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 23,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40025_Cell_Voltage_10",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 24,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40026_Cell_Voltage_11",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 25,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40027_Cell_Voltage_12",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 26,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40028_Cell_Voltage_13",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 27,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40029_Cell_Voltage_14",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 28,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40030_Cell_Voltage_15",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 29,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40031_Cell_Voltage_16",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 30,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40032_Cell_temperature_1",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 31,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40033_Cell_temperature_2",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 32,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40034_Cell_temperature_3",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 33,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40035_Cell_temperature_4",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 34,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40036_MOSFET_temperature",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 35,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.3.40037_Environment_temperature",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 36,
+        "deviceId": 3,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40001_Ampere",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 0,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40002_Volt",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 1,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40003_SOC",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 2,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40004_SOH",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 3,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40005_Remain_Capacity",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 4,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40006_Full_Capacity",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 5,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40007_Designed_Capacity",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 6,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40008_Battery_Cycles_Coutn",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 7,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40010_Warning_Flag",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 9,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40011_Protection_Flag",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 10,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40012_Status/Fault_Flag",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 11,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40013_Balancer_Status",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 12,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40016_Cell_Voltage_1",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "mV",
+        "write": true
+      },
+      "native": {
+        "address": 15,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40017_Cell_Voltage_2",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "mV",
+        "write": true
+      },
+      "native": {
+        "address": 16,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40018_Cell_Voltage_3",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 17,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40019_Cell_Voltage_4",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 18,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40020_Cell_Voltage_5",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 19,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40021_Cell_Voltage_6",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 20,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40022_Cell_Voltage_7",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 21,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40023_Cell_Voltage_8",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 22,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40024_Cell_Voltage_9",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 23,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40025_Cell_Voltage_10",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 24,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40026_Cell_Voltage_11",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 25,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40027_Cell_Voltage_12",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 26,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40028_Cell_Voltage_13",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 27,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40029_Cell_Voltage_14",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 28,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40030_Cell_Voltage_15",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 29,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40031_Cell_Voltage_16",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 30,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40032_Cell_temperature_1",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 31,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40033_Cell_temperature_2",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 32,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40034_Cell_temperature_3",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 33,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40035_Cell_temperature_4",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 34,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40036_MOSFET_temperature",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 35,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.holdingRegisters.4.40037_Environment_temperature",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "custom": {
+          "influxdb.0": {
+            "aliasId": "",
+            "blockTime": 60000,
+            "changesMinDelta": 5,
+            "changesOnly": true,
+            "changesRelogInterval": 3600,
+            "debounce": 1000,
+            "debounceTime": 30000,
+            "disableSkippedValueLogging": true,
+            "enableDebugLogs": false,
+            "enabled": true,
+            "ignoreBelowNumber": "",
+            "ignoreZero": true,
+            "storageType": ""
+          }
+        },
+        "def": 0,
+        "name": "",
+        "read": true,
+        "role": "level",
+        "type": "number",
+        "unit": "",
+        "write": true
+      },
+      "native": {
+        "address": 36,
+        "deviceId": 4,
+        "factor": 1,
+        "len": 1,
+        "offset": 0,
+        "poll": true,
+        "regType": "holdingRegs",
+        "type": "int16be"
+      },
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.info",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator"
+      },
+      "common": {
+        "name": "info"
+      },
+      "native": {},
+      "type": "channel"
+    },
+    {
+      "_id": "modbus.1.info.connection",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "def": false,
+        "name": "Connected masters",
+        "read": true,
+        "role": "indicator.connected",
+        "type": "boolean",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "modbus.1.info.pollTime",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator",
+        "state": 1636
+      },
+      "common": {
+        "def": 0,
+        "name": "Poll time",
+        "read": true,
+        "role": "",
+        "type": "number",
+        "unit": "ms",
+        "write": false
+      },
+      "native": {},
+      "type": "state"
+    },
+    {
+      "_id": "modbus.admin",
+      "acl": {
+        "object": 1636,
+        "owner": "system.user.admin",
+        "ownerGroup": "system.group.administrator"
+      },
+      "common": {
+        "name": "admin",
+        "type": "admin"
+      },
+      "native": {},
+      "type": "meta"
+    }
+  ],
+  "source": "live /opt/iobroker/iobroker-data/objects.jsonl"
+}

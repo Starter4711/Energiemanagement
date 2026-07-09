@@ -1,0 +1,13 @@
+{
+  "exportedAt": "2026-07-09T16:24:54.869154+00:00",
+  "hostname": "iobroker-iobroker-1-1-1-1",
+  "ioBrokerStatus": "iobroker is running on this host.\n\n\nObjects type: jsonl\nStates  type: jsonl",
+  "ioBrokerVersion": "7.2.2",
+  "javascriptAdapterVersion": "9.0.18",
+  "modbusVersion": "8.0.3",
+  "mqttVersion": "6.1.4",
+  "nodeVersion": "v22.23.1",
+  "operatingSystem": "Linux iobroker-iobroker-1-1-1-1 4.4.302+ #86009 SMP Wed Nov 26 18:19:20 CST 2025 x86_64 GNU/Linux",
+  "vis2Version": "2.13.8",
+  "visVersion": "1.5.6"
+}

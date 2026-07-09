@@ -1,0 +1,2382 @@
+{
+  "count": 168,
+  "generatedAt": "2026-07-09T16:24:54.947867+00:00",
+  "objects": [
+    {
+      "alias": [],
+      "object": "script.js.common",
+      "reads": [],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Bewässerung",
+      "reads": [
+        "0_userdata.0.AMIS.PVPower",
+        "0_userdata.0.Bew"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.Bewässerung.BewässerungAktiv",
+        "0_userdata.0.Bewässerung.Intervall_Abend",
+        "0_userdata.0.Bewässerung.Intervall_Nachmittag",
+        "0_userdata.0.Bewässerung.Intervall_Vormittag",
+        "0_userdata.0.Bewässerung.Laufzeit",
+        "0_userdata.0.Bewässerung.PVEinfluss",
+        "0_userdata.0.Bewässerung.Restzeit",
+        "0_userdata.0.Bewässerung.Timezone",
+        "0_userdata.0.Bewässerung.Zähler"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.EBikeLader",
+      "reads": [
+        "0_userdata.0.ALIAS.EM24_HomeGrid_PV_Ueberschuss",
+        "0_userdata.0.SmartPlugs.SmarPlug_EBike",
+        "0_userdata.0.SmartPlugs.SmartPlug_EBike_Timeout"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.SmartPlugs.SmartPlug_EBike_Timeout"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Garage",
+      "reads": [
+        "0_userdata.0.Garage.2008_Tor_ansteuern",
+        "0_userdata.0.Garage.2008_autom_",
+        "0_userdata.0.Garage.Zoe_Tor_ansteuern",
+        "0_userdata.0.Garage.Zoe_autom_",
+        "javascript.0.Garage.2008_GPS_ZuHause",
+        "javascript.0.Garage.2008_GPS_ZuHausePlaces",
+        "javascript.0.Garage.2008_Status",
+        "javascript.0.Garage.Garage_2008_Status",
+        "javascript.0.Garage.Garage_Lisi_Status",
+        "javascript.0.Garage.Garage_Richard_Status",
+        "javascript.0.Garage.Garage_Zoe_Status",
+        "javascript.0.Garage.Tor_2008_Verz",
+        "javascript.0.Garage.Tor_2008_aktiv",
+        "javascript.0.Garage.Tor_Zoe_Verz",
+        "javascript.0.Garage.Tor_Zoe_aktiv",
+        "javascript.0.Garage.Zoe_GPS_ZuHause",
+        "javascript.0.Garage.Zoe_GPS_ZuHausePlaces",
+        "javascript.0.Garage.Zoe_Status"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.Garage.2008_Tor_ansteuern",
+        "0_userdata.0.Garage.Zoe_Tor_ansteuern",
+        "javascript.0.Garage.2008_GPS_ZuHause",
+        "javascript.0.Garage.2008_GPS_ZuHausePlaces",
+        "javascript.0.Garage.2008_Status",
+        "javascript.0.Garage.Garage_2008_Status",
+        "javascript.0.Garage.Garage_Lisi_Status",
+        "javascript.0.Garage.Garage_Richard_Status",
+        "javascript.0.Garage.Garage_Zoe_Status",
+        "javascript.0.Garage.Tor_2008_Verzögerung",
+        "javascript.0.Garage.Tor_2008_aktiv",
+        "javascript.0.Garage.Tor_Zoe_Verzögerung",
+        "javascript.0.Garage.Tor_Zoe_aktiv",
+        "javascript.0.Garage.Zoe_GPS_ZuHause",
+        "javascript.0.Garage.Zoe_GPS_ZuHausePlaces",
+        "javascript.0.Garage.Zoe_Status"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Gobel_VDIFF",
+      "reads": [
+        "javascript.0.BMS"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+      "reads": [
+        "javascript.0.Gobel",
+        "modbus.1.holdingRegisters.1.",
+        "mqtt.0.HELTEC_"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Grid-PV",
+      "reads": [
+        "0_userdata.0.Victron.Grid_",
+        "alias.0.EM24"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.Victron.Grid_Überwachung"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Grid-PVHalle",
+      "reads": [
+        "0_userdata.0.Victron.Grid_Halle_",
+        "alias.0.EM24"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.Victron.Grid_Halle_Überwachung"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Hallentore",
+      "reads": [],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Pool",
+      "reads": [
+        "0_userdata.0.ALIAS.EM24_HallGrid_PV_Ueberschuss",
+        "0_userdata.0.Victron.Grid_Halle_",
+        "alias.0.EM24",
+        "alias.0.Fronius.AC-Power",
+        "javascript.0.Pool.",
+        "javascript.0.Pool.RL",
+        "javascript.0.Pool.STOP_Alive_Toggle_Fail",
+        "javascript.0.Pool.TimerPumpe",
+        "javascript.0.Pool.TimerWB",
+        "javascript.0.Pool.VL"
+      ],
+      "source": "script",
+      "writes": [
+        "javascript.0.Pool.RL",
+        "javascript.0.Pool.STOP_Alive_Toggle_Fail",
+        "javascript.0.Pool.TimerPumpe",
+        "javascript.0.Pool.TimerWB",
+        "javascript.0.Pool.VL",
+        "javascript.0.Pool.ÜberschussPumpeVorhanden",
+        "javascript.0.Pool.ÜberschussWPVorhanden"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Pool_Steuerung",
+      "reads": [
+        "javascript.0.Pool.",
+        "javascript.0.Pool.STOP_Alive_Toggle_Fail",
+        "javascript.0.Pool.VL",
+        "javascript.0.PoolSteuerung.Freigabe"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Priority_Management",
+      "reads": [
+        "0_userdata.0.go-e.3P",
+        "javascript.0.Priorit",
+        "javascript.0.Zoe.DebugAktiv"
+      ],
+      "source": "script",
+      "writes": [
+        "javascript.0.Priorität.Prio_aktStromproPhase_Tesla",
+        "javascript.0.Priorität.Prio_aktStromproPhase_Zoe",
+        "javascript.0.Priorität.Prio_maxTesla",
+        "javascript.0.Priorität.Prio_maxZoe"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Rasen",
+      "reads": [
+        "0_userdata.0.Bew"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.Bewässerung.BewässerungAktiv",
+        "0_userdata.0.Bewässerung.Dauer",
+        "0_userdata.0.Bewässerung.Intervall",
+        "0_userdata.0.Bewässerung.Timer",
+        "0_userdata.0.Bewässerung.Zeitzone1",
+        "0_userdata.0.Bewässerung.Zeitzone2",
+        "0_userdata.0.Bewässerung.Zeitzone3",
+        "0_userdata.0.Bewässerung.Zeitzone4"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.SmartPlug",
+      "reads": [
+        "0_userdata.0.AMIS.Grid_",
+        "0_userdata.0.AMIS.PV",
+        "0_userdata.0.SmartPlugs.SmarPlug_Debug",
+        "0_userdata.0.SmartPlugs.SmarPlug_HzgBen",
+        "0_userdata.0.SmartPlugs.SmarPlug_HzgSara",
+        "0_userdata.0.SmartPlugs.SmartPlugBen_Timeout",
+        "0_userdata.0.SmartPlugs.SmartPlugSara_Timeout",
+        "alias.0.Gobel.SOC"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.SmartPlugs.SmartPlugBen_Timeout",
+        "0_userdata.0.SmartPlugs.SmartPlugSara_Timeout"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Smart_BadHzg",
+      "reads": [
+        "0_userdata.0.AMIS.Grid_",
+        "0_userdata.0.AMIS.PV",
+        "0_userdata.0.AMIS.Power",
+        "0_userdata.0.SmartPlugs_BadHzg.SmarPlugBad_Deaktivieren_Intervall",
+        "0_userdata.0.SmartPlugs_BadHzg.SmarPlugBad_Debug",
+        "0_userdata.0.SmartPlugs_BadHzg.SmarPlugBad_HzgBad",
+        "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Grad_VIS",
+        "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timeout",
+        "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timer_Aktiv",
+        "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timer_Aktiv_VIS",
+        "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timer_Inaktiv",
+        "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timer_Inaktiv_VIS",
+        "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timer_Start_VIS"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.SmartPlugs_BadHzg.SmarPlugBad_Deaktivieren_Intervall",
+        "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timeout",
+        "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timer_Aktiv",
+        "0_userdata.0.SmartPlugs_BadHzg.SmartPlugBad_Timer_Inaktiv"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Sonne",
+      "reads": [
+        "javascript.0.Sonne.Sonnenaufgang",
+        "javascript.0.Sonne.Sonnenuntergang",
+        "javascript.0.Sonne.Sonnenzeit",
+        "javascript.0.Sonne.Sonnenzeit_1h",
+        "javascript.0.Sonne.ZeitSA",
+        "javascript.0.Sonne.ZeitSU",
+        "javascript.0.Sonne.nachSA",
+        "javascript.0.Sonne.vorSU"
+      ],
+      "source": "script",
+      "writes": [
+        "javascript.0.Sonne.Sonnenaufgang",
+        "javascript.0.Sonne.Sonnenuntergang",
+        "javascript.0.Sonne.Sonnenzeit",
+        "javascript.0.Sonne.Sonnenzeit_1h",
+        "javascript.0.Sonne.ZeitSA",
+        "javascript.0.Sonne.ZeitSU",
+        "javascript.0.Sonne.nachSA",
+        "javascript.0.Sonne.vorSU"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Sonnenstand",
+      "reads": [
+        "javascript.0",
+        "javascript.0.Solar.Sonnenstand.Azimut",
+        "javascript.0.Solar.Sonnenstand.Elevation",
+        "javascript.0.Solar.Sonnenstand.PanelPossible"
+      ],
+      "source": "script",
+      "writes": [
+        "javascript.0.Solar.Sonnenstand.Azimut",
+        "javascript.0.Solar.Sonnenstand.Elevation",
+        "javascript.0.Solar.Sonnenstand.PanelPossible"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_Alarms",
+      "reads": [
+        "javascript.0.BMS.Pack1.Diff_Alarm",
+        "javascript.0.BMS.Pack2.Diff_Alarm",
+        "javascript.0.BMS.Pack3.Diff_Alarm",
+        "javascript.0.BMS.Pack4.Diff_Alarm",
+        "javascript.0.Gobel.Pack_1.packAlarm",
+        "javascript.0.Gobel.Pack_2.packAlarm",
+        "javascript.0.Gobel.Pack_3.packAlarm",
+        "javascript.0.Gobel.Pack_4.packAlarm"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_BAT",
+      "reads": [
+        "0_userdata.0.Victron.DebugAktiv",
+        "0_userdata.0.Victron.HallGrid_Support",
+        "0_userdata.0.Victron.MP-BAT_max_DC_Current",
+        "0_userdata.0.Victron.MP-ESS_max_DC_Current",
+        "0_userdata.0.Victron.Max_SOC_Setpoint",
+        "0_userdata.0.Victron.Old_Grid_Setpoint_minSOC",
+        "0_userdata.0.Victron.TOP-Balancing",
+        "0_userdata.0.Victron.maxPowerChargeGobel",
+        "0_userdata.0.go-e.AUTO",
+        "0_userdata.0.go-e_V4.AUTO_V4",
+        "0_userdata.0.go-e_V4.MinLadungProzent_V4",
+        "0_userdata.0.go-e_V4.MinLadung_V4",
+        "0_userdata.0.go-e_V4.NOT_V4",
+        "0_userdata.0.go-e_V4.ZIEL_V4",
+        "0_userdata.0.go-e_V4.minPV_V4",
+        "alias.0.EM24",
+        "alias.0.Fronius.AC-Power",
+        "alias.0.Gobel.Current",
+        "alias.0.Gobel.Power",
+        "alias.0.Gobel.Soc",
+        "alias.0.Gobel_Master.SOC",
+        "alias.0.MP-BAT.DC-Current",
+        "alias.0.MP-ESS.DC-Current",
+        "javascript.0.Victron.ChargerV3",
+        "javascript.0.Victron.ChargerV4",
+        "mqtt.1.ioBroker.ESS_MaxChargeCurrent",
+        "mqtt.2.ioBroker.BAT_DisableBatteryCharge",
+        "mqtt.2.ioBroker.BAT_DisableFeedIn",
+        "mqtt.2.ioBroker.BAT_MaxACInputCurrent",
+        "mqtt.2.ioBroker.BAT_MaxChargeCurrent",
+        "mqtt.2.ioBroker.BAT_maxWRLeistung"
+      ],
+      "source": "script",
+      "writes": [
+        "javascript.0.Victron.ChargerV3",
+        "javascript.0.Victron.ChargerV4",
+        "mqtt.1.ioBroker.ESS_MaxChargeCurrent",
+        "mqtt.2.ioBroker.BAT_DisableBatteryCharge",
+        "mqtt.2.ioBroker.BAT_DisableFeedIn",
+        "mqtt.2.ioBroker.BAT_MaxACInputCurrent",
+        "mqtt.2.ioBroker.BAT_MaxChargeCurrent",
+        "mqtt.2.ioBroker.BAT_maxWRLeistung"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_DiffV",
+      "reads": [
+        "javascript.0.Victron.Gobel_Master_Power",
+        "javascript.0.Victron.Gobel_Slave_1_Power",
+        "javascript.0.Victron.Gobel_Slave_2_Power",
+        "javascript.0.Victron.Gobel_Slave_3_Power",
+        "modbus.1.holdingRegisters.1.40001_Ampere",
+        "modbus.1.holdingRegisters.1.40002_Volt",
+        "modbus.1.holdingRegisters.2.40001_Ampere",
+        "modbus.1.holdingRegisters.2.40002_Volt",
+        "modbus.1.holdingRegisters.3.40001_Ampere",
+        "modbus.1.holdingRegisters.3.40002_Volt",
+        "modbus.1.holdingRegisters.4.40001_Ampere",
+        "modbus.1.holdingRegisters.4.40002_Volt"
+      ],
+      "source": "script",
+      "writes": [
+        "javascript.0.Victron.Gobel_Master_Power",
+        "javascript.0.Victron.Gobel_Slave_1_Power",
+        "javascript.0.Victron.Gobel_Slave_2_Power",
+        "javascript.0.Victron.Gobel_Slave_3_Power"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_EM24",
+      "reads": [
+        "0_userdata.0.Victron.DebugAktiv"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_Hzg",
+      "reads": [
+        "alias.0.Gobel_Master.Gobel_Master_Tmp",
+        "alias.0.Gobel_Slave1.Gobel_Slave1_Tmp",
+        "alias.0.Gobel_Slave2.Gobel_Slave2_Tmp",
+        "alias.0.Gobel_Slave3.Gobel_Slave3_Tmp",
+        "modbus.1.info.connection"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_INIT",
+      "reads": [
+        "0_userdata.0.ALIAS.EM24_HallGrid_PV_Ueberschuss",
+        "0_userdata.0.ALIAS.EM24_HallGrid_Power",
+        "0_userdata.0.ALIAS.EM24_HomeGrid_PV_Ueberschuss",
+        "0_userdata.0.ALIAS.EM24_HomeGrid_Power",
+        "0_userdata.0.ALIAS.HallGrid_PV_Power",
+        "0_userdata.0.ALIAS.MP_BAT_DC_Power",
+        "0_userdata.0.ALIAS.MP_ESS_DC_Power",
+        "0_userdata.0.ALIAS.SE_Power",
+        "0_userdata.0.ALIAS.SMA_Power",
+        "0_userdata.0.Victron.Abendabschaltung",
+        "0_userdata.0.Victron.BAT_Mode",
+        "0_userdata.0.Victron.DebugAktiv",
+        "0_userdata.0.Victron.ESS_Mode",
+        "0_userdata.0.Victron.HallGrid_Support",
+        "0_userdata.0.Victron.HallGrid_Verbrauch",
+        "0_userdata.0.Victron.HomeGrid_PV_Summe",
+        "0_userdata.0.Victron.HomeGrid_Verbrauch",
+        "0_userdata.0.Victron.MP-BAT_max_DC_Current",
+        "0_userdata.0.Victron.MP-ESS_max_DC_Current",
+        "0_userdata.0.Victron.MPPT_RS450_Power",
+        "0_userdata.0.Victron.Max_DCFeedIn_Setpoint",
+        "0_userdata.0.Victron.Max_SOC_Setpoint",
+        "0_userdata.0.Victron.New_Grid_Setpoint",
+        "0_userdata.0.Victron.OldGrid_zu_NewGrid",
+        "0_userdata.0.Victron.Old_Grid_Setpoint",
+        "0_userdata.0.Victron.Old_Grid_Setpoint_minSOC",
+        "0_userdata.0.Victron.SE_auf_Grid_New",
+        "0_userdata.0.Victron.SUMME_Differenz",
+        "0_userdata.0.Victron.SUMME_PV",
+        "0_userdata.0.Victron.SUMME_Verbrauch",
+        "0_userdata.0.Victron.TOP-Balancing",
+        "0_userdata.0.Victron.TOP-DiffV-End",
+        "0_userdata.0.Victron.TOP-maxVoltage",
+        "0_userdata.0.Victron.maxPowerChargeGobel",
+        "alias.0.EM24",
+        "alias.0.Fronius.AC-Power",
+        "alias.0.Fronius.AC-Power_10kW",
+        "alias.0.MP-BAT.BAT_Consumption_L1",
+        "alias.0.MP-BAT.BAT_Consumption_L2",
+        "alias.0.MP-BAT.BAT_Consumption_L3",
+        "alias.0.MP-BAT.DC-Power",
+        "alias.0.MP-ESS.DC-Power",
+        "alias.0.MP-ESS.ESS_Consumption_L1",
+        "alias.0.MP-ESS.ESS_Consumption_L2",
+        "alias.0.MP-ESS.ESS_Consumption_L3",
+        "alias.0.MPPT",
+        "alias.0.SE.Power",
+        "alias.0.SMA.Power",
+        "javascript.0.Victron.ChargerV3",
+        "javascript.0.Victron.ChargerV4",
+        "javascript.0.Victron.TOP-StartV",
+        "mqtt.1",
+        "mqtt.1.N.c0619ab336ed.solarcharger.0.Dc.0.Current",
+        "mqtt.1.N.c0619ab336ed.solarcharger.0.Dc.0.Voltage",
+        "mqtt.2",
+        "mqtt.2.N.c0619ab4bea6.vebus.276.Dc.0.Power"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.ALIAS.EM24_HallGrid_PV_Ueberschuss",
+        "0_userdata.0.ALIAS.EM24_HallGrid_Power",
+        "0_userdata.0.ALIAS.EM24_HomeGrid_PV_Ueberschuss",
+        "0_userdata.0.ALIAS.EM24_HomeGrid_Power",
+        "0_userdata.0.ALIAS.HallGrid_PV_Power",
+        "0_userdata.0.ALIAS.MP_BAT_DC_Power",
+        "0_userdata.0.ALIAS.MP_ESS_DC_Power",
+        "0_userdata.0.ALIAS.SE_Power",
+        "0_userdata.0.ALIAS.SMA_Power",
+        "0_userdata.0.Victron.BAT_Mode",
+        "0_userdata.0.Victron.ESS_Mode",
+        "0_userdata.0.Victron.HallGrid_Verbrauch",
+        "0_userdata.0.Victron.HomeGrid_PV_Summe",
+        "0_userdata.0.Victron.HomeGrid_Verbrauch",
+        "0_userdata.0.Victron.MPPT_RS450_Power",
+        "0_userdata.0.Victron.SUMME_Differenz",
+        "0_userdata.0.Victron.SUMME_PV",
+        "0_userdata.0.Victron.SUMME_Verbrauch",
+        "0_userdata.0.Victron.TOP-Balancing",
+        "0_userdata.0.Victron.TOP-maxVoltage"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_Infos",
+      "reads": [
+        "0_userdata.0.Victron.DebugAktiv",
+        "alias.0.Gobel.SOC"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_Limits",
+      "reads": [
+        "0_userdata.0.Victron.Max_DCFeedIn_Setpoint",
+        "0_userdata.0.Victron.SOCmax",
+        "0_userdata.0.Victron.SOCmin",
+        "alias.0.Gobel.Soc",
+        "mqtt.1.ioBroker.ESS_DisablePVFeedIn"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.Victron.SOCmax",
+        "0_userdata.0.Victron.SOCmin",
+        "mqtt.1.ioBroker.ESS_DisablePVFeedIn"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_Mode",
+      "reads": [
+        "0_userdata.0.Victron.Abendabschaltung",
+        "0_userdata.0.Victron.BAT_Mode",
+        "0_userdata.0.Victron.DebugAktiv",
+        "0_userdata.0.Victron.ESS_Mode",
+        "mqtt.1",
+        "mqtt.1.N.c0619ab336ed.vebus.276.Mode",
+        "mqtt.2",
+        "mqtt.2.N.c0619ab4bea6.vebus.276.Mode"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.Victron.BAT_Mode",
+        "0_userdata.0.Victron.ESS_Mode"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_Mqtt",
+      "reads": [
+        "mqtt.1",
+        "mqtt.2",
+        "mqtt.3"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_OldGrid",
+      "reads": [
+        "0_userdata.0.Victron.New_Grid_Setpoint",
+        "0_userdata.0.Victron.OldGrid_zu_NewGrid",
+        "0_userdata.0.Victron.Old_Grid_Setpoint",
+        "0_userdata.0.Victron.Old_Grid_Setpoint_minSOC",
+        "alias.0.EM24",
+        "alias.0.Gobel.SOC",
+        "javascript.0.Victron.ChargerV3",
+        "javascript.0.Victron.ChargerV4",
+        "mqtt.1.ioBroker.ESS_GridSetpoint"
+      ],
+      "source": "script",
+      "writes": [
+        "mqtt.1.ioBroker.ESS_GridSetpoint"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_Shunt_LastFullCharge",
+      "reads": [
+        "javascript.0.Gobel.TimeSinceLastFullChargeFormatted",
+        "mqtt.1.N.c0619ab336ed.battery.279.History.TimeSinceLastFullCharge"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Victron_TOP-Balancing",
+      "reads": [
+        "0_userdata.0.Victron.DebugAktiv",
+        "0_userdata.0.Victron.TOP-Balancing",
+        "0_userdata.0.Victron.TOP-DiffV-End",
+        "0_userdata.0.Victron.TOP-maxVoltage",
+        "alias.0.Gobel.Current",
+        "alias.0.Gobel.Voltage_SmartShunt",
+        "alias.0.Gobel_Master.Gobe_Master_Diff_mV",
+        "alias.0.Gobel_Slave1.Gobel_Slave1_Diff_mV",
+        "alias.0.Gobel_Slave2.Gobel_Slave2_Diff_mV",
+        "alias.0.Gobel_Slave3.Gobel_Slave3_Diff_mV",
+        "alias.0.MP-BAT.DC-Voltage",
+        "alias.0.MP-ESS.DC-Voltage",
+        "javascript.0.Victron.TOP-StartV",
+        "mqtt.1.ioBroker.ESS_MaxChargeVoltage",
+        "mqtt.2.ioBroker.BAT_MaxChargeVoltage"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.Victron.DebugAktiv",
+        "0_userdata.0.Victron.TOP-Balancing",
+        "javascript.0.Victron.TOP-StartV",
+        "mqtt.1.ioBroker.ESS_MaxChargeVoltage",
+        "mqtt.2.ioBroker.BAT_MaxChargeVoltage"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Werkstatt_Hzg",
+      "reads": [
+        "0_userdata.0.ALIAS.EM24_HomeGrid_PV_Ueberschuss",
+        "0_userdata.0.Werkstatt.Werkstatt_Hzg",
+        "0_userdata.0.Werkstatt.Werkstatt_Hzg_Tmp",
+        "alias.0.Gobel_Master.Ampere"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Wolken-PV_Halle",
+      "reads": [
+        "alias.0.Fronius.AC-Power",
+        "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle",
+        "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle_Aktiv",
+        "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle_Merker"
+      ],
+      "source": "script",
+      "writes": [
+        "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle",
+        "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle_Aktiv",
+        "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle_Merker"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Wolken-PV_Home",
+      "reads": [
+        "0_userdata.0.AMIS.Grid_Wolkenz",
+        "0_userdata.0.Victron.HomeGrid_PV_Summe",
+        "javascript.0.Wolken-PV_Home.Wolkenzaehler_Home",
+        "javascript.0.Wolken-PV_Home.Wolkenzaehler_Home_Aktiv",
+        "javascript.0.Wolken-PV_Home.Wolkenzaehler_Home_PVMerker"
+      ],
+      "source": "script",
+      "writes": [
+        "javascript.0.Wolken-PV_Home.Wolkenzaehler_Home",
+        "javascript.0.Wolken-PV_Home.Wolkenzaehler_Home_Aktiv",
+        "javascript.0.Wolken-PV_Home.Wolkenzaehler_Home_PVMerker"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V3_Charger",
+      "reads": [
+        "0_userdata.0.go-e-phases.go_E_Zuleitung_Emergency_STOP",
+        "0_userdata.0.go-e.3P",
+        "0_userdata.0.go-e.AUTO",
+        "0_userdata.0.go-e.DebugAktiv",
+        "0_userdata.0.go-e.LADUNG",
+        "0_userdata.0.go-e.MinLadungAktiv",
+        "0_userdata.0.go-e.NOT",
+        "0_userdata.0.go-e.Timeout",
+        "0_userdata.0.go-e.maxA",
+        "0_userdata.0.go-e.maxBezug",
+        "0_userdata.0.go-e.minA",
+        "0_userdata.0.go-e.minPV",
+        "alias.0.EM24",
+        "alias.0.Fronius.AC-Power"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e.LADUNG",
+        "0_userdata.0.go-e.Timeout"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V3_Control",
+      "reads": [
+        "0_userdata.0.ALIAS.EM24_HallGrid_PV_Ueberschuss",
+        "0_userdata.0.go-e.AUTO",
+        "0_userdata.0.go-e.DebugAktiv",
+        "0_userdata.0.go-e.NOT"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e.AUTO"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V3_Debug",
+      "reads": [
+        "0_userdata.0.go-e.1P",
+        "0_userdata.0.go-e.3P",
+        "0_userdata.0.go-e.AUTO",
+        "0_userdata.0.go-e.DebugAktiv",
+        "0_userdata.0.go-e.LADUNG",
+        "0_userdata.0.go-e.MinLadung",
+        "0_userdata.0.go-e.MinLadungAktiv",
+        "0_userdata.0.go-e.MinLadungProzent",
+        "0_userdata.0.go-e.NOT",
+        "0_userdata.0.go-e.Timeout",
+        "0_userdata.0.go-e.ZIEL",
+        "0_userdata.0.go-e.maxA",
+        "0_userdata.0.go-e.maxBezug",
+        "0_userdata.0.go-e.minA",
+        "0_userdata.0.go-e.minPV",
+        "0_userdata.0.go-e.minW"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V3_Error",
+      "reads": [
+        "0_userdata.0.go-e.DebugAktiv",
+        "mqtt.0.go-eCharger.069113.alw",
+        "mqtt.0.go-eCharger.069113.err"
+      ],
+      "source": "script",
+      "writes": [
+        "mqtt.0.go-eCharger.069113.alw"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V3_GridOffset",
+      "reads": [
+        "0_userdata.0.go-e.1P",
+        "0_userdata.0.go-e.3P",
+        "0_userdata.0.go-e.DebugAktiv",
+        "0_userdata.0.go-e.minPV",
+        "javascript.0.Wolken-PV_Caddy.Wolkenzaehler_PVCaddy",
+        "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle_Aktiv"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e.minPV"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V3_Init",
+      "reads": [
+        "0_userdata.0.go-e-phases.L1_Auto",
+        "0_userdata.0.go-e-phases.L1_Zuleitung",
+        "0_userdata.0.go-e-phases.L2_Auto",
+        "0_userdata.0.go-e-phases.L2_Zuleitung",
+        "0_userdata.0.go-e-phases.L3_Auto",
+        "0_userdata.0.go-e-phases.L3_Zuleitung",
+        "0_userdata.0.go-e-phases.Phasenumschaltung",
+        "0_userdata.0.go-e-phases.go_E_Zuleitung_Emergency_STOP",
+        "0_userdata.0.go-e.1P",
+        "0_userdata.0.go-e.3P",
+        "0_userdata.0.go-e.AUTO",
+        "0_userdata.0.go-e.DebugAktiv",
+        "0_userdata.0.go-e.LADUNG",
+        "0_userdata.0.go-e.MinLadung",
+        "0_userdata.0.go-e.MinLadungAktiv",
+        "0_userdata.0.go-e.MinLadungProzent",
+        "0_userdata.0.go-e.NOT",
+        "0_userdata.0.go-e.Timeout",
+        "0_userdata.0.go-e.ZIEL",
+        "0_userdata.0.go-e.maxA",
+        "0_userdata.0.go-e.maxBezug",
+        "0_userdata.0.go-e.minA",
+        "0_userdata.0.go-e.minPV",
+        "0_userdata.0.go-e.minW"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e-phases.L1_Auto",
+        "0_userdata.0.go-e-phases.L1_Zuleitung",
+        "0_userdata.0.go-e-phases.L2_Auto",
+        "0_userdata.0.go-e-phases.L2_Zuleitung",
+        "0_userdata.0.go-e-phases.L3_Auto",
+        "0_userdata.0.go-e-phases.L3_Zuleitung",
+        "0_userdata.0.go-e-phases.go_E_Zuleitung_Emergency_STOP",
+        "0_userdata.0.go-e.1P",
+        "0_userdata.0.go-e.3P",
+        "0_userdata.0.go-e.AUTO",
+        "0_userdata.0.go-e.LADUNG",
+        "0_userdata.0.go-e.MinLadungAktiv",
+        "0_userdata.0.go-e.MinLadungProzent",
+        "0_userdata.0.go-e.NOT",
+        "0_userdata.0.go-e.Timeout",
+        "0_userdata.0.go-e.ZIEL",
+        "0_userdata.0.go-e.maxA",
+        "0_userdata.0.go-e.maxBezug",
+        "0_userdata.0.go-e.minA",
+        "0_userdata.0.go-e.minPV",
+        "0_userdata.0.go-e.minW"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V3_LED",
+      "reads": [
+        "0_userdata.0.go-e.DebugAktiv"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V3_Limits",
+      "reads": [
+        "0_userdata.0.go-e.DebugAktiv",
+        "0_userdata.0.go-e.maxA",
+        "0_userdata.0.go-e.minA"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e.maxA"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V3_Phasen",
+      "reads": [
+        "0_userdata.0.go-e-phases.L1_Auto",
+        "0_userdata.0.go-e-phases.L1_Zuleitung",
+        "0_userdata.0.go-e-phases.L2_Auto",
+        "0_userdata.0.go-e-phases.L2_Zuleitung",
+        "0_userdata.0.go-e-phases.L3_Auto",
+        "0_userdata.0.go-e-phases.L3_Zuleitung",
+        "0_userdata.0.go-e-phases.Phasenumschaltung",
+        "0_userdata.0.go-e.1P",
+        "0_userdata.0.go-e.3P",
+        "0_userdata.0.go-e.AUTO",
+        "0_userdata.0.go-e.DebugAktiv",
+        "0_userdata.0.go-e.maxA",
+        "0_userdata.0.go-e.minA",
+        "0_userdata.0.go-e.minPV",
+        "0_userdata.0.go-e.minW",
+        "alias.0.EM24",
+        "alias.0.Fronius.AC-Power"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e-phases.L1_Auto",
+        "0_userdata.0.go-e-phases.L1_Zuleitung",
+        "0_userdata.0.go-e-phases.L2_Auto",
+        "0_userdata.0.go-e-phases.L2_Zuleitung",
+        "0_userdata.0.go-e-phases.L3_Auto",
+        "0_userdata.0.go-e-phases.L3_Zuleitung",
+        "0_userdata.0.go-e.1P",
+        "0_userdata.0.go-e.3P",
+        "0_userdata.0.go-e.minPV",
+        "0_userdata.0.go-e.minW"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V3_Verriegelung",
+      "reads": [
+        "0_userdata.0.go-e.1P",
+        "0_userdata.0.go-e.3P",
+        "0_userdata.0.go-e.AUTO",
+        "0_userdata.0.go-e.DebugAktiv",
+        "0_userdata.0.go-e.LADUNG",
+        "0_userdata.0.go-e.NOT",
+        "0_userdata.0.go-e.Timeout",
+        "mqtt.1.ioBroker.ESS_MaxChargeVoltage",
+        "mqtt.2.ioBroker.BAT_MaxChargeVoltage"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e.1P",
+        "0_userdata.0.go-e.3P",
+        "0_userdata.0.go-e.AUTO",
+        "0_userdata.0.go-e.LADUNG",
+        "0_userdata.0.go-e.NOT",
+        "0_userdata.0.go-e.Timeout",
+        "mqtt.1.ioBroker.ESS_MaxChargeVoltage",
+        "mqtt.2.ioBroker.BAT_MaxChargeVoltage"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V3_Überschuss",
+      "reads": [
+        "0_userdata.0.go-e.3P",
+        "0_userdata.0.go-e.DebugAktiv",
+        "0_userdata.0.go-e.Timeout",
+        "0_userdata.0.go-e.maxA",
+        "0_userdata.0.go-e.minA",
+        "0_userdata.0.go-e.minPV",
+        "alias.0.EM24"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V3_Überwachung",
+      "reads": [
+        "0_userdata.0.go-e-phases.L1_Zuleitung",
+        "0_userdata.0.go-e-phases.L2_Zuleitung",
+        "0_userdata.0.go-e-phases.L3_Zuleitung",
+        "0_userdata.0.go-e-phases.go_E_Zuleitung_Emergency_STOP",
+        "0_userdata.0.go-e.DebugAktiv"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e-phases.go_E_Zuleitung_Emergency_STOP"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_Charger_Neu",
+      "reads": [
+        "0_userdata.0.Victron.Grid_Halle_",
+        "0_userdata.0.go-e_V4.3P_V4",
+        "0_userdata.0.go-e_V4.AUTO_V4",
+        "0_userdata.0.go-e_V4.DebugAktiv_V4",
+        "0_userdata.0.go-e_V4.LADUNG_V4",
+        "0_userdata.0.go-e_V4.MinLadungAktiv_V4",
+        "0_userdata.0.go-e_V4.MinLadungProzent_V4",
+        "0_userdata.0.go-e_V4.MinLadung_V4",
+        "0_userdata.0.go-e_V4.NOT_Ampere_V4",
+        "0_userdata.0.go-e_V4.NOT_V4",
+        "0_userdata.0.go-e_V4.ZIEL_V4",
+        "0_userdata.0.go-e_V4.maxA_1P_V4",
+        "0_userdata.0.go-e_V4.maxA_3P_V4",
+        "0_userdata.0.go-e_V4.maxBezug_V4",
+        "0_userdata.0.go-e_V4.minA_1P_V4",
+        "0_userdata.0.go-e_V4.minA_3P_V4",
+        "0_userdata.0.go-e_V4.minPV_V4",
+        "alias.0.EM24",
+        "alias.0.Fronius.AC-Power"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e_V4.AUTO_V4",
+        "0_userdata.0.go-e_V4.LADUNG_V4",
+        "0_userdata.0.go-e_V4.MinLadungAktiv_V4",
+        "0_userdata.0.go-e_V4.NOT_V4"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_Control",
+      "reads": [
+        "0_userdata.0.go-e_V4.3P_V4",
+        "0_userdata.0.go-e_V4.AUTO_V4",
+        "0_userdata.0.go-e_V4.DebugAktiv_V4",
+        "0_userdata.0.go-e_V4.NOT_V4",
+        "0_userdata.0.go-e_V4.minA_1P_V4",
+        "0_userdata.0.go-e_V4.minA_3P_V4"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_Debug",
+      "reads": [
+        "0_userdata.0.go-e_V4.1P_V4",
+        "0_userdata.0.go-e_V4.3P_V4",
+        "0_userdata.0.go-e_V4.AUTO_V4",
+        "0_userdata.0.go-e_V4.DebugAktiv_V4",
+        "0_userdata.0.go-e_V4.LADUNG_V4",
+        "0_userdata.0.go-e_V4.MinLadungAktiv_V4",
+        "0_userdata.0.go-e_V4.MinLadungProzent_V4",
+        "0_userdata.0.go-e_V4.MinLadung_V4",
+        "0_userdata.0.go-e_V4.NOT_V4",
+        "0_userdata.0.go-e_V4.Timeout_V4",
+        "0_userdata.0.go-e_V4.ZIEL_V4",
+        "0_userdata.0.go-e_V4.kWh_Ende_V4",
+        "0_userdata.0.go-e_V4.kWh_Ladung_V4",
+        "0_userdata.0.go-e_V4.kWh_Start_V4",
+        "0_userdata.0.go-e_V4.maxA_1P_V4",
+        "0_userdata.0.go-e_V4.maxA_3P_V4",
+        "0_userdata.0.go-e_V4.maxBezug_V4",
+        "0_userdata.0.go-e_V4.minA_1P_V4",
+        "0_userdata.0.go-e_V4.minA_3P_V4",
+        "0_userdata.0.go-e_V4.minPV_V4",
+        "0_userdata.0.go-e_V4.minW_V4",
+        "alias.0.Fronius.AC-Power"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_Error",
+      "reads": [
+        "0_userdata.0.go-e_V4.DebugAktiv_V4",
+        "mqtt.0.go-eCharger.V4.alw",
+        "mqtt.0.go-eCharger.V4.err"
+      ],
+      "source": "script",
+      "writes": [
+        "mqtt.0.go-eCharger.V4.alw"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_GridOffset",
+      "reads": [
+        "0_userdata.0.go-e_V4.1P_V4",
+        "0_userdata.0.go-e_V4.3P_V4",
+        "0_userdata.0.go-e_V4.minPV_V4",
+        "javascript.0.Wolken-PV_Caddy.Wolkenzaehler_PVCaddy",
+        "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle_Aktiv"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e_V4.minPV_V4"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_Halle",
+      "reads": [],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_Init",
+      "reads": [
+        "0_userdata.0.Zoe.MINLadung",
+        "0_userdata.0.go-e-phases_V4.L1_Auto_V4",
+        "0_userdata.0.go-e-phases_V4.L1_Zuleitung_V4",
+        "0_userdata.0.go-e-phases_V4.L2_Auto_V4",
+        "0_userdata.0.go-e-phases_V4.L2_Zuleitung_V4",
+        "0_userdata.0.go-e-phases_V4.L3_Auto_V4",
+        "0_userdata.0.go-e-phases_V4.L3_Zuleitung_V4",
+        "0_userdata.0.go-e-phases_V4.Phasenumschaltung_V4",
+        "0_userdata.0.go-e-phases_V4.go_E_Zuleitung_Emergency_STOP_V4",
+        "0_userdata.0.go-e_V4.1P_V4",
+        "0_userdata.0.go-e_V4.3P_V4",
+        "0_userdata.0.go-e_V4.AUTO_V4",
+        "0_userdata.0.go-e_V4.DebugAktiv_V4",
+        "0_userdata.0.go-e_V4.LADUNG_V4",
+        "0_userdata.0.go-e_V4.MinLadungAktiv_V4",
+        "0_userdata.0.go-e_V4.MinLadungProzent_V4",
+        "0_userdata.0.go-e_V4.MinLadung_V4",
+        "0_userdata.0.go-e_V4.NOT_Ampere_V4",
+        "0_userdata.0.go-e_V4.NOT_V4",
+        "0_userdata.0.go-e_V4.Timeout_V4",
+        "0_userdata.0.go-e_V4.ZIEL_V4",
+        "0_userdata.0.go-e_V4.kWh_Ende_V4",
+        "0_userdata.0.go-e_V4.kWh_Ladung_V4",
+        "0_userdata.0.go-e_V4.kWh_Start_V4",
+        "0_userdata.0.go-e_V4.maxA_1P_V4",
+        "0_userdata.0.go-e_V4.maxA_3P_V4",
+        "0_userdata.0.go-e_V4.maxBezug_V4",
+        "0_userdata.0.go-e_V4.minA_1P_V4",
+        "0_userdata.0.go-e_V4.minA_3P_V4",
+        "0_userdata.0.go-e_V4.minPV_V4",
+        "0_userdata.0.go-e_V4.minW_V4"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.Zoe.MINLadung",
+        "0_userdata.0.go-e-phases_V4.L1_Auto_V4",
+        "0_userdata.0.go-e-phases_V4.L1_Zuleitung_V4",
+        "0_userdata.0.go-e-phases_V4.L2_Auto_V4",
+        "0_userdata.0.go-e-phases_V4.L2_Zuleitung_V4",
+        "0_userdata.0.go-e-phases_V4.L3_Auto_V4",
+        "0_userdata.0.go-e-phases_V4.L3_Zuleitung_V4",
+        "0_userdata.0.go-e-phases_V4.Phasenumschaltung_V4",
+        "0_userdata.0.go-e-phases_V4.go_E_Zuleitung_Emergency_STOP_V4",
+        "0_userdata.0.go-e_V4.1P_V4",
+        "0_userdata.0.go-e_V4.3P_V4",
+        "0_userdata.0.go-e_V4.AUTO_V4",
+        "0_userdata.0.go-e_V4.LADUNG_V4",
+        "0_userdata.0.go-e_V4.MinLadungAktiv_V4",
+        "0_userdata.0.go-e_V4.MinLadungProzent_V4",
+        "0_userdata.0.go-e_V4.NOT_V4",
+        "0_userdata.0.go-e_V4.Timeout_V4",
+        "0_userdata.0.go-e_V4.ZIEL_V4",
+        "0_userdata.0.go-e_V4.kWh_Ende_V4",
+        "0_userdata.0.go-e_V4.kWh_Start_V4",
+        "0_userdata.0.go-e_V4.maxA_1P_V4",
+        "0_userdata.0.go-e_V4.maxA_3P_V4",
+        "0_userdata.0.go-e_V4.maxBezug_V4",
+        "0_userdata.0.go-e_V4.minA_1P_V4",
+        "0_userdata.0.go-e_V4.minA_3P_V4",
+        "0_userdata.0.go-e_V4.minPV_V4",
+        "0_userdata.0.go-e_V4.minW_V4"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_LED",
+      "reads": [],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_Limits",
+      "reads": [
+        "0_userdata.0.go-e_V4.1P_V4",
+        "0_userdata.0.go-e_V4.3P_V4",
+        "0_userdata.0.go-e_V4.DebugAktiv_V4",
+        "0_userdata.0.go-e_V4.maxA_1P_V4",
+        "0_userdata.0.go-e_V4.maxA_3P_V4",
+        "0_userdata.0.go-e_V4.minA_1P_V4",
+        "0_userdata.0.go-e_V4.minA_3P_V4"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e_V4.maxA_1P_V4",
+        "0_userdata.0.go-e_V4.maxA_3P_V4"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_Phasen",
+      "reads": [
+        "0_userdata.0.go-e-phases_V4.L1_Auto_V4",
+        "0_userdata.0.go-e-phases_V4.L1_Zuleitung_V4",
+        "0_userdata.0.go-e-phases_V4.L2_Auto_V4",
+        "0_userdata.0.go-e-phases_V4.L2_Zuleitung_V4",
+        "0_userdata.0.go-e-phases_V4.L3_Auto_V4",
+        "0_userdata.0.go-e-phases_V4.L3_Zuleitung_V4",
+        "0_userdata.0.go-e-phases_V4.Phasenumschaltung_V4",
+        "0_userdata.0.go-e_V4.1P_V4",
+        "0_userdata.0.go-e_V4.3P_V4",
+        "0_userdata.0.go-e_V4.AUTO_V4",
+        "0_userdata.0.go-e_V4.DebugAktiv_V4",
+        "0_userdata.0.go-e_V4.maxA_1P_V4",
+        "0_userdata.0.go-e_V4.minA_1P_V4",
+        "0_userdata.0.go-e_V4.minA_3P_V4",
+        "0_userdata.0.go-e_V4.minPV_V4",
+        "0_userdata.0.go-e_V4.minW_V4",
+        "alias.0.EM24",
+        "alias.0.Fronius.AC-Power"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e-phases_V4.L1_Auto_V4",
+        "0_userdata.0.go-e-phases_V4.L1_Zuleitung_V4",
+        "0_userdata.0.go-e-phases_V4.L2_Auto_V4",
+        "0_userdata.0.go-e-phases_V4.L2_Zuleitung_V4",
+        "0_userdata.0.go-e-phases_V4.L3_Auto_V4",
+        "0_userdata.0.go-e-phases_V4.L3_Zuleitung_V4",
+        "0_userdata.0.go-e_V4.1P_V4",
+        "0_userdata.0.go-e_V4.3P_V4",
+        "0_userdata.0.go-e_V4.minPV_V4",
+        "0_userdata.0.go-e_V4.minW_V4"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_Verriegelung",
+      "reads": [
+        "0_userdata.0.go-e_V4.1P_V4",
+        "0_userdata.0.go-e_V4.3P_V4",
+        "0_userdata.0.go-e_V4.AUTO_V4",
+        "0_userdata.0.go-e_V4.DebugAktiv_V4",
+        "0_userdata.0.go-e_V4.LADUNG_V4",
+        "0_userdata.0.go-e_V4.NOT_V4",
+        "0_userdata.0.go-e_V4.Timeout_V4"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e_V4.1P_V4",
+        "0_userdata.0.go-e_V4.3P_V4",
+        "0_userdata.0.go-e_V4.AUTO_V4",
+        "0_userdata.0.go-e_V4.LADUNG_V4",
+        "0_userdata.0.go-e_V4.NOT_V4",
+        "0_userdata.0.go-e_V4.Timeout_V4"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_kWh",
+      "reads": [
+        "0_userdata.0.go-e_V4.DebugAktiv_V4",
+        "0_userdata.0.go-e_V4.ZIEL_V4",
+        "0_userdata.0.go-e_V4.kWh_Ende_V4",
+        "0_userdata.0.go-e_V4.kWh_Ladung_V4",
+        "0_userdata.0.go-e_V4.kWh_Start_V4"
+      ],
+      "source": "script",
+      "writes": [
+        "0_userdata.0.go-e_V4.kWh_Ende_V4",
+        "0_userdata.0.go-e_V4.kWh_Ladung_V4",
+        "0_userdata.0.go-e_V4.kWh_Start_V4"
+      ]
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_V4_Überwachung",
+      "reads": [
+        "0_userdata.0.go-e_V4.DebugAktiv_V4"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.go-E_WB-Halle_Ladungen",
+      "reads": [
+        "javascript.0.goE.sessions"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.global",
+      "reads": [],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Gobel_einzelne_Zellspannungen",
+      "reads": [
+        "modbus.1.holdingRegisters.",
+        "mqtt.1.Gobel"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.common.Gobel_Zellspannungen",
+      "reads": [
+        "modbus.1.holdingRegisters.",
+        "mqtt.2.Gobel.Gobel_"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.energiemanagement",
+      "reads": [],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.energiemanagement.Config",
+      "reads": [
+        "0_userdata.0.Energiemanagement",
+        "alias.0.EM24",
+        "alias.0.Fronius.AC-Power",
+        "alias.0.Fronius.AC-Power_10kW",
+        "alias.0.Gobel.Current",
+        "alias.0.Gobel.Power",
+        "alias.0.Gobel.Soc",
+        "alias.0.Gobel.Voltage_SmartShunt",
+        "alias.0.Gobel_Master.SOC",
+        "alias.0.Gobel_Slave1.SOC",
+        "alias.0.Gobel_Slave2.SOC",
+        "alias.0.Gobel_Slave3.SOC",
+        "alias.0.MP-BAT.BAT_ActiveSocLimit",
+        "alias.0.MP-BAT.BAT_Consumption_L1",
+        "alias.0.MP-BAT.BAT_Consumption_L2",
+        "alias.0.MP-BAT.BAT_Consumption_L3",
+        "alias.0.MP-BAT.DC-Current",
+        "alias.0.MP-BAT.DC-Power",
+        "alias.0.MP-BAT.DC-Voltage",
+        "alias.0.MP-ESS.DC-Current",
+        "alias.0.MP-ESS.DC-Power",
+        "alias.0.MP-ESS.DC-Voltage",
+        "alias.0.MP-ESS.ESS_Consumption_L1",
+        "alias.0.MP-ESS.ESS_Consumption_L2",
+        "alias.0.MP-ESS.ESS_Consumption_L3",
+        "alias.0.MPPT",
+        "alias.0.SE.Power",
+        "alias.0.SMA.Power",
+        "alias.0.go-E.go-E-V4-Halle",
+        "alias.0.go-E.powerV3",
+        "alias.0.go-E.powerV4"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.energiemanagement.Batterie_Zellspannungen",
+      "reads": [
+        "0_userdata.0.Energiemanagement.Batterie",
+        "0_userdata.0.Energiemanagement.Config",
+        "modbus.1.holdingRegisters."
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.energiemanagement.Batterie_BMS_Heltec_Vergleich",
+      "reads": [
+        "0_userdata.0.Energiemanagement.Batterie",
+        "0_userdata.0.Energiemanagement.Config",
+        "modbus.1.holdingRegisters.",
+        "mqtt.0.HELTEC_"
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": [],
+      "object": "script.js.energiemanagement.Pool_VIS2_Zeitplaene",
+      "reads": [
+        "javascript.0."
+      ],
+      "source": "script",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.EM24 Hall 40A",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.3.N.b827eb7fd855.grid.42.Ac.L1.Current",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.EM24 Hall 40A.L1_A",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.3.N.b827eb7fd855.grid.42.Ac.L2.Current",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.EM24 Hall 40A.L2_A",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.3.N.b827eb7fd855.grid.42.Ac.L3.Current",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.EM24 Hall 40A.L3_A",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.3.N.b827eb7fd855.grid.42.Ac.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.EM24 Hall 40A.Power Hall 40A",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.EM24 Hall Grid",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.grid.41.Connected"
+      },
+      "object": "alias.0.EM24 Hall Grid.Connected",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.grid.41.Ac.Power",
+        "read": "JSON.parse(val).value < 0 ? -Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      },
+      "object": "alias.0.EM24 Hall Grid.HallGrid_Power_Minus",
+      "reads": [
+        "JSON.parse(val).value < 0 ? -Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.grid.41.Ac.Power",
+        "read": "JSON.parse(val).value > 0 ? Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      },
+      "object": "alias.0.EM24 Hall Grid.HallGrid_Power_Plus",
+      "reads": [
+        "JSON.parse(val).value > 0 ? Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.grid.41.Ac.Power",
+        "read": "JSON.parse(val).value < 0 ? -Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      },
+      "object": "alias.0.EM24 Hall Grid.PV_Überschuss",
+      "reads": [
+        "JSON.parse(val).value < 0 ? -Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.grid.41.Ac.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.EM24 Hall Grid.Power",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.EM24 New Grid",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.grid.43.Connected"
+      },
+      "object": "alias.0.EM24 New Grid.Connected",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.grid.43.Ac.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.EM24 New Grid.Power",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.grid.43.Ac.Power",
+        "read": "JSON.parse(val).value < 0 ? -Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      },
+      "object": "alias.0.EM24 New Grid.Power_Minus",
+      "reads": [
+        "JSON.parse(val).value < 0 ? -Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.grid.43.Ac.Power",
+        "read": "JSON.parse(val).value > 0 ? Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      },
+      "object": "alias.0.EM24 New Grid.Power_Plus",
+      "reads": [
+        "JSON.parse(val).value > 0 ? Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.EM24 Old Grid",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.3.N.b827eb7fd855.grid.40.Ac.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.EM24 Old Grid.Power Old Grid",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.3.N.b827eb7fd855.grid.40.Ac.Power",
+        "read": "JSON.parse(val).value < 0 ? Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      },
+      "object": "alias.0.EM24 Old Grid.Power Old Grid Minus",
+      "reads": [
+        "JSON.parse(val).value < 0 ? Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.3.N.b827eb7fd855.grid.40.Ac.Power",
+        "read": "JSON.parse(val).value > 0 ? Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      },
+      "object": "alias.0.EM24 Old Grid.Power Old Grid Plus",
+      "reads": [
+        "JSON.parse(val).value > 0 ? Math.round(JSON.parse(val).value * 100) / 100 : 0"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.Fronius",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.pvinverter.20.Ac.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Fronius.AC-Power",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.pvinverter.23.Ac.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Fronius.AC-Power_10kW",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.Gobel",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.battery.512.Dc.0.Current",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Gobel.Current",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.battery.279.Dc.0.Current",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Gobel.Current SmartShunt",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.battery.512.Info.MaxChargeCurrent",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Gobel.Gobel MaxChargeCurrent",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.battery.512.Info.MaxChargeVoltage",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Gobel.Gobel MaxChargeVoltage",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.battery.512.Info.MaxDischargeCurrent",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Gobel.Gobel MaxDischargeCurrent",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.battery.512.Dc.0.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Gobel.Power",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.battery.279.Dc.0.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Gobel.Power SmartShunt",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.battery.512.Soc",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Gobel.SOC",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.battery.279.Soc",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Gobel.Soc SmartShunt",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.battery.512.Dc.0.Voltage",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Gobel.Voltage",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.battery.279.Dc.1.Voltage",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.Gobel.Voltage_SmartShunt",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.Gobel_Master",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.1.40001_Ampere",
+        "read": "val/100"
+      },
+      "object": "alias.0.Gobel_Master.Ampere",
+      "reads": [
+        "val/100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "javascript.0.BMS.Pack1.Diff_mV"
+      },
+      "object": "alias.0.Gobel_Master.Gobe_Master_Diff_mV",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.0.HELTEC_1.balancing"
+      },
+      "object": "alias.0.Gobel_Master.Gobel Master balancing",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.1.40036_MOSFET_temperature",
+        "read": "val/10"
+      },
+      "object": "alias.0.Gobel_Master.Gobel_Master_MOSFET_temperature",
+      "reads": [
+        "val/10"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.1.40032_Cell_temperature_1",
+        "read": "val/10"
+      },
+      "object": "alias.0.Gobel_Master.Gobel_Master_Tmp",
+      "reads": [
+        "val/10"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.1.40002_Volt",
+        "read": "val/100"
+      },
+      "object": "alias.0.Gobel_Master.Gobel_Master_Volt",
+      "reads": [
+        "val/100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.1.40003_SOC"
+      },
+      "object": "alias.0.Gobel_Master.SOC",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.Gobel_Slave1",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.2.40001_Ampere",
+        "read": "val/100"
+      },
+      "object": "alias.0.Gobel_Slave1.Ampere",
+      "reads": [
+        "val/100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.0.HELTEC_2.balancing"
+      },
+      "object": "alias.0.Gobel_Slave1.Gobel Slave 1 balancing",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "javascript.0.BMS.Pack2.Diff_mV"
+      },
+      "object": "alias.0.Gobel_Slave1.Gobel_Slave1_Diff_mV",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.2.40036_MOSFET_temperature",
+        "read": "val/10"
+      },
+      "object": "alias.0.Gobel_Slave1.Gobel_Slave1_MOSFET_temperature",
+      "reads": [
+        "val/10"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.2.40032_Cell_temperature_1",
+        "read": "val/10"
+      },
+      "object": "alias.0.Gobel_Slave1.Gobel_Slave1_Tmp",
+      "reads": [
+        "val/10"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.2.40002_Volt",
+        "read": "val/100"
+      },
+      "object": "alias.0.Gobel_Slave1.Gobel_Slave1_Volt",
+      "reads": [
+        "val/100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.2.40003_SOC"
+      },
+      "object": "alias.0.Gobel_Slave1.SOC",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.Gobel_Slave2",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.3.40001_Ampere",
+        "read": "val/100"
+      },
+      "object": "alias.0.Gobel_Slave2.Ampere",
+      "reads": [
+        "val/100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.0.HELTEC_3.balancing"
+      },
+      "object": "alias.0.Gobel_Slave2.Gobel Slave 2 balancing",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "javascript.0.BMS.Pack3.Diff_mV"
+      },
+      "object": "alias.0.Gobel_Slave2.Gobel_Slave2_Diff_mV",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.3.40036_MOSFET_temperature",
+        "read": "val/10"
+      },
+      "object": "alias.0.Gobel_Slave2.Gobel_Slave2_MOSFET_temperature",
+      "reads": [
+        "val/10"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.3.40032_Cell_temperature_1",
+        "read": "val/10"
+      },
+      "object": "alias.0.Gobel_Slave2.Gobel_Slave2_Tmp",
+      "reads": [
+        "val/10"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.3.40002_Volt",
+        "read": "val/100"
+      },
+      "object": "alias.0.Gobel_Slave2.Gobel_Slave2_Volt",
+      "reads": [
+        "val/100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.3.40003_SOC"
+      },
+      "object": "alias.0.Gobel_Slave2.SOC",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.Gobel_Slave3",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.4.40001_Ampere",
+        "read": "val/100"
+      },
+      "object": "alias.0.Gobel_Slave3.Ampere",
+      "reads": [
+        "val/100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.0.HELTEC_4.balancing"
+      },
+      "object": "alias.0.Gobel_Slave3.Gobel Slave 3 balancing",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "javascript.0.BMS.Pack4.Diff_mV"
+      },
+      "object": "alias.0.Gobel_Slave3.Gobel_Slave3_Diff_mV",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.4.40036_MOSFET_temperature",
+        "read": "val/10"
+      },
+      "object": "alias.0.Gobel_Slave3.Gobel_Slave3_MOSFET_temperature",
+      "reads": [
+        "val/10"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.4.40032_Cell_temperature_1",
+        "read": "val/10"
+      },
+      "object": "alias.0.Gobel_Slave3.Gobel_Slave3_Tmp",
+      "reads": [
+        "val/10"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.4.40002_Volt",
+        "read": "val/100"
+      },
+      "object": "alias.0.Gobel_Slave3.Gobel_Slave3_Volt",
+      "reads": [
+        "val/100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "modbus.1.holdingRegisters.4.40003_SOC"
+      },
+      "object": "alias.0.Gobel_Slave3.SOC",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "zigbee.0.00158d00042704c0.humidity",
+        "read": "Math.round((val - 0.8) * 10) / 10"
+      },
+      "object": "alias.0.Humidity",
+      "reads": [
+        "Math.round((val - 0.8) * 10) / 10"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "zigbee.0.00158d0006e3b364.humidity",
+        "read": "Math.round((val - 0.01) * 10) / 10"
+      },
+      "object": "alias.0.Humidity_2",
+      "reads": [
+        "Math.round((val - 0.01) * 10) / 10"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.HzgCobra",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "shelly.0.shellyplusplugs#e465b8ba1490#1.Relay0.Switch"
+      },
+      "object": "alias.0.HzgCobra.SwitchHzgCobra1",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "shelly.0.shellyplusplugs#e465b8b2b3b0#1.Relay0.Switch"
+      },
+      "object": "alias.0.HzgCobra.SwitchHzgCobra2",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.MP-BAT",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.system.0.Control.ActiveSocLimit",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-BAT.BAT_ActiveSocLimit",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.system.0.Ac.Consumption.L1.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-BAT.BAT_Consumption_L1",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.system.0.Ac.Consumption.L2.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-BAT.BAT_Consumption_L2",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.system.0.Ac.Consumption.L3.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-BAT.BAT_Consumption_L3",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.vebus.276.Dc.0.Current",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-BAT.DC-Current",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.vebus.276.Dc.0.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-BAT.DC-Power",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.2.N.c0619ab4bea6.vebus.276.Dc.0.Voltage",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-BAT.DC-Voltage",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.MP-ESS",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.vebus.276.Dc.0.Current",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-ESS.DC-Current",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.vebus.276.Dc.0.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-ESS.DC-Power",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.vebus.276.Dc.0.Voltage",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-ESS.DC-Voltage",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.system.0.Ac.Consumption.L1.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-ESS.ESS_Consumption_L1",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.system.0.Ac.Consumption.L2.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-ESS.ESS_Consumption_L2",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.system.0.Ac.Consumption.L3.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MP-ESS.ESS_Consumption_L3",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.MPPT RS450/100",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.solarcharger.0.Dc.0.Current",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MPPT RS450/100.DC-Current",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.solarcharger.0.Dc.0.Voltage",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MPPT RS450/100.DC-Voltage",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.solarcharger.0.Pv.0.P",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MPPT RS450/100.P String1",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.solarcharger.0.Pv.1.P",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.MPPT RS450/100.P String2",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.SE",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.3.N.b827eb7fd855.pvinverter.22.Ac.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.SE.Power",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.SMA",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "mqtt.1.N.c0619ab336ed.pvinverter.21.Ac.Power",
+        "read": "Math.round(JSON.parse(val).value * 100) / 100"
+      },
+      "object": "alias.0.SMA.Power",
+      "reads": [
+        "Math.round(JSON.parse(val).value * 100) / 100"
+      ],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": null,
+      "object": "alias.0.go-E",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "go-e.2.energy.power"
+      },
+      "object": "alias.0.go-E.go-E-V4-Halle",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "go-e.0.energy.power"
+      },
+      "object": "alias.0.go-E.powerV3",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    },
+    {
+      "alias": {
+        "id": "go-e.1.energy.power"
+      },
+      "object": "alias.0.go-E.powerV4",
+      "reads": [],
+      "source": "alias",
+      "writes": []
+    }
+  ],
+  "source": "live /opt/iobroker/iobroker-data/objects.jsonl + script source analysis"
+}

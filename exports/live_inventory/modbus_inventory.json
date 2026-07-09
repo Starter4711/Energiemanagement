@@ -1,0 +1,1127 @@
+{
+  "count": 140,
+  "generatedAt": "2026-07-09T16:24:54.946472+00:00",
+  "objects": [
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.info.pollTime",
+      "registerOrState": "modbus.1.info.pollTime",
+      "ts": 1782995778424,
+      "unit": null,
+      "value": 107
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40001_Ampere",
+      "registerOrState": "modbus.1.holdingRegisters.1.40001_Ampere",
+      "ts": 1783614274307,
+      "unit": null,
+      "value": 489
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40002_Volt",
+      "registerOrState": "modbus.1.holdingRegisters.1.40002_Volt",
+      "ts": 1783614257496,
+      "unit": null,
+      "value": 5342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40003_SOC",
+      "registerOrState": "modbus.1.holdingRegisters.1.40003_SOC",
+      "ts": 1783612654880,
+      "unit": null,
+      "value": 60
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40004_SOH",
+      "registerOrState": "modbus.1.holdingRegisters.1.40004_SOH",
+      "ts": 1782995778334,
+      "unit": null,
+      "value": 100
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40005_Remain_Capacity",
+      "registerOrState": "modbus.1.holdingRegisters.1.40005_Remain_Capacity",
+      "ts": 1783614274347,
+      "unit": null,
+      "value": 16936
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40006_Full_Capacity",
+      "registerOrState": "modbus.1.holdingRegisters.1.40006_Full_Capacity",
+      "ts": 1783486511141,
+      "unit": null,
+      "value": 28012
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40007_Designed_Capacity",
+      "registerOrState": "modbus.1.holdingRegisters.1.40007_Designed_Capacity",
+      "ts": 1782995778334,
+      "unit": null,
+      "value": 30000
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40008_Battery_Cycles_Coutn",
+      "registerOrState": "modbus.1.holdingRegisters.1.40008_Battery_Cycles_Coutn",
+      "ts": 1783486511142,
+      "unit": null,
+      "value": 236
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40010_Warning_Flag",
+      "registerOrState": "modbus.1.holdingRegisters.1.40010_Warning_Flag",
+      "ts": 1782995778335,
+      "unit": null,
+      "value": 0
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40011_Protection_Flag",
+      "registerOrState": "modbus.1.holdingRegisters.1.40011_Protection_Flag",
+      "ts": 1782995778335,
+      "unit": null,
+      "value": 0
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40012_Status/Fault_Flag",
+      "registerOrState": "modbus.1.holdingRegisters.1.40012_Status/Fault_Flag",
+      "ts": 1783611679752,
+      "unit": null,
+      "value": 3328
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40013_Balancer_Status",
+      "registerOrState": "modbus.1.holdingRegisters.1.40013_Balancer_Status",
+      "ts": 1782995778336,
+      "unit": null,
+      "value": 0
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40016_Cell_Voltage_1",
+      "registerOrState": "modbus.1.holdingRegisters.1.40016_Cell_Voltage_1",
+      "ts": 1783613736359,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40017_Cell_Voltage_2",
+      "registerOrState": "modbus.1.holdingRegisters.1.40017_Cell_Voltage_2",
+      "ts": 1783613725194,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40018_Cell_Voltage_3",
+      "registerOrState": "modbus.1.holdingRegisters.1.40018_Cell_Voltage_3",
+      "ts": 1783613719591,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40019_Cell_Voltage_4",
+      "registerOrState": "modbus.1.holdingRegisters.1.40019_Cell_Voltage_4",
+      "ts": 1783613809234,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40020_Cell_Voltage_5",
+      "registerOrState": "modbus.1.holdingRegisters.1.40020_Cell_Voltage_5",
+      "ts": 1783613725195,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40021_Cell_Voltage_6",
+      "registerOrState": "modbus.1.holdingRegisters.1.40021_Cell_Voltage_6",
+      "ts": 1783613848460,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40022_Cell_Voltage_7",
+      "registerOrState": "modbus.1.holdingRegisters.1.40022_Cell_Voltage_7",
+      "ts": 1783613848460,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40023_Cell_Voltage_8",
+      "registerOrState": "modbus.1.holdingRegisters.1.40023_Cell_Voltage_8",
+      "ts": 1783614246332,
+      "unit": null,
+      "value": 3344
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40024_Cell_Voltage_9",
+      "registerOrState": "modbus.1.holdingRegisters.1.40024_Cell_Voltage_9",
+      "ts": 1783614257538,
+      "unit": null,
+      "value": 3344
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40025_Cell_Voltage_10",
+      "registerOrState": "modbus.1.holdingRegisters.1.40025_Cell_Voltage_10",
+      "ts": 1783613629915,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40026_Cell_Voltage_11",
+      "registerOrState": "modbus.1.holdingRegisters.1.40026_Cell_Voltage_11",
+      "ts": 1783614184716,
+      "unit": null,
+      "value": 3344
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40027_Cell_Voltage_12",
+      "registerOrState": "modbus.1.holdingRegisters.1.40027_Cell_Voltage_12",
+      "ts": 1783613859665,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40028_Cell_Voltage_13",
+      "registerOrState": "modbus.1.holdingRegisters.1.40028_Cell_Voltage_13",
+      "ts": 1783614251939,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40029_Cell_Voltage_14",
+      "registerOrState": "modbus.1.holdingRegisters.1.40029_Cell_Voltage_14",
+      "ts": 1783614257538,
+      "unit": null,
+      "value": 3345
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40030_Cell_Voltage_15",
+      "registerOrState": "modbus.1.holdingRegisters.1.40030_Cell_Voltage_15",
+      "ts": 1783613803630,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40031_Cell_Voltage_16",
+      "registerOrState": "modbus.1.holdingRegisters.1.40031_Cell_Voltage_16",
+      "ts": 1783614100661,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40032_Cell_temperature_1",
+      "registerOrState": "modbus.1.holdingRegisters.1.40032_Cell_temperature_1",
+      "ts": 1783600488161,
+      "unit": null,
+      "value": 253
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40033_Cell_temperature_2",
+      "registerOrState": "modbus.1.holdingRegisters.1.40033_Cell_temperature_2",
+      "ts": 1783590641786,
+      "unit": null,
+      "value": 259
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40034_Cell_temperature_3",
+      "registerOrState": "modbus.1.holdingRegisters.1.40034_Cell_temperature_3",
+      "ts": 1783593146933,
+      "unit": null,
+      "value": 258
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40035_Cell_temperature_4",
+      "registerOrState": "modbus.1.holdingRegisters.1.40035_Cell_temperature_4",
+      "ts": 1783601250383,
+      "unit": null,
+      "value": 253
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40036_MOSFET_temperature",
+      "registerOrState": "modbus.1.holdingRegisters.1.40036_MOSFET_temperature",
+      "ts": 1783613641124,
+      "unit": null,
+      "value": 272
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.1.40037_Environment_temperature",
+      "registerOrState": "modbus.1.holdingRegisters.1.40037_Environment_temperature",
+      "ts": 1783611354757,
+      "unit": null,
+      "value": 280
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40001_Ampere",
+      "registerOrState": "modbus.1.holdingRegisters.2.40001_Ampere",
+      "ts": 1783614274459,
+      "unit": null,
+      "value": 506
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40002_Volt",
+      "registerOrState": "modbus.1.holdingRegisters.2.40002_Volt",
+      "ts": 1783614190427,
+      "unit": null,
+      "value": 5348
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40003_SOC",
+      "registerOrState": "modbus.1.holdingRegisters.2.40003_SOC",
+      "ts": 1783612884763,
+      "unit": null,
+      "value": 58
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40004_SOH",
+      "registerOrState": "modbus.1.holdingRegisters.2.40004_SOH",
+      "ts": 1782995778486,
+      "unit": null,
+      "value": 100
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40005_Remain_Capacity",
+      "registerOrState": "modbus.1.holdingRegisters.2.40005_Remain_Capacity",
+      "ts": 1783614274498,
+      "unit": null,
+      "value": 14988
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40006_Full_Capacity",
+      "registerOrState": "modbus.1.holdingRegisters.2.40006_Full_Capacity",
+      "ts": 1783488489616,
+      "unit": null,
+      "value": 25639
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40007_Designed_Capacity",
+      "registerOrState": "modbus.1.holdingRegisters.2.40007_Designed_Capacity",
+      "ts": 1782995778488,
+      "unit": null,
+      "value": 30000
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40008_Battery_Cycles_Coutn",
+      "registerOrState": "modbus.1.holdingRegisters.2.40008_Battery_Cycles_Coutn",
+      "ts": 1783488489616,
+      "unit": null,
+      "value": 261
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40010_Warning_Flag",
+      "registerOrState": "modbus.1.holdingRegisters.2.40010_Warning_Flag",
+      "ts": 1782995778489,
+      "unit": null,
+      "value": 0
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40011_Protection_Flag",
+      "registerOrState": "modbus.1.holdingRegisters.2.40011_Protection_Flag",
+      "ts": 1782995778489,
+      "unit": null,
+      "value": 0
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40012_Status/Fault_Flag",
+      "registerOrState": "modbus.1.holdingRegisters.2.40012_Status/Fault_Flag",
+      "ts": 1783611679901,
+      "unit": null,
+      "value": 3328
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40013_Balancer_Status",
+      "registerOrState": "modbus.1.holdingRegisters.2.40013_Balancer_Status",
+      "ts": 1782995778490,
+      "unit": null,
+      "value": 0
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40016_Cell_Voltage_1",
+      "registerOrState": "modbus.1.holdingRegisters.2.40016_Cell_Voltage_1",
+      "ts": 1783613456337,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40017_Cell_Voltage_2",
+      "registerOrState": "modbus.1.holdingRegisters.2.40017_Cell_Voltage_2",
+      "ts": 1783614190507,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40018_Cell_Voltage_3",
+      "registerOrState": "modbus.1.holdingRegisters.2.40018_Cell_Voltage_3",
+      "ts": 1783613697319,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40019_Cell_Voltage_4",
+      "registerOrState": "modbus.1.holdingRegisters.2.40019_Cell_Voltage_4",
+      "ts": 1783613826158,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40020_Cell_Voltage_5",
+      "registerOrState": "modbus.1.holdingRegisters.2.40020_Cell_Voltage_5",
+      "ts": 1783613719743,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40021_Cell_Voltage_6",
+      "registerOrState": "modbus.1.holdingRegisters.2.40021_Cell_Voltage_6",
+      "ts": 1783613630070,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40022_Cell_Voltage_7",
+      "registerOrState": "modbus.1.holdingRegisters.2.40022_Cell_Voltage_7",
+      "ts": 1783613786995,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40023_Cell_Voltage_8",
+      "registerOrState": "modbus.1.holdingRegisters.2.40023_Cell_Voltage_8",
+      "ts": 1783613820598,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40024_Cell_Voltage_9",
+      "registerOrState": "modbus.1.holdingRegisters.2.40024_Cell_Voltage_9",
+      "ts": 1783613882226,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40025_Cell_Voltage_10",
+      "registerOrState": "modbus.1.holdingRegisters.2.40025_Cell_Voltage_10",
+      "ts": 1783613635667,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40026_Cell_Voltage_11",
+      "registerOrState": "modbus.1.holdingRegisters.2.40026_Cell_Voltage_11",
+      "ts": 1783613607660,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40027_Cell_Voltage_12",
+      "registerOrState": "modbus.1.holdingRegisters.2.40027_Cell_Voltage_12",
+      "ts": 1783614100853,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40028_Cell_Voltage_13",
+      "registerOrState": "modbus.1.holdingRegisters.2.40028_Cell_Voltage_13",
+      "ts": 1783613613262,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40029_Cell_Voltage_14",
+      "registerOrState": "modbus.1.holdingRegisters.2.40029_Cell_Voltage_14",
+      "ts": 1783613574037,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40030_Cell_Voltage_15",
+      "registerOrState": "modbus.1.holdingRegisters.2.40030_Cell_Voltage_15",
+      "ts": 1783613719743,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40031_Cell_Voltage_16",
+      "registerOrState": "modbus.1.holdingRegisters.2.40031_Cell_Voltage_16",
+      "ts": 1783613843006,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40032_Cell_temperature_1",
+      "registerOrState": "modbus.1.holdingRegisters.2.40032_Cell_temperature_1",
+      "ts": 1783605745042,
+      "unit": null,
+      "value": 263
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40033_Cell_temperature_2",
+      "registerOrState": "modbus.1.holdingRegisters.2.40033_Cell_temperature_2",
+      "ts": 1783606613793,
+      "unit": null,
+      "value": 260
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40034_Cell_temperature_3",
+      "registerOrState": "modbus.1.holdingRegisters.2.40034_Cell_temperature_3",
+      "ts": 1783606154229,
+      "unit": null,
+      "value": 258
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40035_Cell_temperature_4",
+      "registerOrState": "modbus.1.holdingRegisters.2.40035_Cell_temperature_4",
+      "ts": 1783603794759,
+      "unit": null,
+      "value": 266
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40036_MOSFET_temperature",
+      "registerOrState": "modbus.1.holdingRegisters.2.40036_MOSFET_temperature",
+      "ts": 1783613618900,
+      "unit": null,
+      "value": 276
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.2.40037_Environment_temperature",
+      "registerOrState": "modbus.1.holdingRegisters.2.40037_Environment_temperature",
+      "ts": 1783611287635,
+      "unit": null,
+      "value": 280
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40001_Ampere",
+      "registerOrState": "modbus.1.holdingRegisters.3.40001_Ampere",
+      "ts": 1783614274625,
+      "unit": null,
+      "value": 608
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40002_Volt",
+      "registerOrState": "modbus.1.holdingRegisters.3.40002_Volt",
+      "ts": 1783613938372,
+      "unit": null,
+      "value": 5346
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40003_SOC",
+      "registerOrState": "modbus.1.holdingRegisters.3.40003_SOC",
+      "ts": 1783613809537,
+      "unit": null,
+      "value": 68
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40004_SOH",
+      "registerOrState": "modbus.1.holdingRegisters.3.40004_SOH",
+      "ts": 1782995778635,
+      "unit": null,
+      "value": 100
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40005_Remain_Capacity",
+      "registerOrState": "modbus.1.holdingRegisters.3.40005_Remain_Capacity",
+      "ts": 1783614274653,
+      "unit": null,
+      "value": 20273
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40006_Full_Capacity",
+      "registerOrState": "modbus.1.holdingRegisters.3.40006_Full_Capacity",
+      "ts": 1783568909262,
+      "unit": null,
+      "value": 29914
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40007_Designed_Capacity",
+      "registerOrState": "modbus.1.holdingRegisters.3.40007_Designed_Capacity",
+      "ts": 1782995778635,
+      "unit": null,
+      "value": 30000
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40008_Battery_Cycles_Coutn",
+      "registerOrState": "modbus.1.holdingRegisters.3.40008_Battery_Cycles_Coutn",
+      "ts": 1783568909302,
+      "unit": null,
+      "value": 174
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40010_Warning_Flag",
+      "registerOrState": "modbus.1.holdingRegisters.3.40010_Warning_Flag",
+      "ts": 1782995778636,
+      "unit": null,
+      "value": 0
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40011_Protection_Flag",
+      "registerOrState": "modbus.1.holdingRegisters.3.40011_Protection_Flag",
+      "ts": 1782995778636,
+      "unit": null,
+      "value": 0
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40012_Status/Fault_Flag",
+      "registerOrState": "modbus.1.holdingRegisters.3.40012_Status/Fault_Flag",
+      "ts": 1783611680051,
+      "unit": null,
+      "value": 3328
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40013_Balancer_Status",
+      "registerOrState": "modbus.1.holdingRegisters.3.40013_Balancer_Status",
+      "ts": 1782995778636,
+      "unit": null,
+      "value": 0
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40016_Cell_Voltage_1",
+      "registerOrState": "modbus.1.holdingRegisters.3.40016_Cell_Voltage_1",
+      "ts": 1783613714245,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40017_Cell_Voltage_2",
+      "registerOrState": "modbus.1.holdingRegisters.3.40017_Cell_Voltage_2",
+      "ts": 1783613910399,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40018_Cell_Voltage_3",
+      "registerOrState": "modbus.1.holdingRegisters.3.40018_Cell_Voltage_3",
+      "ts": 1783613859974,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40019_Cell_Voltage_4",
+      "registerOrState": "modbus.1.holdingRegisters.3.40019_Cell_Voltage_4",
+      "ts": 1783614257799,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40020_Cell_Voltage_5",
+      "registerOrState": "modbus.1.holdingRegisters.3.40020_Cell_Voltage_5",
+      "ts": 1783613910399,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40021_Cell_Voltage_6",
+      "registerOrState": "modbus.1.holdingRegisters.3.40021_Cell_Voltage_6",
+      "ts": 1783613938411,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40022_Cell_Voltage_7",
+      "registerOrState": "modbus.1.holdingRegisters.3.40022_Cell_Voltage_7",
+      "ts": 1783613725493,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40023_Cell_Voltage_8",
+      "registerOrState": "modbus.1.holdingRegisters.3.40023_Cell_Voltage_8",
+      "ts": 1783614207381,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40024_Cell_Voltage_9",
+      "registerOrState": "modbus.1.holdingRegisters.3.40024_Cell_Voltage_9",
+      "ts": 1783614274653,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40025_Cell_Voltage_10",
+      "registerOrState": "modbus.1.holdingRegisters.3.40025_Cell_Voltage_10",
+      "ts": 1783613663840,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40026_Cell_Voltage_11",
+      "registerOrState": "modbus.1.holdingRegisters.3.40026_Cell_Voltage_11",
+      "ts": 1783614252235,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40027_Cell_Voltage_12",
+      "registerOrState": "modbus.1.holdingRegisters.3.40027_Cell_Voltage_12",
+      "ts": 1783613714325,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40028_Cell_Voltage_13",
+      "registerOrState": "modbus.1.holdingRegisters.3.40028_Cell_Voltage_13",
+      "ts": 1783613876813,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40029_Cell_Voltage_14",
+      "registerOrState": "modbus.1.holdingRegisters.3.40029_Cell_Voltage_14",
+      "ts": 1783613607805,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40030_Cell_Voltage_15",
+      "registerOrState": "modbus.1.holdingRegisters.3.40030_Cell_Voltage_15",
+      "ts": 1783613859974,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40031_Cell_Voltage_16",
+      "registerOrState": "modbus.1.holdingRegisters.3.40031_Cell_Voltage_16",
+      "ts": 1783613641422,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40032_Cell_temperature_1",
+      "registerOrState": "modbus.1.holdingRegisters.3.40032_Cell_temperature_1",
+      "ts": 1783605151134,
+      "unit": null,
+      "value": 265
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40033_Cell_temperature_2",
+      "registerOrState": "modbus.1.holdingRegisters.3.40033_Cell_temperature_2",
+      "ts": 1783603951814,
+      "unit": null,
+      "value": 258
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40034_Cell_temperature_3",
+      "registerOrState": "modbus.1.holdingRegisters.3.40034_Cell_temperature_3",
+      "ts": 1783606754019,
+      "unit": null,
+      "value": 257
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40035_Cell_temperature_4",
+      "registerOrState": "modbus.1.holdingRegisters.3.40035_Cell_temperature_4",
+      "ts": 1783604175971,
+      "unit": null,
+      "value": 265
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40036_MOSFET_temperature",
+      "registerOrState": "modbus.1.holdingRegisters.3.40036_MOSFET_temperature",
+      "ts": 1783614162607,
+      "unit": null,
+      "value": 282
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.3.40037_Environment_temperature",
+      "registerOrState": "modbus.1.holdingRegisters.3.40037_Environment_temperature",
+      "ts": 1783611786568,
+      "unit": null,
+      "value": 285
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40001_Ampere",
+      "registerOrState": "modbus.1.holdingRegisters.4.40001_Ampere",
+      "ts": 1783614274758,
+      "unit": null,
+      "value": 538
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40002_Volt",
+      "registerOrState": "modbus.1.holdingRegisters.4.40002_Volt",
+      "ts": 1783614039451,
+      "unit": null,
+      "value": 5346
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40003_SOC",
+      "registerOrState": "modbus.1.holdingRegisters.4.40003_SOC",
+      "ts": 1783613921714,
+      "unit": null,
+      "value": 67
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40004_SOH",
+      "registerOrState": "modbus.1.holdingRegisters.4.40004_SOH",
+      "ts": 1782995778792,
+      "unit": null,
+      "value": 100
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40005_Remain_Capacity",
+      "registerOrState": "modbus.1.holdingRegisters.4.40005_Remain_Capacity",
+      "ts": 1783614274798,
+      "unit": null,
+      "value": 19720
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40006_Full_Capacity",
+      "registerOrState": "modbus.1.holdingRegisters.4.40006_Full_Capacity",
+      "ts": 1783568915062,
+      "unit": null,
+      "value": 29574
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40007_Designed_Capacity",
+      "registerOrState": "modbus.1.holdingRegisters.4.40007_Designed_Capacity",
+      "ts": 1782995778793,
+      "unit": null,
+      "value": 30000
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40008_Battery_Cycles_Coutn",
+      "registerOrState": "modbus.1.holdingRegisters.4.40008_Battery_Cycles_Coutn",
+      "ts": 1783568915062,
+      "unit": null,
+      "value": 172
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40010_Warning_Flag",
+      "registerOrState": "modbus.1.holdingRegisters.4.40010_Warning_Flag",
+      "ts": 1782995778793,
+      "unit": null,
+      "value": 0
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40011_Protection_Flag",
+      "registerOrState": "modbus.1.holdingRegisters.4.40011_Protection_Flag",
+      "ts": 1782995778794,
+      "unit": null,
+      "value": 0
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40012_Status/Fault_Flag",
+      "registerOrState": "modbus.1.holdingRegisters.4.40012_Status/Fault_Flag",
+      "ts": 1783611680201,
+      "unit": null,
+      "value": 3328
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40013_Balancer_Status",
+      "registerOrState": "modbus.1.holdingRegisters.4.40013_Balancer_Status",
+      "ts": 1782995778794,
+      "unit": null,
+      "value": 0
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40016_Cell_Voltage_1",
+      "registerOrState": "modbus.1.holdingRegisters.4.40016_Cell_Voltage_1",
+      "ts": 1783613854474,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40017_Cell_Voltage_2",
+      "registerOrState": "modbus.1.holdingRegisters.4.40017_Cell_Voltage_2",
+      "ts": 1783614045061,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40018_Cell_Voltage_3",
+      "registerOrState": "modbus.1.holdingRegisters.4.40018_Cell_Voltage_3",
+      "ts": 1783614263590,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40019_Cell_Voltage_4",
+      "registerOrState": "modbus.1.holdingRegisters.4.40019_Cell_Voltage_4",
+      "ts": 1783614252346,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40020_Cell_Voltage_5",
+      "registerOrState": "modbus.1.holdingRegisters.4.40020_Cell_Voltage_5",
+      "ts": 1783613938566,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40021_Cell_Voltage_6",
+      "registerOrState": "modbus.1.holdingRegisters.4.40021_Cell_Voltage_6",
+      "ts": 1783613692020,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40022_Cell_Voltage_7",
+      "registerOrState": "modbus.1.holdingRegisters.4.40022_Cell_Voltage_7",
+      "ts": 1783614246784,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40023_Cell_Voltage_8",
+      "registerOrState": "modbus.1.holdingRegisters.4.40023_Cell_Voltage_8",
+      "ts": 1783613568732,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40024_Cell_Voltage_9",
+      "registerOrState": "modbus.1.holdingRegisters.4.40024_Cell_Voltage_9",
+      "ts": 1783614218813,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40025_Cell_Voltage_10",
+      "registerOrState": "modbus.1.holdingRegisters.4.40025_Cell_Voltage_10",
+      "ts": 1783614241182,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40026_Cell_Voltage_11",
+      "registerOrState": "modbus.1.holdingRegisters.4.40026_Cell_Voltage_11",
+      "ts": 1783614033881,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40027_Cell_Voltage_12",
+      "registerOrState": "modbus.1.holdingRegisters.4.40027_Cell_Voltage_12",
+      "ts": 1783614252425,
+      "unit": null,
+      "value": 3342
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40028_Cell_Voltage_13",
+      "registerOrState": "modbus.1.holdingRegisters.4.40028_Cell_Voltage_13",
+      "ts": 1783613641588,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40029_Cell_Voltage_14",
+      "registerOrState": "modbus.1.holdingRegisters.4.40029_Cell_Voltage_14",
+      "ts": 1783613675210,
+      "unit": null,
+      "value": 3343
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40030_Cell_Voltage_15",
+      "registerOrState": "modbus.1.holdingRegisters.4.40030_Cell_Voltage_15",
+      "ts": 1783613916155,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40031_Cell_Voltage_16",
+      "registerOrState": "modbus.1.holdingRegisters.4.40031_Cell_Voltage_16",
+      "ts": 1783613613560,
+      "unit": null,
+      "value": 3341
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40032_Cell_temperature_1",
+      "registerOrState": "modbus.1.holdingRegisters.4.40032_Cell_temperature_1",
+      "ts": 1783603526081,
+      "unit": null,
+      "value": 257
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40033_Cell_temperature_2",
+      "registerOrState": "modbus.1.holdingRegisters.4.40033_Cell_temperature_2",
+      "ts": 1783600886567,
+      "unit": null,
+      "value": 248
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40034_Cell_temperature_3",
+      "registerOrState": "modbus.1.holdingRegisters.4.40034_Cell_temperature_3",
+      "ts": 1783602108184,
+      "unit": null,
+      "value": 248
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40035_Cell_temperature_4",
+      "registerOrState": "modbus.1.holdingRegisters.4.40035_Cell_temperature_4",
+      "ts": 1783586512133,
+      "unit": null,
+      "value": 255
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40036_MOSFET_temperature",
+      "registerOrState": "modbus.1.holdingRegisters.4.40036_MOSFET_temperature",
+      "ts": 1783613579979,
+      "unit": null,
+      "value": 279
+    },
+    {
+      "datatype": "int",
+      "objectId": "modbus.1.holdingRegisters.4.40037_Environment_temperature",
+      "registerOrState": "modbus.1.holdingRegisters.4.40037_Environment_temperature",
+      "ts": 1783611612992,
+      "unit": null,
+      "value": 277
+    },
+    {
+      "datatype": "bool",
+      "objectId": "modbus.1.info.connection",
+      "registerOrState": "modbus.1.info.connection",
+      "ts": 1782995778282,
+      "unit": null,
+      "value": true
+    },
+    {
+      "datatype": "bool",
+      "objectId": "modbus.1",
+      "registerOrState": "modbus.1",
+      "ts": 1781507243559,
+      "unit": null,
+      "value": false
+    },
+    {
+      "datatype": "bool",
+      "objectId": "modbus.2",
+      "registerOrState": "modbus.2",
+      "ts": 1751728562870,
+      "unit": null,
+      "value": false
+    }
+  ],
+  "source": "live /opt/iobroker/iobroker-data/states.jsonl"
+}
