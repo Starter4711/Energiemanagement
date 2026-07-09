@@ -1,0 +1,25 @@
+{
+  "count": 2,
+  "generatedAt": "2026-07-09T15:14:25.670972+00:00",
+  "objects": [
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Battery_Supervisor_V1",
+      "name": "Battery_Supervisor_V1",
+      "objectFile": "iobroker/objects/energiemanagement.Battery_Supervisor_V1.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Pool_VIS2_Zeitplaene",
+      "name": "Pool_VIS2_Zeitplaene",
+      "objectFile": "iobroker/objects/energiemanagement.Pool_VIS2_Zeitplaene.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Pool_VIS2_Zeitplaene.js",
+      "type": "script"
+    }
+  ],
+  "source": "repository/iobroker/manifest.json and repository scan"
+}

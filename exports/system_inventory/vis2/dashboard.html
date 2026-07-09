@@ -1,0 +1,72 @@
+<div class="em-dashboard">
+  <header class="em-header">
+    <div>
+      <div class="em-kicker">LIVE</div>
+      <h1>Energiemanagement</h1>
+      <p>Haus · Halle · Wohnung</p>
+    </div>
+    <div class="em-soc">
+      <span>SmartShunt</span>
+      <strong>{alias.0.Gobel.Soc SmartShunt}%</strong>
+    </div>
+  </header>
+
+  <section class="em-net">
+    <h2>Netz</h2>
+    <div class="em-grid em-grid-3">
+      <article class="em-card">
+        <span>Haus</span>
+        <strong>{alias.0.EM24 New Grid.Power}</strong>
+        <small>W · + Bezug / − Einspeisung</small>
+      </article>
+      <article class="em-card">
+        <span>Halle</span>
+        <strong>{alias.0.EM24 Hall Grid.Power}</strong>
+        <small>W · Grenze −27 / +15 kW</small>
+      </article>
+      <article class="em-card">
+        <span>Wohnung</span>
+        <strong>{alias.0.EM24 Old Grid.Power Old Grid}</strong>
+        <small>W · Zählpunkt 3</small>
+      </article>
+    </div>
+  </section>
+
+  <section class="em-pv">
+    <h2>PV aktuell</h2>
+    <div class="em-grid em-grid-2">
+      <article class="em-card em-accent-green"><span>Fronius Halle · 27 kW</span><strong>{alias.0.Fronius.AC-Power}</strong><small>W</small></article>
+      <article class="em-card em-accent-yellow"><span>Fronius Haus · 10 kW</span><strong>{alias.0.Fronius.AC-Power_10kW}</strong><small>W</small></article>
+      <article class="em-card em-accent-blue"><span>SMA Haus · 4,7 kW</span><strong>{alias.0.SMA.Power}</strong><small>W</small></article>
+      <article class="em-card em-accent-red"><span>SolarEdge Wohnung · 17 kW</span><strong>{alias.0.SE.Power}</strong><small>W</small></article>
+    </div>
+  </section>
+
+  <section class="em-battery-section">
+    <h2>Batterie</h2>
+    <a class="em-detail-link" href="#Batterie" aria-label="Batteriedetails öffnen">
+      <div class="em-battery">
+        <div><span>Leistung</span><strong>{alias.0.Gobel.Power} W</strong></div>
+        <div><span>Spannung · SmartShunt</span><strong>{alias.0.Gobel.Voltage_SmartShunt} V</strong></div>
+        <div><span>Strom</span><strong>{alias.0.Gobel.Current} A</strong></div>
+        <div><span>RS450</span><strong>{alias.0.MPPT RS450/100.P String1} + {alias.0.MPPT RS450/100.P String2} W</strong></div>
+      </div>
+      <div class="em-detail-label"><span>Details und Zellüberwachung</span><b aria-hidden="true">›</b></div>
+    </a>
+  </section>
+
+  <section class="em-pool-summary">
+    <h2>Pool</h2>
+    <a class="em-detail-link em-pool-tile" href="#Pool" aria-label="Poolsteuerung öffnen">
+      <div class="em-pool-main-temp"><span>Pooltemperatur · Rücklauf</span><strong>{javascript.0.Pool.RL} °C</strong><small>Vorlauf {javascript.0.Pool.VL} °C</small></div>
+      <div class="em-pool-main-io">
+        <span class="em-dot" data-state="{s7.0.Inputs.0.I1}">H2O</span>
+        <span class="em-dot" data-state="{s7.0.Outputs.0.Q1}">Pumpe</span>
+        <span class="em-dot" data-state="{s7.0.Outputs.0.Q2}">Salz/pH</span>
+        <span class="em-dot" data-state="{s7.0.Outputs.0.Q3}">Füllen</span>
+        <span class="em-dot" data-state="{s7.0.Outputs.0.Q4}">Wärmepumpe</span>
+      </div>
+      <b class="em-tile-arrow" aria-hidden="true">›</b>
+    </a>
+  </section>
+</div>

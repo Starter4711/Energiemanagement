@@ -1,0 +1,34 @@
+{
+  "count": 3,
+  "generatedAt": "2026-07-09T15:14:25.669924+00:00",
+  "objects": [
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+      "name": "Gobel_Vergleich_BMS_Heltec",
+      "objectFile": "iobroker/objects/common.Gobel_Vergleich_BMS_Heltec.json",
+      "scriptFile": "iobroker/scripts/common/Gobel_Vergleich_BMS_Heltec.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_Mqtt",
+      "name": "Victron_Mqtt",
+      "objectFile": "iobroker/objects/common.Victron_Mqtt.json",
+      "scriptFile": "iobroker/scripts/common/Victron_Mqtt.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Batterie_BMS_Heltec_Vergleich",
+      "name": "Batterie_BMS_Heltec_Vergleich",
+      "objectFile": "iobroker/objects/energiemanagement.Batterie_BMS_Heltec_Vergleich.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Batterie_BMS_Heltec_Vergleich.js",
+      "type": "script"
+    }
+  ],
+  "source": "repository/iobroker/manifest.json and repository scan"
+}

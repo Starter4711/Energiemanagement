@@ -1,0 +1,19 @@
+{
+  "available": false,
+  "generatedAt": "2026-07-09T15:14:25.862001+00:00",
+  "note": "No live state read was performed; this is a repository-derived reference inventory, not a runtime snapshot.",
+  "source": "repository scan only; live iobroker CLI unavailable in this environment",
+  "states": [
+    "modbus.1.holdingRegisters",
+    "modbus.1.holdingRegisters.1",
+    "modbus.1.holdingRegisters.1.40001_Ampere",
+    "modbus.1.holdingRegisters.1.40002_Volt",
+    "modbus.1.holdingRegisters.2.40001_Ampere",
+    "modbus.1.holdingRegisters.2.40002_Volt",
+    "modbus.1.holdingRegisters.3.40001_Ampere",
+    "modbus.1.holdingRegisters.3.40002_Volt",
+    "modbus.1.holdingRegisters.4.40001_Ampere",
+    "modbus.1.holdingRegisters.4.40002_Volt",
+    "modbus.1.info.connection"
+  ]
+}

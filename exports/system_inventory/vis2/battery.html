@@ -1,0 +1,234 @@
+<div class="em-dashboard em-battery-page">
+  <header class="em-header em-detail-header">
+    <a class="em-back" href="#Main" aria-label="Zur Übersicht">‹</a>
+    <div>
+      <div class="em-kicker">BATTERIE</div>
+      <h1>VIS2 Read-Only V1</h1>
+      <p>Nur EOS-Battery-States · keine Rohquellen · keine Steuerung</p>
+    </div>
+    <div class="em-soc">
+      <span>Summary SOC</span>
+      <strong>{0_userdata.0.EOS.Battery.Summary.SOC}%</strong>
+    </div>
+  </header>
+
+  <section class="em-battery-section">
+    <h2>Summary</h2>
+    <div class="em-summary-grid">
+      <article class="em-card">
+        <span>Status</span>
+        <strong>{0_userdata.0.EOS.Battery.Summary.Status}</strong>
+        <small>Gesamtsicht der Batterie</small>
+      </article>
+      <article class="em-card">
+        <span>SOC</span>
+        <strong>{0_userdata.0.EOS.Battery.Summary.SOC}%</strong>
+        <small>State of Charge</small>
+      </article>
+      <article class="em-card">
+        <span>Spannung</span>
+        <strong>{0_userdata.0.EOS.Battery.Summary.Voltage} V</strong>
+        <small>Gesamtspannung</small>
+      </article>
+      <article class="em-card">
+        <span>Strom</span>
+        <strong>{0_userdata.0.EOS.Battery.Summary.Current} A</strong>
+        <small>Gesamtstrom</small>
+      </article>
+      <article class="em-card">
+        <span>Leistung</span>
+        <strong>{0_userdata.0.EOS.Battery.Summary.Power} W</strong>
+        <small>Gesamtleistung</small>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="em-section-head">
+      <h2>Communication</h2>
+      <span>LastUpdate · AgeSeconds · Status je Quelle</span>
+    </div>
+    <div class="em-comm-grid">
+      <article class="em-card em-comm-card">
+        <span>SmartShunt</span>
+        <strong>{0_userdata.0.EOS.Battery.Communication.SmartShunt.Status}</strong>
+        <small>{0_userdata.0.EOS.Battery.Communication.SmartShunt.AgeSeconds} s · {0_userdata.0.EOS.Battery.Communication.SmartShunt.LastUpdate}</small>
+      </article>
+      <article class="em-card em-comm-card">
+        <span>Gobel / Pace BMS</span>
+        <strong>{0_userdata.0.EOS.Battery.Communication.Gobel.Status}</strong>
+        <small>{0_userdata.0.EOS.Battery.Communication.Gobel.AgeSeconds} s · {0_userdata.0.EOS.Battery.Communication.Gobel.LastUpdate}</small>
+      </article>
+      <article class="em-card em-comm-card">
+        <span>Heltec</span>
+        <strong>{0_userdata.0.EOS.Battery.Communication.Heltec.Status}</strong>
+        <small>{0_userdata.0.EOS.Battery.Communication.Heltec.AgeSeconds} s · {0_userdata.0.EOS.Battery.Communication.Heltec.LastUpdate}</small>
+      </article>
+      <article class="em-card em-comm-card">
+        <span>MQTT</span>
+        <strong>{0_userdata.0.EOS.Battery.Communication.MQTT.Status}</strong>
+        <small>{0_userdata.0.EOS.Battery.Communication.MQTT.AgeSeconds} s · {0_userdata.0.EOS.Battery.Communication.MQTT.LastUpdate}</small>
+      </article>
+      <article class="em-card em-comm-card em-comm-wide">
+        <span>Letzte Kommunikationsbewertung</span>
+        <strong>{0_userdata.0.EOS.Battery.Communication.LastUpdate}</strong>
+        <small>Verdichtete EOS-Sicht</small>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="em-section-head">
+      <h2>Warnings</h2>
+      <span>Nur Kommunikationsausfall</span>
+    </div>
+    <div class="em-flag-grid">
+      <div class="em-flag" data-state="{0_userdata.0.EOS.Battery.Warnings.SmartShuntOffline}">SmartShunt offline</div>
+      <div class="em-flag" data-state="{0_userdata.0.EOS.Battery.Warnings.GobelOffline}">Gobel / Pace BMS offline</div>
+      <div class="em-flag" data-state="{0_userdata.0.EOS.Battery.Warnings.HeltecOffline}">Heltec offline</div>
+      <div class="em-flag" data-state="{0_userdata.0.EOS.Battery.Warnings.MQTTOffline}">MQTT offline</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="em-section-head">
+      <h2>Health</h2>
+      <span>Separater, nicht-aktorischer EOS-Baustein</span>
+    </div>
+    <div class="em-health-grid">
+      <article class="em-card">
+        <span>Status</span>
+        <strong>{0_userdata.0.EOS.Battery.Health.Status}</strong>
+        <small>Health-Verdichtung</small>
+      </article>
+      <article class="em-card">
+        <span>Score</span>
+        <strong>{0_userdata.0.EOS.Battery.Health.Score}%</strong>
+        <small>0 bis 100</small>
+      </article>
+      <article class="em-card em-health-wide">
+        <span>LastUpdate</span>
+        <strong>{0_userdata.0.EOS.Battery.Health.LastUpdate}</strong>
+        <small>Letzte Bewertung</small>
+      </article>
+      <article class="em-card em-health-wide">
+        <span>Reasons</span>
+        <strong class="em-list-value">{0_userdata.0.EOS.Battery.Health.Reasons}</strong>
+        <small>Begruendungen der Bewertung</small>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="em-section-head">
+      <h2>Energy Flow</h2>
+      <span>Aktive EOS-Flow-Sicht</span>
+    </div>
+    <div class="em-summary-grid">
+      <article class="em-card">
+        <span>PowerBalance</span>
+        <strong>{0_userdata.0.EOS.EnergyFlow.Summary.PowerBalance} W</strong>
+        <small>Gesamte Energiebilanz</small>
+      </article>
+      <article class="em-card">
+        <span>Summary Status</span>
+        <strong>{0_userdata.0.EOS.EnergyFlow.Summary.Status}</strong>
+        <small>Verdichteter Flow-Status</small>
+      </article>
+      <article class="em-card">
+        <span>Grid Power</span>
+        <strong>{0_userdata.0.EOS.EnergyFlow.Grid.Power} W</strong>
+        <small>Netzleistung</small>
+      </article>
+      <article class="em-card">
+        <span>PV Power</span>
+        <strong>{0_userdata.0.EOS.EnergyFlow.PV.Power} W</strong>
+        <small>PV-Leistung</small>
+      </article>
+      <article class="em-card">
+        <span>House Power</span>
+        <strong>{0_userdata.0.EOS.EnergyFlow.House.Power} W</strong>
+        <small>Hauslast</small>
+      </article>
+      <article class="em-card">
+        <span>Wallbox Power</span>
+        <strong>{0_userdata.0.EOS.EnergyFlow.Wallbox.Power} W</strong>
+        <small>Wallbox-Leistung</small>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="em-section-head">
+      <h2>SmartShunt-Grundwerte</h2>
+      <span>Nur bestehende EOS-States</span>
+    </div>
+    <div class="em-values-grid">
+      <article class="em-card"><span>SOC</span><strong>{0_userdata.0.EOS.Battery.SmartShunt.SOC}%</strong></article>
+      <article class="em-card"><span>Spannung</span><strong>{0_userdata.0.EOS.Battery.SmartShunt.Voltage} V</strong></article>
+      <article class="em-card"><span>Strom</span><strong>{0_userdata.0.EOS.Battery.SmartShunt.Current} A</strong></article>
+      <article class="em-card"><span>Leistung</span><strong>{0_userdata.0.EOS.Battery.SmartShunt.Power} W</strong></article>
+      <article class="em-card"><span>Verbrauchte Ah</span><strong>{0_userdata.0.EOS.Battery.SmartShunt.ConsumedAh} Ah</strong></article>
+      <article class="em-card"><span>Entladeenergie</span><strong>{0_userdata.0.EOS.Battery.SmartShunt.DischargedEnergy} Wh</strong></article>
+      <article class="em-card"><span>Ladeenergie</span><strong>{0_userdata.0.EOS.Battery.SmartShunt.ChargedEnergy} Wh</strong></article>
+      <article class="em-card"><span>Restlaufzeit</span><strong>{0_userdata.0.EOS.Battery.SmartShunt.TimeToGo} min</strong></article>
+    </div>
+  </section>
+
+  <section>
+    <div class="em-section-head">
+      <h2>Packs</h2>
+      <span>Pack-Grundwerte und Kommunikation</span>
+    </div>
+    <div class="em-packs em-pack-grid">
+      <article class="em-pack">
+        <div class="em-pack-title"><strong>Pack 1</strong><span>{0_userdata.0.EOS.Battery.Packs.Pack1.Status}</span></div>
+        <div class="em-pack-values">
+          <div><span>Spannung</span><b>{0_userdata.0.EOS.Battery.Packs.Pack1.Voltage} V</b></div>
+          <div><span>Strom</span><b>{0_userdata.0.EOS.Battery.Packs.Pack1.Current} A</b></div>
+          <div><span>Leistung</span><b>{0_userdata.0.EOS.Battery.Packs.Pack1.Power} W</b></div>
+          <div><span>Temp. max</span><b>{0_userdata.0.EOS.Battery.Packs.Pack1.TemperatureMax} °C</b></div>
+          <div><span>VDiff</span><b>{0_userdata.0.EOS.Battery.Packs.Pack1.VDiff} mV</b></div>
+          <div><span>Balancing</span><b>{0_userdata.0.EOS.Battery.Packs.Pack1.Balancing}</b></div>
+        </div>
+        <small>Kommunikation: {0_userdata.0.EOS.Battery.Packs.Pack1.Communication}</small>
+      </article>
+      <article class="em-pack">
+        <div class="em-pack-title"><strong>Pack 2</strong><span>{0_userdata.0.EOS.Battery.Packs.Pack2.Status}</span></div>
+        <div class="em-pack-values">
+          <div><span>Spannung</span><b>{0_userdata.0.EOS.Battery.Packs.Pack2.Voltage} V</b></div>
+          <div><span>Strom</span><b>{0_userdata.0.EOS.Battery.Packs.Pack2.Current} A</b></div>
+          <div><span>Leistung</span><b>{0_userdata.0.EOS.Battery.Packs.Pack2.Power} W</b></div>
+          <div><span>Temp. max</span><b>{0_userdata.0.EOS.Battery.Packs.Pack2.TemperatureMax} °C</b></div>
+          <div><span>VDiff</span><b>{0_userdata.0.EOS.Battery.Packs.Pack2.VDiff} mV</b></div>
+          <div><span>Balancing</span><b>{0_userdata.0.EOS.Battery.Packs.Pack2.Balancing}</b></div>
+        </div>
+        <small>Kommunikation: {0_userdata.0.EOS.Battery.Packs.Pack2.Communication}</small>
+      </article>
+      <article class="em-pack">
+        <div class="em-pack-title"><strong>Pack 3</strong><span>{0_userdata.0.EOS.Battery.Packs.Pack3.Status}</span></div>
+        <div class="em-pack-values">
+          <div><span>Spannung</span><b>{0_userdata.0.EOS.Battery.Packs.Pack3.Voltage} V</b></div>
+          <div><span>Strom</span><b>{0_userdata.0.EOS.Battery.Packs.Pack3.Current} A</b></div>
+          <div><span>Leistung</span><b>{0_userdata.0.EOS.Battery.Packs.Pack3.Power} W</b></div>
+          <div><span>Temp. max</span><b>{0_userdata.0.EOS.Battery.Packs.Pack3.TemperatureMax} °C</b></div>
+          <div><span>VDiff</span><b>{0_userdata.0.EOS.Battery.Packs.Pack3.VDiff} mV</b></div>
+          <div><span>Balancing</span><b>{0_userdata.0.EOS.Battery.Packs.Pack3.Balancing}</b></div>
+        </div>
+        <small>Kommunikation: {0_userdata.0.EOS.Battery.Packs.Pack3.Communication}</small>
+      </article>
+      <article class="em-pack">
+        <div class="em-pack-title"><strong>Pack 4</strong><span>{0_userdata.0.EOS.Battery.Packs.Pack4.Status}</span></div>
+        <div class="em-pack-values">
+          <div><span>Spannung</span><b>{0_userdata.0.EOS.Battery.Packs.Pack4.Voltage} V</b></div>
+          <div><span>Strom</span><b>{0_userdata.0.EOS.Battery.Packs.Pack4.Current} A</b></div>
+          <div><span>Leistung</span><b>{0_userdata.0.EOS.Battery.Packs.Pack4.Power} W</b></div>
+          <div><span>Temp. max</span><b>{0_userdata.0.EOS.Battery.Packs.Pack4.TemperatureMax} °C</b></div>
+          <div><span>VDiff</span><b>{0_userdata.0.EOS.Battery.Packs.Pack4.VDiff} mV</b></div>
+          <div><span>Balancing</span><b>{0_userdata.0.EOS.Battery.Packs.Pack4.Balancing}</b></div>
+        </div>
+        <small>Kommunikation: {0_userdata.0.EOS.Battery.Packs.Pack4.Communication}</small>
+      </article>
+    </div>
+  </section>
+</div>

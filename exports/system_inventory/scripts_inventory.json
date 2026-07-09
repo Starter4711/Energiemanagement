@@ -1,0 +1,619 @@
+{
+  "count": 69,
+  "generatedAt": "2026-07-09T15:14:25.863069+00:00",
+  "objects": [
+    {
+      "enabled": false,
+      "engineType": "Blockly",
+      "id": "script.js.common.Bewässerung",
+      "name": "Bewässerung",
+      "objectFile": "iobroker/objects/common.Bewässerung.json",
+      "scriptFile": "iobroker/scripts/common/Bewässerung.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Blockly",
+      "id": "script.js.common.EBikeLader",
+      "name": "EBikeLader",
+      "objectFile": "iobroker/objects/common.EBikeLader.json",
+      "scriptFile": "iobroker/scripts/common/EBikeLader.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Blockly",
+      "id": "script.js.common.Garage",
+      "name": "Garage",
+      "objectFile": "iobroker/objects/common.Garage.json",
+      "scriptFile": "iobroker/scripts/common/Garage.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.common.Gobel_VDIFF",
+      "name": "Gobel VDIFF",
+      "objectFile": "iobroker/objects/common.Gobel_VDIFF.json",
+      "scriptFile": "iobroker/scripts/common/Gobel_VDIFF.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+      "name": "Gobel_Vergleich_BMS_Heltec",
+      "objectFile": "iobroker/objects/common.Gobel_Vergleich_BMS_Heltec.json",
+      "scriptFile": "iobroker/scripts/common/Gobel_Vergleich_BMS_Heltec.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.common.Gobel_Zellspannungen",
+      "name": "Gobel_Zellspannungen",
+      "objectFile": "iobroker/objects/common.Gobel_Zellspannungen.json",
+      "scriptFile": "iobroker/scripts/common/Gobel_Zellspannungen.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.common.Gobel_einzelne_Zellspannungen",
+      "name": "Gobel_einzelne_Zellspannungen",
+      "objectFile": "iobroker/objects/common.Gobel_einzelne_Zellspannungen.json",
+      "scriptFile": "iobroker/scripts/common/Gobel_einzelne_Zellspannungen.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Grid-PV",
+      "name": "Grid-PV",
+      "objectFile": "iobroker/objects/common.Grid-PV.json",
+      "scriptFile": "iobroker/scripts/common/Grid-PV.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Grid-PVHalle",
+      "name": "Grid-PVHalle",
+      "objectFile": "iobroker/objects/common.Grid-PVHalle.json",
+      "scriptFile": "iobroker/scripts/common/Grid-PVHalle.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Hallentore",
+      "name": "Hallentore",
+      "objectFile": "iobroker/objects/common.Hallentore.json",
+      "scriptFile": "iobroker/scripts/common/Hallentore.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Pool",
+      "name": "Pool",
+      "objectFile": "iobroker/objects/common.Pool.json",
+      "scriptFile": "iobroker/scripts/common/Pool.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Pool_Steuerung",
+      "name": "Pool_Steuerung",
+      "objectFile": "iobroker/objects/common.Pool_Steuerung.json",
+      "scriptFile": "iobroker/scripts/common/Pool_Steuerung.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Blockly",
+      "id": "script.js.common.Priority_Management",
+      "name": "Priority_Management",
+      "objectFile": "iobroker/objects/common.Priority_Management.json",
+      "scriptFile": "iobroker/scripts/common/Priority_Management.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Blockly",
+      "id": "script.js.common.Rasen",
+      "name": "Rasen",
+      "objectFile": "iobroker/objects/common.Rasen.json",
+      "scriptFile": "iobroker/scripts/common/Rasen.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Blockly",
+      "id": "script.js.common.SmartPlug",
+      "name": "SmartPlug",
+      "objectFile": "iobroker/objects/common.SmartPlug.json",
+      "scriptFile": "iobroker/scripts/common/SmartPlug.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Blockly",
+      "id": "script.js.common.Smart_BadHzg",
+      "name": "Smart_BadHzg",
+      "objectFile": "iobroker/objects/common.Smart_BadHzg.json",
+      "scriptFile": "iobroker/scripts/common/Smart_BadHzg.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Sonne",
+      "name": "Sonne",
+      "objectFile": "iobroker/objects/common.Sonne.json",
+      "scriptFile": "iobroker/scripts/common/Sonne.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.common.Sonnenstand",
+      "name": "Sonnenstand",
+      "objectFile": "iobroker/objects/common.Sonnenstand.json",
+      "scriptFile": "iobroker/scripts/common/Sonnenstand.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_Alarms",
+      "name": "Victron_Alarms",
+      "objectFile": "iobroker/objects/common.Victron_Alarms.json",
+      "scriptFile": "iobroker/scripts/common/Victron_Alarms.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_BAT",
+      "name": "Victron_BAT",
+      "objectFile": "iobroker/objects/common.Victron_BAT.json",
+      "scriptFile": "iobroker/scripts/common/Victron_BAT.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_DiffV",
+      "name": "Victron_DiffV",
+      "objectFile": "iobroker/objects/common.Victron_DiffV.json",
+      "scriptFile": "iobroker/scripts/common/Victron_DiffV.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_EM24",
+      "name": "Victron_EM24",
+      "objectFile": "iobroker/objects/common.Victron_EM24.json",
+      "scriptFile": "iobroker/scripts/common/Victron_EM24.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_Hzg",
+      "name": "Victron Hzg",
+      "objectFile": "iobroker/objects/common.Victron_Hzg.json",
+      "scriptFile": "iobroker/scripts/common/Victron_Hzg.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_INIT",
+      "name": "Victron_INIT",
+      "objectFile": "iobroker/objects/common.Victron_INIT.json",
+      "scriptFile": "iobroker/scripts/common/Victron_INIT.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_Infos",
+      "name": "Victron_Infos",
+      "objectFile": "iobroker/objects/common.Victron_Infos.json",
+      "scriptFile": "iobroker/scripts/common/Victron_Infos.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_Limits",
+      "name": "Victron_Limits",
+      "objectFile": "iobroker/objects/common.Victron_Limits.json",
+      "scriptFile": "iobroker/scripts/common/Victron_Limits.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_Mode",
+      "name": "Victron_Mode",
+      "objectFile": "iobroker/objects/common.Victron_Mode.json",
+      "scriptFile": "iobroker/scripts/common/Victron_Mode.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_Mqtt",
+      "name": "Victron_Mqtt",
+      "objectFile": "iobroker/objects/common.Victron_Mqtt.json",
+      "scriptFile": "iobroker/scripts/common/Victron_Mqtt.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_OldGrid",
+      "name": "Victron_OldGrid",
+      "objectFile": "iobroker/objects/common.Victron_OldGrid.json",
+      "scriptFile": "iobroker/scripts/common/Victron_OldGrid.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Javascript/js",
+      "id": "script.js.common.Victron_Shunt_LastFullCharge",
+      "name": "Victron_Shunt_LastFullCharge",
+      "objectFile": "iobroker/objects/common.Victron_Shunt_LastFullCharge.json",
+      "scriptFile": "iobroker/scripts/common/Victron_Shunt_LastFullCharge.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Victron_TOP-Balancing",
+      "name": "Victron_TOP-Balancing",
+      "objectFile": "iobroker/objects/common.Victron_TOP-Balancing.json",
+      "scriptFile": "iobroker/scripts/common/Victron_TOP-Balancing.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Werkstatt_Hzg",
+      "name": "Werkstatt_Hzg",
+      "objectFile": "iobroker/objects/common.Werkstatt_Hzg.json",
+      "scriptFile": "iobroker/scripts/common/Werkstatt_Hzg.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Wolken-PV_Halle",
+      "name": "Wolken-PV_Halle",
+      "objectFile": "iobroker/objects/common.Wolken-PV_Halle.json",
+      "scriptFile": "iobroker/scripts/common/Wolken-PV_Halle.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.Wolken-PV_Home",
+      "name": "Wolken-PV_Home",
+      "objectFile": "iobroker/objects/common.Wolken-PV_Home.json",
+      "scriptFile": "iobroker/scripts/common/Wolken-PV_Home.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V3_Charger",
+      "name": "go-E_V3_Charger",
+      "objectFile": "iobroker/objects/common.go-E_V3_Charger.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_Charger.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V3_Control",
+      "name": "go-E_V3_Control",
+      "objectFile": "iobroker/objects/common.go-E_V3_Control.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_Control.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V3_Debug",
+      "name": "go-E_V3_Debug",
+      "objectFile": "iobroker/objects/common.go-E_V3_Debug.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_Debug.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V3_Error",
+      "name": "go-E_V3_Error",
+      "objectFile": "iobroker/objects/common.go-E_V3_Error.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_Error.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V3_GridOffset",
+      "name": "go-E_V3_GridOffset",
+      "objectFile": "iobroker/objects/common.go-E_V3_GridOffset.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_GridOffset.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V3_Init",
+      "name": "go-E_V3_Init",
+      "objectFile": "iobroker/objects/common.go-E_V3_Init.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_Init.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V3_LED",
+      "name": "go-E_V3_LED",
+      "objectFile": "iobroker/objects/common.go-E_V3_LED.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_LED.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V3_Limits",
+      "name": "go-E_V3_Limits",
+      "objectFile": "iobroker/objects/common.go-E_V3_Limits.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_Limits.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V3_Phasen",
+      "name": "go-E_V3_Phasen",
+      "objectFile": "iobroker/objects/common.go-E_V3_Phasen.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_Phasen.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V3_Verriegelung",
+      "name": "go-E_V3_Verriegelung",
+      "objectFile": "iobroker/objects/common.go-E_V3_Verriegelung.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_Verriegelung.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V3_Überschuss",
+      "name": "go-E_V3_Überschuss",
+      "objectFile": "iobroker/objects/common.go-E_V3_Überschuss.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_Überschuss.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V3_Überwachung",
+      "name": "go-E_V3_Überwachung",
+      "objectFile": "iobroker/objects/common.go-E_V3_Überwachung.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V3_Überwachung.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_Charger_Neu",
+      "name": "go-E_V4_Charger_Neu",
+      "objectFile": "iobroker/objects/common.go-E_V4_Charger_Neu.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_Charger_Neu.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_Control",
+      "name": "go-E_V4_Control",
+      "objectFile": "iobroker/objects/common.go-E_V4_Control.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_Control.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_Debug",
+      "name": "go-E_V4_Debug",
+      "objectFile": "iobroker/objects/common.go-E_V4_Debug.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_Debug.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_Error",
+      "name": "go-E_V4_Error",
+      "objectFile": "iobroker/objects/common.go-E_V4_Error.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_Error.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_GridOffset",
+      "name": "go-E_V4_GridOffset",
+      "objectFile": "iobroker/objects/common.go-E_V4_GridOffset.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_GridOffset.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_Halle",
+      "name": "go-E_V4_Halle",
+      "objectFile": "iobroker/objects/common.go-E_V4_Halle.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_Halle.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_Init",
+      "name": "go-E_V4_Init",
+      "objectFile": "iobroker/objects/common.go-E_V4_Init.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_Init.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_LED",
+      "name": "go-E_V4_LED",
+      "objectFile": "iobroker/objects/common.go-E_V4_LED.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_LED.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_Limits",
+      "name": "go-E_V4_Limits",
+      "objectFile": "iobroker/objects/common.go-E_V4_Limits.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_Limits.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_Phasen",
+      "name": "go-E_V4_Phasen",
+      "objectFile": "iobroker/objects/common.go-E_V4_Phasen.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_Phasen.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_Verriegelung",
+      "name": "go-E_V4_Verriegelung",
+      "objectFile": "iobroker/objects/common.go-E_V4_Verriegelung.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_Verriegelung.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_kWh",
+      "name": "go-E_V4_kWh",
+      "objectFile": "iobroker/objects/common.go-E_V4_kWh.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_kWh.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Blockly",
+      "id": "script.js.common.go-E_V4_Überwachung",
+      "name": "go-E_V4_Überwachung",
+      "objectFile": "iobroker/objects/common.go-E_V4_Überwachung.json",
+      "scriptFile": "iobroker/scripts/common/go-E_V4_Überwachung.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Javascript/js",
+      "id": "script.js.common.go-E_WB-Halle_Ladungen",
+      "name": "go-E_WB-Halle_Ladungen",
+      "objectFile": "iobroker/objects/common.go-E_WB-Halle_Ladungen.json",
+      "scriptFile": "iobroker/scripts/common/go-E_WB-Halle_Ladungen.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Batterie_BMS_Heltec_Vergleich",
+      "name": "Batterie_BMS_Heltec_Vergleich",
+      "objectFile": "iobroker/objects/energiemanagement.Batterie_BMS_Heltec_Vergleich.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Batterie_BMS_Heltec_Vergleich.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Batterie_Zellspannungen",
+      "name": "Batterie_Zellspannungen",
+      "objectFile": "iobroker/objects/energiemanagement.Batterie_Zellspannungen.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Batterie_Zellspannungen.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Battery_Supervisor_V1",
+      "name": "Battery_Supervisor_V1",
+      "objectFile": "iobroker/objects/energiemanagement.Battery_Supervisor_V1.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Battery_Supervisor_V1.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Battery_Health_V1",
+      "name": "Battery_Health_V1",
+      "objectFile": "iobroker/objects/energiemanagement.Battery_Health_V1.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Battery_Health_V1.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Energy_Flow_V1",
+      "name": "Energy_Flow_V1",
+      "objectFile": "iobroker/objects/energiemanagement.Energy_Flow_V1.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Energy_Flow_V1.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Codex_Access_Test",
+      "name": "Codex_Access_Test",
+      "objectFile": "iobroker/objects/energiemanagement.Codex_Access_Test.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Codex_Access_Test.js",
+      "type": "script"
+    },
+    {
+      "enabled": false,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Config",
+      "name": "Config",
+      "objectFile": "iobroker/objects/energiemanagement.Config.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Config.js",
+      "type": "script"
+    },
+    {
+      "enabled": true,
+      "engineType": "Javascript/js",
+      "id": "script.js.energiemanagement.Pool_VIS2_Zeitplaene",
+      "name": "Pool_VIS2_Zeitplaene",
+      "objectFile": "iobroker/objects/energiemanagement.Pool_VIS2_Zeitplaene.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Pool_VIS2_Zeitplaene.js",
+      "type": "script"
+    }
+  ],
+  "source": "iobroker/manifest.json"
+}

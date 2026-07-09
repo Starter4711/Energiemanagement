@@ -1,0 +1,67 @@
+<div class="em-dashboard em-pool-page">
+  <header class="em-header em-detail-header">
+    <a class="em-back" href="#Main" aria-label="Zur Übersicht">‹</a>
+    <div>
+      <div class="em-kicker">POOL</div>
+      <h1>Poolsteuerung</h1>
+      <p>Siemens LOGO · S7</p>
+    </div>
+    <div class="em-soc em-pool-temp">
+      <span>Pool · Rücklauf</span>
+      <strong>{javascript.0.Pool.RL} °C</strong>
+    </div>
+  </header>
+
+  <section>
+    <div class="em-pool-temps">
+      <article><span>Pooltemperatur</span><strong>{javascript.0.Pool.RL} °C</strong><small>Rücklauf · führender Wert</small></article>
+      <article><span>Vorlauf</span><strong>{javascript.0.Pool.VL} °C</strong><small>Indikator Wärmepumpenbetrieb</small></article>
+      <article class="em-state" data-state="{s7.0.info.connection}"><span>LOGO Verbindung</span><strong>{s7.0.info.connection}</strong></article>
+      <article class="em-state" data-state="{s7.0.DBs.DB1.V0_0}"><span>Betriebsart</span><strong>Winter: {s7.0.DBs.DB1.V0_0}</strong></article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ein- und Ausgänge</h2>
+    <div class="em-io-grid">
+      <div class="em-state" data-state="{s7.0.Inputs.0.I1}"><span>Eingang · H2O Sensor</span><b>{s7.0.Inputs.0.I1}</b></div>
+      <div class="em-state" data-state="{s7.0.Outputs.0.Q1}"><span>Q1 · Pumpe</span><b>{s7.0.Outputs.0.Q1}</b></div>
+      <div class="em-state" data-state="{s7.0.Outputs.0.Q2}"><span>Q2 · Salz / pH</span><b>{s7.0.Outputs.0.Q2}</b></div>
+      <div class="em-state" data-state="{s7.0.Outputs.0.Q3}"><span>Q3 · Füllen</span><b>{s7.0.Outputs.0.Q3}</b></div>
+      <div class="em-state" data-state="{s7.0.Outputs.0.Q4}"><span>Q4 · Wärmepumpe</span><b>{s7.0.Outputs.0.Q4}</b></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="em-section-head"><h2>Betrieb</h2><a class="em-text-link" href="#Pool_Bedienung">Bedienung ›</a></div>
+    <div class="em-control-grid">
+      <div class="em-state" data-state="{s7.0.DBs.DB1.V0_0}"><span>Winterbetrieb</span><b>{s7.0.DBs.DB1.V0_0}</b></div>
+      <div class="em-state" data-state="{s7.0.DBs.DB1.V100_0}"><span>Zeitsteuerung</span><b>{s7.0.DBs.DB1.V100_0}</b></div>
+      <div class="em-state" data-state="{s7.0.DBs.DB1.V1_4}"><span>Pool füllen</span><b>{s7.0.DBs.DB1.V1_4}</b></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="em-section-head"><h2>Winter-Mindestlaufzeiten</h2><span>täglich</span></div>
+    <div class="em-schedules">
+      <div class="em-schedule"><span>Fenster 1</span><strong>{javascript.0.PoolVIS2.Zeitplan1.Start}–{javascript.0.PoolVIS2.Zeitplan1.Ende}</strong><b>Aktiv: {time-switch.0.onoff.4.enabled}</b></div>
+      <div class="em-schedule"><span>Fenster 2</span><strong>{javascript.0.PoolVIS2.Zeitplan2.Start}–{javascript.0.PoolVIS2.Zeitplan2.Ende}</strong><b>Aktiv: {time-switch.0.onoff.5.enabled}</b></div>
+      <div class="em-state" data-state="{javascript.0.PoolSteuerung.Freigabe}"><span>Freigabe aktuell</span><b>{javascript.0.PoolSteuerung.Freigabe}</b></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="em-section-head"><h2>Wartung · Handbetrieb</h2><a class="em-text-link" href="#Pool_Bedienung">Bedienung ›</a></div>
+    <div class="em-control-grid em-maintenance">
+      <div class="em-state" data-state="{s7.0.DBs.DB1.V1_0}"><span>Pumpe</span><b>{s7.0.DBs.DB1.V1_0}</b></div>
+      <div class="em-state" data-state="{s7.0.DBs.DB1.V1_1}"><span>Salz / pH</span><b>{s7.0.DBs.DB1.V1_1}</b></div>
+      <div class="em-state" data-state="{s7.0.DBs.DB1.V1_2}"><span>H2O</span><b>{s7.0.DBs.DB1.V1_2}</b></div>
+      <div class="em-state" data-state="{s7.0.DBs.DB1.V1_3}"><span>Wärmepumpe</span><b>{s7.0.DBs.DB1.V1_3}</b></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Temperaturverlauf</h2>
+    <iframe class="em-pool-chart" src="http://192.168.0.20:3010/d/adfibmq8ewkxsf/pool?orgId=1&amp;refresh=10s&amp;theme=dark&amp;kiosk" title="Pool Temperaturverlauf"></iframe>
+  </section>
+</div>
