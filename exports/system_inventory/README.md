@@ -41,6 +41,12 @@
 - Nicht live verfuegbar: alle `state_snapshot_*.json` sind nur repository-derivierte Referenzen
 - Victron / VRM / Venus: nicht live exportierbar, Details in `victron_inventory_missing.md`
 
+## Arbeitsvereinbarung
+
+- Von dir erzeugte ioBroker-Objekte im `mqtt` sind fuer diesen Kontext vorerst nicht relevant.
+- Wenn Kommunikationsvariablen zum Cerbo benoetigt werden, pruefen wir zuerst, ob sie bereits existieren.
+- Neue Cerbo-Kommunikationsvariablen werden nur nach gemeinsamer Entscheidung angelegt.
+
 ## Wichtige Einschraenkung
 
 Die ioBroker-CLI war in dieser Umgebung nicht installiert, deshalb konnte kein echter Live-Export per `iob object list`, `iob object get` oder `iob state get` ausgefuehrt werden.

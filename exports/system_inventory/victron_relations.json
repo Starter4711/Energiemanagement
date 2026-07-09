@@ -13,6 +13,10 @@
     "iobroker/scripts/common/Victron_TOP-Balancing.js"
   ],
   "status": "VRM is used for ESS and BAT; no live VRM API access in this environment",
+  "scope": {
+    "mqttObjectsFromUser": "not relevant for the current inventory until explicit review is requested",
+    "cerboCommunicationVariables": "only checked for existence first; new variables are added only after joint decision"
+  },
   "relations": [
     {
       "component": "Cerbo Haus / Victron ESS",
