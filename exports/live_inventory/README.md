@@ -40,6 +40,7 @@
 - modbus_inventory.json
 - victron_inventory_notes.md
 - object_relations.json
+- eos_variables_compact.json
 
 ## Fehlgeschlagene Exporte
 - `iob state list` ist in ioBroker 7.2.2 nicht verfuegbar.

@@ -2,6 +2,10 @@
 
 ## 2026-07-09
 - Added
+  - `exports/live_inventory/eos_variables_compact.json` als verdichtete EOS-Variablenansicht aus dem Live-Inventar ergaenzt
+
+## 2026-07-09
+- Added
   - `exports/live_iobroker_inventory/` als echter Live-Export aus dem laufenden ioBroker-Container ergaenzt
 
 ## 2026-07-09
