@@ -13,6 +13,8 @@
 
 ## SAFE_RUNTIME Kandidaten
 
+SAFE_RUNTIME bedeutet hier ausschließlich ein ioBroker-Runtime-Kandidat aus dem Live-MQTT-Mirror und **nicht** einen freigegebenen Victron/Cerbo-Write-Pfad.
+
 | Name | MQTT Read Topic | Möglicher Write Topic | Aktueller Wert | Sicherheitsklasse | Begründung | Status | DBus |
 |---|---|---|---:|---|---|---|---|
 | mqtt.1.ioBroker.ESS_DisableBatteryCharge | mqtt.1.ioBroker.ESS_DisableBatteryCharge | nicht verifiziert | 0 | SAFE_RUNTIME | ioBroker-Runtime-Kandidat aus Live-MQTT-Mirror; Boolean runtime control topic used to gate ESS behavior. | direkt live belegt | DBus nicht direkt verifiziert |
