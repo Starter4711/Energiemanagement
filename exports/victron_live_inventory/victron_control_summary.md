@@ -3,23 +3,23 @@
 ## Zweck
 
 Diese Datei fasst mögliche Victron/Cerbo-Steuerkandidaten aus dem Live-MQTT-Mirror zusammen.
-Sie gibt keine Schreibfreigabe für Victron W/... Topics frei.
+Sie gibt keine Schreibfreigabe für Victron `W/...` Topics.
 
 ## Sicherheitsregeln
 
-- Keine Victron W/... Topics sind freigegeben.
+- Keine Victron `W/...` Topics sind freigegeben.
 - VE.Bus-Pfade sind nicht beschreibbar.
-- com.victronenergy.settings und /Settings bleiben nicht beschreibbar.
-- UNKNOWN bleibt nicht beschreibbar.
+- `com.victronenergy.settings` und `/Settings` bleiben nicht beschreibbar.
+- `UNKNOWN` bleibt nicht beschreibbar.
 - Schreibfreigabe erfolgt erst nach separater Prüfung.
-- SAFE_RUNTIME bedeutet hier nur: ioBroker-Runtime-Kandidat aus Live-MQTT-Mirror.
+- `SAFE_RUNTIME` bedeutet hier nur: ioBroker-Runtime-Kandidat aus Live-MQTT-Mirror.
 
 ## Exportbasis
 
-- Quelle: Live-MQTT-Mirror aus ioBroker
-- Direkter DBus-Zugriff: nein / nicht verifiziert
-- VRM-/Portal-ID: nicht live verifiziert, falls nicht vorhanden
-- Keine Writes ausgeführt
+- Quelle: Live-MQTT-Mirror aus ioBroker.
+- Direkter DBus-Zugriff: nein / nicht verifiziert.
+- VRM-/Portal-ID: nicht live verifiziert, sofern nicht im Export enthalten.
+- Keine Writes ausgeführt.
 
 ## SAFE_RUNTIME Kandidaten
 
