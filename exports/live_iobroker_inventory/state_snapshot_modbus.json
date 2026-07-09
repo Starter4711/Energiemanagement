@@ -1,0 +1,1685 @@
+{
+  "count": 140,
+  "generatedAt": "2026-07-09T15:54:06.224274+00:00",
+  "source": "live /opt/iobroker/iobroker-data/states.jsonl",
+  "states": [
+    {
+      "k": "modbus.1",
+      "v": {
+        "ack": true,
+        "from": "system.host.iobroker-iobroker-1-1-1-1",
+        "lc": 1733058670250,
+        "q": 0,
+        "ts": 1781507243559,
+        "val": false
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40001_Ampere",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612430680,
+        "q": 0,
+        "ts": 1783612430680,
+        "user": "system.user.admin",
+        "val": 689
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40002_Volt",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612408263,
+        "q": 0,
+        "ts": 1783612408263,
+        "user": "system.user.admin",
+        "val": 5334
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40003_SOC",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783610839203,
+        "q": 0,
+        "ts": 1783610839203,
+        "user": "system.user.admin",
+        "val": 59
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40004_SOH",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1774511712929,
+        "q": 0,
+        "ts": 1782995778334,
+        "user": "system.user.admin",
+        "val": 100
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40005_Remain_Capacity",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612430720,
+        "q": 0,
+        "ts": 1783612430720,
+        "user": "system.user.admin",
+        "val": 16625
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40006_Full_Capacity",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783486511141,
+        "q": 0,
+        "ts": 1783486511141,
+        "user": "system.user.admin",
+        "val": 28012
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40007_Designed_Capacity",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1774511712935,
+        "q": 0,
+        "ts": 1782995778334,
+        "user": "system.user.admin",
+        "val": 30000
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40008_Battery_Cycles_Coutn",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783486511142,
+        "q": 0,
+        "ts": 1783486511142,
+        "user": "system.user.admin",
+        "val": 236
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40010_Warning_Flag",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1782753458396,
+        "q": 0,
+        "ts": 1782995778335,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40011_Protection_Flag",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1782846039128,
+        "q": 0,
+        "ts": 1782995778335,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40012_Status/Fault_Flag",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783611679752,
+        "q": 0,
+        "ts": 1783611679752,
+        "user": "system.user.admin",
+        "val": 3328
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40013_Balancer_Status",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1774511650524,
+        "q": 0,
+        "ts": 1782995778336,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40016_Cell_Voltage_1",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612324214,
+        "q": 0,
+        "ts": 1783612324214,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40017_Cell_Voltage_2",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612391487,
+        "q": 0,
+        "ts": 1783612391487,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40018_Cell_Voltage_3",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612402697,
+        "q": 0,
+        "ts": 1783612402697,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40019_Cell_Voltage_4",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612262583,
+        "q": 0,
+        "ts": 1783612262583,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40020_Cell_Voltage_5",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612341050,
+        "q": 0,
+        "ts": 1783612341050,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40021_Cell_Voltage_6",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612408302,
+        "q": 0,
+        "ts": 1783612408302,
+        "user": "system.user.admin",
+        "val": 3339
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40022_Cell_Voltage_7",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612206515,
+        "q": 0,
+        "ts": 1783612206515,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40023_Cell_Voltage_8",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612363464,
+        "q": 0,
+        "ts": 1783612363464,
+        "user": "system.user.admin",
+        "val": 3339
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40024_Cell_Voltage_9",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612425115,
+        "q": 0,
+        "ts": 1783612425115,
+        "user": "system.user.admin",
+        "val": 3339
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40025_Cell_Voltage_10",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612329818,
+        "q": 0,
+        "ts": 1783612329818,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40026_Cell_Voltage_11",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612413907,
+        "q": 0,
+        "ts": 1783612413907,
+        "user": "system.user.admin",
+        "val": 3340
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40027_Cell_Voltage_12",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612245819,
+        "q": 0,
+        "ts": 1783612245819,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40028_Cell_Voltage_13",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612413907,
+        "q": 0,
+        "ts": 1783612413907,
+        "user": "system.user.admin",
+        "val": 3339
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40029_Cell_Voltage_14",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612397092,
+        "q": 0,
+        "ts": 1783612397092,
+        "user": "system.user.admin",
+        "val": 3340
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40030_Cell_Voltage_15",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612206594,
+        "q": 0,
+        "ts": 1783612206594,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40031_Cell_Voltage_16",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612273785,
+        "q": 0,
+        "ts": 1783612273785,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40032_Cell_temperature_1",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783600488161,
+        "q": 0,
+        "ts": 1783600488161,
+        "user": "system.user.admin",
+        "val": 253
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40033_Cell_temperature_2",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783590641786,
+        "q": 0,
+        "ts": 1783590641786,
+        "user": "system.user.admin",
+        "val": 259
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40034_Cell_temperature_3",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783593146933,
+        "q": 0,
+        "ts": 1783593146933,
+        "user": "system.user.admin",
+        "val": 258
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40035_Cell_temperature_4",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783601250383,
+        "q": 0,
+        "ts": 1783601250383,
+        "user": "system.user.admin",
+        "val": 253
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40036_MOSFET_temperature",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783610895241,
+        "q": 0,
+        "ts": 1783610895241,
+        "user": "system.user.admin",
+        "val": 273
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.1.40037_Environment_temperature",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783611354757,
+        "q": 0,
+        "ts": 1783611354757,
+        "user": "system.user.admin",
+        "val": 280
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40001_Ampere",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612430831,
+        "q": 0,
+        "ts": 1783612430831,
+        "user": "system.user.admin",
+        "val": 752
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40002_Volt",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612329971,
+        "q": 0,
+        "ts": 1783612329971,
+        "user": "system.user.admin",
+        "val": 5339
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40003_SOC",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783611685544,
+        "q": 0,
+        "ts": 1783611685544,
+        "user": "system.user.admin",
+        "val": 57
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40004_SOH",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1774511905297,
+        "q": 0,
+        "ts": 1782995778486,
+        "user": "system.user.admin",
+        "val": 100
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40005_Remain_Capacity",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612430870,
+        "q": 0,
+        "ts": 1783612430870,
+        "user": "system.user.admin",
+        "val": 14647
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40006_Full_Capacity",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783488489616,
+        "q": 0,
+        "ts": 1783488489616,
+        "user": "system.user.admin",
+        "val": 25639
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40007_Designed_Capacity",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1774511905297,
+        "q": 0,
+        "ts": 1782995778488,
+        "user": "system.user.admin",
+        "val": 30000
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40008_Battery_Cycles_Coutn",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783488489616,
+        "q": 0,
+        "ts": 1783488489616,
+        "user": "system.user.admin",
+        "val": 261
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40010_Warning_Flag",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1782754898729,
+        "q": 0,
+        "ts": 1782995778489,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40011_Protection_Flag",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1782845064126,
+        "q": 0,
+        "ts": 1782995778489,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40012_Status/Fault_Flag",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783611679901,
+        "q": 0,
+        "ts": 1783611679901,
+        "user": "system.user.admin",
+        "val": 3328
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40013_Balancer_Status",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1774511650762,
+        "q": 0,
+        "ts": 1782995778490,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40016_Cell_Voltage_1",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612397263,
+        "q": 0,
+        "ts": 1783612397263,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40017_Cell_Voltage_2",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612402855,
+        "q": 0,
+        "ts": 1783612402855,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40018_Cell_Voltage_3",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612397263,
+        "q": 0,
+        "ts": 1783612397263,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40019_Cell_Voltage_4",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612414018,
+        "q": 0,
+        "ts": 1783612414018,
+        "user": "system.user.admin",
+        "val": 3339
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40020_Cell_Voltage_5",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612419663,
+        "q": 0,
+        "ts": 1783612419663,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40021_Cell_Voltage_6",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612329971,
+        "q": 0,
+        "ts": 1783612329971,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40022_Cell_Voltage_7",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612268334,
+        "q": 0,
+        "ts": 1783612268334,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40023_Cell_Voltage_8",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612251530,
+        "q": 0,
+        "ts": 1783612251530,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40024_Cell_Voltage_9",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612425267,
+        "q": 0,
+        "ts": 1783612425267,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40025_Cell_Voltage_10",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612290744,
+        "q": 0,
+        "ts": 1783612290744,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40026_Cell_Voltage_11",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612245969,
+        "q": 0,
+        "ts": 1783612245969,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40027_Cell_Voltage_12",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612240328,
+        "q": 0,
+        "ts": 1783612240328,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40028_Cell_Voltage_13",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612273937,
+        "q": 0,
+        "ts": 1783612273937,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40029_Cell_Voltage_14",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612414057,
+        "q": 0,
+        "ts": 1783612414057,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40030_Cell_Voltage_15",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612414057,
+        "q": 0,
+        "ts": 1783612414057,
+        "user": "system.user.admin",
+        "val": 3338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40031_Cell_Voltage_16",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612279540,
+        "q": 0,
+        "ts": 1783612279540,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40032_Cell_temperature_1",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783605745042,
+        "q": 0,
+        "ts": 1783605745042,
+        "user": "system.user.admin",
+        "val": 263
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40033_Cell_temperature_2",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783606613793,
+        "q": 0,
+        "ts": 1783606613793,
+        "user": "system.user.admin",
+        "val": 260
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40034_Cell_temperature_3",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783606154229,
+        "q": 0,
+        "ts": 1783606154229,
+        "user": "system.user.admin",
+        "val": 258
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40035_Cell_temperature_4",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783603794759,
+        "q": 0,
+        "ts": 1783603794759,
+        "user": "system.user.admin",
+        "val": 266
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40036_MOSFET_temperature",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612402855,
+        "q": 0,
+        "ts": 1783612402855,
+        "user": "system.user.admin",
+        "val": 278
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.2.40037_Environment_temperature",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783611287635,
+        "q": 0,
+        "ts": 1783611287635,
+        "user": "system.user.admin",
+        "val": 280
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40001_Ampere",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612430982,
+        "q": 0,
+        "ts": 1783612430982,
+        "user": "system.user.admin",
+        "val": 1052
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40002_Volt",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612425378,
+        "q": 0,
+        "ts": 1783612425378,
+        "user": "system.user.admin",
+        "val": 5338
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40003_SOC",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783610755419,
+        "q": 0,
+        "ts": 1783610755419,
+        "user": "system.user.admin",
+        "val": 66
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40004_SOH",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1774511729035,
+        "q": 0,
+        "ts": 1782995778635,
+        "user": "system.user.admin",
+        "val": 100
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40005_Remain_Capacity",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612430982,
+        "q": 0,
+        "ts": 1783612430982,
+        "user": "system.user.admin",
+        "val": 19826
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40006_Full_Capacity",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783568909262,
+        "q": 0,
+        "ts": 1783568909262,
+        "user": "system.user.admin",
+        "val": 29914
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40007_Designed_Capacity",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1774511729035,
+        "q": 0,
+        "ts": 1782995778635,
+        "user": "system.user.admin",
+        "val": 30000
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40008_Battery_Cycles_Coutn",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783568909302,
+        "q": 0,
+        "ts": 1783568909302,
+        "user": "system.user.admin",
+        "val": 174
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40010_Warning_Flag",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1782756126158,
+        "q": 0,
+        "ts": 1782995778636,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40011_Protection_Flag",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1782844890550,
+        "q": 0,
+        "ts": 1782995778636,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40012_Status/Fault_Flag",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783611680051,
+        "q": 0,
+        "ts": 1783611680051,
+        "user": "system.user.admin",
+        "val": 3328
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40013_Balancer_Status",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1774511650999,
+        "q": 0,
+        "ts": 1782995778636,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40016_Cell_Voltage_1",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612352597,
+        "q": 0,
+        "ts": 1783612352597,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40017_Cell_Voltage_2",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612257283,
+        "q": 0,
+        "ts": 1783612257283,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40018_Cell_Voltage_3",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612296459,
+        "q": 0,
+        "ts": 1783612296459,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40019_Cell_Voltage_4",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612257284,
+        "q": 0,
+        "ts": 1783612257284,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40020_Cell_Voltage_5",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612206854,
+        "q": 0,
+        "ts": 1783612206854,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40021_Cell_Voltage_6",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612285292,
+        "q": 0,
+        "ts": 1783612285292,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40022_Cell_Voltage_7",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612302103,
+        "q": 0,
+        "ts": 1783612302103,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40023_Cell_Voltage_8",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612408611,
+        "q": 0,
+        "ts": 1783612408611,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40024_Cell_Voltage_9",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612419853,
+        "q": 0,
+        "ts": 1783612419853,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40025_Cell_Voltage_10",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612425417,
+        "q": 0,
+        "ts": 1783612425417,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40026_Cell_Voltage_11",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612430982,
+        "q": 0,
+        "ts": 1783612430982,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40027_Cell_Voltage_12",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612431062,
+        "q": 0,
+        "ts": 1783612431062,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40028_Cell_Voltage_13",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612296499,
+        "q": 0,
+        "ts": 1783612296499,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40029_Cell_Voltage_14",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612397397,
+        "q": 0,
+        "ts": 1783612397397,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40030_Cell_Voltage_15",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612290894,
+        "q": 0,
+        "ts": 1783612290894,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40031_Cell_Voltage_16",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612285292,
+        "q": 0,
+        "ts": 1783612285292,
+        "user": "system.user.admin",
+        "val": 3335
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40032_Cell_temperature_1",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783605151134,
+        "q": 0,
+        "ts": 1783605151134,
+        "user": "system.user.admin",
+        "val": 265
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40033_Cell_temperature_2",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783603951814,
+        "q": 0,
+        "ts": 1783603951814,
+        "user": "system.user.admin",
+        "val": 258
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40034_Cell_temperature_3",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783606754019,
+        "q": 0,
+        "ts": 1783606754019,
+        "user": "system.user.admin",
+        "val": 257
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40035_Cell_temperature_4",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783604175971,
+        "q": 0,
+        "ts": 1783604175971,
+        "user": "system.user.admin",
+        "val": 265
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40036_MOSFET_temperature",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612083615,
+        "q": 0,
+        "ts": 1783612083615,
+        "user": "system.user.admin",
+        "val": 285
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.3.40037_Environment_temperature",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783611786568,
+        "q": 0,
+        "ts": 1783611786568,
+        "user": "system.user.admin",
+        "val": 285
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40001_Ampere",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612431133,
+        "q": 0,
+        "ts": 1783612431133,
+        "user": "system.user.admin",
+        "val": 923
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40002_Volt",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612279842,
+        "q": 0,
+        "ts": 1783612279842,
+        "user": "system.user.admin",
+        "val": 5337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40003_SOC",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783610761134,
+        "q": 0,
+        "ts": 1783610761134,
+        "user": "system.user.admin",
+        "val": 65
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40004_SOH",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1774514299444,
+        "q": 0,
+        "ts": 1782995778792,
+        "user": "system.user.admin",
+        "val": 100
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40005_Remain_Capacity",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612431133,
+        "q": 0,
+        "ts": 1783612431133,
+        "user": "system.user.admin",
+        "val": 19326
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40006_Full_Capacity",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783568915062,
+        "q": 0,
+        "ts": 1783568915062,
+        "user": "system.user.admin",
+        "val": 29574
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40007_Designed_Capacity",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1774514299445,
+        "q": 0,
+        "ts": 1782995778793,
+        "user": "system.user.admin",
+        "val": 30000
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40008_Battery_Cycles_Coutn",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783568915062,
+        "q": 0,
+        "ts": 1783568915062,
+        "user": "system.user.admin",
+        "val": 172
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40010_Warning_Flag",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1782751077060,
+        "q": 0,
+        "ts": 1782995778793,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40011_Protection_Flag",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1782844974858,
+        "q": 0,
+        "ts": 1782995778794,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40012_Status/Fault_Flag",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783611680201,
+        "q": 0,
+        "ts": 1783611680201,
+        "user": "system.user.admin",
+        "val": 3328
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40013_Balancer_Status",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1774511651347,
+        "q": 0,
+        "ts": 1782995778794,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40016_Cell_Voltage_1",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612408756,
+        "q": 0,
+        "ts": 1783612408756,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40017_Cell_Voltage_2",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612296653,
+        "q": 0,
+        "ts": 1783612296653,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40018_Cell_Voltage_3",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612285442,
+        "q": 0,
+        "ts": 1783612285442,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40019_Cell_Voltage_4",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612251833,
+        "q": 0,
+        "ts": 1783612251833,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40020_Cell_Voltage_5",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612391979,
+        "q": 0,
+        "ts": 1783612391979,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40021_Cell_Voltage_6",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612263074,
+        "q": 0,
+        "ts": 1783612263074,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40022_Cell_Voltage_7",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612425608,
+        "q": 0,
+        "ts": 1783612425608,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40023_Cell_Voltage_8",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612207007,
+        "q": 0,
+        "ts": 1783612207007,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40024_Cell_Voltage_9",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612431173,
+        "q": 0,
+        "ts": 1783612431173,
+        "user": "system.user.admin",
+        "val": 3337
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40025_Cell_Voltage_10",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612246236,
+        "q": 0,
+        "ts": 1783612246236,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40026_Cell_Voltage_11",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612274236,
+        "q": 0,
+        "ts": 1783612274236,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40027_Cell_Voltage_12",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612257436,
+        "q": 0,
+        "ts": 1783612257436,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40028_Cell_Voltage_13",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612279842,
+        "q": 0,
+        "ts": 1783612279842,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40029_Cell_Voltage_14",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612201444,
+        "q": 0,
+        "ts": 1783612201444,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40030_Cell_Voltage_15",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612251833,
+        "q": 0,
+        "ts": 1783612251833,
+        "user": "system.user.admin",
+        "val": 3336
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40031_Cell_Voltage_16",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783612324707,
+        "q": 0,
+        "ts": 1783612324707,
+        "user": "system.user.admin",
+        "val": 3335
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40032_Cell_temperature_1",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783603526081,
+        "q": 0,
+        "ts": 1783603526081,
+        "user": "system.user.admin",
+        "val": 257
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40033_Cell_temperature_2",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783600886567,
+        "q": 0,
+        "ts": 1783600886567,
+        "user": "system.user.admin",
+        "val": 248
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40034_Cell_temperature_3",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783602108184,
+        "q": 0,
+        "ts": 1783602108184,
+        "user": "system.user.admin",
+        "val": 248
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40035_Cell_temperature_4",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783586512133,
+        "q": 0,
+        "ts": 1783586512133,
+        "user": "system.user.admin",
+        "val": 255
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40036_MOSFET_temperature",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783610873280,
+        "q": 0,
+        "ts": 1783610873280,
+        "user": "system.user.admin",
+        "val": 280
+      }
+    },
+    {
+      "k": "modbus.1.holdingRegisters.4.40037_Environment_temperature",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1783611612992,
+        "q": 0,
+        "ts": 1783611612992,
+        "user": "system.user.admin",
+        "val": 277
+      }
+    },
+    {
+      "k": "modbus.1.info.connection",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1782995778282,
+        "q": 0,
+        "ts": 1782995778282,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "modbus.1.info.pollTime",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.modbus.1",
+        "lc": 1782141236841,
+        "q": 0,
+        "ts": 1782995778424,
+        "user": "system.user.admin",
+        "val": 107
+      }
+    },
+    {
+      "k": "modbus.2",
+      "v": {
+        "ack": true,
+        "from": "system.host.iobroker-iobroker-1",
+        "lc": 1751728562870,
+        "q": 0,
+        "ts": 1751728562870,
+        "val": false
+      }
+    }
+  ]
+}

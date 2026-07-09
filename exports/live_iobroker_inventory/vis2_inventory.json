@@ -1,0 +1,25 @@
+{
+  "count": 18,
+  "entries": [
+    "/opt/iobroker/iobroker-data/files/vis-2.0",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/backups",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/backups/main-20260706T181313Z.json",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/backups/main-20260706T181539Z.json",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/backups/main-20260707T015833Z.json",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/backups/main-20260707T111054Z.json",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/Daco_2167902.png",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/_data.json",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/Ethereum-back.png",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/harmony-elite-gallery-04.png",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/images.jpg",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/main",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/main/vis-user.css",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/main/vis-views.json",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/renault-zoe-black.png",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/titanium-grau-zoe.png",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/vis-common-user.css",
+    "/opt/iobroker/iobroker-data/files/vis-2.0/zoe-alt.png"
+  ],
+  "generatedAt": "2026-07-09T15:54:06.680066+00:00",
+  "source": "live filesystem /opt/iobroker/iobroker-data/files/vis-2.0"
+}

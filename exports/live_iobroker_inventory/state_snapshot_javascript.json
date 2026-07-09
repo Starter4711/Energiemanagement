@@ -1,0 +1,5974 @@
+{
+  "count": 465,
+  "generatedAt": "2026-07-09T15:54:06.240997+00:00",
+  "source": "live /opt/iobroker/iobroker-data/states.jsonl",
+  "states": [
+    {
+      "k": "javascript.0.BMS.Pack1.Diff_Alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782745129928,
+        "q": 0,
+        "ts": 1782745129974,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack1.Diff_Avg",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360846620,
+        "q": 0,
+        "ts": 1783360846661,
+        "user": "system.user.admin",
+        "val": 3
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack1.Diff_mV",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857787,
+        "q": 0,
+        "ts": 1783360857852,
+        "user": "system.user.admin",
+        "val": 2
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack1.Max_V",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857787,
+        "q": 0,
+        "ts": 1783360857828,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack1.Min_V",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360841018,
+        "q": 0,
+        "ts": 1783360841060,
+        "user": "system.user.admin",
+        "val": 3.328
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack1.Trend",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783358279774,
+        "q": 0,
+        "ts": 1783358279775,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack1.Trend_Color",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783358279774,
+        "q": 0,
+        "ts": 1783358279815,
+        "user": "system.user.admin",
+        "val": "yellow"
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack1.Trend_Str",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783358279774,
+        "q": 0,
+        "ts": 1783358279775,
+        "user": "system.user.admin",
+        "val": "→"
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack2.Diff_Alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1775138366863,
+        "q": 0,
+        "ts": 1775138743607,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack2.Diff_Avg",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360818737,
+        "q": 0,
+        "ts": 1783360818802,
+        "user": "system.user.admin",
+        "val": 2
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack2.Diff_mV",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857986,
+        "q": 0,
+        "ts": 1783360857989,
+        "user": "system.user.admin",
+        "val": 3
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack2.Max_V",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360801924,
+        "q": 0,
+        "ts": 1783360801965,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack2.Min_V",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857986,
+        "q": 0,
+        "ts": 1783360857989,
+        "user": "system.user.admin",
+        "val": 3.327
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack2.Trend",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783347055035,
+        "q": 0,
+        "ts": 1783347055093,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack2.Trend_Color",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783347055035,
+        "q": 0,
+        "ts": 1783347055134,
+        "user": "system.user.admin",
+        "val": "yellow"
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack2.Trend_Str",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783347055035,
+        "q": 0,
+        "ts": 1783347055134,
+        "user": "system.user.admin",
+        "val": "→"
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack3.Diff_Alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782280565752,
+        "q": 0,
+        "ts": 1782280565817,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack3.Diff_Avg",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360818886,
+        "q": 0,
+        "ts": 1783360819008,
+        "user": "system.user.admin",
+        "val": 3
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack3.Diff_mV",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360858129,
+        "q": 0,
+        "ts": 1783360858170,
+        "user": "system.user.admin",
+        "val": 2
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack3.Max_V",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360858129,
+        "q": 0,
+        "ts": 1783360858170,
+        "user": "system.user.admin",
+        "val": 3.328
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack3.Min_V",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360830050,
+        "q": 0,
+        "ts": 1783360830104,
+        "user": "system.user.admin",
+        "val": 3.326
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack3.Trend",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783346702184,
+        "q": 0,
+        "ts": 1783346702225,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack3.Trend_Color",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783346702184,
+        "q": 0,
+        "ts": 1783346702226,
+        "user": "system.user.admin",
+        "val": "yellow"
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack3.Trend_Str",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783346702184,
+        "q": 0,
+        "ts": 1783346702226,
+        "user": "system.user.admin",
+        "val": "→"
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack4.Diff_Alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782279977464,
+        "q": 0,
+        "ts": 1782279977518,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack4.Diff_Avg",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360718162,
+        "q": 0,
+        "ts": 1783360718256,
+        "user": "system.user.admin",
+        "val": 2
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack4.Diff_mV",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360729330,
+        "q": 0,
+        "ts": 1783360729336,
+        "user": "system.user.admin",
+        "val": 2
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack4.Max_V",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360858242,
+        "q": 0,
+        "ts": 1783360858274,
+        "user": "system.user.admin",
+        "val": 3.329
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack4.Min_V",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360858242,
+        "q": 0,
+        "ts": 1783360858272,
+        "user": "system.user.admin",
+        "val": 3.327
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack4.Trend",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783346052119,
+        "q": 0,
+        "ts": 1783346052124,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack4.Trend_Color",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783346052119,
+        "q": 0,
+        "ts": 1783346052124,
+        "user": "system.user.admin",
+        "val": "yellow"
+      }
+    },
+    {
+      "k": "javascript.0.BMS.Pack4.Trend_Str",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_VDIFF",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783346052119,
+        "q": 0,
+        "ts": 1783346052124,
+        "user": "system.user.admin",
+        "val": "→"
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_10_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156166,
+        "q": 0,
+        "ts": 1783360681091,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_10_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360681090,
+        "q": 0,
+        "ts": 1783360681090,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_10_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360681009,
+        "q": 0,
+        "ts": 1783360681009,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_10_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610859,
+        "q": 0,
+        "ts": 1783360681003,
+        "user": "system.user.admin",
+        "val": 3.335
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_11_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156166,
+        "q": 0,
+        "ts": 1783360610882,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_11_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360466946,
+        "q": 0,
+        "ts": 1783360610873,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_11_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610862,
+        "q": 0,
+        "ts": 1783360610862,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_11_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610859,
+        "q": 0,
+        "ts": 1783360610859,
+        "user": "system.user.admin",
+        "val": 3.336
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_12_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156168,
+        "q": 0,
+        "ts": 1783360610883,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_12_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610873,
+        "q": 0,
+        "ts": 1783360610873,
+        "user": "system.user.admin",
+        "val": 0.0029999999999996696
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_12_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610862,
+        "q": 0,
+        "ts": 1783360610862,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_12_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610859,
+        "q": 0,
+        "ts": 1783360610859,
+        "user": "system.user.admin",
+        "val": 3.336
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_13_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156168,
+        "q": 0,
+        "ts": 1783360610905,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_13_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610899,
+        "q": 0,
+        "ts": 1783360610899,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_13_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610895,
+        "q": 0,
+        "ts": 1783360610895,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_13_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610893,
+        "q": 0,
+        "ts": 1783360610893,
+        "user": "system.user.admin",
+        "val": 3.336
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_14_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156185,
+        "q": 0,
+        "ts": 1783360610905,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_14_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360255970,
+        "q": 0,
+        "ts": 1783360610900,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_14_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610896,
+        "q": 0,
+        "ts": 1783360610896,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_14_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610893,
+        "q": 0,
+        "ts": 1783360610893,
+        "user": "system.user.admin",
+        "val": 3.336
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_15_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156186,
+        "q": 0,
+        "ts": 1783360610905,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_15_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610900,
+        "q": 0,
+        "ts": 1783360610900,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_15_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610896,
+        "q": 0,
+        "ts": 1783360610896,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_15_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610893,
+        "q": 0,
+        "ts": 1783360610893,
+        "user": "system.user.admin",
+        "val": 3.336
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_16_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845293175,
+        "q": 0,
+        "ts": 1783360610905,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_16_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783359536913,
+        "q": 0,
+        "ts": 1783360610900,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_16_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610897,
+        "q": 0,
+        "ts": 1783360610897,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_16_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610894,
+        "q": 0,
+        "ts": 1783360610894,
+        "user": "system.user.admin",
+        "val": 3.335
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_1_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156161,
+        "q": 0,
+        "ts": 1783360829920,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_1_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360829898,
+        "q": 0,
+        "ts": 1783360829898,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_1_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360829896,
+        "q": 0,
+        "ts": 1783360829896,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_1_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360757890,
+        "q": 0,
+        "ts": 1783360829895,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_2_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156161,
+        "q": 0,
+        "ts": 1783360829921,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_2_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360829899,
+        "q": 0,
+        "ts": 1783360829899,
+        "user": "system.user.admin",
+        "val": 0.0030000000000001137
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_2_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680853,
+        "q": 0,
+        "ts": 1783360829897,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_2_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360829895,
+        "q": 0,
+        "ts": 1783360829895,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_3_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156162,
+        "q": 0,
+        "ts": 1783360757901,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_3_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360757897,
+        "q": 0,
+        "ts": 1783360757897,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_3_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680855,
+        "q": 0,
+        "ts": 1783360757892,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_3_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360757890,
+        "q": 0,
+        "ts": 1783360757890,
+        "user": "system.user.admin",
+        "val": 3.335
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_4_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156165,
+        "q": 0,
+        "ts": 1783360757903,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_4_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360757897,
+        "q": 0,
+        "ts": 1783360757897,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_4_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680855,
+        "q": 0,
+        "ts": 1783360757893,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_4_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360757890,
+        "q": 0,
+        "ts": 1783360757890,
+        "user": "system.user.admin",
+        "val": 3.335
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_5_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156166,
+        "q": 0,
+        "ts": 1783360757904,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_5_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680861,
+        "q": 0,
+        "ts": 1783360757898,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_5_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680855,
+        "q": 0,
+        "ts": 1783360757894,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_5_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680852,
+        "q": 0,
+        "ts": 1783360757890,
+        "user": "system.user.admin",
+        "val": 3.335
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_6_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156166,
+        "q": 0,
+        "ts": 1783360757905,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_6_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360757899,
+        "q": 0,
+        "ts": 1783360757899,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_6_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680855,
+        "q": 0,
+        "ts": 1783360757894,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_6_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360757890,
+        "q": 0,
+        "ts": 1783360757890,
+        "user": "system.user.admin",
+        "val": 3.335
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_7_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156166,
+        "q": 0,
+        "ts": 1783360680881,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_7_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680862,
+        "q": 0,
+        "ts": 1783360680862,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_7_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680855,
+        "q": 0,
+        "ts": 1783360680855,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_7_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610859,
+        "q": 0,
+        "ts": 1783360680852,
+        "user": "system.user.admin",
+        "val": 3.336
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_8_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156166,
+        "q": 0,
+        "ts": 1783360680883,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_8_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680862,
+        "q": 0,
+        "ts": 1783360680862,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_8_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680855,
+        "q": 0,
+        "ts": 1783360680855,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_8_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610859,
+        "q": 0,
+        "ts": 1783360680852,
+        "user": "system.user.admin",
+        "val": 3.336
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_9_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845156166,
+        "q": 0,
+        "ts": 1783360680883,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_9_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680862,
+        "q": 0,
+        "ts": 1783360680862,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_9_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360610862,
+        "q": 0,
+        "ts": 1783360680855,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.cell_9_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360680852,
+        "q": 0,
+        "ts": 1783360680852,
+        "user": "system.user.admin",
+        "val": 3.336
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.lastUpdate",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360829973,
+        "q": 0,
+        "ts": 1783360829973,
+        "user": "system.user.admin",
+        "val": "2026-07-06T18:00:29.973Z"
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_1.packAlarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845293180,
+        "q": 0,
+        "ts": 1783360829972,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_10_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166131,
+        "q": 0,
+        "ts": 1783360838956,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_10_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838940,
+        "q": 0,
+        "ts": 1783360838940,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_10_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360766910,
+        "q": 0,
+        "ts": 1783360838923,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_10_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838901,
+        "q": 0,
+        "ts": 1783360838901,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_11_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166131,
+        "q": 0,
+        "ts": 1783360838959,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_11_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360403892,
+        "q": 0,
+        "ts": 1783360838946,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_11_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838923,
+        "q": 0,
+        "ts": 1783360838923,
+        "user": "system.user.admin",
+        "val": 3.329
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_11_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838901,
+        "q": 0,
+        "ts": 1783360838901,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_12_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782744865204,
+        "q": 0,
+        "ts": 1783360690987,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_12_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690952,
+        "q": 0,
+        "ts": 1783360690952,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_12_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690936,
+        "q": 0,
+        "ts": 1783360690936,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_12_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690919,
+        "q": 0,
+        "ts": 1783360690919,
+        "user": "system.user.admin",
+        "val": 3.336
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_13_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166131,
+        "q": 0,
+        "ts": 1783360690987,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_13_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690952,
+        "q": 0,
+        "ts": 1783360690952,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_13_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690936,
+        "q": 0,
+        "ts": 1783360690936,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_13_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690919,
+        "q": 0,
+        "ts": 1783360690919,
+        "user": "system.user.admin",
+        "val": 3.335
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_14_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782744865205,
+        "q": 0,
+        "ts": 1783360690987,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_14_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690952,
+        "q": 0,
+        "ts": 1783360690952,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_14_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690936,
+        "q": 0,
+        "ts": 1783360690936,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_14_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690919,
+        "q": 0,
+        "ts": 1783360690919,
+        "user": "system.user.admin",
+        "val": 3.336
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_15_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166161,
+        "q": 0,
+        "ts": 1783360690987,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_15_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690954,
+        "q": 0,
+        "ts": 1783360690954,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_15_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690936,
+        "q": 0,
+        "ts": 1783360690936,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_15_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690919,
+        "q": 0,
+        "ts": 1783360690919,
+        "user": "system.user.admin",
+        "val": 3.335
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_16_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166162,
+        "q": 0,
+        "ts": 1783360690989,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_16_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360124920,
+        "q": 0,
+        "ts": 1783360690963,
+        "user": "system.user.admin",
+        "val": 0.01100000000000012
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_16_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690936,
+        "q": 0,
+        "ts": 1783360690936,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_16_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690920,
+        "q": 0,
+        "ts": 1783360690920,
+        "user": "system.user.admin",
+        "val": 3.342
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_1_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166127,
+        "q": 0,
+        "ts": 1783360838946,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_1_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690912,
+        "q": 0,
+        "ts": 1783360838923,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_1_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838902,
+        "q": 0,
+        "ts": 1783360838902,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_1_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838892,
+        "q": 0,
+        "ts": 1783360838892,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_2_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166127,
+        "q": 0,
+        "ts": 1783360838946,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_2_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838924,
+        "q": 0,
+        "ts": 1783360838924,
+        "user": "system.user.admin",
+        "val": 0.0030000000000001137
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_2_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690884,
+        "q": 0,
+        "ts": 1783360838908,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_2_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838892,
+        "q": 0,
+        "ts": 1783360838892,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_3_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166127,
+        "q": 0,
+        "ts": 1783360838946,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_3_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360690914,
+        "q": 0,
+        "ts": 1783360838924,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_3_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838908,
+        "q": 0,
+        "ts": 1783360838908,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_3_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838896,
+        "q": 0,
+        "ts": 1783360838896,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_4_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166127,
+        "q": 0,
+        "ts": 1783360838947,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_4_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838928,
+        "q": 0,
+        "ts": 1783360838928,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_4_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838910,
+        "q": 0,
+        "ts": 1783360838910,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_4_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360766853,
+        "q": 0,
+        "ts": 1783360838898,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_5_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166128,
+        "q": 0,
+        "ts": 1783360838947,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_5_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360475858,
+        "q": 0,
+        "ts": 1783360838930,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_5_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838910,
+        "q": 0,
+        "ts": 1783360838910,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_5_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838898,
+        "q": 0,
+        "ts": 1783360838898,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_6_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166128,
+        "q": 0,
+        "ts": 1783360838950,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_6_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360548898,
+        "q": 0,
+        "ts": 1783360838940,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_6_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838910,
+        "q": 0,
+        "ts": 1783360838910,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_6_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838898,
+        "q": 0,
+        "ts": 1783360838898,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_7_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166131,
+        "q": 0,
+        "ts": 1783360838952,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_7_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838940,
+        "q": 0,
+        "ts": 1783360838940,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_7_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360838913,
+        "q": 0,
+        "ts": 1783360838913,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_7_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360766905,
+        "q": 0,
+        "ts": 1783360838898,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_8_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166131,
+        "q": 0,
+        "ts": 1783360838956,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_8_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360548899,
+        "q": 0,
+        "ts": 1783360838940,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_8_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360766909,
+        "q": 0,
+        "ts": 1783360838916,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_8_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360766905,
+        "q": 0,
+        "ts": 1783360838899,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_9_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845166131,
+        "q": 0,
+        "ts": 1783360838956,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_9_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360548900,
+        "q": 0,
+        "ts": 1783360838940,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_9_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360766910,
+        "q": 0,
+        "ts": 1783360838918,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.cell_9_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360766905,
+        "q": 0,
+        "ts": 1783360838901,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.lastUpdate",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360839097,
+        "q": 0,
+        "ts": 1783360839097,
+        "user": "system.user.admin",
+        "val": "2026-07-06T18:00:39.097Z"
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_2.packAlarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782744865233,
+        "q": 0,
+        "ts": 1783360839092,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_10_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845311137,
+        "q": 0,
+        "ts": 1783360847884,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_10_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847878,
+        "q": 0,
+        "ts": 1783360847878,
+        "user": "system.user.admin",
+        "val": 0.0030000000000001137
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_10_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776949,
+        "q": 0,
+        "ts": 1783360847871,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_10_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847862,
+        "q": 0,
+        "ts": 1783360847862,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_11_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845311137,
+        "q": 0,
+        "ts": 1783360847884,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_11_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360630045,
+        "q": 0,
+        "ts": 1783360847878,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_11_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847871,
+        "q": 0,
+        "ts": 1783360847871,
+        "user": "system.user.admin",
+        "val": 3.329
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_11_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847862,
+        "q": 0,
+        "ts": 1783360847862,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_12_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782745015159,
+        "q": 0,
+        "ts": 1783360847884,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_12_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776958,
+        "q": 0,
+        "ts": 1783360847878,
+        "user": "system.user.admin",
+        "val": 0.002000000000000224
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_12_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776950,
+        "q": 0,
+        "ts": 1783360847872,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_12_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776942,
+        "q": 0,
+        "ts": 1783360847863,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_13_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845311162,
+        "q": 0,
+        "ts": 1783360848097,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_13_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360848096,
+        "q": 0,
+        "ts": 1783360848096,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_13_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776950,
+        "q": 0,
+        "ts": 1783360848014,
+        "user": "system.user.admin",
+        "val": 3.328
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_13_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360848008,
+        "q": 0,
+        "ts": 1783360848008,
+        "user": "system.user.admin",
+        "val": 3.332
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_14_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782745224192,
+        "q": 0,
+        "ts": 1783360630143,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_14_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360630045,
+        "q": 0,
+        "ts": 1783360630045,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_14_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360629993,
+        "q": 0,
+        "ts": 1783360629993,
+        "user": "system.user.admin",
+        "val": 3.332
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_14_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360629951,
+        "q": 0,
+        "ts": 1783360629951,
+        "user": "system.user.admin",
+        "val": 3.336
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_15_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845311163,
+        "q": 0,
+        "ts": 1783360630160,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_15_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360630112,
+        "q": 0,
+        "ts": 1783360630112,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_15_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360630041,
+        "q": 0,
+        "ts": 1783360630041,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_15_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360629991,
+        "q": 0,
+        "ts": 1783360629991,
+        "user": "system.user.admin",
+        "val": 3.335
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_16_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1780221875192,
+        "q": 0,
+        "ts": 1783360630160,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_16_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360630113,
+        "q": 0,
+        "ts": 1783360630113,
+        "user": "system.user.admin",
+        "val": 0.0030000000000001137
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_16_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360630043,
+        "q": 0,
+        "ts": 1783360630043,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_16_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360629991,
+        "q": 0,
+        "ts": 1783360629991,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_1_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845176148,
+        "q": 0,
+        "ts": 1783360847865,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_1_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847861,
+        "q": 0,
+        "ts": 1783360847861,
+        "user": "system.user.admin",
+        "val": 0.0030000000000001137
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_1_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847856,
+        "q": 0,
+        "ts": 1783360847856,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_1_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847853,
+        "q": 0,
+        "ts": 1783360847853,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_2_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845176149,
+        "q": 0,
+        "ts": 1783360847872,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_2_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776950,
+        "q": 0,
+        "ts": 1783360847864,
+        "user": "system.user.admin",
+        "val": 0.002000000000000224
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_2_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360704951,
+        "q": 0,
+        "ts": 1783360847861,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_2_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776942,
+        "q": 0,
+        "ts": 1783360847855,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_3_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845311131,
+        "q": 0,
+        "ts": 1783360847878,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_3_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847872,
+        "q": 0,
+        "ts": 1783360847872,
+        "user": "system.user.admin",
+        "val": 0.0019999999999997797
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_3_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847863,
+        "q": 0,
+        "ts": 1783360847863,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_3_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847860,
+        "q": 0,
+        "ts": 1783360847860,
+        "user": "system.user.admin",
+        "val": 3.332
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_4_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845311135,
+        "q": 0,
+        "ts": 1783360847878,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_4_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847872,
+        "q": 0,
+        "ts": 1783360847872,
+        "user": "system.user.admin",
+        "val": 0.0030000000000001137
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_4_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847863,
+        "q": 0,
+        "ts": 1783360847863,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_4_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776942,
+        "q": 0,
+        "ts": 1783360847861,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_5_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845311135,
+        "q": 0,
+        "ts": 1783360847880,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_5_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847875,
+        "q": 0,
+        "ts": 1783360847875,
+        "user": "system.user.admin",
+        "val": 0.0030000000000001137
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_5_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847866,
+        "q": 0,
+        "ts": 1783360847866,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_5_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776942,
+        "q": 0,
+        "ts": 1783360847862,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_6_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845311135,
+        "q": 0,
+        "ts": 1783360847882,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_6_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847876,
+        "q": 0,
+        "ts": 1783360847876,
+        "user": "system.user.admin",
+        "val": 0.0030000000000001137
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_6_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847866,
+        "q": 0,
+        "ts": 1783360847866,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_6_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776942,
+        "q": 0,
+        "ts": 1783360847862,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_7_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845311135,
+        "q": 0,
+        "ts": 1783360847882,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_7_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776956,
+        "q": 0,
+        "ts": 1783360847876,
+        "user": "system.user.admin",
+        "val": 0.0030000000000001137
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_7_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847871,
+        "q": 0,
+        "ts": 1783360847871,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_7_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847862,
+        "q": 0,
+        "ts": 1783360847862,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_8_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845311135,
+        "q": 0,
+        "ts": 1783360847884,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_8_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360704960,
+        "q": 0,
+        "ts": 1783360847878,
+        "user": "system.user.admin",
+        "val": 0.0030000000000001137
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_8_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776946,
+        "q": 0,
+        "ts": 1783360847871,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_8_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776942,
+        "q": 0,
+        "ts": 1783360847862,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_9_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845311137,
+        "q": 0,
+        "ts": 1783360847884,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_9_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847878,
+        "q": 0,
+        "ts": 1783360847878,
+        "user": "system.user.admin",
+        "val": 0.002000000000000224
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_9_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360847871,
+        "q": 0,
+        "ts": 1783360847871,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.cell_9_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360776942,
+        "q": 0,
+        "ts": 1783360847862,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.lastUpdate",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360848107,
+        "q": 0,
+        "ts": 1783360848107,
+        "user": "system.user.admin",
+        "val": "2026-07-06T18:00:48.107Z"
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_3.packAlarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782745224230,
+        "q": 0,
+        "ts": 1783360848106,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_10_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845254170,
+        "q": 0,
+        "ts": 1783360857950,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_10_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857928,
+        "q": 0,
+        "ts": 1783360857928,
+        "user": "system.user.admin",
+        "val": 0.0019999999999997797
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_10_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857915,
+        "q": 0,
+        "ts": 1783360857915,
+        "user": "system.user.admin",
+        "val": 3.329
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_10_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857912,
+        "q": 0,
+        "ts": 1783360857912,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_11_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845254170,
+        "q": 0,
+        "ts": 1783360857950,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_11_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857938,
+        "q": 0,
+        "ts": 1783360857938,
+        "user": "system.user.admin",
+        "val": 0.0019999999999997797
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_11_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857916,
+        "q": 0,
+        "ts": 1783360857916,
+        "user": "system.user.admin",
+        "val": 3.329
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_11_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857912,
+        "q": 0,
+        "ts": 1783360857912,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_12_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782745165149,
+        "q": 0,
+        "ts": 1783360857950,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_12_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857938,
+        "q": 0,
+        "ts": 1783360857938,
+        "user": "system.user.admin",
+        "val": 0.0009999999999998899
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_12_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857917,
+        "q": 0,
+        "ts": 1783360857917,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_12_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857912,
+        "q": 0,
+        "ts": 1783360857912,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_13_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845321134,
+        "q": 0,
+        "ts": 1783360857956,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_13_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857946,
+        "q": 0,
+        "ts": 1783360857946,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_13_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857921,
+        "q": 0,
+        "ts": 1783360857921,
+        "user": "system.user.admin",
+        "val": 3.328
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_13_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857912,
+        "q": 0,
+        "ts": 1783360857912,
+        "user": "system.user.admin",
+        "val": 3.332
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_14_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782745165149,
+        "q": 0,
+        "ts": 1783360857957,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_14_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857946,
+        "q": 0,
+        "ts": 1783360857946,
+        "user": "system.user.admin",
+        "val": 0.0029999999999996696
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_14_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857921,
+        "q": 0,
+        "ts": 1783360857921,
+        "user": "system.user.admin",
+        "val": 3.329
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_14_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857913,
+        "q": 0,
+        "ts": 1783360857913,
+        "user": "system.user.admin",
+        "val": 3.332
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_15_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845321134,
+        "q": 0,
+        "ts": 1783360639930,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_15_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360639909,
+        "q": 0,
+        "ts": 1783360639909,
+        "user": "system.user.admin",
+        "val": 0.004999999999999893
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_15_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360639898,
+        "q": 0,
+        "ts": 1783360639898,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_15_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360639889,
+        "q": 0,
+        "ts": 1783360639889,
+        "user": "system.user.admin",
+        "val": 3.336
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_16_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845321158,
+        "q": 0,
+        "ts": 1783360639930,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_16_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360214917,
+        "q": 0,
+        "ts": 1783360639909,
+        "user": "system.user.admin",
+        "val": 0.0040000000000000036
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_16_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360639898,
+        "q": 0,
+        "ts": 1783360639898,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_16_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360639889,
+        "q": 0,
+        "ts": 1783360639889,
+        "user": "system.user.admin",
+        "val": 3.335
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_1_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845185106,
+        "q": 0,
+        "ts": 1783360857875,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_1_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857866,
+        "q": 0,
+        "ts": 1783360857866,
+        "user": "system.user.admin",
+        "val": 0.0009999999999998899
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_1_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857861,
+        "q": 0,
+        "ts": 1783360857861,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_1_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857852,
+        "q": 0,
+        "ts": 1783360857852,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_2_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845185107,
+        "q": 0,
+        "ts": 1783360857889,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_2_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857875,
+        "q": 0,
+        "ts": 1783360857875,
+        "user": "system.user.admin",
+        "val": 0.0019999999999997797
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_2_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857865,
+        "q": 0,
+        "ts": 1783360857865,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_2_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857860,
+        "q": 0,
+        "ts": 1783360857860,
+        "user": "system.user.admin",
+        "val": 3.332
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_3_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845185108,
+        "q": 0,
+        "ts": 1783360857893,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_3_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857882,
+        "q": 0,
+        "ts": 1783360857882,
+        "user": "system.user.admin",
+        "val": 0.0019999999999997797
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_3_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360788918,
+        "q": 0,
+        "ts": 1783360857867,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_3_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857863,
+        "q": 0,
+        "ts": 1783360857863,
+        "user": "system.user.admin",
+        "val": 3.332
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_4_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845185171,
+        "q": 0,
+        "ts": 1783360857893,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_4_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857882,
+        "q": 0,
+        "ts": 1783360857882,
+        "user": "system.user.admin",
+        "val": 0.0019999999999997797
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_4_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857868,
+        "q": 0,
+        "ts": 1783360857868,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_4_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857863,
+        "q": 0,
+        "ts": 1783360857863,
+        "user": "system.user.admin",
+        "val": 3.332
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_5_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845185171,
+        "q": 0,
+        "ts": 1783360857894,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_5_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857882,
+        "q": 0,
+        "ts": 1783360857882,
+        "user": "system.user.admin",
+        "val": 0.0019999999999997797
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_5_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857868,
+        "q": 0,
+        "ts": 1783360857868,
+        "user": "system.user.admin",
+        "val": 3.329
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_5_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857863,
+        "q": 0,
+        "ts": 1783360857863,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_6_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845185172,
+        "q": 0,
+        "ts": 1783360857894,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_6_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857883,
+        "q": 0,
+        "ts": 1783360857883,
+        "user": "system.user.admin",
+        "val": 0.0019999999999997797
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_6_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857868,
+        "q": 0,
+        "ts": 1783360857868,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_6_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857863,
+        "q": 0,
+        "ts": 1783360857863,
+        "user": "system.user.admin",
+        "val": 3.332
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_7_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845185173,
+        "q": 0,
+        "ts": 1783360857894,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_7_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857883,
+        "q": 0,
+        "ts": 1783360857883,
+        "user": "system.user.admin",
+        "val": 0.0019999999999997797
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_7_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857868,
+        "q": 0,
+        "ts": 1783360857868,
+        "user": "system.user.admin",
+        "val": 3.329
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_7_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857863,
+        "q": 0,
+        "ts": 1783360857863,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_8_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845254169,
+        "q": 0,
+        "ts": 1783360857894,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_8_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857886,
+        "q": 0,
+        "ts": 1783360857886,
+        "user": "system.user.admin",
+        "val": 0.0019999999999997797
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_8_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857872,
+        "q": 0,
+        "ts": 1783360857872,
+        "user": "system.user.admin",
+        "val": 3.329
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_8_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857864,
+        "q": 0,
+        "ts": 1783360857864,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_9_alarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781845254169,
+        "q": 0,
+        "ts": 1783360857898,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_9_diff",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857888,
+        "q": 0,
+        "ts": 1783360857888,
+        "user": "system.user.admin",
+        "val": 0.0019999999999997797
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_9_modbus",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857873,
+        "q": 0,
+        "ts": 1783360857873,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.cell_9_mqtt",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360857864,
+        "q": 0,
+        "ts": 1783360857864,
+        "user": "system.user.admin",
+        "val": 3.332
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.lastUpdate",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360858007,
+        "q": 0,
+        "ts": 1783360858007,
+        "user": "system.user.admin",
+        "val": "2026-07-06T18:00:58.007Z"
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.Pack_4.packAlarm",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Gobel_Vergleich_BMS_Heltec",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782745165178,
+        "q": 0,
+        "ts": 1783360857994,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Gobel.TimeSinceLastFullChargeFormatted",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Victron_Shunt_LastFullCharge",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783612406399,
+        "q": 0,
+        "ts": 1783612435394,
+        "user": "system.user.admin",
+        "val": "1W 2T 5h 47m"
+      }
+    },
+    {
+      "k": "javascript.0.Humidor.Dehumidifier_LowerLimit",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Humidor",
+        "from": "system.adapter.javascript.0",
+        "lc": 1710051455985,
+        "q": 0,
+        "ts": 1710051455985,
+        "user": "system.user.admin",
+        "val": "62"
+      }
+    },
+    {
+      "k": "javascript.0.Humidor.Dehumidifier_Timeout",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Humidor",
+        "from": "system.adapter.javascript.0",
+        "lc": 1720347519441,
+        "q": 0,
+        "ts": 1733060953809,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Humidor.Dehumidifier_UpperLimit",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Humidor",
+        "from": "system.adapter.javascript.0",
+        "lc": 1710051455989,
+        "q": 0,
+        "ts": 1710051455989,
+        "user": "system.user.admin",
+        "val": "69"
+      }
+    },
+    {
+      "k": "javascript.0.Pool.RL",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Pool",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783611173212,
+        "q": 0,
+        "ts": 1783611173212,
+        "user": "system.user.admin",
+        "val": 31
+      }
+    },
+    {
+      "k": "javascript.0.Pool.STOP_Alive_Toggle_Fail",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Pool",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782636780026,
+        "q": 0,
+        "ts": 1782995763619,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Pool.TimerPumpe",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Pool",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783611771509,
+        "q": 0,
+        "ts": 1783611771509,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Pool.TimerWB",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Pool",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783611771509,
+        "q": 0,
+        "ts": 1783611771509,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Pool.VL",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Pool",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783611135991,
+        "q": 0,
+        "ts": 1783611135991,
+        "user": "system.user.admin",
+        "val": 31
+      }
+    },
+    {
+      "k": "javascript.0.Pool.ÜberschussPumpeVorhanden",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Pool",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783611771583,
+        "q": 0,
+        "ts": 1783612436187,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.Pool.ÜberschussWPVorhanden",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Pool",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783611772589,
+        "q": 0,
+        "ts": 1783612436187,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.PoolSteuerung.Freigabe",
+      "v": {
+        "ack": false,
+        "from": "system.adapter.time-switch.0",
+        "lc": 1732957200016,
+        "q": 0,
+        "ts": 1732957200016,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.PoolVIS2.Zeitplan1.Ende",
+      "v": {
+        "ack": true,
+        "c": "script.js.energiemanagement.Pool_VIS2_Zeitplaene",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783389430881,
+        "q": 0,
+        "ts": 1783389430881,
+        "user": "system.user.admin",
+        "val": "12:00"
+      }
+    },
+    {
+      "k": "javascript.0.PoolVIS2.Zeitplan1.Start",
+      "v": {
+        "ack": true,
+        "c": "script.js.energiemanagement.Pool_VIS2_Zeitplaene",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783389430881,
+        "q": 0,
+        "ts": 1783389430881,
+        "user": "system.user.admin",
+        "val": "10:00"
+      }
+    },
+    {
+      "k": "javascript.0.PoolVIS2.Zeitplan2.Ende",
+      "v": {
+        "ack": true,
+        "c": "script.js.energiemanagement.Pool_VIS2_Zeitplaene",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783389447752,
+        "q": 0,
+        "ts": 1783389447752,
+        "user": "system.user.admin",
+        "val": "16:00"
+      }
+    },
+    {
+      "k": "javascript.0.PoolVIS2.Zeitplan2.Start",
+      "v": {
+        "ack": true,
+        "c": "script.js.energiemanagement.Pool_VIS2_Zeitplaene",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783389447752,
+        "q": 0,
+        "ts": 1783389447752,
+        "user": "system.user.admin",
+        "val": "14:00"
+      }
+    },
+    {
+      "k": "javascript.0.Priorität.Prio_aktStromproPhase_Tesla",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Priority_Management",
+        "from": "system.adapter.javascript.0",
+        "lc": 1731875758005,
+        "q": 0,
+        "ts": 1731939902006,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "javascript.0.Priorität.Prio_aktStromproPhase_Zoe",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Priority_Management",
+        "from": "system.adapter.javascript.0",
+        "lc": 1731938787005,
+        "q": 0,
+        "ts": 1731939902005,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "javascript.0.Priorität.Prio_maxTesla",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Priority_Management",
+        "from": "system.adapter.javascript.0",
+        "lc": 1710159423174,
+        "q": 0,
+        "ts": 1731938787015,
+        "user": "system.user.admin",
+        "val": 16
+      }
+    },
+    {
+      "k": "javascript.0.Priorität.Prio_maxZoe",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Priority_Management",
+        "from": "system.adapter.javascript.0",
+        "lc": 1730717491013,
+        "q": 0,
+        "ts": 1731938787015,
+        "user": "system.user.admin",
+        "val": 32
+      }
+    },
+    {
+      "k": "javascript.0.Sonne.Sonnenaufgang",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Sonne",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783558800003,
+        "q": 0,
+        "ts": 1783558800003,
+        "user": "system.user.admin",
+        "val": "Thu Jul 09 2026 05:14:18 GMT+0200 (Mitteleuropäische Sommerzeit)"
+      }
+    },
+    {
+      "k": "javascript.0.Sonne.Sonnenuntergang",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Sonne",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783558800003,
+        "q": 0,
+        "ts": 1783558800003,
+        "user": "system.user.admin",
+        "val": "Thu Jul 09 2026 21:05:24 GMT+0200 (Mitteleuropäische Sommerzeit)"
+      }
+    },
+    {
+      "k": "javascript.0.Sonne.Sonnenzeit",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Sonne",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783566900042,
+        "q": 0,
+        "ts": 1783612380041,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.Sonne.Sonnenzeit_1h",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Sonne",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783570500041,
+        "q": 0,
+        "ts": 1783612380041,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.Sonne.ZeitSA",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Sonne",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783558800003,
+        "q": 0,
+        "ts": 1783558800003,
+        "user": "system.user.admin",
+        "val": "05:14"
+      }
+    },
+    {
+      "k": "javascript.0.Sonne.ZeitSU",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Sonne",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783472400003,
+        "q": 0,
+        "ts": 1783558800003,
+        "user": "system.user.admin",
+        "val": "21:05"
+      }
+    },
+    {
+      "k": "javascript.0.Sonne.nachSA",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Sonne",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783566900042,
+        "q": 0,
+        "ts": 1783612380041,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.Sonne.vorSU",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Sonne",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783566900042,
+        "q": 0,
+        "ts": 1783612380041,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.Victron.ChargerV3",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Victron_BAT",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783171160016,
+        "q": 0,
+        "ts": 1783612430024,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Victron.ChargerV4",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Victron_BAT",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783606610023,
+        "q": 0,
+        "ts": 1783612430025,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Victron.Gobel_Master_Power",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Victron_DiffV",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783612431003,
+        "q": 0,
+        "ts": 1783612436008,
+        "user": "system.user.admin",
+        "val": 367.51
+      }
+    },
+    {
+      "k": "javascript.0.Victron.Gobel_Slave_1_Power",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Victron_DiffV",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783612431003,
+        "q": 0,
+        "ts": 1783612436008,
+        "user": "system.user.admin",
+        "val": 401.49
+      }
+    },
+    {
+      "k": "javascript.0.Victron.Gobel_Slave_2_Power",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Victron_DiffV",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783612431003,
+        "q": 0,
+        "ts": 1783612436008,
+        "user": "system.user.admin",
+        "val": 561.56
+      }
+    },
+    {
+      "k": "javascript.0.Victron.Gobel_Slave_3_Power",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Victron_DiffV",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783612432008,
+        "q": 0,
+        "ts": 1783612436008,
+        "user": "system.user.admin",
+        "val": 492.61
+      }
+    },
+    {
+      "k": "javascript.0.Victron.TOP-StartV",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Victron_TOP-Balancing",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782819000029,
+        "q": 0,
+        "ts": 1782819000029,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "javascript.0.Wolken-PV_Caddy.Wolkenzaehler_PVCaddy_Aktiv",
+      "v": {
+        "ack": false,
+        "from": "system.adapter.web.0",
+        "lc": 1736766092974,
+        "q": 0,
+        "ts": 1736766092974,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Wolken-PV_Halle",
+        "from": "system.adapter.javascript.0",
+        "lc": 1732459500005,
+        "q": 0,
+        "ts": 1783611840002,
+        "user": "system.user.admin",
+        "val": 10
+      }
+    },
+    {
+      "k": "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle_Aktiv",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Wolken-PV_Halle",
+        "from": "system.adapter.javascript.0",
+        "lc": 1732468143231,
+        "q": 0,
+        "ts": 1783548449575,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.Wolken-PV_Halle.Wolkenzaehler_PVHalle_Merker",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Wolken-PV_Halle",
+        "from": "system.adapter.javascript.0",
+        "lc": 1732461680014,
+        "q": 0,
+        "ts": 1732468140015,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "javascript.0.Wolken-PV_Home.Wolkenzaehler_Home",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Wolken-PV_Home",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783611840002,
+        "q": 0,
+        "ts": 1783611840002,
+        "user": "system.user.admin",
+        "val": 9
+      }
+    },
+    {
+      "k": "javascript.0.Wolken-PV_Home.Wolkenzaehler_Home_Aktiv",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Wolken-PV_Home",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783575240002,
+        "q": 0,
+        "ts": 1783575240002,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.Wolken-PV_Home.Wolkenzaehler_Home_PVMerker",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Wolken-PV_Home",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783612435014,
+        "q": 0,
+        "ts": 1783612435014,
+        "user": "system.user.admin",
+        "val": 9292.9
+      }
+    },
+    {
+      "k": "javascript.0.goE.sessions.lastSessionId",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.go-E_WB-Halle_Ladungen",
+        "from": "system.adapter.javascript.0",
+        "lc": 1781506669864,
+        "q": 0,
+        "ts": 1781506669864,
+        "user": "system.user.admin",
+        "val": 0
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_1",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049470011,
+        "q": 0,
+        "ts": 1782049505017,
+        "user": "system.user.admin",
+        "val": 3.31
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_10",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049475019,
+        "q": 0,
+        "ts": 1782049505017,
+        "user": "system.user.admin",
+        "val": 3.31
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_11",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049470011,
+        "q": 0,
+        "ts": 1782049505018,
+        "user": "system.user.admin",
+        "val": 3.311
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_12",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049435016,
+        "q": 0,
+        "ts": 1782049505018,
+        "user": "system.user.admin",
+        "val": 3.31
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_13",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049465018,
+        "q": 0,
+        "ts": 1782049505018,
+        "user": "system.user.admin",
+        "val": 3.311
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_14",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049420013,
+        "q": 0,
+        "ts": 1782049505018,
+        "user": "system.user.admin",
+        "val": 3.311
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_15",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049425018,
+        "q": 0,
+        "ts": 1782049505018,
+        "user": "system.user.admin",
+        "val": 3.31
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_16",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049475020,
+        "q": 0,
+        "ts": 1782049505018,
+        "user": "system.user.admin",
+        "val": 3.309
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_2",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049375016,
+        "q": 0,
+        "ts": 1782049505017,
+        "user": "system.user.admin",
+        "val": 3.309
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_3",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049475019,
+        "q": 0,
+        "ts": 1782049505017,
+        "user": "system.user.admin",
+        "val": 3.31
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_4",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049435016,
+        "q": 0,
+        "ts": 1782049505017,
+        "user": "system.user.admin",
+        "val": 3.31
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_5",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049495017,
+        "q": 0,
+        "ts": 1782049505017,
+        "user": "system.user.admin",
+        "val": 3.31
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_6",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049415017,
+        "q": 0,
+        "ts": 1782049505017,
+        "user": "system.user.admin",
+        "val": 3.31
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_7",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049435016,
+        "q": 0,
+        "ts": 1782049505017,
+        "user": "system.user.admin",
+        "val": 3.31
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_8",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049410012,
+        "q": 0,
+        "ts": 1782049505017,
+        "user": "system.user.admin",
+        "val": 3.31
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.ioBroker.Gobel_1_Cell_9",
+      "v": {
+        "ack": true,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782049465018,
+        "q": 0,
+        "ts": 1782049505017,
+        "user": "system.user.admin",
+        "val": 3.311
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_1",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042810012,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_10",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042655018,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_11",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042660011,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_12",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042555013,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_13",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042555013,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_14",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042740011,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.334
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_15",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042555013,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.332
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_16",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042555013,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.327
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_2",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042555013,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.329
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_3",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042765016,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_4",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042555013,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_5",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042555013,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.33
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_6",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042555013,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.332
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_7",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042555013,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.331
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_8",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042555013,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.1.iobroker.Gobel_1_Cell_9",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Zellspannungen_an_Mqtt_Battery",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782042600011,
+        "q": 0,
+        "ts": 1782042835016,
+        "user": "system.user.admin",
+        "val": 3.333
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.2.Gobel.Gobel_1_All_Voltages",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Gobel_Zellspannungen",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782144352361,
+        "q": 0,
+        "ts": 1782144352361,
+        "user": "system.user.admin",
+        "val": "{\"value\":[3306,3306,3306,3306,3306,3306,3306,3306,3306,3306,3306,3306,3306,3306,3306,3306]}"
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.2.Gobel.Gobel_2_All_Voltages",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Gobel_Zellspannungen",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782144251118,
+        "q": 0,
+        "ts": 1782144352361,
+        "user": "system.user.admin",
+        "val": "{\"value\":[3306,3306,3306,3306,3306,3306,3306,3306,3305,3306,3306,3306,3306,3306,3306,3306]}"
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.2.Gobel.Gobel_3_All_Voltages",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Gobel_Zellspannungen",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782144352362,
+        "q": 0,
+        "ts": 1782144352362,
+        "user": "system.user.admin",
+        "val": "{\"value\":[3305,3306,3306,3306,3306,3306,3305,3305,3305,3306,3306,3306,3306,3306,3306,3304]}"
+      }
+    },
+    {
+      "k": "javascript.0.mqtt.2.Gobel.Gobel_4_All_Voltages",
+      "v": {
+        "ack": false,
+        "c": "script.js.common.Gobel_Zellspannungen",
+        "from": "system.adapter.javascript.0",
+        "lc": 1782144311119,
+        "q": 0,
+        "ts": 1782144352362,
+        "user": "system.user.admin",
+        "val": "{\"value\":[3305,3305,3306,3305,3306,3306,3305,3305,3305,3306,3306,3306,3306,3305,3306,3305]}"
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Adapter_Blockly",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1710442518393,
+        "q": 0,
+        "ts": 1710442518393,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Bewässerung",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1733062369023,
+        "q": 0,
+        "ts": 1782995763558,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.EBikeLader",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1749964687309,
+        "q": 0,
+        "ts": 1782995763560,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Garage",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1710051454414,
+        "q": 0,
+        "ts": 1782995763560,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Gobel_VDIFF",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360862160,
+        "q": 0,
+        "ts": 1783360862164,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Gobel_Vergleich_BMS_Heltec",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360869642,
+        "q": 0,
+        "ts": 1783360869645,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Gobel_Zellspannungen",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782208053328,
+        "q": 0,
+        "ts": 1782995763859,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Gobel_einzelne_Zellspannungen",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782104236107,
+        "q": 0,
+        "ts": 1782995763859,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Grid-PV",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001491,
+        "q": 0,
+        "ts": 1782995763560,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Grid-PVHalle",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001492,
+        "q": 0,
+        "ts": 1782995763560,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Hallentore",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001492,
+        "q": 0,
+        "ts": 1782995763561,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Pool",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001492,
+        "q": 0,
+        "ts": 1782995763561,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Pool_Steuerung",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001492,
+        "q": 0,
+        "ts": 1782995763561,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Priority_Management",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1731939902450,
+        "q": 0,
+        "ts": 1782995763561,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Rasen",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1710051454414,
+        "q": 0,
+        "ts": 1782995763561,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.SmartPlug",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1729920351285,
+        "q": 0,
+        "ts": 1782995763561,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Smart_BadHzg",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1729920350765,
+        "q": 0,
+        "ts": 1782995763561,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Sonne",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001493,
+        "q": 0,
+        "ts": 1782995763561,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Sonnenstand",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1710051454420,
+        "q": 0,
+        "ts": 1782995763561,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_Alarms",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001493,
+        "q": 0,
+        "ts": 1782995763562,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_BAT",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782724885972,
+        "q": 0,
+        "ts": 1782995763562,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_DiffV",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001493,
+        "q": 0,
+        "ts": 1782995763562,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_EM24",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001493,
+        "q": 0,
+        "ts": 1782995763562,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_ESS",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1711443437760,
+        "q": 0,
+        "ts": 1711443437760,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_Hzg",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001494,
+        "q": 0,
+        "ts": 1782995763564,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_INIT",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001494,
+        "q": 0,
+        "ts": 1782995763564,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_Infos",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001494,
+        "q": 0,
+        "ts": 1782995763564,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_Limits",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001494,
+        "q": 0,
+        "ts": 1782995763564,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_Mode",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001494,
+        "q": 0,
+        "ts": 1782995763637,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_Mqtt",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001494,
+        "q": 0,
+        "ts": 1782995763637,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_OldGrid",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001495,
+        "q": 0,
+        "ts": 1782995763637,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_Shunt_LastFullCharge",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001495,
+        "q": 0,
+        "ts": 1782995763637,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Victron_TOP-Balancing",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782738247362,
+        "q": 0,
+        "ts": 1782995763637,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Werkstatt_Hzg",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001495,
+        "q": 0,
+        "ts": 1782995763638,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Wolken-PV_Halle",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001496,
+        "q": 0,
+        "ts": 1782995763638,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.Wolken-PV_Home",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001497,
+        "q": 0,
+        "ts": 1782995763638,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.ZOE_Debug",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1729414827947,
+        "q": 0,
+        "ts": 1729414827947,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.ZOE_Init",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1729414831593,
+        "q": 0,
+        "ts": 1729414831593,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.ZOE_Phasen",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1729414839057,
+        "q": 0,
+        "ts": 1729414839057,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V3_Charger",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001497,
+        "q": 0,
+        "ts": 1782995763638,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V3_Control",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001497,
+        "q": 0,
+        "ts": 1782995763638,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V3_Debug",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001498,
+        "q": 0,
+        "ts": 1782995763638,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V3_Error",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001498,
+        "q": 0,
+        "ts": 1782995763638,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V3_GridOffset",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001498,
+        "q": 0,
+        "ts": 1782995763638,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V3_Init",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001498,
+        "q": 0,
+        "ts": 1782995763638,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V3_LED",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001499,
+        "q": 0,
+        "ts": 1782995763639,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V3_Limits",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001499,
+        "q": 0,
+        "ts": 1782995763639,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V3_Phasen",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001499,
+        "q": 0,
+        "ts": 1782995763639,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V3_Verriegelung",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001499,
+        "q": 0,
+        "ts": 1782995763639,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V3_Überschuss",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001499,
+        "q": 0,
+        "ts": 1782995763639,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V3_Überwachung",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001500,
+        "q": 0,
+        "ts": 1782995763639,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_Charger_Neu",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001500,
+        "q": 0,
+        "ts": 1782995763639,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_Control",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001502,
+        "q": 0,
+        "ts": 1782995763639,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_Debug",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001520,
+        "q": 0,
+        "ts": 1782995763640,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_Error",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001523,
+        "q": 0,
+        "ts": 1782995763640,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_GridOffset",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001523,
+        "q": 0,
+        "ts": 1782995763640,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_Halle",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001524,
+        "q": 0,
+        "ts": 1782995763640,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_Init",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001524,
+        "q": 0,
+        "ts": 1782995763713,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_LED",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001524,
+        "q": 0,
+        "ts": 1782995763713,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_Limits",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001525,
+        "q": 0,
+        "ts": 1782995763713,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_Phasen",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001525,
+        "q": 0,
+        "ts": 1782995763713,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_Verriegelung",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001525,
+        "q": 0,
+        "ts": 1782995763714,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_kWh",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001526,
+        "q": 0,
+        "ts": 1782995763856,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_V4_Überwachung",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001526,
+        "q": 0,
+        "ts": 1782995763856,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.common.go-E_WB-Halle_Ladungen",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782471001526,
+        "q": 0,
+        "ts": 1782995763857,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.energiemanagement.Batterie_BMS_Heltec_Vergleich",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360767638,
+        "q": 0,
+        "ts": 1783360767641,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.energiemanagement.Batterie_Zellspannungen",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360511557,
+        "q": 0,
+        "ts": 1783360511560,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.energiemanagement.Config",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1783360504229,
+        "q": 0,
+        "ts": 1783362413580,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptEnabled.energiemanagement.Pool_VIS2_Zeitplaene",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1783389413894,
+        "q": 0,
+        "ts": 1783389413900,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.scriptProblem.common.Garage",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1710051454942,
+        "q": 0,
+        "ts": 1710051454942,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptProblem.common.Gobel_einzelne_Zellspannungen",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1782104236114,
+        "q": 0,
+        "ts": 1782104236114,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptProblem.common.Rasen",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1710051454955,
+        "q": 0,
+        "ts": 1710051454955,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.scriptProblem.common.Sonnenstand",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1710051455118,
+        "q": 0,
+        "ts": 1710051455118,
+        "user": "system.user.admin",
+        "val": false
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.dawn",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T02:33:57.947Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001150,
+        "q": 0,
+        "ts": 1783548001150,
+        "user": "system.user.admin",
+        "val": "04:33:57"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.dusk",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T19:45:44.636Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001152,
+        "q": 0,
+        "ts": 1783548001152,
+        "user": "system.user.admin",
+        "val": "21:45:44"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.goldenHour",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T18:17:19.427Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001160,
+        "q": 0,
+        "ts": 1783548001160,
+        "user": "system.user.admin",
+        "val": "20:17:19"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.goldenHourEnd",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T04:02:23.156Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001158,
+        "q": 0,
+        "ts": 1783548001158,
+        "user": "system.user.admin",
+        "val": "06:02:23"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.nadir",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T23:09:51.291Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001058,
+        "q": 0,
+        "ts": 1783548001058,
+        "user": "system.user.admin",
+        "val": "01:09:51"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.nauticalDawn",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T01:38:40.360Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001153,
+        "q": 0,
+        "ts": 1783548001153,
+        "user": "system.user.admin",
+        "val": "03:38:40"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.nauticalDusk",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T20:41:02.223Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001154,
+        "q": 0,
+        "ts": 1783548001154,
+        "user": "system.user.admin",
+        "val": "22:41:02"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.night",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T22:05:05.089Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001157,
+        "q": 0,
+        "ts": 1783548001157,
+        "user": "system.user.admin",
+        "val": "00:05:05"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.nightEnd",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T00:14:37.494Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001156,
+        "q": 0,
+        "ts": 1783548001156,
+        "user": "system.user.admin",
+        "val": "02:14:37"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.solarNoon",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T11:09:51.291Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001002,
+        "q": 0,
+        "ts": 1783548001002,
+        "user": "system.user.admin",
+        "val": "13:09:51"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.sunrise",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T03:14:18.009Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001100,
+        "q": 0,
+        "ts": 1783548001100,
+        "user": "system.user.admin",
+        "val": "05:14:18"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.sunriseEnd",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T03:18:13.659Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001118,
+        "q": 0,
+        "ts": 1783548001118,
+        "user": "system.user.admin",
+        "val": "05:18:13"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.sunset",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T19:05:24.574Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001117,
+        "q": 0,
+        "ts": 1783548001117,
+        "user": "system.user.admin",
+        "val": "21:05:24"
+      }
+    },
+    {
+      "k": "javascript.0.variables.astro.sunsetStart",
+      "v": {
+        "ack": true,
+        "c": "2026-07-09T19:01:28.924Z",
+        "from": "system.adapter.javascript.0",
+        "lc": 1783548001142,
+        "q": 0,
+        "ts": 1783548001142,
+        "user": "system.user.admin",
+        "val": "21:01:28"
+      }
+    },
+    {
+      "k": "javascript.0.variables.dayTime",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1783612380002,
+        "q": 0,
+        "ts": 1783612380002,
+        "user": "system.user.admin",
+        "val": "17:53"
+      }
+    },
+    {
+      "k": "javascript.0.variables.isDayTime",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1783569597048,
+        "q": 0,
+        "ts": 1783569597048,
+        "user": "system.user.admin",
+        "val": true
+      }
+    },
+    {
+      "k": "javascript.0.variables.isDaylightSaving",
+      "v": {
+        "ack": true,
+        "from": "system.adapter.javascript.0",
+        "lc": 1774749536705,
+        "q": 0,
+        "ts": 1774749536705,
+        "user": "system.user.admin",
+        "val": true
+      }
+    }
+  ]
+}

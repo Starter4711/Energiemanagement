@@ -2,6 +2,10 @@
 
 ## 2026-07-09
 - Added
+  - `exports/live_iobroker_inventory/` als echter Live-Export aus dem laufenden ioBroker-Container ergaenzt
+
+## 2026-07-09
+- Added
   - `exports/system_inventory/victron_relations.json` als belegbare Zuordnung der im Repository sichtbaren Victron-/Venus-/MQTT-Komponenten und IDs ergaenzt
 
 ## 2026-07-08

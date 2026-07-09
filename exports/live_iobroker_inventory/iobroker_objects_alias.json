@@ -1,0 +1,2981 @@
+{
+  "count": 101,
+  "generatedAt": "2026-07-09T15:54:05.972296+00:00",
+  "objects": [
+    {
+      "k": "alias.0",
+      "v": {
+        "_id": "alias.0",
+        "acl": {
+          "object": 1604,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "dontDelete": true,
+          "name": {
+            "de": "Stammordner für Aliase",
+            "en": "root folder for Aliases",
+            "es": "carpeta raíz para alias",
+            "fr": "dossier racine pour les alias",
+            "it": "cartella principale per gli alias",
+            "nl": "hoofdmap voor aliassen",
+            "pl": "folder główny dla aliasów",
+            "pt": "pasta raiz para aliases",
+            "ru": "корневая папка для псевдонимов",
+            "zh-cn": "别名的根文件夹"
+          },
+          "type": "meta.folder"
+        },
+        "from": "system.adapter.admin.0",
+        "ts": 1665923187432,
+        "type": "meta",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Hall 40A",
+      "v": {
+        "_id": "alias.0.EM24 Hall 40A",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "EM24 Hall 40A"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1710163808873,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Hall 40A.L1_A",
+      "v": {
+        "_id": "alias.0.EM24 Hall 40A.L1_A",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.3.N.b827eb7fd855.grid.42.Ac.L1.Current",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/b827eb7fd855/grid/42/Ac/L1/Current",
+          "read": true,
+          "role": "variable",
+          "type": "mixed",
+          "unit": "A",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1735298261586,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Hall 40A.L2_A",
+      "v": {
+        "_id": "alias.0.EM24 Hall 40A.L2_A",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.3.N.b827eb7fd855.grid.42.Ac.L2.Current",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/b827eb7fd855/grid/42/Ac/L1/Current",
+          "read": true,
+          "role": "variable",
+          "type": "mixed",
+          "unit": "A",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1735298302735,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Hall 40A.L3_A",
+      "v": {
+        "_id": "alias.0.EM24 Hall 40A.L3_A",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.3.N.b827eb7fd855.grid.42.Ac.L3.Current",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/b827eb7fd855/grid/42/Ac/L1/Current",
+          "read": true,
+          "role": "variable",
+          "type": "mixed",
+          "unit": "A",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1735298315917,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Hall 40A.Power Hall 40A",
+      "v": {
+        "_id": "alias.0.EM24 Hall 40A.Power Hall 40A",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.3.N.b827eb7fd855.grid.42.Ac.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/b827eb7fd855/grid/42/Ac/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430692720,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Hall Grid",
+      "v": {
+        "_id": "alias.0.EM24 Hall Grid",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "EM24 Hall Grid"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1715158376444,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Hall Grid.Connected",
+      "v": {
+        "_id": "alias.0.EM24 Hall Grid.Connected",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.grid.41.Connected"
+          },
+          "name": "N/c0619ab4bea6/grid/41/Connected",
+          "read": true,
+          "role": "variable",
+          "type": "boolean",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1732424894166,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Hall Grid.HallGrid_Power_Minus",
+      "v": {
+        "_id": "alias.0.EM24 Hall Grid.HallGrid_Power_Minus",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.grid.41.Ac.Power",
+            "read": "JSON.parse(val).value < 0 ? -Math.round(JSON.parse(val).value * 100) / 100 : 0"
+          },
+          "custom": {
+            "sourceanalytix.0": {
+              "consumption": true,
+              "cumulativeValue": 25598.27860364836,
+              "deviceResetLogicEnabled": true,
+              "enabled": true,
+              "meter_values": true,
+              "selectedPrice": "ElectricityDelivery",
+              "selectedUnit": "W",
+              "start_day": 25598.27860364836,
+              "start_month": 23752.201118004017,
+              "start_quarter": 16695.69493183843,
+              "start_week": 25457.42852467495,
+              "start_year": 997.8605412114597,
+              "threshold": 1,
+              "valueAtDeviceInit": null,
+              "valueAtDeviceReset": null
+            }
+          },
+          "name": "N/c0619ab4bea6/grid/41/Ac/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430692796,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Hall Grid.HallGrid_Power_Plus",
+      "v": {
+        "_id": "alias.0.EM24 Hall Grid.HallGrid_Power_Plus",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.grid.41.Ac.Power",
+            "read": "JSON.parse(val).value > 0 ? Math.round(JSON.parse(val).value * 100) / 100 : 0"
+          },
+          "custom": {
+            "sourceanalytix.0": {
+              "consumption": true,
+              "cumulativeValue": 439.6935195697039,
+              "deviceResetLogicEnabled": true,
+              "enabled": true,
+              "meter_values": true,
+              "selectedPrice": "ElectricityDay",
+              "selectedUnit": "W",
+              "start_day": 439.6935195697039,
+              "start_month": 431.40990280495714,
+              "start_quarter": 425.923522067443,
+              "start_week": 432.7414636624015,
+              "start_year": 233.6225041778192,
+              "threshold": 1,
+              "valueAtDeviceInit": null,
+              "valueAtDeviceReset": null
+            }
+          },
+          "name": "N/c0619ab4bea6/grid/41/Ac/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430692841,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Hall Grid.PV_Überschuss",
+      "v": {
+        "_id": "alias.0.EM24 Hall Grid.PV_Überschuss",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.grid.41.Ac.Power",
+            "read": "JSON.parse(val).value < 0 ? -Math.round(JSON.parse(val).value * 100) / 100 : 0"
+          },
+          "name": "N/c0619ab4bea6/grid/41/Ac/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430693063,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Hall Grid.Power",
+      "v": {
+        "_id": "alias.0.EM24 Hall Grid.Power",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.grid.41.Ac.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab4bea6/grid/41/Ac/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430693131,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 New Grid",
+      "v": {
+        "_id": "alias.0.EM24 New Grid",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "EM24 New Grid"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1712639979479,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 New Grid.Connected",
+      "v": {
+        "_id": "alias.0.EM24 New Grid.Connected",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.grid.43.Connected"
+          },
+          "name": "N/c0619ab336ed/grid/43/Connected",
+          "read": true,
+          "role": "variable",
+          "type": "boolean",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1732425242708,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 New Grid.Power",
+      "v": {
+        "_id": "alias.0.EM24 New Grid.Power",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.grid.43.Ac.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/grid/43/Ac/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430693234,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 New Grid.Power_Minus",
+      "v": {
+        "_id": "alias.0.EM24 New Grid.Power_Minus",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.grid.43.Ac.Power",
+            "read": "JSON.parse(val).value < 0 ? -Math.round(JSON.parse(val).value * 100) / 100 : 0"
+          },
+          "custom": {
+            "sourceanalytix.0": {
+              "consumption": true,
+              "costs": true,
+              "cumulativeValue": 13740.7845531654,
+              "deviceResetLogicEnabled": true,
+              "enabled": true,
+              "selectedPrice": "ElectricityDelivery",
+              "selectedUnit": "W",
+              "start_day": 13740.7845531654,
+              "start_month": 12740.878195013567,
+              "start_quarter": 8897.366194973805,
+              "start_week": 13642.882451566002,
+              "start_year": 793.7648581157508,
+              "threshold": 1,
+              "valueAtDeviceInit": null,
+              "valueAtDeviceReset": null
+            }
+          },
+          "name": "N/c0619ab336ed/grid/43/Ac/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430693355,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 New Grid.Power_Plus",
+      "v": {
+        "_id": "alias.0.EM24 New Grid.Power_Plus",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.grid.43.Ac.Power",
+            "read": "JSON.parse(val).value > 0 ? Math.round(JSON.parse(val).value * 100) / 100 : 0"
+          },
+          "custom": {
+            "sourceanalytix.0": {
+              "alias": "",
+              "consumption": true,
+              "costs": true,
+              "cumulativeValue": 1767.424287599628,
+              "deviceResetLogicEnabled": true,
+              "enabled": true,
+              "selectedPrice": "ElectricityDay",
+              "selectedUnit": "W",
+              "start_day": 1767.424287599628,
+              "start_month": 1749.7837912392174,
+              "start_quarter": 1744.7751875192803,
+              "start_week": 1750.2681385171593,
+              "start_year": 1157.5230201619481,
+              "threshold": 1,
+              "valueAtDeviceInit": null,
+              "valueAtDeviceReset": null
+            }
+          },
+          "name": "N/c0619ab336ed/grid/43/Ac/Power",
+          "read": false,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430693439,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Old Grid",
+      "v": {
+        "_id": "alias.0.EM24 Old Grid",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "EM24 Old Grid"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1710163808873,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Old Grid.Power Old Grid",
+      "v": {
+        "_id": "alias.0.EM24 Old Grid.Power Old Grid",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.3.N.b827eb7fd855.grid.40.Ac.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/b827eb7fd855/grid/40/Ac/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430693530,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Old Grid.Power Old Grid Minus",
+      "v": {
+        "_id": "alias.0.EM24 Old Grid.Power Old Grid Minus",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.3.N.b827eb7fd855.grid.40.Ac.Power",
+            "read": "JSON.parse(val).value < 0 ? Math.round(JSON.parse(val).value * 100) / 100 : 0"
+          },
+          "name": "N/b827eb7fd855/grid/40/Ac/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430693775,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.EM24 Old Grid.Power Old Grid Plus",
+      "v": {
+        "_id": "alias.0.EM24 Old Grid.Power Old Grid Plus",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.3.N.b827eb7fd855.grid.40.Ac.Power",
+            "read": "JSON.parse(val).value > 0 ? Math.round(JSON.parse(val).value * 100) / 100 : 0"
+          },
+          "name": "N/b827eb7fd855/grid/40/Ac/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430693860,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Fronius",
+      "v": {
+        "_id": "alias.0.Fronius",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "Fronius"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1712723670824,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Fronius.AC-Power",
+      "v": {
+        "_id": "alias.0.Fronius.AC-Power",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.pvinverter.20.Ac.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "Actual PV AC power",
+          "read": true,
+          "role": "value",
+          "type": "number",
+          "unit": "W",
+          "write": false
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430693946,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Fronius.AC-Power_10kW",
+      "v": {
+        "_id": "alias.0.Fronius.AC-Power_10kW",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.pvinverter.23.Ac.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "Actual PV AC power 10kW",
+          "read": true,
+          "role": "value",
+          "type": "number",
+          "unit": "W",
+          "write": false
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430694033,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel",
+      "v": {
+        "_id": "alias.0.Gobel",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "Gobel"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1710252541549,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel.Current",
+      "v": {
+        "_id": "alias.0.Gobel.Current",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.battery.512.Dc.0.Current",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "custom": {
+            "influxdb.0": {
+              "aliasId": "",
+              "blockTime": 60000,
+              "changesMinDelta": 0,
+              "changesOnly": true,
+              "changesRelogInterval": 60,
+              "debounce": 1000,
+              "debounceTime": 3000,
+              "disableSkippedValueLogging": true,
+              "enableDebugLogs": false,
+              "enabled": true,
+              "ignoreBelowNumber": "",
+              "ignoreZero": true,
+              "storageType": ""
+            }
+          },
+          "name": "N/c0619ab336ed/battery/512/Dc/0/Current",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "A",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1782821055497,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel.Current SmartShunt",
+      "v": {
+        "_id": "alias.0.Gobel.Current SmartShunt",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.battery.279.Dc.0.Current",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "custom": {
+            "influxdb.0": {
+              "aliasId": "",
+              "blockTime": 60000,
+              "changesMinDelta": 0,
+              "changesOnly": true,
+              "changesRelogInterval": 60,
+              "debounce": 0,
+              "debounceTime": 3000,
+              "disableSkippedValueLogging": true,
+              "enableDebugLogs": false,
+              "enabled": true,
+              "ignoreBelowNumber": "",
+              "ignoreZero": true,
+              "storageType": ""
+            }
+          },
+          "name": "N/c0619ab336ed/battery/279/Dc/0/Current",
+          "read": true,
+          "role": "variable",
+          "type": "mixed",
+          "unit": "A",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1782793371563,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel.Gobel MaxChargeCurrent",
+      "v": {
+        "_id": "alias.0.Gobel.Gobel MaxChargeCurrent",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.battery.512.Info.MaxChargeCurrent",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/battery/512/Info/MaxChargeCurrent",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430694428,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel.Gobel MaxChargeVoltage",
+      "v": {
+        "_id": "alias.0.Gobel.Gobel MaxChargeVoltage",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.battery.512.Info.MaxChargeVoltage",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/battery/512/Info/MaxChargeVoltage",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430694510,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel.Gobel MaxDischargeCurrent",
+      "v": {
+        "_id": "alias.0.Gobel.Gobel MaxDischargeCurrent",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.battery.512.Info.MaxDischargeCurrent",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/battery/512/Info/MaxDischargeCurrent",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430694607,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel.Power",
+      "v": {
+        "_id": "alias.0.Gobel.Power",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.battery.512.Dc.0.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/battery/512/Dc/0/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430694689,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel.Power SmartShunt",
+      "v": {
+        "_id": "alias.0.Gobel.Power SmartShunt",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.battery.279.Dc.0.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/battery/279/Dc/0/Power",
+          "read": true,
+          "role": "variable",
+          "type": "mixed",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430694768,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel.SOC",
+      "v": {
+        "_id": "alias.0.Gobel.SOC",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.battery.512.Soc",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "custom": {
+            "influxdb.0": {
+              "aliasId": "",
+              "blockTime": 60000,
+              "changesMinDelta": 0,
+              "changesOnly": true,
+              "changesRelogInterval": 60,
+              "debounce": 1000,
+              "debounceTime": 3000,
+              "disableSkippedValueLogging": true,
+              "enableDebugLogs": false,
+              "enabled": true,
+              "ignoreBelowNumber": "",
+              "ignoreZero": true,
+              "storageType": ""
+            }
+          },
+          "name": "N/c0619ab336ed/battery/512/Soc",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "%",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1782793340012,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel.Soc SmartShunt",
+      "v": {
+        "_id": "alias.0.Gobel.Soc SmartShunt",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.battery.279.Soc",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "custom": {
+            "influxdb.0": {
+              "aliasId": "",
+              "blockTime": 60000,
+              "changesMinDelta": 0.1,
+              "changesOnly": true,
+              "changesRelogInterval": 60,
+              "debounce": 1000,
+              "debounceTime": 3000,
+              "disableSkippedValueLogging": true,
+              "enableDebugLogs": false,
+              "enabled": true,
+              "ignoreBelowNumber": "",
+              "ignoreZero": true,
+              "storageType": ""
+            }
+          },
+          "name": "N/c0619ab336ed/battery/279/Soc",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "%",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1782189207249,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel.Voltage",
+      "v": {
+        "_id": "alias.0.Gobel.Voltage",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.battery.512.Dc.0.Voltage",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/battery/512/Dc/0/Voltage",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "V",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430695163,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel.Voltage_SmartShunt",
+      "v": {
+        "_id": "alias.0.Gobel.Voltage_SmartShunt",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.battery.279.Dc.1.Voltage",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "custom": {
+            "influxdb.0": {
+              "aliasId": "",
+              "blockTime": 60000,
+              "changesMinDelta": 0,
+              "changesOnly": true,
+              "changesRelogInterval": 60,
+              "debounce": 1000,
+              "debounceTime": 3000,
+              "disableSkippedValueLogging": true,
+              "enableDebugLogs": false,
+              "enabled": true,
+              "ignoreBelowNumber": "",
+              "ignoreZero": true,
+              "storageType": ""
+            }
+          },
+          "name": "N/c0619ab336ed/battery/279/Dc/1/Voltage",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "V",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1782793382343,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Master",
+      "v": {
+        "_id": "alias.0.Gobel_Master",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "Gobel_Master"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1716711670425,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Master.Ampere",
+      "v": {
+        "_id": "alias.0.Gobel_Master.Ampere",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.1.40001_Ampere",
+            "read": "val/100"
+          },
+          "name": "modbus.1.holdingRegisters.1.40001_Ampere",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "A",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430695244,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Master.Gobe_Master_Diff_mV",
+      "v": {
+        "_id": "alias.0.Gobel_Master.Gobe_Master_Diff_mV",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "javascript.0.BMS.Pack1.Diff_mV"
+          },
+          "name": "javascript.0.BMS.Pack1.Diff_mV",
+          "read": true,
+          "role": "state",
+          "type": "number",
+          "unit": "mV",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430695342,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Master.Gobel Master balancing",
+      "v": {
+        "_id": "alias.0.Gobel_Master.Gobel Master balancing",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.0.HELTEC_1.balancing"
+          },
+          "name": "HELTEC_1/balancing",
+          "read": true,
+          "role": "variable",
+          "type": "boolean",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1775015048271,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Master.Gobel_Master_MOSFET_temperature",
+      "v": {
+        "_id": "alias.0.Gobel_Master.Gobel_Master_MOSFET_temperature",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.1.40036_MOSFET_temperature",
+            "read": "val/10"
+          },
+          "name": "modbus.1.holdingRegisters.1.40036_MOSFET_temperature",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "°C",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430695450,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Master.Gobel_Master_Tmp",
+      "v": {
+        "_id": "alias.0.Gobel_Master.Gobel_Master_Tmp",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.1.40032_Cell_temperature_1",
+            "read": "val/10"
+          },
+          "name": "modbus.1.holdingRegisters.1.40032_Cell_temperature_1",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "°C",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430695532,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Master.Gobel_Master_Volt",
+      "v": {
+        "_id": "alias.0.Gobel_Master.Gobel_Master_Volt",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.1.40002_Volt",
+            "read": "val/100"
+          },
+          "name": "modbus.1.holdingRegisters.1.40002_Volt",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "V",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430695836,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Master.SOC",
+      "v": {
+        "_id": "alias.0.Gobel_Master.SOC",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.1.40003_SOC"
+          },
+          "name": "modbus.1.holdingRegisters.1.40003_SOC",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "%",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430695910,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave1",
+      "v": {
+        "_id": "alias.0.Gobel_Slave1",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "Gobel_Slave1"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1716712078603,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave1.Ampere",
+      "v": {
+        "_id": "alias.0.Gobel_Slave1.Ampere",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.2.40001_Ampere",
+            "read": "val/100"
+          },
+          "name": "modbus.1.holdingRegisters.2.40001_Ampere",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "A",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430696006,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave1.Gobel Slave 1 balancing",
+      "v": {
+        "_id": "alias.0.Gobel_Slave1.Gobel Slave 1 balancing",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.0.HELTEC_2.balancing"
+          },
+          "name": "HELTEC_2/balancing",
+          "read": true,
+          "role": "variable",
+          "type": "boolean",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1775015097173,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave1.Gobel_Slave1_Diff_mV",
+      "v": {
+        "_id": "alias.0.Gobel_Slave1.Gobel_Slave1_Diff_mV",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "javascript.0.BMS.Pack2.Diff_mV"
+          },
+          "name": "javascript.0.BMS.Pack2.Diff_mV",
+          "read": true,
+          "role": "state",
+          "type": "number",
+          "unit": "mV",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430696120,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave1.Gobel_Slave1_MOSFET_temperature",
+      "v": {
+        "_id": "alias.0.Gobel_Slave1.Gobel_Slave1_MOSFET_temperature",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.2.40036_MOSFET_temperature",
+            "read": "val/10"
+          },
+          "name": "modbus.1.holdingRegisters.2.40036_MOSFET_temperature",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "°C",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430696204,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave1.Gobel_Slave1_Tmp",
+      "v": {
+        "_id": "alias.0.Gobel_Slave1.Gobel_Slave1_Tmp",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.2.40032_Cell_temperature_1",
+            "read": "val/10"
+          },
+          "name": "modbus.1.holdingRegisters.2.40032_Cell_temperature_1",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "°C",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430696300,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave1.Gobel_Slave1_Volt",
+      "v": {
+        "_id": "alias.0.Gobel_Slave1.Gobel_Slave1_Volt",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.2.40002_Volt",
+            "read": "val/100"
+          },
+          "name": "modbus.1.holdingRegisters.2.40002_Volt",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "V",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430696393,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave1.SOC",
+      "v": {
+        "_id": "alias.0.Gobel_Slave1.SOC",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.2.40003_SOC"
+          },
+          "name": "modbus.1.holdingRegisters.2.40003_SOC",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "%",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430696579,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave2",
+      "v": {
+        "_id": "alias.0.Gobel_Slave2",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "Gobel_Slave2"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1716712078603,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave2.Ampere",
+      "v": {
+        "_id": "alias.0.Gobel_Slave2.Ampere",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.3.40001_Ampere",
+            "read": "val/100"
+          },
+          "name": "modbus.1.holdingRegisters.3.40001_Ampere",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "A",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430696652,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave2.Gobel Slave 2 balancing",
+      "v": {
+        "_id": "alias.0.Gobel_Slave2.Gobel Slave 2 balancing",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.0.HELTEC_3.balancing"
+          },
+          "name": "HELTEC_3/balancing",
+          "read": true,
+          "role": "variable",
+          "type": "boolean",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1775015127310,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave2.Gobel_Slave2_Diff_mV",
+      "v": {
+        "_id": "alias.0.Gobel_Slave2.Gobel_Slave2_Diff_mV",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "javascript.0.BMS.Pack3.Diff_mV"
+          },
+          "name": "javascript.0.BMS.Pack3.Diff_mV",
+          "read": true,
+          "role": "state",
+          "type": "number",
+          "unit": "mV",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430696762,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave2.Gobel_Slave2_MOSFET_temperature",
+      "v": {
+        "_id": "alias.0.Gobel_Slave2.Gobel_Slave2_MOSFET_temperature",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.3.40036_MOSFET_temperature",
+            "read": "val/10"
+          },
+          "name": "modbus.1.holdingRegisters.3.40036_MOSFET_temperature",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "°C",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430696847,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave2.Gobel_Slave2_Tmp",
+      "v": {
+        "_id": "alias.0.Gobel_Slave2.Gobel_Slave2_Tmp",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.3.40032_Cell_temperature_1",
+            "read": "val/10"
+          },
+          "name": "modbus.1.holdingRegisters.3.40032_Cell_temperature_1",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "°C",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430696957,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave2.Gobel_Slave2_Volt",
+      "v": {
+        "_id": "alias.0.Gobel_Slave2.Gobel_Slave2_Volt",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.3.40002_Volt",
+            "read": "val/100"
+          },
+          "name": "modbus.1.holdingRegisters.3.40002_Volt",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "V",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430697059,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave2.SOC",
+      "v": {
+        "_id": "alias.0.Gobel_Slave2.SOC",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.3.40003_SOC"
+          },
+          "name": "modbus.1.holdingRegisters.3.40003_SOC",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "%",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430697267,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave3",
+      "v": {
+        "_id": "alias.0.Gobel_Slave3",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "Gobel_Slave3"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1716712078603,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave3.Ampere",
+      "v": {
+        "_id": "alias.0.Gobel_Slave3.Ampere",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.4.40001_Ampere",
+            "read": "val/100"
+          },
+          "name": "modbus.1.holdingRegisters.4.40001_Ampere",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "A",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430697321,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave3.Gobel Slave 3 balancing",
+      "v": {
+        "_id": "alias.0.Gobel_Slave3.Gobel Slave 3 balancing",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.0.HELTEC_4.balancing"
+          },
+          "name": "HELTEC_4/balancing",
+          "read": true,
+          "role": "variable",
+          "type": "boolean",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1775015163846,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave3.Gobel_Slave3_Diff_mV",
+      "v": {
+        "_id": "alias.0.Gobel_Slave3.Gobel_Slave3_Diff_mV",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "javascript.0.BMS.Pack4.Diff_mV"
+          },
+          "name": "javascript.0.BMS.Pack4.Diff_mV",
+          "read": true,
+          "role": "state",
+          "type": "number",
+          "unit": "mV",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430697407,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave3.Gobel_Slave3_MOSFET_temperature",
+      "v": {
+        "_id": "alias.0.Gobel_Slave3.Gobel_Slave3_MOSFET_temperature",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.4.40036_MOSFET_temperature",
+            "read": "val/10"
+          },
+          "name": "modbus.1.holdingRegisters.4.40036_MOSFET_temperature",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "°C",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430697489,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave3.Gobel_Slave3_Tmp",
+      "v": {
+        "_id": "alias.0.Gobel_Slave3.Gobel_Slave3_Tmp",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.4.40032_Cell_temperature_1",
+            "read": "val/10"
+          },
+          "name": "modbus.1.holdingRegisters.4.40032_Cell_temperature_1",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "°C",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430697579,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave3.Gobel_Slave3_Volt",
+      "v": {
+        "_id": "alias.0.Gobel_Slave3.Gobel_Slave3_Volt",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.4.40002_Volt",
+            "read": "val/100"
+          },
+          "name": "modbus.1.holdingRegisters.4.40002_Volt",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "V",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430697650,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Gobel_Slave3.SOC",
+      "v": {
+        "_id": "alias.0.Gobel_Slave3.SOC",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "modbus.1.holdingRegisters.4.40003_SOC"
+          },
+          "name": "modbus.1.holdingRegisters.4.40003_SOC",
+          "read": true,
+          "role": "level",
+          "type": "number",
+          "unit": "%",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430697743,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Humidity",
+      "v": {
+        "_id": "alias.0.Humidity",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "zigbee.0.00158d00042704c0.humidity",
+            "read": "Math.round((val - 0.8) * 10) / 10"
+          },
+          "custom": {
+            "history.0": {
+              "aliasId": "",
+              "blockTime": 0,
+              "changesMinDelta": "0",
+              "changesOnly": true,
+              "changesRelogInterval": "0",
+              "customRetentionDuration": 365,
+              "debounce": "1000",
+              "debounceTime": 0,
+              "disableSkippedValueLogging": false,
+              "enableDebugLogs": false,
+              "enabled": true,
+              "ignoreBelowNumber": "",
+              "maxLength": "960",
+              "retention": "0"
+            }
+          },
+          "def": 0,
+          "desc": "Manuell erzeugt",
+          "max": 100,
+          "min": 0,
+          "name": "Humidity",
+          "read": true,
+          "role": "",
+          "type": "number",
+          "unit": "%",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1685163705513,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.Humidity_2",
+      "v": {
+        "_id": "alias.0.Humidity_2",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "zigbee.0.00158d0006e3b364.humidity",
+            "read": "Math.round((val - 0.01) * 10) / 10"
+          },
+          "custom": {
+            "history.0": {
+              "aliasId": "",
+              "blockTime": 0,
+              "changesMinDelta": "0",
+              "changesOnly": true,
+              "changesRelogInterval": "0",
+              "customRetentionDuration": 365,
+              "debounce": "1000",
+              "debounceTime": 0,
+              "disableSkippedValueLogging": false,
+              "enableDebugLogs": false,
+              "enabled": true,
+              "ignoreBelowNumber": "",
+              "maxLength": "960",
+              "retention": "0"
+            }
+          },
+          "def": 0,
+          "desc": "Manuell erzeugt",
+          "max": 100,
+          "min": 0,
+          "name": "Humidity 2",
+          "read": true,
+          "role": "",
+          "type": "number",
+          "unit": "%",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1685163715605,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.HzgCobra",
+      "v": {
+        "_id": "alias.0.HzgCobra",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "HzgCobra"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1739769575485,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.HzgCobra.SwitchHzgCobra1",
+      "v": {
+        "_id": "alias.0.HzgCobra.SwitchHzgCobra1",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "shelly.0.shellyplusplugs#e465b8ba1490#1.Relay0.Switch"
+          },
+          "name": "Schalter",
+          "read": true,
+          "role": "switch",
+          "type": "boolean",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1739769658233,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.HzgCobra.SwitchHzgCobra2",
+      "v": {
+        "_id": "alias.0.HzgCobra.SwitchHzgCobra2",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "shelly.0.shellyplusplugs#e465b8b2b3b0#1.Relay0.Switch"
+          },
+          "name": "Schalter",
+          "read": true,
+          "role": "switch",
+          "type": "boolean",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1739769683927,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-BAT",
+      "v": {
+        "_id": "alias.0.MP-BAT",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "MP-BAT"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1712647429893,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-BAT.BAT_ActiveSocLimit",
+      "v": {
+        "_id": "alias.0.MP-BAT.BAT_ActiveSocLimit",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.system.0.Control.ActiveSocLimit",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab4bea6/system/0/Control/ActiveSocLimit",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "%",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1749141846848,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-BAT.BAT_Consumption_L1",
+      "v": {
+        "_id": "alias.0.MP-BAT.BAT_Consumption_L1",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.system.0.Ac.Consumption.L1.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab4bea6/system/0/Ac/Consumption/L1/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1729408424272,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-BAT.BAT_Consumption_L2",
+      "v": {
+        "_id": "alias.0.MP-BAT.BAT_Consumption_L2",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.system.0.Ac.Consumption.L2.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab4bea6/system/0/Ac/Consumption/L2/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1729408452487,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-BAT.BAT_Consumption_L3",
+      "v": {
+        "_id": "alias.0.MP-BAT.BAT_Consumption_L3",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.system.0.Ac.Consumption.L3.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab4bea6/system/0/Ac/Consumption/L3/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1729408477888,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-BAT.DC-Current",
+      "v": {
+        "_id": "alias.0.MP-BAT.DC-Current",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.vebus.276.Dc.0.Current",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab4bea6/vebus/276/Dc/0/Current",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "A",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430698071,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-BAT.DC-Power",
+      "v": {
+        "_id": "alias.0.MP-BAT.DC-Power",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.vebus.276.Dc.0.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab4bea6/vebus/276/Dc/0/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430698131,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-BAT.DC-Voltage",
+      "v": {
+        "_id": "alias.0.MP-BAT.DC-Voltage",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.2.N.c0619ab4bea6.vebus.276.Dc.0.Voltage",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab4bea6/vebus/276/Dc/0/Voltage",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "V",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430698237,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-ESS",
+      "v": {
+        "_id": "alias.0.MP-ESS",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "MP-ESS"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1712641238755,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-ESS.DC-Current",
+      "v": {
+        "_id": "alias.0.MP-ESS.DC-Current",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.vebus.276.Dc.0.Current",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/vebus/276/Dc/0/Current",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "A",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430698341,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-ESS.DC-Power",
+      "v": {
+        "_id": "alias.0.MP-ESS.DC-Power",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.vebus.276.Dc.0.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/vebus/276/Dc/0/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430698561,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-ESS.DC-Voltage",
+      "v": {
+        "_id": "alias.0.MP-ESS.DC-Voltage",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.vebus.276.Dc.0.Voltage",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/vebus/276/Dc/0/Voltage",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "V",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430698620,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-ESS.ESS_Consumption_L1",
+      "v": {
+        "_id": "alias.0.MP-ESS.ESS_Consumption_L1",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.system.0.Ac.Consumption.L1.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/system/0/Ac/Consumption/L1/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1729408294620,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-ESS.ESS_Consumption_L2",
+      "v": {
+        "_id": "alias.0.MP-ESS.ESS_Consumption_L2",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.system.0.Ac.Consumption.L2.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/system/0/Ac/Consumption/L2/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1729408334805,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MP-ESS.ESS_Consumption_L3",
+      "v": {
+        "_id": "alias.0.MP-ESS.ESS_Consumption_L3",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.system.0.Ac.Consumption.L3.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/system/0/Ac/Consumption/L3/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1729408364154,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MPPT RS450/100",
+      "v": {
+        "_id": "alias.0.MPPT RS450/100",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "MPPT RS450/100"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1713586655663,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MPPT RS450/100.DC-Current",
+      "v": {
+        "_id": "alias.0.MPPT RS450/100.DC-Current",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.solarcharger.0.Dc.0.Current",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/solarcharger/0/Dc/0/Current",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "A",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430698723,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MPPT RS450/100.DC-Voltage",
+      "v": {
+        "_id": "alias.0.MPPT RS450/100.DC-Voltage",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.solarcharger.0.Dc.0.Voltage",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/solarcharger/0/Dc/0/Voltage",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "V",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430698806,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MPPT RS450/100.P String1",
+      "v": {
+        "_id": "alias.0.MPPT RS450/100.P String1",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.solarcharger.0.Pv.0.P",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/solarcharger/0/Pv/0/P",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430698898,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.MPPT RS450/100.P String2",
+      "v": {
+        "_id": "alias.0.MPPT RS450/100.P String2",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.solarcharger.0.Pv.1.P",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/solarcharger/0/Pv/1/P",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430698994,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.SE",
+      "v": {
+        "_id": "alias.0.SE",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "SE"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1710164296490,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.SE.Power",
+      "v": {
+        "_id": "alias.0.SE.Power",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.3.N.b827eb7fd855.pvinverter.22.Ac.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/b827eb7fd855/pvinverter/22/Ac/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1746334867971,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.SMA",
+      "v": {
+        "_id": "alias.0.SMA",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "SMA"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1710252142944,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.SMA.Power",
+      "v": {
+        "_id": "alias.0.SMA.Power",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "mqtt.1.N.c0619ab336ed.pvinverter.21.Ac.Power",
+            "read": "Math.round(JSON.parse(val).value * 100) / 100"
+          },
+          "name": "N/c0619ab336ed/pvinverter/21/Ac/Power",
+          "read": true,
+          "role": "variable",
+          "type": "number",
+          "unit": "W",
+          "write": true
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430699120,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.go-E",
+      "v": {
+        "_id": "alias.0.go-E",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator"
+        },
+        "common": {
+          "name": "Power",
+          "role": "value.power.consumption"
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1700292564865,
+        "type": "channel",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.go-E.go-E-V4-Halle",
+      "v": {
+        "_id": "alias.0.go-E.go-E-V4-Halle",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "go-e.2.energy.power"
+          },
+          "name": "Leistung gesamt in kW (nrg[11])",
+          "read": true,
+          "role": "value.power.consumption",
+          "type": "number",
+          "unit": "kW",
+          "write": false
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1733236461034,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.go-E.powerV3",
+      "v": {
+        "_id": "alias.0.go-E.powerV3",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "go-e.0.energy.power"
+          },
+          "custom": {
+            "history.0": {
+              "aliasId": "",
+              "blockTime": 0,
+              "changesMinDelta": "0",
+              "changesOnly": true,
+              "changesRelogInterval": "0",
+              "customRetentionDuration": 365,
+              "debounce": "1000",
+              "debounceTime": 0,
+              "disableSkippedValueLogging": false,
+              "enableDebugLogs": false,
+              "enabled": true,
+              "ignoreBelowNumber": "",
+              "maxLength": "960",
+              "retention": "0"
+            }
+          },
+          "name": "powerV3",
+          "read": true,
+          "role": "value.power.consumption",
+          "type": "number",
+          "unit": "kW",
+          "write": false
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430699328,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    },
+    {
+      "k": "alias.0.go-E.powerV4",
+      "v": {
+        "_id": "alias.0.go-E.powerV4",
+        "acl": {
+          "object": 1636,
+          "owner": "system.user.admin",
+          "ownerGroup": "system.group.administrator",
+          "state": 1636
+        },
+        "common": {
+          "alias": {
+            "id": "go-e.1.energy.power"
+          },
+          "custom": {
+            "history.0": {
+              "aliasId": "",
+              "blockTime": 0,
+              "changesMinDelta": "0",
+              "changesOnly": true,
+              "changesRelogInterval": "0",
+              "customRetentionDuration": 365,
+              "debounce": "1000",
+              "debounceTime": 0,
+              "disableSkippedValueLogging": false,
+              "enableDebugLogs": false,
+              "enabled": true,
+              "ignoreBelowNumber": "",
+              "maxLength": "960",
+              "retention": "0"
+            }
+          },
+          "name": "powerV4",
+          "read": true,
+          "role": "value.power.consumption",
+          "type": "number",
+          "unit": "kW",
+          "write": false
+        },
+        "from": "system.adapter.admin.0",
+        "native": {},
+        "ts": 1781430699409,
+        "type": "state",
+        "user": "system.user.admin"
+      }
+    }
+  ],
+  "source": "live /opt/iobroker/iobroker-data/objects.jsonl"
+}
