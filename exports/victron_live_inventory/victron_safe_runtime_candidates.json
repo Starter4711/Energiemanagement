@@ -1,0 +1,84 @@
+{
+  "count": 7,
+  "generatedAt": "2026-07-09T16:35:35.679663+00:00",
+  "objects": [
+    {
+      "controlClass": "SAFE_RUNTIME",
+      "currentValue": 0,
+      "dbusPath": null,
+      "dbusService": null,
+      "expectedRange": null,
+      "mqttReadTopic": "mqtt.1.ioBroker.ESS_DisableBatteryCharge",
+      "mqttWriteTopic": null,
+      "name": "mqtt.1.ioBroker.ESS_DisableBatteryCharge",
+      "reason": "Boolean runtime control topic used to gate ESS behavior."
+    },
+    {
+      "controlClass": "SAFE_RUNTIME",
+      "currentValue": 0,
+      "dbusPath": null,
+      "dbusService": null,
+      "expectedRange": null,
+      "mqttReadTopic": "mqtt.1.ioBroker.ESS_DisableFeedIn",
+      "mqttWriteTopic": null,
+      "name": "mqtt.1.ioBroker.ESS_DisableFeedIn",
+      "reason": "Boolean runtime control topic used to gate ESS behavior."
+    },
+    {
+      "controlClass": "SAFE_RUNTIME",
+      "currentValue": 1,
+      "dbusPath": null,
+      "dbusService": null,
+      "expectedRange": null,
+      "mqttReadTopic": "mqtt.1.ioBroker.ESS_DisablePVFeedIn",
+      "mqttWriteTopic": null,
+      "name": "mqtt.1.ioBroker.ESS_DisablePVFeedIn",
+      "reason": "Boolean runtime control topic used to gate ESS behavior."
+    },
+    {
+      "controlClass": "SAFE_RUNTIME",
+      "currentValue": 0,
+      "dbusPath": null,
+      "dbusService": null,
+      "expectedRange": null,
+      "mqttReadTopic": "mqtt.1.ioBroker.ESS_GridSetpoint",
+      "mqttWriteTopic": null,
+      "name": "mqtt.1.ioBroker.ESS_GridSetpoint",
+      "reason": "Existing runtime setpoint topic for ESS grid power setpoint; not a persistent settings path."
+    },
+    {
+      "controlClass": "SAFE_RUNTIME",
+      "currentValue": 1,
+      "dbusPath": null,
+      "dbusService": null,
+      "expectedRange": null,
+      "mqttReadTopic": "mqtt.1.ioBroker.ESS_MaxChargeCurrent",
+      "mqttWriteTopic": null,
+      "name": "mqtt.1.ioBroker.ESS_MaxChargeCurrent",
+      "reason": "Existing runtime limit topic used for EOS control; looks like temporary operating limit."
+    },
+    {
+      "controlClass": "SAFE_RUNTIME",
+      "currentValue": 53.6,
+      "dbusPath": null,
+      "dbusService": null,
+      "expectedRange": null,
+      "mqttReadTopic": "mqtt.1.ioBroker.ESS_MaxChargeVoltage",
+      "mqttWriteTopic": null,
+      "name": "mqtt.1.ioBroker.ESS_MaxChargeVoltage",
+      "reason": "Existing runtime limit topic used for EOS control; looks like temporary operating limit."
+    },
+    {
+      "controlClass": "SAFE_RUNTIME",
+      "currentValue": 210,
+      "dbusPath": null,
+      "dbusService": null,
+      "expectedRange": null,
+      "mqttReadTopic": "mqtt.1.ioBroker.ESS_MaxDischargeCurrent",
+      "mqttWriteTopic": null,
+      "name": "mqtt.1.ioBroker.ESS_MaxDischargeCurrent",
+      "reason": "Existing runtime limit topic used for EOS control; looks like temporary operating limit."
+    }
+  ],
+  "source": "filtered from control candidates"
+}

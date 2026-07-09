@@ -1,0 +1,52 @@
+{
+  "count": 3,
+  "generatedAt": "2026-07-09T16:35:35.603954+00:00",
+  "objects": [
+    {
+      "dbusMqttHint": true,
+      "includesBattery": true,
+      "includesGrid": true,
+      "includesHub4Ess": true,
+      "includesPvinverter": true,
+      "includesSettings": true,
+      "includesVebus": true,
+      "instance": "mqtt.1",
+      "services": [
+        "c0619ab336ed",
+        "c0619ab4bea6"
+      ],
+      "topicCount": 3000
+    },
+    {
+      "dbusMqttHint": true,
+      "includesBattery": true,
+      "includesGrid": true,
+      "includesHub4Ess": true,
+      "includesPvinverter": true,
+      "includesSettings": true,
+      "includesVebus": true,
+      "instance": "mqtt.2",
+      "services": [
+        "c0619ab336ed",
+        "c0619ab4bea6",
+        "dca63226a1a1"
+      ],
+      "topicCount": 2508
+    },
+    {
+      "dbusMqttHint": true,
+      "includesBattery": false,
+      "includesGrid": true,
+      "includesHub4Ess": false,
+      "includesPvinverter": true,
+      "includesSettings": true,
+      "includesVebus": false,
+      "instance": "mqtt.3",
+      "services": [
+        "b827eb7fd855"
+      ],
+      "topicCount": 1173
+    }
+  ],
+  "source": "live MQTT topic inventory"
+}
