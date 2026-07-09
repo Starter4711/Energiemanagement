@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-07-09T15:14:25.863741+00:00",
+  "source": [
+    "knowledge/mqtt.md",
+    "knowledge/victron.md",
+    "docs/project_analysis.md",
+    "docs/system_components.md",
+    "iobroker/scripts/common/Victron_Mqtt.js",
+    "iobroker/scripts/common/Victron_INIT.js",
+    "iobroker/scripts/common/Victron_BAT.js",
+    "iobroker/scripts/Keep_Alive.js",
+    "iobroker/scripts/common/Victron_OldGrid.js",
+    "iobroker/scripts/common/Victron_TOP-Balancing.js"
+  ],
+  "status": "repository-derived; no live VRM API access in this environment",
+  "relations": [
+    {
+      "component": "Cerbo Haus / Victron ESS",
+      "id": "mqtt.1",
+      "topicRoot": "N/c0619ab336ed",
+      "evidence": ["docs/project_analysis.md", "knowledge/mqtt.md", "knowledge/victron.md"],
+      "notes": "Repository documents this as the house Cerbo / ESS MQTT instance."
+    },
+    {
+      "component": "Cerbo Halle / Victron BAT",
+      "id": "mqtt.2",
+      "topicRoot": "N/c0619ab4bea6",
+      "evidence": ["docs/project_analysis.md", "knowledge/mqtt.md", "knowledge/victron.md"],
+      "notes": "Repository documents this as the hall Cerbo / BAT MQTT instance."
+    },
+    {
+      "component": "Raspi VenusOS / dritter Zaehlpunkt / SolarEdge",
+      "id": "mqtt.3",
+      "topicRoot": "N/b827eb7fd855",
+      "evidence": ["docs/project_analysis.md", "knowledge/mqtt.md"],
+      "notes": "Repository documents this as the third-meter VenusOS instance."
+    },
+    {
+      "component": "Keepalive-Pfad",
+      "id": "mqtt.4",
+      "topicRoot": "R/c0619ab336ed/keepalive",
+      "evidence": ["docs/project_analysis.md", "knowledge/mqtt.md", "iobroker/scripts/Keep_Alive.js"],
+      "notes": "Used by Keep_Alive.js."
+    },
+    {
+      "component": "Victron REFRESH Serial Haus",
+      "id": "R/c0619ab336ed/system/0/Serial",
+      "kind": "MQTT topic",
+      "evidence": ["iobroker/scripts/common/Victron_Mqtt.js"],
+      "notes": "Refresh request sent to mqtt.1."
+    },
+    {
+      "component": "Victron REFRESH Serial Halle",
+      "id": "R/c0619ab4bea6/system/0/Serial",
+      "kind": "MQTT topic",
+      "evidence": ["iobroker/scripts/common/Victron_Mqtt.js"],
+      "notes": "Refresh request sent to mqtt.2."
+    },
+    {
+      "component": "Victron REFRESH Serial VenusOS 3",
+      "id": "R/b827eb7fd855/system/0/Serial",
+      "kind": "MQTT topic",
+      "evidence": ["iobroker/scripts/common/Victron_Mqtt.js"],
+      "notes": "Refresh request sent to mqtt.3."
+    },
+    {
+      "component": "ESS Grid Setpoint",
+      "id": "mqtt.1.ioBroker.ESS_GridSetpoint",
+      "kind": "ioBroker MQTT target",
+      "evidence": ["iobroker/scripts/common/Victron_OldGrid.js"],
+      "notes": "Steuert die ESS-Gridvorgabe fuer den Haus-Cerbo-Pfad."
+    },
+    {
+      "component": "BAT Max Charge Voltage",
+      "id": "mqtt.2.ioBroker.BAT_MaxChargeVoltage",
+      "kind": "ioBroker MQTT target",
+      "evidence": ["iobroker/scripts/common/Victron_TOP-Balancing.js"],
+      "notes": "Balancing-/Ladespannung fuer den BAT-Pfad."
+    },
+    {
+      "component": "ESS Max Charge Voltage",
+      "id": "mqtt.1.ioBroker.ESS_MaxChargeVoltage",
+      "kind": "ioBroker MQTT target",
+      "evidence": ["iobroker/scripts/common/Victron_TOP-Balancing.js"],
+      "notes": "Spannungsziel fuer den ESS-Pfad."
+    },
+    {
+      "component": "VRM API / direkte VRM-Zuordnung",
+      "id": "Unklar",
+      "kind": "external service",
+      "evidence": ["knowledge/victron.md", "docs/system_components.md"],
+      "notes": "Im Repository ist kein belastbar belegter direkter VRM-API-Zugriff sichtbar."
+    }
+  ]
+}

@@ -1,9 +1,13 @@
 # CHANGELOG
 
+## 2026-07-09
+- Added
+  - `exports/system_inventory/victron_relations.json` als belegbare Zuordnung der im Repository sichtbaren Victron-/Venus-/MQTT-Komponenten und IDs ergaenzt
+
 ## 2026-07-08
 - Added
-  - `iobroker/scripts/energiemanagement/Battery_Morning_View_V1.js` als neue EOS-Morgenblick-Verdichtung fuer die Batterie ergaenzt
-  - `iobroker/objects/energiemanagement.Battery_Morning_View_V1.json` und `iobroker/manifest.json` um das Scriptobjekt fuer `script.js.energiemanagement.Battery_Morning_View_V1` ergaenzt
+  - `iobroker/scripts/energiemanagement/Battery_Morning_View_V1.js` wieder entfernt
+  - das zugehoerige Scriptobjekt `script.js.energiemanagement.Battery_Morning_View_V1` aus dem laufenden Stand herausgenommen
 - Changed
   - `iobroker/vis-2/main/battery.html`, `iobroker/vis-2/main/vis-views.json` und `iobroker/vis-2/main/vis-user.css` um die visuelle Morgenblick-Kachel erweitert
 

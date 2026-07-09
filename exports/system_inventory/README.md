@@ -20,6 +20,7 @@
 - `state_snapshot_javascript.json`: repository-derivierter Referenzstand, kein Live-Snapshot
 - `state_snapshot_alias.json`: repository-derivierter Referenzstand, kein Live-Snapshot
 - `scripts_inventory.json`: Skriptinventar aus `iobroker/manifest.json`
+- `victron_relations.json`: belegbare Zuordnung der Victron-/Venus-/MQTT-Komponenten und IDs
 - `victron_inventory_missing.md`: Dokumentation des fehlenden Live-Zugriffs
 - `vis2/`: Kopie der versionierten VIS2-Dateien aus `iobroker/vis-2/main/`
 
