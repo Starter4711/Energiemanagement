@@ -12,7 +12,7 @@
     "iobroker/scripts/common/Victron_OldGrid.js",
     "iobroker/scripts/common/Victron_TOP-Balancing.js"
   ],
-  "status": "repository-derived; no live VRM API access in this environment",
+  "status": "VRM is used for ESS and BAT; no live VRM API access in this environment",
   "relations": [
     {
       "component": "Cerbo Haus / Victron ESS",
@@ -89,7 +89,7 @@
       "id": "Unklar",
       "kind": "external service",
       "evidence": ["knowledge/victron.md", "docs/system_components.md"],
-      "notes": "Im Repository ist kein belastbar belegter direkter VRM-API-Zugriff sichtbar."
+      "notes": "VRM wird laut Benutzerangabe fuer ESS und BAT verwendet, aber die exakten Portal-/Anlagen-IDs sind hier nicht live belegt."
     }
   ]
 }
