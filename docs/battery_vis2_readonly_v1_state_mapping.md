@@ -136,3 +136,13 @@ Es werden ausschliesslich bestehende EOS-States unter `0_userdata.0.EOS.Battery.
 - Unklar, ob `Communication.LastUpdate` sichtbar oder nur im Detailbereich genutzt werden soll.
 - Unklar, ob `Health.Reasons` in der Ansicht als kommagetrennte Liste oder als mehrzeilige Liste dargestellt wird.
 
+
+
+## Implementierungsvertrag für Codex
+
+Jedes Mapping ist zusätzlich um folgende Informationen zu ergänzen:
+
+| Widget | Seite | EOS-State | Widget-Typ | Format | Farbe | Schreibbar |
+| --- | --- | --- | --- | --- | --- | --- |
+
+Alle Widgets verwenden ausschließlich EOS-States. Direkte MQTT-, Modbus-, Alias- oder Adapterobjekte sind unzulässig.
