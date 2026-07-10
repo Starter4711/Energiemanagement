@@ -126,7 +126,7 @@ Status:
 - `Energy Flow V1` ist als erster produktiver EOS-Baustein implementiert und bleibt read-only.
 - `Energy Flow V1` nutzt fuer Grid die dokumentierte EOS-interne Bilanzsicht und bleibt von Rohpfaden getrennt.
 - Grid und Battery sind aktiv angebunden; PV, House und Wallbox bleiben aktuell `UNKNOWN`, bis freigegebene EOS-interne Quellen dafuer dokumentiert sind.
-- `Energy_Flow_V1` arbeitet ereignisgetrieben und vermeidet Polling.
+- `Energy_Flow_V1` arbeitet ereignisgetrieben, vermeidet Polling und verwendet fuer `LastUpdate` Millisekunden-Timestamps.
 - Der Repository-Stand allein erzeugt keine sichtbaren ioBroker-Objekte; fuer Sichtbarkeit ist ein Import- oder Deployment-Schritt erforderlich.
 - `docs/iobroker_deployment_v1.md` dokumentiert den manuellen Importweg und die Sichtpruefung im ioBroker.
 - `tools/iobroker/deploy_repository_to_iobroker.sh` fuehrt den lesenden Dry-Run und den optionalen `--apply`-Import fuer Repository-Artefakte aus.

@@ -59,7 +59,7 @@ Die Energy-Flow-Schicht stellt ihre Ergebnisse unter `0_userdata.0.EOS.EnergyFlo
 ## Update-Konzept
 
 - ausschliesslich lesende Aufnahme
-- periodische oder ereignisbasierte Verdichtung
+- ausschliesslich ereignisbasierte Verdichtung
 - Schreiben nur bei Aenderung oder fachlich notwendigem Refresh
 - keine Rueckwirkung auf Quellen oder Aktoren
 

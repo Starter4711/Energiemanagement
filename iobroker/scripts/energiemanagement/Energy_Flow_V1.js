@@ -13,6 +13,7 @@ const CONFIG = {
     version: '1.1.0',
     logLevel: 'info',
     debugEnabled: false,
+    refreshDebounceMs: 50,
     defaults: {
         string: 'UNKNOWN',
         number: 0,
@@ -27,30 +28,6 @@ const LEVEL_PRIORITY = {
     info: 2,
     debug: 3,
 };
-
-const GROUPS = ['Grid', 'PV', 'Battery', 'House', 'Wallbox'];
-const SOURCE_GROUPS = {
-    Grid: [
-        `${BILANZ_ROOT}.Summe_W`,
-        `${BILANZ_ROOT}.Gueltig`,
-        `${BILANZ_ROOT}.Fehler`,
-    ],
-    Battery: [
-        `${BATTERY_ROOT}.Summary.Power`,
-        `${BATTERY_ROOT}.Summary.SOC`,
-        `${BATTERY_ROOT}.Summary.Status`,
-        `${BATTERY_ROOT}.Communication.Status`,
-        `${BATTERY_ROOT}.Communication.SmartShunt.Status`,
-        `${BATTERY_ROOT}.Communication.Gobel.Status`,
-        `${BATTERY_ROOT}.Communication.Heltec.Status`,
-        `${BATTERY_ROOT}.Communication.MQTT.Status`,
-    ],
-};
-
-const SOURCE_SUBSCRIPTIONS = [
-    ...SOURCE_GROUPS.Grid,
-    ...SOURCE_GROUPS.Battery,
-];
 
 const STATES = [
     {
@@ -71,11 +48,11 @@ const STATES = [
     },
     {
         id: `${ROOT}.Grid.LastUpdate`,
-        type: 'string',
+        type: 'number',
         role: 'date',
         unit: '',
         desc: 'Zeitpunkt der letzten Grid-Bewertung',
-        defaultValue: CONFIG.defaults.text,
+        defaultValue: CONFIG.defaults.number,
     },
     {
         id: `${ROOT}.PV.Power`,
@@ -95,11 +72,11 @@ const STATES = [
     },
     {
         id: `${ROOT}.PV.LastUpdate`,
-        type: 'string',
+        type: 'number',
         role: 'date',
         unit: '',
         desc: 'Zeitpunkt der letzten PV-Bewertung',
-        defaultValue: CONFIG.defaults.text,
+        defaultValue: CONFIG.defaults.number,
     },
     {
         id: `${ROOT}.Battery.Power`,
@@ -127,11 +104,11 @@ const STATES = [
     },
     {
         id: `${ROOT}.Battery.LastUpdate`,
-        type: 'string',
+        type: 'number',
         role: 'date',
         unit: '',
         desc: 'Zeitpunkt der letzten Battery-Bewertung',
-        defaultValue: CONFIG.defaults.text,
+        defaultValue: CONFIG.defaults.number,
     },
     {
         id: `${ROOT}.House.Power`,
@@ -151,11 +128,11 @@ const STATES = [
     },
     {
         id: `${ROOT}.House.LastUpdate`,
-        type: 'string',
+        type: 'number',
         role: 'date',
         unit: '',
         desc: 'Zeitpunkt der letzten House-Bewertung',
-        defaultValue: CONFIG.defaults.text,
+        defaultValue: CONFIG.defaults.number,
     },
     {
         id: `${ROOT}.Wallbox.Power`,
@@ -183,11 +160,11 @@ const STATES = [
     },
     {
         id: `${ROOT}.Wallbox.LastUpdate`,
-        type: 'string',
+        type: 'number',
         role: 'date',
         unit: '',
         desc: 'Zeitpunkt der letzten Wallbox-Bewertung',
-        defaultValue: CONFIG.defaults.text,
+        defaultValue: CONFIG.defaults.number,
     },
     {
         id: `${ROOT}.Summary.Status`,
@@ -199,11 +176,11 @@ const STATES = [
     },
     {
         id: `${ROOT}.Summary.LastUpdate`,
-        type: 'string',
+        type: 'number',
         role: 'date',
         unit: '',
         desc: 'Zeitpunkt der letzten Gesamtbewertung',
-        defaultValue: CONFIG.defaults.text,
+        defaultValue: CONFIG.defaults.number,
     },
     {
         id: `${ROOT}.Communication.OverallStatus`,
@@ -223,24 +200,13 @@ const STATES = [
     },
     {
         id: `${ROOT}.Communication.LastUpdate`,
-        type: 'string',
+        type: 'number',
         role: 'date',
         unit: '',
         desc: 'Zeitpunkt der letzten Energy-Flow-Kommunikationsbewertung',
-        defaultValue: CONFIG.defaults.text,
+        defaultValue: CONFIG.defaults.number,
     },
 ];
-
-for (const group of GROUPS) {
-    STATES.push({
-        id: `${ROOT}.Communication.${group}`,
-        type: 'string',
-        role: 'text',
-        unit: '',
-        desc: `Kommunikationsstatus fuer ${group}`,
-        defaultValue: CONFIG.defaults.string,
-    });
-}
 
 function shouldLog(level) {
     return LEVEL_PRIORITY[level] <= LEVEL_PRIORITY[CONFIG.logLevel] || (level === 'debug' && CONFIG.debugEnabled);
@@ -323,7 +289,17 @@ function normalizeStatus(value) {
     if (value === null || value === undefined || value === '') {
         return 'UNKNOWN';
     }
-    return String(value).toUpperCase();
+    const normalized = String(value).trim().toUpperCase();
+    if (normalized === 'INITIALIZING' || normalized === 'OK' || normalized === 'WARNING' || normalized === 'ERROR' || normalized === 'INVALID') {
+        return normalized;
+    }
+    if (normalized === 'WARN') {
+        return 'WARNING';
+    }
+    if (normalized === 'OFFLINE') {
+        return 'ERROR';
+    }
+    return normalized;
 }
 
 function isKnownNumber(value) {
@@ -334,18 +310,6 @@ function isKnownBoolean(value) {
     return typeof value === 'boolean';
 }
 
-function splitPowerBalance(power) {
-    if (!isKnownNumber(power)) {
-        return { import: null, export: null };
-    }
-
-    if (power >= 0) {
-        return { import: power, export: 0 };
-    }
-
-    return { import: 0, export: Math.abs(power) };
-}
-
 function buildCompositeStatus(statuses) {
     const filtered = statuses
         .map(normalizeStatus)
@@ -354,11 +318,11 @@ function buildCompositeStatus(statuses) {
     if (filtered.length === 0) {
         return 'UNKNOWN';
     }
-    if (filtered.some(status => status === 'OFFLINE')) {
-        return 'OFFLINE';
+    if (filtered.some(status => status === 'ERROR')) {
+        return 'ERROR';
     }
-    if (filtered.some(status => status === 'WARN')) {
-        return 'WARN';
+    if (filtered.some(status => status === 'WARNING')) {
+        return 'WARNING';
     }
     if (filtered.every(status => status === 'OK')) {
         return 'OK';
@@ -367,13 +331,14 @@ function buildCompositeStatus(statuses) {
 }
 
 function buildCommunicationStatus(statuses) {
-    if (statuses.some(status => status === 'OFFLINE')) {
-        return 'OFFLINE';
+    const normalized = statuses.map(normalizeStatus);
+    if (normalized.some(status => status === 'ERROR')) {
+        return 'ERROR';
     }
-    if (statuses.some(status => status === 'WARN')) {
-        return 'WARN';
+    if (normalized.some(status => status === 'WARNING')) {
+        return 'WARNING';
     }
-    if (statuses.some(status => status === 'UNKNOWN')) {
+    if (normalized.some(status => status === 'UNKNOWN')) {
         return 'UNKNOWN';
     }
     return 'OK';
@@ -390,11 +355,7 @@ function updateGroup(name, payload) {
     if (Object.prototype.hasOwnProperty.call(payload, 'active')) {
         writeChanged(`${ROOT}.${name}.Active`, isKnownBoolean(payload.active) ? payload.active : null);
     }
-    writeChanged(`${ROOT}.${name}.LastUpdate`, payload.lastUpdate || '');
-}
-
-function updateCommunication(name, status) {
-    writeChanged(`${ROOT}.Communication.${name}`, status);
+    writeChanged(`${ROOT}.${name}.LastUpdate`, Number.isFinite(payload.lastUpdate) ? payload.lastUpdate : Date.now());
 }
 
 function readGridSnapshot() {
@@ -402,25 +363,22 @@ function readGridSnapshot() {
     const gridValidState = getState(`${BILANZ_ROOT}.Gueltig`);
     const gridValid = Boolean(gridValidState && gridValidState.val === true);
     const gridError = normalizeStatus(readString(`${BILANZ_ROOT}.Fehler`));
-    const powerSplit = splitPowerBalance(gridPower);
 
     let status = 'UNKNOWN';
     if (gridValid) {
         status = 'OK';
     } else if (gridError !== 'UNKNOWN' && gridError !== '') {
-        status = 'OFFLINE';
+        status = 'ERROR';
     } else if (isKnownNumber(gridPower)) {
-        status = 'WARN';
+        status = 'WARNING';
     }
 
     return {
         power: gridPower,
-        import: powerSplit.import,
-        export: powerSplit.export,
         status,
         lastUpdate: gridValidState && Number.isFinite(Number(gridValidState.ts))
-            ? new Date(Number(gridValidState.ts)).toISOString()
-            : '',
+            ? Number(gridValidState.ts)
+            : Date.now(),
         communication: status,
     };
 }
@@ -444,8 +402,8 @@ function readBatterySnapshot() {
         status: summaryStatus,
         communication: buildCommunicationStatus(batteryCommunicationSources),
         lastUpdate: getState(`${BATTERY_ROOT}.Summary.Power`) && Number.isFinite(Number(getState(`${BATTERY_ROOT}.Summary.Power`).ts))
-            ? new Date(Number(getState(`${BATTERY_ROOT}.Summary.Power`).ts)).toISOString()
-            : '',
+            ? Number(getState(`${BATTERY_ROOT}.Summary.Power`).ts)
+            : Date.now(),
     };
 }
 
@@ -462,7 +420,7 @@ function refresh() {
     updateGroup('PV', {
         status: 'UNKNOWN',
         power: null,
-        lastUpdate: '',
+        lastUpdate: Date.now(),
     });
 
     updateGroup('Battery', {
@@ -475,43 +433,63 @@ function refresh() {
     updateGroup('House', {
         status: 'UNKNOWN',
         power: null,
-        lastUpdate: '',
+        lastUpdate: Date.now(),
     });
 
     updateGroup('Wallbox', {
         status: 'UNKNOWN',
         power: null,
         active: false,
-        lastUpdate: '',
+        lastUpdate: Date.now(),
     });
 
-    const groupStatuses = {
-        Grid: grid.status,
-        PV: 'UNKNOWN',
-        Battery: battery.status,
-        House: 'UNKNOWN',
-        Wallbox: 'UNKNOWN',
-    };
-
-    for (const [group, status] of Object.entries(groupStatuses)) {
-        updateCommunication(group, status);
-    }
-
-    const timeoutCount = Object.values(groupStatuses)
+    const timeoutCount = [
+        grid.communication,
+        battery.communication,
+        'UNKNOWN',
+        'UNKNOWN',
+        'UNKNOWN',
+    ]
         .filter(status => normalizeStatus(status) !== 'OK')
         .length;
 
     writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([grid.status, battery.status]));
-    writeChanged(`${ROOT}.Summary.LastUpdate`, new Date().toISOString());
+    writeChanged(`${ROOT}.Summary.LastUpdate`, Date.now());
     writeChanged(`${ROOT}.Communication.OverallStatus`, buildCommunicationStatus([grid.communication, battery.communication]));
     writeChanged(`${ROOT}.Communication.TimeoutCount`, timeoutCount);
-    writeChanged(`${ROOT}.Communication.LastUpdate`, new Date().toISOString());
+    writeChanged(`${ROOT}.Communication.LastUpdate`, Date.now());
+}
+
+let refreshTimer = null;
+
+function scheduleRefresh() {
+    if (refreshTimer !== null) {
+        return;
+    }
+    refreshTimer = setTimeout(() => {
+        refreshTimer = null;
+        refresh();
+    }, CONFIG.refreshDebounceMs);
 }
 
 function subscribeToSources() {
-    for (const id of SOURCE_SUBSCRIPTIONS) {
+    const sourceIds = [
+        `${BILANZ_ROOT}.Summe_W`,
+        `${BILANZ_ROOT}.Gueltig`,
+        `${BILANZ_ROOT}.Fehler`,
+        `${BATTERY_ROOT}.Summary.Power`,
+        `${BATTERY_ROOT}.Summary.SOC`,
+        `${BATTERY_ROOT}.Summary.Status`,
+        `${BATTERY_ROOT}.Communication.Status`,
+        `${BATTERY_ROOT}.Communication.SmartShunt.Status`,
+        `${BATTERY_ROOT}.Communication.Gobel.Status`,
+        `${BATTERY_ROOT}.Communication.Heltec.Status`,
+        `${BATTERY_ROOT}.Communication.MQTT.Status`,
+    ];
+
+    for (const id of sourceIds) {
         if (existsState(id)) {
-            on({ id, change: 'ne' }, refresh);
+            on({ id, change: 'ne' }, scheduleRefresh);
         }
     }
 }
@@ -522,7 +500,7 @@ try {
     }
 
     subscribeToSources();
-    refresh();
+    scheduleRefresh();
 
     emit('info', `Version ${CONFIG.version} geladen.`);
     emit('info', `Erzeugte States: ${STATES.length}.`);
