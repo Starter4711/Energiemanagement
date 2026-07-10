@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-07-10
+- Changed
+  - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` auf eine ereignisgetriebene, read-only V1-Baseline mit `Grid`, `PV`, `Battery`, `House`, `Wallbox`, `Summary` und `Communication` umgestellt
+  - `docs/energy_flow_v1_spec.md`, `docs/energy_flow_v1_state_model.md` und `knowledge/project_brain.md` an die aktuelle Energy-Flow-V1-Struktur angepasst
+  - `Energy_Flow_V1` nutzt weiterhin die EOS-Batteriesicht und die EOS-Bilanzsicht als belegte Eingangsquellen; `PV`, `House` und `Wallbox` bleiben mangels freigegebener EOS-Quellen `UNKNOWN`
+
 ## 2026-07-09
 - Added
   - `exports/live_inventory/eos_variables_compact.json` als verdichtete EOS-Variablenansicht aus dem Live-Inventar ergaenzt

@@ -4,6 +4,7 @@
 
 Energy Flow V1 ist die EOS-Schicht zur konsolidierten Sicht auf alle Energiefluesse des Systems.
 Sie fasst vorhandene Energie- und Leistungsinformationen aus den freigegebenen Quellen zusammen und stellt sie als aufbereitete EOS-States bereit.
+V1 bleibt strikt read-only und arbeitet ereignisgetrieben.
 
 ## Aufgaben
 
@@ -24,12 +25,10 @@ Sie fasst vorhandene Energie- und Leistungsinformationen aus den freigegebenen Q
 
 ## Eingänge
 
-- Netz-/Grid-Sicht
-- PV-Sicht
-- Batterie-Sicht
-- Haus-/Verbrauchssicht
-- Wallbox-Sicht
-- Kommunikations-/Frischestatus der Quellen
+- EOS-Batteriesicht unter `0_userdata.0.EOS.Battery.*`
+- EOS-Bilanzsicht fuer Grid unter `0_userdata.0.Energiemanagement.Bilanz.*`
+- zukuenftige freigegebene EOS-Lesesichten fuer PV, House und Wallbox
+- Kommunikations- und Frischestatus der vorhandenen Quellen
 
 ## Ausgänge
 
@@ -66,10 +65,10 @@ Die Energy-Flow-Schicht stellt ihre Ergebnisse unter `0_userdata.0.EOS.EnergyFlo
 
 ## Fehlerverhalten
 
-- unbekannte Werte bleiben `Unklar`
+- unbekannte Werte bleiben `UNKNOWN`
 - Kommunikationsprobleme werden als Status abgebildet
 - fehlende Quellen fuehren nicht zu Steuerreaktionen
-- Teilbereiche duerfen separat `offen` oder `unbekannt` bleiben
+- Teilbereiche duerfen separat `UNKNOWN` bleiben
 
 ## Zukuenftige Erweiterungen
 
@@ -83,4 +82,3 @@ Die Energy-Flow-Schicht stellt ihre Ergebnisse unter `0_userdata.0.EOS.EnergyFlo
 - keine Aktorik
 - keine Regelung
 - keine Recommendation
-

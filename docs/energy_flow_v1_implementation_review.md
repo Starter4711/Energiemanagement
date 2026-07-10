@@ -1,5 +1,9 @@
 # Energy Flow V1 Implementation Review
 
+Hinweis:
+- Dieses Dokument beschreibt den Stand vor der aktuellen V1-Korrektur.
+- Der Repository-Stand wurde anschliessend auf eine ereignisgetriebene read-only Baseline erweitert.
+
 ## Gepruefte Unterlagen
 
 - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js`

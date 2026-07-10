@@ -8,15 +8,16 @@
 const ROOT = '0_userdata.0.EOS.EnergyFlow';
 const BATTERY_ROOT = '0_userdata.0.EOS.Battery';
 const BILANZ_ROOT = '0_userdata.0.Energiemanagement.Bilanz';
-const REFRESH_INTERVAL_MS = 30_000;
 
 const CONFIG = {
-    version: '1.0.0',
+    version: '1.1.0',
     logLevel: 'info',
-    debugLevel: 0,
+    debugEnabled: false,
     defaults: {
         string: 'UNKNOWN',
         number: 0,
+        boolean: false,
+        text: '',
     },
 };
 
@@ -28,37 +29,28 @@ const LEVEL_PRIORITY = {
 };
 
 const GROUPS = ['Grid', 'PV', 'Battery', 'House', 'Wallbox'];
+const SOURCE_GROUPS = {
+    Grid: [
+        `${BILANZ_ROOT}.Summe_W`,
+        `${BILANZ_ROOT}.Gueltig`,
+        `${BILANZ_ROOT}.Fehler`,
+    ],
+    Battery: [
+        `${BATTERY_ROOT}.Summary.Power`,
+        `${BATTERY_ROOT}.Summary.SOC`,
+        `${BATTERY_ROOT}.Summary.Status`,
+        `${BATTERY_ROOT}.Communication.Status`,
+        `${BATTERY_ROOT}.Communication.SmartShunt.Status`,
+        `${BATTERY_ROOT}.Communication.Gobel.Status`,
+        `${BATTERY_ROOT}.Communication.Heltec.Status`,
+        `${BATTERY_ROOT}.Communication.MQTT.Status`,
+    ],
+};
 
-function ensureEnergyFlowRoots() {
-    const rootStates = [
-        [
-            `${ROOT}.Grid.Status`,
-            'Status der Netzsicht',
-        ],
-        [
-            `${BATTERY_ROOT}.Summary.Status`,
-            'Gesamtstatus der Batterie',
-        ],
-    ];
-
-    for (const [id, desc] of rootStates) {
-        if (!existsState(id)) {
-            createState(
-                id,
-                CONFIG.defaults.string,
-                {
-                    name: 'Status',
-                    type: 'string',
-                    role: 'text',
-                    unit: '',
-                    desc,
-                    read: true,
-                    write: false,
-                }
-            );
-        }
-    }
-}
+const SOURCE_SUBSCRIPTIONS = [
+    ...SOURCE_GROUPS.Grid,
+    ...SOURCE_GROUPS.Battery,
+];
 
 const STATES = [
     {
@@ -70,28 +62,20 @@ const STATES = [
         defaultValue: CONFIG.defaults.number,
     },
     {
-        id: `${ROOT}.Grid.Import`,
-        type: 'number',
-        role: 'value.power',
-        unit: 'W',
-        desc: 'Konsolidierter Netzbezug',
-        defaultValue: CONFIG.defaults.number,
-    },
-    {
-        id: `${ROOT}.Grid.Export`,
-        type: 'number',
-        role: 'value.power',
-        unit: 'W',
-        desc: 'Konsolidierte Netzeinspeisung',
-        defaultValue: CONFIG.defaults.number,
-    },
-    {
         id: `${ROOT}.Grid.Status`,
         type: 'string',
         role: 'text',
         unit: '',
         desc: 'Status der Netzsicht',
         defaultValue: CONFIG.defaults.string,
+    },
+    {
+        id: `${ROOT}.Grid.LastUpdate`,
+        type: 'string',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten Grid-Bewertung',
+        defaultValue: CONFIG.defaults.text,
     },
     {
         id: `${ROOT}.PV.Power`,
@@ -108,6 +92,14 @@ const STATES = [
         unit: '',
         desc: 'Status der PV-Sicht',
         defaultValue: CONFIG.defaults.string,
+    },
+    {
+        id: `${ROOT}.PV.LastUpdate`,
+        type: 'string',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten PV-Bewertung',
+        defaultValue: CONFIG.defaults.text,
     },
     {
         id: `${ROOT}.Battery.Power`,
@@ -134,6 +126,14 @@ const STATES = [
         defaultValue: CONFIG.defaults.string,
     },
     {
+        id: `${ROOT}.Battery.LastUpdate`,
+        type: 'string',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten Battery-Bewertung',
+        defaultValue: CONFIG.defaults.text,
+    },
+    {
         id: `${ROOT}.House.Power`,
         type: 'number',
         role: 'value.power',
@@ -150,12 +150,28 @@ const STATES = [
         defaultValue: CONFIG.defaults.string,
     },
     {
+        id: `${ROOT}.House.LastUpdate`,
+        type: 'string',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten House-Bewertung',
+        defaultValue: CONFIG.defaults.text,
+    },
+    {
         id: `${ROOT}.Wallbox.Power`,
         type: 'number',
         role: 'value.power',
         unit: 'W',
         desc: 'Konsolidierte Wallbox-Leistung',
         defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Wallbox.Active`,
+        type: 'boolean',
+        role: 'indicator',
+        unit: '',
+        desc: 'Aktivitaetsstatus der Wallbox-Sicht',
+        defaultValue: CONFIG.defaults.boolean,
     },
     {
         id: `${ROOT}.Wallbox.Status`,
@@ -166,6 +182,14 @@ const STATES = [
         defaultValue: CONFIG.defaults.string,
     },
     {
+        id: `${ROOT}.Wallbox.LastUpdate`,
+        type: 'string',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten Wallbox-Bewertung',
+        defaultValue: CONFIG.defaults.text,
+    },
+    {
         id: `${ROOT}.Summary.Status`,
         type: 'string',
         role: 'text',
@@ -174,15 +198,15 @@ const STATES = [
         defaultValue: CONFIG.defaults.string,
     },
     {
-        id: `${ROOT}.Summary.PowerBalance`,
-        type: 'number',
-        role: 'value.power',
-        unit: 'W',
-        desc: 'Konsolidierte Energiebilanz',
-        defaultValue: CONFIG.defaults.number,
+        id: `${ROOT}.Summary.LastUpdate`,
+        type: 'string',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten Gesamtbewertung',
+        defaultValue: CONFIG.defaults.text,
     },
     {
-        id: `${ROOT}.Communication.Status`,
+        id: `${ROOT}.Communication.OverallStatus`,
         type: 'string',
         role: 'text',
         unit: '',
@@ -190,20 +214,20 @@ const STATES = [
         defaultValue: CONFIG.defaults.string,
     },
     {
+        id: `${ROOT}.Communication.TimeoutCount`,
+        type: 'number',
+        role: 'value',
+        unit: '',
+        desc: 'Anzahl der aktuell ungueltigen oder fehlenden Teilbereiche',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
         id: `${ROOT}.Communication.LastUpdate`,
         type: 'string',
         role: 'date',
         unit: '',
-        desc: 'Zeitpunkt der letzten Energy-Flow-Bewertung',
-        defaultValue: '',
-    },
-    {
-        id: `${ROOT}.Communication.AgeSeconds`,
-        type: 'number',
-        role: 'value',
-        unit: 's',
-        desc: 'Alter der Energy-Flow-Bewertung in Sekunden',
-        defaultValue: CONFIG.defaults.number,
+        desc: 'Zeitpunkt der letzten Energy-Flow-Kommunikationsbewertung',
+        defaultValue: CONFIG.defaults.text,
     },
 ];
 
@@ -219,14 +243,11 @@ for (const group of GROUPS) {
 }
 
 function shouldLog(level) {
-    return LEVEL_PRIORITY[level] <= LEVEL_PRIORITY[CONFIG.logLevel] || level === 'debug';
+    return LEVEL_PRIORITY[level] <= LEVEL_PRIORITY[CONFIG.logLevel] || (level === 'debug' && CONFIG.debugEnabled);
 }
 
 function emit(level, message) {
-    if (level === 'debug' && CONFIG.debugLevel <= 0) {
-        return;
-    }
-    if (level !== 'debug' && !shouldLog(level)) {
+    if (!shouldLog(level)) {
         return;
     }
     log(`Energy_Flow_V1: ${message}`, level);
@@ -277,20 +298,25 @@ function readString(id) {
     return String(value);
 }
 
-function readBatteryNumber(suffix) {
-    return readNumber(`${BATTERY_ROOT}.${suffix}`);
-}
-
-function readBatteryString(suffix) {
-    return readString(`${BATTERY_ROOT}.${suffix}`);
-}
-
-function readBilanzNumber(suffix) {
-    return readNumber(`${BILANZ_ROOT}.${suffix}`);
-}
-
-function readBilanzString(suffix) {
-    return readString(`${BILANZ_ROOT}.${suffix}`);
+function readBoolean(id) {
+    const value = getStateValue(id);
+    if (value === null || value === undefined || value === '') {
+        return null;
+    }
+    if (typeof value === 'boolean') {
+        return value;
+    }
+    if (typeof value === 'number') {
+        return value !== 0;
+    }
+    const normalized = String(value).trim().toLowerCase();
+    if (normalized === 'true' || normalized === '1' || normalized === 'on') {
+        return true;
+    }
+    if (normalized === 'false' || normalized === '0' || normalized === 'off') {
+        return false;
+    }
+    return null;
 }
 
 function normalizeStatus(value) {
@@ -304,41 +330,20 @@ function isKnownNumber(value) {
     return typeof value === 'number' && Number.isFinite(value);
 }
 
-function updateGroup(name, payload) {
-    const status = payload.status || 'UNKNOWN';
-    writeChanged(`${ROOT}.${name}.Status`, status);
-    if (Object.prototype.hasOwnProperty.call(payload, 'power')) {
-        writeChanged(`${ROOT}.${name}.Power`, isKnownNumber(payload.power) ? payload.power : null);
-    }
-    if (Object.prototype.hasOwnProperty.call(payload, 'import')) {
-        writeChanged(`${ROOT}.${name}.Import`, isKnownNumber(payload.import) ? payload.import : null);
-    }
-    if (Object.prototype.hasOwnProperty.call(payload, 'export')) {
-        writeChanged(`${ROOT}.${name}.Export`, isKnownNumber(payload.export) ? payload.export : null);
-    }
-    if (Object.prototype.hasOwnProperty.call(payload, 'soc')) {
-        writeChanged(`${ROOT}.${name}.SOC`, isKnownNumber(payload.soc) ? payload.soc : null);
-    }
+function isKnownBoolean(value) {
+    return typeof value === 'boolean';
 }
 
-function updateCommunication(name, status) {
-    writeChanged(`${ROOT}.Communication.${name}`, status);
-}
+function splitPowerBalance(power) {
+    if (!isKnownNumber(power)) {
+        return { import: null, export: null };
+    }
 
-function buildCommunicationStatus(statuses) {
-    if (statuses.some(status => status === 'OFFLINE')) {
-        return 'OFFLINE';
+    if (power >= 0) {
+        return { import: power, export: 0 };
     }
-    if (statuses.some(status => status === 'WARN')) {
-        return 'WARN';
-    }
-    if (statuses.some(status => status === 'UNKNOWN')) {
-        return 'UNKNOWN';
-    }
-    if (statuses.every(status => status === 'OK')) {
-        return 'OK';
-    }
-    return 'UNKNOWN';
+
+    return { import: 0, export: Math.abs(power) };
 }
 
 function buildCompositeStatus(statuses) {
@@ -361,69 +366,129 @@ function buildCompositeStatus(statuses) {
     return filtered[0] || 'UNKNOWN';
 }
 
-function splitPowerBalance(power) {
-    if (!isKnownNumber(power)) {
-        return { import: null, export: null };
+function buildCommunicationStatus(statuses) {
+    if (statuses.some(status => status === 'OFFLINE')) {
+        return 'OFFLINE';
+    }
+    if (statuses.some(status => status === 'WARN')) {
+        return 'WARN';
+    }
+    if (statuses.some(status => status === 'UNKNOWN')) {
+        return 'UNKNOWN';
+    }
+    return 'OK';
+}
+
+function updateGroup(name, payload) {
+    writeChanged(`${ROOT}.${name}.Status`, payload.status || 'UNKNOWN');
+    if (Object.prototype.hasOwnProperty.call(payload, 'power')) {
+        writeChanged(`${ROOT}.${name}.Power`, isKnownNumber(payload.power) ? payload.power : null);
+    }
+    if (Object.prototype.hasOwnProperty.call(payload, 'soc')) {
+        writeChanged(`${ROOT}.${name}.SOC`, isKnownNumber(payload.soc) ? payload.soc : null);
+    }
+    if (Object.prototype.hasOwnProperty.call(payload, 'active')) {
+        writeChanged(`${ROOT}.${name}.Active`, isKnownBoolean(payload.active) ? payload.active : null);
+    }
+    writeChanged(`${ROOT}.${name}.LastUpdate`, payload.lastUpdate || '');
+}
+
+function updateCommunication(name, status) {
+    writeChanged(`${ROOT}.Communication.${name}`, status);
+}
+
+function readGridSnapshot() {
+    const gridPower = readNumber(`${BILANZ_ROOT}.Summe_W`);
+    const gridValidState = getState(`${BILANZ_ROOT}.Gueltig`);
+    const gridValid = Boolean(gridValidState && gridValidState.val === true);
+    const gridError = normalizeStatus(readString(`${BILANZ_ROOT}.Fehler`));
+    const powerSplit = splitPowerBalance(gridPower);
+
+    let status = 'UNKNOWN';
+    if (gridValid) {
+        status = 'OK';
+    } else if (gridError !== 'UNKNOWN' && gridError !== '') {
+        status = 'OFFLINE';
+    } else if (isKnownNumber(gridPower)) {
+        status = 'WARN';
     }
 
-    if (power >= 0) {
-        return { import: power, export: 0 };
-    }
+    return {
+        power: gridPower,
+        import: powerSplit.import,
+        export: powerSplit.export,
+        status,
+        lastUpdate: gridValidState && Number.isFinite(Number(gridValidState.ts))
+            ? new Date(Number(gridValidState.ts)).toISOString()
+            : '',
+        communication: status,
+    };
+}
 
-    return { import: 0, export: Math.abs(power) };
+function readBatterySnapshot() {
+    const power = readNumber(`${BATTERY_ROOT}.Summary.Power`);
+    const soc = readNumber(`${BATTERY_ROOT}.Summary.SOC`);
+    const summaryStatus = normalizeStatus(readString(`${BATTERY_ROOT}.Summary.Status`));
+    const communicationStatus = normalizeStatus(readString(`${BATTERY_ROOT}.Communication.Status`));
+    const batteryCommunicationSources = [
+        normalizeStatus(readString(`${BATTERY_ROOT}.Communication.SmartShunt.Status`)),
+        normalizeStatus(readString(`${BATTERY_ROOT}.Communication.Gobel.Status`)),
+        normalizeStatus(readString(`${BATTERY_ROOT}.Communication.Heltec.Status`)),
+        normalizeStatus(readString(`${BATTERY_ROOT}.Communication.MQTT.Status`)),
+        communicationStatus,
+    ];
+
+    return {
+        power,
+        soc,
+        status: summaryStatus,
+        communication: buildCommunicationStatus(batteryCommunicationSources),
+        lastUpdate: getState(`${BATTERY_ROOT}.Summary.Power`) && Number.isFinite(Number(getState(`${BATTERY_ROOT}.Summary.Power`).ts))
+            ? new Date(Number(getState(`${BATTERY_ROOT}.Summary.Power`).ts)).toISOString()
+            : '',
+    };
 }
 
 function refresh() {
-    const batterySummaryStatus = normalizeStatus(readBatteryString('Summary.Status'));
-    const batteryPower = readBatteryNumber('Summary.Power');
-    const batterySoc = readBatteryNumber('Summary.SOC');
-    const batteryCommunication = normalizeStatus(readBatteryString('Communication.Status'));
-    const gridPower = readBilanzNumber('Summe_W');
-    const gridValidState = getState(`${BILANZ_ROOT}.Gueltig`);
-    const gridValid = Boolean(gridValidState && gridValidState.val === true);
-    const gridError = normalizeStatus(readBilanzString('Fehler'));
-    const gridSplit = splitPowerBalance(gridPower);
-    const gridCommunication = gridValid
-        ? 'OK'
-        : gridError !== 'UNKNOWN' && gridError !== ''
-            ? 'OFFLINE'
-            : isKnownNumber(gridPower)
-                ? 'WARN'
-                : 'UNKNOWN';
-    const gridStatus = gridCommunication;
-
-    updateGroup('Battery', {
-        status: batterySummaryStatus,
-        power: batteryPower,
-        soc: batterySoc,
-    });
+    const grid = readGridSnapshot();
+    const battery = readBatterySnapshot();
 
     updateGroup('Grid', {
-        status: gridStatus,
-        power: gridPower,
-        import: gridSplit.import,
-        export: gridSplit.export,
+        status: grid.status,
+        power: grid.power,
+        lastUpdate: grid.lastUpdate,
     });
 
     updateGroup('PV', {
         status: 'UNKNOWN',
         power: null,
+        lastUpdate: '',
+    });
+
+    updateGroup('Battery', {
+        status: battery.status,
+        power: battery.power,
+        soc: battery.soc,
+        lastUpdate: battery.lastUpdate,
     });
 
     updateGroup('House', {
         status: 'UNKNOWN',
         power: null,
+        lastUpdate: '',
     });
 
     updateGroup('Wallbox', {
         status: 'UNKNOWN',
         power: null,
+        active: false,
+        lastUpdate: '',
     });
 
     const groupStatuses = {
-        Grid: gridStatus,
+        Grid: grid.status,
         PV: 'UNKNOWN',
-        Battery: batterySummaryStatus,
+        Battery: battery.status,
         House: 'UNKNOWN',
         Wallbox: 'UNKNOWN',
     };
@@ -432,42 +497,36 @@ function refresh() {
         updateCommunication(group, status);
     }
 
-    writeChanged(`${ROOT}.Communication.Grid`, gridCommunication);
+    const timeoutCount = Object.values(groupStatuses)
+        .filter(status => normalizeStatus(status) !== 'OK')
+        .length;
+
+    writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([grid.status, battery.status]));
+    writeChanged(`${ROOT}.Summary.LastUpdate`, new Date().toISOString());
+    writeChanged(`${ROOT}.Communication.OverallStatus`, buildCommunicationStatus([grid.communication, battery.communication]));
+    writeChanged(`${ROOT}.Communication.TimeoutCount`, timeoutCount);
     writeChanged(`${ROOT}.Communication.LastUpdate`, new Date().toISOString());
-    writeChanged(`${ROOT}.Communication.AgeSeconds`, 0);
+}
 
-    const overallCommunication = buildCommunicationStatus([
-        gridCommunication,
-        normalizeStatus(readBatteryString('Communication.SmartShunt.Status')),
-        normalizeStatus(readBatteryString('Communication.Gobel.Status')),
-        normalizeStatus(readBatteryString('Communication.Heltec.Status')),
-        normalizeStatus(readBatteryString('Communication.MQTT.Status')),
-        batteryCommunication,
-    ]);
-
-    const knownPowerValues = [
-        isKnownNumber(gridPower) ? gridPower : null,
-        isKnownNumber(batteryPower) ? batteryPower : null,
-    ].filter(value => value !== null);
-
-    const powerBalance = knownPowerValues.length > 0 ? knownPowerValues.reduce((sum, value) => sum + value, 0) : null;
-
-    writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([gridStatus, batterySummaryStatus]));
-    writeChanged(`${ROOT}.Summary.PowerBalance`, powerBalance);
-    writeChanged(`${ROOT}.Communication.Status`, overallCommunication);
+function subscribeToSources() {
+    for (const id of SOURCE_SUBSCRIPTIONS) {
+        if (existsState(id)) {
+            on({ id, change: 'ne' }, refresh);
+        }
+    }
 }
 
 try {
-    ensureEnergyFlowRoots();
     for (const state of STATES) {
         createEnergyState(state);
     }
 
+    subscribeToSources();
     refresh();
-    setInterval(refresh, REFRESH_INTERVAL_MS);
 
     emit('info', `Version ${CONFIG.version} geladen.`);
     emit('info', `Erzeugte States: ${STATES.length}.`);
+    emit('info', 'Energy Flow V1 ist read-only und ereignisgetrieben aktiv.');
 } catch (error) {
     log(`Energy_Flow_V1 Fehler: ${error.message}`, 'warn');
 }
