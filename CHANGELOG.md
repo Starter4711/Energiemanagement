@@ -1,6 +1,13 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Fixed
+  - fachlich ungueltige Momentansumme der drei physisch getrennten Grid-Zaehlpunkte aus `Grid_Flow_V1` entfernt
+  - `EOS.Grid.Summary.*` aus Skript, Objekt, Test und Spezifikation entfernt
+- Notes
+  - Grid 40, 41 und 43 bleiben ausschließlich getrennte read-only Zaehlersichten
+
+## 2026-07-25
 - Activated
   - `Grid_Flow_V1` nach Backup kontrolliert aktiviert und dauerhaft aktiv belassen
 - Verified
