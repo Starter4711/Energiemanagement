@@ -10,15 +10,15 @@ Nicht belegte Punkte bleiben `Unklar`.
 
 Folgende zentrale Dokumentationsbausteine sind vorhanden:
 
-- `knowledge/EOS_Master_Architecture.md`
+- `knowledge/architecture.md`
 - `knowledge/EOS_Module_Dependencies.md`
 - `knowledge/EOS_Communication_Matrix.md`
 - `knowledge/EOS_Interface_Contract.md`
-- `knowledge/EOS_Recovery_Concept.md`
+- `knowledge/EOS_Error_Recovery_Concept.md`
 - `knowledge/EOS_Deployment_Release_Rollback.md`
-- `knowledge/EOS_Test_Review_Acceptance.md`
+- `knowledge/EOS_Test_Review_Acceptance_Strategy.md`
 - `knowledge/EOS_Traceability_Matrix.md`
-- `knowledge/EOS_Roadmap.md`
+- `knowledge/EOS_Roadmap_and_Version_Gates.md`
 - `knowledge/project_brain.md`
 - `knowledge/requirements.md`
 - `knowledge/decisions.md`
@@ -28,11 +28,11 @@ Folgende zentrale Dokumentationsbausteine sind vorhanden:
 
 ## Gesamtbewertung
 
-Die übergreifende EOS-Architektur ist dokumentiert. Die Dokumentation ist jedoch nicht als vollständig abgeschlossen zu bewerten, solange offene fachliche Grenzen, fehlende Detailverträge und noch nicht freigegebene Zielmodule bestehen.
+Die EOS-Dokumentationsbaseline V1.0 ist fuer die weitere modulare Entwicklung abgeschlossen. Offene fachliche Grenzen, fehlende Detailvertraege kuenftiger Module und nicht freigegebene Zielmodule bleiben sichtbar, ohne den Abschluss der uebergreifenden Baseline aufzuheben.
 
 Status:
 
-- Masterarchitektur: dokumentiert
+- Architekturgrundlagen: dokumentiert
 - Schichten- und Rollenmodell: dokumentiert
 - State-Grundregeln: dokumentiert
 - Modulabhängigkeiten: dokumentiert
@@ -143,9 +143,9 @@ Weiterhin offen:
 - standardisierter Release-Nachweis je produktivem Modul
 - formaler Nachweis des Live-Stands gegenüber dem Repository-Stand
 
-## Vollständigkeitskriterium für EOS-Gesamtdokumentation
+## Vollständigkeitskriterium für künftige EOS-Module
 
-Die EOS-Gesamtdokumentation gilt erst dann als vollständig, wenn:
+Ein kuenftiges EOS-Modul gilt erst dann als vollstaendig dokumentiert und implementierungsbereit, wenn:
 
 1. jede freigegebene Domäne eine vollständige Spezifikation und ein State-Modell besitzt,
 2. alle produktiven Daten- und Schreibpfade inventarisiert sind,
@@ -168,11 +168,4 @@ Die übergreifende Dokumentationsbasis ist ausreichend, um neue Codex-Aufträge 
 
 ## Nächster sinnvoller Codex-Auftrag
 
-Vor weiteren neuen EOS-Modulen ist zuerst ein dokumentations- und read-only-orientierter Repository-Audit sinnvoll:
-
-- alle aktuell vorhandenen EOS-Dokumente und Referenzen inventarisieren,
-- tote oder fehlende Verweise erkennen,
-- `knowledge/project_brain.md`, `knowledge/README.md`, `knowledge/modules.md`, `knowledge/roadmap.md` und `CHANGELOG.md` mit den neuen EOS-Dokumenten synchronisieren,
-- keine produktiven Skripte oder Live-Pfade ändern.
-
-Dieser Auftrag dient der Konsolidierung der Dokumentationsbasis und ist Voraussetzung für die belastbare Auswahl der nächsten fachlichen Modulgrenze.
+Die Dokumentationskonsolidierung ist abgeschlossen. Der nächste Auftrag wird modulbezogen festgelegt und darf erst nach vollständiger Spezifikation, State-Modell, Quellenvertrag, Testkriterien und ausdrücklicher Freigabe Code erzeugen.
