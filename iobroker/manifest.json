@@ -1,5 +1,5 @@
 {
-  "count": 71,
+  "count": 72,
   "exportedAt": "2026-07-07T17:54:47.083662+00:00",
   "objects": [
     {
@@ -640,6 +640,15 @@
       "enabled": true,
       "objectFile": "iobroker/objects/energiemanagement.PV_Flow_V1.json",
       "scriptFile": "iobroker/scripts/energiemanagement/PV_Flow_V1.js"
+    },
+    {
+      "id": "script.js.energiemanagement.Grid_Flow_V1",
+      "name": "Grid_Flow_V1",
+      "type": "script",
+      "engineType": "Javascript/js",
+      "enabled": false,
+      "objectFile": "iobroker/objects/energiemanagement.Grid_Flow_V1.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Grid_Flow_V1.js"
     }
   ]
 }
