@@ -46,6 +46,12 @@ Je Quelle unter `0_userdata.0.EOS.Grid.Sources.Grid40|Grid41|Grid43`:
 - `ERROR`: Quellwert nicht numerisch oder nicht endlich
 - `UNKNOWN`: Quelle oder Zeitstempel fehlt
 
+## Selbstheilung
+
+Im bestehenden 60-Sekunden-Zyklus ruft das Modul für alle definierten Grid-States erneut die von der produktiven JavaScript-Sandbox unterstützte Funktion `createState` auf.
+
+`createState` prüft den realen Objektbestand und legt fehlende State-Objekte einschließlich der automatisch benötigten Ordnerstruktur wieder an. Danach werden die aktuellen Werte aus Grid 40, 41 und 43 geschrieben. Nicht vorhandene Summary-Objekte werden nicht erzeugt.
+
 ## Abgrenzung
 
 - rein lesend und ereignisgesteuert
