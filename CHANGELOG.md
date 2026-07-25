@@ -1,6 +1,14 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Changed
+  - `Wallbox_Flow_V1` und `Energy_Flow_V1` nach ausdruecklicher Betriebsfreigabe dauerhaft aktiviert
+  - Skriptobjekte und Manifest auf `enabled: true` synchronisiert
+- Verified
+  - beide Live-Skripte aktiv, Wallbox-Status jeweils `OK`, keine neuen Warnungen oder Fehler im Startlog
+  - Ruecksicherungsstaende beider Skriptobjekte im ioBroker-Container vorhanden
+
+## 2026-07-25
 - Fixed
   - initialen Energy-Flow-Refresh um 1 Sekunde verzögert, damit neue ioBroker-States vor dem ersten Schreibzugriff existieren
   - fehlende Grid- und Battery-Quellen vor `getState()` mit `existsState()` abgesichert, um Warn-Stacktraces zu vermeiden
