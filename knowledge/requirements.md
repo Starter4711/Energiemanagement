@@ -380,6 +380,7 @@ Wenn ein Punkt nicht sicher belegt ist, ist er als `Unklar` markiert.
   Aktivitaet beginnt oberhalb von 100 W.
   `STALE` gilt nach mehr als 30 Sekunden.
   `OFFLINE` gilt nach mehr als 120 Sekunden.
+  Ein zentraler Alterstimer prueft alle Quellen alle 60 Sekunden.
   Teilausfaelle werden als `DEGRADED` sichtbar.
   Nicht gueltige Quellen tragen 0 W zur Summe bei und duerfen nicht als bestaetigte Nulllast gelten.
 - Verknuepfte Design Principles:
