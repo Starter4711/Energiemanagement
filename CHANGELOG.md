@@ -1,6 +1,14 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Deployed
+  - VIS2-Main-View und CSS mit der Wallbox-Uebersicht live ausgerollt
+  - Handy-Darstellung einspaltig und MacBook-Darstellung dreispaltig im Live-Dateispeicher verifiziert
+- Backup
+  - vorherige Main-View unter `vis-2.0/backups/main-20260725T203000Z.json` gesichert
+  - vorheriges CSS unter `vis-2.0/backups/vis-user-20260725T203000Z.css` gesichert
+
+## 2026-07-25
 - Added
   - bestehendes VIS2-Main-Dashboard um eine read-only Wallbox-Uebersicht erweitert
   - Summary sowie go-e V3, go-e V4 und go-e V4 Halle mit Leistung, Aktivitaet, Status und Alter eingebunden
