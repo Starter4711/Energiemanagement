@@ -101,7 +101,7 @@ Aktuelle Module:
 - `Config.js`: zentrale Konfigurations-Datenpunkte.
 - `Debug.js`: Heartbeat und Debug-Zustand.
 - `Bilanz_Zaehlpunkte.js`: saldierte Netzbilanz.
-- `Grid_Flow_V1.js`: implementierte, live validierte und dauerhaft aktive read-only EOS-Grid-Sicht ohne Summierung der getrennten Zaehlpunkte fuer Victron Grid 40 (alte Wohnung), Grid 41 (Halle) und Grid 43 (Haus); Grid 42 ist ausgeschlossen. Die Anbindung an `Energy_Flow_V1` erfolgt erst nach eigener Freigabe. Der vollständige Grid-Objektbaum wird im bestehenden 60-Sekunden-Zyklus selbstheilend wieder angelegt; Summary-Objekte bleiben ausgeschlossen.
+- `Grid_Flow_V1.js`: implementierte, live validierte und dauerhaft aktive read-only EOS-Grid-Sicht ohne Summierung der getrennten Zaehlpunkte fuer Victron Grid 40 (alte Wohnung), Grid 41 (Halle) und Grid 43 (Haus); Grid 42 ist ausgeschlossen. Die Anbindung an `Energy_Flow_V1` erfolgt erst nach eigener Freigabe.
 - `Batterie_Zellspannungen.js`: Zellspreizung, Trend und Alarm je Pack.
 - `Batterie_BMS_Heltec_Vergleich.js`: BMS-/HELTEC-Vergleich je Pack.
 - `Battery_Supervisor_V1.js`: EOS-Batteriegrundlage mit Kommunikationsueberwachung und aufbereiteter Communication-Baseline.
