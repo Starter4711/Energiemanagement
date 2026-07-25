@@ -2,7 +2,7 @@
 
 ## Status
 
-Spezifiziert fuer eine spaetere, ausdruecklich beauftragte Implementierung. Dieses Dokument allein erzeugt noch keine Implementierungs- oder Deploymentfreigabe.
+Implementiert im Repository; technischer und fachlicher Review sowie Live-Deployment stehen noch aus. Dieses Dokument erzeugt keine Deploymentfreigabe.
 
 ## Zweck
 
@@ -122,4 +122,4 @@ Es darf nicht:
 11. Es schreibt nur bei Wertaenderung.
 12. Es existiert keine Aktorik und keine Aenderung an `Energy_Flow_V1.js`.
 13. Syntax-, State-Modell-, Fehler-, Neustart- und Recovery-Pruefungen sind erfolgreich.
-14. Implementierung, Objektdatei und Manifest werden erst in einem eigenen Auftrag erstellt.
+14. Implementierung, Objektdatei, Manifest und Testdatei stimmen mit dieser Spezifikation ueberein.
