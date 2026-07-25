@@ -139,7 +139,7 @@ Status:
 
 ### VIS-2-Module
 
-- `dashboard.html`: Hauptansicht.
+- `dashboard.html`: Hauptansicht mit implementierter read-only Wallbox-Uebersicht; das Live-Deployment dieser Erweiterung ist noch offen.
 - `battery.html`: Batteriedetails.
 - `pool.html`: Pooldetails.
 - `pool-controls.html`: Pool-Bedienkopf.
