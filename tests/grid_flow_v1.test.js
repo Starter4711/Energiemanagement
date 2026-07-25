@@ -78,12 +78,11 @@ assert.strictEqual(value(`${root}.Sources.Grid43.Location`), 'Haus');
 assert.strictEqual(value(`${root}.Sources.Grid40.Power`), 1200);
 assert.strictEqual(value(`${root}.Sources.Grid41.Power`), -800);
 assert.strictEqual(value(`${root}.Sources.Grid43.Power`), 300);
-assert.strictEqual(value(`${root}.Summary.Power`), 700);
-assert.strictEqual(value(`${root}.Summary.Status`), 'OK');
 assert.strictEqual(subscriptions.has('alias.0.EM24 Old Grid.Power Old Grid'), true);
 assert.strictEqual(subscriptions.has('alias.0.EM24 Hall Grid.Power'), true);
 assert.strictEqual(subscriptions.has('alias.0.EM24 New Grid.Power'), true);
 assert.strictEqual(subscriptions.has('mqtt.3.N.b827eb7fd855.grid.42.Ac.Power'), false);
+assert.strictEqual([...definitions.keys()].some(id => id.includes('.Summary.')), false);
 
 for (const [id, common] of definitions) {
     assert.strictEqual(common.read, true, `${id} must be readable`);
@@ -101,8 +100,6 @@ for (const id of definitions.keys()) {
 setRaw('alias.0.EM24 Hall Grid.Power', 'invalid', Date.now());
 assert.strictEqual(value(`${root}.Sources.Grid41.Power`), 0);
 assert.strictEqual(value(`${root}.Sources.Grid41.Status`), 'ERROR');
-assert.strictEqual(value(`${root}.Summary.Power`), 0);
-assert.strictEqual(value(`${root}.Summary.Status`), 'DEGRADED');
 
 const old = Date.now() - 121000;
 for (const id of rawStates.keys()) {
@@ -110,7 +107,5 @@ for (const id of rawStates.keys()) {
 }
 assert.ok(intervalCallback, 'central age timer missing');
 intervalCallback();
-assert.strictEqual(value(`${root}.Summary.Power`), 0);
-assert.strictEqual(value(`${root}.Summary.Status`), 'OFFLINE');
 
 console.log('Grid_Flow_V1 tests passed.');
