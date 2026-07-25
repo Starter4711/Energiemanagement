@@ -1,6 +1,18 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Activated
+  - `Grid_Flow_V1` nach Backup kontrolliert aktiviert und dauerhaft aktiv belassen
+- Verified
+  - Grid 40, 41 und 43 liefern numerische Leistungen mit Status `OK` und korrekter Vorzeichenuebernahme
+  - rechnerischer Momentansaldo ist aktiv; Grid 42 erzeugt keinen EOS-State
+  - keine Grid-Flow-Fehler im kontrollierten Test festgestellt
+- Backup
+  - `/opt/iobroker/backups/eos/20260725T192951Z_Grid_Flow_V1_before_activation.json`
+- Notes
+  - `Energy_Flow_V1` blieb unveraendert und nutzt die neue Grid-Sicht noch nicht
+
+## 2026-07-25
 - Deployed
   - `Grid_Flow_V1` aus dem GitHub-Stand kontrolliert als deaktiviertes ioBroker-Skriptobjekt importiert
 - Verified
