@@ -1,6 +1,16 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Added
+  - `Grid_Flow_V1` 1.0.2 mit createState-basierter Wiederanlage fehlender Grid-State-Objekte im bestehenden 60-Sekunden-Zyklus neu implementiert
+  - Lösch- und Wiederanlagetest für alle definierten Grid-States ergänzt
+- Verified
+  - produktive Sandbox unterstützt `createState`; deren Implementierung prüft den realen Objektbestand und erzeugt die benötigte Ordnerstruktur automatisch
+  - Tests bestanden; `setObjectNotExists` und Summary-Logik sind nicht enthalten
+- Notes
+  - Neuimplementierung noch nicht live deployt
+
+## 2026-07-25
 - Rolled back
   - `Grid_Flow_V1` 1.0.2 nach fehlgeschlagenem Selbstheilungs-Livetest auf 1.0.1 zurückgesetzt
   - GitHub-Skript, Objekt, Test und Spezifikation auf den sicheren 1.0.1-Stand zurückgesetzt
