@@ -356,6 +356,76 @@ Die Dokumentation eines EOS-Moduls gilt erst dann als vollstaendig, wenn mindest
 
 Damit ist die Masterarchitektur strukturell konsolidiert. Die vollstaendige EOS-Gesamtdokumentation ist erst erreicht, wenn alle freigegebenen Domaenen die Mindestkriterien erfuellen und die verbleibenden offenen Architekturgrenzen entweder beschlossen oder ausdruecklich verworfen wurden.
 
+## EOS-State-Architektur
+
+Die State-Ebene unter `0_userdata.0.EOS.*` ist die stabile interne Fachschnittstelle zwischen Quellintegration, Domaenenlogik, Folgefunktionen und VIS2.
+
+### Verbindlicher Ist-Stand
+
+Aktuell sind nur folgende Domaenen als verifiziert und freigegeben dokumentiert:
+
+- `0_userdata.0.EOS.Battery.*`
+- `0_userdata.0.EOS.EnergyFlow.*`
+
+Die konkrete Unterstruktur wird ausschliesslich durch die jeweils freigegebenen State-Modelle und den tatsaechlichen Repository-Inhalt bestimmt. Dieses Masterdokument definiert keine zusaetzlichen produktiven States.
+
+### Verbindliche Strukturregeln
+
+- Die erste Ebene unter `0_userdata.0.EOS` bezeichnet eine fachliche Domaene und keine technische Quelle.
+- Rohpfade aus MQTT, Modbus, S7, Alias oder Adapterinstanzen werden nicht in die EOS-Struktur gespiegelt.
+- Berechnete Fachwerte, Kommunikationszustaende, Health-Werte und Zusammenfassungen sind read-only.
+- Schreibbare Werte liegen ausschliesslich in explizit dokumentierten Settings-Bereichen.
+- Settings, berechnete Ergebnisse und Kommunikationsstatus duerfen nicht in derselben Verantwortung vermischt werden.
+- Zeitangaben, Alter, Status und Fehlerzustaende muessen im jeweiligen State-Modell eindeutig typisiert sein.
+- Ein freigegebener State-Pfad wird nicht umbenannt oder semantisch umgedeutet; inkompatible Aenderungen benoetigen eine neue Version.
+- Nicht verfuegbare oder fachlich nicht belegte Werte bleiben `UNKNOWN` beziehungsweise im dokumentierten Fehlerzustand und werden nicht geschaetzt.
+- VIS2 und Folgefunktionen lesen EOS-States, nicht die zugrunde liegenden Rohquellen.
+- Ein Domaenenmodul schreibt nicht in den State-Bereich einer anderen Domaene, sofern kein ausdruecklich dokumentierter Schnittstellenvertrag dies erlaubt.
+
+### Zielstruktur – nicht freigegeben
+
+Die folgende Aufteilung ist ein Namens- und Verantwortungsrahmen, aber keine Freigabe zur Anlage neuer States:
+
+```text
+0_userdata.0.EOS
+├── Battery
+├── EnergyFlow
+├── Generation
+├── Consumption
+├── Wallbox
+├── Pool
+├── Communication
+├── Notification
+├── Scheduler
+├── Forecast
+└── Optimizer
+```
+
+Querschnittsfunktionen wie Communication oder Health duerfen entweder domaenennah oder zentral modelliert werden. Die konkrete Entscheidung muss vor jeder neuen Domaene in einer Spezifikation und einem State-Modell festgelegt werden. Doppelhaltung gleicher Fachinformation ist zu vermeiden.
+
+### Versions- und Kompatibilitaetsregel
+
+- Neue optionale States duerfen eine bestehende Version erweitern, sofern bestehende Pfade und Semantik unveraendert bleiben.
+- Umbenennungen, Typaenderungen, Einheitenwechsel oder geaenderte Schreibrechte gelten als inkompatibel.
+- Inkompatible Aenderungen benoetigen eine neue Modul- beziehungsweise State-Modell-Version und einen dokumentierten Migrationsweg.
+- Ein generischer State darf nicht spaeter stillschweigend zu einem aktorischen Schreibpfad werden.
+- Veraltete States duerfen erst nach dokumentierter Migration, Verifikation und Freigabe entfernt werden.
+
+### State-Vertrag je Modul
+
+Jedes freigegebene State-Modell muss fuer jeden State mindestens dokumentieren:
+
+1. vollstaendigen Pfad,
+2. fachliche Bedeutung,
+3. Datentyp,
+4. Einheit und Rolle,
+5. `read`- und `write`-Rechte,
+6. gueltige Werte beziehungsweise Statusmenge,
+7. Quell- oder Berechnungsverantwortung,
+8. Aktualisierungs- und Triggerverhalten,
+9. Verhalten bei fehlender, veralteter oder unplausibler Quelle,
+10. Nutzung durch andere EOS-Module oder VIS2.
+
 ## Offene Architekturgrenzen
 
 Weiterhin `Unklar`:
