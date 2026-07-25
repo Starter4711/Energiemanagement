@@ -7,7 +7,7 @@
 
 const ROOT = '0_userdata.0.EOS.PV';
 const CONFIG = {
-    version: '1.0.0',
+    version: '1.0.1',
     activeThresholdW: 1,
     staleAfterSeconds: 30,
     offlineAfterSeconds: 120,
@@ -107,7 +107,11 @@ function logStatus(name, status) {
     if (previous === undefined || previous === status) {
         return;
     }
-    log(`PV_Flow_V1: ${name} Status ${status}.`, status === 'OK' || status === 'STANDBY' ? 'info' : 'warn');
+    const operational = new Set(['OK', 'STANDBY']);
+    if (operational.has(previous) && operational.has(status)) {
+        return;
+    }
+    log(`PV_Flow_V1: ${name} Status ${status}.`, operational.has(status) ? 'info' : 'warn');
 }
 
 function writeSnapshot(snapshot) {
