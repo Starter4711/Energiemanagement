@@ -1,6 +1,16 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Deployed
+  - `Grid_Flow_V1` aus dem GitHub-Stand kontrolliert als deaktiviertes ioBroker-Skriptobjekt importiert
+- Verified
+  - Live-Objekt ist `enabled: false` und enthaelt ausschließlich Grid 40, 41 und 43
+  - Grid 42 ist nicht enthalten; wegen deaktiviertem Skript wurden noch keine EOS-Grid-Laufzeitstates erzeugt
+- Notes
+  - kein vorheriges Live-Objekt vorhanden; daher war kein Objekt-Backup moeglich oder erforderlich
+  - `Energy_Flow_V1` blieb unveraendert
+
+## 2026-07-25
 - Added
   - `Grid_Flow_V1` als read-only EOS-Verdichtung fuer Victron Grid 40, 41 und 43 implementiert
   - getrennte numerische Leistungen, Status, Aktualitaet und rechnerischen Momentansaldo unter `0_userdata.0.EOS.Grid.*` ergaenzt
