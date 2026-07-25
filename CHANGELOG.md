@@ -1,6 +1,14 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Added
+  - `Wallbox_Flow_V1.js` als read-only Verdichtung der drei belegten Wallbox-Leistungsquellen implementiert
+  - ioBroker-Skriptobjekt und eigenstaendigen Test fuer Leistung, Aktivitaet, Status, Teilausfall und Offline-Verhalten ergänzt
+- Changed
+  - `iobroker/manifest.json` um das standardmaessig deaktivierte Modul erweitert
+  - Spezifikation, State-Modell, Roadmap und Projektkontext auf `Implementiert – Review und Deployment offen` aktualisiert
+
+## 2026-07-25
 - Changed
   - zentralen Alterstimer fuer `Wallbox_Flow_V1` auf ein ressourcenschonendes Intervall von 60 Sekunden festgelegt
   - Statusprioritaet bei gleichzeitig unterschiedlichen Quellfehlern eindeutig definiert
