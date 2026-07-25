@@ -1,6 +1,17 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Added
+  - bestehendes VIS2-Main-Dashboard um eine read-only Wallbox-Uebersicht erweitert
+  - Summary sowie go-e V3, go-e V4 und go-e V4 Halle mit Leistung, Aktivitaet, Status und Alter eingebunden
+- Changed
+  - vorhandenes Kartenlayout und responsive Darstellung fuer den Wallbox-Block weiterverwendet
+  - `vis-views.json` mit 15 eindeutigen EOS-Wallbox-Bindings neu erzeugt
+- Notes
+  - ausschliesslich `0_userdata.0.EOS.Wallbox.*`; keine Buttons, Rohquellen oder Steuerpfade
+  - Live-Deployment bleibt bis zum Review offen
+
+## 2026-07-25
 - Changed
   - `Wallbox_Flow_V1` und `Energy_Flow_V1` nach ausdruecklicher Betriebsfreigabe dauerhaft aktiviert
   - Skriptobjekte und Manifest auf `enabled: true` synchronisiert
