@@ -1,6 +1,16 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Added
+  - `Energy_Flow_V1` read-only an `0_userdata.0.EOS.Wallbox.Summary.*` angebunden
+  - Regressionstest fuer Leistung, Aktivitaet, Status, Summary und Communication ergänzt
+- Changed
+  - Wallbox-Status `DEGRADED` und `STALE` wird als `WARNING`, `OFFLINE` als `ERROR` eingeordnet
+  - fehlerhaften bestehenden Testerwartungswert von 3.500 W auf die korrekte Summe 3.600 W korrigiert
+- Notes
+  - kein Live-Deployment; Energy-Flow-Skriptobjekt bleibt standardmaessig deaktiviert
+
+## 2026-07-25
 - Tested
   - `Wallbox_Flow_V1` kontrolliert im produktiven ioBroker mit drei erreichbaren 0-kW-Quellen getestet
   - alle 19 EOS-Zielobjekte read-only erzeugt; Leistung numerisch, Status als String, keine Modulfehler im Log
