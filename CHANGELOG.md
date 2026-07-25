@@ -1,6 +1,17 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Deployed
+  - korrigiertes `Grid_Flow_V1` 1.0.2 mit createState-basierter Selbstheilung live eingespielt und aktiv belassen
+- Tested
+  - `Grid40.AgeSeconds` kontrolliert gelöscht und innerhalb des 60-Sekunden-Zyklus automatisch wieder angelegt
+  - wiederangelegter State unmittelbar mit numerischem Wert `0` befüllt
+- Verified
+  - Grid 40, 41 und 43 jeweils `OK`; keine Summary-Objekte und keine neuen Grid-Fehler
+- Backup
+  - `/opt/iobroker/backups/eos/20260725T195907Z_Grid_Flow_V1_before_createState_test.json`
+
+## 2026-07-25
 - Added
   - `Grid_Flow_V1` 1.0.2 mit createState-basierter Wiederanlage fehlender Grid-State-Objekte im bestehenden 60-Sekunden-Zyklus neu implementiert
   - Lösch- und Wiederanlagetest für alle definierten Grid-States ergänzt
