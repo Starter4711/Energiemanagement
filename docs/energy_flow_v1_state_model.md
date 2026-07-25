@@ -24,9 +24,9 @@
 
 | State | Datentyp | Einheit | read-only | Herkunft | Status |
 | --- | --- | --- | --- | --- | --- |
-| `0_userdata.0.EOS.EnergyFlow.PV.Power` | Zahl | W | ja | PV-/Erzeugungswerte | geplant |
-| `0_userdata.0.EOS.EnergyFlow.PV.Status` | Text |  | ja | PV-/Erzeugungswerte | offen |
-| `0_userdata.0.EOS.EnergyFlow.PV.LastUpdate` | Zahl | ms | ja | PV-/Erzeugungswerte | geplant |
+| `0_userdata.0.EOS.EnergyFlow.PV.Power` | Zahl | W | ja | `0_userdata.0.EOS.PV.Summary.TotalPower` | implementiert |
+| `0_userdata.0.EOS.EnergyFlow.PV.Status` | Text |  | ja | `0_userdata.0.EOS.PV.Summary.Status` | implementiert |
+| `0_userdata.0.EOS.EnergyFlow.PV.LastUpdate` | Zahl | ms | ja | `0_userdata.0.EOS.PV.Summary.LastUpdate` | implementiert |
 
 ## Battery
 
