@@ -1,6 +1,15 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Fixed
+  - initialen Energy-Flow-Refresh um 1 Sekunde verzögert, damit neue ioBroker-States vor dem ersten Schreibzugriff existieren
+  - fehlende Grid- und Battery-Quellen vor `getState()` mit `existsState()` abgesichert, um Warn-Stacktraces zu vermeiden
+- Tested
+  - Wallbox-Anbindung mit `Energy_Flow_V1` 1.2.2 kontrolliert im ioBroker validiert
+  - Wallbox-Summary und Energy-Flow-Wallbox stimmen bei 0 W, `Active=false` und Status `OK` überein
+  - beide Module nach dem Test wieder deaktiviert; Backup des vorherigen Energy-Flow-Objekts im ioBroker-Container abgelegt
+
+## 2026-07-25
 - Added
   - `Energy_Flow_V1` read-only an `0_userdata.0.EOS.Wallbox.Summary.*` angebunden
   - Regressionstest fuer Leistung, Aktivitaet, Status, Summary und Communication ergänzt
