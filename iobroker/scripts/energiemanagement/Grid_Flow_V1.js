@@ -183,7 +183,6 @@ function subscribeToSources() {
         on({ id: source.id, change: 'any' }, obj => {
             const now = Date.now();
             refreshSource(source, obj && obj.state ? obj.state : getState(source.id), now);
-            refreshSummary(now);
         });
     }
 }
