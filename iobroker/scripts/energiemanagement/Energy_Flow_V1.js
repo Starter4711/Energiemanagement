@@ -11,7 +11,7 @@ const BILANZ_ROOT = '0_userdata.0.Energiemanagement.Bilanz';
 const WALLBOX_ROOT = '0_userdata.0.EOS.Wallbox';
 
 const CONFIG = {
-    version: '1.2.1',
+    version: '1.2.2',
     logLevel: 'info',
     debugEnabled: false,
     refreshDebounceMs: 50,
@@ -244,6 +244,9 @@ function writeChanged(id, value) {
 }
 
 function getStateValue(id) {
+    if (!existsState(id)) {
+        return null;
+    }
     const state = getState(id);
     return state && state.val !== undefined ? state.val : null;
 }
@@ -361,7 +364,9 @@ function updateGroup(name, payload) {
 
 function readGridSnapshot() {
     const gridPower = readNumber(`${BILANZ_ROOT}.Summe_W`);
-    const gridValidState = getState(`${BILANZ_ROOT}.Gueltig`);
+    const gridValidState = existsState(`${BILANZ_ROOT}.Gueltig`)
+        ? getState(`${BILANZ_ROOT}.Gueltig`)
+        : null;
     const gridValid = Boolean(gridValidState && gridValidState.val === true);
     const gridError = normalizeStatus(readString(`${BILANZ_ROOT}.Fehler`));
 
@@ -397,13 +402,17 @@ function readBatterySnapshot() {
         communicationStatus,
     ];
 
+    const powerState = existsState(`${BATTERY_ROOT}.Summary.Power`)
+        ? getState(`${BATTERY_ROOT}.Summary.Power`)
+        : null;
+
     return {
         power,
         soc,
         status: summaryStatus,
         communication: buildCommunicationStatus(batteryCommunicationSources),
-        lastUpdate: getState(`${BATTERY_ROOT}.Summary.Power`) && Number.isFinite(Number(getState(`${BATTERY_ROOT}.Summary.Power`).ts))
-            ? Number(getState(`${BATTERY_ROOT}.Summary.Power`).ts)
+        lastUpdate: powerState && Number.isFinite(Number(powerState.ts))
+            ? Number(powerState.ts)
             : Date.now(),
     };
 }
