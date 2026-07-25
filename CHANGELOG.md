@@ -1,6 +1,17 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Added
+  - `PV_Flow_V1` als deaktiviertes read-only Modul fuer vier AC-Wechselrichter und zwei RS450-Strings implementiert
+  - getrennte `ACPower`, `DCPower` und reine Anzeige `TotalPower` sowie sechs Einzelquellen ergänzt
+  - Spezifikation, State-Modell und Regressionstest ergänzt
+- Changed
+  - `0 W` mit altem Timestamp als erwarteten Wechselrichterzustand `STANDBY` festgelegt
+- Notes
+  - RS450 lädt ausschließlich DC-seitig die Batterie; aus `TotalPower` folgt keine Netzeinspeisefähigkeit
+  - kein Live-Deployment und noch keine Anbindung an `Energy_Flow_V1`
+
+## 2026-07-25
 - Fixed
   - abgeschnittenen Pool-Bereich nach Einbau der Wallboxen auf der Handyansicht korrigiert
   - Main-View fuer Handy auf 2.400 px und fuer MacBook ab 1.000 px auf 1.400 px festgelegt
