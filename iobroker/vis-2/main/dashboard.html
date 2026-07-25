@@ -55,6 +55,35 @@
     </a>
   </section>
 
+  <section class="em-wallbox-section">
+    <div class="em-section-head">
+      <h2>Wallboxen</h2>
+      <span data-state="{0_userdata.0.EOS.Wallbox.Summary.Status}">Status {0_userdata.0.EOS.Wallbox.Summary.Status}</span>
+    </div>
+    <div class="em-wallbox-summary" data-state="{0_userdata.0.EOS.Wallbox.Summary.Active}">
+      <div><span>Gesamtleistung</span><strong>{0_userdata.0.EOS.Wallbox.Summary.Power} W</strong></div>
+      <div><span>Ladevorgang aktiv</span><strong>{0_userdata.0.EOS.Wallbox.Summary.Active}</strong></div>
+      <div><span>Status</span><strong>{0_userdata.0.EOS.Wallbox.Summary.Status}</strong></div>
+    </div>
+    <div class="em-grid em-wallbox-grid">
+      <article class="em-card em-wallbox-card" data-state="{0_userdata.0.EOS.Wallbox.Sources.Wallbox1.Active}">
+        <span>go-e V3</span>
+        <strong>{0_userdata.0.EOS.Wallbox.Sources.Wallbox1.Power} W</strong>
+        <small>{0_userdata.0.EOS.Wallbox.Sources.Wallbox1.Status} · Alter {0_userdata.0.EOS.Wallbox.Sources.Wallbox1.AgeSeconds} s</small>
+      </article>
+      <article class="em-card em-wallbox-card" data-state="{0_userdata.0.EOS.Wallbox.Sources.Wallbox2.Active}">
+        <span>go-e V4</span>
+        <strong>{0_userdata.0.EOS.Wallbox.Sources.Wallbox2.Power} W</strong>
+        <small>{0_userdata.0.EOS.Wallbox.Sources.Wallbox2.Status} · Alter {0_userdata.0.EOS.Wallbox.Sources.Wallbox2.AgeSeconds} s</small>
+      </article>
+      <article class="em-card em-wallbox-card" data-state="{0_userdata.0.EOS.Wallbox.Sources.Wallbox3.Active}">
+        <span>go-e V4 Halle</span>
+        <strong>{0_userdata.0.EOS.Wallbox.Sources.Wallbox3.Power} W</strong>
+        <small>{0_userdata.0.EOS.Wallbox.Sources.Wallbox3.Status} · Alter {0_userdata.0.EOS.Wallbox.Sources.Wallbox3.AgeSeconds} s</small>
+      </article>
+    </div>
+  </section>
+
   <section class="em-pool-summary">
     <h2>Pool</h2>
     <a class="em-detail-link em-pool-tile" href="#Pool" aria-label="Poolsteuerung öffnen">
