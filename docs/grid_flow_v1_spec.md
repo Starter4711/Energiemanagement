@@ -37,14 +37,6 @@ Je Quelle unter `0_userdata.0.EOS.Grid.Sources.Grid40|Grid41|Grid43`:
 - `LastUpdate`: numerischer Millisekunden-Zeitstempel
 - `AgeSeconds`: numerisch, s
 
-Summary unter `0_userdata.0.EOS.Grid.Summary`:
-
-- `Power`: rechnerischer momentaner Saldo der drei physischen Netz-Zählpunkte in W
-- `Status`: String
-- `LastUpdate`: numerischer Millisekunden-Zeitstempel
-
-Der Momentansaldo ist keine 15-Minuten-Abrechnung und keine Aussage über einen einzelnen physischen Netzfluss.
-
 ## Aktualität
 
 - `OK`: höchstens 30 Sekunden alt
@@ -53,14 +45,12 @@ Der Momentansaldo ist keine 15-Minuten-Abrechnung und keine Aussage über einen 
 - zentrale Altersprüfung alle 60 Sekunden
 - `ERROR`: Quellwert nicht numerisch oder nicht endlich
 - `UNKNOWN`: Quelle oder Zeitstempel fehlt
-- `DEGRADED`: mindestens eine, aber nicht alle Quellen sind `OK`
-
-Der Summary-Saldo wird nur bei drei Quellen mit Status `OK` berechnet. Andernfalls bleibt er numerisch `0 W` und der Summary-Status zeigt den Fehlerzustand.
 
 ## Abgrenzung
 
 - rein lesend und ereignisgesteuert
 - keine Aktorik oder Regelung
+- keine Summierung der physisch getrennten Netz-Zählpunkte
 - keine Abrechnung oder 15-Minuten-Saldierung
 - keine Zuordnung des RS450 zu einem Grid-Zähler
 - keine Änderung bestehender Aliase, MQTT-Pfade oder Victron-Konfigurationen
