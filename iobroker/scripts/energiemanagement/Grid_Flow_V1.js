@@ -8,7 +8,7 @@
 const ROOT = '0_userdata.0.EOS.Grid';
 
 const CONFIG = {
-    version: '1.0.1',
+    version: '1.0.2',
     logLevel: 'info',
     debugEnabled: false,
     staleAfterSeconds: 30,
@@ -81,6 +81,12 @@ function createGridState(definition) {
         read: true,
         write: false,
     });
+}
+
+function ensureStates() {
+    for (const definition of STATE_DEFINITIONS) {
+        createGridState(definition);
+    }
 }
 
 function writeChanged(id, value) {
@@ -172,6 +178,7 @@ function refreshSource(source, state, now) {
 }
 
 function refreshAll() {
+    ensureStates();
     const now = Date.now();
     for (const source of SOURCES) {
         refreshSource(source, getState(source.id), now);
@@ -190,10 +197,6 @@ function subscribeToSources() {
 let ageTimer = null;
 
 try {
-    for (const definition of STATE_DEFINITIONS) {
-        createGridState(definition);
-    }
-
     subscribeToSources();
     refreshAll();
     ageTimer = setInterval(refreshAll, CONFIG.ageCheckIntervalMs);
