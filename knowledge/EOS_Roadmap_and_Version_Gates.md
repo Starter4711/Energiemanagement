@@ -64,7 +64,7 @@ Umfang:
 
 ### Gate 1: Dokumentationskonsolidierung
 
-Status: `In Arbeit`
+Status: `Abgeschlossen`
 
 Ziel:
 
@@ -81,9 +81,15 @@ Ziel:
 
 Abschlusskriterium:
 
-- alle neuen Architekturdateien sind in der Knowledge Base verlinkt,
+- die gueltigen Architekturdateien sind in der Knowledge Base verlinkt,
 - Widersprueche und veraltete Commitreferenzen sind bereinigt,
 - offene Punkte sind eindeutig als `Unklar` oder `Zielbild – nicht freigegeben` markiert.
+
+Ergebnis:
+
+- EOS-Dokumentationsbaseline V1.0 abgeschlossen,
+- weitere Arbeit erfolgt ausschliesslich modulbezogen,
+- der Abschluss ist keine automatische Implementierungsfreigabe.
 
 ### Gate 2: Energy Flow V1 vervollstaendigen
 
@@ -261,6 +267,6 @@ Nach jedem Codex-Commit:
 
 ## Aktuelle Architekturentscheidung
 
-Nach Abschluss der Dokumentationskonsolidierung ist der naechste fachliche Kandidat die Klaerung und anschliessende read-only Vervollstaendigung von Energy Flow V1 fuer PV, House und Wallbox.
+Nach Abschluss der Dokumentationskonsolidierung ist die Quellenanalyse fuer PV, House und Wallbox dokumentiert. Sie entscheidet: PV benoetigt ein vorgelagertes EOS-Modul, fuer House reicht der Repository-Nachweis noch nicht aus und Wallbox benoetigt ein vorgelagertes EOS-Modul.
 
-Dies ist noch keine Implementierungsfreigabe. Vorher muessen die realen ioBroker-Quellen und Signalkonventionen direkt verifiziert werden.
+Dies ist noch keine Implementierungsfreigabe. Vor Codegenerierung muessen fuer die gewaehlte Modulgrenze Requirement, Fuehrungsquellen, Signalkonventionen, Aktualitaetsregeln, State-Modell und Abnahmekriterien freigegeben werden.
