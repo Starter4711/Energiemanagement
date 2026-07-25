@@ -1,6 +1,14 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Added
+  - Requirement, Architekturentscheidung, Spezifikation und State-Modell fuer `Wallbox_Flow_V1` ergänzt
+  - positive Wallboxleistung als Energiefluss ins Auto, Aktivschwelle 100 W sowie 30/120-Sekunden-Aktualitaetsgrenzen festgelegt
+  - Leistungswerte ausschliesslich numerisch und Statuswerte als Strings definiert
+- Changed
+  - Roadmap und Projektkontext um den spezifizierten, noch nicht implementierten Wallbox-Baustein ergänzt
+
+## 2026-07-25
 - Changed
   - EOS-Dokumentationsbaseline auf den aktuellen GitHub-Stand konsolidiert
   - tote und veraltete Dokumentverweise korrigiert
