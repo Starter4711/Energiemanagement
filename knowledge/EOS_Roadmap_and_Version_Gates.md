@@ -93,7 +93,7 @@ Ergebnis:
 
 ### Gate 2: Energy Flow V1 vervollstaendigen
 
-Status: `In Klaerung`
+Status: `In Klaerung`; Wallbox-Quellmodul spezifiziert, noch nicht implementiert
 
 Ziel:
 
@@ -110,6 +110,24 @@ Vor Codex zwingend zu klaeren:
 - Aktualitaets- und Timeoutregeln,
 - Verhalten bei Teilverfuegbarkeit,
 - Verifikation gegen reale ioBroker-Werte.
+
+### Gate 2a: Wallbox Flow V1
+
+Status: `Spezifiziert – Implementierung noch nicht beauftragt`
+
+Festgelegt sind:
+
+- drei belegte Alias-Leistungsquellen,
+- positive Leistung als Energiefluss ins Auto,
+- ausschliesslich numerische Leistungswerte,
+- String-Statuswerte,
+- Aktivschwelle groesser als 100 W,
+- `STALE` nach mehr als 30 Sekunden,
+- `OFFLINE` nach mehr als 120 Sekunden,
+- `DEGRADED` bei Teilausfall,
+- read-only State-Modell unter `0_userdata.0.EOS.Wallbox.*`.
+
+Vor der spaeteren Anbindung an Energy Flow sind Implementierung, Tests, Review und Freigabe erforderlich.
 
 ### Gate 3: Energy Flow VIS2 Read-Only
 
