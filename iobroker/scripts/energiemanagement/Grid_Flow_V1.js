@@ -1,7 +1,7 @@
 // ioBroker object: script.js.energiemanagement.Grid_Flow_V1
 // name: Grid_Flow_V1
 // engineType: Javascript/js
-// enabled: False
+// enabled: True
 
 'use strict';
 
