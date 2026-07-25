@@ -1,6 +1,16 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Added
+  - `Grid_Flow_V1` 1.0.2 um Selbstheilung des vollständigen Root-, Channel- und State-Baums im bestehenden 60-Sekunden-Zyklus erweitert
+  - automatisierten Lösch- und Wiederanlagetest für Grid 40, 41 und 43 ergänzt
+- Verified
+  - wiederangelegte States werden unmittelbar aus den aktuellen Quellen befüllt
+  - Summary-Objekte werden auch bei der Selbstheilung nicht erzeugt
+- Notes
+  - noch kein Live-Deployment dieser Version
+
+## 2026-07-25
 - Deployed
   - `Grid_Flow_V1` 1.0.1 ohne Summary live eingespielt und aktiv validiert
 - Removed
