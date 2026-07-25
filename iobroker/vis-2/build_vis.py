@@ -96,7 +96,7 @@ project = {
         "openedViews": ["Main", "Batterie", "Pool", "Pool_Bedienung"],
         "ts": "energiemanagement-pool-v4",
     },
-    "Main": view("Energiemanagement", MAIN_HTML, 1400),
+    "Main": view("Energiemanagement", MAIN_HTML, 2400),
     "Batterie": view("Batterie", BATTERY_HTML, 1200),
     "Pool": view("Pool", POOL_HTML, 1900),
     "Pool_Bedienung": pool_controls_view(),
