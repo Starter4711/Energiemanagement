@@ -11,7 +11,7 @@ const BILANZ_ROOT = '0_userdata.0.Energiemanagement.Bilanz';
 const WALLBOX_ROOT = '0_userdata.0.EOS.Wallbox';
 
 const CONFIG = {
-    version: '1.2.0',
+    version: '1.2.1',
     logLevel: 'info',
     debugEnabled: false,
     refreshDebounceMs: 50,
@@ -521,7 +521,7 @@ try {
     }
 
     subscribeToSources();
-    scheduleRefresh();
+    setTimeout(scheduleRefresh, 1000);
 
     emit('info', `Version ${CONFIG.version} geladen.`);
     emit('info', `Erzeugte States: ${STATES.length}.`);
