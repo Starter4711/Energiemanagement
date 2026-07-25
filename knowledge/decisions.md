@@ -300,3 +300,22 @@ Zukuenftige gesicherte Entscheidungen sollen in diesem Format dokumentiert werde
 ## Unklar
 
 - Eine vollstaendige ADR-Struktur oder nummerierte Entscheidungsserie ist im Repository nicht vorhanden.
+
+
+## 2026-07-25 - Wallbox Flow V1 als read-only Verdichtungsmodul spezifiziert
+
+- Status: beschlossen
+- Bereich: Architektur
+- Kontext: Drei Wallbox-Leistungsaliase sind im Repository belegt, fuer `Energy_Flow_V1` fehlt jedoch eine stabile EOS-interne Wallboxquelle.
+- Entscheidung: `Wallbox_Flow_V1` wird als eigenes, nicht-aktorisches Modul unter `0_userdata.0.EOS.Wallbox.*` spezifiziert.
+- Begruendung: Direkte Adapter-, MQTT- oder Alias-Rohpfade sollen nicht in `Energy_Flow_V1` gekoppelt werden. Ein eigenes Domaenenmodul trennt Quellenbewertung, Aktualitaet und Einheitenumrechnung von der Energy-Flow-Sicht.
+- Fachliche Festlegungen:
+  Positive Leistung bedeutet Energiefluss ins Auto.
+  Leistungswerte sind immer numerisch; Statuswerte sind Strings.
+  Aktivitaet gilt oberhalb von 100 W.
+  `STALE` gilt nach mehr als 30 Sekunden, `OFFLINE` nach mehr als 120 Sekunden.
+  Bei Teilausfall werden verfuegbare `OK`-Quellen summiert und der Gesamtstatus lautet `DEGRADED`.
+  Nicht gueltige Leistungsanteile werden numerisch als 0 W ausgegeben; der Status verhindert die Interpretation als bestaetigte Nulllast.
+- Betroffene Dateien/Pfade: `knowledge/requirements.md`, `docs/wallbox_flow_v1_spec.md`, `docs/wallbox_flow_v1_state_model.md`
+- Auswirkungen: Eine spaetere Anbindung an `Energy_Flow_V1` ist erst nach Implementierung, Test und Freigabe von `Wallbox_Flow_V1` zulaessig.
+- Offene Punkte: Die Implementierung und das Deployment sind noch nicht beauftragt.
