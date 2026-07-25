@@ -592,7 +592,7 @@
       "name": "Energy_Flow_V1",
       "type": "script",
       "engineType": "Javascript/js",
-      "enabled": false,
+      "enabled": true,
       "objectFile": "iobroker/objects/energiemanagement.Energy_Flow_V1.json",
       "scriptFile": "iobroker/scripts/energiemanagement/Energy_Flow_V1.js"
     },
@@ -601,7 +601,7 @@
       "name": "Wallbox_Flow_V1",
       "type": "script",
       "engineType": "Javascript/js",
-      "enabled": false,
+      "enabled": true,
       "objectFile": "iobroker/objects/energiemanagement.Wallbox_Flow_V1.json",
       "scriptFile": "iobroker/scripts/energiemanagement/Wallbox_Flow_V1.js"
     },
