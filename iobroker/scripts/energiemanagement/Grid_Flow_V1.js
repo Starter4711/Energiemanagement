@@ -46,9 +46,9 @@ const SOURCES = [
 
 const CHANNEL_DEFINITIONS = [
     { id: ROOT, name: 'Grid' },
-    { id: `.Sources`, name: 'Sources' },
+    { id: ROOT + '.Sources', name: 'Sources' },
     ...SOURCES.map(source => ({
-        id: `.Sources.`,
+        id: ROOT + '.Sources.' + source.name,
         name: source.name,
     })),
 ];
@@ -217,7 +217,6 @@ function subscribeToSources() {
 let ageTimer = null;
 
 try {
-    ensureObjectTree();
     subscribeToSources();
     refreshAll();
     ageTimer = setInterval(refreshAll, CONFIG.ageCheckIntervalMs);
