@@ -22,6 +22,9 @@ const rawStates = new Map([
     ['0_userdata.0.EOS.Battery.Communication.Gobel.Status', { val: 'OK', ts: now }],
     ['0_userdata.0.EOS.Battery.Communication.Heltec.Status', { val: 'OK', ts: now }],
     ['0_userdata.0.EOS.Battery.Communication.MQTT.Status', { val: 'OK', ts: now }],
+    ['0_userdata.0.EOS.PV.Summary.TotalPower', { val: 6200, ts: now }],
+    ['0_userdata.0.EOS.PV.Summary.Status', { val: 'OK', ts: now }],
+    ['0_userdata.0.EOS.PV.Summary.LastUpdate', { val: now, ts: now }],
     ['0_userdata.0.EOS.Wallbox.Summary.Power', { val: 3500, ts: now }],
     ['0_userdata.0.EOS.Wallbox.Summary.Active', { val: true, ts: now }],
     ['0_userdata.0.EOS.Wallbox.Summary.Status', { val: 'OK', ts: now }],
@@ -78,13 +81,16 @@ function setRaw(id, val) {
 }
 
 const root = '0_userdata.0.EOS.EnergyFlow';
+assert.strictEqual(value(`${root}.PV.Power`), 6200);
+assert.strictEqual(value(`${root}.PV.Status`), 'OK');
+assert.strictEqual(value(`${root}.PV.LastUpdate`), now);
 assert.strictEqual(value(`${root}.Wallbox.Power`), 3500);
 assert.strictEqual(value(`${root}.Wallbox.Active`), true);
 assert.strictEqual(value(`${root}.Wallbox.Status`), 'OK');
 assert.strictEqual(value(`${root}.Wallbox.LastUpdate`), now);
 assert.strictEqual(value(`${root}.Summary.Status`), 'OK');
 assert.strictEqual(value(`${root}.Communication.OverallStatus`), 'OK');
-assert.strictEqual(value(`${root}.Communication.TimeoutCount`), 2);
+assert.strictEqual(value(`${root}.Communication.TimeoutCount`), 1);
 
 for (const [id, common] of definitions) {
     assert.strictEqual(common.read, true, `${id} must be readable`);
@@ -100,10 +106,16 @@ assert.strictEqual(value(`${root}.Wallbox.Active`), false);
 assert.strictEqual(value(`${root}.Wallbox.Status`), 'ERROR');
 assert.strictEqual(value(`${root}.Summary.Status`), 'ERROR');
 assert.strictEqual(value(`${root}.Communication.OverallStatus`), 'ERROR');
-assert.strictEqual(value(`${root}.Communication.TimeoutCount`), 3);
+assert.strictEqual(value(`${root}.Communication.TimeoutCount`), 2);
 
 setRaw('0_userdata.0.EOS.Wallbox.Summary.Status', 'DEGRADED');
 assert.strictEqual(value(`${root}.Wallbox.Status`), 'WARNING');
 assert.strictEqual(value(`${root}.Communication.OverallStatus`), 'WARNING');
 
-console.log('Energy_Flow_V1 Wallbox integration tests passed.');
+setRaw('0_userdata.0.EOS.PV.Summary.TotalPower', 0);
+setRaw('0_userdata.0.EOS.PV.Summary.Status', 'STANDBY');
+assert.strictEqual(value(`${root}.PV.Power`), 0);
+assert.strictEqual(value(`${root}.PV.Status`), 'STANDBY');
+assert.strictEqual(value(`${root}.Communication.OverallStatus`), 'WARNING');
+
+console.log('Energy_Flow_V1 PV and Wallbox integration tests passed.');
