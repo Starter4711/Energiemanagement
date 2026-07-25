@@ -1,6 +1,16 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Deployed
+  - `Grid_Flow_V1` 1.0.1 ohne Summary live eingespielt und aktiv validiert
+- Removed
+  - `0_userdata.0.EOS.Grid.Summary.Power`, `.Status`, `.LastUpdate` und leerer Summary-Kanal aus ioBroker entfernt
+- Verified
+  - Grid 40, 41 und 43 weiterhin `OK`; keine Summary-Definition oder Laufzeitstate mehr vorhanden
+- Backup
+  - `/opt/iobroker/backups/eos/20260725T193841Z_Grid_Flow_V1_before_summary_removal.json`
+
+## 2026-07-25
 - Fixed
   - fachlich ungueltige Momentansumme der drei physisch getrennten Grid-Zaehlpunkte aus `Grid_Flow_V1` entfernt
   - `EOS.Grid.Summary.*` aus Skript, Objekt, Test und Spezifikation entfernt
