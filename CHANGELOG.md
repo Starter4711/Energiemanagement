@@ -1,6 +1,14 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Fixed
+  - PV-Status `STANDBY` aus `EnergyFlow.Communication.TimeoutCount` ausgeschlossen
+- Verified
+  - Live-Zähler von 4 auf korrekt 3 reduziert; offen sind Grid, Battery und House
+  - erwartete Grid-Bilanz- und EOS-Battery-Eingangsstates fehlen live und bleiben `UNKNOWN`
+  - Energy Flow 1.3.1 aktiv; Backup von 1.3.0 vorhanden
+
+## 2026-07-25
 - Deployed
   - `PV_Flow_V1` 1.0.1 und `Energy_Flow_V1` 1.3.0 nach Freigabe live aktiviert
   - PV-AC, PV-DC, Gesamtleistung und `STANDBY` bis Energy Flow erfolgreich validiert
