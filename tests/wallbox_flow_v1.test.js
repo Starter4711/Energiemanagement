@@ -68,7 +68,7 @@ function setRaw(id, val, ts) {
     callback({ state: rawStates.get(id) });
 }
 
-assert.strictEqual(value('0_userdata.0.EOS.Wallbox.Summary.Power'), 3500);
+assert.strictEqual(value('0_userdata.0.EOS.Wallbox.Summary.Power'), 3600);
 assert.strictEqual(value('0_userdata.0.EOS.Wallbox.Summary.Active'), true);
 assert.strictEqual(value('0_userdata.0.EOS.Wallbox.Summary.Status'), 'OK');
 assert.strictEqual(value('0_userdata.0.EOS.Wallbox.Sources.Wallbox2.Power'), 100);
