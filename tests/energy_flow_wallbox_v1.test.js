@@ -58,7 +58,7 @@ const context = {
     },
     setTimeout(callback) {
         callback();
-        return 1;
+        return null;
     },
     log() {},
 };
