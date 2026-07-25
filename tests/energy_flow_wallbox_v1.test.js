@@ -117,5 +117,6 @@ setRaw('0_userdata.0.EOS.PV.Summary.Status', 'STANDBY');
 assert.strictEqual(value(`${root}.PV.Power`), 0);
 assert.strictEqual(value(`${root}.PV.Status`), 'STANDBY');
 assert.strictEqual(value(`${root}.Communication.OverallStatus`), 'WARNING');
+assert.strictEqual(value(`${root}.Communication.TimeoutCount`), 2);
 
 console.log('Energy_Flow_V1 PV and Wallbox integration tests passed.');
