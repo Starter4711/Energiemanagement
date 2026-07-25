@@ -306,8 +306,8 @@ Charakter des Repositories:
 
 ## 6. Aktueller Entwicklungsstand
 
-Aktuell liegt der Fokus auf der Batterie als abgeschlossenem EOS-Teil und auf dem implementierten Energy Flow V1, dessen Phase 2 freigegeben ist.
-Weitere fachlich freigegebene Schritte sind in der aktuellen Dokumentation nicht abschliessend benannt.
+Aktuell sind Battery V1 und der freigegebene Umfang von Energy Flow V1 abgeschlossen. Die repositorybasierte Quellenanalyse fuer PV, House und Wallbox ist dokumentiert; daraus folgt noch keine Implementierungsfreigabe.
+Der naechste fachliche Schritt benoetigt eine ausdruecklich freigegebene Modulgrenze, Spezifikation, State-Modell und Abnahmekriterien.
 
 Bekannte Lage:
 
@@ -328,7 +328,7 @@ Bekannte Lage:
 - `Battery_Supervisor_V1` soll Batterie- und Kommunikationszustand verdichten, nicht aktorisch steuern.
 - Die langfristige Entwicklungsrichtung ist der Aufbau weiterer EOS-Module auf derselben State- und Doku-Grundlage.
 - VIS2 soll spaeter moeglichst nur verdichtete EOS-States anzeigen.
-- Der letzte freigegebene Commit ist `273b4f13e51b88237c58d7247326eb34cc0b2c89`.
+- Der letzte freigegebene Commit ist `8d851bc8ad003ef40efec641b452442a3256c15e`.
 - Die neue VIS2-Batterieansicht ist implementiert und bleibt read-only.
 - Das State-Mapping fuer Battery VIS2 Read-Only V1 ist dokumentiert und die Visualisierung selbst bleibt read-only.
 - Aenderungen an der Battery-VIS2-Ansicht werden in `battery.html` begonnen und danach nach `vis-views.json` exportiert.
@@ -349,9 +349,9 @@ Roadmap:
 
 Letzter freigegebener Commit:
 
-- `273b4f13e51b88237c58d7247326eb34cc0b2c89`
+- `8d851bc8ad003ef40efec641b452442a3256c15e`
 
-Energy Flow V1 Phase 2 ist freigegeben.
+Energy Flow V1 ist fuer Grid und Battery freigegeben. Die Quellenanalyse fuer PV, House und Wallbox ist dokumentiert; diese Domaenen bleiben bis zu einer eigenen Freigabe `UNKNOWN`.
 
 ## 8. Naechster Entwicklungsschritt
 
@@ -367,7 +367,7 @@ Stattdessen gilt:
 - Wenn kein Auftrag vorliegt, bleibt der naechste Entwicklungsschritt offen.
 - Der naechste Entwicklungsschritt ergibt sich aus der dokumentierten Roadmap, nicht aus spontaner Annahme.
 
-Wenn kein weiterer Auftrag vorliegt, ist der naechste Schritt `Unklar`.
+Ohne modulbezogene Freigabe bleibt der naechste Implementierungsschritt `Unklar`.
 
 ## 8a. Naechster Klärungspunkt
 
@@ -398,7 +398,7 @@ Die Umsetzung bleibt weiterhin auf die freigegebenen EOS-Battery-States beschrae
 - `Battery V1` ist als abgeschlossen dokumentiert.
 - `Energy_Flow_V1` ist als erste produktive EOS-Schicht implementiert und bleibt read-only.
 - `e2f538f` und `7cb51af` sind die freigegebenen Energy-Flow-Spezifikationsstaende.
-- `273b4f13e51b88237c58d7247326eb34cc0b2c89` implementiert die freigegebene Phase-2-Erweiterung von Energy Flow V1 und ist der letzte freigegebene Commit.
+- `8d851bc8ad003ef40efec641b452442a3256c15e` implementiert die freigegebene Phase-2-Erweiterung von Energy Flow V1 und ist der letzte freigegebene Commit.
 - Gobel-SOC ist nicht als fuehrende Gesamtgroesse zu verwenden.
 - Aktorische Schreibpfade sind besonders kritisch.
 - MQTT-Steuerpfade, go-e-Pfade und S7-Pfade gelten als live-nah und sensibel.
