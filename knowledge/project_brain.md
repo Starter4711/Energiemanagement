@@ -139,7 +139,7 @@ Status:
 
 ### VIS-2-Module
 
-- `dashboard.html`: Hauptansicht mit implementierter read-only Wallbox-Uebersicht; das Live-Deployment dieser Erweiterung ist noch offen.
+- `dashboard.html`: Hauptansicht mit live deployter read-only Wallbox-Uebersicht; Handy wird einspaltig und MacBook dreispaltig dargestellt.
 - `battery.html`: Batteriedetails.
 - `pool.html`: Pooldetails.
 - `pool-controls.html`: Pool-Bedienkopf.
