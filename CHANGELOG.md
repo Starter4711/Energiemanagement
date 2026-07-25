@@ -1,6 +1,15 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Fixed
+  - abgeschnittenen Pool-Bereich nach Einbau der Wallboxen auf der Handyansicht korrigiert
+  - Main-View fuer Handy auf 2.400 px und fuer MacBook ab 1.000 px auf 1.400 px festgelegt
+- Deployed
+  - korrigierte View und CSS live ausgerollt und im ioBroker-Dateispeicher verifiziert
+- Backup
+  - vorheriger Stand unter `vis-2.0/backups/main-20260725T204300Z.json` und `vis-user-20260725T204300Z.css` gesichert
+
+## 2026-07-25
 - Deployed
   - VIS2-Main-View und CSS mit der Wallbox-Uebersicht live ausgerollt
   - Handy-Darstellung einspaltig und MacBook-Darstellung dreispaltig im Live-Dateispeicher verifiziert
