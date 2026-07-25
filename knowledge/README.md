@@ -8,21 +8,26 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 ## Verbindliche Lesereihenfolge
 
 1. Immer zuerst `AGENTS.md` lesen.
-2. Danach `knowledge/README.md` lesen.
-3. Danach `docs/project_analysis.md` lesen.
-4. Danach die fuer die konkrete Aufgabe relevanten Dateien unter `knowledge/` lesen.
-5. Bei Skript-, Aktivierungs- oder ioBroker-Bestandsfragen zusaetzlich `iobroker/manifest.json` lesen.
+2. Danach `knowledge/project_brain.md` lesen.
+3. Danach `knowledge/README.md` lesen.
+4. Danach `docs/project_analysis.md` lesen.
+5. Danach die fuer die konkrete Aufgabe relevanten Dateien unter `knowledge/` lesen.
+6. Bei Skript-, Aktivierungs- oder ioBroker-Bestandsfragen zusaetzlich `iobroker/manifest.json` lesen.
 
 ## Fuehrende Quellen
 
 - `AGENTS.md`: verbindlicher Einstieg und Arbeitsreihenfolge
+- `knowledge/project_brain.md`: verbindlicher Projektkontext, freigegebener Stand und Entwicklungsprozess
 - `knowledge/README.md`: zentrale Navigation der Knowledge Base
+- `knowledge/eos_documentation_status.md`: Abschlussstatus der EOS-Dokumentationsphase
 - `knowledge/decisions.md`: gesicherte Entscheidungen und dauerhafte Engineering-Festlegungen
 - `knowledge/open_questions.md`: offene oder noch nicht gesicherte Punkte
 - `docs/project_analysis.md`: Analyse- und Kontextgrundlage
 
 ## Kurzbeschreibungen der Knowledge-Dateien
 
+- `project_brain.md`: verbindlicher Gesamtprojektkontext fuer ChatGPT und Codex
+- `eos_documentation_status.md`: Abschluss, Reichweite und Grenzen der EOS-Dokumentation
 - `project.md`: kompakter Projektueberblick, Fachschwerpunkte und Grundstruktur
 - `architecture.md`: Gesamtarchitektur, Hauptbereiche und grobe Daten- und Steuerpfade
 - `battery_architecture.md`: gemeinsame Batteriearchitektur, Rollen und Risiken
@@ -40,8 +45,8 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 - `iobroker.md`: ioBroker-Rolle, sichtbare Bausteine und relevante Objektraeume
 - `modules.md`: gruppierte Sicht auf Dokumentations-, Altbestand-, Neu- und Tool-Module
 - `mqtt.md`: MQTT-Rolle, Instanzen, Topic-Familien und bekannte Nutzungen
-- `open_questions.md`: gesammelte ungeklaerte Punkte und noch fehlende Dokumentation
-- `roadmap.md`: naechste Dokumentations- und Analyse-Schritte
+- `open_questions.md`: gesammelte ungeklaerte Punkte und noch fehlende Live-System-Nachweise
+- `roadmap.md`: abgeschlossene Dokumentationsphase und modulbezogener Folgeprozess
 - `script_logging_policy.md`: Logging-Grundsaetze fuer neue produktive Skripte
 - `software.md`: verwendete Technologien, sichtbare Softwarestruktur und Integrationen
 - `victron.md`: kompakte Victron-Grundlage mit Skriptfamilien und Leitregeln
@@ -57,7 +62,9 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 
 ## Fuehrende Datei je Thema
 
-- Projektkontext und Grundregeln: `project.md`
+- Gesamtprojektkontext und freigegebener Stand: `project_brain.md`
+- Abschlussstatus der Dokumentationsphase: `eos_documentation_status.md`
+- Projektueberblick: `project.md`
 - Architekturuebersicht: `architecture.md`
 - Moduluebersicht: `modules.md`
 - Coding- und Arbeitsregeln: `coding_rules.md`
@@ -85,10 +92,12 @@ Sie ist die zentrale Navigationsseite fuer Architektur, Hardware, Victron, MQTT,
 ## Rollenabgrenzung
 
 - `docs/` enthaelt Analyse, Fachdetails, Betriebsdokumente und historische oder ausfuehrliche Projektdokumentation.
-- `knowledge/` enthaelt verdichtetes, dauerhaftes Engineering-Wissen fuer Architektur, Codex und zukunftige Entscheidungen.
+- `knowledge/` enthaelt verdichtetes, dauerhaftes Engineering-Wissen fuer Architektur, Codex und zukuenftige Entscheidungen.
 - `knowledge/requirements.md` ist die zentrale fachliche Anforderungsdatei. Neue Features und relevante Aenderungen sollen darauf verweisen.
 - `PROJECT_MEMORY.md` ist historisches Projektgedaechtnis und keine fuehrende Quelle mehr.
 
 ## Arbeitsregel
 
 Wenn Informationen zwischen mehreren Dateien ueberschneiden, wird die ergaenzende Datei nicht zur Doppelpflege genutzt, sondern verweist auf die fuehrende Datei.
+
+Offene Punkte in `knowledge/open_questions.md` verhindern den Abschluss der Dokumentationsphase nicht. Sie werden nur bei konkretem fachlichem Bedarf bearbeitet und duerfen nicht als automatische Implementierungsfreigabe interpretiert werden.
