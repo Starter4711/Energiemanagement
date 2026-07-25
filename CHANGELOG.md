@@ -1,6 +1,14 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Fixed
+  - Logwechsel zwischen den normalen PV-Zustaenden `OK` und `STANDBY` unterdrückt
+- Tested
+  - `PV_Flow_V1` 1.0.1 kontrolliert live mit vier AC- und zwei RS450-Quellen validiert
+  - AC-, DC- und Gesamtleistung numerisch sowie erwarteter Nacht-`STANDBY` bestätigt
+  - Modul nach dem Test wieder deaktiviert
+
+## 2026-07-25
 - Added
   - `PV_Flow_V1` als deaktiviertes read-only Modul fuer vier AC-Wechselrichter und zwei RS450-Strings implementiert
   - getrennte `ACPower`, `DCPower` und reine Anzeige `TotalPower` sowie sechs Einzelquellen ergänzt
