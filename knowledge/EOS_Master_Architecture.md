@@ -305,6 +305,57 @@ Die folgenden Bausteine bilden den langfristigen strukturellen Orientierungsrahm
 - VIS2 darf Zielmodule darstellen und konfigurieren, aber keine eigenstaendige Fachentscheidung treffen.
 - Bestehende externe Infrastruktur wie InfluxDB oder Grafana ist nur dann EOS-Bestandteil, wenn eine konkrete Integrationsrolle dokumentiert und freigegeben wird.
 
+## Dokumentationsmodell und Vollstaendigkeitskriterien
+
+`knowledge/EOS_Master_Architecture.md` ist die zentrale Architekturuebersicht. Detailwissen verbleibt in den jeweils fuehrenden Dateien und wird hier nicht redundant vervielfacht.
+
+### Fuehrende Dokumente
+
+- Projektsteuerung und freigegebener Entwicklungsstand: `knowledge/project_brain.md`
+- Masterarchitektur und Systemgrenzen: `knowledge/EOS_Master_Architecture.md`
+- verbindliche Architekturentscheidungen: `knowledge/decisions.md`
+- fachliche Anforderungen: `knowledge/requirements.md`
+- offene, nicht gesicherte Punkte: `knowledge/open_questions.md`
+- Modulbestand und Modulgruppen: `knowledge/modules.md`
+- technische Detailanalysen und Spezifikationen: `docs/`
+- Aenderungshistorie: `CHANGELOG.md`
+
+### Statusbegriffe
+
+- `Freigegeben`: fachlich beschlossen, im Repository belegt und als gueltige Grundlage verwendbar.
+- `Implementiert`: im Repository technisch vorhanden; eine fachliche Freigabe ist separat nachzuweisen.
+- `Dokumentiert`: beschrieben, ohne automatisch Implementierung oder Freigabe zu bedeuten.
+- `Zielbild – nicht freigegeben`: langfristig architektonisch vorgesehen, aber weder spezifiziert noch zur Umsetzung freigegeben.
+- `Unklar`: nicht ausreichend belegt und deshalb nicht als Entscheidungsgrundlage verwendbar.
+
+### Mindestumfang je freigegebenem EOS-Modul
+
+Die Dokumentation eines EOS-Moduls gilt erst dann als vollstaendig, wenn mindestens folgende Punkte belegt sind:
+
+1. fachlicher Zweck und klare Verantwortung,
+2. Abgrenzung zu anderen Modulen und Schutzinstanzen,
+3. definierte Eingangsquellen und Fuehrungsrollen,
+4. stabiles State-Modell einschliesslich Datentypen und Schreibrechten,
+5. Kommunikations-, Plausibilitaets- und Fehlerverhalten,
+6. Ressourcen- und Triggerkonzept,
+7. Sicherheitsauswirkungen und verbotene Schreibpfade,
+8. Deployment-, Backup-, Rollback- und Verifikationsweg,
+9. VIS2-Bezug und erlaubte Bedienfunktionen,
+10. Requirements- und Entscheidungsreferenzen,
+11. Abnahmekriterien sowie technischer Review-Nachweis,
+12. dokumentierter Freigabe- und Versionsstand.
+
+### Aktueller Dokumentationsgrad
+
+- Battery V1: fuer den freigegebenen V1-Umfang dokumentiert und abgeschlossen.
+- Energy Flow V1 Phase 2: fuer den freigegebenen Umfang dokumentiert; die Domaenen PV, House und Wallbox bleiben fachlich unvollstaendig und `UNKNOWN`.
+- Drei-Zaehlpunkt-Bilanz: Grundprinzip dokumentiert; vollstaendige formale Abrechnungs- und Abhaengigkeitsbeschreibung bleibt offen.
+- Wallbox und Pool: Grundrollen und Sicherheitsgrenzen dokumentiert; keine vollstaendige EOS-Modulspezifikation freigegeben.
+- Zielmodule Generation, Consumption, Communication, Health, Historian, Notification, Scheduler, Forecast und Optimizer: nur als Zielbild dokumentiert und nicht freigegeben.
+- Altbestand: Modulgruppen sind dokumentiert; eine vollstaendige technische Abhaengigkeitenkarte fehlt.
+
+Damit ist die Masterarchitektur strukturell konsolidiert. Die vollstaendige EOS-Gesamtdokumentation ist erst erreicht, wenn alle freigegebenen Domaenen die Mindestkriterien erfuellen und die verbleibenden offenen Architekturgrenzen entweder beschlossen oder ausdruecklich verworfen wurden.
+
 ## Offene Architekturgrenzen
 
 Weiterhin `Unklar`:
