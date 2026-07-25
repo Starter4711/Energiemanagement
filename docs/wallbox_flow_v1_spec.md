@@ -68,7 +68,7 @@ Die Aktualitaet wird anhand des ioBroker-State-Zeitstempels `ts` bewertet:
 - `UNKNOWN`: State fehlt oder besitzt keinen belastbaren Zeitstempel,
 - `ERROR`: Wert ist nicht numerisch, nicht endlich oder negativ.
 
-Die Altersbewertung muss auch ohne neue Quellereignisse die Uebergaenge nach 30 und 120 Sekunden erkennen. Dafuer ist genau ein ressourcenschonender, zentraler Prueftimer zulaessig; ein Polling je Quelle ist nicht zulaessig.
+Die Altersbewertung muss auch ohne neue Quellereignisse die Uebergaenge nach 30 und 120 Sekunden erkennen. Dafuer ist genau ein ressourcenschonender, zentraler Prueftimer im Intervall von 60 Sekunden zulaessig; ein Polling je Quelle ist nicht zulaessig. Statusuebergaenge werden deshalb beim naechsten Timerlauf und spaetestens 60 Sekunden nach Ueberschreiten der jeweiligen Altersgrenze erkannt.
 
 ## Summen- und Teilausfallregel
 
@@ -80,12 +80,13 @@ Die Altersbewertung muss auch ohne neue Quellereignisse die Uebergaenge nach 30 
 - Keine Quelle `OK` oder `STALE`, aber mindestens eine `OFFLINE`: Gesamtstatus `OFFLINE`.
 - Bei mindestens einem `ERROR` und keiner `OK`-Quelle: Gesamtstatus `ERROR`.
 - Wenn keine Quelle fachlich bewertbar ist: Gesamtstatus `UNKNOWN`.
+- Eindeutige Prioritaet ohne `OK`-Quelle: `ERROR` vor `STALE`, `STALE` vor `OFFLINE`, `OFFLINE` vor `UNKNOWN`.
 
 ## Trigger- und Ressourcenmodell
 
 - Quellstates werden beim Modulstart eingelesen.
 - Jede Quellaenderung loest nur die Bewertung der betroffenen Quelle und danach die Gesamtsicht aus.
-- Ein zentraler Prueftimer bewertet ausschliesslich notwendige Zeituebergaenge.
+- Ein zentraler Prueftimer im Intervall von 60 Sekunden bewertet ausschliesslich notwendige Zeituebergaenge.
 - EOS-States werden nur bei Wertaenderung geschrieben.
 - Logging erfolgt nur bei Statuswechseln oder erstmaligen Fehlern.
 - Eine zuschaltbare Debug-Logebene ist vorzusehen.
@@ -117,7 +118,7 @@ Es darf nicht:
 7. `OFFLINE` tritt nach mehr als 120 Sekunden ein.
 8. Fehlende oder ungueltige Quellen liefern numerisch 0 W und einen nicht-`OK`-Status.
 9. Teilausfall liefert die Summe der verfuegbaren `OK`-Quellen und Gesamtstatus `DEGRADED`.
-10. Das Modul ist ereignisgetrieben und verwendet hoechstens einen zentralen Alterstimer.
+10. Das Modul ist ereignisgetrieben und verwendet genau einen zentralen Alterstimer mit 60 Sekunden Intervall.
 11. Es schreibt nur bei Wertaenderung.
 12. Es existiert keine Aktorik und keine Aenderung an `Energy_Flow_V1.js`.
 13. Syntax-, State-Modell-, Fehler-, Neustart- und Recovery-Pruefungen sind erfolgreich.
