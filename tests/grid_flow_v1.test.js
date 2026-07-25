@@ -109,19 +109,19 @@ assert.ok(intervalCallback, 'central age timer missing');
 intervalCallback();
 
 for (const id of [...definitions.keys()]) {
-    if (id.startsWith(`.`)) {
+    if (id.startsWith(root + ".")) {
         definitions.delete(id);
         eosStates.delete(id);
     }
 }
 intervalCallback();
 
-assert.strictEqual(value(`.Sources.Grid40.DeviceInstance`), 40);
-assert.strictEqual(value(`.Sources.Grid41.DeviceInstance`), 41);
-assert.strictEqual(value(`.Sources.Grid43.DeviceInstance`), 43);
-assert.strictEqual(value(`.Sources.Grid40.Status`), 'OFFLINE');
-assert.strictEqual(value(`.Sources.Grid41.Status`), 'OFFLINE');
-assert.strictEqual(value(`.Sources.Grid43.Status`), 'OFFLINE');
+assert.strictEqual(value(root + ".Sources.Grid40.DeviceInstance"), 40);
+assert.strictEqual(value(root + ".Sources.Grid41.DeviceInstance"), 41);
+assert.strictEqual(value(root + ".Sources.Grid43.DeviceInstance"), 43);
+assert.strictEqual(value(root + ".Sources.Grid40.Status"), 'OFFLINE');
+assert.strictEqual(value(root + ".Sources.Grid41.Status"), 'OFFLINE');
+assert.strictEqual(value(root + ".Sources.Grid43.Status"), 'OFFLINE');
 assert.strictEqual([...definitions.keys()].some(id => id.includes('.Summary.')), false);
 
 console.log('Grid_Flow_V1 tests passed.');
