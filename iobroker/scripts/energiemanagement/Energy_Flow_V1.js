@@ -7,12 +7,12 @@
 
 const ROOT = '0_userdata.0.EOS.EnergyFlow';
 const BATTERY_ROOT = '0_userdata.0.EOS.Battery';
-const BILANZ_ROOT = '0_userdata.0.Energiemanagement.Bilanz';
+const GRID_ROOT = '0_userdata.0.EOS.Grid';
 const WALLBOX_ROOT = '0_userdata.0.EOS.Wallbox';
 const PV_ROOT = '0_userdata.0.EOS.PV';
 
 const CONFIG = {
-    version: '1.3.1',
+    version: '1.4.0',
     logLevel: 'info',
     debugEnabled: false,
     refreshDebounceMs: 50,
@@ -33,27 +33,75 @@ const LEVEL_PRIORITY = {
 
 const STATES = [
     {
-        id: `${ROOT}.Grid.Power`,
+        id: `${ROOT}.Grid.Grid40.Power`,
         type: 'number',
         role: 'value.power',
         unit: 'W',
-        desc: 'Konsolidierte Netzleistung',
+        desc: 'Netzleistung Grid40',
         defaultValue: CONFIG.defaults.number,
     },
     {
-        id: `${ROOT}.Grid.Status`,
+        id: `${ROOT}.Grid.Grid40.Status`,
         type: 'string',
         role: 'text',
         unit: '',
-        desc: 'Status der Netzsicht',
+        desc: 'Status der Netzsicht Grid40',
         defaultValue: CONFIG.defaults.string,
     },
     {
-        id: `${ROOT}.Grid.LastUpdate`,
+        id: `${ROOT}.Grid.Grid40.LastUpdate`,
         type: 'number',
         role: 'date',
         unit: '',
-        desc: 'Zeitpunkt der letzten Grid-Bewertung',
+        desc: 'Zeitpunkt der letzten Bewertung Grid40',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Grid.Grid41.Power`,
+        type: 'number',
+        role: 'value.power',
+        unit: 'W',
+        desc: 'Netzleistung Grid41',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Grid.Grid41.Status`,
+        type: 'string',
+        role: 'text',
+        unit: '',
+        desc: 'Status der Netzsicht Grid41',
+        defaultValue: CONFIG.defaults.string,
+    },
+    {
+        id: `${ROOT}.Grid.Grid41.LastUpdate`,
+        type: 'number',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten Bewertung Grid41',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Grid.Grid43.Power`,
+        type: 'number',
+        role: 'value.power',
+        unit: 'W',
+        desc: 'Netzleistung Grid43',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Grid.Grid43.Status`,
+        type: 'string',
+        role: 'text',
+        unit: '',
+        desc: 'Status der Netzsicht Grid43',
+        defaultValue: CONFIG.defaults.string,
+    },
+    {
+        id: `${ROOT}.Grid.Grid43.LastUpdate`,
+        type: 'number',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten Bewertung Grid43',
         defaultValue: CONFIG.defaults.number,
     },
     {
@@ -368,30 +416,16 @@ function updateGroup(name, payload) {
     writeChanged(`${ROOT}.${name}.LastUpdate`, Number.isFinite(payload.lastUpdate) ? payload.lastUpdate : Date.now());
 }
 
-function readGridSnapshot() {
-    const gridPower = readNumber(`${BILANZ_ROOT}.Summe_W`);
-    const gridValidState = existsState(`${BILANZ_ROOT}.Gueltig`)
-        ? getState(`${BILANZ_ROOT}.Gueltig`)
-        : null;
-    const gridValid = Boolean(gridValidState && gridValidState.val === true);
-    const gridError = normalizeStatus(readString(`${BILANZ_ROOT}.Fehler`));
-
-    let status = 'UNKNOWN';
-    if (gridValid) {
-        status = 'OK';
-    } else if (gridError !== 'UNKNOWN' && gridError !== '') {
-        status = 'ERROR';
-    } else if (isKnownNumber(gridPower)) {
-        status = 'WARNING';
-    }
+function readGridSnapshot(name) {
+    const power = readNumber(`${GRID_ROOT}.Sources.${name}.Power`);
+    const status = normalizeStatus(readString(`${GRID_ROOT}.Sources.${name}.Status`));
+    const lastUpdate = readNumber(`${GRID_ROOT}.Sources.${name}.LastUpdate`);
 
     return {
-        power: gridPower,
+        power: isKnownNumber(power) ? power : 0,
         status,
-        lastUpdate: gridValidState && Number.isFinite(Number(gridValidState.ts))
-            ? Number(gridValidState.ts)
-            : Date.now(),
         communication: status,
+        lastUpdate: isKnownNumber(lastUpdate) ? lastUpdate : Date.now(),
     };
 }
 
@@ -452,15 +486,29 @@ function readWallboxSnapshot() {
 }
 
 function refresh() {
-    const grid = readGridSnapshot();
+    const grid40 = readGridSnapshot('Grid40');
+    const grid41 = readGridSnapshot('Grid41');
+    const grid43 = readGridSnapshot('Grid43');
     const battery = readBatterySnapshot();
     const pv = readPVSnapshot();
     const wallbox = readWallboxSnapshot();
 
-    updateGroup('Grid', {
-        status: grid.status,
-        power: grid.power,
-        lastUpdate: grid.lastUpdate,
+    updateGroup('Grid.Grid40', {
+        status: grid40.status,
+        power: grid40.power,
+        lastUpdate: grid40.lastUpdate,
+    });
+
+    updateGroup('Grid.Grid41', {
+        status: grid41.status,
+        power: grid41.power,
+        lastUpdate: grid41.lastUpdate,
+    });
+
+    updateGroup('Grid.Grid43', {
+        status: grid43.status,
+        power: grid43.power,
+        lastUpdate: grid43.lastUpdate,
     });
 
     updateGroup('PV', {
@@ -490,7 +538,9 @@ function refresh() {
     });
 
     const timeoutCount = [
-        grid.communication,
+        grid40.communication,
+        grid41.communication,
+        grid43.communication,
         battery.communication,
         pv.communication,
         'UNKNOWN',
@@ -499,9 +549,9 @@ function refresh() {
         .filter(status => !isCommunicationOK(status))
         .length;
 
-    writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([grid.status, pv.status, battery.status, wallbox.status]));
+    writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([grid40.status, grid41.status, grid43.status, pv.status, battery.status, wallbox.status]));
     writeChanged(`${ROOT}.Summary.LastUpdate`, Date.now());
-    writeChanged(`${ROOT}.Communication.OverallStatus`, buildCommunicationStatus([grid.communication, pv.communication, battery.communication, wallbox.communication]));
+    writeChanged(`${ROOT}.Communication.OverallStatus`, buildCommunicationStatus([grid40.communication, grid41.communication, grid43.communication, pv.communication, battery.communication, wallbox.communication]));
     writeChanged(`${ROOT}.Communication.TimeoutCount`, timeoutCount);
     writeChanged(`${ROOT}.Communication.LastUpdate`, Date.now());
 }
@@ -520,9 +570,15 @@ function scheduleRefresh() {
 
 function subscribeToSources() {
     const sourceIds = [
-        `${BILANZ_ROOT}.Summe_W`,
-        `${BILANZ_ROOT}.Gueltig`,
-        `${BILANZ_ROOT}.Fehler`,
+        `${GRID_ROOT}.Sources.Grid40.Power`,
+        `${GRID_ROOT}.Sources.Grid40.Status`,
+        `${GRID_ROOT}.Sources.Grid40.LastUpdate`,
+        `${GRID_ROOT}.Sources.Grid41.Power`,
+        `${GRID_ROOT}.Sources.Grid41.Status`,
+        `${GRID_ROOT}.Sources.Grid41.LastUpdate`,
+        `${GRID_ROOT}.Sources.Grid43.Power`,
+        `${GRID_ROOT}.Sources.Grid43.Status`,
+        `${GRID_ROOT}.Sources.Grid43.LastUpdate`,
         `${BATTERY_ROOT}.Summary.Power`,
         `${BATTERY_ROOT}.Summary.SOC`,
         `${BATTERY_ROOT}.Summary.Status`,
