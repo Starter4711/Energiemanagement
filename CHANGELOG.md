@@ -1,6 +1,11 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Changed
+  - zentralen Alterstimer fuer `Wallbox_Flow_V1` auf ein ressourcenschonendes Intervall von 60 Sekunden festgelegt
+  - Statusprioritaet bei gleichzeitig unterschiedlichen Quellfehlern eindeutig definiert
+
+## 2026-07-25
 - Added
   - Requirement, Architekturentscheidung, Spezifikation und State-Modell fuer `Wallbox_Flow_V1` ergänzt
   - positive Wallboxleistung als Energiefluss ins Auto, Aktivschwelle 100 W sowie 30/120-Sekunden-Aktualitaetsgrenzen festgelegt
