@@ -1,6 +1,12 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Changed
+  - EOS-Dokumentationsbaseline auf den aktuellen GitHub-Stand konsolidiert
+  - tote und veraltete Dokumentverweise korrigiert
+  - Gate 1 als abgeschlossen und weitere Codegenerierung als modulbezogen freigabepflichtig gekennzeichnet
+
+## 2026-07-25
 - Added
   - repositorybasierte Quellenanalyse für PV, House und Wallbox ergänzt
   - keine produktive Logik geändert
