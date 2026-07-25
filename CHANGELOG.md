@@ -1,4 +1,14 @@
-# CHANGELOG\n\n## 2026-07-25\n- Added\n  - `Grid_Flow_V1` als read-only EOS-Verdichtung fuer Victron Grid 40, 41 und 43 implementiert\n  - getrennte numerische Leistungen, Status, Aktualitaet und rechnerischen Momentansaldo unter `0_userdata.0.EOS.Grid.*` ergaenzt\n  - automatisierten Test fuer Vorzeichen, DeviceInstances, Aktualitaet und Ausschluss von Grid 42 ergaenzt\n- Notes\n  - Grid 40 = alte Wohnung, Grid 41 = Halle, Grid 43 = Haus; Grid 42 ist kein Netz-Zaehlpunkt\n  - Modul bleibt bis Live-Test und Freigabe deaktiviert; `Energy_Flow_V1` wurde noch nicht umgeschaltet\n
+# CHANGELOG
+
+## 2026-07-25
+- Added
+  - `Grid_Flow_V1` als read-only EOS-Verdichtung fuer Victron Grid 40, 41 und 43 implementiert
+  - getrennte numerische Leistungen, Status, Aktualitaet und rechnerischen Momentansaldo unter `0_userdata.0.EOS.Grid.*` ergaenzt
+  - automatisierten Test fuer Vorzeichen, DeviceInstances, Aktualitaet und Ausschluss von Grid 42 ergaenzt
+- Notes
+  - Grid 40 = alte Wohnung, Grid 41 = Halle, Grid 43 = Haus; Grid 42 ist kein Netz-Zaehlpunkt
+  - Modul bleibt bis Live-Test und Freigabe deaktiviert; `Energy_Flow_V1` wurde noch nicht umgeschaltet
+
 ## 2026-07-25
 - Fixed
   - PV-Status `STANDBY` aus `EnergyFlow.Communication.TimeoutCount` ausgeschlossen
