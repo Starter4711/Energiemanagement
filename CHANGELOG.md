@@ -1,6 +1,16 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Changed
+  - Energy-Flow-Spezifikation und State-Modell von einem einzelnen Grid auf getrennte Bereiche Grid 40, Grid 41 und Grid 43 umgestellt
+  - exaktes Mapping auf `0_userdata.0.EOS.Grid.Sources.Grid40|Grid41|Grid43.*` festgelegt
+- Removed from target model
+  - `EnergyFlow.Grid.Power`, `.Status` und `.LastUpdate` als fachlich ungueltige Einzel-Grid-Sicht
+- Notes
+  - keine Grid-Summierung, Grid 42 ausgeschlossen und RS450 keinem Grid zugeordnet
+  - reine Dokumentationsaenderung; kein Code- oder Live-Deployment
+
+## 2026-07-25
 - Deployed
   - korrigiertes `Grid_Flow_V1` 1.0.2 mit createState-basierter Selbstheilung live eingespielt und aktiv belassen
 - Tested
