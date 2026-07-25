@@ -73,8 +73,8 @@ ageCallback();
 assert.strictEqual(value(`${root}.Sources.FroniusHalle.Power`), 0);
 assert.strictEqual(value(`${root}.Sources.FroniusHalle.Status`), 'OFFLINE');
 assert.strictEqual(value(`${root}.Summary.Status`), 'DEGRADED');
-assert.strictEqual(value(`${root}.Summary.ACPower`), 4000);
-assert.strictEqual(value(`${root}.Summary.TotalPower`), 4500);
+assert.strictEqual(value(`${root}.Summary.ACPower`), 3500);
+assert.strictEqual(value(`${root}.Summary.TotalPower`), 4000);
 
 raw.set(ids.rs1, { val: -1, ts: Date.now() });
 subscriptions.get(ids.rs1)({ state: raw.get(ids.rs1) });
