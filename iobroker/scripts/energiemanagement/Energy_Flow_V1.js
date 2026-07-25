@@ -8,9 +8,10 @@
 const ROOT = '0_userdata.0.EOS.EnergyFlow';
 const BATTERY_ROOT = '0_userdata.0.EOS.Battery';
 const BILANZ_ROOT = '0_userdata.0.Energiemanagement.Bilanz';
+const WALLBOX_ROOT = '0_userdata.0.EOS.Wallbox';
 
 const CONFIG = {
-    version: '1.1.0',
+    version: '1.2.0',
     logLevel: 'info',
     debugEnabled: false,
     refreshDebounceMs: 50,
@@ -293,7 +294,7 @@ function normalizeStatus(value) {
     if (normalized === 'INITIALIZING' || normalized === 'OK' || normalized === 'WARNING' || normalized === 'ERROR' || normalized === 'INVALID') {
         return normalized;
     }
-    if (normalized === 'WARN') {
+    if (normalized === 'WARN' || normalized === 'DEGRADED' || normalized === 'STALE') {
         return 'WARNING';
     }
     if (normalized === 'OFFLINE') {
@@ -407,9 +408,25 @@ function readBatterySnapshot() {
     };
 }
 
+function readWallboxSnapshot() {
+    const power = readNumber(`${WALLBOX_ROOT}.Summary.Power`);
+    const active = readBoolean(`${WALLBOX_ROOT}.Summary.Active`);
+    const status = normalizeStatus(readString(`${WALLBOX_ROOT}.Summary.Status`));
+    const lastUpdate = readNumber(`${WALLBOX_ROOT}.Summary.LastUpdate`);
+
+    return {
+        power,
+        active,
+        status,
+        communication: status,
+        lastUpdate: isKnownNumber(lastUpdate) ? lastUpdate : Date.now(),
+    };
+}
+
 function refresh() {
     const grid = readGridSnapshot();
     const battery = readBatterySnapshot();
+    const wallbox = readWallboxSnapshot();
 
     updateGroup('Grid', {
         status: grid.status,
@@ -437,10 +454,10 @@ function refresh() {
     });
 
     updateGroup('Wallbox', {
-        status: 'UNKNOWN',
-        power: null,
-        active: false,
-        lastUpdate: Date.now(),
+        status: wallbox.status,
+        power: wallbox.power,
+        active: wallbox.active,
+        lastUpdate: wallbox.lastUpdate,
     });
 
     const timeoutCount = [
@@ -448,14 +465,14 @@ function refresh() {
         battery.communication,
         'UNKNOWN',
         'UNKNOWN',
-        'UNKNOWN',
+        wallbox.communication,
     ]
         .filter(status => normalizeStatus(status) !== 'OK')
         .length;
 
-    writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([grid.status, battery.status]));
+    writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([grid.status, battery.status, wallbox.status]));
     writeChanged(`${ROOT}.Summary.LastUpdate`, Date.now());
-    writeChanged(`${ROOT}.Communication.OverallStatus`, buildCommunicationStatus([grid.communication, battery.communication]));
+    writeChanged(`${ROOT}.Communication.OverallStatus`, buildCommunicationStatus([grid.communication, battery.communication, wallbox.communication]));
     writeChanged(`${ROOT}.Communication.TimeoutCount`, timeoutCount);
     writeChanged(`${ROOT}.Communication.LastUpdate`, Date.now());
 }
@@ -485,6 +502,10 @@ function subscribeToSources() {
         `${BATTERY_ROOT}.Communication.Gobel.Status`,
         `${BATTERY_ROOT}.Communication.Heltec.Status`,
         `${BATTERY_ROOT}.Communication.MQTT.Status`,
+        `${WALLBOX_ROOT}.Summary.Power`,
+        `${WALLBOX_ROOT}.Summary.Active`,
+        `${WALLBOX_ROOT}.Summary.Status`,
+        `${WALLBOX_ROOT}.Summary.LastUpdate`,
     ];
 
     for (const id of sourceIds) {
