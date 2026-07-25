@@ -4,6 +4,17 @@
 
 Dieses Dokument konsolidiert das verifizierte architektonische Zielbild des EOS – Energy Operating System. Es ersetzt keine Fachspezifikation. Nicht belegte Punkte bleiben `Unklar`.
 
+## Dokumentationsentscheidung
+
+Dieses Masterdokument bildet zwei klar getrennte Ebenen ab:
+
+1. den fachlich freigegebenen und im Repository belegten Ist-Stand,
+2. die langfristige Zielarchitektur als strukturellen Orientierungsrahmen.
+
+Die Zielarchitektur ist keine Implementierungsfreigabe. Geplante, aber noch nicht spezifizierte oder freigegebene Module werden ausdrücklich als `Zielbild – nicht freigegeben` gekennzeichnet. Aus ihrer Nennung darf weder ein Codex-Auftrag noch eine technische Umsetzung abgeleitet werden.
+
+Damit bleibt das Dokument vollständig genug für langfristige Architekturarbeit, ohne offene Punkte als bereits beschlossen darzustellen.
+
 ## Quellenhierarchie
 
 1. `AGENTS.md`
@@ -262,17 +273,50 @@ Freigegeben und dokumentiert:
 
 Der in `knowledge/project_brain.md` dokumentierte letzte freigegebene Commit ist `273b4f13e51b88237c58d7247326eb34cc0b2c89`.
 
+## Zielarchitektur – nicht freigegeben
+
+Die folgenden Bausteine bilden den langfristigen strukturellen Orientierungsrahmen. Sie sind weder implementiert noch automatisch zur Umsetzung freigegeben.
+
+### Domaenenmodule
+
+- Battery: Schutznahe Verdichtung, Kommunikation, Health und spaetere freigegebene Betriebsbewertung.
+- Energy Flow: Vollstaendige read-only Gesamtsicht auf Grid, PV, Battery, House und Wallbox.
+- Generation: Konsolidierung von AC-PV, DC-PV, MPPT und Erzeugerstatus.
+- Consumption: Fachliche Verdichtung von Haus-, Hallen-, Pool- und sonstigen Verbrauchern.
+- Wallbox: Batterie- und PV-bewusste Koordination innerhalb expliziter Grenzen.
+- Pool: Zeit-, Temperatur- und Ueberschusskoordination unter Beruecksichtigung der Gesamtstrategie.
+
+### Querschnittsmodule
+
+- Communication: Einheitliche Erreichbarkeits-, Alters- und Fehlerbewertung aller EOS-Quellen.
+- Health: Nicht-aktorische Zustandsbewertung je Domaene.
+- Historian: Standardisierte Uebergabe relevanter EOS-Zustaende an bestehende Historisierung; keine Doppelhaltung ohne fachlichen Grund.
+- Notification: Ableitung priorisierter Meldungen aus freigegebenen Fachzustaenden, ohne Schutzfunktionen zu ersetzen.
+- Scheduler: Koordination freigegebener Zeitplaene; keine Vermischung mit Echtzeitregelung.
+- Forecast: Wetter-, PV- oder Lastprognosen als optionale Entscheidungshilfe, niemals als Sicherheitsinstanz.
+- Optimizer: Langfristig moegliche Strategieoptimierung unter zwingendem Vorrang von Batterie, Schutz, Versorgungssicherheit und Hardwaregrenzen.
+
+### Zielregeln
+
+- Jedes Zielmodul benoetigt vor Umsetzung eine eigene Spezifikation, Requirements-Zuordnung, State-Modell, Sicherheitsabgrenzung und ausdrueckliche Freigabe.
+- Aktorische Module duerfen nur ueber kontrollierte Settings-, Sollwert- und Limitpfade wirken.
+- Read-only Module duerfen keine Aktoren schreiben.
+- Historisierung, Prognose und Optimierung bleiben von Schutz und Echtzeitregelung getrennt.
+- VIS2 darf Zielmodule darstellen und konfigurieren, aber keine eigenstaendige Fachentscheidung treffen.
+- Bestehende externe Infrastruktur wie InfluxDB oder Grafana ist nur dann EOS-Bestandteil, wenn eine konkrete Integrationsrolle dokumentiert und freigegeben wird.
+
 ## Offene Architekturgrenzen
 
 Weiterhin `Unklar`:
 
 - naechste freigegebene EOS-Modulgrenze,
-- vollstaendiges Sollbild aller kuenftigen Module,
+- konkrete Reihenfolge und Versionierung der Zielmodule,
 - EOS-interne Quellen fuer PV, House und Wallbox in Energy Flow,
 - konkrete Notabschaltungsszenarien,
-- kuenftige Prognose- und Optimierungsmodule,
+- konkrete Prognose- und Optimierungsverfahren,
 - vollstaendige Abhaengigkeitenkarte des Altbestands,
 - formale Prioritaetsregeln je Verbrauchergruppe,
-- Detailumfang kuenftiger aktorischer VIS2-Funktionen.
+- Detailumfang kuenftiger aktorischer VIS2-Funktionen,
+- verbindliche Rolle externer Historisierungs- und Analyseplattformen.
 
 Neue Architekturarbeit beginnt erst nach expliziter fachlicher Freigabe des jeweiligen Punktes.
