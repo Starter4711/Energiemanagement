@@ -12,7 +12,7 @@ const WALLBOX_ROOT = '0_userdata.0.EOS.Wallbox';
 const PV_ROOT = '0_userdata.0.EOS.PV';
 
 const CONFIG = {
-    version: '1.3.0',
+    version: '1.3.1',
     logLevel: 'info',
     debugEnabled: false,
     refreshDebounceMs: 50,
@@ -335,6 +335,11 @@ function buildCompositeStatus(statuses) {
     return filtered[0] || 'UNKNOWN';
 }
 
+function isCommunicationOK(status) {
+    const normalized = normalizeStatus(status);
+    return normalized === 'OK' || normalized === 'STANDBY';
+}
+
 function buildCommunicationStatus(statuses) {
     const normalized = statuses.map(normalizeStatus);
     if (normalized.some(status => status === 'ERROR')) {
@@ -491,7 +496,7 @@ function refresh() {
         'UNKNOWN',
         wallbox.communication,
     ]
-        .filter(status => normalizeStatus(status) !== 'OK')
+        .filter(status => !isCommunicationOK(status))
         .length;
 
     writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([grid.status, pv.status, battery.status, wallbox.status]));
