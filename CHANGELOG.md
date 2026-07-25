@@ -1,6 +1,19 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Rolled back
+  - `Grid_Flow_V1` 1.0.2 nach fehlgeschlagenem Selbstheilungs-Livetest auf 1.0.1 zurückgesetzt
+  - GitHub-Skript, Objekt, Test und Spezifikation auf den sicheren 1.0.1-Stand zurückgesetzt
+- Root cause
+  - `setObjectNotExists` ist in der produktiven javascript.0-Sandbox nicht definiert; 1.0.2 startete deshalb nicht
+- Verified
+  - Live-Skript 1.0.1 aktiv; gelöschter Test-State `Grid40.AgeSeconds` nach Skriptneustart wieder vorhanden
+- Backup
+  - `/opt/iobroker/backups/eos/20260725T194700Z_Grid_Flow_V1_before_selfheal_test.json`
+- Notes
+  - keine manuelle Objektlöschung erforderlich; Selbstheilung bleibt erneut zu implementieren
+
+## 2026-07-25
 - Added
   - `Grid_Flow_V1` 1.0.2 um Selbstheilung des vollständigen Root-, Channel- und State-Baums im bestehenden 60-Sekunden-Zyklus erweitert
   - automatisierten Lösch- und Wiederanlagetest für Grid 40, 41 und 43 ergänzt
