@@ -127,7 +127,7 @@ Status:
 - `Battery V1 Release Status` dokumentiert den freigegebenen Stand der Batteriekomponenten und den naechsten fachlichen Freigabeschritt.
 - `Energy Flow V1` ist als erster produktiver EOS-Baustein implementiert und bleibt read-only.
 - `Energy Flow V1` nutzt fuer Grid die dokumentierte EOS-interne Bilanzsicht und bleibt von Rohpfaden getrennt.
-- Grid und Battery sind aktiv angebunden. Die Wallbox-Anbindung an die getestete EOS-Wallbox-Summary ist im Repository implementiert; PV und House bleiben `UNKNOWN`. Review und Live-Deployment der Energy-Flow-Wallbox-Anbindung sind noch offen.
+- Grid, Battery und Wallbox sind aktiv angebunden. Die read-only PV-Anbindung an `0_userdata.0.EOS.PV.Summary.*` ist in Energy Flow 1.3.0 implementiert und getestet, aber noch nicht live deployed; House bleibt `UNKNOWN`.
 - `Energy_Flow_V1` arbeitet ereignisgetrieben, vermeidet Polling und verwendet fuer `LastUpdate` Millisekunden-Timestamps.
 - Der Repository-Stand allein erzeugt keine sichtbaren ioBroker-Objekte; fuer Sichtbarkeit ist ein Import- oder Deployment-Schritt erforderlich.
 - `docs/iobroker_deployment_v1.md` dokumentiert den manuellen Importweg und die Sichtpruefung im ioBroker.
