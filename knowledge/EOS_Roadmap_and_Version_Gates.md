@@ -113,7 +113,7 @@ Vor Codex zwingend zu klaeren:
 
 ### Gate 2a: Wallbox Flow V1
 
-Status: `Spezifiziert – Implementierung noch nicht beauftragt`
+Status: `Implementiert – Review und Deployment offen`
 
 Festgelegt sind:
 
@@ -127,7 +127,7 @@ Festgelegt sind:
 - `DEGRADED` bei Teilausfall,
 - read-only State-Modell unter `0_userdata.0.EOS.Wallbox.*`.
 
-Vor der spaeteren Anbindung an Energy Flow sind Implementierung, Tests, Review und Freigabe erforderlich.
+Vor der spaeteren Anbindung an Energy Flow sind erfolgreicher technischer Test, unabhaengiger Review, Freigabe und kontrolliertes Deployment erforderlich.
 
 ### Gate 3: Energy Flow VIS2 Read-Only
 
