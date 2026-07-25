@@ -1,6 +1,15 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Deployed
+  - `PV_Flow_V1` 1.0.1 und `Energy_Flow_V1` 1.3.0 nach Freigabe live aktiviert
+  - PV-AC, PV-DC, Gesamtleistung und `STANDBY` bis Energy Flow erfolgreich validiert
+- Changed
+  - PV-Skriptobjekt und Manifest auf `enabled: true` synchronisiert
+- Backup
+  - vorherige PV- und Energy-Flow-Skriptobjekte unter `/opt/iobroker/backups/eos/20260725T210000Z_*_before_pv_integration.json` gesichert
+
+## 2026-07-25
 - Added
   - `Energy_Flow_V1` 1.3.0 read-only an `0_userdata.0.EOS.PV.Summary.*` angebunden
   - PV in Summary, Communication und TimeoutCount aufgenommen
