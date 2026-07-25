@@ -181,6 +181,10 @@ h2 { margin: 0 0 10px; font-size: 15px; font-weight: 750; letter-spacing: 0; }
 }
 
 @media (min-width: 1000px) {
+  .visview_Main,
+  .visview_Main .vis-view-column,
+  .visview_Main #w000001,
+  .visview_Main #w000001 .vis-widget-body { height: 1400px !important; min-height: 1400px !important; }
   .em-dashboard {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -224,6 +228,11 @@ h2 { margin: 0 0 10px; font-size: 15px; font-weight: 750; letter-spacing: 0; }
 }
 
 @media (max-width: 520px) {
+  .visview_Main,
+  .visview_Main .vis-view-column,
+  .visview_Main #w000001,
+  .visview_Main #w000001 .vis-widget-body { height: 2400px !important; min-height: 2400px !important; }
+  .em-dashboard { min-height: 2400px; }
   .em-wallbox-summary, .em-wallbox-grid { grid-template-columns: 1fr; }
   .em-wallbox-summary > div { border-right: 0; border-bottom: 1px solid #30383b; }
   .em-wallbox-summary > div:last-child { border-bottom: 0; }
