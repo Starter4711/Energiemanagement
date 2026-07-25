@@ -1,6 +1,15 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Added
+  - `Energy_Flow_V1` 1.3.0 read-only an `0_userdata.0.EOS.PV.Summary.*` angebunden
+  - PV in Summary, Communication und TimeoutCount aufgenommen
+  - bestehenden Integrationstest um PV-Leistung und `STANDBY` erweitert
+- Notes
+  - `EnergyFlow.PV.Power` ist ein Anzeigewert aus AC plus RS450-DC und keine Aussage ueber Netzeinspeisefaehigkeit
+  - keine Live-Aenderung; ioBroker bleibt bis zur Freigabe auf Energy Flow 1.2.2
+
+## 2026-07-25
 - Fixed
   - Logwechsel zwischen den normalen PV-Zustaenden `OK` und `STANDBY` unterdrückt
 - Tested
