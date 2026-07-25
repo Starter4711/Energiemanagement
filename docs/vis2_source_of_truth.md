@@ -6,6 +6,9 @@ Diese Datei legt fuer Battery VIS2 Read-Only V1 die fuehrende Quelle, das Export
 
 ## Fuehrende Quelle
 
+- `iobroker/vis-2/main/dashboard.html` ist die fuehrende Pflegequelle fuer die Main-Ansicht einschliesslich der read-only Wallbox-Uebersicht.
+- Die Wallbox-Uebersicht verwendet ausschliesslich `0_userdata.0.EOS.Wallbox.*` und enthaelt keine Bedien- oder Steuerpfade.
+
 - [iobroker/vis-2/main/battery.html](/Users/richardnussdorfer/Documents/GitHub/Energiemanagement/iobroker/vis-2/main/battery.html)
 
 `battery.html` ist die massgebliche Pflegequelle fuer die Batterie-Ansicht.
