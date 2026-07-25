@@ -313,7 +313,7 @@ Zukuenftige gesicherte Entscheidungen sollen in diesem Format dokumentiert werde
   Positive Leistung bedeutet Energiefluss ins Auto.
   Leistungswerte sind immer numerisch; Statuswerte sind Strings.
   Aktivitaet gilt oberhalb von 100 W.
-  `STALE` gilt nach mehr als 30 Sekunden, `OFFLINE` nach mehr als 120 Sekunden.
+  `STALE` gilt nach mehr als 30 Sekunden, `OFFLINE` nach mehr als 120 Sekunden; die Alterspruefung erfolgt zentral alle 60 Sekunden.
   Bei Teilausfall werden verfuegbare `OK`-Quellen summiert und der Gesamtstatus lautet `DEGRADED`.
   Nicht gueltige Leistungsanteile werden numerisch als 0 W ausgegeben; der Status verhindert die Interpretation als bestaetigte Nulllast.
 - Betroffene Dateien/Pfade: `knowledge/requirements.md`, `docs/wallbox_flow_v1_spec.md`, `docs/wallbox_flow_v1_state_model.md`
