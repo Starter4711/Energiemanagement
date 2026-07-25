@@ -1,6 +1,12 @@
 # CHANGELOG
 
 ## 2026-07-25
+- Tested
+  - `Wallbox_Flow_V1` kontrolliert im produktiven ioBroker mit drei erreichbaren 0-kW-Quellen getestet
+  - alle 19 EOS-Zielobjekte read-only erzeugt; Leistung numerisch, Status als String, keine Modulfehler im Log
+  - Live-Quellcode per SHA-256 gegen GitHub verifiziert und Skript nach dem Test wieder deaktiviert
+
+## 2026-07-25
 - Added
   - `Wallbox_Flow_V1.js` als read-only Verdichtung der drei belegten Wallbox-Leistungsquellen implementiert
   - ioBroker-Skriptobjekt und eigenstaendigen Test fuer Leistung, Aktivitaet, Status, Teilausfall und Offline-Verhalten ergänzt
