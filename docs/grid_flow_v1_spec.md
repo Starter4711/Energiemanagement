@@ -46,12 +46,6 @@ Je Quelle unter `0_userdata.0.EOS.Grid.Sources.Grid40|Grid41|Grid43`:
 - `ERROR`: Quellwert nicht numerisch oder nicht endlich
 - `UNKNOWN`: Quelle oder Zeitstempel fehlt
 
-## Selbstheilung
-
-Im bestehenden 60-Sekunden-Zyklus werden Root, Sources, die Channels Grid40, Grid41 und Grid43 sowie alle definierten States mit `setObjectNotExists` beziehungsweise `createState` sichergestellt.
-
-Nach einer Löschung wird der vollständige Grid-Objektbaum spätestens bei der nächsten zentralen Altersprüfung wieder angelegt und unmittelbar aus den drei Alias-Quellen befüllt. Summary-Objekte werden dabei nicht erzeugt.
-
 ## Abgrenzung
 
 - rein lesend und ereignisgesteuert
