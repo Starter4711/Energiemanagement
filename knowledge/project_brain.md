@@ -106,7 +106,7 @@ Aktuelle Module:
 - `Battery_Supervisor_V1.js`: EOS-Batteriegrundlage mit Kommunikationsueberwachung und aufbereiteter Communication-Baseline.
 - `Battery_Health_V1.js`: einfache EOS-Health-Sicht auf Basis der bestehenden Batterie- und Kommunikations-States.
 - `Energy_Flow_V1.js`: erste produktive EOS-Schicht fuer konsolidierte Energiefluesse, read-only Energy-Flow-States und ereignisgetriebene Verdichtung.
-- `Wallbox_Flow_V1.js`: read-only Quellverdichtungsmodul fuer drei Wallbox-Leistungen; kontrolliert im ioBroker getestet und standardmaessig deaktiviert. Die read-only Anbindung an `Energy_Flow_V1` 1.2.2 ist implementiert und kontrolliert live validiert; beide Module bleiben nach dem Test deaktiviert.
+- `Wallbox_Flow_V1.js`: read-only Quellverdichtungsmodul fuer drei Wallbox-Leistungen; kontrolliert im ioBroker getestet und dauerhaft aktiviert. Die read-only Anbindung an das ebenfalls dauerhaft aktive `Energy_Flow_V1` 1.2.2 ist implementiert und live validiert.
 - `Energy_Flow_V1`-Implementierungsplanung: mehrphasige Umsetzungsplanung fuer die weitere Ausarbeitung der Energy-Flow-Baseline; Grid und Battery sind angebunden, PV/House/Wallbox bleiben aktuell `UNKNOWN`.
 - `Pool_VIS2_Zeitplaene.js`: VIS-2-Zeitplan-Synchronisation mit `time-switch.0`.
 - `Codex_Access_Test.js`: Deployment-Test.
