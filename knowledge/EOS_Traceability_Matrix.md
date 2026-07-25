@@ -231,7 +231,7 @@ Status: Grid und Battery freigegeben; PV, House und Wallbox bleiben `UNKNOWN` un
 
 ### Zielmodule
 
-Generation, Consumption, Wallbox, Pool, Communication, Historian, Notification, Scheduler, Forecast und Optimizer sind in der Masterarchitektur als `Zielbild – nicht freigegeben` dokumentiert.
+Generation, Consumption, Wallbox, Pool, Communication, Historian, Notification, Scheduler, Forecast und Optimizer sind in `knowledge/EOS_Roadmap_and_Version_Gates.md` als `Zielbild – nicht freigegeben` beziehungsweise `Zurueckgestellt` dokumentiert.
 
 Status: keine Implementierungsfreigabe aus dieser Nennung ableitbar.
 
