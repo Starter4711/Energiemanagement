@@ -64,4 +64,5 @@ Der Summary-Saldo wird nur bei drei Quellen mit Status `OK` berechnet. Andernfal
 - keine Abrechnung oder 15-Minuten-Saldierung
 - keine Zuordnung des RS450 zu einem Grid-Zähler
 - keine Änderung bestehender Aliase, MQTT-Pfade oder Victron-Konfigurationen
-- noch keine Umschaltung von `Energy_Flow_V1`; diese erfolgt erst nach Test und fachlichem Review
+- `Grid_Flow_V1` ist nach erfolgreichem Live-Test dauerhaft aktiv
+- noch keine Umschaltung von `Energy_Flow_V1`; diese erfolgt erst nach eigener Freigabe
