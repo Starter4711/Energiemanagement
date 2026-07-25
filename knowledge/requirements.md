@@ -357,3 +357,38 @@ Wenn ein Punkt nicht sicher belegt ist, ist er als `Unklar` markiert.
   Prognosen duerfen Strategien beeinflussen, aber keine Sicherheitsfunktionen ersetzen
   Unklare Zustaende duerfen nicht geraten werden
 - Status: Aktiv
+
+
+## REQ-WALLBOX-FLOW-V1
+
+### Read-only Verdichtung der Wallbox-Leistungen
+
+- Beschreibung:
+  Die drei belegten Wallbox-Leistungsquellen werden in einem eigenen, nicht-aktorischen EOS-Modul nach W normiert, hinsichtlich Aktualitaet bewertet und zu einer stabilen Gesamtleistung verdichtet.
+- Begruendung:
+  `Energy_Flow_V1` darf keine direkten Adapter-, MQTT- oder Hardware-Rohpfade lesen. Die vorhandenen Wallbox-Aliasse benoetigen daher eine vorgelagerte stabile EOS-Schnittstelle.
+- Prioritaet: Hoch
+- Betroffene Komponenten:
+  `Wallbox_Flow_V1`
+  EOS-Wallbox-State-Modell
+  spaetere Energy-Flow-Anbindung
+  spaetere VIS2-Anzeige
+- Fachliche Regeln:
+  Positive Leistung bedeutet Energiefluss ins Auto.
+  Leistungswerte sind ausschliesslich numerisch.
+  Statuswerte sind Strings.
+  Aktivitaet beginnt oberhalb von 100 W.
+  `STALE` gilt nach mehr als 30 Sekunden.
+  `OFFLINE` gilt nach mehr als 120 Sekunden.
+  Teilausfaelle werden als `DEGRADED` sichtbar.
+  Nicht gueltige Quellen tragen 0 W zur Summe bei und duerfen nicht als bestaetigte Nulllast gelten.
+- Verknuepfte Design Principles:
+  EOS-States bilden die stabile Fachschnittstelle.
+  Berechnete EOS-States sind read-only.
+  Ressourcenschonung hat Vorrang.
+  Unklare Zustaende duerfen nicht geraten werden.
+- Spezifikation:
+  `docs/wallbox_flow_v1_spec.md`
+- State-Modell:
+  `docs/wallbox_flow_v1_state_model.md`
+- Status: Aktiv; Spezifikation abgeschlossen, Implementierung noch nicht beauftragt
