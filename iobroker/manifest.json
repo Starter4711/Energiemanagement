@@ -646,7 +646,7 @@
       "name": "Grid_Flow_V1",
       "type": "script",
       "engineType": "Javascript/js",
-      "enabled": false,
+      "enabled": true,
       "objectFile": "iobroker/objects/energiemanagement.Grid_Flow_V1.json",
       "scriptFile": "iobroker/scripts/energiemanagement/Grid_Flow_V1.js"
     }
