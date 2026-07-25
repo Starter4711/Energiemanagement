@@ -1,5 +1,5 @@
 {
-  "count": 70,
+  "count": 71,
   "exportedAt": "2026-07-07T17:54:47.083662+00:00",
   "objects": [
     {
@@ -631,6 +631,15 @@
       "enabled": true,
       "objectFile": "iobroker/objects/energiemanagement.Pool_VIS2_Zeitplaene.json",
       "scriptFile": "iobroker/scripts/energiemanagement/Pool_VIS2_Zeitplaene.js"
+    },
+    {
+      "id": "script.js.energiemanagement.PV_Flow_V1",
+      "name": "PV_Flow_V1",
+      "type": "script",
+      "engineType": "Javascript/js",
+      "enabled": false,
+      "objectFile": "iobroker/objects/energiemanagement.PV_Flow_V1.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/PV_Flow_V1.js"
     }
   ]
 }
