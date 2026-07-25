@@ -9,9 +9,10 @@ const ROOT = '0_userdata.0.EOS.EnergyFlow';
 const BATTERY_ROOT = '0_userdata.0.EOS.Battery';
 const BILANZ_ROOT = '0_userdata.0.Energiemanagement.Bilanz';
 const WALLBOX_ROOT = '0_userdata.0.EOS.Wallbox';
+const PV_ROOT = '0_userdata.0.EOS.PV';
 
 const CONFIG = {
-    version: '1.2.2',
+    version: '1.3.0',
     logLevel: 'info',
     debugEnabled: false,
     refreshDebounceMs: 50,
@@ -417,6 +418,19 @@ function readBatterySnapshot() {
     };
 }
 
+function readPVSnapshot() {
+    const power = readNumber(`${PV_ROOT}.Summary.TotalPower`);
+    const status = normalizeStatus(readString(`${PV_ROOT}.Summary.Status`));
+    const lastUpdate = readNumber(`${PV_ROOT}.Summary.LastUpdate`);
+
+    return {
+        power,
+        status,
+        communication: status,
+        lastUpdate: isKnownNumber(lastUpdate) ? lastUpdate : Date.now(),
+    };
+}
+
 function readWallboxSnapshot() {
     const power = readNumber(`${WALLBOX_ROOT}.Summary.Power`);
     const active = readBoolean(`${WALLBOX_ROOT}.Summary.Active`);
@@ -435,6 +449,7 @@ function readWallboxSnapshot() {
 function refresh() {
     const grid = readGridSnapshot();
     const battery = readBatterySnapshot();
+    const pv = readPVSnapshot();
     const wallbox = readWallboxSnapshot();
 
     updateGroup('Grid', {
@@ -444,9 +459,9 @@ function refresh() {
     });
 
     updateGroup('PV', {
-        status: 'UNKNOWN',
-        power: null,
-        lastUpdate: Date.now(),
+        status: pv.status,
+        power: pv.power,
+        lastUpdate: pv.lastUpdate,
     });
 
     updateGroup('Battery', {
@@ -472,16 +487,16 @@ function refresh() {
     const timeoutCount = [
         grid.communication,
         battery.communication,
-        'UNKNOWN',
+        pv.communication,
         'UNKNOWN',
         wallbox.communication,
     ]
         .filter(status => normalizeStatus(status) !== 'OK')
         .length;
 
-    writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([grid.status, battery.status, wallbox.status]));
+    writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([grid.status, pv.status, battery.status, wallbox.status]));
     writeChanged(`${ROOT}.Summary.LastUpdate`, Date.now());
-    writeChanged(`${ROOT}.Communication.OverallStatus`, buildCommunicationStatus([grid.communication, battery.communication, wallbox.communication]));
+    writeChanged(`${ROOT}.Communication.OverallStatus`, buildCommunicationStatus([grid.communication, pv.communication, battery.communication, wallbox.communication]));
     writeChanged(`${ROOT}.Communication.TimeoutCount`, timeoutCount);
     writeChanged(`${ROOT}.Communication.LastUpdate`, Date.now());
 }
@@ -511,6 +526,9 @@ function subscribeToSources() {
         `${BATTERY_ROOT}.Communication.Gobel.Status`,
         `${BATTERY_ROOT}.Communication.Heltec.Status`,
         `${BATTERY_ROOT}.Communication.MQTT.Status`,
+        `${PV_ROOT}.Summary.TotalPower`,
+        `${PV_ROOT}.Summary.Status`,
+        `${PV_ROOT}.Summary.LastUpdate`,
         `${WALLBOX_ROOT}.Summary.Power`,
         `${WALLBOX_ROOT}.Summary.Active`,
         `${WALLBOX_ROOT}.Summary.Status`,
