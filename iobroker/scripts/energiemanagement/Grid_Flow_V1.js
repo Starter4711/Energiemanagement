@@ -8,7 +8,7 @@
 const ROOT = '0_userdata.0.EOS.Grid';
 
 const CONFIG = {
-    version: '1.0.1',
+    version: '1.0.2',
     logLevel: 'info',
     debugEnabled: false,
     staleAfterSeconds: 30,
@@ -44,6 +44,15 @@ const SOURCES = [
     },
 ];
 
+const CHANNEL_DEFINITIONS = [
+    { id: ROOT, name: 'Grid' },
+    { id: `.Sources`, name: 'Sources' },
+    ...SOURCES.map(source => ({
+        id: `.Sources.`,
+        name: source.name,
+    })),
+];
+
 const STATE_DEFINITIONS = [];
 
 for (const source of SOURCES) {
@@ -72,6 +81,14 @@ function emit(level, message) {
     }
 }
 
+function createGridChannel(definition) {
+    setObjectNotExists(definition.id, {
+        type: 'channel',
+        common: { name: definition.name },
+        native: {},
+    });
+}
+
 function createGridState(definition) {
     createState(definition.id, definition.defaultValue, {
         name: definition.id.split('.').pop(),
@@ -81,6 +98,15 @@ function createGridState(definition) {
         read: true,
         write: false,
     });
+}
+
+function ensureObjectTree() {
+    for (const definition of CHANNEL_DEFINITIONS) {
+        createGridChannel(definition);
+    }
+    for (const definition of STATE_DEFINITIONS) {
+        createGridState(definition);
+    }
 }
 
 function writeChanged(id, value) {
@@ -172,6 +198,7 @@ function refreshSource(source, state, now) {
 }
 
 function refreshAll() {
+    ensureObjectTree();
     const now = Date.now();
     for (const source of SOURCES) {
         refreshSource(source, getState(source.id), now);
@@ -190,10 +217,7 @@ function subscribeToSources() {
 let ageTimer = null;
 
 try {
-    for (const definition of STATE_DEFINITIONS) {
-        createGridState(definition);
-    }
-
+    ensureObjectTree();
     subscribeToSources();
     refreshAll();
     ageTimer = setInterval(refreshAll, CONFIG.ageCheckIntervalMs);
