@@ -2,7 +2,7 @@
 
 ## Status
 
-Stabiles V1-Zielmodell fuer eine spaetere, ausdruecklich beauftragte Implementierung. Alle berechneten States sind read-only.
+Implementiertes V1-State-Modell im Repository; Review und Live-Deployment stehen noch aus. Alle berechneten States sind read-only.
 
 ## Root
 
