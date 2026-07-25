@@ -1,5 +1,5 @@
 {
-  "count": 69,
+  "count": 70,
   "exportedAt": "2026-07-07T17:54:47.083662+00:00",
   "objects": [
     {
@@ -595,6 +595,15 @@
       "enabled": false,
       "objectFile": "iobroker/objects/energiemanagement.Energy_Flow_V1.json",
       "scriptFile": "iobroker/scripts/energiemanagement/Energy_Flow_V1.js"
+    },
+    {
+      "id": "script.js.energiemanagement.Wallbox_Flow_V1",
+      "name": "Wallbox_Flow_V1",
+      "type": "script",
+      "engineType": "Javascript/js",
+      "enabled": false,
+      "objectFile": "iobroker/objects/energiemanagement.Wallbox_Flow_V1.json",
+      "scriptFile": "iobroker/scripts/energiemanagement/Wallbox_Flow_V1.js"
     },
     {
       "id": "script.js.energiemanagement.Codex_Access_Test",
