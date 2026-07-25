@@ -8,7 +8,7 @@
 const ROOT = '0_userdata.0.EOS.Grid';
 
 const CONFIG = {
-    version: '1.0.0',
+    version: '1.0.1',
     logLevel: 'info',
     debugEnabled: false,
     staleAfterSeconds: 30,
@@ -44,11 +44,7 @@ const SOURCES = [
     },
 ];
 
-const STATE_DEFINITIONS = [
-    { id: `${ROOT}.Summary.Power`, type: 'number', role: 'value.power', unit: 'W', defaultValue: 0 },
-    { id: `${ROOT}.Summary.Status`, type: 'string', role: 'text', unit: '', defaultValue: 'UNKNOWN' },
-    { id: `${ROOT}.Summary.LastUpdate`, type: 'number', role: 'value.time', unit: 'ms', defaultValue: 0 },
-];
+const STATE_DEFINITIONS = [];
 
 for (const source of SOURCES) {
     const sourceRoot = `${ROOT}.Sources.${source.name}`;
@@ -169,48 +165,6 @@ function writeSourceSnapshot(snapshot) {
     logStatusChange(snapshot.name, snapshot.status);
 }
 
-function buildSummaryStatus(sourceSnapshots) {
-    const statuses = sourceSnapshots.map(snapshot => snapshot.status);
-    const okCount = statuses.filter(status => status === 'OK').length;
-
-    if (okCount === SOURCES.length) {
-        return 'OK';
-    }
-    if (okCount > 0) {
-        return 'DEGRADED';
-    }
-    if (statuses.includes('ERROR')) {
-        return 'ERROR';
-    }
-    if (statuses.includes('STALE')) {
-        return 'STALE';
-    }
-    if (statuses.includes('OFFLINE')) {
-        return 'OFFLINE';
-    }
-    return 'UNKNOWN';
-}
-
-function refreshSummary(now) {
-    const sourceSnapshots = SOURCES.map(source => snapshots.get(source.name))
-        .filter(snapshot => snapshot !== undefined);
-    const status = buildSummaryStatus(sourceSnapshots);
-    const power = status === 'OK'
-        ? sourceSnapshots.reduce((sum, snapshot) => sum + snapshot.power, 0)
-        : 0;
-
-    const changed = [
-        writeChanged(`${ROOT}.Summary.Power`, power),
-        writeChanged(`${ROOT}.Summary.Status`, status),
-    ].some(Boolean);
-
-    if (changed) {
-        writeChanged(`${ROOT}.Summary.LastUpdate`, now);
-    }
-
-    logStatusChange('Summary', status);
-}
-
 function refreshSource(source, state, now) {
     const snapshot = evaluateSource(source, state, now);
     snapshots.set(source.name, snapshot);
@@ -222,7 +176,6 @@ function refreshAll() {
     for (const source of SOURCES) {
         refreshSource(source, getState(source.id), now);
     }
-    refreshSummary(now);
 }
 
 function subscribeToSources() {
