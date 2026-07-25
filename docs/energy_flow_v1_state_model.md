@@ -49,10 +49,10 @@
 
 | State | Datentyp | Einheit | read-only | Herkunft | Status |
 | --- | --- | --- | --- | --- | --- |
-| `0_userdata.0.EOS.EnergyFlow.Wallbox.Power` | Zahl | W | ja | Wallbox-/Ladewerte | geplant |
-| `0_userdata.0.EOS.EnergyFlow.Wallbox.Active` | Boolean |  | ja | Wallbox-/Ladewerte | geplant |
-| `0_userdata.0.EOS.EnergyFlow.Wallbox.Status` | Text |  | ja | Wallbox-/Ladewerte | offen |
-| `0_userdata.0.EOS.EnergyFlow.Wallbox.LastUpdate` | Zahl | ms | ja | Wallbox-/Ladewerte | geplant |
+| `0_userdata.0.EOS.EnergyFlow.Wallbox.Power` | Zahl | W | ja | `0_userdata.0.EOS.Wallbox.Summary.Power` | implementiert |
+| `0_userdata.0.EOS.EnergyFlow.Wallbox.Active` | Boolean |  | ja | `0_userdata.0.EOS.Wallbox.Summary.Active` | implementiert |
+| `0_userdata.0.EOS.EnergyFlow.Wallbox.Status` | Text |  | ja | `0_userdata.0.EOS.Wallbox.Summary.Status` | implementiert |
+| `0_userdata.0.EOS.EnergyFlow.Wallbox.LastUpdate` | Zahl | ms | ja | `0_userdata.0.EOS.Wallbox.Summary.LastUpdate` | implementiert |
 
 ## Summary
 
