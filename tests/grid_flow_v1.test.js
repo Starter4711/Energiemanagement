@@ -17,6 +17,7 @@ const rawStates = new Map([
 ]);
 const eosStates = new Map();
 const definitions = new Map();
+const channelObjects = new Map();
 const subscriptions = new Map();
 let intervalCallback = null;
 
@@ -29,6 +30,11 @@ const context = {
     String,
     Boolean,
     console,
+    setObjectNotExists(id, object) {
+        if (!channelObjects.has(id)) {
+            channelObjects.set(id, object);
+        }
+    },
     createState(id, value, common) {
         definitions.set(id, common);
         if (!eosStates.has(id)) {
@@ -69,6 +75,11 @@ function setRaw(id, val, ts) {
 }
 
 const root = '0_userdata.0.EOS.Grid';
+assert.strictEqual(channelObjects.has(root), true);
+assert.strictEqual(channelObjects.has(`${root}.Sources`), true);
+assert.strictEqual(channelObjects.has(`${root}.Sources.Grid40`), true);
+assert.strictEqual(channelObjects.has(`${root}.Sources.Grid41`), true);
+assert.strictEqual(channelObjects.has(`${root}.Sources.Grid43`), true);
 assert.strictEqual(value(`${root}.Sources.Grid40.DeviceInstance`), 40);
 assert.strictEqual(value(`${root}.Sources.Grid41.DeviceInstance`), 41);
 assert.strictEqual(value(`${root}.Sources.Grid43.DeviceInstance`), 43);
@@ -107,5 +118,32 @@ for (const id of rawStates.keys()) {
 }
 assert.ok(intervalCallback, 'central age timer missing');
 intervalCallback();
+
+for (const id of [...channelObjects.keys()]) {
+    if (id === root || id.startsWith(`${root}.`)) {
+        channelObjects.delete(id);
+    }
+}
+for (const id of [...definitions.keys()]) {
+    if (id.startsWith(`${root}.`)) {
+        definitions.delete(id);
+        eosStates.delete(id);
+    }
+}
+intervalCallback();
+
+assert.strictEqual(channelObjects.has(root), true, 'root channel must be recreated');
+assert.strictEqual(channelObjects.has(`${root}.Sources`), true, 'sources channel must be recreated');
+assert.strictEqual(channelObjects.has(`${root}.Sources.Grid40`), true, 'Grid40 channel must be recreated');
+assert.strictEqual(channelObjects.has(`${root}.Sources.Grid41`), true, 'Grid41 channel must be recreated');
+assert.strictEqual(channelObjects.has(`${root}.Sources.Grid43`), true, 'Grid43 channel must be recreated');
+assert.strictEqual(value(`${root}.Sources.Grid40.DeviceInstance`), 40);
+assert.strictEqual(value(`${root}.Sources.Grid41.DeviceInstance`), 41);
+assert.strictEqual(value(`${root}.Sources.Grid43.DeviceInstance`), 43);
+assert.strictEqual(value(`${root}.Sources.Grid40.Status`), 'OFFLINE');
+assert.strictEqual(value(`${root}.Sources.Grid41.Status`), 'OFFLINE');
+assert.strictEqual(value(`${root}.Sources.Grid43.Status`), 'OFFLINE');
+assert.strictEqual([...definitions.keys()].some(id => id.includes('.Summary.')), false);
+assert.strictEqual([...channelObjects.keys()].some(id => id.includes('.Summary')), false);
 
 console.log('Grid_Flow_V1 tests passed.');
