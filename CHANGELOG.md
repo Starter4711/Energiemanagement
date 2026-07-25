@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-07-25
+- Added
+  - repositorybasierte Quellenanalyse für PV, House und Wallbox ergänzt
+  - keine produktive Logik geändert
+  - keine Quelle ohne belastbaren Nachweis freigegeben
+
 ## 2026-07-10
 - Changed
   - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` auf eine ereignisgetriebene, read-only V1-Baseline umgestellt; `setInterval(...)` und die nicht freigegebenen Zusatzstates wurden entfernt
