@@ -101,12 +101,12 @@ Aktuelle Module:
 - `Config.js`: zentrale Konfigurations-Datenpunkte.
 - `Debug.js`: Heartbeat und Debug-Zustand.
 - `Bilanz_Zaehlpunkte.js`: saldierte Netzbilanz.
-- `Grid_Flow_V1.js`: implementierte, live validierte und dauerhaft aktive read-only EOS-Grid-Sicht ohne Summierung der getrennten Zaehlpunkte fuer Victron Grid 40 (alte Wohnung), Grid 41 (Halle) und Grid 43 (Haus); Grid 42 ist ausgeschlossen. Die Anbindung an `Energy_Flow_V1` erfolgt erst nach eigener Freigabe. Die live validierten Grid-State-Objekte werden im bestehenden 60-Sekunden-Zyklus über die produktiv unterstützte `createState`-API selbstständig wieder angelegt; Summary-Objekte bleiben ausgeschlossen.
+- `Grid_Flow_V1.js`: implementierte, live validierte und dauerhaft aktive read-only EOS-Grid-Sicht ohne Summierung der getrennten Zaehlpunkte fuer Victron Grid 40 (alte Wohnung), Grid 41 (Halle) und Grid 43 (Haus); Grid 42 ist ausgeschlossen. Die getrennte Anbindung an `Energy_Flow_V1` 1.4.0 ist implementiert und getestet, aber noch nicht live deployt. Die live validierten Grid-State-Objekte werden im bestehenden 60-Sekunden-Zyklus über die produktiv unterstützte `createState`-API selbstständig wieder angelegt; Summary-Objekte bleiben ausgeschlossen.
 - `Batterie_Zellspannungen.js`: Zellspreizung, Trend und Alarm je Pack.
 - `Batterie_BMS_Heltec_Vergleich.js`: BMS-/HELTEC-Vergleich je Pack.
 - `Battery_Supervisor_V1.js`: EOS-Batteriegrundlage mit Kommunikationsueberwachung und aufbereiteter Communication-Baseline.
 - `Battery_Health_V1.js`: einfache EOS-Health-Sicht auf Basis der bestehenden Batterie- und Kommunikations-States.
-- `Energy_Flow_V1.js`: erste produktive EOS-Schicht fuer konsolidierte Energiefluesse, read-only Energy-Flow-States und ereignisgetriebene Verdichtung.
+- `Energy_Flow_V1.js`: read-only EOS-Schicht fuer Energiefluesse; Version 1.4.0 bildet Grid 40, Grid 41 und Grid 43 getrennt und ohne Summierung ab.
 - `Wallbox_Flow_V1.js`: read-only Quellverdichtungsmodul fuer drei Wallbox-Leistungen; kontrolliert im ioBroker getestet und dauerhaft aktiviert. Die read-only Anbindung an das ebenfalls dauerhaft aktive `Energy_Flow_V1` 1.2.2 ist implementiert und live validiert.
 - `PV_Flow_V1.js`: dauerhaft aktive read-only Verdichtung von vier AC-Wechselrichtern und zwei RS450-Strings mit getrennten AC-, DC- und Gesamt-Anzeigewerten. Version 1.0.1 und die aktive Anbindung an `Energy_Flow_V1` 1.3.1 sind live validiert; RS450-Leistung bleibt reine DC-Batterieladung.
 - `Energy_Flow_V1`-Implementierungsplanung: mehrphasige Umsetzungsplanung fuer die weitere Ausarbeitung der Energy-Flow-Baseline; Grid und Battery sind angebunden, PV/House/Wallbox bleiben aktuell `UNKNOWN`.
@@ -127,8 +127,8 @@ Status:
 - `battery.html` ist die fuehrende Pflegequelle fuer die Battery-VIS2-Ansicht; `vis-views.json` ist das generierte Exportartefakt.
 - `Battery V1 Release Status` dokumentiert den freigegebenen Stand der Batteriekomponenten und den naechsten fachlichen Freigabeschritt.
 - `Energy Flow V1` ist als erster produktiver EOS-Baustein implementiert und bleibt read-only.
-- `Energy Flow V1` nutzt fuer Grid die dokumentierte EOS-interne Bilanzsicht und bleibt von Rohpfaden getrennt.
-- Grid, Battery und Wallbox sind aktiv angebunden. Die read-only PV-Anbindung an `0_userdata.0.EOS.PV.Summary.*` ist in Energy Flow 1.3.0 implementiert und getestet, aber noch nicht live deployed; House bleibt `UNKNOWN`.
+- `Energy Flow V1` 1.4.0 nutzt fuer Grid ausschließlich die getrennten EOS-Sichten `EOS.Grid.Sources.Grid40|Grid41|Grid43` und bildet keine Grid-Summe.
+- Die getrennte Grid-Anbindung ist in Energy Flow 1.4.0 implementiert und getestet, aber noch nicht live deployt; der Live-Stand bleibt bis zur Freigabe unverändert. House bleibt `UNKNOWN`.
 - `Energy_Flow_V1` arbeitet ereignisgetrieben, vermeidet Polling und verwendet fuer `LastUpdate` Millisekunden-Timestamps.
 - Der Repository-Stand allein erzeugt keine sichtbaren ioBroker-Objekte; fuer Sichtbarkeit ist ein Import- oder Deployment-Schritt erforderlich.
 - `docs/iobroker_deployment_v1.md` dokumentiert den manuellen Importweg und die Sichtpruefung im ioBroker.
