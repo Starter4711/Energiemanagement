@@ -7,6 +7,11 @@
 
 ## 2026-07-26
 - Changed
+  - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` um die zusammengefasste `Grid.Power`-Gesamtleistung bereinigt; die Grid-Sicht bleibt auf die drei Zaehlpunkte und den Status fokussiert
+  - `docs/energy_flow_v1_state_model.md` an den entfernten Grid-Aggregatwert angepasst
+
+## 2026-07-26
+- Changed
   - `docs/energy_flow_v1_implementation_review.md` auf den aktuellen Baseline-Stand ohne aktive `Summary.Direction`-Semantik aktualisiert
 
 ## 2026-07-25

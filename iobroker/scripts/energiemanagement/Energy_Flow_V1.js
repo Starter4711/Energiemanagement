@@ -31,14 +31,6 @@ const LEVEL_PRIORITY = {
 
 const STATES = [
     {
-        id: `${ROOT}.Grid.Power`,
-        type: 'number',
-        role: 'value.power',
-        unit: 'W',
-        desc: 'Konsolidierte Netzleistung',
-        defaultValue: CONFIG.defaults.number,
-    },
-    {
         id: `${ROOT}.Grid.Status`,
         type: 'string',
         role: 'text',
@@ -453,12 +445,6 @@ function readGridSnapshot() {
         Grid43: readGridMeterSnapshot('Grid43'),
     };
     const meterValues = Object.values(meters);
-    const knownPowers = meterValues
-        .map(meter => meter.power)
-        .filter(isKnownNumber);
-    const totalPower = knownPowers.length > 0
-        ? knownPowers.reduce((sum, value) => sum + value, 0)
-        : null;
     const status = buildCompositeStatus(meterValues.map(meter => meter.status));
     const lastUpdate = meterValues
         .map(meter => meter.lastUpdate)
@@ -467,7 +453,6 @@ function readGridSnapshot() {
 
     return {
         meters,
-        power: totalPower,
         status,
         lastUpdate,
         communication: buildCommunicationStatus(meterValues.map(meter => meter.communication)),
@@ -504,7 +489,6 @@ function refresh() {
 
     updateGroup('Grid', {
         status: grid.status,
-        power: grid.power,
         lastUpdate: grid.lastUpdate,
     });
 

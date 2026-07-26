@@ -19,7 +19,6 @@
 
 | State | Datentyp | Einheit | read-only | Herkunft | Status |
 | --- | --- | --- | --- | --- | --- |
-| `0_userdata.0.EOS.EnergyFlow.Grid.Power` | Zahl | W | ja | Netz-/Zaehlpunktwerte | geplant |
 | `0_userdata.0.EOS.EnergyFlow.Grid.Status` | Text |  | ja | Netz-/Zaehlpunktwerte | offen |
 | `0_userdata.0.EOS.EnergyFlow.Grid.LastUpdate` | Zahl | ms | ja | Netz-/Zaehlpunktwerte | geplant |
 
