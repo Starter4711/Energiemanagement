@@ -2,6 +2,11 @@
 
 ## 2026-07-26
 - Changed
+  - die Wallbox-Freigabe in VIS2 nutzt jetzt EOS-Helper-States unter `0_userdata.0.EOS.Wallbox.Control.*`, damit 0/1 sauber vom UI zum go-e-Signal uebersetzt werden
+  - `Wallbox_Control_V1` wurde als kleiner Übersetzungs-Helper fuer die go-e-Freigaben ergaenzt
+
+## 2026-07-26
+- Changed
   - die Wallbox-Bereichsstruktur auf der EOS-Hauptseite ist jetzt von der Batterie getrennt
   - die Wallbox-Detailziele nutzen technische VIS-Namen mit Unterstrich, damit die Navigation robuster ist
 
