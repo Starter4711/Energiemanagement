@@ -524,10 +524,10 @@ Nach erfolgreichem Einlesen aller erforderlichen Dokumente endet der Bootstrap m
 Projektkontext erfolgreich übernommen.
 
 Aktueller Fokus:
-<aktuelles Modul>
+Energy_Flow_V1 und die zugehoerige Dokumentation
 
 Nächster Schritt:
-Prüfung des zuletzt freigegebenen GitHub-Commits und Architektur-Review.
+Prüfung des zuletzt freigegebenen GitHub-Commits und gezielte Fortsetzung nur bei einem kleinen, klar begrenzten Restpunkt.
 
 Bereit für die fachliche Arbeit.
 
@@ -542,3 +542,27 @@ Es gilt dabei:
   2. Architektur-Review.
   3. Entscheidung (Freigabe/Korrektur).
   4. Sofortiger vollständiger Codex-Auftrag.
+
+## Aktueller Übergabestand
+
+Stand: 2026-07-26
+
+- Letzter freigegebener Commit für den aktuellen Energy-Flow-Stand: `4a4c5ee` und davor `0e974e5`, `c011d3d` sowie `8b3a751` fuer die Dokumentations- und Strukturfolge.
+- `Energy_Flow_V1` ist read-only, ereignisgetrieben und arbeitet aktuell mit drei separaten Grid-Zaehlpunkten (`Grid40`, `Grid41`, `Grid43`).
+- Die zusammengefasste `Grid.Power`-Gesamtleistung ist entfernt.
+- Die Energy-Flow-States legen sich bei fehlendem Objektbaum selbst wieder an.
+- PV, House und Wallbox bleiben aktuell `UNKNOWN`, bis freigegebene EOS-Lesequellen dokumentiert und angebunden sind.
+- Wallbox-States sind im Energy-Flow-State-Baum vorhanden und werden auch bei geloeschtem Objektbaum wieder angelegt.
+- Die fachlich fuehrende Informationsquelle fuer neue Chats ist weiterhin `knowledge/project_brain.md`; die Detail-Sicht steht in `docs/energy_flow_v1_spec.md` und `docs/energy_flow_v1_state_model.md`.
+- Nicht als freigegeben gelten alle noch sichtbaren Fremdänderungen im Arbeitsbaum ausserhalb der Energy-Flow- und Dokumentationsfolge.
+
+## Handoff fuer neuen Chat
+
+Ein neuer Chat muss nach dem Einlesen sofort wissen:
+
+- Dass GitHub der Referenzstand ist.
+- Dass ioBroker das Live-System ist.
+- Dass Energiefluss aktuell auf drei Grid-Zaehlpunkte plus Battery basiert.
+- Dass fehlende Energy-Flow-Objekte selbst angelegt werden.
+- Dass keine neue Aktorik, keine Rueckschreibung und keine unfreigegebenen Bilanzkuerzel verwendet werden.
+- Dass weitere Aenderungen nur klein, begrenzt und mit Changelog plus Wissensbasis erfolgen.
