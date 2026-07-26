@@ -1,8 +1,8 @@
 # Energy Flow V1 Implementation Review
 
 Hinweis:
-- Dieses Dokument beschreibt den Stand vor der aktuellen V1-Korrektur.
-- Der Repository-Stand wurde anschliessend auf eine ereignisgetriebene read-only Baseline erweitert.
+- Dieses Dokument beschreibt den damaligen Review-Stand.
+- Die aktuell dokumentierte Baseline ist eine ereignisgetriebene read-only V1-Sicht ohne aktive `Summary.Direction`-Semantik.
 
 ## Gepruefte Unterlagen
 
@@ -54,8 +54,8 @@ Positiv:
 Abweichung:
 
 - `docs/energy_flow_v1_implementation_plan.md` definiert in Phase 1 nur Battery-, Summary- und Communication-Basis.
-- `Energy_Flow_V1.js` schreibt bereits `0_userdata.0.EOS.EnergyFlow.Summary.Direction` und behandelt damit eine in Phase 3 geplante Semantik bereits in der Baseline.
-- Das ist fachlich verfrueht, weil `Summary.Direction` im State-Modell zwar vorgesehen, in der Implementierungsplanung aber nicht als Teil des minimal lauffaehigen Phase-1-Umfangs definiert ist.
+- Die Baseline wird durch diesen Dokumentationsstand nicht mehr um eine aktive `Summary.Direction`-Semantik erweitert.
+- Damit bleibt die aktuelle Phase-1-Basis auf den minimalen Umfang beschraenkt.
 
 ### 3. Zusätzliche Architektur- und Konsistenzprüfung
 
@@ -67,8 +67,7 @@ Positiv:
 
 Risiko:
 
-- `Grid`, `PV`, `House` und `Wallbox` werden bereits als eigene Energiesicht- und Kommunikationsbereiche angelegt, obwohl die Baseline inhaltlich noch nur Battery-verdichtet arbeitet.
-- Das ist nicht direkt falsch, macht die Baseline aber breiter als den im Plan beschriebenen minimal lauffaehigen Phase-1-Kern.
+- Die Review bleibt als historische Einordnung sinnvoll, auch wenn der konkrete Kritikpunkt zu `Summary.Direction` fuer die aktuelle Baseline nicht mehr zutrifft.
 
 ## Konkrete Risiken
 
