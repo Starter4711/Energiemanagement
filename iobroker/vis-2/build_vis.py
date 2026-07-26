@@ -94,6 +94,30 @@ def pool_controls_view() -> dict:
 
 def wallbox_view(name: str, html: str, height: int, controls: Optional[list[tuple[str, str, str]]] = None) -> dict:
     result = view(name, html, height)
+    if controls:
+        control_id = controls[0][0]
+        control_title = controls[0][2]
+        result["widgets"]["w000002"] = {
+            "tpl": "tplMaterial2Switches",
+            "data": {
+                "noCard": True,
+                "widgetTitle": "",
+                "count": 1,
+                "type": "lines",
+                "allSwitch": False,
+                "oid1": control_id,
+                "type1": "switch",
+                "title1": control_title,
+                "noIcon1": True,
+            },
+            "style": {
+                "left": "14px",
+                "top": "430px",
+                "width": "calc(100% - 28px)",
+                "height": "108px",
+            },
+            "widgetSet": "vis-2-widgets-material",
+        }
     return result
 
 
@@ -106,6 +130,7 @@ def render_wallbox_html(title: str, subtitle: str, power: str, status: str, allo
         .replace("__STATUS__", status)
         .replace("__ALLOW__", allow)
         .replace("__PHASES__", phases)
+        .replace("__PHASE_TEXT__", phases)
         .replace("__CAR__", car)
         .replace("__CONNECTION__", connection)
         .replace("__CONTROL_TITLE__", control_title)
@@ -123,7 +148,7 @@ WALLBOX_1_HTML = render_wallbox_html(
     "{alias.0.go-E.powerV3} kW",
     "{0_userdata.0.EOS.Wallbox.Control.Wallbox1_Freigabe}",
     "{0_userdata.0.EOS.Wallbox.Control.Wallbox1_Freigabe}",
-    "{go-e.0.phases}",
+    "{0_userdata.0.EOS.Wallbox.Control.Wallbox1_PhasenText}",
     "{go-e.0.car}",
     "{go-e.0.info.connection}",
     "Ladefreigabe",
@@ -140,11 +165,11 @@ WALLBOX_2_HTML = render_wallbox_html(
     "{alias.0.go-E.powerV4} kW",
     "{0_userdata.0.EOS.Wallbox.Control.Wallbox2_Freigabe}",
     "{0_userdata.0.EOS.Wallbox.Control.Wallbox2_Freigabe}",
-    "{go-e.1.phases}",
+    "{0_userdata.0.EOS.Wallbox.Control.Wallbox2_PhasenText}",
     "{go-e.1.car}",
     "{go-e.1.info.connection}",
     "Ladefreigabe",
-    "0_userdata.0.EOS.Wallbox.Control.Wallbox2_Freigabe",
+    "Ladefreigabe",
     "0 = aus, 1 = freigegeben",
     "Leistung alias.0.go-E.powerV4 / HTTP http://192.168.11.21",
     "Schalter steuert die Freigabe",

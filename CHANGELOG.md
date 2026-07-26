@@ -2,6 +2,12 @@
 
 ## 2026-07-26
 - Changed
+  - die Wallbox-Unterseiten nutzen jetzt einen echten VIS2-Material-Widget-Schalter statt der bisherigen Eigenbau-Kachel
+  - die Steuerungszonen auf den Wallbox-Seiten reservieren nur noch Platz fuer den Widget-Schalter, damit auf Mobilgeraeten nichts mehr ueberlappt
+  - die Wallbox-Phasen sind als lesbare Helper-States `0_userdata.0.EOS.Wallbox.Control.*_PhasenText` verdichtet (`57 -> 1P`, `63 -> 3P Auto laden`, `56 -> kein Auto`)
+
+## 2026-07-26
+- Changed
   - die Wallbox-Unterseite nutzt jetzt in VIS2 einen einzigen modernen Schalter statt separater Aus/Ein-Kacheln
   - der Schalter schreibt nur noch `0` oder `1` auf den EOS-Helper-State und nicht mehr auf den go-e-Rohpfad
 
