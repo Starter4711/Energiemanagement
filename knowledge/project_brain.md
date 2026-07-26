@@ -581,3 +581,25 @@ Du uebernimmst den aktuellen Projektstand sofort und ohne Vorwissen:
 - Keine grossen Dokurunden, keine unnötigen Rueckfragen, sondern direkt der naechste kleine saubere Umsetzungsschritt.
 - Alles, was fuer die Aufgabe wichtig ist, steht im Repository oder in den dort verlinkten Quellen.
 - Wenn etwas nicht im GitHub belegt ist, wird es nicht geraten, sondern als offen behandelt.
+
+## Aktueller Übergabestand fuer den naechsten Chat
+
+Stand: 2026-07-26
+
+- Die EOS-/VIS2-Wallbox-Arbeit ist auf GitHub versioniert.
+- Der aktuelle Branch fuer die Wallbox-Fortsetzung ist `codex/wallbox-material-switch`.
+- Wallbox 1 und 2 verwenden helper-basierte Freigaben unter `0_userdata.0.EOS.Wallbox.Control.*`.
+- Die Phasenanzeige der Wallboxen ist als lesbarer Helper-State angelegt:
+  - `57` -> `1P`
+  - `63` -> `3P Auto laden`
+  - `56` -> `kein Auto`
+- Die VIS2-Unterseiten sind im Repository vorbereitet, der Steuerungsbereich reserviert Platz fuer einen echten Widget-Schalter.
+- Der naechste sinnvolle Arbeitsschritt ist die saubere Live-Pruefung der Wallbox-Unterseiten im VIS2 gegen Mac und Mobilgeraet.
+- Falls die Live-Anzeige noch abweicht, wird zuerst der VIS2-Export korrigiert und danach erst die Live-Version erneut deployt.
+- Die Doku ist jetzt so aufgebaut, dass ein neuer Chat den Stand direkt aus dem Repository uebernehmen kann.
+
+Offen fuer die Fortsetzung:
+
+- Ob das Material-Widget auf allen Geraeten exakt so angezeigt wird, wie fachlich gewuenscht.
+- Ob die mobile Steuerungszone ausreichend Platz hat und nichts ueberlagert.
+- Ob alle EOS-Helper-States der Wallboxen im Live-System bereits sauber sichtbar sind.
