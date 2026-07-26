@@ -111,4 +111,4 @@ Das verbindliche Mapping ist in `docs/energy_flow_v1_state_model.md` festgelegt.
 - keine Aktorik
 - keine Regelung
 - keine Recommendation
-- keine Code- oder Live-Änderung durch diese Spezifikationsanpassung
+- Implementierung in `Energy_Flow_V1` 1.4.0 erfolgt; noch kein Live-Deployment
