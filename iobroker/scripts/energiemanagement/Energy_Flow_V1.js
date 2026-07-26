@@ -250,6 +250,14 @@ const STATES = [
         defaultValue: CONFIG.defaults.number,
     },
     {
+        id: `${ROOT}.Summary.PowerBalance`,
+        type: 'number',
+        role: 'value.power',
+        unit: 'W',
+        desc: 'Rechnerische Power-Balance der EOS-Flow-Sicht',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
         id: `${ROOT}.Communication.OverallStatus`,
         type: 'string',
         role: 'text',
@@ -595,6 +603,18 @@ function refresh() {
         wallbox.status,
     ]));
     writeChanged(`${ROOT}.Summary.LastUpdate`, Date.now());
+    writeChanged(
+        `${ROOT}.Summary.PowerBalance`,
+        [
+            pv.power,
+            battery.power,
+            grid.power,
+            house.power,
+            wallbox.power,
+        ].every(value => Number.isFinite(value))
+            ? Math.round(((pv.power || 0) + (battery.power || 0) - (house.power || 0) - (wallbox.power || 0)) * 10) / 10
+            : 0
+    );
     writeChanged(`${ROOT}.Communication.OverallStatus`, buildCommunicationStatus([
         grid.communication,
         battery.communication,

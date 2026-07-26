@@ -362,6 +362,14 @@ STATES.push(
         unit: '',
         desc: 'Zeitpunkt der letzten erfolgreichen Kommunikationsbewertung',
         defaultValue: '',
+    },
+    {
+        id: `${ROOT}.Communication.Status`,
+        type: 'string',
+        role: 'text',
+        unit: '',
+        desc: 'Aggregierter Kommunikationsstatus der Batterie',
+        defaultValue: CONFIG.defaults.string,
     }
 );
 
@@ -475,6 +483,14 @@ function writeChanged(id, value) {
     if (!current || current.val !== value) {
         setState(id, value, true);
     }
+}
+
+function buildOverallCommunicationStatus(statuses) {
+    const normalized = statuses.map(value => String(value || '').trim().toUpperCase());
+    if (normalized.some(status => status === 'OFFLINE')) return 'OFFLINE';
+    if (normalized.some(status => status === 'WARN')) return 'WARN';
+    if (normalized.some(status => status === 'UNKNOWN')) return 'UNKNOWN';
+    return 'OK';
 }
 
 function formatIsoFromTimestamp(timestamp) {
@@ -701,6 +717,12 @@ function updateBatterySupervisor() {
         }, null);
 
     writeChanged(`${ROOT}.Communication.LastUpdate`, formatIsoFromTimestamp(latestCommunicationTimestamp));
+    writeChanged(`${ROOT}.Communication.Status`, buildOverallCommunicationStatus([
+        communicationResults[0].status,
+        communicationResults[1].status,
+        communicationResults[2].status,
+        communicationResults[3].status,
+    ]));
     writeChanged(`${ROOT}.Warnings.SmartShuntOffline`, communicationResults[0].status === 'OFFLINE');
     writeChanged(`${ROOT}.Warnings.GobelOffline`, communicationResults[1].status === 'OFFLINE');
     writeChanged(`${ROOT}.Warnings.HeltecOffline`, communicationResults[2].status === 'OFFLINE');
