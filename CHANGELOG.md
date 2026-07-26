@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-26
+- Changed
+  - `Energy_Flow_V1` auf Version 1.4.0 mit getrennten Bereichen für Grid 40, Grid 41 und Grid 43 umgestellt
+  - alte Bilanzquelle und einzelne States `EnergyFlow.Grid.Power|Status|LastUpdate` aus dem Code entfernt
+  - Communication und Summary-Status bewerten die drei Grid-Quellen getrennt
+- Tested
+  - Integrationstest auf getrennte Leistungen, Status, Zeitstempel, fehlendes Grid 42 und fehlende Bilanz-Abhängigkeit erweitert
+- Notes
+  - keine Grid-Summierung und kein Live-Deployment
+
 ## 2026-07-25
 - Changed
   - Energy-Flow-Spezifikation und State-Modell von einem einzelnen Grid auf getrennte Bereiche Grid 40, Grid 41 und Grid 43 umgestellt
