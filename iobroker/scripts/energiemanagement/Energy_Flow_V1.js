@@ -7,10 +7,10 @@
 
 const ROOT = '0_userdata.0.EOS.EnergyFlow';
 const BATTERY_ROOT = '0_userdata.0.EOS.Battery';
-const BILANZ_ROOT = '0_userdata.0.Energiemanagement.Bilanz';
+const GRID_ROOT = '0_userdata.0.EOS.Grid';
 
 const CONFIG = {
-    version: '1.1.0',
+    version: '1.4.0',
     logLevel: 'info',
     debugEnabled: false,
     refreshDebounceMs: 50,
@@ -52,6 +52,78 @@ const STATES = [
         role: 'date',
         unit: '',
         desc: 'Zeitpunkt der letzten Grid-Bewertung',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Grid.Grid40.Power`,
+        type: 'number',
+        role: 'value.power',
+        unit: 'W',
+        desc: 'Netzleistung Zaehlpunkt 40',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Grid.Grid40.Status`,
+        type: 'string',
+        role: 'text',
+        unit: '',
+        desc: 'Status Zaehlpunkt 40',
+        defaultValue: CONFIG.defaults.string,
+    },
+    {
+        id: `${ROOT}.Grid.Grid40.LastUpdate`,
+        type: 'number',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten Bewertung von Zaehlpunkt 40',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Grid.Grid41.Power`,
+        type: 'number',
+        role: 'value.power',
+        unit: 'W',
+        desc: 'Netzleistung Zaehlpunkt 41',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Grid.Grid41.Status`,
+        type: 'string',
+        role: 'text',
+        unit: '',
+        desc: 'Status Zaehlpunkt 41',
+        defaultValue: CONFIG.defaults.string,
+    },
+    {
+        id: `${ROOT}.Grid.Grid41.LastUpdate`,
+        type: 'number',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten Bewertung von Zaehlpunkt 41',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Grid.Grid43.Power`,
+        type: 'number',
+        role: 'value.power',
+        unit: 'W',
+        desc: 'Netzleistung Zaehlpunkt 43',
+        defaultValue: CONFIG.defaults.number,
+    },
+    {
+        id: `${ROOT}.Grid.Grid43.Status`,
+        type: 'string',
+        role: 'text',
+        unit: '',
+        desc: 'Status Zaehlpunkt 43',
+        defaultValue: CONFIG.defaults.string,
+    },
+    {
+        id: `${ROOT}.Grid.Grid43.LastUpdate`,
+        type: 'number',
+        role: 'date',
+        unit: '',
+        desc: 'Zeitpunkt der letzten Bewertung von Zaehlpunkt 43',
         defaultValue: CONFIG.defaults.number,
     },
     {
@@ -358,28 +430,47 @@ function updateGroup(name, payload) {
     writeChanged(`${ROOT}.${name}.LastUpdate`, Number.isFinite(payload.lastUpdate) ? payload.lastUpdate : Date.now());
 }
 
-function readGridSnapshot() {
-    const gridPower = readNumber(`${BILANZ_ROOT}.Summe_W`);
-    const gridValidState = getState(`${BILANZ_ROOT}.Gueltig`);
-    const gridValid = Boolean(gridValidState && gridValidState.val === true);
-    const gridError = normalizeStatus(readString(`${BILANZ_ROOT}.Fehler`));
-
-    let status = 'UNKNOWN';
-    if (gridValid) {
-        status = 'OK';
-    } else if (gridError !== 'UNKNOWN' && gridError !== '') {
-        status = 'ERROR';
-    } else if (isKnownNumber(gridPower)) {
-        status = 'WARNING';
-    }
+function readGridMeterSnapshot(name) {
+    const power = readNumber(`${GRID_ROOT}.${name}.Power`);
+    const status = normalizeStatus(readString(`${GRID_ROOT}.${name}.Status`));
+    const state = getState(`${GRID_ROOT}.${name}.Power`) || getState(`${GRID_ROOT}.${name}.Status`);
+    const lastUpdate = state && Number.isFinite(Number(state.ts))
+        ? Number(state.ts)
+        : Date.now();
 
     return {
-        power: gridPower,
+        power,
         status,
-        lastUpdate: gridValidState && Number.isFinite(Number(gridValidState.ts))
-            ? Number(gridValidState.ts)
-            : Date.now(),
+        lastUpdate,
         communication: status,
+    };
+}
+
+function readGridSnapshot() {
+    const meters = {
+        Grid40: readGridMeterSnapshot('Grid40'),
+        Grid41: readGridMeterSnapshot('Grid41'),
+        Grid43: readGridMeterSnapshot('Grid43'),
+    };
+    const meterValues = Object.values(meters);
+    const knownPowers = meterValues
+        .map(meter => meter.power)
+        .filter(isKnownNumber);
+    const totalPower = knownPowers.length > 0
+        ? knownPowers.reduce((sum, value) => sum + value, 0)
+        : null;
+    const status = buildCompositeStatus(meterValues.map(meter => meter.status));
+    const lastUpdate = meterValues
+        .map(meter => meter.lastUpdate)
+        .filter(value => Number.isFinite(value))
+        .reduce((max, value) => Math.max(max, value), 0) || Date.now();
+
+    return {
+        meters,
+        power: totalPower,
+        status,
+        lastUpdate,
+        communication: buildCommunicationStatus(meterValues.map(meter => meter.communication)),
     };
 }
 
@@ -416,6 +507,10 @@ function refresh() {
         power: grid.power,
         lastUpdate: grid.lastUpdate,
     });
+
+    updateGroup('Grid.Grid40', grid.meters.Grid40);
+    updateGroup('Grid.Grid41', grid.meters.Grid41);
+    updateGroup('Grid.Grid43', grid.meters.Grid43);
 
     updateGroup('PV', {
         status: 'UNKNOWN',
@@ -474,9 +569,12 @@ function scheduleRefresh() {
 
 function subscribeToSources() {
     const sourceIds = [
-        `${BILANZ_ROOT}.Summe_W`,
-        `${BILANZ_ROOT}.Gueltig`,
-        `${BILANZ_ROOT}.Fehler`,
+        `${GRID_ROOT}.Grid40.Power`,
+        `${GRID_ROOT}.Grid40.Status`,
+        `${GRID_ROOT}.Grid41.Power`,
+        `${GRID_ROOT}.Grid41.Status`,
+        `${GRID_ROOT}.Grid43.Power`,
+        `${GRID_ROOT}.Grid43.Status`,
         `${BATTERY_ROOT}.Summary.Power`,
         `${BATTERY_ROOT}.Summary.SOC`,
         `${BATTERY_ROOT}.Summary.Status`,

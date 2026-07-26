@@ -26,7 +26,7 @@ V1 bleibt strikt read-only und arbeitet ereignisgetrieben.
 ## Eingänge
 
 - EOS-Batteriesicht unter `0_userdata.0.EOS.Battery.*`
-- EOS-Bilanzsicht fuer Grid unter `0_userdata.0.Energiemanagement.Bilanz.*`
+- EOS-Grid-Sicht unter `0_userdata.0.EOS.Grid.*`
 - zukuenftige freigegebene EOS-Lesesichten fuer PV, House und Wallbox
 - Kommunikations- und Frischestatus der vorhandenen Quellen
 
@@ -34,6 +34,7 @@ V1 bleibt strikt read-only und arbeitet ereignisgetrieben.
 
 - EOS-States unter `0_userdata.0.EOS.EnergyFlow.*`
 - verdichtete Teilbereiche je Domäne
+- separate Sicht auf die drei Grid-Zaehlpunkte
 - Summary fuer die Gesamtsicht
 - Communication fuer die technische Sicht auf Aktualitaet und Erreichbarkeit
 

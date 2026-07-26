@@ -5,6 +5,9 @@
 `0_userdata.0.EOS.EnergyFlow`
 
 - `Grid`
+- `Grid.Grid40`
+- `Grid.Grid41`
+- `Grid.Grid43`
 - `PV`
 - `Battery`
 - `House`
@@ -19,6 +22,30 @@
 | `0_userdata.0.EOS.EnergyFlow.Grid.Power` | Zahl | W | ja | Netz-/Zaehlpunktwerte | geplant |
 | `0_userdata.0.EOS.EnergyFlow.Grid.Status` | Text |  | ja | Netz-/Zaehlpunktwerte | offen |
 | `0_userdata.0.EOS.EnergyFlow.Grid.LastUpdate` | Zahl | ms | ja | Netz-/Zaehlpunktwerte | geplant |
+
+## Grid.Grid40
+
+| State | Datentyp | Einheit | read-only | Herkunft | Status |
+| --- | --- | --- | --- | --- | --- |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid40.Power` | Zahl | W | ja | Zaehlpunkt 40 | geplant |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid40.Status` | Text |  | ja | Zaehlpunkt 40 | offen |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid40.LastUpdate` | Zahl | ms | ja | Zaehlpunkt 40 | geplant |
+
+## Grid.Grid41
+
+| State | Datentyp | Einheit | read-only | Herkunft | Status |
+| --- | --- | --- | --- | --- | --- |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid41.Power` | Zahl | W | ja | Zaehlpunkt 41 | geplant |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid41.Status` | Text |  | ja | Zaehlpunkt 41 | offen |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid41.LastUpdate` | Zahl | ms | ja | Zaehlpunkt 41 | geplant |
+
+## Grid.Grid43
+
+| State | Datentyp | Einheit | read-only | Herkunft | Status |
+| --- | --- | --- | --- | --- | --- |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid43.Power` | Zahl | W | ja | Zaehlpunkt 43 | geplant |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid43.Status` | Text |  | ja | Zaehlpunkt 43 | offen |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid43.LastUpdate` | Zahl | ms | ja | Zaehlpunkt 43 | geplant |
 
 ## PV
 

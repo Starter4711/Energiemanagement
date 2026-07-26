@@ -2,6 +2,11 @@
 
 ## 2026-07-26
 - Changed
+  - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` auf drei separate Grid-Zaehlpunkte mit EOS-Grid-Quellen umgestellt und die alte Bilanz-Abhaengigkeit entfernt
+  - `docs/energy_flow_v1_spec.md`, `docs/energy_flow_v1_state_model.md` und `knowledge/project_brain.md` an die separate Grid-Sicht angepasst
+
+## 2026-07-26
+- Changed
   - `docs/energy_flow_v1_implementation_review.md` auf den aktuellen Baseline-Stand ohne aktive `Summary.Direction`-Semantik aktualisiert
 
 ## 2026-07-25
