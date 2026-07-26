@@ -11,9 +11,15 @@ const source = fs.readFileSync(
 
 const now = Date.now();
 const rawStates = new Map([
-    ['0_userdata.0.Energiemanagement.Bilanz.Summe_W', { val: 0, ts: now }],
-    ['0_userdata.0.Energiemanagement.Bilanz.Gueltig', { val: true, ts: now }],
-    ['0_userdata.0.Energiemanagement.Bilanz.Fehler', { val: '', ts: now }],
+    ['0_userdata.0.EOS.Grid.Sources.Grid40.Power', { val: 1200, ts: now }],
+    ['0_userdata.0.EOS.Grid.Sources.Grid40.Status', { val: 'OK', ts: now }],
+    ['0_userdata.0.EOS.Grid.Sources.Grid40.LastUpdate', { val: now, ts: now }],
+    ['0_userdata.0.EOS.Grid.Sources.Grid41.Power', { val: -800, ts: now }],
+    ['0_userdata.0.EOS.Grid.Sources.Grid41.Status', { val: 'OK', ts: now }],
+    ['0_userdata.0.EOS.Grid.Sources.Grid41.LastUpdate', { val: now, ts: now }],
+    ['0_userdata.0.EOS.Grid.Sources.Grid43.Power', { val: 300, ts: now }],
+    ['0_userdata.0.EOS.Grid.Sources.Grid43.Status', { val: 'OK', ts: now }],
+    ['0_userdata.0.EOS.Grid.Sources.Grid43.LastUpdate', { val: now, ts: now }],
     ['0_userdata.0.EOS.Battery.Summary.Power', { val: 0, ts: now }],
     ['0_userdata.0.EOS.Battery.Summary.SOC', { val: 50, ts: now }],
     ['0_userdata.0.EOS.Battery.Summary.Status', { val: 'OK', ts: now }],
@@ -81,6 +87,23 @@ function setRaw(id, val) {
 }
 
 const root = '0_userdata.0.EOS.EnergyFlow';
+assert.strictEqual(value(`${root}.Grid.Grid40.Power`), 1200);
+assert.strictEqual(value(`${root}.Grid.Grid40.Status`), 'OK');
+assert.strictEqual(value(`${root}.Grid.Grid40.LastUpdate`), now);
+assert.strictEqual(value(`${root}.Grid.Grid41.Power`), -800);
+assert.strictEqual(value(`${root}.Grid.Grid41.Status`), 'OK');
+assert.strictEqual(value(`${root}.Grid.Grid41.LastUpdate`), now);
+assert.strictEqual(value(`${root}.Grid.Grid43.Power`), 300);
+assert.strictEqual(value(`${root}.Grid.Grid43.Status`), 'OK');
+assert.strictEqual(value(`${root}.Grid.Grid43.LastUpdate`), now);
+assert.strictEqual(definitions.has(`${root}.Grid.Power`), false);
+assert.strictEqual(definitions.has(`${root}.Grid.Status`), false);
+assert.strictEqual(definitions.has(`${root}.Grid.LastUpdate`), false);
+assert.strictEqual(subscriptions.has('0_userdata.0.EOS.Grid.Sources.Grid40.Power'), true);
+assert.strictEqual(subscriptions.has('0_userdata.0.EOS.Grid.Sources.Grid41.Power'), true);
+assert.strictEqual(subscriptions.has('0_userdata.0.EOS.Grid.Sources.Grid43.Power'), true);
+assert.strictEqual([...subscriptions.keys()].some(id => id.includes('Grid42')), false);
+assert.strictEqual([...subscriptions.keys()].some(id => id.includes('Energiemanagement.Bilanz')), false);
 assert.strictEqual(value(`${root}.PV.Power`), 6200);
 assert.strictEqual(value(`${root}.PV.Status`), 'OK');
 assert.strictEqual(value(`${root}.PV.LastUpdate`), now);
@@ -119,4 +142,4 @@ assert.strictEqual(value(`${root}.PV.Status`), 'STANDBY');
 assert.strictEqual(value(`${root}.Communication.OverallStatus`), 'WARNING');
 assert.strictEqual(value(`${root}.Communication.TimeoutCount`), 2);
 
-console.log('Energy_Flow_V1 PV and Wallbox integration tests passed.');
+console.log('Energy_Flow_V1 Grid, PV and Wallbox integration tests passed.');
