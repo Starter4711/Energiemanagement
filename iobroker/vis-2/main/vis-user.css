@@ -9,6 +9,23 @@ html, body, #root {
   background: #101416;
 }
 
+body {
+  overflow-y: auto !important;
+}
+
+#root {
+  overflow: visible !important;
+}
+
+.visview_Main,
+.visview_Batterie,
+.visview_Pool,
+.visview_Pool_Bedienung {
+  height: auto !important;
+  min-height: 100vh !important;
+  overflow-y: visible !important;
+}
+
 .visview_Main .vis-view-column,
 .visview_Main #w000001,
 .visview_Main #w000001 .vis-widget-body,
@@ -18,9 +35,21 @@ html, body, #root {
 .visview_Pool .vis-view-column,
 .visview_Pool #w000001,
 .visview_Pool #w000001 .vis-widget-body,
-.visview_Pool_Bedienung .vis-view-column {
+.visview_Pool_Bedienung .vis-view-column,
+.visview_Main .vis-view-column,
+.visview_Batterie .vis-view-column,
+.visview_Pool .vis-view-column {
   width: 100% !important;
   max-width: none !important;
+}
+
+.visview_Main .vis-view-column,
+.visview_Batterie .vis-view-column,
+.visview_Pool .vis-view-column,
+.visview_Pool_Bedienung .vis-view-column {
+  height: auto !important;
+  overflow-y: visible !important;
+  -webkit-overflow-scrolling: touch;
 }
 
 .em-dashboard {
@@ -213,6 +242,28 @@ h2 { margin: 0 0 10px; font-size: 15px; font-weight: 750; letter-spacing: 0; }
 }
 
 @media (max-width: 520px) {
+  .visview_Main,
+  .visview_Batterie,
+  .visview_Pool,
+  .visview_Pool_Bedienung,
+  .visview_Main .vis-view-column,
+  .visview_Batterie .vis-view-column,
+  .visview_Pool .vis-view-column,
+  .visview_Pool_Bedienung .vis-view-column {
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow: visible !important;
+  }
+  .em-dashboard {
+    min-height: auto;
+    padding-bottom: 88px;
+  }
+  .visview_Main .vis-view-column,
+  .visview_Batterie .vis-view-column,
+  .visview_Pool .vis-view-column,
+  .visview_Pool_Bedienung .vis-view-column {
+    padding-bottom: 80px;
+  }
   .em-pool-tile { grid-template-columns: 1fr; }
   .em-schedule { grid-template-columns: 1fr auto; }
   .em-schedule > span { grid-column: 1 / -1; }

@@ -247,7 +247,7 @@
           "left": "14px",
           "top": "110px",
           "width": "calc(100% - 28px)",
-          "height": "320px"
+          "height": "110px"
         },
         "widgetSet": "vis-2-widgets-material"
       }
@@ -299,7 +299,7 @@
           "left": "14px",
           "top": "110px",
           "width": "calc(100% - 28px)",
-          "height": "320px"
+          "height": "110px"
         },
         "widgetSet": "vis-2-widgets-material"
       }
