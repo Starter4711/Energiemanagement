@@ -272,6 +272,8 @@ const STATES = [
     },
 ];
 
+const STATE_DEFINITIONS = new Map(STATES.map(state => [state.id, state]));
+
 function shouldLog(level) {
     return LEVEL_PRIORITY[level] <= LEVEL_PRIORITY[CONFIG.logLevel] || (level === 'debug' && CONFIG.debugEnabled);
 }
@@ -284,6 +286,9 @@ function emit(level, message) {
 }
 
 function createEnergyState(definition) {
+    if (existsState(definition.id)) {
+        return;
+    }
     createState(
         definition.id,
         definition.defaultValue,
@@ -299,7 +304,15 @@ function createEnergyState(definition) {
     );
 }
 
+function ensureEnergyState(id) {
+    const definition = STATE_DEFINITIONS.get(id);
+    if (definition && !existsState(id)) {
+        createEnergyState(definition);
+    }
+}
+
 function writeChanged(id, value) {
+    ensureEnergyState(id);
     const current = getState(id);
     if (!current || current.val !== value) {
         setState(id, value, true);

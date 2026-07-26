@@ -12,6 +12,11 @@
 
 ## 2026-07-26
 - Changed
+  - `iobroker/scripts/energiemanagement/Energy_Flow_V1.js` um selbstheilende Objektanlage fuer fehlende Energy-Flow-States erweitert
+  - `knowledge/project_brain.md` um die Selbstheilung fuer geloeschte Energy-Flow-Teilbaeume aktualisiert
+
+## 2026-07-26
+- Changed
   - `docs/energy_flow_v1_implementation_review.md` auf den aktuellen Baseline-Stand ohne aktive `Summary.Direction`-Semantik aktualisiert
 
 ## 2026-07-25
