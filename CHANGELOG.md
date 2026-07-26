@@ -2,6 +2,11 @@
 
 ## 2026-07-26
 - Changed
+  - die Wallbox-Bereichsstruktur auf der EOS-Hauptseite ist jetzt von der Batterie getrennt
+  - die Wallbox-Detailziele nutzen technische VIS-Namen mit Unterstrich, damit die Navigation robuster ist
+
+## 2026-07-26
+- Changed
   - die Wallbox-Kacheln auf der EOS-Hauptseite zeigen jetzt die echte Leistung und eine Batterie-ahnliche Detailzeile statt des irrefuehrenden Texts "Oeffnen"
 
 ## 2026-07-26

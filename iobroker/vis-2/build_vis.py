@@ -203,13 +203,13 @@ project = {
     "Batterie": view("Batterie", BATTERY_HTML, 1800),
     "Pool": view("Pool", POOL_HTML, 1900),
     "Pool_Bedienung": pool_controls_view(),
-    "Wallbox 1": wallbox_view("Wallbox 1", WALLBOX_1_HTML, 900, [
+    "Wallbox_1": wallbox_view("Wallbox 1", WALLBOX_1_HTML, 900, [
         ("go-e.0.allow_charging", "switch", "Laden freigeben"),
     ]),
-    "Wallbox 2": wallbox_view("Wallbox 2", WALLBOX_2_HTML, 900, [
+    "Wallbox_2": wallbox_view("Wallbox 2", WALLBOX_2_HTML, 900, [
         ("go-e.1.allow_charging", "switch", "Laden freigeben"),
     ]),
-    "Wallbox 3": wallbox_view("Wallbox 3", WALLBOX_3_HTML, 760, None),
+    "Wallbox_3": wallbox_view("Wallbox 3", WALLBOX_3_HTML, 760, None),
 }
 
 OUTPUT.write_text(
