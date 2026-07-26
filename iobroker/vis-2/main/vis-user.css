@@ -11,10 +11,12 @@ html, body, #root {
 
 body {
   overflow-y: auto !important;
+  background: #101416 !important;
 }
 
 #root {
   overflow: visible !important;
+  background: #101416 !important;
 }
 
 .visview_Main,
@@ -174,6 +176,36 @@ h2 { margin: 0 0 10px; font-size: 15px; font-weight: 750; letter-spacing: 0; }
 .em-control b { display: block; margin-top: 7px; color: #8b979b; }
 .em-control[data-active="true"], .em-mini-control[data-active="true"] { border-color: #4e8f69; background: #17271e; }
 .em-control[data-active="true"] b { color: #79d69e; }
+.em-switch-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 12px; border: 1px solid #30383b; border-radius: 7px; background: #1a2022; }
+.em-switch-card { min-width: 0; }
+.em-switch-card span { display: block; color: #98a4a8; font-size: 11px; }
+.em-switch-card strong { display: block; margin-top: 6px; font-size: 18px; }
+.em-switch-card small { display: block; margin-top: 4px; color: #7f8b8f; font-size: 10px; }
+.em-switch { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; user-select: none; }
+.em-switch input { position: absolute; opacity: 0; pointer-events: none; }
+.em-switch-track {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 32px;
+  border-radius: 999px;
+  background: #3a4447;
+  transition: background .18s ease;
+}
+.em-switch-track::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #f4f7f8;
+  transition: transform .18s ease;
+}
+.em-switch input:checked + .em-switch-track { background: #4e8f69; }
+.em-switch input:checked + .em-switch-track::after { transform: translateX(26px); }
+.em-switch-label { color: #aeb8bb; font-size: 12px; font-weight: 700; }
 .em-maintenance .em-control { border-color: #5a4d38; }
 .em-schedules { display: grid; gap: 8px; }
 .em-schedule { display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 8px; padding: 10px 12px; border: 1px solid #30383b; border-radius: 7px; background: #1a2022; }
@@ -249,20 +281,29 @@ h2 { margin: 0 0 10px; font-size: 15px; font-weight: 750; letter-spacing: 0; }
   .visview_Main .vis-view-column,
   .visview_Batterie .vis-view-column,
   .visview_Pool .vis-view-column,
-  .visview_Pool_Bedienung .vis-view-column {
+  .visview_Pool_Bedienung .vis-view-column,
+  .visview_Main #w000001,
+  .visview_Batterie #w000001,
+  .visview_Pool #w000001,
+  .visview_Pool_Bedienung #w000001,
+  .visview_Main #w000001 .vis-widget-body,
+  .visview_Batterie #w000001 .vis-widget-body,
+  .visview_Pool #w000001 .vis-widget-body {
     height: auto !important;
-    min-height: 100vh !important;
+    min-height: 0 !important;
     overflow: visible !important;
+    display: block !important;
+    position: static !important;
   }
   .em-dashboard {
     min-height: auto;
-    padding-bottom: 88px;
+    padding-bottom: 24px;
   }
   .visview_Main .vis-view-column,
   .visview_Batterie .vis-view-column,
   .visview_Pool .vis-view-column,
   .visview_Pool_Bedienung .vis-view-column {
-    padding-bottom: 80px;
+    padding-bottom: 0;
   }
   .em-pool-tile { grid-template-columns: 1fr; }
   .em-schedule { grid-template-columns: 1fr auto; }

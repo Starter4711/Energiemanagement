@@ -48,12 +48,17 @@
       <h2>Steuerung</h2>
       <span>Aktiv / Inaktiv per Freigabe</span>
     </div>
-    <div class="em-comm-grid">
-      <article class="em-card em-comm-wide">
+    <div class="em-switch-row">
+      <div class="em-switch-card">
         <span>__CONTROL_TITLE__</span>
         <strong>__CONTROL_TEXT__</strong>
         <small>__CONTROL_HINT__</small>
-      </article>
+      </div>
+      <label class="em-switch" title="Ladefreigabe">
+        <input type="checkbox" onchange="vis.setValue('__ALLOW__', this.checked ? 1 : 0)">
+        <span class="em-switch-track"></span>
+        <span class="em-switch-label">Ein / Aus</span>
+      </label>
     </div>
   </section>
 

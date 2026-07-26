@@ -2,6 +2,11 @@
 
 ## 2026-07-26
 - Changed
+  - die Wallbox-Unterseite nutzt jetzt in VIS2 einen einzigen modernen Schalter statt separater Aus/Ein-Kacheln
+  - der Schalter schreibt nur noch `0` oder `1` auf den EOS-Helper-State und nicht mehr auf den go-e-Rohpfad
+
+## 2026-07-26
+- Changed
   - die Wallbox-Freigabe in VIS2 nutzt jetzt EOS-Helper-States unter `0_userdata.0.EOS.Wallbox.Control.*`, damit 0/1 sauber vom UI zum go-e-Signal uebersetzt werden
   - `Wallbox_Control_V1` wurde als kleiner Übersetzungs-Helper fuer die go-e-Freigaben ergaenzt
 

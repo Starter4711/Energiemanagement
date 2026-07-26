@@ -94,30 +94,6 @@ def pool_controls_view() -> dict:
 
 def wallbox_view(name: str, html: str, height: int, controls: Optional[list[tuple[str, str, str]]] = None) -> dict:
     result = view(name, html, height)
-    if controls:
-        data = {
-            "noCard": False,
-            "widgetTitle": name,
-            "count": len(controls),
-            "type": "lines",
-            "allSwitch": False,
-        }
-        for index, (oid, control_type, title) in enumerate(controls, start=1):
-            data[f"oid{index}"] = oid
-            data[f"type{index}"] = control_type
-            data[f"title{index}"] = title
-            data[f"noIcon{index}"] = True
-        result["widgets"]["w000002"] = {
-            "tpl": "tplMaterial2Switches",
-            "data": data,
-            "style": {
-                "left": "14px",
-                "top": "110px",
-                "width": "calc(100% - 28px)",
-                "height": "110px",
-            },
-            "widgetSet": "vis-2-widgets-material",
-        }
     return result
 
 
