@@ -2,6 +2,12 @@
 
 ## 2026-07-26
 - Changed
+  - die VIS2-Hauptseite bekommt fuer die Kommunikationssektion wieder einen vollen Layoutbereich, damit die Statuskarten nicht mehr zusammengequetscht erscheinen
+  - die Hauptseite zeigt die Wallboxen weiterhin direkt auf der Uebersicht und die Detailseiten fuer Wallbox 1 bis 3 bleiben per Jump-Links erreichbar
+  - `Energy_Flow_V1` wurde erneut live redeployt, damit die konsolidierte Wallbox-Leistung direkt aus den belegten go-e-Quellen nachzieht
+
+## 2026-07-26
+- Changed
   - `Energy_Flow_V1` liest die drei Netz-Zaehlpunkte direkt ueber die unter `EOS.Config` hinterlegten Aliasse und bildet einen belastbaren Grid-Status
   - PV und Haus werden aus den produktiven Victron-Summen `SUMME_PV` und `SUMME_Verbrauch` uebernommen
   - die drei go-e-Leistungsaliasse werden von kW nach W normiert, summiert und samt Aktivstatus in EOS bereitgestellt

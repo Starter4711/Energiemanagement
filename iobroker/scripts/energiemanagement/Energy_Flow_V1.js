@@ -542,14 +542,15 @@ function readWallboxSnapshot() {
     const knownPowers = sources
         .map(source => source.power)
         .filter(power => Number.isFinite(power));
-    const power = knownPowers.length === sources.length
+    const power = knownPowers.length > 0
         ? Math.round(knownPowers.reduce((sum, value) => sum + value, 0) * 10) / 10
         : null;
+    const status = knownPowers.length > 0 ? 'OK' : 'UNKNOWN';
 
     return {
         power,
         active: Number.isFinite(power) && power > 100,
-        status: Number.isFinite(power) ? 'OK' : 'UNKNOWN',
+        status,
         communication: buildCommunicationStatus(sources.map(source => source.communication)),
         lastUpdate: sources
             .map(source => source.lastUpdate)

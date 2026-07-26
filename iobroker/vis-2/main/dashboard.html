@@ -32,18 +32,18 @@
     </div>
   </section>
 
-  <section>
+  <section class="em-comm-section">
     <div class="em-section-head">
       <h2>Communication</h2>
       <span>Wie in der Batterie-Unterseite: Status je Quelle</span>
     </div>
-    <div class="em-flag-grid">
+    <div class="em-flag-grid em-comm-flags">
       <div class="em-flag" data-state="{0_userdata.0.EOS.Battery.Warnings.SmartShuntOffline}">SmartShunt</div>
       <div class="em-flag" data-state="{0_userdata.0.EOS.Battery.Warnings.GobelOffline}">Gobel / Pace BMS</div>
       <div class="em-flag" data-state="{0_userdata.0.EOS.Battery.Warnings.HeltecOffline}">Heltec</div>
       <div class="em-flag" data-state="{0_userdata.0.EOS.Battery.Warnings.MQTTOffline}">MQTT</div>
     </div>
-    <div class="em-grid em-grid-2" style="margin-top:8px">
+    <div class="em-grid em-grid-2 em-comm-summary" style="margin-top:8px">
       <article class="em-card">
         <span>Letzte Kommunikationsbewertung</span>
         <strong>{0_userdata.0.EOS.Battery.Communication.LastUpdate}</strong>
@@ -80,6 +80,37 @@
         <strong>{0_userdata.0.EOS.EnergyFlow.House.Power} / {0_userdata.0.EOS.EnergyFlow.Wallbox.Power} W</strong>
         <small>{0_userdata.0.EOS.EnergyFlow.House.Status} · {0_userdata.0.EOS.EnergyFlow.Wallbox.Status}</small>
       </article>
+    </div>
+  </section>
+
+  <section class="em-pool-summary">
+    <h2>Wallboxen</h2>
+    <div class="em-summary-grid">
+      <article class="em-card">
+        <span>Wallbox 1 · V3</span>
+        <strong>{alias.0.go-E.powerV3} kW</strong>
+        <small>EOS-Quelle: go-e.0 / http://192.168.11.20</small>
+      </article>
+      <article class="em-card">
+        <span>Wallbox 2 · V4</span>
+        <strong>{alias.0.go-E.powerV4} kW</strong>
+        <small>EOS-Quelle: go-e.1 / http://192.168.11.21</small>
+      </article>
+      <article class="em-card">
+        <span>Wallbox 3 · Halle</span>
+        <strong>{alias.0.go-E.go-E-V4-Halle} kW</strong>
+        <small>EOS-Quelle: go-e.2 / Halle</small>
+      </article>
+      <article class="em-card">
+        <span>Gesamt Wallbox</span>
+        <strong>{0_userdata.0.EOS.EnergyFlow.Wallbox.Power} W</strong>
+        <small>{alias.0.go-E.powerV3} / {alias.0.go-E.powerV4} / {alias.0.go-E.go-E-V4-Halle} kW</small>
+      </article>
+    </div>
+    <div class="em-grid em-grid-3" style="margin-top:8px">
+      <a class="em-detail-link" href="#Wallbox 1"><article class="em-card"><span>Wallbox 1</span><strong>Öffnen</strong><small>Freigabe / Status / Leistung</small></article></a>
+      <a class="em-detail-link" href="#Wallbox 2"><article class="em-card"><span>Wallbox 2</span><strong>Öffnen</strong><small>Freigabe / Status / Leistung</small></article></a>
+      <a class="em-detail-link" href="#Wallbox 3"><article class="em-card"><span>Wallbox 3</span><strong>Öffnen</strong><small>Halle / Anzeige</small></article></a>
     </div>
   </section>
 

@@ -24,7 +24,7 @@
         "tpl": "tplHtml",
         "data": {
           "bindings": [],
-          "html": "<div class=\"em-dashboard\">\n  <header class=\"em-header\">\n    <div>\n      <div class=\"em-kicker\">EOS</div>\n      <h1>EOS</h1>\n      <p>EOS-States · Batterie · Energiefluss · VIS2</p>\n    </div>\n    <div class=\"em-soc\">\n      <span>Battery SOC</span>\n      <strong>{0_userdata.0.EOS.Battery.Summary.SOC}%</strong>\n    </div>\n  </header>\n\n  <section class=\"em-net\">\n    <h2>EOS Status</h2>\n    <div class=\"em-grid em-grid-3\">\n      <article class=\"em-card\">\n        <span>Battery</span>\n        <strong>{0_userdata.0.EOS.Battery.Summary.Status}</strong>\n        <small>Gesamtzustand der Batterie</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Energy Flow</span>\n        <strong>{0_userdata.0.EOS.EnergyFlow.Summary.Status}</strong>\n        <small>Verdichteter Flow-Status</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Kommunikation</span>\n        <strong>{0_userdata.0.EOS.Battery.Communication.Status}</strong>\n        <small>Gesamtsicht der EOS-Batterie</small>\n      </article>\n    </div>\n  </section>\n\n  <section>\n    <div class=\"em-section-head\">\n      <h2>Communication</h2>\n      <span>Wie in der Batterie-Unterseite: Status je Quelle</span>\n    </div>\n    <div class=\"em-flag-grid\">\n      <div class=\"em-flag\" data-state=\"{0_userdata.0.EOS.Battery.Warnings.SmartShuntOffline}\">SmartShunt</div>\n      <div class=\"em-flag\" data-state=\"{0_userdata.0.EOS.Battery.Warnings.GobelOffline}\">Gobel / Pace BMS</div>\n      <div class=\"em-flag\" data-state=\"{0_userdata.0.EOS.Battery.Warnings.HeltecOffline}\">Heltec</div>\n      <div class=\"em-flag\" data-state=\"{0_userdata.0.EOS.Battery.Warnings.MQTTOffline}\">MQTT</div>\n    </div>\n    <div class=\"em-grid em-grid-2\" style=\"margin-top:8px\">\n      <article class=\"em-card\">\n        <span>Letzte Kommunikationsbewertung</span>\n        <strong>{0_userdata.0.EOS.Battery.Communication.LastUpdate}</strong>\n        <small>Verdichtete EOS-Sicht</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Status je Quelle</span>\n        <strong>{0_userdata.0.EOS.Battery.Communication.SmartShunt.Status} / {0_userdata.0.EOS.Battery.Communication.Gobel.Status} / {0_userdata.0.EOS.Battery.Communication.Heltec.Status} / {0_userdata.0.EOS.Battery.Communication.MQTT.Status}</strong>\n        <small>OK oder FEHLER pro Teilbereich</small>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"em-pv\">\n    <h2>Energy Flow</h2>\n    <div class=\"em-grid em-grid-2\">\n      <article class=\"em-card em-accent-green\">\n        <span>Grid</span>\n        <strong>{0_userdata.0.EOS.EnergyFlow.Grid.Status}</strong>\n        <small>{0_userdata.0.EOS.EnergyFlow.Grid.Grid40.Power} / {0_userdata.0.EOS.EnergyFlow.Grid.Grid41.Power} / {0_userdata.0.EOS.EnergyFlow.Grid.Grid43.Power} W</small>\n      </article>\n      <article class=\"em-card em-accent-yellow\">\n        <span>Battery</span>\n        <strong>{0_userdata.0.EOS.EnergyFlow.Summary.PowerBalance} W</strong>\n        <small>SOC {0_userdata.0.EOS.EnergyFlow.Battery.SOC}%</small>\n      </article>\n      <article class=\"em-card em-accent-blue\">\n        <span>PV</span>\n        <strong>{0_userdata.0.EOS.EnergyFlow.PV.Power} W</strong>\n        <small>Status {0_userdata.0.EOS.EnergyFlow.PV.Status}</small>\n      </article>\n      <article class=\"em-card em-accent-red\">\n        <span>House / Wallbox</span>\n        <strong>{0_userdata.0.EOS.EnergyFlow.House.Power} / {0_userdata.0.EOS.EnergyFlow.Wallbox.Power} W</strong>\n        <small>{0_userdata.0.EOS.EnergyFlow.House.Status} · {0_userdata.0.EOS.EnergyFlow.Wallbox.Status}</small>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"em-battery-section\">\n    <h2>Batterie</h2>\n    <a class=\"em-detail-link\" href=\"#Batterie\" aria-label=\"Batteriedetails öffnen\">\n      <div class=\"em-battery\">\n        <div><span>Leistung</span><strong>{0_userdata.0.EOS.Battery.Summary.Power} W</strong></div>\n        <div><span>Spannung</span><strong>{0_userdata.0.EOS.Battery.Summary.Voltage} V</strong></div>\n        <div><span>Strom</span><strong>{0_userdata.0.EOS.Battery.Summary.Current} A</strong></div>\n        <div><span>Health</span><strong>{0_userdata.0.EOS.Battery.Health.Status}</strong></div>\n      </div>\n      <div class=\"em-detail-label\"><span>Details und Zellüberwachung</span><b aria-hidden=\"true\">›</b></div>\n    </a>\n  </section>\n\n  <section class=\"em-pool-summary\">\n    <h2>Batterie-Detail</h2>\n    <div class=\"em-grid em-grid-2\">\n      <article class=\"em-card\">\n        <span>SmartShunt</span>\n        <strong>{0_userdata.0.EOS.Battery.SmartShunt.SOC}%</strong>\n        <small>{0_userdata.0.EOS.Battery.SmartShunt.Voltage} V · {0_userdata.0.EOS.Battery.SmartShunt.Current} A</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Letzte Bewertung</span>\n        <strong>{0_userdata.0.EOS.Battery.Communication.LastUpdate}</strong>\n        <small>{0_userdata.0.EOS.Battery.Communication.SmartShunt.Status} / {0_userdata.0.EOS.Battery.Communication.Gobel.Status}</small>\n      </article>\n    </div>\n  </section>\n</div>\n",
+          "html": "<div class=\"em-dashboard\">\n  <header class=\"em-header\">\n    <div>\n      <div class=\"em-kicker\">EOS</div>\n      <h1>EOS</h1>\n      <p>EOS-States · Batterie · Energiefluss · VIS2</p>\n    </div>\n    <div class=\"em-soc\">\n      <span>Battery SOC</span>\n      <strong>{0_userdata.0.EOS.Battery.Summary.SOC}%</strong>\n    </div>\n  </header>\n\n  <section class=\"em-net\">\n    <h2>EOS Status</h2>\n    <div class=\"em-grid em-grid-3\">\n      <article class=\"em-card\">\n        <span>Battery</span>\n        <strong>{0_userdata.0.EOS.Battery.Summary.Status}</strong>\n        <small>Gesamtzustand der Batterie</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Energy Flow</span>\n        <strong>{0_userdata.0.EOS.EnergyFlow.Summary.Status}</strong>\n        <small>Verdichteter Flow-Status</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Kommunikation</span>\n        <strong>{0_userdata.0.EOS.Battery.Communication.Status}</strong>\n        <small>Gesamtsicht der EOS-Batterie</small>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"em-comm-section\">\n    <div class=\"em-section-head\">\n      <h2>Communication</h2>\n      <span>Wie in der Batterie-Unterseite: Status je Quelle</span>\n    </div>\n    <div class=\"em-flag-grid em-comm-flags\">\n      <div class=\"em-flag\" data-state=\"{0_userdata.0.EOS.Battery.Warnings.SmartShuntOffline}\">SmartShunt</div>\n      <div class=\"em-flag\" data-state=\"{0_userdata.0.EOS.Battery.Warnings.GobelOffline}\">Gobel / Pace BMS</div>\n      <div class=\"em-flag\" data-state=\"{0_userdata.0.EOS.Battery.Warnings.HeltecOffline}\">Heltec</div>\n      <div class=\"em-flag\" data-state=\"{0_userdata.0.EOS.Battery.Warnings.MQTTOffline}\">MQTT</div>\n    </div>\n    <div class=\"em-grid em-grid-2 em-comm-summary\" style=\"margin-top:8px\">\n      <article class=\"em-card\">\n        <span>Letzte Kommunikationsbewertung</span>\n        <strong>{0_userdata.0.EOS.Battery.Communication.LastUpdate}</strong>\n        <small>Verdichtete EOS-Sicht</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Status je Quelle</span>\n        <strong>{0_userdata.0.EOS.Battery.Communication.SmartShunt.Status} / {0_userdata.0.EOS.Battery.Communication.Gobel.Status} / {0_userdata.0.EOS.Battery.Communication.Heltec.Status} / {0_userdata.0.EOS.Battery.Communication.MQTT.Status}</strong>\n        <small>OK oder FEHLER pro Teilbereich</small>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"em-pv\">\n    <h2>Energy Flow</h2>\n    <div class=\"em-grid em-grid-2\">\n      <article class=\"em-card em-accent-green\">\n        <span>Grid</span>\n        <strong>{0_userdata.0.EOS.EnergyFlow.Grid.Status}</strong>\n        <small>{0_userdata.0.EOS.EnergyFlow.Grid.Grid40.Power} / {0_userdata.0.EOS.EnergyFlow.Grid.Grid41.Power} / {0_userdata.0.EOS.EnergyFlow.Grid.Grid43.Power} W</small>\n      </article>\n      <article class=\"em-card em-accent-yellow\">\n        <span>Battery</span>\n        <strong>{0_userdata.0.EOS.EnergyFlow.Summary.PowerBalance} W</strong>\n        <small>SOC {0_userdata.0.EOS.EnergyFlow.Battery.SOC}%</small>\n      </article>\n      <article class=\"em-card em-accent-blue\">\n        <span>PV</span>\n        <strong>{0_userdata.0.EOS.EnergyFlow.PV.Power} W</strong>\n        <small>Status {0_userdata.0.EOS.EnergyFlow.PV.Status}</small>\n      </article>\n      <article class=\"em-card em-accent-red\">\n        <span>House / Wallbox</span>\n        <strong>{0_userdata.0.EOS.EnergyFlow.House.Power} / {0_userdata.0.EOS.EnergyFlow.Wallbox.Power} W</strong>\n        <small>{0_userdata.0.EOS.EnergyFlow.House.Status} · {0_userdata.0.EOS.EnergyFlow.Wallbox.Status}</small>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"em-pool-summary\">\n    <h2>Wallboxen</h2>\n    <div class=\"em-summary-grid\">\n      <article class=\"em-card\">\n        <span>Wallbox 1 · V3</span>\n        <strong>{alias.0.go-E.powerV3} kW</strong>\n        <small>EOS-Quelle: go-e.0 / http://192.168.11.20</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Wallbox 2 · V4</span>\n        <strong>{alias.0.go-E.powerV4} kW</strong>\n        <small>EOS-Quelle: go-e.1 / http://192.168.11.21</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Wallbox 3 · Halle</span>\n        <strong>{alias.0.go-E.go-E-V4-Halle} kW</strong>\n        <small>EOS-Quelle: go-e.2 / Halle</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Gesamt Wallbox</span>\n        <strong>{0_userdata.0.EOS.EnergyFlow.Wallbox.Power} W</strong>\n        <small>{alias.0.go-E.powerV3} / {alias.0.go-E.powerV4} / {alias.0.go-E.go-E-V4-Halle} kW</small>\n      </article>\n    </div>\n    <div class=\"em-grid em-grid-3\" style=\"margin-top:8px\">\n      <a class=\"em-detail-link\" href=\"#Wallbox 1\"><article class=\"em-card\"><span>Wallbox 1</span><strong>Öffnen</strong><small>Freigabe / Status / Leistung</small></article></a>\n      <a class=\"em-detail-link\" href=\"#Wallbox 2\"><article class=\"em-card\"><span>Wallbox 2</span><strong>Öffnen</strong><small>Freigabe / Status / Leistung</small></article></a>\n      <a class=\"em-detail-link\" href=\"#Wallbox 3\"><article class=\"em-card\"><span>Wallbox 3</span><strong>Öffnen</strong><small>Halle / Anzeige</small></article></a>\n    </div>\n  </section>\n\n  <section class=\"em-battery-section\">\n    <h2>Batterie</h2>\n    <a class=\"em-detail-link\" href=\"#Batterie\" aria-label=\"Batteriedetails öffnen\">\n      <div class=\"em-battery\">\n        <div><span>Leistung</span><strong>{0_userdata.0.EOS.Battery.Summary.Power} W</strong></div>\n        <div><span>Spannung</span><strong>{0_userdata.0.EOS.Battery.Summary.Voltage} V</strong></div>\n        <div><span>Strom</span><strong>{0_userdata.0.EOS.Battery.Summary.Current} A</strong></div>\n        <div><span>Health</span><strong>{0_userdata.0.EOS.Battery.Health.Status}</strong></div>\n      </div>\n      <div class=\"em-detail-label\"><span>Details und Zellüberwachung</span><b aria-hidden=\"true\">›</b></div>\n    </a>\n  </section>\n\n  <section class=\"em-pool-summary\">\n    <h2>Batterie-Detail</h2>\n    <div class=\"em-grid em-grid-2\">\n      <article class=\"em-card\">\n        <span>SmartShunt</span>\n        <strong>{0_userdata.0.EOS.Battery.SmartShunt.SOC}%</strong>\n        <small>{0_userdata.0.EOS.Battery.SmartShunt.Voltage} V · {0_userdata.0.EOS.Battery.SmartShunt.Current} A</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Letzte Bewertung</span>\n        <strong>{0_userdata.0.EOS.Battery.Communication.LastUpdate}</strong>\n        <small>{0_userdata.0.EOS.Battery.Communication.SmartShunt.Status} / {0_userdata.0.EOS.Battery.Communication.Gobel.Status}</small>\n      </article>\n    </div>\n  </section>\n</div>\n",
           "refreshInterval": "0",
           "name": "Energiemanagement Responsive Dashboard"
         },
@@ -198,6 +198,141 @@
           "height": "1180px"
         },
         "widgetSet": "vis-2-widgets-material"
+      }
+    },
+    "activeWidgets": {}
+  },
+  "Wallbox 1": {
+    "name": "Wallbox 1",
+    "settings": {
+      "style": {
+        "background-color": "#101416",
+        "width": "100%",
+        "height": "900px",
+        "overflow-x": "hidden"
+      }
+    },
+    "widgets": {
+      "w000001": {
+        "tpl": "tplHtml",
+        "data": {
+          "bindings": [],
+          "html": "<div class=\"em-dashboard em-battery-page\">\n  <header class=\"em-header em-detail-header\">\n    <a class=\"em-back\" href=\"#Main\" aria-label=\"Zur Übersicht\">‹</a>\n    <div>\n      <div class=\"em-kicker\">EOS</div>\n      <h1>Wallbox 1 · V3</h1>\n      <p>go-e.0 · ladebar und 1/3-phasig umschaltbar</p>\n    </div>\n    <div class=\"em-soc\">\n      <span>Leistung</span>\n      <strong>{alias.0.go-E.powerV3} kW</strong>\n    </div>\n  </header>\n\n  <section class=\"em-battery-section\">\n    <h2>Status</h2>\n    <div class=\"em-summary-grid\">\n      <article class=\"em-card\">\n        <span>Aktuell</span>\n        <strong>{go-e.0.allow_charging}</strong>\n        <small>EOS-/go-e-Status</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Freigabe</span>\n        <strong>{go-e.0.allow_charging}</strong>\n        <small>Schaltet Laden an oder aus</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Phase</span>\n        <strong>{go-e.0.phases}</strong>\n        <small>Aktive Phasen</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Fahrzeug</span>\n        <strong>{go-e.0.car}</strong>\n        <small>Car-State des go-e</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Verbindung</span>\n        <strong>{go-e.0.info.connection}</strong>\n        <small>Adapterverbindung</small>\n      </article>\n    </div>\n  </section>\n\n  <section>\n    <div class=\"em-section-head\">\n      <h2>Steuerung</h2>\n      <span>Aktiv / Inaktiv per Freigabe</span>\n    </div>\n    <div class=\"em-comm-grid\">\n      <article class=\"em-card em-comm-wide\">\n        <span>Ladefreigabe</span>\n        <strong>go-e.0.allow_charging</strong>\n        <small>0 = aus, 1 = freigegeben</small>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"em-pool-summary\">\n    <h2>Details</h2>\n    <div class=\"em-grid em-grid-2\">\n      <article class=\"em-card\">\n        <span>Konfiguration</span>\n        <strong>Leistung alias.0.go-E.powerV3 / HTTP http://192.168.11.20</strong>\n        <small>EOS-/go-e-Referenzpfade</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Hinweis</span>\n        <strong>Schalter steuert die Freigabe</strong>\n        <small>Nur die Freigabe wird geschaltet</small>\n      </article>\n    </div>\n  </section>\n</div>\n",
+          "refreshInterval": "0",
+          "name": "Wallbox 1 Responsive Dashboard"
+        },
+        "style": {
+          "left": "0px",
+          "top": "0px",
+          "width": "100%",
+          "height": "900px",
+          "position": "relative"
+        },
+        "widgetSet": "basic"
+      },
+      "w000002": {
+        "tpl": "tplMaterial2Switches",
+        "data": {
+          "noCard": false,
+          "widgetTitle": "Wallbox 1",
+          "count": 1,
+          "type": "lines",
+          "allSwitch": false,
+          "oid1": "go-e.0.allow_charging",
+          "type1": "switch",
+          "title1": "Laden freigeben",
+          "noIcon1": true
+        },
+        "style": {
+          "left": "14px",
+          "top": "110px",
+          "width": "calc(100% - 28px)",
+          "height": "320px"
+        },
+        "widgetSet": "vis-2-widgets-material"
+      }
+    },
+    "activeWidgets": {}
+  },
+  "Wallbox 2": {
+    "name": "Wallbox 2",
+    "settings": {
+      "style": {
+        "background-color": "#101416",
+        "width": "100%",
+        "height": "900px",
+        "overflow-x": "hidden"
+      }
+    },
+    "widgets": {
+      "w000001": {
+        "tpl": "tplHtml",
+        "data": {
+          "bindings": [],
+          "html": "<div class=\"em-dashboard em-battery-page\">\n  <header class=\"em-header em-detail-header\">\n    <a class=\"em-back\" href=\"#Main\" aria-label=\"Zur Übersicht\">‹</a>\n    <div>\n      <div class=\"em-kicker\">EOS</div>\n      <h1>Wallbox 2 · V4</h1>\n      <p>go-e.1 · ladebar und 1/3-phasig umschaltbar</p>\n    </div>\n    <div class=\"em-soc\">\n      <span>Leistung</span>\n      <strong>{alias.0.go-E.powerV4} kW</strong>\n    </div>\n  </header>\n\n  <section class=\"em-battery-section\">\n    <h2>Status</h2>\n    <div class=\"em-summary-grid\">\n      <article class=\"em-card\">\n        <span>Aktuell</span>\n        <strong>{go-e.1.allow_charging}</strong>\n        <small>EOS-/go-e-Status</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Freigabe</span>\n        <strong>{go-e.1.allow_charging}</strong>\n        <small>Schaltet Laden an oder aus</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Phase</span>\n        <strong>{go-e.1.phases}</strong>\n        <small>Aktive Phasen</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Fahrzeug</span>\n        <strong>{go-e.1.car}</strong>\n        <small>Car-State des go-e</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Verbindung</span>\n        <strong>{go-e.1.info.connection}</strong>\n        <small>Adapterverbindung</small>\n      </article>\n    </div>\n  </section>\n\n  <section>\n    <div class=\"em-section-head\">\n      <h2>Steuerung</h2>\n      <span>Aktiv / Inaktiv per Freigabe</span>\n    </div>\n    <div class=\"em-comm-grid\">\n      <article class=\"em-card em-comm-wide\">\n        <span>Ladefreigabe</span>\n        <strong>go-e.1.allow_charging</strong>\n        <small>0 = aus, 1 = freigegeben</small>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"em-pool-summary\">\n    <h2>Details</h2>\n    <div class=\"em-grid em-grid-2\">\n      <article class=\"em-card\">\n        <span>Konfiguration</span>\n        <strong>Leistung alias.0.go-E.powerV4 / HTTP http://192.168.11.21</strong>\n        <small>EOS-/go-e-Referenzpfade</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Hinweis</span>\n        <strong>Schalter steuert die Freigabe</strong>\n        <small>Nur die Freigabe wird geschaltet</small>\n      </article>\n    </div>\n  </section>\n</div>\n",
+          "refreshInterval": "0",
+          "name": "Wallbox 2 Responsive Dashboard"
+        },
+        "style": {
+          "left": "0px",
+          "top": "0px",
+          "width": "100%",
+          "height": "900px",
+          "position": "relative"
+        },
+        "widgetSet": "basic"
+      },
+      "w000002": {
+        "tpl": "tplMaterial2Switches",
+        "data": {
+          "noCard": false,
+          "widgetTitle": "Wallbox 2",
+          "count": 1,
+          "type": "lines",
+          "allSwitch": false,
+          "oid1": "go-e.1.allow_charging",
+          "type1": "switch",
+          "title1": "Laden freigeben",
+          "noIcon1": true
+        },
+        "style": {
+          "left": "14px",
+          "top": "110px",
+          "width": "calc(100% - 28px)",
+          "height": "320px"
+        },
+        "widgetSet": "vis-2-widgets-material"
+      }
+    },
+    "activeWidgets": {}
+  },
+  "Wallbox 3": {
+    "name": "Wallbox 3",
+    "settings": {
+      "style": {
+        "background-color": "#101416",
+        "width": "100%",
+        "height": "760px",
+        "overflow-x": "hidden"
+      }
+    },
+    "widgets": {
+      "w000001": {
+        "tpl": "tplHtml",
+        "data": {
+          "bindings": [],
+          "html": "<div class=\"em-dashboard em-battery-page\">\n  <header class=\"em-header em-detail-header\">\n    <a class=\"em-back\" href=\"#Main\" aria-label=\"Zur Übersicht\">‹</a>\n    <div>\n      <div class=\"em-kicker\">EOS</div>\n      <h1>Wallbox 3 · Halle</h1>\n      <p>go-e.2 · reine Anzeige, nicht regelbar</p>\n    </div>\n    <div class=\"em-soc\">\n      <span>Leistung</span>\n      <strong>{alias.0.go-E.go-E-V4-Halle} kW</strong>\n    </div>\n  </header>\n\n  <section class=\"em-battery-section\">\n    <h2>Status</h2>\n    <div class=\"em-summary-grid\">\n      <article class=\"em-card\">\n        <span>Aktuell</span>\n        <strong>{go-e.2.allow_charging}</strong>\n        <small>EOS-/go-e-Status</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Freigabe</span>\n        <strong>{go-e.2.allow_charging}</strong>\n        <small>Schaltet Laden an oder aus</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Phase</span>\n        <strong>{go-e.2.phases}</strong>\n        <small>Aktive Phasen</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Fahrzeug</span>\n        <strong>{go-e.2.car}</strong>\n        <small>Car-State des go-e</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Verbindung</span>\n        <strong>{go-e.2.info.connection}</strong>\n        <small>Adapterverbindung</small>\n      </article>\n    </div>\n  </section>\n\n  <section>\n    <div class=\"em-section-head\">\n      <h2>Steuerung</h2>\n      <span>Aktiv / Inaktiv per Freigabe</span>\n    </div>\n    <div class=\"em-comm-grid\">\n      <article class=\"em-card em-comm-wide\">\n        <span>Steuerung</span>\n        <strong>nicht freigegeben</strong>\n        <small>Wallbox 3 bleibt nur lesend</small>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"em-pool-summary\">\n    <h2>Details</h2>\n    <div class=\"em-grid em-grid-2\">\n      <article class=\"em-card\">\n        <span>Konfiguration</span>\n        <strong>Leistung alias.0.go-E.go-E-V4-Halle / Halle</strong>\n        <small>EOS-/go-e-Referenzpfade</small>\n      </article>\n      <article class=\"em-card\">\n        <span>Hinweis</span>\n        <strong>Nicht regelbar</strong>\n        <small>Wallbox 3 wird laut Projektstand nicht geschaltet</small>\n      </article>\n    </div>\n  </section>\n</div>\n",
+          "refreshInterval": "0",
+          "name": "Wallbox 3 Responsive Dashboard"
+        },
+        "style": {
+          "left": "0px",
+          "top": "0px",
+          "width": "100%",
+          "height": "760px",
+          "position": "relative"
+        },
+        "widgetSet": "basic"
       }
     },
     "activeWidgets": {}
