@@ -23,25 +23,25 @@ Die drei Netz-Zählpunkte bleiben vollständig getrennt. Es gibt keinen State `E
 
 | Ziel-State | Datentyp | Einheit | read-only | Herkunft | Status |
 | --- | --- | --- | --- | --- | --- |
-| `0_userdata.0.EOS.EnergyFlow.Grid.Grid40.Power` | Zahl | W | ja | `0_userdata.0.EOS.Grid.Sources.Grid40.Power` | spezifiziert |
-| `0_userdata.0.EOS.EnergyFlow.Grid.Grid40.Status` | Text |  | ja | `0_userdata.0.EOS.Grid.Sources.Grid40.Status` | spezifiziert |
-| `0_userdata.0.EOS.EnergyFlow.Grid.Grid40.LastUpdate` | Zahl | ms | ja | `0_userdata.0.EOS.Grid.Sources.Grid40.LastUpdate` | spezifiziert |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid40.Power` | Zahl | W | ja | `0_userdata.0.EOS.Grid.Sources.Grid40.Power` | implementiert |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid40.Status` | Text |  | ja | `0_userdata.0.EOS.Grid.Sources.Grid40.Status` | implementiert |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid40.LastUpdate` | Zahl | ms | ja | `0_userdata.0.EOS.Grid.Sources.Grid40.LastUpdate` | implementiert |
 
 ### Grid 41 – Halle
 
 | Ziel-State | Datentyp | Einheit | read-only | Herkunft | Status |
 | --- | --- | --- | --- | --- | --- |
-| `0_userdata.0.EOS.EnergyFlow.Grid.Grid41.Power` | Zahl | W | ja | `0_userdata.0.EOS.Grid.Sources.Grid41.Power` | spezifiziert |
-| `0_userdata.0.EOS.EnergyFlow.Grid.Grid41.Status` | Text |  | ja | `0_userdata.0.EOS.Grid.Sources.Grid41.Status` | spezifiziert |
-| `0_userdata.0.EOS.EnergyFlow.Grid.Grid41.LastUpdate` | Zahl | ms | ja | `0_userdata.0.EOS.Grid.Sources.Grid41.LastUpdate` | spezifiziert |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid41.Power` | Zahl | W | ja | `0_userdata.0.EOS.Grid.Sources.Grid41.Power` | implementiert |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid41.Status` | Text |  | ja | `0_userdata.0.EOS.Grid.Sources.Grid41.Status` | implementiert |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid41.LastUpdate` | Zahl | ms | ja | `0_userdata.0.EOS.Grid.Sources.Grid41.LastUpdate` | implementiert |
 
 ### Grid 43 – Haus
 
 | Ziel-State | Datentyp | Einheit | read-only | Herkunft | Status |
 | --- | --- | --- | --- | --- | --- |
-| `0_userdata.0.EOS.EnergyFlow.Grid.Grid43.Power` | Zahl | W | ja | `0_userdata.0.EOS.Grid.Sources.Grid43.Power` | spezifiziert |
-| `0_userdata.0.EOS.EnergyFlow.Grid.Grid43.Status` | Text |  | ja | `0_userdata.0.EOS.Grid.Sources.Grid43.Status` | spezifiziert |
-| `0_userdata.0.EOS.EnergyFlow.Grid.Grid43.LastUpdate` | Zahl | ms | ja | `0_userdata.0.EOS.Grid.Sources.Grid43.LastUpdate` | spezifiziert |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid43.Power` | Zahl | W | ja | `0_userdata.0.EOS.Grid.Sources.Grid43.Power` | implementiert |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid43.Status` | Text |  | ja | `0_userdata.0.EOS.Grid.Sources.Grid43.Status` | implementiert |
+| `0_userdata.0.EOS.EnergyFlow.Grid.Grid43.LastUpdate` | Zahl | ms | ja | `0_userdata.0.EOS.Grid.Sources.Grid43.LastUpdate` | implementiert |
 
 ### Grid-Regeln
 
@@ -112,4 +112,4 @@ Bei einer späteren Implementierung werden Grid 40, Grid 41 und Grid 43 als drei
 
 Alle States bleiben read-only.
 Energy Flow V1 schreibt niemals auf Quellen oder Aktoren zurück.
-Diese Änderung spezifiziert ausschließlich das Zielmodell; sie verändert weder Code noch Live-System.
+Das getrennte Grid-Zielmodell ist in `Energy_Flow_V1` 1.4.0 implementiert und getestet; das Live-System bleibt bis zur Deployment-Freigabe unverändert.
