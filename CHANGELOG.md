@@ -2,6 +2,10 @@
 
 ## 2026-07-26
 - Changed
+  - die Wallbox-Kacheln auf der EOS-Hauptseite zeigen jetzt die echte Leistung und eine Batterie-ahnliche Detailzeile statt des irrefuehrenden Texts "Oeffnen"
+
+## 2026-07-26
+- Changed
   - die VIS2-Hauptseite bekommt fuer die Kommunikationssektion wieder einen vollen Layoutbereich, damit die Statuskarten nicht mehr zusammengequetscht erscheinen
   - die Hauptseite zeigt die Wallboxen weiterhin direkt auf der Uebersicht und die Detailseiten fuer Wallbox 1 bis 3 bleiben per Jump-Links erreichbar
   - `Energy_Flow_V1` wurde erneut live redeployt, damit die konsolidierte Wallbox-Leistung direkt aus den belegten go-e-Quellen nachzieht
