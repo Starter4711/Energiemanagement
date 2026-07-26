@@ -97,7 +97,7 @@ project = {
         "ts": "energiemanagement-pool-v4",
     },
     "Main": view("Energiemanagement", MAIN_HTML, 1100),
-    "Batterie": view("Batterie", BATTERY_HTML, 1200),
+    "Batterie": view("Batterie", BATTERY_HTML, 1800),
     "Pool": view("Pool", POOL_HTML, 1900),
     "Pool_Bedienung": pool_controls_view(),
 }

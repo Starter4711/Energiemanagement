@@ -1,16 +1,19 @@
 // ioBroker object: script.js.energiemanagement.Energy_Flow_V1
 // name: Energy_Flow_V1
 // engineType: Javascript/js
-// enabled: False
+// enabled: True
 
 'use strict';
 
 const ROOT = '0_userdata.0.EOS.EnergyFlow';
 const BATTERY_ROOT = '0_userdata.0.EOS.Battery';
-const GRID_ROOT = '0_userdata.0.EOS.Grid';
+const GRID_ROOT = '0_userdata.0.EOS.Bilanz';
+const CONFIG_ROOT = '0_userdata.0.EOS.Config';
+const PV_SOURCE = '0_userdata.0.Victron.SUMME_PV';
+const HOUSE_SOURCE = '0_userdata.0.Victron.SUMME_Verbrauch';
 
 const CONFIG = {
-    version: '1.4.0',
+    version: '1.5.0',
     logLevel: 'info',
     debugEnabled: false,
     refreshDebounceMs: 50,
@@ -430,15 +433,23 @@ function updateGroup(name, payload) {
         writeChanged(`${ROOT}.${name}.SOC`, isKnownNumber(payload.soc) ? payload.soc : null);
     }
     if (Object.prototype.hasOwnProperty.call(payload, 'active')) {
-        writeChanged(`${ROOT}.${name}.Active`, isKnownBoolean(payload.active) ? payload.active : null);
+        writeChanged(`${ROOT}.${name}.Active`, isKnownBoolean(payload.active) ? payload.active : false);
     }
     writeChanged(`${ROOT}.${name}.LastUpdate`, Number.isFinite(payload.lastUpdate) ? payload.lastUpdate : Date.now());
 }
 
 function readGridMeterSnapshot(name) {
-    const power = readNumber(`${GRID_ROOT}.${name}.Power`);
-    const status = normalizeStatus(readString(`${GRID_ROOT}.${name}.Status`));
-    const state = getState(`${GRID_ROOT}.${name}.Power`) || getState(`${GRID_ROOT}.${name}.Status`);
+    const sourceId = name === 'Grid40'
+        ? readString(`${CONFIG_ROOT}.Zaehlpunkt_Haus_Leistung_ID`)
+        : name === 'Grid41'
+            ? readString(`${CONFIG_ROOT}.Zaehlpunkt_Halle_Leistung_ID`)
+            : readString(`${CONFIG_ROOT}.Zaehlpunkt_Alte_Wohnung_Leistung_ID`);
+    const bilanzId = name === 'Grid40' ? `${GRID_ROOT}.Haus_W`
+        : name === 'Grid41' ? `${GRID_ROOT}.Halle_W`
+            : `${GRID_ROOT}.Alte_Wohnung_W`;
+    const power = readNumber(sourceId) ?? readNumber(bilanzId);
+    const status = Number.isFinite(power) ? 'OK' : 'UNKNOWN';
+    const state = getState(sourceId) || getState(bilanzId);
     const lastUpdate = state && Number.isFinite(Number(state.ts))
         ? Number(state.ts)
         : Date.now();
@@ -496,9 +507,54 @@ function readBatterySnapshot() {
     };
 }
 
+function readPowerSnapshot(sourceId, factor = 1) {
+    const sourcePower = readNumber(sourceId);
+    const state = getState(sourceId);
+    const power = Number.isFinite(sourcePower)
+        ? Math.round(Math.max(0, sourcePower * factor) * 10) / 10
+        : null;
+
+    return {
+        power,
+        status: Number.isFinite(power) ? 'OK' : 'UNKNOWN',
+        communication: Number.isFinite(power) ? 'OK' : 'UNKNOWN',
+        lastUpdate: state && Number.isFinite(Number(state.ts))
+            ? Number(state.ts)
+            : Date.now(),
+    };
+}
+
+function readWallboxSnapshot() {
+    const sourceIds = [
+        readString(`${CONFIG_ROOT}.Wallbox1_V3_Leistung_ID`),
+        readString(`${CONFIG_ROOT}.Wallbox2_V4_Leistung_ID`),
+        readString(`${CONFIG_ROOT}.Wallbox3_Halle_Leistung_ID`),
+    ];
+    const sources = sourceIds.map(id => readPowerSnapshot(id, 1000));
+    const knownPowers = sources
+        .map(source => source.power)
+        .filter(power => Number.isFinite(power));
+    const power = knownPowers.length === sources.length
+        ? Math.round(knownPowers.reduce((sum, value) => sum + value, 0) * 10) / 10
+        : null;
+
+    return {
+        power,
+        active: Number.isFinite(power) && power > 100,
+        status: Number.isFinite(power) ? 'OK' : 'UNKNOWN',
+        communication: buildCommunicationStatus(sources.map(source => source.communication)),
+        lastUpdate: sources
+            .map(source => source.lastUpdate)
+            .reduce((max, value) => Math.max(max, value), 0) || Date.now(),
+    };
+}
+
 function refresh() {
     const grid = readGridSnapshot();
     const battery = readBatterySnapshot();
+    const pv = readPowerSnapshot(PV_SOURCE);
+    const house = readPowerSnapshot(HOUSE_SOURCE);
+    const wallbox = readWallboxSnapshot();
 
     updateGroup('Grid', {
         status: grid.status,
@@ -509,11 +565,7 @@ function refresh() {
     updateGroup('Grid.Grid41', grid.meters.Grid41);
     updateGroup('Grid.Grid43', grid.meters.Grid43);
 
-    updateGroup('PV', {
-        status: 'UNKNOWN',
-        power: null,
-        lastUpdate: Date.now(),
-    });
+    updateGroup('PV', pv);
 
     updateGroup('Battery', {
         status: battery.status,
@@ -522,32 +574,34 @@ function refresh() {
         lastUpdate: battery.lastUpdate,
     });
 
-    updateGroup('House', {
-        status: 'UNKNOWN',
-        power: null,
-        lastUpdate: Date.now(),
-    });
-
-    updateGroup('Wallbox', {
-        status: 'UNKNOWN',
-        power: null,
-        active: false,
-        lastUpdate: Date.now(),
-    });
+    updateGroup('House', house);
+    updateGroup('Wallbox', wallbox);
 
     const timeoutCount = [
         grid.communication,
         battery.communication,
-        'UNKNOWN',
-        'UNKNOWN',
-        'UNKNOWN',
+        pv.communication,
+        house.communication,
+        wallbox.communication,
     ]
         .filter(status => normalizeStatus(status) !== 'OK')
         .length;
 
-    writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([grid.status, battery.status]));
+    writeChanged(`${ROOT}.Summary.Status`, buildCompositeStatus([
+        grid.status,
+        battery.status,
+        pv.status,
+        house.status,
+        wallbox.status,
+    ]));
     writeChanged(`${ROOT}.Summary.LastUpdate`, Date.now());
-    writeChanged(`${ROOT}.Communication.OverallStatus`, buildCommunicationStatus([grid.communication, battery.communication]));
+    writeChanged(`${ROOT}.Communication.OverallStatus`, buildCommunicationStatus([
+        grid.communication,
+        battery.communication,
+        pv.communication,
+        house.communication,
+        wallbox.communication,
+    ]));
     writeChanged(`${ROOT}.Communication.TimeoutCount`, timeoutCount);
     writeChanged(`${ROOT}.Communication.LastUpdate`, Date.now());
 }
@@ -566,12 +620,12 @@ function scheduleRefresh() {
 
 function subscribeToSources() {
     const sourceIds = [
-        `${GRID_ROOT}.Grid40.Power`,
-        `${GRID_ROOT}.Grid40.Status`,
-        `${GRID_ROOT}.Grid41.Power`,
-        `${GRID_ROOT}.Grid41.Status`,
-        `${GRID_ROOT}.Grid43.Power`,
-        `${GRID_ROOT}.Grid43.Status`,
+        readString(`${CONFIG_ROOT}.Zaehlpunkt_Haus_Leistung_ID`),
+        readString(`${CONFIG_ROOT}.Zaehlpunkt_Halle_Leistung_ID`),
+        readString(`${CONFIG_ROOT}.Zaehlpunkt_Alte_Wohnung_Leistung_ID`),
+        `${GRID_ROOT}.Haus_W`,
+        `${GRID_ROOT}.Halle_W`,
+        `${GRID_ROOT}.Alte_Wohnung_W`,
         `${BATTERY_ROOT}.Summary.Power`,
         `${BATTERY_ROOT}.Summary.SOC`,
         `${BATTERY_ROOT}.Summary.Status`,
@@ -580,10 +634,15 @@ function subscribeToSources() {
         `${BATTERY_ROOT}.Communication.Gobel.Status`,
         `${BATTERY_ROOT}.Communication.Heltec.Status`,
         `${BATTERY_ROOT}.Communication.MQTT.Status`,
+        PV_SOURCE,
+        HOUSE_SOURCE,
+        readString(`${CONFIG_ROOT}.Wallbox1_V3_Leistung_ID`),
+        readString(`${CONFIG_ROOT}.Wallbox2_V4_Leistung_ID`),
+        readString(`${CONFIG_ROOT}.Wallbox3_Halle_Leistung_ID`),
     ];
 
     for (const id of sourceIds) {
-        if (existsState(id)) {
+        if (id && existsState(id)) {
             on({ id, change: 'ne' }, scheduleRefresh);
         }
     }

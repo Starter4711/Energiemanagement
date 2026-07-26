@@ -1,44 +1,85 @@
 <div class="em-dashboard">
   <header class="em-header">
     <div>
-      <div class="em-kicker">LIVE</div>
-      <h1>Energiemanagement</h1>
-      <p>Haus · Halle · Wohnung</p>
+      <div class="em-kicker">EOS</div>
+      <h1>EOS</h1>
+      <p>EOS-States · Batterie · Energiefluss · VIS2</p>
     </div>
     <div class="em-soc">
-      <span>SmartShunt</span>
-      <strong>{alias.0.Gobel.Soc SmartShunt}%</strong>
+      <span>Battery SOC</span>
+      <strong>{0_userdata.0.EOS.Battery.Summary.SOC}%</strong>
     </div>
   </header>
 
   <section class="em-net">
-    <h2>Netz</h2>
+    <h2>EOS Status</h2>
     <div class="em-grid em-grid-3">
       <article class="em-card">
-        <span>Haus</span>
-        <strong>{alias.0.EM24 New Grid.Power}</strong>
-        <small>W · + Bezug / − Einspeisung</small>
+        <span>Battery</span>
+        <strong>{0_userdata.0.EOS.Battery.Summary.Status}</strong>
+        <small>Gesamtzustand der Batterie</small>
       </article>
       <article class="em-card">
-        <span>Halle</span>
-        <strong>{alias.0.EM24 Hall Grid.Power}</strong>
-        <small>W · Grenze −27 / +15 kW</small>
+        <span>Energy Flow</span>
+        <strong>{0_userdata.0.EOS.EnergyFlow.Summary.Status}</strong>
+        <small>Verdichteter Flow-Status</small>
       </article>
       <article class="em-card">
-        <span>Wohnung</span>
-        <strong>{alias.0.EM24 Old Grid.Power Old Grid}</strong>
-        <small>W · Zählpunkt 3</small>
+        <span>Kommunikation</span>
+        <strong>{0_userdata.0.EOS.Battery.Health.Status}</strong>
+        <small>Gesamtsicht der EOS-Batterie</small>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="em-section-head">
+      <h2>Communication</h2>
+      <span>Wie in der Batterie-Unterseite: Status je Quelle</span>
+    </div>
+    <div class="em-flag-grid">
+      <div class="em-flag" data-state="{0_userdata.0.EOS.Battery.Warnings.SmartShuntOffline}">SmartShunt</div>
+      <div class="em-flag" data-state="{0_userdata.0.EOS.Battery.Warnings.GobelOffline}">Gobel / Pace BMS</div>
+      <div class="em-flag" data-state="{0_userdata.0.EOS.Battery.Warnings.HeltecOffline}">Heltec</div>
+      <div class="em-flag" data-state="{0_userdata.0.EOS.Battery.Warnings.MQTTOffline}">MQTT</div>
+    </div>
+    <div class="em-grid em-grid-2" style="margin-top:8px">
+      <article class="em-card">
+        <span>Letzte Kommunikationsbewertung</span>
+        <strong>{0_userdata.0.EOS.Battery.Communication.LastUpdate}</strong>
+        <small>Verdichtete EOS-Sicht</small>
+      </article>
+      <article class="em-card">
+        <span>Status je Quelle</span>
+        <strong>{0_userdata.0.EOS.Battery.Communication.SmartShunt.Status} / {0_userdata.0.EOS.Battery.Communication.Gobel.Status} / {0_userdata.0.EOS.Battery.Communication.Heltec.Status} / {0_userdata.0.EOS.Battery.Communication.MQTT.Status}</strong>
+        <small>OK oder FEHLER pro Teilbereich</small>
       </article>
     </div>
   </section>
 
   <section class="em-pv">
-    <h2>PV aktuell</h2>
+    <h2>Energy Flow</h2>
     <div class="em-grid em-grid-2">
-      <article class="em-card em-accent-green"><span>Fronius Halle · 27 kW</span><strong>{alias.0.Fronius.AC-Power}</strong><small>W</small></article>
-      <article class="em-card em-accent-yellow"><span>Fronius Haus · 10 kW</span><strong>{alias.0.Fronius.AC-Power_10kW}</strong><small>W</small></article>
-      <article class="em-card em-accent-blue"><span>SMA Haus · 4,7 kW</span><strong>{alias.0.SMA.Power}</strong><small>W</small></article>
-      <article class="em-card em-accent-red"><span>SolarEdge Wohnung · 17 kW</span><strong>{alias.0.SE.Power}</strong><small>W</small></article>
+      <article class="em-card em-accent-green">
+        <span>Grid</span>
+        <strong>{0_userdata.0.EOS.EnergyFlow.Grid.Status}</strong>
+        <small>{0_userdata.0.EOS.EnergyFlow.Grid.Grid40.Power} / {0_userdata.0.EOS.EnergyFlow.Grid.Grid41.Power} / {0_userdata.0.EOS.EnergyFlow.Grid.Grid43.Power} W</small>
+      </article>
+      <article class="em-card em-accent-yellow">
+        <span>Battery</span>
+        <strong>{0_userdata.0.EOS.EnergyFlow.Battery.Power} W</strong>
+        <small>SOC {0_userdata.0.EOS.EnergyFlow.Battery.SOC}%</small>
+      </article>
+      <article class="em-card em-accent-blue">
+        <span>PV</span>
+        <strong>{0_userdata.0.EOS.EnergyFlow.PV.Power} W</strong>
+        <small>Status {0_userdata.0.EOS.EnergyFlow.PV.Status}</small>
+      </article>
+      <article class="em-card em-accent-red">
+        <span>House / Wallbox</span>
+        <strong>{0_userdata.0.EOS.EnergyFlow.House.Power} / {0_userdata.0.EOS.EnergyFlow.Wallbox.Power} W</strong>
+        <small>{0_userdata.0.EOS.EnergyFlow.House.Status} · {0_userdata.0.EOS.EnergyFlow.Wallbox.Status}</small>
+      </article>
     </div>
   </section>
 
@@ -46,27 +87,28 @@
     <h2>Batterie</h2>
     <a class="em-detail-link" href="#Batterie" aria-label="Batteriedetails öffnen">
       <div class="em-battery">
-        <div><span>Leistung</span><strong>{alias.0.Gobel.Power} W</strong></div>
-        <div><span>Spannung · SmartShunt</span><strong>{alias.0.Gobel.Voltage_SmartShunt} V</strong></div>
-        <div><span>Strom</span><strong>{alias.0.Gobel.Current} A</strong></div>
-        <div><span>RS450</span><strong>{alias.0.MPPT RS450/100.P String1} + {alias.0.MPPT RS450/100.P String2} W</strong></div>
+        <div><span>Leistung</span><strong>{0_userdata.0.EOS.Battery.Summary.Power} W</strong></div>
+        <div><span>Spannung</span><strong>{0_userdata.0.EOS.Battery.Summary.Voltage} V</strong></div>
+        <div><span>Strom</span><strong>{0_userdata.0.EOS.Battery.Summary.Current} A</strong></div>
+        <div><span>Health</span><strong>{0_userdata.0.EOS.Battery.Health.Status}</strong></div>
       </div>
       <div class="em-detail-label"><span>Details und Zellüberwachung</span><b aria-hidden="true">›</b></div>
     </a>
   </section>
 
   <section class="em-pool-summary">
-    <h2>Pool</h2>
-    <a class="em-detail-link em-pool-tile" href="#Pool" aria-label="Poolsteuerung öffnen">
-      <div class="em-pool-main-temp"><span>Pooltemperatur · Rücklauf</span><strong>{javascript.0.Pool.RL} °C</strong><small>Vorlauf {javascript.0.Pool.VL} °C</small></div>
-      <div class="em-pool-main-io">
-        <span class="em-dot" data-state="{s7.0.Inputs.0.I1}">H2O</span>
-        <span class="em-dot" data-state="{s7.0.Outputs.0.Q1}">Pumpe</span>
-        <span class="em-dot" data-state="{s7.0.Outputs.0.Q2}">Salz/pH</span>
-        <span class="em-dot" data-state="{s7.0.Outputs.0.Q3}">Füllen</span>
-        <span class="em-dot" data-state="{s7.0.Outputs.0.Q4}">Wärmepumpe</span>
-      </div>
-      <b class="em-tile-arrow" aria-hidden="true">›</b>
-    </a>
+    <h2>Batterie-Detail</h2>
+    <div class="em-grid em-grid-2">
+      <article class="em-card">
+        <span>SmartShunt</span>
+        <strong>{0_userdata.0.EOS.Battery.SmartShunt.SOC}%</strong>
+        <small>{0_userdata.0.EOS.Battery.SmartShunt.Voltage} V · {0_userdata.0.EOS.Battery.SmartShunt.Current} A</small>
+      </article>
+      <article class="em-card">
+        <span>Letzte Bewertung</span>
+        <strong>{0_userdata.0.EOS.Battery.Communication.LastUpdate}</strong>
+        <small>{0_userdata.0.EOS.Battery.Communication.SmartShunt.Status} / {0_userdata.0.EOS.Battery.Communication.Gobel.Status}</small>
+      </article>
+    </div>
   </section>
 </div>

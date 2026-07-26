@@ -1,14 +1,14 @@
 // ioBroker object: script.js.energiemanagement.Battery_Supervisor_V1
 // name: Battery_Supervisor_V1
 // engineType: Javascript/js
-// enabled: False
+// enabled: True
 
 'use strict';
 
 const ROOT = '0_userdata.0.EOS.Battery';
 
 const CONFIG = {
-    version: '1.0.0',
+    version: '1.0.1',
     logLevel: 'info',
     debugLevel: 0,
     communicationWarningTimeoutSeconds: 120,
@@ -612,8 +612,16 @@ function readPackTemperature(pack) {
     return readNumber(`alias.0.Gobel_${pack === 1 ? 'Master' : `Slave${pack - 1}`}.Gobel_${pack === 1 ? 'Master' : `Slave${pack - 1}`}_Tmp`);
 }
 
+function evaluatePackStatus(heltec, packCurrent, packTemperature) {
+    if (!heltec && packCurrent === null && packTemperature === null) {
+        return 'UNKNOWN';
+    }
+    return 'OK';
+}
+
 function updateBatterySupervisor() {
     const smartShunt = readSmartShunt();
+    const healthStatus = readString(`${ROOT}.Health.Status`) || CONFIG.defaults.string;
 
     if (smartShunt.soc !== null) {
         writeChanged(`${ROOT}.Summary.SOC`, smartShunt.soc);
@@ -643,6 +651,8 @@ function updateBatterySupervisor() {
     if (smartShunt.timeToGo !== null) {
         writeChanged(`${ROOT}.SmartShunt.TimeToGo`, smartShunt.timeToGo);
     }
+
+    writeChanged(`${ROOT}.Summary.Status`, healthStatus);
 
     const communicationResults = [
         updateCommunicationSource('SmartShunt', [
@@ -701,6 +711,7 @@ function updateBatterySupervisor() {
         const packCurrent = readPackCurrent(pack);
         const packTemperature = readPackTemperature(pack);
         const packBase = `${ROOT}.Packs.Pack${pack}`;
+        const packStatus = evaluatePackStatus(heltec, packCurrent, packTemperature);
 
         if (heltec) {
             writeChanged(`${packBase}.Voltage`, Math.round(heltec.voltageSum * 1000) / 1000);
@@ -712,6 +723,12 @@ function updateBatterySupervisor() {
         if (packTemperature !== null) {
             writeChanged(`${packBase}.TemperatureMax`, packTemperature);
         }
+        writeChanged(`${packBase}.Status`, packStatus);
+        writeChanged(`${packBase}.Power`, heltec && packCurrent !== null
+            ? Math.round((heltec.voltageSum * packCurrent) * 10) / 10
+            : 0);
+        writeChanged(`${packBase}.Balancing`, heltec ? heltec.vDiff <= 50 : false);
+        writeChanged(`${packBase}.Communication`, packStatus);
     }
 }
 

@@ -1,11 +1,11 @@
 // ioBroker object: script.js.energiemanagement.Config
 // name: Config
 // engineType: Javascript/js
-// enabled: False
+// enabled: True
 
 'use strict';
 
-const ROOT = '0_userdata.0.Energiemanagement';
+const ROOT = '0_userdata.0.EOS';
 
 const states = [
     [`${ROOT}.Config.Zaehlpunkt_Haus_Leistung_ID`, 'alias.0.EM24 New Grid.Power', 'string', 'state'],
@@ -77,7 +77,7 @@ try {
             write: true,
         });
     }
-    log('Energiemanagement-Konfiguration ist angelegt.', 'info');
+    log('EOS-Konfiguration ist angelegt.', 'info');
 } catch (error) {
     log(`Config Fehler: ${error.message}`, 'warn');
 }

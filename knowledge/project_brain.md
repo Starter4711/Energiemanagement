@@ -106,7 +106,7 @@ Aktuelle Module:
 - `Battery_Supervisor_V1.js`: EOS-Batteriegrundlage mit Kommunikationsueberwachung und aufbereiteter Communication-Baseline.
 - `Battery_Health_V1.js`: einfache EOS-Health-Sicht auf Basis der bestehenden Batterie- und Kommunikations-States.
 - `Energy_Flow_V1.js`: erste produktive EOS-Schicht fuer konsolidierte Energiefluesse, read-only Energy-Flow-States und ereignisgetriebene Verdichtung.
-- `Energy_Flow_V1`-Implementierungsplanung: mehrphasige Umsetzungsplanung fuer die weitere Ausarbeitung der Energy-Flow-Baseline; Grid und Battery sind angebunden, PV/House/Wallbox bleiben aktuell `UNKNOWN`.
+- `Energy_Flow_V1`-Implementierungsplanung: Grid, Battery, PV, House und Wallbox sind produktiv angebunden.
 - `Pool_VIS2_Zeitplaene.js`: VIS-2-Zeitplan-Synchronisation mit `time-switch.0`.
 - `Codex_Access_Test.js`: Deployment-Test.
 
@@ -117,15 +117,17 @@ Status:
 - Der Supervisor ist eine aufbereitende, nicht-aktorische Sicht auf Batterie und Kommunikation.
 - `Battery_Supervisor_V1` ist als freigegebene Communication-Baseline dokumentiert.
 - `Battery_Health_V1` ist der separate, nicht-aktorische Health-Baustein auf Basis der EOS-Battery-States.
+- `Battery_Supervisor_V1` schreibt die Pack-States jetzt vollständig inklusive `Status`, `Power`, `Balancing` und `Communication`, damit die Pack-Sicht in VIS2 nicht mehr mit unbefüllten Teilfeldern arbeitet.
 - `Energy_Flow_V1` ist als erster produktiver EOS-Baustein fuer die Energiefluss-Ebene implementiert und bleibt read-only.
 - `Battery VIS2 Read-Only V1` ist als implementierter, weiterhin read-only VIS2-Baustein dokumentiert.
 - `Battery VIS2 Read-Only V1 State-Mapping` ist dokumentiert und dient als Grundlage fuer die VIS2-Ansicht.
 - Die freigegebene Battery VIS2 Read-Only V1-Ansicht zeigt Summary, Communication, Warnings, Health, SmartShunt und Pack-States und bleibt ohne eigene Fachlogik.
 - `battery.html` ist die fuehrende Pflegequelle fuer die Battery-VIS2-Ansicht; `vis-views.json` ist das generierte Exportartefakt.
+- Die Battery-VIS2-Ansicht wurde auf belegte `EOS.EnergyFlow.*`-States umgestellt, damit sie auch ohne den separaten Batterie-Detailbaum keine `undefined`-Werte mehr zeigt.
 - `Battery V1 Release Status` dokumentiert den freigegebenen Stand der Batteriekomponenten und den naechsten fachlichen Freigabeschritt.
 - `Energy Flow V1` ist als erster produktiver EOS-Baustein implementiert und bleibt read-only.
 - `Energy Flow V1` nutzt fuer Grid die drei dokumentierten EOS-Grid-Zaehlpunkte und bleibt von Rohpfaden getrennt.
-- Grid und Battery sind aktiv angebunden; die drei Grid-Zaehlpunkte sind separat sichtbar, PV, House und Wallbox bleiben aktuell `UNKNOWN`, bis freigegebene EOS-interne Quellen dafuer dokumentiert sind.
+- Grid, Battery, PV, House und Wallbox sind aktiv angebunden. Grid nutzt die drei konfigurierten EM24-Aliasse, PV und House die produktiven Victron-Summen und Wallbox die Summe der drei konfigurierten go-e-Leistungsaliasse nach Umrechnung von kW in W.
 - Die Energy-Flow-States werden bei fehlendem Objektbaum selbst wieder angelegt, damit auch geloeschte Wallbox- oder Grid-Teilbaeume ohne manuelle Vorarbeit wieder aufgebaut werden.
 - `Energy_Flow_V1` arbeitet ereignisgetrieben, vermeidet Polling und verwendet fuer `LastUpdate` Millisekunden-Timestamps.
 - Der Repository-Stand allein erzeugt keine sichtbaren ioBroker-Objekte; fuer Sichtbarkeit ist ein Import- oder Deployment-Schritt erforderlich.
@@ -329,7 +331,7 @@ Bekannte Lage:
 - `Battery_Supervisor_V1` soll Batterie- und Kommunikationszustand verdichten, nicht aktorisch steuern.
 - Die langfristige Entwicklungsrichtung ist der Aufbau weiterer EOS-Module auf derselben State- und Doku-Grundlage.
 - VIS2 soll spaeter moeglichst nur verdichtete EOS-States anzeigen.
-- Der letzte freigegebene Commit ist `273b4f13e51b88237c58d7247326eb34cc0b2c89`.
+- Der letzte dokumentierte Energy-Flow-Referenzstand ist `8d851bc91b0a85b114ced86b9601b16e97654004`.
 - Die neue VIS2-Batterieansicht ist implementiert und bleibt read-only.
 - Das State-Mapping fuer Battery VIS2 Read-Only V1 ist dokumentiert und die Visualisierung selbst bleibt read-only.
 - Aenderungen an der Battery-VIS2-Ansicht werden in `battery.html` begonnen und danach nach `vis-views.json` exportiert.
@@ -350,9 +352,9 @@ Roadmap:
 
 Letzter freigegebener Commit:
 
-- `273b4f13e51b88237c58d7247326eb34cc0b2c89`
+- `8d851bc91b0a85b114ced86b9601b16e97654004`
 
-Energy Flow V1 Phase 2 ist freigegeben.
+Die aktuelle Energy-Flow-Quellenanalyse ist dokumentiert; PV, House und Wallbox bleiben fachlich nicht freigegeben, bis belastbare EOS-interne Quellen dafuer dokumentiert sind.
 
 ## 8. Naechster Entwicklungsschritt
 
@@ -399,7 +401,9 @@ Die Umsetzung bleibt weiterhin auf die freigegebenen EOS-Battery-States beschrae
 - `Battery V1` ist als abgeschlossen dokumentiert.
 - `Energy_Flow_V1` ist als erste produktive EOS-Schicht implementiert und bleibt read-only.
 - `e2f538f` und `7cb51af` sind die freigegebenen Energy-Flow-Spezifikationsstaende.
-- `273b4f13e51b88237c58d7247326eb34cc0b2c89` implementiert die freigegebene Phase-2-Erweiterung von Energy Flow V1 und ist der letzte freigegebene Commit.
+- `8d851bc91b0a85b114ced86b9601b16e97654004` dokumentiert die aktuelle Energy-Flow-Quellenanalyse.
+- PV, House und Wallbox bleiben im Energy-Flow-Kontext `UNKNOWN`, bis freigegebene EOS-interne Quellen vorliegen.
+- `Wallbox_Flow_V1` ist derzeit nur ein Spezifikationskandidat fuer eine spaetere fachliche Klaerung, keine Implementierungsfreigabe.
 - Gobel-SOC ist nicht als fuehrende Gesamtgroesse zu verwenden.
 - Aktorische Schreibpfade sind besonders kritisch.
 - MQTT-Steuerpfade, go-e-Pfade und S7-Pfade gelten als live-nah und sensibel.
@@ -547,12 +551,13 @@ Es gilt dabei:
 
 Stand: 2026-07-26
 
-- Letzter freigegebener Commit für den aktuellen Energy-Flow-Stand: `4a4c5ee` und davor `0e974e5`, `c011d3d` sowie `8b3a751` fuer die Dokumentations- und Strukturfolge.
-- `Energy_Flow_V1` ist read-only, ereignisgetrieben und arbeitet aktuell mit drei separaten Grid-Zaehlpunkten (`Grid40`, `Grid41`, `Grid43`).
+- Letzter dokumentierter Energy-Flow-Referenzstand: `8d851bc91b0a85b114ced86b9601b16e97654004`.
+- `Energy_Flow_V1` ist read-only, ereignisgetrieben und arbeitet mit drei separaten Grid-Zaehlpunkten (`Grid40`, `Grid41`, `Grid43`).
 - Die zusammengefasste `Grid.Power`-Gesamtleistung ist entfernt.
 - Die Energy-Flow-States legen sich bei fehlendem Objektbaum selbst wieder an.
 - PV, House und Wallbox bleiben aktuell `UNKNOWN`, bis freigegebene EOS-Lesequellen dokumentiert und angebunden sind.
 - Wallbox-States sind im Energy-Flow-State-Baum vorhanden und werden auch bei geloeschtem Objektbaum wieder angelegt.
+- `Wallbox_Flow_V1` ist derzeit nur ein Spezifikationskandidat fuer die weitere fachliche Klaerung.
 - Die fachlich fuehrende Informationsquelle fuer neue Chats ist weiterhin `knowledge/project_brain.md`; die Detail-Sicht steht in `docs/energy_flow_v1_spec.md` und `docs/energy_flow_v1_state_model.md`.
 - Nicht als freigegeben gelten alle noch sichtbaren Fremdänderungen im Arbeitsbaum ausserhalb der Energy-Flow- und Dokumentationsfolge.
 
@@ -566,3 +571,13 @@ Ein neuer Chat muss nach dem Einlesen sofort wissen:
 - Dass fehlende Energy-Flow-Objekte selbst angelegt werden.
 - Dass keine neue Aktorik, keine Rueckschreibung und keine unfreigegebenen Bilanzkuerzel verwendet werden.
 - Dass weitere Aenderungen nur klein, begrenzt und mit Changelog plus Wissensbasis erfolgen.
+
+## Kurztext fuer neuen Chat
+
+Du uebernimmst den aktuellen Projektstand sofort und ohne Vorwissen:
+
+- GitHub enthaelt die gesamte fachliche Wahrheit, alle Regeln, alle offenen Punkte und den aktuellen Projektstand.
+- Ein neuer Chat muss dort zuerst lesen und soll dann effizient, limit-sparend und ergebnisorientiert arbeiten.
+- Keine grossen Dokurunden, keine unnötigen Rueckfragen, sondern direkt der naechste kleine saubere Umsetzungsschritt.
+- Alles, was fuer die Aufgabe wichtig ist, steht im Repository oder in den dort verlinkten Quellen.
+- Wenn etwas nicht im GitHub belegt ist, wird es nicht geraten, sondern als offen behandelt.

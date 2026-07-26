@@ -5,8 +5,8 @@
 
 'use strict';
 
-const ROOT = '0_userdata.0.Energiemanagement.Batterie';
-const CONFIG = '0_userdata.0.Energiemanagement.Config';
+const ROOT = '0_userdata.0.EOS.Batterie';
+const CONFIG = '0_userdata.0.EOS.Config';
 const PACKS = [1, 2, 3, 4];
 const CELLS = 16;
 const HISTORY_LENGTH = 5;

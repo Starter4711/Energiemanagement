@@ -26,6 +26,7 @@
 - Die exakte fachliche Rolle von `script.js.common.Sonne`, `script.js.common.Sonnenstand` und `script.js.common.Wolken-PV_*` ist nur teilweise belegt.
 - Die Abgrenzung zwischen `script.js.common.Pool`, `script.js.common.Pool_Steuerung` und `script.js.energiemanagement.Pool_VIS2_Zeitplaene` ist nicht vollstaendig dokumentiert.
 - Die genaue Zielrolle der go-e-V3- und go-e-V4-Skripte im neuen Energiemanagement ist noch nicht konsolidiert.
+- Ob `Wallbox_Flow_V1` ueber die aktuelle Quellenanalyse hinaus als naechste Spezifikation freigegeben wird, ist `Unklar`.
 
 ## MQTT / Datenpunkte
 

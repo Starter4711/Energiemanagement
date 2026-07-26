@@ -1,7 +1,7 @@
 // ioBroker object: script.js.energiemanagement.Battery_Health_V1
 // name: Battery_Health_V1
 // engineType: Javascript/js
-// enabled: False
+// enabled: True
 
 'use strict';
 

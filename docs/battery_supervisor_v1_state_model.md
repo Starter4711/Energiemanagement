@@ -121,6 +121,13 @@ Für `Pack1` bis `Pack4`:
 | `0_userdata.0.EOS.Battery.Packs.Pack<N>.Balancing` | boolean | – | Heltec `balancing` |
 | `0_userdata.0.EOS.Battery.Packs.Pack<N>.Communication` | string | – | kombinierter Gobel-/Heltec-Status |
 
+Aktueller Implementierungsstand:
+
+- Pack-States werden für `Pack1` bis `Pack4` vollständig erzeugt.
+- `Status`, `Power`, `Balancing` und `Communication` werden jetzt explizit geschrieben.
+- `Power` wird, sofern möglich, aus Zellspannungssumme und Packstrom abgeleitet.
+- Fehlen alle relevanten Eingangswerte, bleibt der Pack-Status `UNKNOWN`.
+
 ### 4.4 Communication
 
 Für `SmartShunt`, `Gobel`, `Heltec` und `MQTT`:
@@ -129,7 +136,7 @@ Für `SmartShunt`, `Gobel`, `Heltec` und `MQTT`:
 |---|---:|---:|---|
 | `0_userdata.0.EOS.Battery.Communication.<Quelle>.LastUpdate` | string | ISO-8601 | Zeitpunkt der letzten gültigen Quellaktualisierung |
 | `0_userdata.0.EOS.Battery.Communication.<Quelle>.AgeSeconds` | number | s | Alter der letzten gültigen Quellaktualisierung |
-| `0_userdata.0.EOS.Battery.Communication.<Quelle>.Status` | string | – | `OK`, `WARNING`, `OFFLINE`, `UNKNOWN` |
+| `0_userdata.0.EOS.Battery.Communication.<Quelle>.Status` | string | – | `OK`, `WARN`, `OFFLINE`, `UNKNOWN` |
 
 Zusätzlich:
 
@@ -145,6 +152,11 @@ Zusätzlich:
 | `0_userdata.0.EOS.Battery.Warnings.GobelOffline` | boolean | Gobel/Pace `OFFLINE` |
 | `0_userdata.0.EOS.Battery.Warnings.HeltecOffline` | boolean | Heltec `OFFLINE` |
 | `0_userdata.0.EOS.Battery.Warnings.MQTTOffline` | boolean | MQTT-Verbindung `OFFLINE` |
+
+VIS2-Umsetzung:
+
+- Die Warnungs-Kacheln werden als `OK` dargestellt, solange der jeweilige Boolean `false` ist.
+- Ist ein Boolean `true`, wird die Kachel als rotes, fettes `FEHLER` angezeigt.
 
 ### 4.6 Settings
 

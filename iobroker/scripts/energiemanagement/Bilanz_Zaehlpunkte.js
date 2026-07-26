@@ -1,11 +1,11 @@
 // ioBroker object: script.js.energiemanagement.Bilanz_Zaehlpunkte
 // name: Bilanz_Zaehlpunkte
 // engineType: Javascript/js
-// enabled: False
+// enabled: True
 
 'use strict';
 
-const ROOT = '0_userdata.0.Energiemanagement';
+const ROOT = '0_userdata.0.EOS';
 const CONFIG = `${ROOT}.Config`;
 const OUTPUT = `${ROOT}.Bilanz`;
 

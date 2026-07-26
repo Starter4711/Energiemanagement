@@ -1,11 +1,11 @@
 // ioBroker object: script.js.energiemanagement.Debug
 // name: Debug
 // engineType: Javascript/js
-// enabled: False
+// enabled: True
 
 'use strict';
 
-const ROOT = '0_userdata.0.Energiemanagement.Debug';
+const ROOT = '0_userdata.0.EOS.Debug';
 
 try {
     createState(`${ROOT}.Aktiv`, true, {
@@ -40,7 +40,7 @@ try {
         }
     });
 
-    log('Energiemanagement-Debug ist gestartet.', 'info');
+    log('EOS-Debug ist gestartet.', 'info');
 } catch (error) {
     log(`Debug Fehler: ${error.message}`, 'warn');
 }

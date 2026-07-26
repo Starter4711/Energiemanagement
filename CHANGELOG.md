@@ -2,6 +2,38 @@
 
 ## 2026-07-26
 - Changed
+  - `Energy_Flow_V1` liest die drei Netz-Zaehlpunkte direkt ueber die unter `EOS.Config` hinterlegten Aliasse und bildet einen belastbaren Grid-Status
+  - PV und Haus werden aus den produktiven Victron-Summen `SUMME_PV` und `SUMME_Verbrauch` uebernommen
+  - die drei go-e-Leistungsaliasse werden von kW nach W normiert, summiert und samt Aktivstatus in EOS bereitgestellt
+  - VIS2 erhaelt dadurch fuer Grid, PV, House und Wallbox numerische Live-Werte statt `null` beziehungsweise `UNKNOWN`
+  - `deploy_eos_live.sh` unterstuetzt fuer schnelle Korrekturen jetzt auch den gezielten Deploy einzelner Skriptpfade
+  - die VIS2-Unterseite `battery.html` wurde von den nicht stabilen `EOS.Battery.*`-Direktbindungen auf belegte `EOS.EnergyFlow.*`-States umgestellt, damit sie keine `undefined`-Werte mehr zeigt
+  - `Battery_Supervisor_V1` schreibt die Pack-States jetzt vollstaendig aus, inklusive `Status`, `Power`, `Balancing` und `Communication`, damit die Pack-Sicht nicht mehr auf unbefuellten Teilfeldern haengen bleibt
+
+## 2026-07-26
+- Changed
+  - `iobroker/tools/deploy_eos_live.sh` als robuster Live-Deploy-Helper fuer EOS eingefuehrt
+  - `docs/iobroker-integration.md` um den festen Live-Zugang, den Helper, die Script-Objekt-Strategie und den VIS2-Deploy-Pfad erweitert
+  - `knowledge/iobroker.md` um den Live-Deploy-Merkpunkt fuer den neuen festen EOS-Pfad aktualisiert
+
+## 2026-07-26
+- Changed
+  - `iobroker/tools/deploy_vis2.py` auf den funktionierenden Docker-/sudo-Schreibweg fuer den ioBroker-Dateispeicher umgestellt
+  - `iobroker/scripts/energiemanagement/Config.js`, `Debug.js`, `Battery_Supervisor_V1.js`, `Battery_Health_V1.js` und `Energy_Flow_V1.js` im Live-Kontext wieder als aktiv dokumentiert und redeployt
+  - `docs/iobroker-integration.md` und `knowledge/iobroker.md` um die Ursache fuer `undefined` in VIS2, die aktiven EOS-Kernskripte und die tatsaechlichen Live-Dateipfade ergaenzt
+
+## 2026-07-26
+- Changed
+  - `docs/iobroker-integration.md` um die operative Referenz fuer ioBroker-Live-Zugriff, SSH, JSON, HTML und Deploy-Reihenfolge ergaenzt
+  - `knowledge/iobroker.md` um den kompakten Live-Zugriffskuerzel und die Deploy-Reihenfolge aktualisiert
+
+## 2026-07-26
+- Changed
+  - `knowledge/project_brain.md` auf den aktuellen Energy-Flow-Referenzstand `8d851bc91b0a85b114ced86b9601b16e97654004` korrigiert
+  - `knowledge/open_questions.md` um die offene Einordnung von `Wallbox_Flow_V1` als Spezifikationskandidat ergaenzt
+
+## 2026-07-26
+- Changed
   - `knowledge/project_brain.md` um einen aktuellen Handoff-Abschnitt fuer neue Chats ergaenzt
 
 ## 2026-07-26
